@@ -1446,30 +1446,100 @@ function addSCMsg(role, text) {
 }
 
 function getAppContext() {
-  const mode = document.querySelector('.view.active').id;
-  let ctx = "Apostador está na seção: " + mode + ".\n";
+  const mode = document.querySelector('.view.active')?.id || 'dashboard';
+  let ctx = `══ CONTEXTO EM TEMPO REAL DO APP ══\nLiga ativa: ${LIGA_ATUAL}\nSeção atual: ${mode}\n`;
+
+  /* ── STATS GERAIS DA LIGA ── */
+  const jogos = DADOS_2026.jogos;
+  const jogosValidos = jogos.filter(j => j.cantos !== null);
+  const htTotais = jogosValidos.map(j => j.cantos.ht.m + j.cantos.ht.v);
+  const ftTotais = jogosValidos.map(j => j.cantos.ft.m + j.cantos.ft.v);
+  const mediaHT = htTotais.length ? (htTotais.reduce((a,b)=>a+b,0)/htTotais.length) : 0;
+  const mediaFT = ftTotais.length ? (ftTotais.reduce((a,b)=>a+b,0)/ftTotais.length) : 0;
+  ctx += `\n📊 ESTATÍSTICAS DA LIGA (${LIGA_ATUAL}):\n`;
+  ctx += `- Jogos registrados: ${jogos.length} (${DADOS_2026.totalRodadas} rodadas)\n`;
+  ctx += `- Média cantos HT (1º tempo): ${fmt(mediaHT)}\n`;
+  ctx += `- Média cantos FT (jogo todo): ${fmt(mediaFT)}\n`;
+  ctx += `- Times analisados: ${DADOS_2026.times.length}\n`;
+
+  /* ── ÚLTIMOS 5 JOGOS ── */
+  const ultimos = [...jogosValidos].slice(-5).reverse();
+  if(ultimos.length > 0) {
+    ctx += `\n📋 ÚLTIMOS ${ultimos.length} JOGOS REGISTRADOS:\n`;
+    ultimos.forEach(j => {
+      const htT = j.cantos.ht.m + j.cantos.ht.v;
+      const ftT = j.cantos.ft.m + j.cantos.ft.v;
+      ctx += `  - ${j.mandante} vs ${j.visitante} (${fmtDate(j.data)}) | HT: ${j.cantos.ht.m}+${j.cantos.ht.v}=${htT} | FT: ${j.cantos.ft.m}+${j.cantos.ft.v}=${ftT}${j.calibrado?' [Calibrado]':''}\n`;
+    });
+  }
+
+  /* ── PROJEÇÃO ATIVA ── */
   if (mode === 'view-projecao') {
     const m = document.getElementById('sel-mandante').value;
     const v = document.getElementById('sel-visitante').value;
     if (m && v && m!==v) {
       const p = projecaoJogo(m, v);
-      ctx += `[PROJEÇÃO ATIVA] Partida: ${m} (CASA) vs ${v} (FORA)\n`;
-      const jogosLiga = DADOS_2026.jogos.filter(j => j.cantos !== null);
-      const mediaLiga = (jogosLiga.reduce((sum, j) => sum + j.cantos.ht.m, 0) / jogosLiga.length).toFixed(2);
-      ctx += `- Média Liga HT Home: ${mediaLiga}\n`;
-      ctx += `- xCorners Real HT (1º Tempo): ${fmt(p.expTotalHT)} escanteios.\n`;
-      ctx += `- xCorners Real FT (Jogo Todo): ${fmt(p.expTotalFT)} escanteios.\n`;
-      ctx += `- Match Odds HT 1X2 (Quem Vence): Casa ${fmt(p.oddsHT.home*100)}% | Empate ${fmt(p.oddsHT.draw*100)}% | Fora ${fmt(p.oddsHT.away*100)}%\n`;
-      ctx += `- Match Odds FT 1X2 (Quem Vence): Casa ${fmt(p.oddsFT.home*100)}% | Empate ${fmt(p.oddsFT.draw*100)}% | Fora ${fmt(p.oddsFT.away*100)}%\n`;
-      ctx += `- Handicap Asiático -1.5 (Aposta ganha apenas se Vencer por 2 cantos de diferença): HT=${fmt(p.oddsHT.homeHcp*100)}% | FT=${fmt(p.oddsFT.homeHcp*100)}%\n`;
-      ctx += `- Linhas Over Limit HT: ` + p.oversHT.map(o => `${o.line} prob = ${fmt(o.prob)}%`).join(' | ') + `\n`;
-      ctx += `- Linhas Over Limit FT: ` + p.oversFT.map(o => `${o.line} prob = ${fmt(o.prob)}%`).join(' | ') + `\n`;
-      ctx += `- ATK Escanteios ${m}: Força ${fmt(p.pow.atkHomeFT)}x\n`;
-      ctx += `- VULNERABILIDADE Defesa ${m}: Fator ${fmt(p.pow.defHomeFT)}x\n`;
-      ctx += `- ATK Escanteios ${v}: Força ${fmt(p.pow.atkAwayFT)}x\n`;
-      ctx += `- VULNERABILIDADE Defesa ${v}: Fator ${fmt(p.pow.defAwayFT)}x\n`;
+      ctx += `\n🎯 PROJEÇÃO ATIVA: ${m} (CASA) vs ${v} (FORA)\n`;
+      ctx += `- xCorners HT (1º Tempo): ${fmt(p.expTotalHT)} escanteios\n`;
+      ctx += `- xCorners FT (Jogo Todo): ${fmt(p.expTotalFT)} escanteios\n`;
+      ctx += `- Match Odds HT: Casa ${fmt(p.oddsHT.home*100)}% | Empate ${fmt(p.oddsHT.draw*100)}% | Fora ${fmt(p.oddsHT.away*100)}%\n`;
+      ctx += `- Match Odds FT: Casa ${fmt(p.oddsFT.home*100)}% | Empate ${fmt(p.oddsFT.draw*100)}% | Fora ${fmt(p.oddsFT.away*100)}%\n`;
+      ctx += `- Handicap -1.5: HT=${fmt(p.oddsHT.homeHcp*100)}% | FT=${fmt(p.oddsFT.homeHcp*100)}%\n`;
+      ctx += `- Overs HT: ` + p.oversHT.map(o => `${o.line}=${fmt(o.prob)}%`).join(' | ') + `\n`;
+      ctx += `- Overs FT: ` + p.oversFT.map(o => `${o.line}=${fmt(o.prob)}%`).join(' | ') + `\n`;
+      ctx += `- ATK ${m}: ${fmt(p.pow.atkHomeFT)}x | DEF vulnerabilidade: ${fmt(p.pow.defHomeFT)}x\n`;
+      ctx += `- ATK ${v}: ${fmt(p.pow.atkAwayFT)}x | DEF vulnerabilidade: ${fmt(p.pow.defAwayFT)}x\n`;
     }
   }
+
+  /* ── BET TRACKER — DESEMPENHO DO APOSTADOR ── */
+  ctx += `\n💰 BET TRACKER (Liga ${LIGA_ATUAL}):\n`;
+  if(customBets.length > 0) {
+    const resolvidas = customBets.filter(b => b.status === 'green' || b.status === 'red');
+    const abertas = customBets.filter(b => b.status === 'aberto');
+    const greens = resolvidas.filter(b => b.status === 'green').length;
+    const reds = resolvidas.filter(b => b.status === 'red').length;
+    const winrate = resolvidas.length ? (greens / resolvidas.length * 100) : 0;
+    let roiAcumulado = 0, totalInvestido = 0;
+    resolvidas.forEach(b => {
+      totalInvestido += b.unid;
+      if(b.status === 'green') roiAcumulado += (b.odd - 1) * b.unid;
+      if(b.status === 'red') roiAcumulado -= b.unid;
+    });
+    const yieldPct = totalInvestido ? (roiAcumulado / totalInvestido * 100) : 0;
+    ctx += `- Total de entradas: ${customBets.length} (${resolvidas.length} resolvidas, ${abertas.length} em aberto)\n`;
+    ctx += `- Greens: ${greens} | Reds: ${reds} | Win Rate: ${fmt(winrate)}%\n`;
+    ctx += `- ROI: ${roiAcumulado >= 0 ? '+' : ''}${fmt(roiAcumulado)}u | Yield: ${yieldPct >= 0 ? '+' : ''}${fmt(yieldPct)}%\n`;
+
+    // Desempenho por mercado
+    const map = {};
+    resolvidas.forEach(b => {
+      const cat = b.mercado && b.linha ? `${b.mercado} ${b.linha}` : 'Outros';
+      if(!map[cat]) map[cat] = { g:0, r:0, roi:0, inv:0 };
+      map[cat].inv += b.unid;
+      if(b.status === 'green') { map[cat].g++; map[cat].roi += (b.odd-1)*b.unid; }
+      if(b.status === 'red') { map[cat].r++; map[cat].roi -= b.unid; }
+    });
+    if(Object.keys(map).length > 0) {
+      ctx += `- Desempenho por mercado:\n`;
+      Object.keys(map).forEach(k => {
+        const d = map[k];
+        const wr = (d.g / (d.g + d.r) * 100);
+        const yl = d.inv ? (d.roi / d.inv * 100) : 0;
+        ctx += `    ${k}: ${d.g}G/${d.r}R (WR ${fmt(wr)}%) | ROI ${d.roi>=0?'+':''}${fmt(d.roi)}u | Yield ${yl>=0?'+':''}${fmt(yl)}%\n`;
+      });
+    }
+
+    // Últimas 5 bets
+    const ultBets = [...customBets].reverse().slice(0, 5);
+    ctx += `- Últimas ${ultBets.length} entradas:\n`;
+    ultBets.forEach(b => {
+      ctx += `    ${fmtDate(b.data)} ${b.mandante} x ${b.visitante} | ${b.mercado} L.${b.linha} @${fmt(b.odd)} ${b.unid}u → ${b.status.toUpperCase()}\n`;
+    });
+  } else {
+    ctx += `- Nenhuma aposta registrada nesta liga.\n`;
+  }
+
   return ctx;
 }
 
@@ -1488,21 +1558,41 @@ async function sendSCMsg() {
   scChatHistory.push({ role: 'user', content: text });
   if(scChatHistory.length > 6) scChatHistory.shift();
 
-  const systemPrompt = `Você é o *SmartCoach*, a Inteligência Artificial embarcada (Claude Opus) no revolucionário app 'Especialista em Cantos'.
-Seu objetivo é analisar os dados puramente lógicos e apresentar táticas de +EV baseadas em Escanteios (Corners).
-Use emojis apropriados. Fale com um tom de apostador profissional (Punter/Trader).
+  const systemPrompt = `Você é o *SmartCoach*, a Inteligência Artificial embarcada (Claude Opus) no app 'EDS Especialista em Cantos'.
+Você é um consultor de apostas esportivas especializado EXCLUSIVAMENTE em escanteios (corners).
+Você tem ACESSO TOTAL E EM TEMPO REAL aos dados do app do apostador — use-os proativamente.
+
+═══ SEU DOMÍNIO ═══
+- Análise estatística de escanteios (HT e FT) com modelo Poisson
+- Projeções xCorners, Match Odds de cantos, Handicap Asiático, linhas Over/Under
+- Forças ofensivas e vulnerabilidades defensivas por time
+- Gestão de banca e Valor Esperado (+EV)
+- Análise de desempenho do apostador (win rate, yield, ROI)
+
+═══ DADOS EM TEMPO REAL DO APP ═══
+${getAppContext()}
+═══════════════════════════════════
+
+═══ COMO USAR OS DADOS ═══
+VOCÊ TEM ACESSO AOS DADOS REAIS DO APOSTADOR. Use-os proativamente:
+- Se perguntar sobre desempenho: responda com base nos dados reais do Bet Tracker acima (greens, reds, ROI, yield)
+- Se perguntar sobre mercados: cruze o desempenho por mercado com as projeções disponíveis
+- Se perguntar sobre jogos: use os últimos jogos registrados e as médias da liga
+- Se houver projeção ativa na tela: analise com base nos xCorners e probabilidades
+- Se pedir recomendação: cruze o desempenho dele (mercados com melhor yield) com as oportunidades atuais
+- Se pedir relatório/resumo: gere panorama completo (stats da liga + desempenho do apostador + sugestões)
+- Alerte se detectar padrões negativos: yield negativo em algum mercado, excesso de entradas sem edge, etc.
 
 REGRAS DE FORMATAÇÃO VISUAL (MUITO IMPORTANTE):
-1. NUNCA use asteriscos (**texto**) para negrito. Você DEVE usar a tag HTML <strong>texto</strong>!
-2. NUNCA use listas markdown (- item). Use barras, quebras de linha ou pequenas tabelas.
-3. Se quiser dar ênfase, use <em> para cor dourada ou <strong> para cor verde.
-4. Para dados comparativos ou listas de odds, SEMPRE construa tabelas em HTML (<table> <tr> <th> <td>). Não use formatação em texto puro. O visual precisa ser incrivelmente luxuoso e limpo, parecendo um widget profissional de análise quantitativa.
+1. NUNCA use asteriscos (**texto**) para negrito. Use a tag HTML <strong>texto</strong>
+2. NUNCA use listas markdown (- item). Use barras, quebras de linha ou tabelas HTML
+3. Para ênfase: <em> para cor dourada, <strong> para cor verde
+4. Para dados comparativos: SEMPRE use tabelas HTML (<table><tr><th><td>)
+5. Visual luxuoso e limpo — widget profissional de análise quantitativa
 
-Abaixo está o log em tempo real da tela atual onde o usuário está olhando:
---- DADOS DA TELA AO VIVO ---
-${getAppContext()}
-------------------------------
-Ao sugerir oportunidades, foque nas linhas com maior probabilidade indicadas pelo modelo.`;
+Fale com tom de apostador profissional (Punter/Trader). Use emojis estratégicos.
+Ao sugerir oportunidades, foque nas linhas com maior probabilidade e cruze com o histórico real do apostador.`;
+
 
   try {
     const chat = document.getElementById('sc-chat');
