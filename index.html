@@ -4,8 +4,11 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Especialista em Cantos | MLS 2026</title>
-  <meta name="description" content="Análise avançada de escanteios da MLS 2026. Médias HT/FT por time e projeções para jogos futuros."/>
+  <meta name="description" content="Análise avançada de escanteios. Médias HT/FT por time e projeções para jogos futuros."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
   <style>
     :root {
       --bg:       #0a0f0d;
@@ -261,10 +264,45 @@
   <button id="btn-ouro"      onclick="showView('ouro')">🐺 Bala de Prata</button>
   <button id="btn-time"      onclick="showView('time')">👕 Por Time</button>
   <button id="btn-projecao"  onclick="showView('projecao')">🔮 Projeção de Jogo</button>
+  <button id="btn-adicionar" onclick="showView('adicionar')">📥 Adicionar Jogos</button>
+  <button id="btn-rodada"    onclick="showView('rodada')">📅 Próximos Jogos</button>
   <button id="btn-tracker"   onclick="showView('tracker')">📈 Bet Tracker</button>
 </nav>
 
 <main>
+
+  <!-- ══════════════════ ADICIONAR JOGOS ══════════════════ -->
+  <div id="view-adicionar" class="view">
+    <div class="section-title">📥 Adicionar Jogos da Rodada (Importação em Massa)</div>
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem">
+      <p style="color:var(--muted);font-size:.85rem;margin-bottom:1rem">Cole os próximos confrontos copiados de qualquer casa de aposta (ex: Flamengo x Vasco) ou suba um Print de Tela para extrairmos os nomes dos times automaticamente usando Inteligência Artificial OCR.</p>
+      
+      <div style="display:flex;gap:1rem;margin-bottom:1rem">
+        <div style="flex:1">
+           <textarea id="inp-jogos-texto" placeholder="Cole os jogos aqui...&#10;Exemplo:&#10;Flamengo x Palmeiras&#10;Botafogo v Fluminense&#10;Cruzeiro - Santos" style="width:100%;height:150px;background:var(--bg);border:1px solid var(--border);color:var(--text);padding:1rem;border-radius:8px;resize:none" spellcheck="false"></textarea>
+           <p style="font-size:0.75rem;color:var(--muted);margin-top:0.4rem">O algoritmo possui fuzzy-matching e corrigirá pequenas variações de nomes automaticamente.</p>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:1.5rem;justify-content:center;align-items:center;border:1px dashed var(--border);border-radius:8px;background:rgba(52,211,103,0.05);padding:1.5rem">
+          <div style="font-size:2.5rem;color:var(--green)">📸</div>
+          <div style="font-size:.85rem;color:var(--text);font-weight:600;text-align:center;padding:0 1rem">Tem um Print da Bet365 ou FlashScore?</div>
+          <input type="file" id="inp-jogos-img" accept="image/*" style="display:none" onchange="processarImagemOCR(event)">
+          <button onclick="document.getElementById('inp-jogos-img').click()" style="background:var(--card);border:1px solid var(--green);color:var(--green);padding:.8rem 1.5rem;border-radius:6px;cursor:pointer;font-weight:700;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='var(--card)';this.style.color='var(--green)'">Subir Imagem / Print Screen</button>
+          <div id="ocr-status" style="font-size:.75rem;color:var(--gold);font-weight:600;text-align:center">A extração OCR pode levar alguns segundos.</div>
+        </div>
+      </div>
+      
+      <button onclick="processarTextoRodada()" style="width:100%;background:var(--green);border:none;color:#000;padding:1.2rem;border-radius:8px;font-weight:900;font-size:1.1rem;cursor:pointer;box-shadow:0 10px 25px rgba(52,211,103,0.3);margin-top:1rem;transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Analisar Texto e Adicionar à Rodada</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════ PRÓXIMOS JOGOS (RODADA) ══════════════════ -->
+  <div id="view-rodada" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">
+      <div class="section-title" style="margin:0">📅 Os Próximos Jogos (Sua Rodada)</div>
+      <button onclick="limparRodada()" style="background:transparent;border:1px solid var(--red);color:var(--red);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--red)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'">🗑️ Limpar Rodada</button>
+    </div>
+    <div id="wrapper-rodada" class="grid4" style="margin-bottom:2rem"></div>
+  </div>
 
   <!-- ══════════════════ BALA DE PRATA ══════════════════ -->
   <div id="view-ouro" class="view">
@@ -294,10 +332,15 @@
       <table>
         <thead>
           <tr>
-            <th>#</th><th>Time</th><th>Jogos</th>
-            <th>HT Pro</th><th>HT Concede</th>
-            <th>FT Pro</th><th>FT Concede</th>
-            <th>Saldo FT</th><th>Total Médio FT</th>
+            <th>#</th>
+            <th onclick="ordenarRanking('time')" style="cursor:pointer;user-select:none" title="Ordenar por Nomes">Time <span id="r-arm-time" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('jogos')" style="cursor:pointer;user-select:none" title="Ordenar por Número de Jogos">Jogos <span id="r-arm-jogos" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('ht_pro')" style="cursor:pointer;user-select:none" title="Ordenar por Cantos Pró no HT">HT Pro <span id="r-arm-ht_pro" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('ht_con')" style="cursor:pointer;user-select:none" title="Ordenar por Cantos Sofridos no HT">HT Concede <span id="r-arm-ht_con" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('ft_pro')" style="cursor:pointer;user-select:none" title="Ordenar por Cantos Pró Finais">FT Pro <span id="r-arm-ft_pro" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('ft_con')" style="cursor:pointer;user-select:none" title="Ordenar por Cantos Sofridos Finais">FT Concede <span id="r-arm-ft_con" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
+            <th onclick="ordenarRanking('saldo_ft')" style="cursor:pointer;user-select:none" title="Ordenar pelo Saldo Médio Final">Saldo FT <span id="r-arm-saldo_ft" style="color:var(--text);font-weight:800;font-size:.7rem">↓</span></th>
+            <th onclick="ordenarRanking('total_ft')" style="cursor:pointer;user-select:none" title="Ordenar pelo Volume Total Final">Total Médio FT <span id="r-arm-total_ft" style="color:var(--muted);font-weight:400;font-size:.7rem">↕</span></th>
           </tr>
         </thead>
         <tbody id="tbody-ranking"></tbody>
@@ -316,6 +359,10 @@
       </div>
     </div>
     <div id="stats-time"></div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;display:none;" id="chart-time-container">
+      <div style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center;">Tendência de Escanteios (Últimas 15 Partidas)</div>
+      <canvas id="chart-time" style="width:100%;max-height:250px;"></canvas>
+    </div>
     <div id="jogos-time"></div>
   </div>
 
@@ -341,10 +388,23 @@
   <!-- ══════════════════ BET TRACKER ══════════════════ -->
   <div id="view-tracker" class="view">
     <div class="section-title">📈 Diário de Operações (Bet Tracker)</div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;" id="chart-roi-container">
+      <div style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center;">Crescimento do Lucro Acumulado (ROI)</div>
+      <canvas id="chart-roi" style="width:100%;max-height:200px;"></canvas>
+    </div>
     <div class="grid4" id="tracker-cards" style="margin-bottom:1.5rem"></div>
 
     <div class="section-title">📊 Calibração de Inteligência (ROI por Segmento)</div>
     <div class="grid4" id="tracker-analytics" style="margin-bottom:1.5rem"></div>
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1rem;">
+      <div class="section-title" style="margin:0;">Diário de Operações (Tabela)</div>
+      <div style="display:flex; gap: 10px;">
+        <input type="file" id="inp-import-data" style="display:none" accept=".html,.csv" onchange="importarDados(event)">
+        <button onclick="document.getElementById('inp-import-data').click()" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--green)'" onmouseout="this.style.borderColor='var(--border)'">📂 Importar Dados (.html/.csv)</button>
+        <button onclick="exportarRelatorio()" style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='rgba(52,211,103,0.1)';this.style.color='var(--green)'">💾 Exportar P/ Pasta Local (Documento Lindo)</button>
+      </div>
+    </div>
     <div class="table-wrap">
       <table>
         <thead>
@@ -549,11 +609,54 @@ function getStatsTime(time) {
   };
 }
 
+let sortConfig = { key: 'saldo_ft', desc: true };
+
+function ordenarRanking(key) {
+  if(sortConfig.key === key) {
+    sortConfig.desc = !sortConfig.desc;
+  } else {
+    sortConfig.key = key;
+    sortConfig.desc = true;
+  }
+  const keys = ['time','jogos','ht_pro','ht_con','ft_pro','ft_con','saldo_ft','total_ft'];
+  keys.forEach(k => {
+    const el = document.getElementById('r-arm-'+k);
+    if(el) {
+      if(sortConfig.key === k) {
+        el.innerHTML = sortConfig.desc ? '↓' : '↑';
+        el.style.color = 'var(--text)';
+        el.style.fontWeight = '800';
+      } else {
+        el.innerHTML = '↕';
+        el.style.color = 'var(--muted)';
+        el.style.fontWeight = '400';
+      }
+    }
+  });
+  renderRanking();
+}
+
 function getRanking() {
-  return DADOS_2026.times
+  const ranking = DADOS_2026.times
     .map(t => getStatsTime(t))
-    .filter(t => t.jogos > 0)
-    .sort((a,b) => (b.media.ft_geral - b.media.ft_geral_c) - (a.media.ft_geral - a.media.ft_geral_c));
+    .filter(t => t.jogos > 0);
+
+  ranking.sort((a,b) => {
+    let valA, valB;
+    switch(sortConfig.key) {
+      case 'time': return sortConfig.desc ? b.time.localeCompare(a.time) : a.time.localeCompare(b.time);
+      case 'jogos': valA = a.jogos; valB = b.jogos; break;
+      case 'ht_pro': valA = a.media.ht_geral; valB = b.media.ht_geral; break;
+      case 'ht_con': valA = a.media.ht_geral_c; valB = b.media.ht_geral_c; break;
+      case 'ft_pro': valA = a.media.ft_geral; valB = b.media.ft_geral; break;
+      case 'ft_con': valA = a.media.ft_geral_c; valB = b.media.ft_geral_c; break;
+      case 'saldo_ft': valA = a.media.ft_geral - a.media.ft_geral_c; valB = b.media.ft_geral - b.media.ft_geral_c; break;
+      case 'total_ft': valA = a.media.ft_geral + a.media.ft_geral_c; valB = b.media.ft_geral + b.media.ft_geral_c; break;
+      default: valA = a.media.ft_geral - a.media.ft_geral_c; valB = b.media.ft_geral - b.media.ft_geral_c; break;
+    }
+    return sortConfig.desc ? (valB - valA) : (valA - valB);
+  });
+  return ranking;
 }
 
 function projecaoJogo(mandante, visitante) {
@@ -762,11 +865,18 @@ function renderTime() {
       <div class="stat-card"><div class="icon">📈</div><div class="label">Total Médio c/ Concedidos</div><div class="value">${fmt(s.media.ft_geral + s.media.ft_geral_c)}</div></div>
     </div>
   `;
-  const sorted = [...s.jogosData].sort((a,b) => a.rodada - b.rodada);
+  const sorted = [...s.jogosData].sort((a,b) => a.rodada - b.rodada || new Date(a.data) - new Date(b.data));
   document.getElementById('jogos-time').innerHTML = `
     <div class="section-title">📅 Histórico de Jogos</div>
     <div class="jogos-list">${sorted.map(jogoRow).join('')}</div>
   `;
+  
+  if (sorted.length > 0) {
+    document.getElementById('chart-time-container').style.display = 'block';
+    setTimeout(() => desenharGraficoTendencia(time, sorted), 50);
+  } else {
+    document.getElementById('chart-time-container').style.display = 'none';
+  }
 }
 
 // ══════════════════════════════════════════════════
@@ -899,30 +1009,6 @@ function renderProjecao() {
         </button>
       </div>
     </div>
-
-    <!-- MÓDULO: MEMÓRIA / CALIBRAÇÃO -->
-    <div class="section-title">💾 Memória de Aprendizado do App</div>
-    <div style="background:rgba(52,211,103,0.05);border:1px solid rgba(52,211,103,0.3);border-radius:12px;padding:1.5rem;margin-bottom:2rem">
-      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1rem">Apos o final da partida, registre o resultado real dos escanteios abaixo. O algoritmo irá focar este jogo na sua base de dados instantaneamente, recalculando todas as predições de hoje em diante.</p>
-      
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem">
-        <div style="background:var(--bg2);padding:1rem;border-radius:8px;border:1px solid var(--border)">
-          <div style="font-size:.8rem;color:var(--gold);margin-bottom:.8rem;font-weight:700">⏱️ ESCANTEIOS HT (1º Tempo)</div>
-          <div style="display:flex;gap:10px">
-            <input type="number" id="inp-ht-m" placeholder="🏠 ${m}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:#fff;padding:.6rem;border-radius:6px;text-align:center">
-            <input type="number" id="inp-ht-v" placeholder="✈️ ${v}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:#fff;padding:.6rem;border-radius:6px;text-align:center">
-          </div>
-        </div>
-        <div style="background:var(--bg2);padding:1rem;border-radius:8px;border:1px solid var(--border)">
-          <div style="font-size:.8rem;color:var(--green);margin-bottom:.8rem;font-weight:700">⚽ ESCANTEIOS FT (Jogo Todo)</div>
-          <div style="display:flex;gap:10px">
-            <input type="number" id="inp-ft-m" placeholder="🏠 ${m}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:#fff;padding:.6rem;border-radius:6px;text-align:center">
-            <input type="number" id="inp-ft-v" placeholder="✈️ ${v}" style="flex:1;background:var(--bg);border:1px solid var(--border);color:#fff;padding:.6rem;border-radius:6px;text-align:center">
-          </div>
-        </div>
-      </div>
-      <button onclick="salvarResultadoOficial('${m}', '${v}')" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='var(--card)';this.style.color='var(--green)'" style="width:100%;background:var(--card);border:1px solid rgba(52,211,103,0.5);color:var(--green);padding:.8rem;font-weight:700;border-radius:8px;cursor:pointer;font-size:1rem;transition:all .2s">📥 Injetar Dados na Memória (Calibrar Motor)</button>
-    </div>
     
     <!-- MÓDULO: REGISTRAR ENTRADA (TRACKER) -->
     <div style="text-align:center;margin-top:2rem;margin-bottom:2rem;">
@@ -947,6 +1033,7 @@ function showView(id) {
   if (id==='projecao') renderProjecao();
   if (id==='tracker') renderTracker();
   if (id==='ouro') renderOuro();
+  if (id==='rodada') renderRodada();
 }
 
 function emptyMsg(title, sub='') {
@@ -956,113 +1043,114 @@ function emptyMsg(title, sub='') {
 // ══════════════════════════════════════════════════
 //  RENDER — BALA DE PRATA (ARSENAL DUPLO)
 // ══════════════════════════════════════════════════
-function renderOuro() {
-  const ranking = getRanking();
+function renderOuro(limit = 3) {
+  document.getElementById('wrapper-ouro').innerHTML = '<div style="text-align:center;padding:2rem;color:var(--gold);font-weight:700">⏳ O Robô Scanner "Bala de Prata" está cruzando todas as matrizes táticas da liga...</div>';
   
-  // ============================================
-  // ARMA 1: Lobisomens do Over (Metralhadora de Volume)
-  // ============================================
-  const lobisomens = ranking.map(t => {
-    const jogosTime = t.jogosData;
-    let over95Geral = 0;
-    let over55Pro = 0;
+  setTimeout(() => {
+    const times = DADOS_2026.times;
+    if(!times || times.length < 2) return;
     
-    jogosTime.forEach(j => {
-      const pro = j.mandante === t.time ? j.cantos.ft.m : j.cantos.ft.v;
-      const con = j.mandante === t.time ? j.cantos.ft.v : j.cantos.ft.m;
-      if (pro + con >= 10) over95Geral++;
-      if (pro >= 6) over55Pro++;
-    });
+    const confrontos = [];
+    for(let i=0; i<times.length; i++) {
+      for(let j=0; j<times.length; j++) {
+        if(i===j) continue;
+        const m = times[i];
+        const v = times[j];
+        const p = projecaoJogo(m, v);
+        if(!p || !p.m || !p.m.jogos || !p.v || !p.v.jogos) continue;
+        
+        confrontos.push({
+          m, v, p,
+          overScore: p.confFT + (p.expTotalFT * 3), 
+          matchScore: p.confFT + (p.tatica.tmiHome * 15) + (p.pow.atkHomeFT * 10) + (Math.max(0, p.tatica.m_vert)*5)
+        });
+      }
+    }
     
-    const wr95 = jogosTime.length ? (over95Geral / jogosTime.length) * 100 : 0;
-    const wr55Pro = jogosTime.length ? (over55Pro / jogosTime.length) * 100 : 0;
-    const scoreVal = (wr95 * 0.4) + (wr55Pro * 0.6) + (t.media.ft_geral * 10);
-    
-    return { ...t, wr95, wr55Pro, scoreVal };
-  }).filter(t => t.jogos >= 1).sort((a,b) => b.scoreVal - a.scoreVal).slice(0, 4); 
+    // Filtros flexíveis: A ordenação por Score já garante que o topo da lista será a nata, então garantimos que sempre renderize.
+    const topOver = [...confrontos].sort((a,b) => b.overScore - a.overScore).slice(0, limit);
+    const topMatch = [...confrontos].sort((a,b) => b.matchScore - a.matchScore).slice(0, limit);
 
-  // ============================================
-  // ARMA 2: Reis dos Cantos (Fuzil 1x2 Match Winner)
-  // ============================================
-  const reis = ranking.map(t => {
-    const jogosTime = t.jogosData;
-    let vitoriasCantos = 0;
-    let saldoTotal = 0;
-    
-    jogosTime.forEach(j => {
-      const pro = j.mandante === t.time ? j.cantos.ft.m : j.cantos.ft.v;
-      const con = j.mandante === t.time ? j.cantos.ft.v : j.cantos.ft.m;
-      if (pro > con) vitoriasCantos++;
-      saldoTotal += (pro - con);
-    });
-    
-    const wr1x2 = jogosTime.length ? (vitoriasCantos / jogosTime.length) * 100 : 0;
-    const saldoMedio = jogosTime.length ? (saldoTotal / jogosTime.length) : 0;
-    
-    return { ...t, wr1x2, saldoMedio };
-  }).filter(t => t.jogos >= 1).sort((a,b) => b.wr1x2 - a.wr1x2 || b.saldoMedio - a.saldoMedio).slice(0, 4);
+    document.getElementById('wrapper-ouro').innerHTML = `
+      <!-- TOP OVER -->
+      ${topOver.length > 0 ? `
+      <div style="background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(0,0,0,0.4));border-left:4px solid var(--gold);padding:1rem;border-radius:12px;margin-bottom:1.5rem;color:var(--text);line-height:1.6">
+        <div style="font-size:1.2rem;font-weight:900;color:var(--gold);margin-bottom:.5rem">🐺 TOP CONFRONTOS PARA OVER (Volume de Escanteios FT)</div>
+        <div style="font-size:.85rem;color:var(--muted)">O robô rodou o algoritmo em todas as probabilidades possíveis e detectou as maiores confianças globais da liga para linha de Over Escanteios (+ volume de jogo alto).</div>
+      </div>
+      
+      <div class="grid4" style="margin-bottom:2.5rem">
+        ${topOver.map((c, idx) => `
+          <div class="stat-card" style="border-top:3px solid ${idx===0 ? 'var(--gold)' : 'var(--bg3)'};position:relative;overflow:hidden">
+            <div style="position:absolute;top:-10px;right:-10px;font-size:4rem;opacity:0.04">🐺</div>
+            <div class="label" style="font-size:.9rem;font-weight:900;margin-bottom:.5rem;color:#fff">${c.m} <span style="color:var(--muted);font-weight:400;font-size:.7rem">vs</span> ${c.v}</div>
+            
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+              <span style="color:var(--muted);font-size:.70rem">⚽ Projeção Exata FT</span>
+              <strong style="color:var(--gold)">${fmt(c.p.expTotalFT)}</strong>
+            </div>
+            
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+              <span style="color:var(--muted);font-size:.70rem">🎯 Confiança do Motor</span>
+              <strong style="color:var(--green)">${Math.round(c.p.confFT)}%</strong>
+            </div>
 
-  if(!lobisomens.length) {
-    document.getElementById('wrapper-ouro').innerHTML = emptyMsg("Arsenal Vazio", "Aguarde os resultados para municiar a arma.");
-    return;
-  }
+            <div style="text-align:center; margin-top:.8rem">
+              <button onclick="carregarProjecaoExata('${c.m}','${c.v}')" style="background:var(--bg3);border:1px solid var(--gold);color:var(--gold);padding:.4rem 1rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;transition:background .2s;width:100%" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='var(--bg3)';this.style.color='var(--gold)'">🔍 Analisar Jogo</button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      ` : ''}
 
-  document.getElementById('wrapper-ouro').innerHTML = `
-    <!-- ARMA 2 HTML (REIS) -->
-    <div style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(0,0,0,0.4));border-left:4px solid var(--green);padding:1rem;border-radius:12px;margin-bottom:1.5rem;color:var(--text);line-height:1.6">
-      <div style="font-size:1.2rem;font-weight:900;color:var(--green);margin-bottom:.5rem">👑 REIS DOS CANTOS (O Fuzil de Sniper 1x2)</div>
-      <div style="font-size:.85rem;color:var(--muted)">Estes são os times que não apenas geram cantos, eles <strong>ganham a disputa contra o adversário</strong> na grande maioria das vezes. O Fuzil letal para o mercado <em>Vencedor de Partida</em> ou Handicap Favorável Simples.</div>
-    </div>
-    
-    <div class="grid4" style="margin-bottom:2.5rem">
-      ${reis.map((t, idx) => `
-        <div class="stat-card" style="border-top:3px solid ${idx===0 ? 'var(--green)' : 'var(--bg3)'};position:relative;overflow:hidden">
-          <div style="position:absolute;top:-15px;right:-10px;font-size:4rem;opacity:0.04">👑</div>
-          <div class="label" style="font-size:1.1rem;font-weight:900;margin-bottom:.5rem;color:#fff">${idx+1}. ${t.time}</div>
-          
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
-            <span style="color:var(--muted);font-size:.70rem">🎯 Hit Rate (Ganha em Escanteios)</span>
-            <strong style="color:var(--green);font-size:1.1rem">${fmt(t.wr1x2)}%</strong>
-          </div>
-          
-          <div style="display:flex;justify-content:space-between">
-            <span style="color:var(--muted);font-size:.70rem">⚖️ Saldo Médio de Domínio (+/-)</span>
-            <strong style="color:${t.saldoMedio > 0 ? 'var(--green)' : 'var(--red)'}">${t.saldoMedio > 0 ? '+'+fmt(t.saldoMedio) : fmt(t.saldoMedio)} / jogo</strong>
-          </div>
-        </div>
-      `).join('')}
-    </div>
+      <!-- TOP MATCH WINNER -->
+      ${topMatch.length > 0 ? `
+      <div style="background:linear-gradient(135deg,rgba(52,211,103,0.1),rgba(0,0,0,0.4));border-left:4px solid var(--green);padding:1rem;border-radius:12px;margin-bottom:1.5rem;color:var(--text);line-height:1.6">
+        <div style="font-size:1.2rem;font-weight:900;color:var(--green);margin-bottom:.5rem">👑 TOP CONFRONTOS MATCH ODDS (Vitória em Cantos Casa)</div>
+        <div style="font-size:.85rem;color:var(--muted)">Estes são os times da casa com maiores multiplicadores de Domínio Tático (TMI) previstos, cruzados contra visitantes altamente vulneráveis defensivamente. Fuzil letal para apontar o <strong>Time que vai ganhar o jogo no requisito Cantos</strong>.</div>
+      </div>
+      
+      <div class="grid4" style="margin-bottom:1rem">
+        ${topMatch.map((c, idx) => `
+          <div class="stat-card" style="border-top:3px solid ${idx===0 ? 'var(--green)' : 'var(--bg3)'};position:relative;overflow:hidden">
+            <div style="position:absolute;top:-15px;right:-10px;font-size:4rem;opacity:0.04">👑</div>
+            <div class="label" style="font-size:.9rem;font-weight:900;margin-bottom:.5rem;color:#fff">${c.m} <span style="color:var(--muted);font-weight:400;font-size:.7rem">vs</span> ${c.v}</div>
+            
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+              <span style="color:var(--muted);font-size:.70rem">⚡ Domínio Tático TMI (Casa)</span>
+              <strong style="color:var(--green)">${fmt(c.p.tatica.tmiHome)}x</strong>
+            </div>
+            
+            <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+              <span style="color:var(--muted);font-size:.70rem">🛡️ Fator de Pressão Ofensiva</span>
+              <strong style="color:var(--green)">${fmt(c.p.pow.atkHomeFT)}x</strong>
+            </div>
 
-    <!-- ARMA 1 HTML (LOBISOMENS) -->
-    <div style="background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(0,0,0,0.4));border-left:4px solid var(--gold);padding:1rem;border-radius:12px;margin-bottom:1.5rem;color:var(--text);line-height:1.6">
-      <div style="font-size:1.2rem;font-weight:900;color:var(--gold);margin-bottom:.5rem">🐺 LOBISOMENS DO OVER (A Metralhadora de Volume)</div>
-      <div style="font-size:.85rem;color:var(--muted)">Estes times entram na partida e abrem o jogo completamente. A Média Própria é alta e a chance da partida romper os limites também. Base forte para mercado <strong>Acima de 9.5 Cantos GERAIS</strong>.</div>
-    </div>
-    
-    <div class="grid4">
-      ${lobisomens.map((t, idx) => `
-        <div class="stat-card" style="border-top:3px solid ${idx===0 ? 'var(--gold)' : 'var(--bg3)'};position:relative;overflow:hidden">
-          <div style="position:absolute;top:-10px;right:-10px;font-size:4rem;opacity:0.04">🐺</div>
-          <div class="label" style="font-size:1.1rem;font-weight:900;margin-bottom:.5rem;color:#fff">${idx+1}. ${t.time}</div>
-          
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
-            <span style="color:var(--muted);font-size:.70rem">👑 Média Pró (Ataque)</span>
-            <strong style="color:var(--gold)">${fmt(t.media.ft_geral)} / jogo</strong>
+            <div style="text-align:center; margin-top:.8rem">
+              <button onclick="carregarProjecaoExata('${c.m}','${c.v}')" style="background:var(--bg3);border:1px solid var(--green);color:var(--green);padding:.4rem 1rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;transition:background .2s;width:100%" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='var(--bg3)';this.style.color='var(--green)'">🔍 Analisar Jogo</button>
+            </div>
           </div>
-          
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
-            <span style="color:var(--muted);font-size:.70rem">🛡️ Hit Rate (Ataque +5.5x)</span>
-            <strong style="color:var(--gold)">${fmt(t.wr55Pro)}%</strong>
-          </div>
-          
-          <div style="display:flex;justify-content:space-between">
-            <span style="color:var(--muted);font-size:.70rem">🔥 Hit Rate (Jogo Aberto +9.5)</span>
-            <strong style="color:#fff">${fmt(t.wr95)}%</strong>
-          </div>
-        </div>
-      `).join('')}
-    </div>
-  `;
+        `).join('')}
+      </div>
+      ` : ''}
+
+      ${limit === 3 ? `
+      <div style="text-align:center;margin-top:2rem;margin-bottom:1rem;">
+        <button onclick="renderOuro(7)" style="background:transparent;border:2px solid var(--green);color:var(--green);padding:1rem 2rem;border-radius:8px;font-weight:900;font-size:.9rem;cursor:pointer;transition:all .2s;box-shadow:0 5px 20px rgba(52,211,103,0.15)" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--green)'">🔄 Buscar Mais Alvos (Expandir para Top 7)</button>
+      </div>
+      ` : `
+      <div style="text-align:center;margin-top:2rem;margin-bottom:1rem;">
+        <button onclick="renderOuro(3)" style="background:transparent;border:1px solid var(--muted);color:var(--muted);padding:.8rem 1.5rem;border-radius:8px;font-weight:600;font-size:.8rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--bg3)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--muted)'">Ver Menos (Voltar para Top 3)</button>
+      </div>
+      `}
+    `;
+  }, 400); // 400ms de "delay artificial"
+}
+
+function carregarProjecaoExata(m, v) {
+  document.getElementById('sel-mandante').value = m;
+  document.getElementById('sel-visitante').value = v;
+  showView('projecao');
 }
 
 // ══════════════════════════════════════════════════
@@ -1096,6 +1184,105 @@ function trocarLiga(liga) {
   scChatHistory = []; // limpa chat ao trocar de liga
   init();
   showView('dashboard');
+}
+
+let chartROIInstance = null;
+function desenharGraficoROI(labels, dados) {
+  const ctx = document.getElementById('chart-roi').getContext('2d');
+  if(chartROIInstance) chartROIInstance.destroy();
+  chartROIInstance = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Lucro Acumulado (u)',
+        data: dados,
+        borderColor: '#34d367',
+        backgroundColor: 'rgba(52,211,103,0.1)',
+        borderWidth: 3,
+        tension: 0.3,
+        fill: true,
+        pointBackgroundColor: '#fbbf24',
+        pointRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#6b8f79' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        y: { ticks: { color: '#6b8f79' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+      }
+    }
+  });
+}
+
+let chartTimeInstance = null;
+function desenharGraficoTendencia(time, jogos) {
+  const ctx = document.getElementById('chart-time').getContext('2d');
+  if(chartTimeInstance) chartTimeInstance.destroy();
+  
+  const labels = [];
+  const htPro = [];
+  const ftPro = [];
+  const ftSof = [];
+
+  const ultimos15 = jogos.slice(-15);
+
+  ultimos15.forEach(j => {
+    labels.push('R'+j.rodada);
+    const htM = j.mandante === time ? j.cantos.ht.m : j.cantos.ht.v;
+    const ftM = j.mandante === time ? j.cantos.ft.m : j.cantos.ft.v;
+    const ftV = j.mandante === time ? j.cantos.ft.v : j.cantos.ft.m;
+    
+    htPro.push(htM);
+    ftPro.push(ftM);
+    ftSof.push(ftV);
+  });
+
+  chartTimeInstance = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          type: 'line',
+          label: 'Cantos FT Concedidos',
+          data: ftSof,
+          borderColor: '#ef4444',
+          backgroundColor: 'rgba(239, 68, 68, 0.1)',
+          borderWidth: 2,
+          tension: 0.3,
+          fill: false,
+          pointRadius: 3
+        },
+        {
+          type: 'bar',
+          label: 'Cantos FT Pró',
+          data: ftPro,
+          backgroundColor: 'rgba(52,211,103,0.8)',
+          borderRadius: 4
+        },
+        {
+          type: 'bar',
+          label: 'Cantos HT Pró',
+          data: htPro,
+          backgroundColor: 'rgba(251, 191, 36, 0.9)',
+          borderRadius: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#e8f5ee' } } },
+      scales: {
+        x: { stacked: false, ticks: { color: '#6b8f79' }, grid: { display:false } },
+        y: { beginAtZero: true, ticks: { color: '#6b8f79', stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } }
+      }
+    }
+  });
 }
 
 function init() {
@@ -1159,6 +1346,147 @@ function salvarResultadoOficial(mandante, visitante) {
 
 let customBets = [];
 function betsKey(){ return `sniper_bets_${LIGA_ATUAL}`; }
+
+// --- CSV IMPORT/EXPORT ---
+async function exportarRelatorio() {
+  if(!customBets.length) { alert('Sua base de análises está vazia! Não há o que exportar.'); return; }
+  
+  const relatorioHTML = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Laudo Especialista em Cantos PRO</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #0a0f0d; color: #e8f5ee; padding: 3rem; margin: 0; }
+    .header { text-align: center; margin-bottom: 3rem; border-bottom: 1px solid rgba(52,211,103,0.2); padding-bottom: 2rem; }
+    h1 { color: #34d367; font-size: 2.5rem; margin: 0 0 .5rem 0; font-weight: 900; }
+    p { color: #6b8f79; font-size: 1.1rem; margin: 0; }
+    table { width: 100%; border-collapse: collapse; background: #111a14; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    th, td { padding: 1rem; text-align: center; border-bottom: 1px solid rgba(52,211,103,0.1); }
+    th { background: #162019; color: #34d367; text-transform: uppercase; font-size: .85rem; letter-spacing: 1px; }
+    td { font-size: .95rem; }
+    .th-left, .td-left { text-align: left; }
+    .status-green { color: #22c55e; font-weight: 900; background: rgba(34,197,94,0.1); padding: .2rem .6rem; border-radius: 6px; }
+    .status-red { color: #ef4444; font-weight: 900; background: rgba(239,68,68,0.1); padding: .2rem .6rem; border-radius: 6px; }
+    .status-pen { color: #fbbf24; font-weight: 900; }
+    .odd { color: #fbbf24; font-family: monospace; font-size: 1.1rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🏆 DOSSIÊ: Especialista em Cantos PRO</h1>
+    <p>Histórico Oficial de Análises & Desempenho (Memória da IA) - Exportado em ${new Date().toLocaleDateString()}</p>
+  </div>
+  <table>
+    <thead>
+      <tr><th>ID Data</th><th class="th-left">Confronto</th><th>Mercado</th><th>Odd</th><th>Invest.</th><th>Resultado</th></tr>
+    </thead>
+    <tbody>
+      ${customBets.map(b => `
+        <tr>
+          <td><div style="font-size:.8rem;color:#6b8f79">#${b.id}</div>${b.data}</td>
+          <td class="td-left"><strong style="font-size:1.1rem">${b.mandante} x ${b.visitante}</strong></td>
+          <td>${b.mercado} ${b.linha ? `<br><small style="color:#6b8f79">${b.linha}</small>` : ''}</td>
+          <td class="odd">@${b.odd.toFixed(2)}</td>
+          <td>${b.unid}U</td>
+          <td><span class="status-${b.status === 'green' ? 'green' : (b.status==='red'?'red':'pen')}">${b.status.toUpperCase()}</span></td>
+        </tr>
+      `).join('')}
+    </tbody>
+  </table>
+  <div style="text-align:center;margin-top:3rem;color:#6b8f79;font-size:.8rem">
+    Documento gerado automaticamente pelo motor do Especialista em Cantos PRO © 2026<br>
+    Dados embuteados abaixo para reimportação via Sistema.
+  </div>
+  <script id="dados-secretos-importacao" type="application/json">
+    ${JSON.stringify(customBets)}
+  <\/script>
+</body>
+</html>`;
+
+  try {
+    // Tenta usar API de File System moderma (Permite escolher pasta local)
+    if(window.showSaveFilePicker) {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: `Memoria_Motor_Cantos_${LIGA_ATUAL}_${new Date().getTime()}.html`,
+        types: [{ description: 'Relatório Harmonioso HTML (Com Dados Ocultos)', accept: { 'text/html': ['.html'] } }]
+      });
+      const writable = await handle.createWritable();
+      await writable.write(relatorioHTML);
+      await writable.close();
+      alert("✅ Documento exportado majestosamente na pasta que você escolheu!");
+    } else {
+      // Fallback
+      const blob = new Blob([relatorioHTML], { type: 'text/html;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `Memoria_Motor_Cantos_${LIGA_ATUAL}_${new Date().getTime()}.html`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      alert("✅ Documento exportado majestosamente para a pasta de downloads!");
+    }
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+async function importarDados(event) {
+  const file = event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+
+  reader.onload = function(e) {
+    const text = e.target.result;
+    let importedCount = 0;
+    
+    // Tentativa 1: Verifica se é o nosso HTML majestoso procurando o script embutido
+    const match = text.match(/<script id="dados-secretos-importacao" type="application\/json">([\s\S]*?)<\/script>/);
+    if(match && match[1]) {
+      try {
+        const jsonBets = JSON.parse(match[1].trim());
+        const existingIDs = new Set(customBets.map(b => b.id.toString()));
+        jsonBets.forEach(b => {
+          if(!existingIDs.has(b.id.toString())) {
+            customBets.push(b);
+            importedCount++;
+          }
+        });
+      } catch(err) { console.error("Erro no parser de JSON embebeded:", err); }
+    } else {
+      // Tentativa 2: Fallback pra CSV (caso o usuário tenha guardado da versão anterior)
+      const lines = text.split('\\n');
+      if(lines.length >= 2 && lines[0].includes('ID,Data')) {
+        const existingIDs = new Set(customBets.map(b => b.id.toString()));
+        for(let i=1; i<lines.length; i++) {
+            const line = lines[i].trim();
+            if(!line) continue;
+            const cols = line.split(',');
+            if(cols.length < 9) continue;
+            const bID = cols[0];
+            if(!existingIDs.has(bID)) {
+              customBets.push({
+                id: parseInt(bID) || new Date().getTime() + i, data: cols[1],
+                mandante: cols[2], visitante: cols[3], mercado: cols[4],
+                linha: cols[5], odd: parseFloat(cols[6]), unid: parseFloat(cols[7]), status: cols[8]
+              });
+              importedCount++;
+            }
+        }
+      }
+    }
+
+    if(importedCount > 0) {
+      localStorage.setItem(betsKey(), JSON.stringify(customBets));
+      renderTracker();
+      alert(`💎 Sucesso Colossal! ${importedCount} novas análises devolvidas para afinar a Inteligência Artificial!`);
+    } else {
+      alert('⚠️ O arquivo estava vazio, ausente de dados reconhecíveis ou todas as partidas já existem na memória.');
+    }
+  };
+  reader.readAsText(file);
+  event.target.value = '';
+}
+
 function carregarBets(){
   try{ const bJson = localStorage.getItem(betsKey()); customBets = bJson ? JSON.parse(bJson) : []; }catch(e){ customBets=[]; }
 }
@@ -1231,6 +1559,17 @@ function renderTracker() {
   });
   const yieldPct = totalInvestido ? (roiAcumulado / totalInvestido) * 100 : 0;
 
+  // Calculador de Winstreak e Tiro de Confetes
+  let currentStreak = 0;
+  for(let i=resolvidas.length-1; i>=0; i--) {
+    if(resolvidas[i].status === 'green') currentStreak++;
+    else break;
+  }
+  if (currentStreak >= 3 && window.lastConfettiStreak !== currentStreak) {
+    window.lastConfettiStreak = currentStreak;
+    try { confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } }); } catch(e){}
+  }
+
   const cards = [
     { label:'Entradas Totais', value: totalBets, sub:'Registradas na máquina', icon:'📋' },
     { label:'Win Rate (Acertos)', value: fmt(winrate)+'%', sub: greens + ' Greens faturados', icon:'🎯' },
@@ -1283,6 +1622,20 @@ function renderTracker() {
     </tr>`;
   }).join('');
   
+  // Gerar dados pro Gráfico ROI
+  let labelsROI = [];
+  let dataROI = [];
+  let tempROI = 0;
+  const chron = [...resolvidas].sort((a,b) => new Date(a.data) - new Date(b.data) || a.id - b.id);
+  chron.forEach((b, i) => {
+    if(b.status === 'green') tempROI += (b.odd - 1) * b.unid;
+    if(b.status === 'red') tempROI -= b.unid;
+    labelsROI.push('Aposta '+(i+1));
+    dataROI.push(tempROI.toFixed(2));
+  });
+  if(labelsROI.length === 0) { labelsROI=['Início']; dataROI=[0]; }
+  setTimeout(() => desenharGraficoROI(labelsROI, dataROI), 50);
+
   renderTrackerAnalytics();
 }
 
@@ -1341,10 +1694,11 @@ async function gerarRelatorioIA(mandante, visitante) {
 Seu objetivo primário é fornecer um Veredito Analítico para a partida de agora.
 
 REGRAS ESTRUTURAIS:
-Obrigatoriamente divida seu laudo em dois parágrafos ou seções de análise claras: "Análise do HT (1º Tempo)" e "Análise do Jogo (FT)". Indique em cada um onde estatisticamente está a melhor aposta com Valor Esperado Positivo (+EV) — seja no Handicap HT, Overs HT, Match Odds, ou no FT. A pontuação tática mudou de foco, e nós agora cruzamos os dados do Poisson para fornecer o mercado "Moneyline (Match Odds)" nos Escanteios!
+Obrigatoriamente divida seu laudo em dois parágrafos ou seções de análise claras: "Análise do HT (1º Tempo)" e "Análise do Jogo (FT)". Indique em cada um onde estatisticamente está a melhor aposta com Valor Esperado Positivo (+EV) — seja no Handicap HT, Overs HT, Match Odds, ou no FT.
+OBRIGATORIAMENTE: Ao final do seu laudo, apresente um quadro (Tabela HTML estilizada e moderna com <table>, <tr>, <th>, <td>) mostrando os últimos 5 jogos do Mandante e os últimos 5 jogos do Visitante, detalhando para cada: Data, Oponente, Cantos HT e Cantos FT. Os dados brutos para isso estão no fim do bloco de contexto.
 
 REGRAS ESTÉTICAS:
-NÃO USE ASTERISCOS Markdown. Use exclusivamente as tags HTML para destaques. Se quiser dar ênfase em dados cruciais, use <strong style="color:#34d367"> e </strong>. Se quiser usar subtítulos, use <div style="font-weight:800;color:#fca5a5;margin-top:10px;margin-bottom:5px"> TEXTO </div>. Não use tabelas aqui a menos que o app mande. Crie texto fluído.
+NÃO USE ASTERISCOS Markdown. Use exclusivamente as tags HTML para destaques. Se quiser dar ênfase em dados cruciais, use <strong style="color:#34d367"> e </strong>. Se quiser usar subtítulos, use <div style="font-weight:800;color:#fca5a5;margin-top:10px;margin-bottom:5px"> TEXTO </div>. Crie um texto fluído antes da tabela final. Não use tabelas exceto para o quadro com os 5 últimos jogos solicitado acima.
 
 Analise as Forças e Vulnerabilidades da tela e determine o melhor mercado para atuação (+EV).
 Não enrole. Seja cirúrgico.
@@ -1378,16 +1732,87 @@ ${ctx}
 
     const data = await res.json();
     let text = data.content[0].text.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+    let rawText = data.content[0].text.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
     ctr.innerHTML = `
-      <div style="font-weight:800;color:var(--text);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem">
-        <span style="font-size:1.5rem">🧠</span> Laudo Exclusivo da IA
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <div style="font-weight:800;color:var(--text);display:flex;align-items:center;gap:.5rem">
+          <span style="font-size:1.5rem">🧠</span> Laudo Exclusivo da IA
+        </div>
+        <button onclick="exportarAnaliseIA(this.dataset.txt, '${mandante}', '${visitante}')" data-txt="${rawText}" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='var(--card)';this.style.color='var(--green)'" style="background:var(--card);border:1px solid var(--green);color:var(--green);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:800;cursor:pointer;transition:all .2s">💾 Exportar Relatório Oficial (HTML)</button>
       </div>
       <div style="font-size:.9rem;line-height:1.5;color:var(--muted)">${text}</div>
     `;
 
   } catch(err) {
     ctr.innerHTML = `<div style="color:var(--red)">⚠️ Falha ao se conectar com os servidores. Verifique sua chave nas configurações do Chat.</div>`;
+  }
+}
+
+async function exportarAnaliseIA(textoHTML, m, v) {
+  const dataExt = new Date().toISOString().split('T')[0];
+  const nomeArq = `Laudo_SmartCoach_${m}_vs_${v}_${dataExt}.html`;
+  
+  const htmlContent = `
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <title>Laudo SmartCoach: ${m} vs ${v}</title>
+      <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1f13; color: #e8f5ee; padding: 2rem; display: flex; justify-content: center; }
+        .documento { background: #162019; width: 100%; max-width: 800px; padding: 3rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #34d36744; line-height: 1.6; }
+        .cabecalho { border-bottom: 2px solid #34d367; padding-bottom: 1.5rem; margin-bottom: 2rem; text-align: center; }
+        .cabecalho h1 { margin: 0; color: #34d367; font-size: 1.8rem; }
+        .cabecalho p { margin: 0.5rem 0 0; color: #6b8f79; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
+        th { background: rgba(52,211,103,0.15); color: #34d367; text-align: left; padding: 0.75rem; border: 1px solid #34d36744; text-transform: uppercase; }
+        td { padding: 0.75rem; border: 1px solid #34d36722; color: #e8f5ee; }
+        strong { color: #34d367; }
+        em { color: #fbbf24; font-style: normal; font-weight: bold; }
+      </style>
+    </head>
+    <body>
+      <div class="documento">
+        <div class="cabecalho">
+          <h1>🧠 Laudo Oficial — SmartCoach IA</h1>
+          <p>Especialista em Cantos PRO</p>
+          <div style="margin-top:1rem; font-size:1.4rem; font-weight:800; color:#fff">${m} vs ${v}</div>
+          <div style="font-size:0.8rem; color:#fca5a5; margin-top:0.4rem">Gerado em: ${dataExt}</div>
+        </div>
+        <div style="font-size:0.95rem">${textoHTML}</div>
+        <div style="margin-top: 3rem; text-align: center; font-size: 0.75rem; color: #6b8f79; border-top: 1px solid #34d36722; padding-top: 1rem;">
+          Gerado pelo Sistema EDS Especialista em Cantos | Propriedade Diferenciada do Analista
+        </div>
+      </div>
+    </body>
+    </html>
+  `;
+
+  try {
+    if (window.showSaveFilePicker) {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: nomeArq,
+        types: [{
+          description: 'Documento Web Interativo (HTML)',
+          accept: { 'text/html': ['.html'] },
+        }]
+      });
+      const writable = await handle.createWritable();
+      await writable.write(htmlContent);
+      await writable.close();
+    } else {
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = nomeArq;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(a.href);
+    }
+  } catch(err) {
+    if(err.name !== 'AbortError') alert('Erro ao salvar o arquivo: ' + err.message);
   }
 }
 
@@ -1489,6 +1914,18 @@ function getAppContext() {
       ctx += `- Overs FT: ` + p.oversFT.map(o => `${o.line}=${fmt(o.prob)}%`).join(' | ') + `\n`;
       ctx += `- ATK ${m}: ${fmt(p.pow.atkHomeFT)}x | DEF vulnerabilidade: ${fmt(p.pow.defHomeFT)}x\n`;
       ctx += `- ATK ${v}: ${fmt(p.pow.atkAwayFT)}x | DEF vulnerabilidade: ${fmt(p.pow.defAwayFT)}x\n`;
+
+      const ultimosM = jogosValidos.filter(j => j.mandante === m || j.visitante === m).slice(-5).reverse();
+      const ultimosV = jogosValidos.filter(j => j.mandante === v || j.visitante === v).slice(-5).reverse();
+      
+      ctx += `\n- ÚLTIMOS 5 JOGOS DO MANDANTE (${m}):\n`;
+      ultimosM.forEach(j => {
+        ctx += `  ${fmtDate(j.data)} - ${j.mandante} vs ${j.visitante} | Cantos HT: ${j.cantos.ht.m}x${j.cantos.ht.v} | Cantos FT: ${j.cantos.ft.m}x${j.cantos.ft.v}\n`;
+      });
+      ctx += `\n- ÚLTIMOS 5 JOGOS DO VISITANTE (${v}):\n`;
+      ultimosV.forEach(j => {
+        ctx += `  ${fmtDate(j.data)} - ${j.mandante} vs ${j.visitante} | Cantos HT: ${j.cantos.ht.m}x${j.cantos.ht.v} | Cantos FT: ${j.cantos.ft.m}x${j.cantos.ft.v}\n`;
+      });
     }
   }
 
@@ -1714,8 +2151,230 @@ function runBacktest() {
   }, 1000);
 }
 
-init();
+// ══════════════════════════════════════════════════
+//  RODADA ANALYZER (PHASE 2)
+// ══════════════════════════════════════════════════
+let jogosFuturos = [];
 
+function carregarJogosFuturos() {
+  try {
+    const raw = localStorage.getItem(`sniper_rodada_${LIGA_ATUAL}`);
+    jogosFuturos = raw ? JSON.parse(raw) : [];
+  } catch(e) { jogosFuturos = []; }
+}
+carregarJogosFuturos();
+
+function limparRodada() {
+  if(confirm("Deseja realmente limpar todos os jogos da rodada analisada?")) {
+    jogosFuturos = [];
+    localStorage.removeItem(`sniper_rodada_${LIGA_ATUAL}`);
+    renderRodada();
+  }
+}
+
+function processarTextoRodada() {
+  const txt = document.getElementById('inp-jogos-texto').value;
+  if(!txt.trim()) { alert("Cole o texto dos jogos ou suba uma imagem primeiro."); return; }
+  
+  const linhas = txt.split('\n');
+  const timesConhecidos = DADOS_2026.times;
+  let detectados = 0;
+  let timeEsperando = null;
+
+  linhas.forEach(linha => {
+    linha = linha.trim();
+    if(linha.length < 3) return;
+
+    // 1. Tenta quebrar pelo padrão clássico " x ", " vs " (Leitura Horizontal)
+    const partes = linha.split(/\s+x\s+|\s+vs\s+|\s+-\s+|\s+v\s+/i);
+    if(partes.length >= 2) {
+      const mandanteCru = partes[0].trim();
+      const visitanteCru = partes[1].trim();
+      const m = encontrarTimeMaisProximo(mandanteCru, timesConhecidos);
+      const v = encontrarTimeMaisProximo(visitanteCru, timesConhecidos);
+
+      if(m && v && m !== v) {
+        if(!jogosFuturos.find(j => j.m === m && j.v === v)) {
+          jogosFuturos.push({ m, v });
+          detectados++;
+        }
+        timeEsperando = null;
+      }
+      return; 
+    }
+
+    // 2. Leitura Vertical (OCR geralmente empilha os times um embaixo do outro)
+    // Ignora linhas de cabeçalho, dias ou odds ("Dom 16:00", "Ao Vivo")
+    if (/^[\d.,:\s]+$/.test(linha) || /^(Dom|Seg|Ter|Qua|Qui|Sex|Sab|Hoje|Aman|Ao Vivo)/i.test(linha)) return;
+
+    const t = encontrarTimeMaisProximo(linha, timesConhecidos);
+    if (t) {
+      if (!timeEsperando) {
+         timeEsperando = t;
+      } else {
+         if (timeEsperando !== t) {
+           if(!jogosFuturos.find(j => j.m === timeEsperando && j.v === t)) {
+             jogosFuturos.push({ m: timeEsperando, v: t });
+             detectados++;
+           }
+         }
+         timeEsperando = null; // Fechou um par de times, reseta a busca
+      }
+    } else {
+      // O texto parecia legível mas NÃO é de um time VÁLIDO nessa liga! 
+      // É urgente zerar a fila para não embaralhar os times de jogos diferentes.
+      if (linha.length > 3) {
+         timeEsperando = null;
+      }
+    }
+  });
+
+  if(detectados > 0) {
+    localStorage.setItem(`sniper_rodada_${LIGA_ATUAL}`, JSON.stringify(jogosFuturos));
+    alert(`🎯 Inteligência Concluída! ${detectados} jogos interceptados no texto/imagem e importados para a aba de projeção.`);
+    document.getElementById('inp-jogos-texto').value = '';
+    showView('rodada');
+  } else {
+    alert("⚠️ Nenhum padrão reconhecível de jogo foi encontrado para esta liga.\\nVerifique se os times fazem parte do campeonato " + LIGA_ATUAL);
+  }
+}
+
+async function processarImagemOCR(event) {
+  const file = event.target.files[0];
+  if(!file) return;
+  const status = document.getElementById('ocr-status');
+  if(!status) return;
+  status.innerText = "⏳ Lendo imagem com Inteligência Artificial (Aguarde...)";
+  
+  if(typeof Tesseract === 'undefined') {
+    status.innerText = "❌ Motor OCR não carregou adequadamente via internet.";
+    return;
+  }
+
+  try {
+    const worker = await Tesseract.createWorker('por');
+    const ret = await worker.recognize(file);
+    const textoDetectado = ret.data.text;
+    
+    document.getElementById('inp-jogos-texto').value += (document.getElementById('inp-jogos-texto').value ? '\n' : '') + textoDetectado;
+    status.innerText = "✅ Leitura Concluída! Você pode revisar o texto ou já clicar em Analisar.";
+    await worker.terminate();
+  } catch(e) {
+    status.innerText = "❌ Erro ao processar a imagem.";
+    console.error(e);
+  }
+  event.target.value = '';
+}
+
+function encontrarTimeMaisProximo(nomeSujo, listaTimes) {
+  let melhorScore = 0;
+  let melhorTime = null;
+  const s1 = nomeSujo.trim().toLowerCase();
+
+  // Escudo contra Lixo do OCR: Aborta busca se o texto tiver muita composição numérica
+  const numbersCount = (s1.match(/\\d/g) || []).length;
+  if(numbersCount >= 2) return null;
+
+  // Normalização manual de times padrão Bet365/Flashscore
+  const mapAliases = { 'mineiro': 'mg', 'paranaense': 'pr', 'goianiense': 'go', 'américa': 'america', 'atlético': 'atletico', 'athletico': 'athletico' };
+  let s1Norm = s1.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+  for(let key in mapAliases) s1Norm = s1Norm.replace(key, mapAliases[key]);
+
+  listaTimes.forEach(t => {
+    const s2Norm = t.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+    let score = similarity(s1Norm, s2Norm);
+    if (s2Norm.includes(s1Norm) || s1Norm.includes(s2Norm)) score += 0.35; 
+    
+    if(score > melhorScore) {
+      melhorScore = score;
+      melhorTime = t;
+    }
+  });
+  
+  // Exige pontuação de semelhança rígida (0.55) para evitar associar arbitrariamente times lixo
+  if (s1.length <= 4 && melhorScore < 0.7) return null; 
+  return melhorScore >= 0.50 ? melhorTime : null;
+}
+
+function similarity(s1, s2) {
+  let longer = s1; let shorter = s2;
+  if(s1.length < s2.length) { longer = s2; shorter = s1; }
+  let longerLength = longer.length;
+  if(longerLength === 0) return 1.0;
+  return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+}
+
+function editDistance(s1, s2) {
+  let costs = [];
+  for(let i=0; i<=s1.length; i++) {
+    let lastValue = i;
+    for(let j=0; j<=s2.length; j++) {
+      if(i==0) costs[j] = j;
+      else if(j>0) {
+        let newValue = costs[j-1];
+        if(s1.charAt(i-1) !== s2.charAt(j-1)) newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+        costs[j-1] = lastValue; lastValue = newValue;
+      }
+    }
+    if(i>0) costs[s2.length] = lastValue;
+  }
+  return costs[s2.length];
+}
+
+function carregarProjecaoExata(m, v) {
+  document.getElementById('sel-mandante').value = m;
+  document.getElementById('sel-visitante').value = v;
+  showView('projecao');
+}
+
+function renderRodada() {
+  const container = document.getElementById('wrapper-rodada');
+  if(!container) return;
+  if(!jogosFuturos.length) {
+    container.innerHTML = `<div style="grid-column:1/-1;background:var(--bg3);border:1px solid var(--border);border-left:4px solid var(--gold);padding:2rem;border-radius:12px;text-align:center;color:var(--muted)">Nenhum jogo na agenda de hoje. Importe a rodada na aba "Adicionar Jogos" para ativar a Inteligência Artificial Analítica.</div>`;
+    return;
+  }
+
+  let html = '';
+  jogosFuturos.forEach(j => {
+    const p = projecaoJogo(j.m, j.v);
+    if(!p) return;
+    
+    // Critérios Bala de Prata Exatos
+    const isOver = p.confFT >= 65 && p.expTotalFT >= 9.5;
+    const isMatch = p.pow.atkHomeFT > p.pow.defAwayFT && p.tatica.tmiHome >= 1.05;
+
+    let selos = '';
+    if(isOver) selos += `<span style="background:rgba(251,191,36,0.15);color:var(--gold);padding:.2rem .6rem;border-radius:12px;font-size:.7rem;font-weight:900;border:1px solid rgba(251,191,36,0.3)">🐺 TOP OVER</span> `;
+    if(isMatch) selos += `<span style="background:rgba(52,211,103,0.15);color:var(--green);padding:.2rem .6rem;border-radius:12px;font-size:.7rem;font-weight:900;border:1px solid rgba(52,211,103,0.3)">👑 MATCH ODDS</span>`;
+
+    html += `
+      <div class="stat-card" style="${isOver||isMatch ? 'border-color:var(--gold);transform:scale(1.02);box-shadow:0 5px 20px rgba(251,191,36,0.15)' : ''}">
+        ${selos ? `<div style="position:absolute;top:10px;right:10px;display:flex;gap:5px">${selos}</div>` : ''}
+        <div style="font-size:.75rem;color:var(--muted);margin-bottom:.5rem;text-transform:uppercase;font-weight:800;letter-spacing:1px">PRÉ-ANÁLISE RÁPIDA</div>
+        <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:.8rem;line-height:1.2">${j.m} <br><span style="color:var(--muted);font-weight:400;font-size:.8rem">vs</span> ${j.v}</div>
+        
+        <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+          <span style="color:var(--muted);font-size:.75rem">⚽ xCorners (FT)</span>
+          <strong style="color:var(--gold)">${fmt(p.expTotalFT)}</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.5rem">
+          <span style="color:var(--muted);font-size:.75rem">⚡ Pressão TMI Casa</span>
+          <strong style="color:${p.tatica.tmiHome >= 1 ? 'var(--green)' : 'var(--red)'}">${fmt(p.tatica.tmiHome)}x</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:1.5rem">
+          <span style="color:var(--muted);font-size:.75rem">🛡️ Odds Vitória Casa</span>
+          <strong style="color:var(--green)">@ ${fmt(1/p.oddsFT.home)}</strong>
+        </div>
+
+        <button onclick="carregarProjecaoExata('${j.m}','${j.v}')" style="width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.6rem;border-radius:6px;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='var(--bg3)';this.style.color='var(--text)'">🔍 ABRIR DADOS COMPLETOS</button>
+      </div>
+    `;
+  });
+  container.innerHTML = html;
+}
+
+init();
 </script>
 </body>
 </html>
