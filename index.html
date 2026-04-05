@@ -1092,6 +1092,8 @@ function trocarLiga(liga) {
   if(liga === 'ARG') DADOS_2026 = window.DADOS_ARG;
   if(liga === 'USL') DADOS_2026 = window.DADOS_USL;
   carregarCustomJogos();
+  carregarBets();
+  scChatHistory = []; // limpa chat ao trocar de liga
   init();
   showView('dashboard');
 }
@@ -1156,10 +1158,11 @@ function salvarResultadoOficial(mandante, visitante) {
 // ══════════════════════════════════════════════════
 
 let customBets = [];
-try {
-  const bJson = localStorage.getItem('sniper_bets');
-  if(bJson) customBets = JSON.parse(bJson);
-} catch(e){}
+function betsKey(){ return `sniper_bets_${LIGA_ATUAL}`; }
+function carregarBets(){
+  try{ const bJson = localStorage.getItem(betsKey()); customBets = bJson ? JSON.parse(bJson) : []; }catch(e){ customBets=[]; }
+}
+carregarBets();
 
 let trackerCurrentM = '';
 let trackerCurrentV = '';
@@ -1191,7 +1194,7 @@ function salvarBetTracker() {
     status: 'aberto' // 'aberto', 'green', 'red', 'void'
   });
 
-  localStorage.setItem('sniper_bets', JSON.stringify(customBets));
+  localStorage.setItem(betsKey(), JSON.stringify(customBets));
   document.getElementById('modal-tracker').style.display = 'none';
   alert('Entrada Salva com Sucesso! Acompanhe seus lucros na aba "Bet Tracker".');
 }
@@ -1200,7 +1203,7 @@ function atualizarStatusBet(id, status) {
   const bet = customBets.find(b => b.id === id);
   if(bet) {
     bet.status = status;
-    localStorage.setItem('sniper_bets', JSON.stringify(customBets));
+    localStorage.setItem(betsKey(), JSON.stringify(customBets));
     renderTracker();
   }
 }
@@ -1208,7 +1211,7 @@ function atualizarStatusBet(id, status) {
 function deletarBet(id) {
   if(confirm("Tem certeza que deseja apagar essa entrada do diário?")) {
     customBets = customBets.filter(b => b.id !== id);
-    localStorage.setItem('sniper_bets', JSON.stringify(customBets));
+    localStorage.setItem(betsKey(), JSON.stringify(customBets));
     renderTracker();
   }
 }
