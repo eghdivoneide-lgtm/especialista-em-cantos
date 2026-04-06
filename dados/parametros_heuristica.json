@@ -1,0 +1,10 @@
+{
+  "versoes_treino": 9,
+  "penalidades_ativas": [
+    {
+      "tipo": "SUPERIORIDADE_NUMERICA",
+      "team": "San Jose Earthquakes",
+      "ignorar_pre_live": true
+    }
+  ]
+}
