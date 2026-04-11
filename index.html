@@ -3768,6 +3768,28 @@ function getAppContext() {
     ctx += `- Nenhuma aposta registrada nesta liga.\n`;
   }
 
+  /* ── CALIBRAÇÃO TEACHER (Volvo Test — dados reais validados) ── */
+  const memQ = window.MEMORIA_QUALITATIVA && window.MEMORIA_QUALITATIVA[LIGA_ATUAL];
+  const calTeacher = memQ && memQ.calibracao_teacher;
+  if (calTeacher) {
+    ctx += `\n🏗️ CALIBRAÇÃO TEACHER — ${LIGA_ATUAL} (Volvo Test v2, Rodada ${calTeacher.rodada_validada}):\n`;
+    ctx += `- Jogos validados: ${calTeacher.jogos_validados}\n`;
+    ctx += `- Média real HT: ${calTeacher.media_cantos_ht_real} cantos | Média real FT: ${calTeacher.media_cantos_ft_real} cantos\n`;
+    ctx += `- Taxa Over 3.5 HT: ${calTeacher.taxa_over_3_5_ht}% | Over 4.5 HT: ${calTeacher.taxa_over_4_5_ht}%\n`;
+    ctx += `- Taxa Over 8.5 FT: ${calTeacher.taxa_over_8_5_ft}% | Over 9.5 FT: ${calTeacher.taxa_over_9_5_ft}% | Over 10.5 FT: ${calTeacher.taxa_over_10_5_ft}%\n`;
+    ctx += `- Variância FT: min=${calTeacher.min_cantos_ft} max=${calTeacher.max_cantos_ft} | Variância HT: min=${calTeacher.min_cantos_ht} max=${calTeacher.max_cantos_ht}\n`;
+    if (calTeacher.insights && calTeacher.insights.length) {
+      ctx += `- Insights Teacher:\n`;
+      calTeacher.insights.forEach(ins => { ctx += `    ⚡ ${ins}\n`; });
+    }
+    if (calTeacher.jogos_destaque && calTeacher.jogos_destaque.length) {
+      ctx += `- Jogos destaque (alta produção):\n`;
+      calTeacher.jogos_destaque.forEach(j => {
+        ctx += `    ${j.mandante} vs ${j.visitante} → HT: ${j.cantos_ht} | FT: ${j.cantos_ft}\n`;
+      });
+    }
+  }
+
   return ctx;
 }
 

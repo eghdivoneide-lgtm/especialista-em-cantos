@@ -1,7 +1,7 @@
 // ================================================================
 // MEMÓRIA QUALITATIVA EDS — Gerada automaticamente
 // Todas as ligas: ARG, MLS, BR, USL
-// Atualizado: 2026-04-09
+// Atualizado: 2026-04-10 (Teacher ARG + USL injetados)
 // ================================================================
 
 window.MEMORIA_QUALITATIVA = {
@@ -17,6 +17,61 @@ window.MEMORIA_QUALITATIVA = {
       "l_ftH": 4.978,
       "l_ftA": 3.522
     },
+    "calibracao_teacher": {
+    "versao": "Volvo Test v2 (Zona Neutra Poisson)",
+    "rodada_validada": 2,
+    "data_referencia": "2026-04-06",
+    "jogos_validados": 15,
+    "media_cantos_ht_real": 4.2,
+    "media_cantos_ft_real": 8.6,
+    "taxa_over_3_5_ht": 46.7,
+    "taxa_over_4_5_ht": 46.7,
+    "taxa_over_5_5_ht": 26.7,
+    "taxa_over_8_5_ft": 60.0,
+    "taxa_over_9_5_ft": 40.0,
+    "taxa_over_10_5_ft": 20.0,
+    "taxa_over_11_5_ft": 13.3,
+    "min_cantos_ft": 3,
+    "max_cantos_ft": 16,
+    "min_cantos_ht": 0,
+    "max_cantos_ht": 11,
+    "insights": [
+        "Liga equilibrada no HT: média 4.2 cantos — Over 3.5 HT acertou 46.7% dos jogos",
+        "Alta variância de cantos FT (min=3, max=16) — overdispersion severo, Poisson pode subestimar extremos"
+    ],
+    "jogos_destaque": [
+        {
+            "mandante": "Instituto",
+            "visitante": "Defensa y Justicia",
+            "cantos_ht": 7,
+            "cantos_ft": 10
+        },
+        {
+            "mandante": "Gimnasia L.P.",
+            "visitante": "Huracan",
+            "cantos_ht": 6,
+            "cantos_ft": 13
+        },
+        {
+            "mandante": "Rosario Central",
+            "visitante": "Atl. Tucuman",
+            "cantos_ht": 2,
+            "cantos_ft": 11
+        },
+        {
+            "mandante": "Aldosivi",
+            "visitante": "Estudiantes Rio Cuarto",
+            "cantos_ht": 11,
+            "cantos_ft": 16
+        },
+        {
+            "mandante": "Union de Santa Fe",
+            "visitante": "Dep. Riestra",
+            "cantos_ht": 6,
+            "cantos_ft": 9
+        }
+    ]
+},
     "perfis_times": {
       "Instituto": {
         "n_jogos": 7,
@@ -1425,6 +1480,61 @@ window.MEMORIA_QUALITATIVA = {
       "HT_mandante": 2.51,
       "HT_visitante": 1.89
     },
+    "calibracao_teacher": {
+    "versao": "Volvo Test v2 (Zona Neutra Poisson)",
+    "rodada_validada": 2,
+    "data_referencia": "2026-04-08",
+    "jogos_validados": 11,
+    "media_cantos_ht_real": 4.36,
+    "media_cantos_ft_real": 9.73,
+    "taxa_over_3_5_ht": 63.6,
+    "taxa_over_4_5_ht": 45.5,
+    "taxa_over_5_5_ht": 18.2,
+    "taxa_over_8_5_ft": 63.6,
+    "taxa_over_9_5_ft": 54.5,
+    "taxa_over_10_5_ft": 45.5,
+    "taxa_over_11_5_ft": 36.4,
+    "min_cantos_ft": 5,
+    "max_cantos_ft": 13,
+    "min_cantos_ht": 2,
+    "max_cantos_ht": 8,
+    "insights": [
+        "Liga de alto volume FT: média 9.73 cantos — Over 9.5 FT acertou 54.5% dos jogos",
+        "Over 3.5 HT com taxa elevada de 63.6% — mercado HT potencialmente subavaliado"
+    ],
+    "jogos_destaque": [
+        {
+            "mandante": "Monterey Bay",
+            "visitante": "San Antonio",
+            "cantos_ht": 8,
+            "cantos_ft": 11
+        },
+        {
+            "mandante": "Sacramento Republic",
+            "visitante": "Phoenix Rising",
+            "cantos_ht": 6,
+            "cantos_ft": 12
+        },
+        {
+            "mandante": "Colorado Springs",
+            "visitante": "Lexington",
+            "cantos_ht": 5,
+            "cantos_ft": 13
+        },
+        {
+            "mandante": "Louisville City",
+            "visitante": "Charleston",
+            "cantos_ht": 3,
+            "cantos_ft": 12
+        },
+        {
+            "mandante": "Miami FC",
+            "visitante": "Hartford Athletic",
+            "cantos_ht": 3,
+            "cantos_ft": 12
+        }
+    ]
+},
     "perfis_times": {
       "San Antonio": {
         "jogos_mandante": 3,
