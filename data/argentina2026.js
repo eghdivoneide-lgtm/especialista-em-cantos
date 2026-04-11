@@ -1,6 +1,6 @@
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina",
-  "ultimaAtualizacao": "2026-04-09",
+  "ultimaAtualizacao": "2026-04-11",
   "totalRodadas": 16,
   "times": [
     "Aldosivi",

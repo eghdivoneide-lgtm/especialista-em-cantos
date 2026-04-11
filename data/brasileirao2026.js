@@ -5,7 +5,7 @@
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
-  "ultimaAtualizacao": "2026-04-09",
+  "ultimaAtualizacao": "2026-04-11",
   "totalRodadas": 10,
   "times": [
     "Athletico-PR",
