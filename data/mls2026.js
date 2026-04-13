@@ -3238,7 +3238,7 @@ window.DADOS_MLS = {
     }
   ],
   "totalRodadas": 6,
-  "ultimaAtualizacao": "2026-04-11"
+  "ultimaAtualizacao": "2026-04-09"
 };
 
 if (typeof module !== "undefined") module.exports = { DADOS_MLS };

@@ -6,7 +6,7 @@
 
 window.DADOS_USL = {
   "temporada": "USL Championship",
-  "ultimaAtualizacao": "2026-04-11",
+  "ultimaAtualizacao": "2026-04-09",
   "totalRodadas": 7,
   "times": [
     "Birmingham",
