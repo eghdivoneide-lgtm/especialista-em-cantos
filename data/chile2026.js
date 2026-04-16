@@ -1,11 +1,8 @@
-// ============================================================
-// PRIMERA DIVISIÓN (CHILE) 2026 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-13
-// ============================================================
-
+// Primera División (Chile) 2026 — ATUALIZADO PELO AGENTE ASSISTENTE
+// 71 jogos | Atualizado: 2026-04-16
 window.DADOS_CHI = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-13",
+  "ultimaAtualizacao": "2026/04/16",
   "totalRodadas": 70,
   "times": [
     "A. Italiano",
@@ -26,39 +23,6 @@ window.DADOS_CHI = {
     "Union La Calera"
   ],
   "jogos": [
-    {
-      "match_id": "A5aaZxU6",
-      "mandante": "Colo Colo",
-      "visitante": "Huachipato",
-      "rodada": 1,
-      "data": "01.04.2026 18:00",
-      "tabela": {
-        "pos_mandante": 1,
-        "pts_mandante": null,
-        "pos_visitante": 5,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 5,
-          "v": 2
-        },
-        "ft": {
-          "m": 8,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 58,
-          "v": 42
-        },
-        "finalizacoes": {
-          "m": 12,
-          "v": 4
-        }
-      }
-    },
     {
       "match_id": "r5eCuVEL",
       "mandante": "D. Concepcion",
@@ -89,39 +53,6 @@ window.DADOS_CHI = {
         "finalizacoes": {
           "m": 8,
           "v": 8
-        }
-      }
-    },
-    {
-      "match_id": "jNiZWk7F",
-      "mandante": "Colo Colo",
-      "visitante": "Coquimbo",
-      "rodada": 3,
-      "data": "21.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 1,
-        "pts_mandante": null,
-        "pos_visitante": 9,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
-        "ft": {
-          "m": 1,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 56,
-          "v": 44
-        },
-        "finalizacoes": {
-          "m": 7,
-          "v": 5
         }
       }
     },
@@ -456,105 +387,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "2udiyaaf",
-      "mandante": "Everton",
-      "visitante": "Limache",
-      "rodada": 12,
-      "data": "31.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 11,
-        "pts_mandante": null,
-        "pos_visitante": 2,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
-        "ft": {
-          "m": 2,
-          "v": 5
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 54,
-          "v": 46
-        },
-        "finalizacoes": {
-          "m": 8,
-          "v": 8
-        }
-      }
-    },
-    {
-      "match_id": "IBd7SUGM",
-      "mandante": "Limache",
-      "visitante": "Palestino",
-      "rodada": 13,
-      "data": "26.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 2,
-        "pts_mandante": null,
-        "pos_visitante": 12,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 2
-        },
-        "ft": {
-          "m": 5,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 48,
-          "v": 52
-        },
-        "finalizacoes": {
-          "m": 16,
-          "v": 13
-        }
-      }
-    },
-    {
-      "match_id": "tzuLNoU1",
-      "mandante": "O'Higgins",
-      "visitante": "Limache",
-      "rodada": 14,
-      "data": "22.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 8,
-        "pts_mandante": null,
-        "pos_visitante": 2,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 4,
-          "v": 3
-        },
-        "ft": {
-          "m": 4,
-          "v": 8
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 15,
-          "v": 17
-        }
-      }
-    },
-    {
       "match_id": "rqKyTiVF",
       "mandante": "Cobresal",
       "visitante": "Limache",
@@ -786,138 +618,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "QoMJGvxh",
-      "mandante": "Coquimbo",
-      "visitante": "Limache",
-      "rodada": 21,
-      "data": "21.01.2026 19:00",
-      "tabela": {
-        "pos_mandante": 9,
-        "pts_mandante": null,
-        "pos_visitante": 2,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
-        "ft": {
-          "m": 4,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 39,
-          "v": 61
-        },
-        "finalizacoes": {
-          "m": 13,
-          "v": 8
-        }
-      }
-    },
-    {
-      "match_id": "b7VIZoOk",
-      "mandante": "Cobresal",
-      "visitante": "U. Catolica",
-      "rodada": 21,
-      "data": "30.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 14,
-        "pts_mandante": null,
-        "pos_visitante": 3,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 2
-        },
-        "ft": {
-          "m": 2,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 45,
-          "v": 55
-        },
-        "finalizacoes": {
-          "m": 8,
-          "v": 21
-        }
-      }
-    },
-    {
-      "match_id": "Wz8589Pj",
-      "mandante": "Nublense",
-      "visitante": "U. Catolica",
-      "rodada": 22,
-      "data": "25.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 4,
-        "pts_mandante": null,
-        "pos_visitante": 3,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 5,
-          "v": 1
-        },
-        "ft": {
-          "m": 5,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 13,
-          "v": 10
-        }
-      }
-    },
-    {
-      "match_id": "fJtDP7ak",
-      "mandante": "U. Catolica",
-      "visitante": "U. De Concepcion",
-      "rodada": 23,
-      "data": "22.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 3,
-        "pts_mandante": null,
-        "pos_visitante": 6,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 7,
-          "v": 0
-        },
-        "ft": {
-          "m": 8,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 21,
-          "v": 7
-        }
-      }
-    },
-    {
       "match_id": "zJGTUD03",
       "mandante": "U. Catolica",
       "visitante": "Everton",
@@ -1083,39 +783,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "n1ASEI64",
-      "mandante": "Huachipato",
-      "visitante": "U. Catolica",
-      "rodada": 28,
-      "data": "20.01.2026 19:00",
-      "tabela": {
-        "pos_mandante": 5,
-        "pts_mandante": null,
-        "pos_visitante": 3,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 0,
-          "v": 3
-        },
-        "ft": {
-          "m": 1,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 40,
-          "v": 60
-        },
-        "finalizacoes": {
-          "m": 8,
-          "v": 17
-        }
-      }
-    },
-    {
       "match_id": "jZnOWfml",
       "mandante": "Everton",
       "visitante": "Nublense",
@@ -1211,72 +878,6 @@ window.DADOS_CHI = {
         "finalizacoes": {
           "m": 10,
           "v": 11
-        }
-      }
-    },
-    {
-      "match_id": "WKTQXPh2",
-      "mandante": "U. De Concepcion",
-      "visitante": "Nublense",
-      "rodada": 31,
-      "data": "30.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 6,
-        "pts_mandante": null,
-        "pos_visitante": 4,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 3,
-          "v": 1
-        },
-        "ft": {
-          "m": 4,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 9,
-          "v": 18
-        }
-      }
-    },
-    {
-      "match_id": "bmesVTyS",
-      "mandante": "Cobresal",
-      "visitante": "Nublense",
-      "rodada": 32,
-      "data": "21.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 14,
-        "pts_mandante": null,
-        "pos_visitante": 4,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 3,
-          "v": 2
-        },
-        "ft": {
-          "m": 4,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 55,
-          "v": 45
-        },
-        "finalizacoes": {
-          "m": 12,
-          "v": 9
         }
       }
     },
@@ -1408,72 +1009,6 @@ window.DADOS_CHI = {
         },
         "finalizacoes": {
           "m": 17,
-          "v": 11
-        }
-      }
-    },
-    {
-      "match_id": "OUfiWCHc",
-      "mandante": "Huachipato",
-      "visitante": "Coquimbo",
-      "rodada": 36,
-      "data": "25.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 5,
-        "pts_mandante": null,
-        "pos_visitante": 9,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
-        "ft": {
-          "m": 4,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 17,
-          "v": 13
-        }
-      }
-    },
-    {
-      "match_id": "rclRYBx3",
-      "mandante": "Huachipato",
-      "visitante": "D. Concepcion",
-      "rodada": 37,
-      "data": "21.03.2026 12:00",
-      "tabela": {
-        "pos_mandante": 5,
-        "pts_mandante": null,
-        "pos_visitante": 15,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 3
-        },
-        "ft": {
-          "m": 2,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 9,
           "v": 11
         }
       }
@@ -1908,72 +1443,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "URcqwLUs",
-      "mandante": "A. Italiano",
-      "visitante": "U. De Chile",
-      "rodada": 48,
-      "data": "31.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 13,
-        "pts_mandante": null,
-        "pos_visitante": 7,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 4
-        },
-        "ft": {
-          "m": 7,
-          "v": 5
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 57,
-          "v": 43
-        },
-        "finalizacoes": {
-          "m": 12,
-          "v": 14
-        }
-      }
-    },
-    {
-      "match_id": "hSDRFiXG",
-      "mandante": "U. De Chile",
-      "visitante": "Union La Calera",
-      "rodada": 49,
-      "data": "24.03.2026 18:00",
-      "tabela": {
-        "pos_mandante": 7,
-        "pts_mandante": null,
-        "pos_visitante": 16,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 9,
-          "v": 1
-        },
-        "ft": {
-          "m": 12,
-          "v": 1
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 63,
-          "v": 37
-        },
-        "finalizacoes": {
-          "m": 25,
-          "v": 10
-        }
-      }
-    },
-    {
       "match_id": "2FLZ8Wwp",
       "mandante": "Coquimbo",
       "visitante": "U. De Chile",
@@ -2139,72 +1608,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "OSVBeTp9",
-      "mandante": "Palestino",
-      "visitante": "O'Higgins",
-      "rodada": 54,
-      "data": "30.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 12,
-        "pts_mandante": null,
-        "pos_visitante": 8,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 4,
-          "v": 1
-        },
-        "ft": {
-          "m": 7,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 56,
-          "v": 44
-        },
-        "finalizacoes": {
-          "m": 19,
-          "v": 11
-        }
-      }
-    },
-    {
-      "match_id": "M7ooLn9d",
-      "mandante": "Everton",
-      "visitante": "O'Higgins",
-      "rodada": 55,
-      "data": "26.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 11,
-        "pts_mandante": null,
-        "pos_visitante": 8,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 4,
-          "v": 1
-        },
-        "ft": {
-          "m": 8,
-          "v": 3
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 61,
-          "v": 39
-        },
-        "finalizacoes": {
-          "m": 15,
-          "v": 11
-        }
-      }
-    },
-    {
       "match_id": "zsaGL9Nk",
       "mandante": "Union La Calera",
       "visitante": "O'Higgins",
@@ -2337,39 +1740,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "SOvmu80S",
-      "mandante": "Coquimbo",
-      "visitante": "D. Concepcion",
-      "rodada": 59,
-      "data": "29.03.2026 12:00",
-      "tabela": {
-        "pos_mandante": 9,
-        "pts_mandante": null,
-        "pos_visitante": 15,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 4,
-          "v": 0
-        },
-        "ft": {
-          "m": 6,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 56,
-          "v": 44
-        },
-        "finalizacoes": {
-          "m": 16,
-          "v": 7
-        }
-      }
-    },
-    {
       "match_id": "YBTDtHbM",
       "mandante": "La Serena",
       "visitante": "Coquimbo",
@@ -2432,72 +1802,6 @@ window.DADOS_CHI = {
         "finalizacoes": {
           "m": 13,
           "v": 7
-        }
-      }
-    },
-    {
-      "match_id": "KbyusUVF",
-      "mandante": "Union La Calera",
-      "visitante": "La Serena",
-      "rodada": 62,
-      "data": "28.03.2026 18:30",
-      "tabela": {
-        "pos_mandante": 16,
-        "pts_mandante": null,
-        "pos_visitante": 10,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 3
-        },
-        "ft": {
-          "m": 6,
-          "v": 6
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 51,
-          "v": 49
-        },
-        "finalizacoes": {
-          "m": 12,
-          "v": 8
-        }
-      }
-    },
-    {
-      "match_id": "AogaUjnA",
-      "mandante": "A. Italiano",
-      "visitante": "La Serena",
-      "rodada": 63,
-      "data": "25.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 13,
-        "pts_mandante": null,
-        "pos_visitante": 10,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
-        "ft": {
-          "m": 3,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 50,
-          "v": 50
-        },
-        "finalizacoes": {
-          "m": 11,
-          "v": 15
         }
       }
     },
@@ -2601,39 +1905,6 @@ window.DADOS_CHI = {
       }
     },
     {
-      "match_id": "8tX6okM8",
-      "mandante": "Palestino",
-      "visitante": "Everton",
-      "rodada": 65,
-      "data": "23.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 12,
-        "pts_mandante": null,
-        "pos_visitante": 11,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 6,
-          "v": 1
-        },
-        "ft": {
-          "m": 11,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 55,
-          "v": 45
-        },
-        "finalizacoes": {
-          "m": 16,
-          "v": 12
-        }
-      }
-    },
-    {
       "match_id": "r9oOdTlK",
       "mandante": "A. Italiano",
       "visitante": "Everton",
@@ -2696,39 +1967,6 @@ window.DADOS_CHI = {
         "finalizacoes": {
           "m": 28,
           "v": 8
-        }
-      }
-    },
-    {
-      "match_id": "j31uB8pd",
-      "mandante": "Union La Calera",
-      "visitante": "A. Italiano",
-      "rodada": 67,
-      "data": "20.03.2026 20:30",
-      "tabela": {
-        "pos_mandante": 16,
-        "pts_mandante": null,
-        "pos_visitante": 13,
-        "pts_visitante": null
-      },
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
-        "ft": {
-          "m": 6,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 59,
-          "v": 41
-        },
-        "finalizacoes": {
-          "m": 13,
-          "v": 11
         }
       }
     },
@@ -2829,6 +2067,384 @@ window.DADOS_CHI = {
           "m": 14,
           "v": 9
         }
+      }
+    },
+    {
+      "id": "hvNuoo8b",
+      "mandante": "Union La Calera",
+      "visitante": "D. Concepcion",
+      "data": "13.04.2026 21:00",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 6
+        },
+        "ft": {
+          "m": 8,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "id": "fqFHJmh2",
+      "mandante": "Colo Colo",
+      "visitante": "Huachipato",
+      "data": "16.03.2026 20:30",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 1
+        },
+        "ft": {
+          "m": 10,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "id": "vZBpVMfn",
+      "mandante": "Everton",
+      "visitante": "Limache",
+      "data": "07.03.2026 12:00",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "id": "l4mSCuuI",
+      "mandante": "Huachipato",
+      "visitante": "Coquimbo",
+      "data": "07.03.2026 12:00",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 6
+        },
+        "ft": {
+          "m": 5,
+          "v": 10
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 16
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      }
+    },
+    {
+      "id": "UP9596YP",
+      "mandante": "Nublense",
+      "visitante": "U. Catolica",
+      "data": "01.03.2026 20:30",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      }
+    },
+    {
+      "id": "6LVy2OQa",
+      "mandante": "Palestino",
+      "visitante": "O'Higgins",
+      "data": "28.02.2026 20:30",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 2
+      }
+    },
+    {
+      "id": "z1NhbtQO",
+      "mandante": "Coquimbo",
+      "visitante": "D. Concepcion",
+      "data": "28.02.2026 12:00",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      }
+    },
+    {
+      "id": "IPjajpv1",
+      "mandante": "Union La Calera",
+      "visitante": "A. Italiano",
+      "data": "27.02.2026 20:30",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      }
+    },
+    {
+      "id": "h2L5rwU9",
+      "mandante": "Cobresal",
+      "visitante": "U. Catolica",
+      "data": "14.02.2026 20:30",
+      "rodada": null,
+      "fonte": "agente-assistente",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 7
+        },
+        "ft": {
+          "m": 5,
+          "v": 11
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 36,
+          "v": 64
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 22
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
       }
     }
   ]
