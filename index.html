@@ -4544,7 +4544,7 @@ function encontrarTimeMaisProximo(nomeSujo, listaTimes) {
   if(numbersCount >= 2) return null;
 
   // Normalização manual de times padrão Bet365/Flashscore
-  const mapAliases = { 'mineiro': 'mg', 'paranaense': 'pr', 'goianiense': 'go', 'américa': 'america', 'atlético': 'atletico', 'athletico': 'athletico' };
+  const mapAliases = { 'mineiro': 'mg', 'paranaense': 'pr', 'goianiense': 'go', 'américa': 'america', 'atlético': 'atletico', 'athletico': 'athletico', 'antiguo aluno de newells': 'newells old boys', 'clube de corridas': 'racing club', 'rio da prata': 'river plate', 'sao lourenco': 'san lorenzo', 'ginasio': 'gimnasia', 'defesa e justica': 'defensa y justicia', 'independente': 'independiente', 'quarto': 'cuarto' };
   let s1Norm = s1.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
   for(let key in mapAliases) s1Norm = s1Norm.replace(key, mapAliases[key]);
 
