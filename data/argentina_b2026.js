@@ -1,11 +1,11 @@
 // ============================================================
 // PRIMERA B NACIONAL (ARGENTINA) 2026 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-13
+// Atualizado: 2026-04-16
 // ============================================================
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-13",
+  "ultimaAtualizacao": "2026-04-16",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
@@ -77,6 +77,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 11
         }
+      },
+      "placar": "3-0",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -110,6 +118,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 7
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -143,6 +159,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 20
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -176,6 +200,14 @@ window.DADOS_ARG_B = {
           "m": 14,
           "v": 10
         }
+      },
+      "placar": "3-1",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -209,6 +241,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 3
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -242,6 +282,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 3
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -275,6 +323,14 @@ window.DADOS_ARG_B = {
           "m": 0,
           "v": 4
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -308,6 +364,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -341,6 +405,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 4
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -374,6 +446,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 10
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -407,6 +487,14 @@ window.DADOS_ARG_B = {
           "m": 14,
           "v": 6
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -440,6 +528,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 8
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -473,6 +569,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 10
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -506,6 +610,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 13
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -539,6 +651,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 7
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -572,6 +692,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 7
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -605,6 +733,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 7
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -638,6 +774,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 3
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -671,6 +815,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 2
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -704,6 +856,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 3
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -737,6 +897,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 15
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -770,6 +938,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 11
         }
+      },
+      "placar": "0-3",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -802,6 +978,13 @@ window.DADOS_ARG_B = {
         "finalizacoes": {
           "m": 7,
           "v": 7
+        }
+      },
+      "placar": "3-2",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 2
         }
       }
     },
@@ -836,6 +1019,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 11
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -869,6 +1060,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 8
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -902,6 +1101,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 8
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -935,6 +1142,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 9
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -968,6 +1183,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 10
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1001,6 +1224,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 3
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1034,6 +1265,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 4
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1067,6 +1306,14 @@ window.DADOS_ARG_B = {
           "m": 1,
           "v": 3
         }
+      },
+      "placar": "1-3",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -1100,6 +1347,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 6
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1133,6 +1388,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 8
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1166,6 +1429,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 12
         }
+      },
+      "placar": "3-0",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1199,6 +1470,14 @@ window.DADOS_ARG_B = {
           "m": 20,
           "v": 3
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1232,6 +1511,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 9
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1265,6 +1552,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 5
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1298,6 +1593,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 9
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1331,6 +1634,14 @@ window.DADOS_ARG_B = {
           "m": 21,
           "v": 12
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -1364,6 +1675,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 4
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1397,6 +1716,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 9
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1430,6 +1757,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 2
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1463,6 +1798,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 11
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1496,6 +1839,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 9
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -1529,6 +1880,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 5
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1562,6 +1921,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 6
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1595,6 +1962,14 @@ window.DADOS_ARG_B = {
           "m": 19,
           "v": 7
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1628,6 +2003,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 5
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1661,6 +2044,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 10
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -1694,6 +2085,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 12
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1727,6 +2126,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 11
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1760,6 +2167,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 5
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1793,6 +2208,14 @@ window.DADOS_ARG_B = {
           "m": 16,
           "v": 11
         }
+      },
+      "placar": "3-0",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1826,6 +2249,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 4
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1859,6 +2290,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 9
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1892,6 +2331,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 8
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1925,6 +2372,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -1958,6 +2413,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 3
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -1991,6 +2454,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 12
         }
+      },
+      "placar": "2-3",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -2024,6 +2495,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 9
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2057,6 +2536,14 @@ window.DADOS_ARG_B = {
           "m": 19,
           "v": 2
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2090,6 +2577,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 8
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2123,6 +2618,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 4
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2156,6 +2659,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 10
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2189,6 +2700,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 6
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2222,6 +2741,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 5
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2255,6 +2782,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 9
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2288,6 +2823,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 8
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2321,6 +2864,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 3
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2354,6 +2905,14 @@ window.DADOS_ARG_B = {
           "m": 16,
           "v": 8
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2387,6 +2946,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 8
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2420,6 +2987,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 7
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2453,6 +3028,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2486,6 +3069,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 9
         }
+      },
+      "placar": "0-3",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -2519,6 +3110,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 7
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2552,6 +3151,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 10
         }
+      },
+      "placar": "2-2",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2585,6 +3192,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 17
         }
+      },
+      "placar": "0-3",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -2618,6 +3233,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 9
         }
+      },
+      "placar": "2-2",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2651,6 +3274,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 5
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2684,6 +3315,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 6
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2717,6 +3356,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 5
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2750,6 +3397,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 9
         }
+      },
+      "placar": "2-2",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2783,6 +3438,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 5
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2816,6 +3479,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 4
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2849,6 +3520,14 @@ window.DADOS_ARG_B = {
           "m": 17,
           "v": 10
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2882,6 +3561,14 @@ window.DADOS_ARG_B = {
           "m": 15,
           "v": 9
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -2915,6 +3602,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 7
         }
+      },
+      "placar": "3-0",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -2948,6 +3643,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -2981,6 +3684,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 9
         }
+      },
+      "placar": "3-1",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3014,6 +3725,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 3
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3047,6 +3766,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3080,6 +3807,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 5
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -3113,6 +3848,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 3
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3146,6 +3889,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 7
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3179,6 +3930,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 4
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3212,6 +3971,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 1
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3245,6 +4012,14 @@ window.DADOS_ARG_B = {
           "m": 14,
           "v": 12
         }
+      },
+      "placar": "3-3",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -3278,6 +4053,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 11
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -3311,6 +4094,14 @@ window.DADOS_ARG_B = {
           "m": 4,
           "v": 6
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3344,6 +4135,14 @@ window.DADOS_ARG_B = {
           "m": 15,
           "v": 2
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3377,6 +4176,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 12
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3410,6 +4217,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 4
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3443,6 +4258,14 @@ window.DADOS_ARG_B = {
           "m": 15,
           "v": 10
         }
+      },
+      "placar": "3-1",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3476,6 +4299,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 7
         }
+      },
+      "placar": "0-2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -3509,6 +4340,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 8
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3542,6 +4381,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 8
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3575,6 +4422,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 6
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3608,6 +4463,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 10
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3641,6 +4504,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 9
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3674,6 +4545,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 12
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3707,6 +4586,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 4
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3740,6 +4627,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 1
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3773,6 +4668,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 11
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3806,6 +4709,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 9
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -3839,6 +4750,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 5
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3872,6 +4791,14 @@ window.DADOS_ARG_B = {
           "m": 13,
           "v": 10
         }
+      },
+      "placar": "3-0",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3905,6 +4832,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 5
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -3938,6 +4873,14 @@ window.DADOS_ARG_B = {
           "m": 2,
           "v": 7
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -3971,6 +4914,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 10
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4004,6 +4955,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 8
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4037,6 +4996,14 @@ window.DADOS_ARG_B = {
           "m": 18,
           "v": 7
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4070,6 +5037,14 @@ window.DADOS_ARG_B = {
           "m": 1,
           "v": 3
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4103,6 +5078,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 2
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4136,6 +5119,14 @@ window.DADOS_ARG_B = {
           "m": 6,
           "v": 7
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4169,6 +5160,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 2
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4202,6 +5201,14 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 5
         }
+      },
+      "placar": "0-1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4235,6 +5242,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4268,6 +5283,14 @@ window.DADOS_ARG_B = {
           "m": 12,
           "v": 4
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4301,6 +5324,14 @@ window.DADOS_ARG_B = {
           "m": 9,
           "v": 10
         }
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -4334,6 +5365,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 6
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4367,6 +5406,14 @@ window.DADOS_ARG_B = {
           "m": 7,
           "v": 14
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4400,6 +5447,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 10
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4433,6 +5488,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 8
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4466,6 +5529,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "1-1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4499,6 +5570,14 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 5
         }
+      },
+      "placar": "2-1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4532,6 +5611,14 @@ window.DADOS_ARG_B = {
           "m": 14,
           "v": 15
         }
+      },
+      "placar": "2-0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4565,6 +5652,14 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 8
         }
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4598,6 +5693,14 @@ window.DADOS_ARG_B = {
           "m": 11,
           "v": 6
         }
+      },
+      "placar": "3-1",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": null
       }
     },
     {
@@ -4631,6 +5734,14 @@ window.DADOS_ARG_B = {
           "m": 8,
           "v": 7
         }
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -4664,7 +5775,143 @@ window.DADOS_ARG_B = {
           "m": 10,
           "v": 7
         }
+      },
+      "placar": "3-1",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": null
       }
+    },
+    {
+      "match_id": "zVUPvz5M",
+      "mandante": "San Martin S.J.",
+      "visitante": "Atletico Atlanta",
+      "rodada": 8,
+      "data": "13.04.2026 21:30",
+      "tabela": {
+        "pos_mandante": null,
+        "pts_mandante": null,
+        "pos_visitante": null,
+        "pts_visitante": null
+      },
+      "placar": "1-2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ft": {
+          "m": 6,
+          "v": 7
+        },
+        "ht": {
+          "m": 3,
+          "v": 3
+        }
+      }
+    },
+    {
+      "match_id": "vqoNKEDj",
+      "mandante": "Tristan Suarez",
+      "visitante": "Atl. Rafaela",
+      "rodada": 8,
+      "data": "13.04.2026 20:00",
+      "tabela": {
+        "pos_mandante": null,
+        "pts_mandante": null,
+        "pos_visitante": null,
+        "pts_visitante": null
+      },
+      "placar": "0-0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ft": {
+          "m": 8,
+          "v": 4
+        },
+        "ht": {
+          "m": 5,
+          "v": 1
+        }
+      }
+    },
+    {
+      "match_id": "IkYlZDSq",
+      "mandante": "Nueva Chicago",
+      "visitante": "Midland",
+      "rodada": 8,
+      "data": "13.04.2026 19:00",
+      "tabela": {
+        "pos_mandante": null,
+        "pts_mandante": null,
+        "pos_visitante": null,
+        "pts_visitante": null
+      },
+      "placar": "2-2",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ft": {
+          "m": 1,
+          "v": 6
+        },
+        "ht": {
+          "m": 0,
+          "v": 5
+        }
+      }
+    },
+    {
+      "match_id": "YeymNjCE",
+      "mandante": "CA Mitre",
+      "visitante": "CA Estudiantes",
+      "rodada": 2,
+      "data": "23.02.2026 10:45",
+      "tabela": {
+        "pos_mandante": null,
+        "pts_mandante": null,
+        "pos_visitante": null,
+        "pts_visitante": null
+      },
+      "placar": "1-0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": null,
+      "stats_taticas": null
     }
   ]
 };
