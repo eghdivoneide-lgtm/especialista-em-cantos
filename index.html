@@ -369,20 +369,23 @@
       <h1>Especialista em Cantos</h1>
       <select id="seletor-liga" onchange="trocarLiga(this.value)">
         <option value="BR">🇧🇷 Brasileirão Série A</option>
-        <option value="MLS">🇺🇸 Major League Soccer</option>
+        <option value="MLS">🇺🇸 Major League Soccer ⚠</option>
         <option value="ARG">🇦🇷 Liga Profesional</option>
         <option value="USL">🇺🇸 USL Championship</option>
         <option value="BUN">🇩🇪 Bundesliga</option>
         <option value="ALM">🇦🇺 A-League</option>
         <option value="J1">🇯🇵 J1 League</option>
         <option value="CHI">🇨🇱 Primera Div. (CHI)</option>
-        <option value="ECU">🇪🇨 LigaPro (ECU)</option>
+        <option value="ECU">🇪🇨 LigaPro (ECU) ⛔</option>
         <option value="ARG_B">🇦🇷 Primera B (ARG)</option>
       </select>
     </div>
   </div>
   <span class="badge">PRO</span>
 </header>
+<!-- Banner de calibração — avisa o usuário quando a liga selecionada está
+     com desempenho suspeito nos backtests. Populado em renderLigaObservacao(). -->
+<div id="banner-liga-observacao" style="display:none;padding:.9rem 2rem;border-bottom:1px solid var(--border);font-size:.82rem;font-weight:600;line-height:1.4"></div>
 
 <nav>
   <button class="active" id="btn-dashboard" onclick="showView('dashboard')">📊 Dashboard</button>
@@ -929,6 +932,19 @@ const MOTOR_CONFIG = Object.freeze({
   CONF_MIN: 40,
   CONF_AMOSTRA_GAIN: 55,
   CONF_MAX: 95
+});
+
+// ── LIGAS EM OBSERVAÇÃO (status de calibração baseado em backtest real) ──
+// Registro central atualizado a cada lote novo em backtest/. Cada liga pode
+// ter um status: 'ok' (padrão, sem banner), 'observacao' (banner amarelo,
+// entrar só com stake reduzido) ou 'suspenso' (banner vermelho, não entrar).
+// Atualizar após rodar `node backtest/analisar.js` e confirmar tendência em
+// 2 lotes consecutivos. Ver backtest/README.md para critérios.
+const LIGAS_STATUS = Object.freeze({
+  MLS: { status: 'observacao', roi: -18.3, n: 12, desde: '2026-04-22',
+         motivo: 'Primeiro backtest (n=12) mostrou ROI -18.3% e edge -8.8%. Amostra ainda borderline; confirmar no próximo lote antes de baixar OARF.' },
+  ECU: { status: 'suspenso',   roi: -71.3, n: 6,  desde: '2026-04-22',
+         motivo: 'Backtest catastrófico (5 derrotas em 6) + usuário reportou 2º lote com mesmo padrão (HDP de favorito errando sistematicamente). Motor sem DNA Escoteiro para ECU, amostra de jogos pequena. Não apostar até recalibrar.' }
 });
 
 // DADOS_BR pode falhar ao carregar (arquivo ausente, erro de parse). Faz
@@ -3807,6 +3823,33 @@ function desenharGraficoTendencia(time, jogos) {
   });
 }
 
+function renderLigaObservacao() {
+  const el = document.getElementById('banner-liga-observacao');
+  if (!el) return;
+  const info = LIGAS_STATUS[LIGA_ATUAL];
+  if (!info) { el.style.display = 'none'; return; }
+
+  const isSuspenso = info.status === 'suspenso';
+  const bg    = isSuspenso ? 'rgba(239,68,68,0.12)'  : 'rgba(245,158,11,0.10)';
+  const borda = isSuspenso ? 'var(--red)'            : 'var(--gold)';
+  const icon  = isSuspenso ? '⛔'                    : '⚠️';
+  const titulo= isSuspenso ? 'LIGA SUSPENSA — NÃO APOSTAR' : 'LIGA EM OBSERVAÇÃO — stake reduzido';
+  // Usamos textContent para dados do motivo (vindo do JS), innerHTML só para a estrutura.
+  el.style.background    = bg;
+  el.style.borderLeft    = `4px solid ${borda}`;
+  el.style.color         = 'var(--text)';
+  el.style.display       = 'block';
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.3rem">
+      <span style="font-size:1.1rem">${icon}</span>
+      <strong style="color:${borda}">${titulo}</strong>
+      <span style="color:var(--muted);font-weight:400">ROI ${info.roi.toFixed(1)}% em n=${info.n} (desde ${info.desde})</span>
+    </div>
+    <div id="banner-liga-motivo" style="color:var(--muted);font-weight:400"></div>`;
+  // textContent previne XSS caso algum motivo venha de fonte externa no futuro.
+  document.getElementById('banner-liga-motivo').textContent = info.motivo;
+}
+
 function init() {
   // Popula selects com os times. Se a liga ativa estiver vazia (modo degradado),
   // mantém só a opção default — evita select com zero opções e NaN em downstream.
@@ -3817,6 +3860,7 @@ function init() {
     const first = el.options[0].outerHTML;
     el.innerHTML = first + times.map(t => `<option value="${t}">${t}</option>`).join('');
   });
+  renderLigaObservacao();
   renderDashboard();
 }
 
