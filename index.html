@@ -16,7 +16,7 @@
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://api.anthropic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tessdata.projectnaptha.com https://unpkg.com data: blob:; object-src 'none'; base-uri 'self'; form-action 'self';"/>
   -->
-  <title>Especialista em Cantos | MLS 2026</title>
+  <title>Especialista em Cantos | EDS 2026</title>
   <meta name="description" content="Análise avançada de escanteios. Médias HT/FT por time e projeções para jogos futuros."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <!--
@@ -832,19 +832,51 @@
   </div>
 </div>
 
-<script src="data/usl2026.js"></script>
-<script src="data/memoria_qualitativa.js"></script>
-<script src="data/argentina2026.js"></script>
-<script src="data/mls2026.js"></script>
-<script src="data/brasileirao2026.js"></script>
-<script src="data/bundesliga2026.js"></script>
-<script src="data/aleague2026.js"></script>
-<script src="data/j1league2026.js"></script>
-<script src="data/chile2026.js"></script>
-<script src="data/equador2026.js"></script>
-<script src="data/argentina_b2026.js"></script>
-<script src="data/dna_escoteiro.js"></script>
-<script src="data/escoteiro_BR.js"></script>
+<!--
+  Cache-bust: ?v= força o browser a baixar a versão nova dos datasets
+  quando o Varredor atualiza os dados. Incrementar sempre que recoletar.
+-->
+<script src="data/usl2026.js?v=2026-04-22b"></script>
+<script src="data/memoria_qualitativa.js?v=2026-04-22b"></script>
+<script src="data/argentina2026.js?v=2026-04-22b"></script>
+<script src="data/mls2026.js?v=2026-04-22b"></script>
+<script src="data/brasileirao2026.js?v=2026-04-22b"></script>
+<script src="data/bundesliga2026.js?v=2026-04-22b"></script>
+<script src="data/aleague2026.js?v=2026-04-22b"></script>
+<script src="data/j1league2026.js?v=2026-04-22b"></script>
+<script src="data/chile2026.js?v=2026-04-22b"></script>
+<script src="data/equador2026.js?v=2026-04-22b"></script>
+<script src="data/argentina_b2026.js?v=2026-04-22b"></script>
+<script src="data/dna_escoteiro.js?v=2026-04-22b"></script>
+<script src="data/escoteiro_BR.js?v=2026-04-22b"></script>
+<script>
+  // ── DIAGNÓSTICO DE BOOT ── Loga quais datasets carregaram e quais não.
+  // Executa ANTES do script principal, então capturamos o estado real de
+  // window.DADOS_* logo após os <script src> acima.
+  (function() {
+    const mapa = { BR:'DADOS_BR', MLS:'DADOS_MLS', ARG:'DADOS_ARG', USL:'DADOS_USL',
+                   BUN:'DADOS_BUN', ARG_B:'DADOS_ARG_B', CHI:'DADOS_CHI',
+                   ECU:'DADOS_ECU', J1:'DADOS_J1', ALM:'DADOS_ALM' };
+    const ok = [], falha = [];
+    for (const k in mapa) {
+      const d = window[mapa[k]];
+      if (d && Array.isArray(d.times) && d.times.length > 0) {
+        const nJogos = Array.isArray(d.jogos) ? d.jogos.length : 0;
+        const nCantos = Array.isArray(d.jogos) ? d.jogos.filter(j => j && j.cantos && j.cantos.ft).length : 0;
+        ok.push(k + ' (' + d.times.length + ' times / ' + nJogos + ' jogos / ' + nCantos + ' com cantos)');
+      } else {
+        falha.push(k + ' → ' + mapa[k] + ' ' + (d === undefined ? 'NAO DEFINIDO' : 'sem times validos'));
+      }
+    }
+    console.log('%c[EDS] Boot diagnóstico', 'color:#34d367;font-weight:bold');
+    console.log('  Ligas carregadas (' + ok.length + '):');
+    ok.forEach(l => console.log('    ✓ ' + l));
+    if (falha.length) {
+      console.warn('  Ligas com falha (' + falha.length + '):');
+      falha.forEach(l => console.warn('    ✗ ' + l));
+    }
+  })();
+</script>
 <!-- mls2025.js: arquivo de histórico sazonal — não carregado no app (usa mls2026.js) -->
 <script>
 // ══════════════════════════════════════════════════
