@@ -4,13 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--
-    Content-Security-Policy — defesa em profundidade.
-    Permite: scripts só dos CDNs pinados abaixo + inline deste arquivo;
-    estilos só desta página + Google Fonts; imagens/data; chamadas para
-    a API da Anthropic (SmartCoach) e blobs do Tesseract.
-    Se um CDN for comprometido, o SRI abaixo (integrity=) bloqueia execução.
+    Content-Security-Policy — desabilitada em 2026-04-22.
+    Motivo: o app é aberto via file:// (duplo-clique no index.html). Em file://
+    o valor 'self' tem semântica peculiar no Edge/Chrome e pode bloquear
+    recursos que deveriam funcionar (XMLHttpRequest locais, postMessage,
+    fetches do Tesseract para tessdata.projectnaptha.com), travando funções
+    inteiras como trocarLiga() sem avisar no console.
+
+    A proteção principal — SRI nos CDNs abaixo — continua ativa. Se um dia o
+    app rodar atrás de um servidor HTTP(S), reativar a CSP abaixo:
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://api.anthropic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tessdata.projectnaptha.com https://unpkg.com data: blob:; object-src 'none'; base-uri 'self'; form-action 'self';"/>
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://api.anthropic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tessdata.projectnaptha.com https://unpkg.com data: blob:; object-src 'none'; base-uri 'self'; form-action 'self';"/>
   <title>Especialista em Cantos | MLS 2026</title>
   <meta name="description" content="Análise avançada de escanteios. Médias HT/FT por time e projeções para jogos futuros."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
