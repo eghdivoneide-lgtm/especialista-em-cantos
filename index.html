@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--
+    Content-Security-Policy — defesa em profundidade.
+    Permite: scripts só dos CDNs pinados abaixo + inline deste arquivo;
+    estilos só desta página + Google Fonts; imagens/data; chamadas para
+    a API da Anthropic (SmartCoach) e blobs do Tesseract.
+    Se um CDN for comprometido, o SRI abaixo (integrity=) bloqueia execução.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://api.anthropic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tessdata.projectnaptha.com https://unpkg.com data: blob:; object-src 'none'; base-uri 'self'; form-action 'self';"/>
   <title>Especialista em Cantos | MLS 2026</title>
   <meta name="description" content="Análise avançada de escanteios. Médias HT/FT por time e projeções para jogos futuros."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!--
+    CDNs com versões pinadas + SRI (sha384). Evita que a CDN mude a lib
+    abaixo dos pés do app e bloqueia execução se o arquivo for adulterado.
+    Para atualizar: baixe o arquivo da nova versão, calcule
+    `openssl dgst -sha384 -binary ARQ | openssl base64 -A` e substitua.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"
+          integrity="sha384-dug+JxfBvklEQdJ4AYuBBAIScUz0bVN73xpy273gcAwHjb3qI0fXmuYNaNfdyYJG"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
+          integrity="sha384-HAH79XdRvHr6axVGh4xQWVCp14kcd32bNk4Xu0sHDHtFQ42n6BAM8ykvB47dGz6D"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js"
+          integrity="sha384-GJqSu7vueQ9qN0E9yLPb3Wtpd7OrgK8KmYzC8T1IysG1bcvxvIO4qtYR/D3A991F"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+          integrity="sha384-vtjasyidUo0kW94K5MXDXntzOJpQgBKXmE7e2Ga4LG0skTTLeBi97eFAXsqewJjw"
+          crossorigin="anonymous"></script>
   <style>
     :root {
       --bg:       #0a0f0d;
@@ -823,8 +845,74 @@
 // ══════════════════════════════════════════════════
 //  VARIAVEIS GLOBAIS E ENGINE DE ANÁLISE
 // ══════════════════════════════════════════════════
-let DADOS_2026 = window.DADOS_BR;
+// ── CONSTANTES DO MOTOR (magic numbers documentados, v3.3 — 2026-04-22) ──
+// Alterar estes valores reflete direto no comportamento das projeções.
+// Se calibrar de novo (backtest), atualize aqui e bump de versão do motor.
+const MOTOR_CONFIG = Object.freeze({
+  // Média ponderada exponencial: peso dos jogos antigos vs. recentes.
+  // 0.85 → jogo 5 atrás pesa ~44% de um jogo recente. Decay menor = mais reativo,
+  // porém mais ruidoso em amostras pequenas.
+  EWMA_DECAY: 0.85,
+
+  // Shrinkage bayesiano: quantos "jogos virtuais da média da liga" somam ao time.
+  // k=3 é o padrão do motor em projecaoJogo(); função shrink() ainda aceita k=5
+  // como default legado. Entre 3 e 5 o efeito sobre a projeção é ~5%.
+  SHRINKAGE_K: 3,
+
+  // Limite do Índice de Domínio Tático (TMI). Fora de [0.65, 1.65] o sinal vira
+  // outlier (um time dominante não dobra cantos, e um time dominado não some).
+  TMI_MIN: 0.65,
+  TMI_MAX: 1.65,
+
+  // Clamps do DNA Escoteiro (perfil qualitativo da liga/time).
+  // Mandante tem range mais estreito abaixo porque a home advantage já é
+  // capturada pelo prior contextual do shrinkage.
+  DNA_HOME_MIN: 0.60, DNA_HOME_MAX: 1.35,
+  DNA_AWAY_MIN: 0.50, DNA_AWAY_MAX: 1.35,
+
+  // OARF (Opponent-Adjusted Recent Form) — ajuste final ±N cantos por período
+  // para evitar que momentum recente inflame demais a projeção.
+  OARF_CLAMP_CANTOS: 2.5,
+
+  // Piso das expectativas. Evita expected=0 (que quebra o Poisson downstream).
+  // 0.3 cantos em um período é praticamente "nunca ataca" — realista como piso.
+  EXP_MIN_PERIODO: 0.3,
+
+  // Sniper Pro v2 — zona neutra em % de probabilidade. Fora dela, sinal dispara.
+  // 42%/58% = 8% de margem em torno do 50% (odd justa 1.72-2.00).
+  SNIPER_LIMIAR_OVER: 58,
+  SNIPER_LIMIAR_UNDER: 42,
+
+  // Alvos Poisson do Sniper Pro (linhas de referência).
+  SNIPER_LINHA_HT: 4,    // testa P(cantos HT > 4)
+  SNIPER_LINHA_FT: 10,   // testa P(cantos FT > 10)
+
+  // Confiança: mínimo base + ganho por amostra. Teto em 95 evita transmitir
+  // falsa certeza. Ver confFT() abaixo — há fatores de desconto adicionais.
+  CONF_MIN: 40,
+  CONF_AMOSTRA_GAIN: 55,
+  CONF_MAX: 95
+});
+
+// DADOS_BR pode falhar ao carregar (arquivo ausente, erro de parse). Faz
+// fallback para a primeira liga disponível; se nenhuma carregou, usa um stub
+// vazio para o app não explodir no boot — trocarLiga() depois avisa o usuário.
+const _LIGAS_PRIORIDADE = ['DADOS_BR','DADOS_ARG','DADOS_MLS','DADOS_USL','DADOS_BUN','DADOS_ARG_B','DADOS_CHI','DADOS_ECU','DADOS_J1','DADOS_ALM'];
+const _LIGA_KEYS        = ['BR','ARG','MLS','USL','BUN','ARG_B','CHI','ECU','J1','ALM'];
+let DADOS_2026 = null;
 let LIGA_ATUAL = 'BR';
+for (let i = 0; i < _LIGAS_PRIORIDADE.length; i++) {
+  const d = window[_LIGAS_PRIORIDADE[i]];
+  if (d && Array.isArray(d.times) && d.times.length > 0) {
+    DADOS_2026 = d;
+    LIGA_ATUAL = _LIGA_KEYS[i];
+    break;
+  }
+}
+if (!DADOS_2026) {
+  DADOS_2026 = { times: [], jogos: [], totalRodadas: 0, temporada: 'sem-dados' };
+  console.error('[EDS] Nenhum dataset de liga carregou. App em modo degradado.');
+}
 
 function avg(arr){ return arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0; }
 
@@ -963,7 +1051,7 @@ function calcularForcaCantos() {
   const mediaLigaHT = jogos.length > 0 ? totalCantosHT / jogos.length / 2 : 2.0;
 
   const forca = {};
-  const k = 3; // shrinkage leve — dá peso ao histórico geral quando amostra pequena
+  const k = MOTOR_CONFIG.SHRINKAGE_K; // shrinkage leve — dá peso ao histórico geral quando amostra pequena
 
   for (const time of times) {
     const casa = jogos.filter(j => j.mandante === time);
@@ -1342,8 +1430,8 @@ function projecaoJogo(mandante, visitante) {
       tmiHome = (m_vert * 0.75) + (v_rej * 0.25);
       tmiAway = (v_vert * 0.75) + (m_rej * 0.25);
 
-      tmiHome = Math.max(0.65, Math.min(1.65, tmiHome));
-      tmiAway = Math.max(0.65, Math.min(1.65, tmiAway));
+      tmiHome = Math.max(MOTOR_CONFIG.TMI_MIN, Math.min(MOTOR_CONFIG.TMI_MAX, tmiHome));
+      tmiAway = Math.max(MOTOR_CONFIG.TMI_MIN, Math.min(MOTOR_CONFIG.TMI_MAX, tmiAway));
   }
 
   // -------- CÁLCULO SNIPER PRO v2 (Bayesiano + EWMA + 2T Mixado) --------
@@ -1402,15 +1490,16 @@ function projecaoJogo(mandante, visitante) {
   const l_htGlobal = (l_htHome + l_htAway) / 2;
   const l_2tGlobal = (l_2tHome + l_2tAway) / 2;
 
-  const atkHomeHT = shrink(m_ht_pro, l_htGlobal, nM, 3) / (l_htHome||1);
-  const defHomeHT = shrink(m_ht_con, l_htAway,   nM, 3) / (l_htAway||1);
-  const atkAwayHT = shrink(v_ht_pro, l_htGlobal, nV, 3) / (l_htAway||1);
-  const defAwayHT = shrink(v_ht_con, l_htHome,   nV, 3) / (l_htHome||1);
+  const K_SHRINK = MOTOR_CONFIG.SHRINKAGE_K;
+  const atkHomeHT = shrink(m_ht_pro, l_htGlobal, nM, K_SHRINK) / (l_htHome||1);
+  const defHomeHT = shrink(m_ht_con, l_htAway,   nM, K_SHRINK) / (l_htAway||1);
+  const atkAwayHT = shrink(v_ht_pro, l_htGlobal, nV, K_SHRINK) / (l_htAway||1);
+  const defAwayHT = shrink(v_ht_con, l_htHome,   nV, K_SHRINK) / (l_htHome||1);
 
-  const atkHome2T = shrink(m_2t_pro, l_2tGlobal, nM, 3) / (l_2tHome||1);
-  const defHome2T = shrink(m_2t_con, l_2tAway,   nM, 3) / (l_2tAway||1);
-  const atkAway2T = shrink(v_2t_pro, l_2tGlobal, nV, 3) / (l_2tAway||1);
-  const defAway2T = shrink(v_2t_con, l_2tHome,   nV, 3) / (l_2tHome||1);
+  const atkHome2T = shrink(m_2t_pro, l_2tGlobal, nM, K_SHRINK) / (l_2tHome||1);
+  const defHome2T = shrink(m_2t_con, l_2tAway,   nM, K_SHRINK) / (l_2tAway||1);
+  const atkAway2T = shrink(v_2t_pro, l_2tGlobal, nV, K_SHRINK) / (l_2tAway||1);
+  const defAway2T = shrink(v_2t_con, l_2tHome,   nV, K_SHRINK) / (l_2tHome||1);
 
   // ── DNA ESCOTEIRO — Multiplicadores qualitativos do Escoteiro YAAKEN ──
   let dnaHome = 1.0, dnaAway = 1.0;
@@ -1444,8 +1533,8 @@ function projecaoJogo(mandante, visitante) {
       if (dV && dV.multSupressao < 1.0) {
         dnaHome *= (1 + (dV.multSupressao - 1) * 0.5);
       }
-      dnaHome = Math.max(0.60, Math.min(1.35, dnaHome));
-      dnaAway = Math.max(0.50, Math.min(1.35, dnaAway));
+      dnaHome = Math.max(MOTOR_CONFIG.DNA_HOME_MIN, Math.min(MOTOR_CONFIG.DNA_HOME_MAX, dnaHome));
+      dnaAway = Math.max(MOTOR_CONFIG.DNA_AWAY_MIN, Math.min(MOTOR_CONFIG.DNA_AWAY_MAX, dnaAway));
     }
   }
 
@@ -1482,7 +1571,7 @@ function projecaoJogo(mandante, visitante) {
   const OARF_PESO = (typeof window !== 'undefined' && typeof window.OARF_PESO_OVERRIDE === 'number')
     ? window.OARF_PESO_OVERRIDE
     : (OARF_PESO_POR_LIGA[_ligaAtiva] || 0.30);
-  const OARF_CLAMP = 2.5;
+  const OARF_CLAMP = MOTOR_CONFIG.OARF_CLAMP_CANTOS;
   let oarfDebug = null;
   let ajHomeHT = 0, ajAwayHT = 0, ajHome2T = 0, ajAway2T = 0;
 
@@ -1522,11 +1611,12 @@ function projecaoJogo(mandante, visitante) {
     }
   }
 
-  // Aplicar ajuste OARF aos valores base (clamp para não ir abaixo de 0.3)
-  const expHomeHT = Math.max(0.3, expHomeHT_base + ajHomeHT);
-  const expAwayHT = Math.max(0.3, expAwayHT_base + ajAwayHT);
-  const expHome2T = Math.max(0.3, expHome2T_base + ajHome2T);
-  const expAway2T = Math.max(0.3, expAway2T_base + ajAway2T);
+  // Aplicar ajuste OARF aos valores base (piso em MOTOR_CONFIG.EXP_MIN_PERIODO)
+  const _PISO = MOTOR_CONFIG.EXP_MIN_PERIODO;
+  const expHomeHT = Math.max(_PISO, expHomeHT_base + ajHomeHT);
+  const expAwayHT = Math.max(_PISO, expAwayHT_base + ajAwayHT);
+  const expHome2T = Math.max(_PISO, expHome2T_base + ajHome2T);
+  const expAway2T = Math.max(_PISO, expAway2T_base + ajAway2T);
 
   const expTotalHT = expHomeHT + expAwayHT;
   const expTotalFT = expTotalHT + expHome2T + expAway2T;
@@ -1537,10 +1627,40 @@ function projecaoJogo(mandante, visitante) {
   const defHomeFT = (defHomeHT + defHome2T)/2;
   const defAwayFT = (defAwayHT + defAway2T)/2;
 
-  // Confiança agora lastreada na estabilidade amostral
+  // ══════════════════════════════════════════════════
+  // CONFIANÇA v3.3 — lastreada em amostra + variância + completude dos dados
+  // ══════════════════════════════════════════════════
+  // A fórmula antiga era Math.min(95, 40 + (nMin/rodadas)*55) — só olhava
+  // quantidade de jogos. Problemas: time com 5 jogos sempre sai com ~52%,
+  // mesmo quando volátil ou sem stats táticas. Versão nova combina:
+  //   (a) AMOSTRA — ganho por nMin, igual antes;
+  //   (b) ESTABILIDADE — desconto quando dpFT é alto relativo à projeção
+  //       (time imprevisível => confiança menor);
+  //   (c) COMPLETUDE — desconto se stats táticas ausentes (TMI estimado
+  //       em fallback) ou se amostra situacional (casa/fora) < 3.
+  // DP e completude só descontam, nunca somam — no melhor cenário confiança
+  // é igual à antiga; no pior, cai proporcionalmente.
   const nMin = Math.min(m.jogos, v.jogos);
   const totalRodadasReal = Math.max(...DADOS_2026.jogos.map(j => typeof j.rodada === 'number' ? j.rodada : 0)) || 38;
-  const confFT = Math.min(95, 40 + (nMin / totalRodadasReal) * 55);
+  // (a) base por amostra
+  let confBruta = MOTOR_CONFIG.CONF_MIN + (nMin / totalRodadasReal) * MOTOR_CONFIG.CONF_AMOSTRA_GAIN;
+  // Calculamos dpFT aqui (usado adiante em incerteza) para já descontar
+  const _ftValsM = todosM.map(j => j.mandante===mandante ? j.cantos.ft.m : j.cantos.ft.v);
+  const _ftValsV = todosV.map(j => j.visitante===visitante ? j.cantos.ft.v : j.cantos.ft.m);
+  const _dpFTcomb = Math.sqrt(Math.pow(stdDev(_ftValsM),2) + Math.pow(stdDev(_ftValsV),2));
+  const _expTotalFTprov = expHomeHT + expAwayHT + expHome2T + expAway2T;
+  // (b) penalidade por volatilidade — se dp relativo > 35%, desconta até 10pp
+  const dpRel = _expTotalFTprov > 0 ? (_dpFTcomb / _expTotalFTprov) : 0;
+  const penalVariancia = Math.max(0, Math.min(10, (dpRel - 0.35) * 50));
+  // (c) penalidade por dados táticos ausentes (TMI em fallback 1.0) — 5pp
+  const penalTatica = dadosTaticosAusentes ? 5 : 0;
+  // (d) penalidade por amostra situacional escassa (casa/fora < 3) — 3pp cada
+  const penalSitM = nM < 3 ? 3 : 0;
+  const penalSitV = nV < 3 ? 3 : 0;
+  const confFT = Math.max(MOTOR_CONFIG.CONF_MIN,
+                  Math.min(MOTOR_CONFIG.CONF_MAX,
+                           confBruta - penalVariancia - penalTatica - penalSitM - penalSitV));
+  const confDebug = { bruta: +confBruta.toFixed(1), penalVariancia: +penalVariancia.toFixed(1), penalTatica, penalSitM, penalSitV };
 
   // ── LINHA DE CANTOS POR TIME (mercado individual) ──
   const expHomeFT = expHomeHT + expHome2T;
@@ -1577,19 +1697,25 @@ function projecaoJogo(mandante, visitante) {
   const reisDosCantosData = { vencedor: rcVencedor, odd: rcOdd, faixa: rcFaixa, cor: rcCor, lado: rcLado };
 
   // ── TIRO SNIPER v2 (Zona Neutra Poisson — elimina viés OVER) ──
-  // HT: Calcula P(>4) via Poisson. Zona neutra entre 42%-58%
-  let pUnderHT = 0;
-  for (let k = 0; k <= 4; k++) pUnderHT += poisson(k, expTotalHT);
-  const pOverHT = (1 - pUnderHT) * 100;
-  const sniperHT = pOverHT >= 58 ? 'OVER 4' : (pOverHT <= 42 ? 'UNDER 4' : 'NEUTRO');
-  const sniperCorHT = sniperHT === 'OVER 4' ? '#34d367' : (sniperHT === 'UNDER 4' ? '#ef4444' : '#6b8a72');
+  // Limiares e linhas referenciam MOTOR_CONFIG para facilitar recalibração.
+  const _SNI_HT = MOTOR_CONFIG.SNIPER_LINHA_HT;
+  const _SNI_FT = MOTOR_CONFIG.SNIPER_LINHA_FT;
+  const _LIM_OV = MOTOR_CONFIG.SNIPER_LIMIAR_OVER;
+  const _LIM_UN = MOTOR_CONFIG.SNIPER_LIMIAR_UNDER;
 
-  // FT: Calcula P(>10) via Poisson. Zona neutra entre 42%-58%
+  // HT: P(cantos > SNIPER_LINHA_HT) via Poisson. Fora da zona [42%, 58%] dispara.
+  let pUnderHT = 0;
+  for (let k = 0; k <= _SNI_HT; k++) pUnderHT += poisson(k, expTotalHT);
+  const pOverHT = (1 - pUnderHT) * 100;
+  const sniperHT = pOverHT >= _LIM_OV ? `OVER ${_SNI_HT}` : (pOverHT <= _LIM_UN ? `UNDER ${_SNI_HT}` : 'NEUTRO');
+  const sniperCorHT = sniperHT.startsWith('OVER') ? '#34d367' : (sniperHT.startsWith('UNDER') ? '#ef4444' : '#6b8a72');
+
+  // FT: P(cantos > SNIPER_LINHA_FT) via Poisson.
   let pUnderFT = 0;
-  for (let k = 0; k <= 10; k++) pUnderFT += poisson(k, expTotalFT);
+  for (let k = 0; k <= _SNI_FT; k++) pUnderFT += poisson(k, expTotalFT);
   const pOverFT = (1 - pUnderFT) * 100;
-  const sniperFT = pOverFT >= 58 ? 'OVER 10' : (pOverFT <= 42 ? 'UNDER 10' : 'NEUTRO');
-  const sniperCorFT = sniperFT === 'OVER 10' ? '#34d367' : (sniperFT === 'UNDER 10' ? '#ef4444' : '#6b8a72');
+  const sniperFT = pOverFT >= _LIM_OV ? `OVER ${_SNI_FT}` : (pOverFT <= _LIM_UN ? `UNDER ${_SNI_FT}` : 'NEUTRO');
+  const sniperCorFT = sniperFT.startsWith('OVER') ? '#34d367' : (sniperFT.startsWith('UNDER') ? '#ef4444' : '#6b8a72');
 
   const tiroSniperData = { ft: sniperFT, ht: sniperHT, corFT: sniperCorFT, corHT: sniperCorHT, pOverHT: +pOverHT.toFixed(1), pOverFT: +pOverFT.toFixed(1) };
 
@@ -1651,7 +1777,10 @@ function projecaoJogo(mandante, visitante) {
     // v3.2: OARF — momentum ajustado pela força do adversário
     oarf: oarfDebug,
     // Valores base (sem OARF) para auditoria
-    expBase: { homeHT: +expHomeHT_base.toFixed(2), awayHT: +expAwayHT_base.toFixed(2), home2T: +expHome2T_base.toFixed(2), away2T: +expAway2T_base.toFixed(2) }
+    expBase: { homeHT: +expHomeHT_base.toFixed(2), awayHT: +expAwayHT_base.toFixed(2), home2T: +expHome2T_base.toFixed(2), away2T: +expAway2T_base.toFixed(2) },
+    // v3.3: decomposição da confiança (auditoria). `confFT` acima já é o valor
+    // final após descontos. Se quiser ver por que a confiança caiu, olhe aqui.
+    confDebug
   };
 }
 
@@ -1659,8 +1788,18 @@ function projecaoJogo(mandante, visitante) {
 //  RENDER — DASHBOARD
 // ══════════════════════════════════════════════════
 function renderDashboard() {
-  const jogos = DADOS_2026.jogos;
-  const jogosValidos = jogos.filter(j => j.cantos !== null);
+  const jogos = (DADOS_2026 && Array.isArray(DADOS_2026.jogos)) ? DADOS_2026.jogos : [];
+  const jogosValidos = jogos.filter(j => j && j.cantos !== null && j.cantos && j.cantos.ht && j.cantos.ft);
+
+  // Guard para dataset vazio — mostra aviso em vez de painéis cheios de NaN.
+  if (jogosValidos.length === 0) {
+    const cardsEl = document.getElementById('cards-dashboard');
+    const ultEl   = document.getElementById('ultimos-jogos');
+    if (cardsEl) cardsEl.innerHTML = `<div style="grid-column:1/-1;padding:2rem;background:var(--bg3);border:1px dashed var(--border);border-radius:12px;text-align:center;color:var(--muted);font-size:.85rem"><strong style="color:var(--gold);display:block;margin-bottom:.4rem">Sem jogos registrados nesta liga.</strong>Rode o varredor-rodada.js para coletar dados antes de abrir o dashboard.</div>`;
+    if (ultEl) ultEl.innerHTML = '';
+    return;
+  }
+
   const htTotais = jogosValidos.map(j => j.cantos.ht.m + j.cantos.ht.v);
   const ftTotais = jogosValidos.map(j => j.cantos.ft.m + j.cantos.ft.v);
   const mediaHT  = avg(htTotais);
@@ -3441,18 +3580,36 @@ function carregarCustomJogos() {
 carregarCustomJogos();
 
 function trocarLiga(liga) {
-  // Guard: only switch to leagues with data loaded
+  // Guard 1: liga precisa existir no mapa
   const ligaMap = { BR: window.DADOS_BR, MLS: window.DADOS_MLS, ARG: window.DADOS_ARG, USL: window.DADOS_USL, BUN: window.DADOS_BUN, ALM: window.DADOS_ALM, J1: window.DADOS_J1, CHI: window.DADOS_CHI, ECU: window.DADOS_ECU, ARG_B: window.DADOS_ARG_B };
   const novosDados = ligaMap[liga];
-  if (!novosDados || !novosDados.times || novosDados.times.length === 0) {
-    alert(`⚠️ Liga "${liga}" ainda não tem dados carregados. Importe os dados primeiro.`);
-    // Reset selector to current league
+
+  // Guard 2: dataset precisa ter times E jogos com cantos válidos. Ligas só com
+  // metadados carregados (sem partidas coletadas) quebram getStatsTime, OARF,
+  // projecaoJogo e renderDashboard em cascata. Melhor impedir a troca.
+  const temTimes = !!(novosDados && Array.isArray(novosDados.times) && novosDados.times.length > 0);
+  const jogosComCantos = temTimes && Array.isArray(novosDados.jogos)
+    ? novosDados.jogos.filter(j => j && j.cantos && j.cantos.ft).length
+    : 0;
+
+  if (!temTimes || jogosComCantos === 0) {
+    const motivo = !temTimes
+      ? `A liga "${liga}" ainda não carregou os times (arquivo data/*.js ausente ou vazio).`
+      : `A liga "${liga}" tem ${novosDados.times.length} time(s) cadastrado(s), mas nenhum jogo com cantos registrados. O motor de projeção precisa de ao menos 1 jogo.`;
+    alert(`⚠️ Liga indisponível\n\n${motivo}\n\nRode o Agente (varredor-rodada.js) para essa liga antes de abrir esta aba.`);
     const sel = document.getElementById('seletor-liga');
     if (sel) sel.value = LIGA_ATUAL;
     return;
   }
+
   LIGA_ATUAL = liga;
   DADOS_2026 = novosDados;
+
+  // Invalida caches do motor ao trocar liga — evita recalcular com força do time
+  // antigo enquanto o novo dataset ainda está assentando.
+  _forcaCantosCache = null;
+  _forcaCantosCacheLiga = null;
+
   carregarCustomJogos();
   carregarBets();
   carregarJogosFuturos(); // ← CRÍTICO: recarrega jogos da rodada para a nova liga
@@ -3614,10 +3771,12 @@ function desenharGraficoTendencia(time, jogos) {
 }
 
 function init() {
-  // Popula selects com os times
-  const times = DADOS_2026.times.sort();
+  // Popula selects com os times. Se a liga ativa estiver vazia (modo degradado),
+  // mantém só a opção default — evita select com zero opções e NaN em downstream.
+  const times = (DADOS_2026 && Array.isArray(DADOS_2026.times)) ? [...DADOS_2026.times].sort() : [];
   ['sel-time','sel-mandante','sel-visitante'].forEach(id => {
     const el = document.getElementById(id);
+    if (!el || !el.options || !el.options.length) return;
     const first = el.options[0].outerHTML;
     el.innerHTML = first + times.map(t => `<option value="${t}">${t}</option>`).join('');
   });
