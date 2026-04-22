@@ -59,6 +59,59 @@
     nav button.active,nav button:hover{
       background:var(--glass);border-color:var(--green);color:var(--green);
     }
+    #btn-enigma.active, #btn-enigma:hover {
+      background:rgba(139,92,246,0.2) !important;border-color:#a78bfa !important;color:#a78bfa !important;
+    }
+
+    /* ── ENIGMA ── */
+    .enigma-card {
+      background:linear-gradient(135deg,rgba(22,16,42,0.95),rgba(30,20,55,0.9));
+      border:1px solid rgba(139,92,246,0.25);border-radius:16px;padding:1.4rem;
+      margin-bottom:1rem;transition:transform .2s,border-color .2s;
+      position:relative;overflow:hidden;
+    }
+    .enigma-card::before {
+      content:'';position:absolute;top:0;left:0;right:0;height:3px;
+      background:linear-gradient(90deg,#7c3aed,#a78bfa,transparent);
+    }
+    .enigma-card:hover { transform:translateY(-2px);border-color:rgba(139,92,246,0.5); }
+    .enigma-card.sinal-ativo { border-color:rgba(139,92,246,0.7);box-shadow:0 0 20px rgba(139,92,246,0.15); }
+    .enigma-card.sinal-ativo::before { background:linear-gradient(90deg,#7c3aed,#ec4899,#a78bfa); }
+    .enigma-card.sinal-watch { border-color:rgba(245,158,11,0.5); }
+    .enigma-card.sinal-watch::before { background:linear-gradient(90deg,#f59e0b,#fbbf24,transparent); }
+    .enigma-card.sinal-ruido { opacity:.55; }
+    .enigma-sde-bar {
+      width:100%;height:8px;background:rgba(255,255,255,0.07);border-radius:4px;margin:.5rem 0;overflow:hidden;
+    }
+    .enigma-sde-fill {
+      height:100%;border-radius:4px;transition:width .6s cubic-bezier(.4,0,.2,1);
+    }
+    .enigma-pill {
+      display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;font-weight:700;
+      padding:.25rem .6rem;border-radius:6px;
+    }
+    .enigma-grid { display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.8rem; }
+    .enigma-stat-row { display:flex;align-items:center;justify-content:space-between;padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:.8rem; }
+    .enigma-stat-row:last-child { border-bottom:none; }
+    .enigma-recomendar {
+      display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;
+      margin-top:1rem;padding:.8rem;background:rgba(52,211,103,0.05);border-radius:10px;border:1px solid rgba(52,211,103,0.15);
+    }
+    .enigma-linha-tag {
+      font-size:.9rem;font-weight:800;padding:.4rem .9rem;border-radius:8px;
+      background:linear-gradient(135deg,rgba(52,211,103,0.2),rgba(34,197,94,0.1));
+      border:1px solid var(--green);color:var(--green);letter-spacing:.5px;
+    }
+    .enigma-linha-tag.gold { background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(251,191,36,0.1));border-color:var(--gold);color:var(--gold); }
+    .enigma-alerta-proibido {
+      font-size:.7rem;color:#ef4444;font-weight:700;
+      display:flex;align-items:center;gap:.3rem;margin-top:.4rem;
+    }
+    .enigma-veredito-bar {
+      display:flex;align-items:center;gap:.6rem;margin:.6rem 0;
+    }
+    .enigma-team-label { font-size:.95rem;font-weight:800;color:var(--text); }
+    .enigma-vs { font-size:.7rem;color:var(--muted);font-weight:700;padding:0 .3rem; }
 
     /* ── MAIN ── */
     main{padding:1.5rem 2rem;max-width:1200px;margin:0 auto;}
@@ -316,6 +369,7 @@
   <button id="btn-teacher"   onclick="showView('teacher')">🏗️ Projeção TEACHER</button>
   <button id="btn-tracker"   onclick="showView('tracker')">📈 Bet Tracker</button>
   <button id="btn-apostas"  onclick="showView('apostas')">🎰 Apostas Reais</button>
+  <button id="btn-enigma"   onclick="showView('enigma')" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(88,28,235,0.15));border-color:rgba(139,92,246,0.4);color:#a78bfa;">🔮 ENIGMA</button>
 </nav>
 
 <main>
@@ -497,9 +551,12 @@
 
   <!-- ══════════════════ PROJEÇÃO TEACHER ══════════════════ -->
   <div id="view-teacher" class="view">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
       <div class="section-title" style="margin:0">🏗️ Projeção TEACHER (Visão Direta)</div>
-      <button onclick="exportarRodadaJSON()" style="background:linear-gradient(135deg,var(--green),var(--green2));border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(52,211,103,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">📤 Exportar Rodada JSON (TEACHER)</button>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <button onclick="exportarRelatorioTeacherVisuais()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">📊 Exportar Relatório Visual Completo</button>
+        <button onclick="exportarRodadaJSON()" style="background:linear-gradient(135deg,var(--green),var(--green2));border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(52,211,103,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">📤 Exportar Rodada JSON (TEACHER)</button>
+      </div>
     </div>
     <div id="wrapper-teacher"></div>
   </div>
@@ -518,7 +575,8 @@
     
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1rem;">
       <div class="section-title" style="margin:0;">Diário de Operações (Tabela)</div>
-      <div style="display:flex; gap: 10px;">
+      <div style="display:flex; gap: 10px; flex-wrap:wrap;">
+        <button onclick="resolverTodasApostas('tracker')" style="background:linear-gradient(135deg,#34d367,#22c55e);border:none;color:#000;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:800;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(52,211,103,0.3);" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 4px 12px rgba(52,211,103,0.5)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(52,211,103,0.3)'" title="Cruza apostas em status 'aberto' com placar/cantos reais coletados">🎯 Resolver Automaticamente</button>
         <input type="file" id="inp-import-data" style="display:none" accept=".html,.csv" onchange="importarDados(event)">
         <button onclick="document.getElementById('inp-import-data').click()" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--green)'" onmouseout="this.style.borderColor='var(--border)'">📂 Importar Dados (.html/.csv)</button>
         <button onclick="exportarRelatorio()" style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='rgba(52,211,103,0.1)';this.style.color='var(--green)'">💾 Exportar P/ Pasta Local (Documento Lindo)</button>
@@ -606,7 +664,10 @@
       <div class="grid4" id="apostas-kpis" style="margin-bottom:1.5rem"></div>
 
       <!-- Analysis Table -->
-      <div class="section-title" style="margin-bottom:.8rem">📋 Análise Individual das Apostas</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem;flex-wrap:wrap;gap:.8rem;">
+        <div class="section-title" style="margin:0">📋 Análise Individual das Apostas</div>
+        <button onclick="resolverTodasApostas('apostas')" style="background:linear-gradient(135deg,#34d367,#22c55e);border:none;color:#000;padding:.55rem 1.1rem;border-radius:7px;font-size:.78rem;font-weight:800;cursor:pointer;box-shadow:0 2px 8px rgba(52,211,103,0.3);" title="Cruza apostas em status 'aberto' com placar/cantos reais coletados pelo Monster YAAKEN">🎯 Resolver Apostas Automaticamente</button>
+      </div>
       <div style="overflow-x:auto">
         <table style="width:100%;border-collapse:collapse;font-size:.78rem">
           <thead>
@@ -631,6 +692,27 @@
         ⚙️ <strong style="color:var(--gold)">EV Modelo</strong> = calculado a partir das projeções Poisson (Bayesian v2.1 + TMI) no momento da análise. O modelo só consegue avaliar apostas onde ambos os times estão na base de dados carregada.
       </div>
     </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       ENIGMA — Scanner de Discrepância Territorial
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-enigma" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#a78bfa,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🔮 ENIGMA — Scanner de Discrepância Territorial</div>
+        <div style="font-size:.75rem;color:#7c3aed;margin-top:.3rem;font-weight:600;">Motor de Identificação de Anomalias Cantos · Base: Ranking Casa × Fora</div>
+      </div>
+      <button onclick="renderEnigma()" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);border:none;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(139,92,246,0.4);">🔄 Re-Analisar</button>
+    </div>
+    <div id="enigma-legend" style="display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem;">
+      <span style="background:rgba(139,92,246,0.15);border:1px solid rgba(139,92,246,0.4);color:#a78bfa;font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">🎯 SDE ≥ 65 = SINAL ATIVO</span>
+      <span style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);color:#f59e0b;font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">👁️ 50–64 = WATCH</span>
+      <span style="background:rgba(107,143,121,0.1);border:1px solid var(--border);color:var(--muted);font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">⬜ &lt; 50 = RUÍDO</span>
+      <span style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);color:#ef4444;font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">🚫 HDP -0.5 NUNCA</span>
+      <span style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">✅ Linhas: -1.0 / -2.0 / -2.5</span>
+    </div>
+    <div id="wrapper-enigma"></div>
   </div>
 
 </main>
@@ -735,6 +817,8 @@
 <script src="data/equador2026.js"></script>
 <script src="data/argentina_b2026.js"></script>
 <script src="data/dna_escoteiro.js"></script>
+<script src="data/escoteiro_BR.js"></script>
+<!-- mls2025.js: arquivo de histórico sazonal — não carregado no app (usa mls2026.js) -->
 <script>
 // ══════════════════════════════════════════════════
 //  VARIAVEIS GLOBAIS E ENGINE DE ANÁLISE
@@ -857,6 +941,181 @@ function getStatsTime(time) {
       chutes_c: avgWeighted(t_todos.map(j => j.mandante===time ? j.stats_taticas.finalizacoes.v : j.stats_taticas.finalizacoes.m), 0.9)
     }
   };
+}
+
+// ══════════════════════════════════════════════════
+// v3.2 — FORÇA EM CANTOS (atk/def casa/fora) por time
+// Usado pelo OARF (Opponent-Adjusted Recent Form)
+// ══════════════════════════════════════════════════
+let _forcaCantosCache = null;
+let _forcaCantosCacheLiga = null;
+function calcularForcaCantos() {
+  const ligaKey = (typeof LIGA_ATUAL !== 'undefined' ? LIGA_ATUAL : 'X') + '_' + (DADOS_2026.jogos?.length || 0);
+  if (_forcaCantosCache && _forcaCantosCacheLiga === ligaKey) return _forcaCantosCache;
+
+  const times = DADOS_2026.times || [];
+  const jogos = (DADOS_2026.jogos || []).filter(j => j.cantos !== null);
+
+  // Média da liga — cantos/jogo por time (divide total por 2 porque cada jogo tem 2 times)
+  const totalCantosFT = jogos.reduce((s, j) => s + (j.cantos.ft.m || 0) + (j.cantos.ft.v || 0), 0);
+  const totalCantosHT = jogos.reduce((s, j) => s + (j.cantos.ht.m || 0) + (j.cantos.ht.v || 0), 0);
+  const mediaLigaFT = jogos.length > 0 ? totalCantosFT / jogos.length / 2 : 5.25;
+  const mediaLigaHT = jogos.length > 0 ? totalCantosHT / jogos.length / 2 : 2.0;
+
+  const forca = {};
+  const k = 3; // shrinkage leve — dá peso ao histórico geral quando amostra pequena
+
+  for (const time of times) {
+    const casa = jogos.filter(j => j.mandante === time);
+    const fora = jogos.filter(j => j.visitante === time);
+    const nCasa = casa.length, nFora = fora.length;
+
+    // Médias brutas casa
+    const atkCasaFT_raw = nCasa > 0 ? avg(casa.map(j => j.cantos.ft.m)) : mediaLigaFT;
+    const defCasaFT_raw = nCasa > 0 ? avg(casa.map(j => j.cantos.ft.v)) : mediaLigaFT;
+    const atkCasaHT_raw = nCasa > 0 ? avg(casa.map(j => j.cantos.ht.m)) : mediaLigaHT;
+    const defCasaHT_raw = nCasa > 0 ? avg(casa.map(j => j.cantos.ht.v)) : mediaLigaHT;
+    // Médias brutas fora
+    const atkForaFT_raw = nFora > 0 ? avg(fora.map(j => j.cantos.ft.v)) : mediaLigaFT;
+    const defForaFT_raw = nFora > 0 ? avg(fora.map(j => j.cantos.ft.m)) : mediaLigaFT;
+    const atkForaHT_raw = nFora > 0 ? avg(fora.map(j => j.cantos.ht.v)) : mediaLigaHT;
+    const defForaHT_raw = nFora > 0 ? avg(fora.map(j => j.cantos.ht.m)) : mediaLigaHT;
+
+    // Aplicar shrinkage bayesiano (amostra pequena → puxa pra média da liga)
+    const atk_casa_ft = shrink(atkCasaFT_raw, mediaLigaFT, nCasa, k);
+    const def_casa_ft = shrink(defCasaFT_raw, mediaLigaFT, nCasa, k);
+    const atk_casa_ht = shrink(atkCasaHT_raw, mediaLigaHT, nCasa, k);
+    const def_casa_ht = shrink(defCasaHT_raw, mediaLigaHT, nCasa, k);
+    const atk_fora_ft = shrink(atkForaFT_raw, mediaLigaFT, nFora, k);
+    const def_fora_ft = shrink(defForaFT_raw, mediaLigaFT, nFora, k);
+    const atk_fora_ht = shrink(atkForaHT_raw, mediaLigaHT, nFora, k);
+    const def_fora_ht = shrink(defForaHT_raw, mediaLigaHT, nFora, k);
+
+    forca[time] = {
+      n_casa: nCasa, n_fora: nFora,
+      // Valores absolutos (cantos/jogo)
+      atk_casa_ft, def_casa_ft, atk_casa_ht, def_casa_ht,
+      atk_fora_ft, def_fora_ft, atk_fora_ht, def_fora_ht,
+      // Ratings normalizados (1.0 = médio da liga; >1 = acima; <1 = abaixo)
+      r_atk_casa_ft: mediaLigaFT > 0 ? atk_casa_ft / mediaLigaFT : 1,
+      r_def_casa_ft: mediaLigaFT > 0 ? def_casa_ft / mediaLigaFT : 1,
+      r_atk_fora_ft: mediaLigaFT > 0 ? atk_fora_ft / mediaLigaFT : 1,
+      r_def_fora_ft: mediaLigaFT > 0 ? def_fora_ft / mediaLigaFT : 1,
+      r_atk_casa_ht: mediaLigaHT > 0 ? atk_casa_ht / mediaLigaHT : 1,
+      r_def_casa_ht: mediaLigaHT > 0 ? def_casa_ht / mediaLigaHT : 1,
+      r_atk_fora_ht: mediaLigaHT > 0 ? atk_fora_ht / mediaLigaHT : 1,
+      r_def_fora_ht: mediaLigaHT > 0 ? def_fora_ht / mediaLigaHT : 1
+    };
+  }
+
+  _forcaCantosCache = { mediaLigaFT, mediaLigaHT, forca };
+  _forcaCantosCacheLiga = ligaKey;
+  return _forcaCantosCache;
+}
+
+// Helper: retorna o rating defensivo de um time em um contexto (casa/fora, HT/FT)
+function getForcaDefensiva(time, contexto, periodo) {
+  const fc = calcularForcaCantos();
+  if (!fc.forca[time]) return 1.0; // médio se time não achado
+  const key = `r_def_${contexto}_${periodo}`; // ex: r_def_casa_ft
+  return fc.forca[time][key] || 1.0;
+}
+
+// Helper: retorna o rating ofensivo de um time em um contexto
+function getForcaOfensiva(time, contexto, periodo) {
+  const fc = calcularForcaCantos();
+  if (!fc.forca[time]) return 1.0;
+  const key = `r_atk_${contexto}_${periodo}`;
+  return fc.forca[time][key] || 1.0;
+}
+
+// ══════════════════════════════════════════════════
+// v3.2 — OARF (Opponent-Adjusted Recent Form)
+// Calcula momentum ajustado pela força do adversário.
+// "Time venceu cantos contra adv fraco" = NORMAL
+// "Time venceu cantos contra adv forte" = SINAL REAL de momentum
+// ══════════════════════════════════════════════════
+function calcularOARF(time, contextoJogo, periodo, maxJogos = 5) {
+  // contextoJogo: 'casa' ou 'fora' — contexto em que o time vai jogar
+  // periodo: 'ht' ou 'ft'
+  const fc = calcularForcaCantos();
+  if (!fc.forca[time]) {
+    return { delta_atk: 0, delta_def: 0, n_usado: 0, detalhe: [], confianca: 0 };
+  }
+
+  const mediaLiga = periodo === 'ht' ? fc.mediaLigaHT : fc.mediaLigaFT;
+  const jogos = (DADOS_2026.jogos || []).filter(j =>
+    j.cantos && j.cantos[periodo] &&
+    (j.mandante === time || j.visitante === time)
+  );
+
+  // Ordenar cronologicamente (mais recente primeiro)
+  function toDateLocal(s) {
+    if (!s) return 0;
+    const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (iso) return new Date(iso[1] + '-' + iso[2] + '-' + iso[3]).getTime();
+    const br = s.match(/^(\d{2})\.(\d{2})\.(\d{4})/);
+    if (br) return new Date(br[3] + '-' + br[2] + '-' + br[1]).getTime();
+    return 0;
+  }
+  jogos.sort((a, b) => toDateLocal(b.data) - toDateLocal(a.data));
+
+  let sumDeltaAtk = 0, sumDeltaDef = 0, sumPeso = 0;
+  const detalhe = [];
+
+  for (let i = 0; i < Math.min(jogos.length, maxJogos); i++) {
+    const j = jogos[i];
+    const ehMandante = j.mandante === time;
+    const adversario = ehMandante ? j.visitante : j.mandante;
+    const contextoJ = ehMandante ? 'casa' : 'fora';
+    const contextoAdvJ = ehMandante ? 'fora' : 'casa'; // adv jogou fora se nosso time foi mandante
+
+    // Cantos do nosso time naquele jogo
+    const cantosPro = ehMandante ? j.cantos[periodo].m : j.cantos[periodo].v;
+    const cantosSof = ehMandante ? j.cantos[periodo].v : j.cantos[periodo].m;
+
+    // Expectativa baseada na força do adversário
+    const defAdv = getForcaDefensiva(adversario, contextoAdvJ, periodo);
+    const atkAdv = getForcaOfensiva(adversario, contextoAdvJ, periodo);
+    const esperadoPro = mediaLiga * defAdv; // o que um time médio produziria contra esse adv
+    const esperadoSof = mediaLiga * atkAdv; // o que um time médio sofreria
+
+    // Delta: positivo = overperformance
+    const deltaAtk = cantosPro - esperadoPro;
+    const deltaDef = esperadoSof - cantosSof; // inverter: positivo = defesa boa
+
+    // Peso: decay exponencial pela posição + contexto
+    // Peso posição: 1.0 (mais recente), 0.75, 0.56, 0.42, 0.32
+    const pesoPos = Math.pow(0.75, i);
+    // Peso contexto: 1.0 se mesmo contexto, 0.5 se diferente
+    const pesoCtx = (contextoJ === contextoJogo) ? 1.0 : 0.5;
+    const peso = pesoPos * pesoCtx;
+
+    sumDeltaAtk += deltaAtk * peso;
+    sumDeltaDef += deltaDef * peso;
+    sumPeso += peso;
+
+    detalhe.push({
+      data: j.data?.substring(0, 10),
+      adv: adversario,
+      ctx: contextoJ,
+      cantosPro, cantosSof,
+      esperadoPro: +esperadoPro.toFixed(2),
+      esperadoSof: +esperadoSof.toFixed(2),
+      deltaAtk: +deltaAtk.toFixed(2),
+      deltaDef: +deltaDef.toFixed(2),
+      peso: +peso.toFixed(2)
+    });
+  }
+
+  const delta_atk = sumPeso > 0 ? sumDeltaAtk / sumPeso : 0;
+  const delta_def = sumPeso > 0 ? sumDeltaDef / sumPeso : 0;
+
+  // Confiança: função do número de jogos e contexto
+  // 5 jogos no mesmo contexto → 100%; menos jogos ou contextos mistos → menor
+  const confianca = Math.min(1.0, sumPeso / 3.0); // 3.0 = peso acumulado saudável
+
+  return { delta_atk, delta_def, n_usado: detalhe.length, detalhe, confianca };
 }
 
 // ══════════════════════════════════════════════════
@@ -1191,12 +1450,85 @@ function projecaoJogo(mandante, visitante) {
   }
 
   // 3. Cantos Esperados (xCorners Real) -> Injetado com TMI + DNA!
-  const expHomeHT = atkHomeHT * defAwayHT * l_htHome * tmiHome * dnaHome;
-  const expAwayHT = atkAwayHT * defHomeHT * l_htAway * tmiAway * dnaAway;
-  const expTotalHT = expHomeHT + expAwayHT;
+  const expHomeHT_base = atkHomeHT * defAwayHT * l_htHome * tmiHome * dnaHome;
+  const expAwayHT_base = atkAwayHT * defHomeHT * l_htAway * tmiAway * dnaAway;
+  const expHome2T_base = atkHome2T * defAway2T * l_2tHome * tmiHome * dnaHome;
+  const expAway2T_base = atkAway2T * defHome2T * l_2tAway * tmiAway * dnaAway;
 
-  const expHome2T = atkHome2T * defAway2T * l_2tHome * tmiHome * dnaHome;
-  const expAway2T = atkAway2T * defHome2T * l_2tAway * tmiAway * dnaAway;
+  // ══════════════════════════════════════════════════════════════════════════
+  // v3.2 — AJUSTE OARF (Opponent-Adjusted Recent Form)
+  // Peso calibrado POR LIGA via backtest (FASE 4).
+  // Metodologia: erro médio mínimo em últimas 4 rodadas de cada liga.
+  //
+  // Ligas CALIBRADAS (pesos otimizados por backtest):
+  //   BR     → 30%   (melhoria 2.7%  — amostra 112 jogos)
+  //   MLS    → 30%   (melhoria 1.3%  — amostra 58 jogos)
+  //   BUN    → 60%   (melhoria 15.7% — amostra 36 jogos)
+  //   ARG    → 60%   (melhoria 20.4% — amostra 40 jogos)
+  //   ARG_B  → 60%   (melhoria 18.0% — amostra 54 jogos)
+  //   USL    → 60%   (melhoria 9.4%  — amostra 49 jogos)
+  //
+  // Ligas em FALLBACK (default 30% — calibrar quando dataset crescer):
+  //   CL, ECU, ALM, J1
+  //
+  // Override: window.OARF_PESO_OVERRIDE permite testar outros valores.
+  // Clamp: ±2.5 cantos/período para evitar swings extremos.
+  // ══════════════════════════════════════════════════════════════════════════
+  const OARF_PESO_POR_LIGA = {
+    BR:    0.30, MLS:   0.30, ARG:   0.60, ARG_B: 0.60, USL:   0.60,
+    BUN:   0.60, CL:    0.30, ECU:   0.30, ALM:   0.30, J1:    0.30
+  };
+  const _ligaAtiva = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : 'BR';
+  const OARF_PESO = (typeof window !== 'undefined' && typeof window.OARF_PESO_OVERRIDE === 'number')
+    ? window.OARF_PESO_OVERRIDE
+    : (OARF_PESO_POR_LIGA[_ligaAtiva] || 0.30);
+  const OARF_CLAMP = 2.5;
+  let oarfDebug = null;
+  let ajHomeHT = 0, ajAwayHT = 0, ajHome2T = 0, ajAway2T = 0;
+
+  if (typeof calcularOARF === 'function') {
+    try {
+      const oarfM_HT = calcularOARF(mandante, 'casa', 'ht');
+      const oarfV_HT = calcularOARF(visitante, 'fora', 'ht');
+      const oarfM_FT = calcularOARF(mandante, 'casa', 'ft');
+      const oarfV_FT = calcularOARF(visitante, 'fora', 'ft');
+
+      // Ajuste HT
+      // M produz mais se: Δatk_M > 0 (M ataca mais) OU Δdef_V < 0 (V defende mal)
+      const ajM_HT = (oarfM_HT.delta_atk * oarfM_HT.confianca) - (oarfV_HT.delta_def * oarfV_HT.confianca);
+      const ajV_HT = (oarfV_HT.delta_atk * oarfV_HT.confianca) - (oarfM_HT.delta_def * oarfM_HT.confianca);
+
+      // Ajuste 2T (FT - HT, proporção do 2º tempo)
+      const deltaAtkM_2T = (oarfM_FT.delta_atk - oarfM_HT.delta_atk);
+      const deltaAtkV_2T = (oarfV_FT.delta_atk - oarfV_HT.delta_atk);
+      const deltaDefM_2T = (oarfM_FT.delta_def - oarfM_HT.delta_def);
+      const deltaDefV_2T = (oarfV_FT.delta_def - oarfV_HT.delta_def);
+      const ajM_2T = (deltaAtkM_2T * oarfM_FT.confianca) - (deltaDefV_2T * oarfV_FT.confianca);
+      const ajV_2T = (deltaAtkV_2T * oarfV_FT.confianca) - (deltaDefM_2T * oarfM_FT.confianca);
+
+      // Aplicar peso e clamp
+      ajHomeHT = Math.max(-OARF_CLAMP, Math.min(OARF_CLAMP, ajM_HT * OARF_PESO));
+      ajAwayHT = Math.max(-OARF_CLAMP, Math.min(OARF_CLAMP, ajV_HT * OARF_PESO));
+      ajHome2T = Math.max(-OARF_CLAMP, Math.min(OARF_CLAMP, ajM_2T * OARF_PESO));
+      ajAway2T = Math.max(-OARF_CLAMP, Math.min(OARF_CLAMP, ajV_2T * OARF_PESO));
+
+      oarfDebug = {
+        mandante: { atk_ht: +oarfM_HT.delta_atk.toFixed(2), atk_ft: +oarfM_FT.delta_atk.toFixed(2), def_ht: +oarfM_HT.delta_def.toFixed(2), def_ft: +oarfM_FT.delta_def.toFixed(2), conf_ht: +oarfM_HT.confianca.toFixed(2), conf_ft: +oarfM_FT.confianca.toFixed(2) },
+        visitante: { atk_ht: +oarfV_HT.delta_atk.toFixed(2), atk_ft: +oarfV_FT.delta_atk.toFixed(2), def_ht: +oarfV_HT.delta_def.toFixed(2), def_ft: +oarfV_FT.delta_def.toFixed(2), conf_ht: +oarfV_HT.confianca.toFixed(2), conf_ft: +oarfV_FT.confianca.toFixed(2) },
+        ajuste: { homeHT: +ajHomeHT.toFixed(2), awayHT: +ajAwayHT.toFixed(2), home2T: +ajHome2T.toFixed(2), away2T: +ajAway2T.toFixed(2) }
+      };
+    } catch (e) {
+      // OARF é opcional — se falhar, usa apenas modelo base
+    }
+  }
+
+  // Aplicar ajuste OARF aos valores base (clamp para não ir abaixo de 0.3)
+  const expHomeHT = Math.max(0.3, expHomeHT_base + ajHomeHT);
+  const expAwayHT = Math.max(0.3, expAwayHT_base + ajAwayHT);
+  const expHome2T = Math.max(0.3, expHome2T_base + ajHome2T);
+  const expAway2T = Math.max(0.3, expAway2T_base + ajAway2T);
+
+  const expTotalHT = expHomeHT + expAwayHT;
   const expTotalFT = expTotalHT + expHome2T + expAway2T;
 
   // Derivando os agregadores FT só para carregar os marcadores visuais do Site (Escala Sniper)
@@ -1315,7 +1647,12 @@ function projecaoJogo(mandante, visitante) {
     tatica: { m_vert, v_vert, m_rej, v_rej, tmiHome, tmiAway, dadosTaticosAusentes },
     reisDosCantosData, tiroSniperData, balaDePrataData, memoria_qualitativa: qualit,
     incerteza: { dpFT, dpHT }, amostrasInsuficientes, dnaM, dnaV,
-    dnaEscoteiro: { ativo: dnaAtivo, perfilM: dnaPerfM, perfilV: dnaPerfV, multHome: dnaHome, multAway: dnaAway } };
+    dnaEscoteiro: { ativo: dnaAtivo, perfilM: dnaPerfM, perfilV: dnaPerfV, multHome: dnaHome, multAway: dnaAway },
+    // v3.2: OARF — momentum ajustado pela força do adversário
+    oarf: oarfDebug,
+    // Valores base (sem OARF) para auditoria
+    expBase: { homeHT: +expHomeHT_base.toFixed(2), awayHT: +expAwayHT_base.toFixed(2), home2T: +expHome2T_base.toFixed(2), away2T: +expAway2T_base.toFixed(2) }
+  };
 }
 
 // ══════════════════════════════════════════════════
@@ -1360,13 +1697,30 @@ function renderDashboard() {
 function jogoRow(j) {
   const htTotal = j.cantos.ht.m + j.cantos.ht.v;
   const ftTotal = j.cantos.ft.m + j.cantos.ft.v;
+
+  // Placar/Gols — exibe quando disponível, '—' se null/ausente (ligas ECU/J1/ALM pending scrape)
+  const temPlacar = j.placar && j.placar.m !== null && j.placar.m !== undefined;
+  const temGolsFT = j.gols && j.gols.ft && j.gols.ft.m !== null && j.gols.ft.m !== undefined;
+  let placarHtml = '';
+  if (temPlacar) {
+    const r = j.placar.m > j.placar.v ? 'var(--green)' : j.placar.m < j.placar.v ? 'var(--red)' : 'var(--gold)';
+    placarHtml = `<div class="td-num" style="font-weight:900;font-size:1rem;color:${r}">${j.placar.m}<span style="color:var(--muted);font-size:.75rem;margin:0 .15rem">-</span>${j.placar.v}<div style="font-size:.6rem;color:var(--muted)">PLACAR</div></div>`;
+  } else if (temGolsFT) {
+    const g = j.gols.ft;
+    const r = g.m > g.v ? 'var(--green)' : g.m < g.v ? 'var(--red)' : 'var(--gold)';
+    placarHtml = `<div class="td-num" style="font-weight:900;font-size:1rem;color:${r}">${g.m}<span style="color:var(--muted);font-size:.75rem;margin:0 .15rem">-</span>${g.v}<div style="font-size:.6rem;color:var(--muted)">GOLS FT</div></div>`;
+  } else {
+    placarHtml = `<div class="td-num" style="color:var(--muted);font-size:.8rem">—<div style="font-size:.6rem">PLACAR</div></div>`;
+  }
+
   return `
-    <div class="jogo-row">
+    <div class="jogo-row" style="grid-template-columns:60px 1fr auto auto auto auto auto;">
       <div class="jogo-data">${j.calibrado ? '<span style="color:var(--gold);font-weight:700">Calibrado</span>' : 'Rd '+j.rodada}<br>${fmtDate(j.data)}</div>
       <div class="jogo-times">
         <div class="home">🏠 ${j.mandante}</div>
         <div class="away">✈️ ${j.visitante}</div>
       </div>
+      ${placarHtml}
       <div class="td-num"><span class="badge-ht">${j.cantos.ht.m}+${j.cantos.ht.v}</span><div style="font-size:.65rem;color:var(--muted);margin-top:.2rem">HT</div></div>
       <div class="td-num"><span class="badge-ft">${j.cantos.ft.m}+${j.cantos.ft.v}</span><div style="font-size:.65rem;color:var(--muted);margin-top:.2rem">FT</div></div>
       <div class="td-num" style="color:var(--gold);font-weight:800">${htTotal}<div style="font-size:.65rem;color:var(--muted)">tot HT</div></div>
@@ -2411,6 +2765,7 @@ function showView(id) {
   if (id==='rodada') renderRodada();
   if (id==='teacher') renderTeacher();
   if (id==='apostas') renderApostasReais();
+  if (id==='enigma') renderEnigma();
 }
 
 function emptyMsg(title, sub='') {
@@ -2965,6 +3320,104 @@ function exportarRodadaJSON() {
     URL.revokeObjectURL(a.href);
     alert('✅ JSON exportado para a pasta de downloads! Pronto para importar no TEACHER.');
   }
+}
+
+async function exportarRelatorioTeacherVisuais() {
+  if(!jogosFuturos || jogosFuturos.length === 0) {
+    alert('Nenhum jogo na rodada para exportar. Importe jogos primeiro na aba "Adicionar Jogos".');
+    return;
+  }
+
+  // Pegamos a folha de estilos principal da página para usar no laudo exportado
+  const stylesObj = document.querySelector('style');
+  const baseStyles = stylesObj ? stylesObj.innerHTML : '';
+
+  // Pegamos o conteúdo renderizado da Aba TEACHER (que tem exatamente a estrutura que o usuário quer)
+  const wrapper = document.getElementById('wrapper-teacher');
+  let teacherContent = wrapper ? wrapper.innerHTML : '';
+
+  // Removemos o botão de "Abrir Análise" que não vai funcionar fora do App local
+  teacherContent = teacherContent.replace(/<div style="padding:\.6rem 1\.2rem 1rem;text-align:center">\s*<button onclick="carregarProjecaoExata[^>]+>[\s\S]*?<\/button>\s*<\/div>/g, '');
+
+  const dataExt = new Date().toISOString().split('T')[0];
+  const nomeArq = `Relatorio_Teacher_Completo_${dataExt}.html`;
+
+  const htmlContent = `
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <title>Relatório TEACHER - ${dataExt}</title>
+      <style>
+        ${baseStyles}
+        body {
+          background: var(--bg);
+          padding: 2rem;
+          color: var(--text);
+          font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+          margin: 0;
+        }
+        .container {
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        .cabecalho-export {
+          text-align: center;
+          margin-bottom: 2.5rem;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid var(--green);
+        }
+        .cabecalho-export h1 {
+          color: var(--green);
+          margin: 0;
+          font-size: 2.2rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .cabecalho-export p {
+          color: var(--muted);
+          margin-top: 0.5rem;
+          font-size: 1rem;
+        }
+        /* Garantir que .glass-panel renderize bem fora do App */
+        .glass-panel {
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: 12px;
+          overflow: hidden;
+          margin-bottom: 1.5rem;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        .conf-bar-bg { background: rgba(255,255,255,0.06); height: 6px; border-radius: 3px; overflow: hidden; }
+        .conf-bar { background: var(--green); height: 100%; border-radius: 3px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="cabecalho-export">
+          <h1>🏗️ PROJEÇÃO TEACHER VISUAL</h1>
+          <p>Relatório Consolidado da Rodada — ${jogosFuturos.length} Jogos</p>
+          <div style="font-size:0.85rem; color:#fca5a5; margin-top:0.5rem">Data: ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTimeString('pt-BR')}</div>
+        </div>
+        
+        <!-- O conteúdo importado dinamicamente exatamente igual ao site -->
+        ${teacherContent}
+        
+        <div style="text-align:center; padding-top:2rem; margin-top:2rem; border-top:1px solid var(--border); color:var(--muted); font-size:0.8rem">
+          Gerado pelo Especialista em Cantos | Baseado no algoritmo Teacher
+        </div>
+      </div>
+    </body>
+    </html>
+  `;
+
+  const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = nomeArq;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  alert('✅ Relatório Visual (HTML) exportado com formato IDÊNTICO ao App!');
 }
 
 // ══════════════════════════════════════════════════
@@ -4829,10 +5282,31 @@ function parseBancaRow(row) {
       }
     }
   } else if (mktType.includes('totais da equipe') || mktType.includes('team total')) {
-    // "Partida Totais da equipe" → cantos individuais de time (FT)
-    // selClean ex: "Belgrano Mais de 5.5" — extrair o OU ignorando o nome do time
+    // v3.1: Detecta "Totais da Equipe" — cantos individuais por time
+    // Ex: "Belgrano Mais de 5.5" → mercado: Team Total Cantos FT, time: Belgrano
     const ou = _extractOverUnder(selClean);
-    if (ou) { linhaNum = ou.num; side = ou.side; mercado = 'Total Cantos FT'; }
+    if (ou) {
+      linhaNum = ou.num;
+      side = ou.side;
+      mercado = isHT ? 'Team Total Cantos HT' : 'Team Total Cantos FT';
+      // Identificar qual time é (mandante ou visitante)
+      // Pega o nome do time do início do selClean (antes de "Mais de"/"Over"/"Menos de"/"Under")
+      const timeMatch = selClean.match(/^(.+?)\s*(?:Mais\s+de|Over|Acima\s+de|Menos\s+de|Under|Abaixo\s+de)/i);
+      if (timeMatch) {
+        const timeAposta = timeMatch[1].trim().toLowerCase();
+        const manLow = mandante.toLowerCase();
+        const visLow = visitante.toLowerCase();
+        // Match por substring (parcial) — robusto a abreviações
+        if (manLow.includes(timeAposta) || timeAposta.includes(manLow.split(' ')[0])) {
+          side = side + '_M'; // ex: 'over_M' (mandante)
+        } else if (visLow.includes(timeAposta) || timeAposta.includes(visLow.split(' ')[0])) {
+          side = side + '_V'; // ex: 'over_V' (visitante)
+        } else {
+          // Não identificou — fica genérico, vai cair no fallback
+          side = side + '_M'; // assume mandante por padrão
+        }
+      }
+    }
   } else if (mktType.includes('total')) {
     // Fallback genérico para casas que usam "total"
     const ou = _extractOverUnder(selClean);
@@ -4877,12 +5351,18 @@ const _GENERIC_TEAM_WORDS = new Set(['city','united','real','club','fc','sc','cf
 // Get teams from ALL loaded leagues (not just the active one)
 function _getAllTeamsFromAllLeagues() {
   const all = []; // { time, liga, dados }
+  // v3.1: TODAS as 10 ligas carregadas no app (antes só 5 eram reconhecidas)
   const allData = [
-    { key: 'BR',  dados: window.DADOS_BR  },
-    { key: 'MLS', dados: window.DADOS_MLS },
-    { key: 'USL', dados: window.DADOS_USL },
-    { key: 'ARG', dados: window.DADOS_ARG },
-    { key: 'BUN', dados: window.DADOS_BUN }
+    { key: 'BR',    dados: window.DADOS_BR    },
+    { key: 'MLS',   dados: window.DADOS_MLS   },
+    { key: 'USL',   dados: window.DADOS_USL   },
+    { key: 'ARG',   dados: window.DADOS_ARG   },
+    { key: 'ARG_B', dados: window.DADOS_ARG_B },
+    { key: 'BUN',   dados: window.DADOS_BUN   },
+    { key: 'CL',    dados: window.DADOS_CHI   },
+    { key: 'ECU',   dados: window.DADOS_ECU   },
+    { key: 'ALM',   dados: window.DADOS_ALM   },
+    { key: 'J1',    dados: window.DADOS_J1    }
   ];
   allData.forEach(({ key, dados }) => {
     if (!dados || !dados.times) return;
@@ -4910,8 +5390,9 @@ function _fuzzyMatchTeam(name) {
     if (match) return match;
   }
 
-  // 3. Significant word match: ignore generic words, require length >= 6
-  const sigWords = nameLow.split(/\s+/).filter(w => w.length >= 6 && !_GENERIC_TEAM_WORDS.has(w));
+  // 3. Significant word match: ignore generic words, require length >= 5
+  // v3.1: baixado de 6 para 5 para cobrir times como "Urawa" (Urawa Reds)
+  const sigWords = nameLow.split(/\s+/).filter(w => w.length >= 5 && !_GENERIC_TEAM_WORDS.has(w));
   for (const word of sigWords) {
     match = allTeamNames.find(t => t.toLowerCase().includes(word));
     if (match) return match;
@@ -5004,11 +5485,361 @@ function calcEVModelBet(bet) {
     prob = pW + pP * 0.5;
     const evAH = pW * (bet.odd - 1) - pL;
     return { prob, ev: evAH, matchedM: m, matchedV: v, proj: p };
+  } else if (bet.mercado === 'Team Total Cantos FT' && linha !== null) {
+    // v3.1: Cantos individuais de time no FT
+    // bet.side: 'over_M' / 'under_M' / 'over_V' / 'under_V'
+    const isMandante = bet.side.endsWith('_M');
+    const baseSide = bet.side.replace(/_[MV]$/, '');
+    const lambda = isMandante ? p.expHomeFT : p.expAwayFT;
+    const calc = getOvers(lambda, [linha]);
+    const pOver = calc[0].prob / 100;
+    const isWhole = Math.abs(linha - Math.round(linha)) < 0.001;
+    if (isWhole) {
+      const pPush = poisson(Math.round(linha), lambda);
+      const pUnder = 1 - pOver - pPush;
+      const pW = baseSide === 'over' ? pOver : pUnder;
+      const pL = baseSide === 'over' ? pUnder : pOver;
+      prob = pW + pPush * 0.5;
+      const ev = pW * (bet.odd - 1) - pL;
+      return { prob, ev, matchedM: m, matchedV: v, proj: p, time: isMandante ? m : v };
+    } else {
+      prob = baseSide === 'over' ? pOver : 1 - pOver;
+    }
+  } else if (bet.mercado === 'Team Total Cantos HT' && linha !== null) {
+    // v3.1: Cantos individuais de time no HT
+    const isMandante = bet.side.endsWith('_M');
+    const baseSide = bet.side.replace(/_[MV]$/, '');
+    const lambda = isMandante ? p.expHomeHT : p.expAwayHT;
+    const calc = getOvers(lambda, [linha]);
+    const pOver = calc[0].prob / 100;
+    const isWhole = Math.abs(linha - Math.round(linha)) < 0.001;
+    if (isWhole) {
+      const pPush = poisson(Math.round(linha), lambda);
+      const pUnder = 1 - pOver - pPush;
+      const pW = baseSide === 'over' ? pOver : pUnder;
+      const pL = baseSide === 'over' ? pUnder : pOver;
+      prob = pW + pPush * 0.5;
+      const ev = pW * (bet.odd - 1) - pL;
+      return { prob, ev, matchedM: m, matchedV: v, proj: p, time: isMandante ? m : v };
+    } else {
+      prob = baseSide === 'over' ? pOver : 1 - pOver;
+    }
   }
 
   // EV para O/U (sem push em casas BR/EU style)
   const ev = prob !== null ? (prob * (bet.odd - 1)) - (1 - prob) : null;
   return { prob, ev, matchedM: m, matchedV: v, proj: p };
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// v3.1: RESOLUÇÃO AUTOMÁTICA DE APOSTAS — MISSÃO 2
+// Cruza apostas em status 'aberto' com DADOS_XX.jogos (placar+cantos reais)
+// e marca GREEN/RED/VOID automaticamente.
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Busca o jogo correspondente à aposta no dataset (qualquer liga carregada)
+function _findGameDataForBet(bet) {
+  const m = _fuzzyMatchTeam(bet.mandante);
+  const v = _fuzzyMatchTeam(bet.visitante);
+  if (!m || !v) return { found: false, reason: 'times_nao_cadastrados' };
+
+  const ligaInfo = _getLigaParaTime(m);
+  if (!ligaInfo || !ligaInfo.dados || !ligaInfo.dados.jogos) {
+    return { found: false, reason: 'liga_sem_dados' };
+  }
+
+  // Buscar jogo: mesma data + mesmos times (fuzzy)
+  function normNome(s) { return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,''); }
+  const mNorm = normNome(m), vNorm = normNome(v);
+
+  // Tentar match por times (data pode variar de formato)
+  const candidatos = ligaInfo.dados.jogos.filter(j => {
+    const jM = normNome(j.mandante), jV = normNome(j.visitante);
+    return (jM === mNorm && jV === vNorm) || (jM === vNorm && jV === mNorm);
+  });
+
+  if (candidatos.length === 0) return { found: false, reason: 'jogo_nao_encontrado', m, v, liga: ligaInfo.liga };
+
+  // Se múltiplos jogos (ida e volta), priorizar o que tem cantos preenchidos
+  // E ordenar por proximidade da data (se bet tem data)
+  const jogosComDados = candidatos.filter(j => j.cantos && j.cantos.ft);
+  if (jogosComDados.length === 0) {
+    return { found: false, reason: 'jogo_sem_resultado', m, v, liga: ligaInfo.liga, candidatos: candidatos.length };
+  }
+
+  // Match por data se tiver
+  let jogo = jogosComDados[0];
+  if (bet.data && jogosComDados.length > 1) {
+    // bet.data pode vir como "DD/MM/YYYY" ou "YYYY-MM-DD" ou "DD/MM"
+    const betDate = bet.data.replace(/[\/\-]/g, '');
+    const matched = jogosComDados.find(j => {
+      const jDate = (j.data||'').replace(/[\/\-\.\s:]/g, '').substring(0, 8);
+      return jDate.includes(betDate.substring(0,4)) || betDate.includes(jDate.substring(0,4));
+    });
+    if (matched) jogo = matched;
+  }
+
+  // Identificar se mandante da aposta é o mandante do jogo (pode estar invertido)
+  const jM = normNome(jogo.mandante);
+  const inverted = jM !== mNorm; // se time da aposta é visitante no jogo
+
+  return {
+    found: true,
+    jogo,
+    inverted,
+    liga: ligaInfo.liga,
+    matchedM: m,
+    matchedV: v
+  };
+}
+
+// Resolve uma aposta usando os dados do jogo (placar + cantos reais)
+// Retorna 'green', 'red', 'void', ou 'aberto' (se não conseguir resolver)
+function _resolveBetStatus(bet, gameData) {
+  if (!gameData.found) return { status: 'aberto', reason: gameData.reason };
+  const jogo = gameData.jogo;
+  if (!jogo.cantos || !jogo.cantos.ft) return { status: 'aberto', reason: 'sem_cantos' };
+
+  const linha = bet.linhaNum;
+  if (linha === null || linha === undefined) return { status: 'aberto', reason: 'sem_linha' };
+
+  // Cantos do jogo (ajustando se mandante/visitante estão invertidos)
+  const cM = gameData.inverted ? jogo.cantos.ft.v : jogo.cantos.ft.m;
+  const cV = gameData.inverted ? jogo.cantos.ft.m : jogo.cantos.ft.v;
+  const cTotalFT = (jogo.cantos.ft.m||0) + (jogo.cantos.ft.v||0);
+  const cMHT = jogo.cantos.ht ? (gameData.inverted ? jogo.cantos.ht.v : jogo.cantos.ht.m) : null;
+  const cVHT = jogo.cantos.ht ? (gameData.inverted ? jogo.cantos.ht.m : jogo.cantos.ht.v) : null;
+  const cTotalHT = jogo.cantos.ht ? ((jogo.cantos.ht.m||0) + (jogo.cantos.ht.v||0)) : null;
+
+  // Helper: resolve Over/Under com push em linha inteira
+  function resolveOU(real, linha, side) {
+    const isWhole = Math.abs(linha - Math.round(linha)) < 0.001;
+    if (side === 'over') {
+      if (isWhole) {
+        if (real > linha) return 'green';
+        if (real < linha) return 'red';
+        return 'void';
+      } else {
+        return real > linha ? 'green' : 'red';
+      }
+    } else { // under
+      if (isWhole) {
+        if (real < linha) return 'green';
+        if (real > linha) return 'red';
+        return 'void';
+      } else {
+        return real < linha ? 'green' : 'red';
+      }
+    }
+  }
+
+  // Helper: resolve Handicap Asiático (-1.5, +0.5, etc.)
+  // diferenca = cantos do time apostado - cantos do oponente
+  function resolveHandicap(diferenca, linha, side) {
+    // 'fav' significa handicap negativo (-1, -1.5)
+    // 'unfav' significa handicap positivo (+1, +1.5)
+    const adj = side === 'fav' ? diferenca - linha : diferenca + linha;
+    const isWhole = Math.abs(linha - Math.round(linha)) < 0.001;
+    if (isWhole) {
+      if (adj > 0) return 'green';
+      if (adj < 0) return 'red';
+      return 'void';
+    } else {
+      return adj > 0 ? 'green' : 'red';
+    }
+  }
+
+  switch (bet.mercado) {
+    case 'Total Cantos FT':
+      return { status: resolveOU(cTotalFT, linha, bet.side), real: cTotalFT };
+
+    case 'Total Cantos HT':
+      if (cTotalHT === null) return { status: 'aberto', reason: 'sem_cantos_ht' };
+      return { status: resolveOU(cTotalHT, linha, bet.side), real: cTotalHT };
+
+    case 'Handicap Cantos FT': {
+      // Convenção: se o parser não capturou time específico (side='fav' simples),
+      // assumimos que o time apostado é o que tem MAIOR expectativa de cantos = mandante
+      const baseSide = bet.side.replace(/_[MV]$/, '');
+      let timeApostadoNoMandante;
+      if (bet.side.endsWith('_M')) timeApostadoNoMandante = true;
+      else if (bet.side.endsWith('_V')) timeApostadoNoMandante = false;
+      else timeApostadoNoMandante = (cM >= cV); // fallback: assume favorito = quem teve mais cantos
+      const diferenca = timeApostadoNoMandante ? (cM - cV) : (cV - cM);
+      return { status: resolveHandicap(diferenca, linha, baseSide), real: `${cM}-${cV}` };
+    }
+
+    case 'Handicap Cantos HT': {
+      if (cMHT === null) return { status: 'aberto', reason: 'sem_cantos_ht' };
+      const baseSide = bet.side.replace(/_[MV]$/, '');
+      let timeApostadoNoMandante;
+      if (bet.side.endsWith('_M')) timeApostadoNoMandante = true;
+      else if (bet.side.endsWith('_V')) timeApostadoNoMandante = false;
+      else timeApostadoNoMandante = (cMHT >= cVHT);
+      const diferenca = timeApostadoNoMandante ? (cMHT - cVHT) : (cVHT - cMHT);
+      return { status: resolveHandicap(diferenca, linha, baseSide), real: `${cMHT}-${cVHT}` };
+    }
+
+    case 'Team Total Cantos FT': {
+      const isMandante = bet.side.endsWith('_M');
+      const baseSide = bet.side.replace(/_[MV]$/, '');
+      const real = isMandante ? cM : cV;
+      return { status: resolveOU(real, linha, baseSide), real };
+    }
+
+    case 'Team Total Cantos HT': {
+      if (cMHT === null) return { status: 'aberto', reason: 'sem_cantos_ht' };
+      const isMandante = bet.side.endsWith('_M');
+      const baseSide = bet.side.replace(/_[MV]$/, '');
+      const real = isMandante ? cMHT : cVHT;
+      return { status: resolveOU(real, linha, baseSide), real };
+    }
+
+    default:
+      return { status: 'aberto', reason: 'mercado_nao_resolvel' };
+  }
+}
+
+// Resolve TODAS as apostas em status 'aberto' do alvo (customBets ou apostasImportadas)
+function resolverTodasApostas(target) {
+  // target: 'tracker' (customBets) | 'apostas' (apostasImportadas)
+  const lista = target === 'tracker' ? customBets : apostasImportadas;
+  if (!lista || lista.length === 0) {
+    alert('⚠️ Nenhuma aposta na lista para resolver.');
+    return;
+  }
+
+  const sumario = {
+    total: lista.length,
+    abertas: 0,
+    resolvidas: 0,
+    green: 0, red: 0, void: 0,
+    semJogo: 0, semCantos: 0, naoCadastrado: 0,
+    detalhes: []
+  };
+
+  lista.forEach(bet => {
+    if (bet.status !== 'aberto') return; // já resolvida (manual ou anterior)
+    sumario.abertas++;
+
+    const gameData = _findGameDataForBet(bet);
+    const result = _resolveBetStatus(bet, gameData);
+
+    if (result.status !== 'aberto') {
+      bet.status = result.status;
+      bet.resolvedAuto = true;
+      bet.resolvedAt = new Date().toISOString();
+      bet.resolvedReal = result.real;
+      sumario.resolvidas++;
+      sumario[result.status]++;
+      sumario.detalhes.push({
+        partida: `${bet.mandante} x ${bet.visitante}`,
+        mercado: bet.mercado,
+        linha: bet.linhaNum,
+        side: bet.side,
+        odd: bet.odd,
+        real: result.real,
+        status: result.status
+      });
+    } else {
+      // Não resolveu — categoriza motivo
+      if (result.reason === 'times_nao_cadastrados') sumario.naoCadastrado++;
+      else if (result.reason === 'jogo_nao_encontrado') sumario.semJogo++;
+      else if (result.reason === 'jogo_sem_resultado' || result.reason === 'sem_cantos' || result.reason === 'sem_cantos_ht') sumario.semCantos++;
+    }
+  });
+
+  // Persistir mudanças se for customBets
+  if (target === 'tracker') {
+    try { localStorage.setItem('customBets_v2', JSON.stringify(customBets)); } catch(_){}
+    if (typeof renderTracker === 'function') renderTracker();
+  } else {
+    if (typeof _renderApostasUI === 'function') _renderApostasUI(apostasImportadas, apostasSource);
+  }
+
+  _showResolucaoSumario(sumario, target);
+}
+
+// Mostra modal/painel de sumário pós-resolução
+function _showResolucaoSumario(s, target) {
+  const lucroTotal = s.detalhes
+    .filter(d => d.status === 'green' || d.status === 'red')
+    .reduce((acc, d) => {
+      // assumindo stake 10 (ou bet.stake real seria melhor — simplificação)
+      if (d.status === 'green') return acc + (d.odd - 1) * 10;
+      return acc - 10;
+    }, 0);
+
+  let modal = document.getElementById('resolucao-modal');
+  if (modal) modal.remove();
+
+  modal = document.createElement('div');
+  modal.id = 'resolucao-modal';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;padding:2rem;';
+
+  const detalhesHTML = s.detalhes.length === 0 ? '<div style="color:var(--muted);font-size:.8rem;">Nenhuma aposta resolvida.</div>'
+    : s.detalhes.map(d => {
+        const cor = d.status === 'green' ? '#34d367' : d.status === 'red' ? '#ef4444' : '#fbbf24';
+        const icon = d.status === 'green' ? '✅' : d.status === 'red' ? '❌' : '♻️';
+        return `<div style="padding:.5rem .8rem;background:rgba(0,0,0,0.2);border-left:3px solid ${cor};border-radius:0 6px 6px 0;margin-bottom:.4rem;font-size:.78rem;">
+          <span style="color:${cor};font-weight:800;">${icon} ${d.status.toUpperCase()}</span>
+          <span style="color:#e8f5ee;margin-left:.5rem;">${d.partida}</span>
+          <span style="color:#6b8f79;margin-left:.4rem;">— ${d.mercado} ${d.linha} (${d.side}) @${d.odd}</span>
+          <span style="color:#fbbf24;margin-left:.4rem;font-weight:700;">→ Real: ${d.real}</span>
+        </div>`;
+      }).join('');
+
+  modal.innerHTML = `
+    <div style="background:#162019;border:1px solid #34d36755;border-radius:14px;max-width:850px;width:100%;max-height:90vh;overflow-y:auto;padding:2rem;color:#e8f5ee;">
+      <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #34d367;padding-bottom:1rem;margin-bottom:1.5rem;">
+        <div>
+          <h2 style="color:#34d367;margin:0;font-size:1.4rem;">🎯 Resolução Automática Concluída</h2>
+          <div style="font-size:.75rem;color:#6b8f79;margin-top:.3rem;">${target === 'tracker' ? 'Bet Tracker Interno' : 'Apostas Reais Importadas'}</div>
+        </div>
+        <button onclick="document.getElementById('resolucao-modal').remove()" style="background:transparent;border:1px solid #34d36755;color:#34d367;padding:.4rem .8rem;border-radius:6px;cursor:pointer;font-weight:700;">✖ Fechar</button>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-bottom:1.5rem;">
+        <div style="background:rgba(52,211,103,.1);border:1px solid #34d36755;border-radius:8px;padding:.8rem;text-align:center;">
+          <div style="font-size:.65rem;color:#6b8f79;text-transform:uppercase;font-weight:700;">✅ GREEN</div>
+          <div style="font-size:1.6rem;color:#34d367;font-weight:900;">${s.green}</div>
+        </div>
+        <div style="background:rgba(239,68,68,.1);border:1px solid #ef444455;border-radius:8px;padding:.8rem;text-align:center;">
+          <div style="font-size:.65rem;color:#6b8f79;text-transform:uppercase;font-weight:700;">❌ RED</div>
+          <div style="font-size:1.6rem;color:#ef4444;font-weight:900;">${s.red}</div>
+        </div>
+        <div style="background:rgba(251,191,36,.1);border:1px solid #fbbf2455;border-radius:8px;padding:.8rem;text-align:center;">
+          <div style="font-size:.65rem;color:#6b8f79;text-transform:uppercase;font-weight:700;">♻️ VOID</div>
+          <div style="font-size:1.6rem;color:#fbbf24;font-weight:900;">${s.void}</div>
+        </div>
+        <div style="background:rgba(96,165,250,.1);border:1px solid #60a5fa55;border-radius:8px;padding:.8rem;text-align:center;">
+          <div style="font-size:.65rem;color:#6b8f79;text-transform:uppercase;font-weight:700;">⏳ Ainda Aberto</div>
+          <div style="font-size:1.6rem;color:#60a5fa;font-weight:900;">${s.abertas - s.resolvidas}</div>
+        </div>
+      </div>
+
+      <div style="background:rgba(34,197,94,.06);border-left:3px solid #34d367;padding:.7rem 1rem;border-radius:0 8px 8px 0;margin-bottom:1.5rem;">
+        <div style="font-size:.85rem;color:#e8f5ee;">
+          <strong>${s.resolvidas} de ${s.abertas}</strong> apostas resolvidas automaticamente
+          ${lucroTotal !== 0 ? ` · Lucro estimado (stake R$10): <strong style="color:${lucroTotal >= 0 ? '#34d367':'#ef4444'};">${lucroTotal >= 0 ? '+' : ''}R$ ${lucroTotal.toFixed(2)}</strong>` : ''}
+        </div>
+        ${s.naoCadastrado > 0 || s.semJogo > 0 || s.semCantos > 0 ? `
+          <div style="font-size:.7rem;color:#fbbf24;margin-top:.4rem;">
+            ⚠️ ${s.naoCadastrado > 0 ? `${s.naoCadastrado} time(s) não cadastrado(s) · ` : ''}${s.semJogo > 0 ? `${s.semJogo} jogo(s) não encontrado(s) no dataset · ` : ''}${s.semCantos > 0 ? `${s.semCantos} jogo(s) ainda sem placar/cantos coletados` : ''}
+          </div>` : ''}
+      </div>
+
+      <div style="font-size:.7rem;color:#6b8f79;text-transform:uppercase;font-weight:700;letter-spacing:.5px;margin-bottom:.6rem;">📋 Detalhamento</div>
+      <div style="max-height:400px;overflow-y:auto;">
+        ${detalhesHTML}
+      </div>
+
+      <div style="margin-top:1.5rem;text-align:center;font-size:.65rem;color:#6b8f79;">
+        🤖 Resolução baseada em dados do dataset (placar + cantos reais coletados pelo Monster YAAKEN)
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
 }
 
 function syncTrackerParaApostas() {
@@ -5205,11 +6036,17 @@ function renderTabelaApostas(bets) {
          <br><span style="color:var(--muted);font-size:.65rem">vs ${bet.visitante||'?'}</span>
          <br><span style="color:#f59e0b;font-size:.6rem">⚠️ Time não cadastrado</span>`;
 
-    // Explain why N/D
+    // v3.1: Diagnósticos detalhados quando não calcula
     let ndTooltip = '';
-    if (!teamsFound) ndTooltip = 'Times não cadastrados na base atual';
-    else if (!bet.mercado) ndTooltip = 'Mercado não identificado';
-    else if (bet.linhaNum === null) ndTooltip = 'Linha não identificada';
+    if (!teamsFound) {
+      const faltam = [];
+      if (!ev.matchedM) faltam.push(bet.mandante||'?');
+      if (!ev.matchedV) faltam.push(bet.visitante||'?');
+      ndTooltip = `Time(s) não no dataset: ${faltam.join(', ')}`;
+    }
+    else if (!bet.mercado) ndTooltip = `Mercado não identificado: "${bet.selection||'?'}"`;
+    else if (bet.linhaNum === null) ndTooltip = `Linha não identificada em "${bet.selection||'?'}"`;
+    else if (ev.prob === null) ndTooltip = `Mercado "${bet.mercado}" sem cálculo implementado`;
 
     const modelCells = ev.prob===null
       ? `<td style="text-align:center;padding:.5rem .8rem" title="${ndTooltip}">
@@ -5224,6 +6061,10 @@ function renderTabelaApostas(bets) {
     if (bet.status==='green') resultado = `<span style="color:var(--green)">+R$ ${((bet.odd-1)*(bet.stake||0)).toFixed(2)}</span>`;
     if (bet.status==='red')   resultado = `<span style="color:var(--red)">-R$ ${(bet.stake||0).toFixed(2)}</span>`;
 
+    // v3.1: badge "🤖 auto" quando resolvido automaticamente
+    const statusHTML = (statusBadge[bet.status]||bet.status) +
+      (bet.resolvedAuto ? `<br><span style="color:#a78bfa;font-size:.55rem;" title="Resolvido automaticamente · Real: ${bet.resolvedReal||'?'}">🤖 auto · real ${bet.resolvedReal||''}</span>` : '');
+
     return `<tr style="border-bottom:1px solid var(--border)">
       <td style="padding:.5rem .8rem;color:var(--muted);font-size:.7rem;white-space:nowrap">${bet.data}</td>
       <td style="padding:.5rem .8rem;font-size:.75rem">${partida}</td>
@@ -5231,7 +6072,7 @@ function renderTabelaApostas(bets) {
       <td style="text-align:center;padding:.5rem .8rem;color:var(--gold);font-weight:800">@${bet.odd.toFixed(2)}</td>
       <td style="text-align:center;padding:.5rem .8rem;font-size:.75rem">R$ ${(bet.stake||0).toFixed(2)}</td>
       ${modelCells}
-      <td style="text-align:center;padding:.5rem .8rem">${statusBadge[bet.status]||bet.status}</td>
+      <td style="text-align:center;padding:.5rem .8rem">${statusHTML}</td>
       <td style="text-align:center;padding:.5rem .8rem;font-size:.75rem">${resultado}</td>
     </tr>`;
   }).join('');
@@ -5472,6 +6313,403 @@ function dispararCoachCisne(m, v) {
    setTimeout(() => {
      gerarAnaliseMatchOddsRanking(m, v);
    }, 300);
+}
+
+// ══════════════════════════════════════════════════════════════════════
+//  ENIGMA — Score de Discrepância Territorial (SDE)
+//  Base de calibração: Ranking casa × fora (espelho real do app)
+// ══════════════════════════════════════════════════════════════════════
+
+/**
+ * calcSDE_ENIGMA(mandante, visitante)
+ * Retorna um objeto com o score SDE (0-100) e todos os componentes.
+ *
+ * Fórmula SDE:
+ *   35% — Diferencial saldo_ft  (mandante_casa - visitante_fora)
+ *   30% — Diferencial ft_pro    (produção mandante casa vs visitante fora)
+ *   20% — DNA Consistência VED  (% vitórias cantos para o favorito)
+ *   15% — Histórico Consistência (todos os jogos em casa × fora)
+ *
+ * Nunca recomenda HDP -0.5.
+ * Linhas liberadas: -1.0, -2.0, -2.5 (FT). HT: 3.5, 4.5.
+ */
+function calcSDE_ENIGMA(mandante, visitante) {
+  const rankCasa = getRankingData('casa').find(r => r.time === mandante);
+  const rankFora = getRankingData('fora').find(r => r.time === visitante);
+  const rankGeralM = getRankingData('geral').find(r => r.time === mandante);
+  const rankGeralV = getRankingData('geral').find(r => r.time === visitante);
+
+  if (!rankCasa || !rankFora) {
+    return { sde: 0, valido: false, motivo: 'Dados insuficientes (time sem jogos em casa ou fora)' };
+  }
+
+  // ── 1. Diferencial de saldo_ft (35%) ─────────────────────────────
+  // Saldo mandante em casa − saldo visitante fora
+  // Saldo do visitante fora é geralmente negativo se é time "D"
+  const diffSaldo = rankCasa.saldo_ft - rankFora.saldo_ft;
+  // Normaliza: diferencial de +6 ou mais = 100%, ≤ 0 = 0%
+  const normSaldo = Math.max(0, Math.min(100, (diffSaldo / 6) * 100));
+
+  // ── 2. Diferencial de produção ft_pro (30%) ──────────────────────
+  // ft_pro mandante em casa vs ft_pro visitante fora
+  const diffPro = rankCasa.ft_pro - rankFora.ft_pro;
+  // Normaliza: +5 cantos de diferença = 100%
+  const normPro = Math.max(0, Math.min(100, (diffPro / 5) * 100));
+
+  // ── 3. DNA Consistência VED (20%) ────────────────────────────────
+  // % de vitórias de cantos do mandante em casa
+  const vedM = rankCasa.ved;
+  const totalVedM = vedM.v + vedM.e + vedM.d;
+  const winRateM = totalVedM > 0 ? vedM.v / totalVedM : 0;
+  // % de derrotas de cantos do visitante fora (faz sentido: visitante perde cantos)
+  const vedV = rankFora.ved;
+  const totalVedV = vedV.v + vedV.e + vedV.d;
+  const lossRateV = totalVedV > 0 ? vedV.d / totalVedV : 0;
+  // Combinação VED: 60% WR mandante + 40% LR visitante
+  const dnaScore = (winRateM * 0.6 + lossRateV * 0.4) * 100;
+
+  // ── 4. Consistência Histórica Geral (15%) ────────────────────────
+  const vedGeralM = rankGeralM ? rankGeralM.ved : null;
+  const vedGeralV = rankGeralV ? rankGeralV.ved : null;
+  let histScore = 50; // neutro se sem dados
+  if (vedGeralM && vedGeralV) {
+    const totalGM = vedGeralM.v + vedGeralM.e + vedGeralM.d;
+    const totalGV = vedGeralV.v + vedGeralV.e + vedGeralV.d;
+    const wrGeralM = totalGM > 0 ? vedGeralM.v / totalGM : 0;
+    const lrGeralV = totalGV > 0 ? vedGeralV.d / totalGV : 0;
+    histScore = (wrGeralM * 0.5 + lrGeralV * 0.5) * 100;
+  }
+
+  // ── SDE Final ────────────────────────────────────────────────────
+  const sde = Math.round(
+    normSaldo * 0.35 +
+    normPro   * 0.30 +
+    dnaScore  * 0.20 +
+    histScore * 0.15
+  );
+
+  // ── Sinal e direção ──────────────────────────────────────────────
+  // Verifica se o sinal é normal (mandante domina) ou INVERSO (visitante domina)
+  const sinalNormal = diffSaldo >= 0 && diffPro >= 0;
+  const sinalInverso = !sinalNormal && rankFora.saldo_ft > rankCasa.saldo_ft;
+
+  // ── Linha recomendada ─────────────────────────────────────────────
+  // NUNCA -0.5. Baseado no diferencial de produção.
+  let linhaFT = null, linhaHT = null, confianca = '';
+  if (sde >= 65) {
+    if (diffSaldo >= 4) {
+      linhaFT = '-2.5';
+      linhaHT = '4.5';
+      confianca = 'ALTA';
+    } else if (diffSaldo >= 2.5) {
+      linhaFT = '-2.0';
+      linhaHT = '4.5';
+      confianca = 'ALTA';
+    } else {
+      linhaFT = '-1.0';
+      linhaHT = '3.5';
+      confianca = 'MÉDIA';
+    }
+  } else if (sde >= 50) {
+    linhaFT = '-1.0';
+    linhaHT = '3.5';
+    confianca = 'BAIXA (WATCH)';
+  }
+
+  // ── Diferencial total de cantos esperado ─────────────────────────
+  // Estimativa do total de cantos no jogo
+  const totalEstimado = rankCasa.ft_pro + rankFora.ft_pro;
+
+  // Sinal UNDER quando total baixo e diferença pequena
+  let sinalizarUnder = false;
+  if (totalEstimado < 9.0 && Math.abs(diffPro) < 1.5) sinalizarUnder = true;
+
+  return {
+    sde,
+    valido: true,
+    sinalNormal,
+    sinalInverso,
+    // Componentes
+    diffSaldo: +diffSaldo.toFixed(2),
+    diffPro:   +diffPro.toFixed(2),
+    dnaScore:  +dnaScore.toFixed(1),
+    histScore: +histScore.toFixed(1),
+    normSaldo: +normSaldo.toFixed(1),
+    normPro:   +normPro.toFixed(1),
+    // Ranking raw
+    rankCasa,
+    rankFora,
+    rankGeralM,
+    rankGeralV,
+    // Recomendação
+    linhaFT,
+    linhaHT,
+    confianca,
+    totalEstimado: +totalEstimado.toFixed(2),
+    sinalizarUnder,
+    // Classificação
+    classificacao: sde >= 65 ? 'ATIVO' : sde >= 50 ? 'WATCH' : 'RUIDO',
+  };
+}
+
+function renderEnigma() {
+  const ctr = document.getElementById('wrapper-enigma');
+  if (!ctr) return;
+
+  if (!jogosFuturos || jogosFuturos.length === 0) {
+    ctr.innerHTML = `<div class="empty"><div class="eicon">📭</div>
+      <strong>Nenhum jogo na rodada</strong>
+      <p>Importe os jogos na aba "📅 Próximos Jogos" e volte ao ENIGMA.</p>
+      <button onclick="showView('adicionar')" style="margin-top:1rem;background:linear-gradient(135deg,#7c3aed,#a78bfa);border:none;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;cursor:pointer;">📥 Ir para Adicionar Jogos</button>
+    </div>`;
+    return;
+  }
+
+  const timesAtivos = new Set(DADOS_2026.times.map(t => typeof t === 'string' ? t : t.nome));
+  const jogosValidos = jogosFuturos.filter(j => timesAtivos.has(j.m) && timesAtivos.has(j.v));
+
+  if (!jogosValidos.length) {
+    ctr.innerHTML = `<div class="empty"><div class="eicon">⚠️</div><strong>Times não reconhecidos</strong><p>Verifique se os nomes dos times correspondem à liga carregada.</p></div>`;
+    return;
+  }
+
+  // Calcula SDE para cada jogo
+  const resultados = jogosValidos.map(j => ({
+    m: j.m, v: j.v,
+    sde: calcSDE_ENIGMA(j.m, j.v)
+  }));
+
+  // Ordena: ATIVO > WATCH > RUIDO, depois por SDE desc
+  const ordem = { ATIVO: 0, WATCH: 1, RUIDO: 2 };
+  resultados.sort((a, b) =>
+    ordem[a.sde.classificacao] - ordem[b.sde.classificacao] ||
+    b.sde.sde - a.sde.sde
+  );
+
+  // ── Resumo executivo ─────────────────────────────────────────────
+  const ativos = resultados.filter(r => r.sde.classificacao === 'ATIVO').length;
+  const watch  = resultados.filter(r => r.sde.classificacao === 'WATCH').length;
+  const ruido  = resultados.filter(r => r.sde.classificacao === 'RUIDO').length;
+
+  const resumoHtml = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:1.5rem;">
+      <div style="background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.3);border-radius:12px;padding:1rem;text-align:center;">
+        <div style="font-size:2rem;font-weight:900;color:#a78bfa;">${ativos}</div>
+        <div style="font-size:.7rem;color:#7c3aed;font-weight:700;margin-top:.2rem;">🎯 SINAIS ATIVOS</div>
+      </div>
+      <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);border-radius:12px;padding:1rem;text-align:center;">
+        <div style="font-size:2rem;font-weight:900;color:#f59e0b;">${watch}</div>
+        <div style="font-size:.7rem;color:#d97706;font-weight:700;margin-top:.2rem;">👁️ EM OBSERVAÇÃO</div>
+      </div>
+      <div style="background:rgba(107,143,121,0.05);border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center;">
+        <div style="font-size:2rem;font-weight:900;color:var(--muted);">${ruido}</div>
+        <div style="font-size:.7rem;color:var(--muted);font-weight:700;margin-top:.2rem;">⬜ RUÍDO / SEM SINAL</div>
+      </div>
+      <div style="background:rgba(52,211,103,0.06);border:1px solid rgba(52,211,103,0.2);border-radius:12px;padding:1rem;text-align:center;">
+        <div style="font-size:2rem;font-weight:900;color:var(--green);">${jogosValidos.length}</div>
+        <div style="font-size:.7rem;color:var(--green);font-weight:700;margin-top:.2rem;">⚽ JOGOS ANALISADOS</div>
+      </div>
+    </div>
+    ${ativos === 0 && watch === 0 ? `
+    <div style="background:rgba(139,92,246,0.07);border:1px dashed rgba(139,92,246,0.3);border-radius:12px;padding:1.2rem;text-align:center;margin-bottom:1.5rem;">
+      <div style="font-size:1.1rem;font-weight:800;color:#a78bfa;margin-bottom:.5rem;">🔮 ENIGMA: Rodada sem sinal de discrepância</div>
+      <div style="font-size:.8rem;color:var(--muted);">Disciplina é parte do sistema. Nenhuma entrada forçada quando o edge não existe.</div>
+    </div>` : ''}
+  `;
+
+  // ── Cards individuais ────────────────────────────────────────────
+  const cardsHtml = resultados.map(r => {
+    const { m, v, sde: s } = r;
+    if (!s.valido) return '';
+
+    const cardClass = s.classificacao === 'ATIVO' ? 'enigma-card sinal-ativo'
+                    : s.classificacao === 'WATCH'  ? 'enigma-card sinal-watch'
+                    : 'enigma-card sinal-ruido';
+
+    const sdeColor = s.classificacao === 'ATIVO' ? '#a78bfa'
+                   : s.classificacao === 'WATCH'  ? '#f59e0b'
+                   : '#4b5563';
+
+    const fillGradient = s.classificacao === 'ATIVO'
+      ? 'linear-gradient(90deg,#7c3aed,#a78bfa,#ec4899)'
+      : s.classificacao === 'WATCH'
+      ? 'linear-gradient(90deg,#d97706,#f59e0b)'
+      : 'linear-gradient(90deg,#374151,#4b5563)';
+
+    // VED mandante casa
+    const vmC = s.rankCasa.ved;
+    const totM = vmC.v + vmC.e + vmC.d;
+    const vedMStr = totM > 0 ? `${vmC.v}V ${vmC.e}E ${vmC.d}D` : '—';
+    const wrMStr  = totM > 0 ? `${((vmC.v/totM)*100).toFixed(0)}%` : '—';
+
+    // VED visitante fora
+    const vvF = s.rankFora.ved;
+    const totV = vvF.v + vvF.e + vvF.d;
+    const vedVStr = totV > 0 ? `${vvF.v}V ${vvF.e}E ${vvF.d}D` : '—';
+    const lrVStr  = totV > 0 ? `${((vvF.d/totV)*100).toFixed(0)}%` : '—';
+
+    // Direção do sinal
+    const direcao = s.sinalInverso
+      ? `<span class="enigma-pill" style="background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.4);color:#f87171;">⚠️ SINAL INVERSO — ${v} domina cantos como visitante</span>`
+      : `<span class="enigma-pill" style="background:rgba(139,92,246,0.15);border:1px solid rgba(139,92,246,0.4);color:#a78bfa;">🏠 ${m} domina cantos em casa</span>`;
+
+    // Under warning
+    const underWarn = s.sinalizarUnder
+      ? `<div style="margin-top:.5rem;font-size:.72rem;color:#60a5fa;font-weight:700;">💧 TOTAL BAIXO esperado (~${s.totalEstimado.toFixed(1)} cantos) — considere UNDER de totais</div>`
+      : '';
+
+    // Recomendação
+    let recomHtml = '';
+    if (s.linhaFT) {
+      const timeAlvo = s.sinalInverso ? v : m;
+      const tipoAlvo = s.sinalInverso ? '(visitante)' : '(mandante)';
+      recomHtml = `
+        <div class="enigma-recomendar">
+          <div>
+            <div style="font-size:.65rem;color:var(--muted);font-weight:600;margin-bottom:.3rem;">📌 LINHA RECOMENDADA (nunca HDP -0.5)</div>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;">
+              <span class="enigma-linha-tag">FT ${s.linhaFT} ${timeAlvo} ${tipoAlvo}</span>
+              ${s.linhaHT ? `<span class="enigma-linha-tag gold">HT ${s.linhaHT} total</span>` : ''}
+            </div>
+          </div>
+          <div style="border-left:1px solid rgba(255,255,255,0.08);padding-left:.8rem;">
+            <div style="font-size:.65rem;color:var(--muted);margin-bottom:.2rem;">Confiança</div>
+            <div style="font-size:.9rem;font-weight:800;color:${s.confianca === 'ALTA' ? 'var(--green)' : s.confianca.startsWith('MÉDIA') ? 'var(--gold)' : 'var(--muted)'};">${s.confianca}</div>
+          </div>
+          <div class="enigma-alerta-proibido">🚫 HDP -0.5 PROIBIDO (ROI −29% em amostra real)</div>
+        </div>
+      `;
+    } else {
+      recomHtml = `<div style="margin-top:.8rem;font-size:.75rem;color:var(--muted);font-style:italic;">Sem linha recomendável — aguardar rodada com maior discrepância.</div>`;
+    }
+
+    return `
+      <div class="${cardClass}">
+        <!-- Cabeçalho -->
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+          <div>
+            <div class="enigma-veredito-bar">
+              <span class="enigma-team-label">${m}</span>
+              <span class="enigma-vs">×</span>
+              <span class="enigma-team-label">${v}</span>
+            </div>
+            <div style="display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.4rem;">
+              ${direcao}
+              ${s.sinalizarUnder ? `<span class="enigma-pill" style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.3);color:#60a5fa;">💧 UNDER TOTAL</span>` : ''}
+            </div>
+          </div>
+          <div style="text-align:right;min-width:90px;">
+            <div style="font-size:2.2rem;font-weight:900;color:${sdeColor};line-height:1;">${s.sde}</div>
+            <div style="font-size:.6rem;color:var(--muted);font-weight:700;">SDE / 100</div>
+            <div style="font-size:.7rem;font-weight:800;color:${sdeColor};margin-top:.2rem;">${s.classificacao}</div>
+          </div>
+        </div>
+
+        <!-- Barra SDE -->
+        <div class="enigma-sde-bar">
+          <div class="enigma-sde-fill" style="width:${s.sde}%;background:${fillGradient};"></div>
+        </div>
+
+        <!-- Grid de dados -->
+        <div class="enigma-grid">
+          <!-- Mandante em casa -->
+          <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:.8rem;border:1px solid rgba(255,255,255,0.06);">
+            <div style="font-size:.7rem;font-weight:700;color:#a78bfa;margin-bottom:.5rem;">🏠 ${m} EM CASA</div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Saldo FT</span>
+              <span style="font-weight:800;color:${s.rankCasa.saldo_ft >= 0 ? 'var(--green)' : 'var(--red)'};">${s.rankCasa.saldo_ft >= 0 ? '+' : ''}${s.rankCasa.saldo_ft.toFixed(2)}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Produção FT</span>
+              <span style="font-weight:700;color:var(--text);">${s.rankCasa.ft_pro.toFixed(1)} cantos</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Concedidos FT</span>
+              <span style="font-weight:700;color:var(--text);">${s.rankCasa.ft_con.toFixed(1)} cantos</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">VED Cantos</span>
+              <span style="font-size:.7rem;font-weight:700;color:var(--text);">${vedMStr}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Win Rate Cantos</span>
+              <span style="font-weight:800;color:var(--green);">${wrMStr}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Jogos</span>
+              <span style="color:var(--muted);">${s.rankCasa.jogos}</span>
+            </div>
+          </div>
+
+          <!-- Visitante fora -->
+          <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:.8rem;border:1px solid rgba(255,255,255,0.06);">
+            <div style="font-size:.7rem;font-weight:700;color:#f59e0b;margin-bottom:.5rem;">✈️ ${v} FORA DE CASA</div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Saldo FT</span>
+              <span style="font-weight:800;color:${s.rankFora.saldo_ft >= 0 ? 'var(--green)' : 'var(--red)'};">${s.rankFora.saldo_ft >= 0 ? '+' : ''}${s.rankFora.saldo_ft.toFixed(2)}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Produção FT</span>
+              <span style="font-weight:700;color:var(--text);">${s.rankFora.ft_pro.toFixed(1)} cantos</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Concedidos FT</span>
+              <span style="font-weight:700;color:var(--text);">${s.rankFora.ft_con.toFixed(1)} cantos</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">VED Cantos</span>
+              <span style="font-size:.7rem;font-weight:700;color:var(--text);">${vedVStr}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Loss Rate Cantos</span>
+              <span style="font-weight:800;color:var(--red);">${lrVStr}</span>
+            </div>
+            <div class="enigma-stat-row">
+              <span style="color:var(--muted);">Jogos</span>
+              <span style="color:var(--muted);">${s.rankFora.jogos}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Componentes do SDE -->
+        <div style="margin-top:.8rem;background:rgba(255,255,255,0.02);border-radius:8px;padding:.7rem;border:1px solid rgba(255,255,255,0.05);">
+          <div style="font-size:.65rem;font-weight:700;color:var(--muted);margin-bottom:.5rem;letter-spacing:.5px;">DECOMPOSIÇÃO SDE</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;text-align:center;">
+            <div>
+              <div style="font-size:.9rem;font-weight:800;color:#a78bfa;">${s.normSaldo.toFixed(0)}</div>
+              <div style="font-size:.6rem;color:var(--muted);">Saldo<br/><span style="color:var(--muted);font-size:.55rem;">(35%)</span></div>
+            </div>
+            <div>
+              <div style="font-size:.9rem;font-weight:800;color:#a78bfa;">${s.normPro.toFixed(0)}</div>
+              <div style="font-size:.6rem;color:var(--muted);">Produção<br/><span style="color:var(--muted);font-size:.55rem;">(30%)</span></div>
+            </div>
+            <div>
+              <div style="font-size:.9rem;font-weight:800;color:#a78bfa;">${s.dnaScore.toFixed(0)}</div>
+              <div style="font-size:.6rem;color:var(--muted);">DNA VED<br/><span style="color:var(--muted);font-size:.55rem;">(20%)</span></div>
+            </div>
+            <div>
+              <div style="font-size:.9rem;font-weight:800;color:#a78bfa;">${s.histScore.toFixed(0)}</div>
+              <div style="font-size:.6rem;color:var(--muted);">Hist. Geral<br/><span style="color:var(--muted);font-size:.55rem;">(15%)</span></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:.3rem;margin-top:.5rem;align-items:center;">
+            <div style="font-size:.6rem;color:var(--muted);">Δ Saldo:</div>
+            <span style="font-size:.7rem;font-weight:700;color:${s.diffSaldo >= 0 ? 'var(--green)' : 'var(--red)'};">${s.diffSaldo >= 0 ? '+' : ''}${s.diffSaldo}</span>
+            <div style="font-size:.6rem;color:var(--muted);margin-left:.5rem;">Δ Produção:</div>
+            <span style="font-size:.7rem;font-weight:700;color:${s.diffPro >= 0 ? 'var(--green)' : 'var(--red)'};">${s.diffPro >= 0 ? '+' : ''}${s.diffPro}</span>
+            <div style="font-size:.6rem;color:var(--muted);margin-left:.5rem;">Total Estimado:</div>
+            <span style="font-size:.7rem;font-weight:700;color:var(--text);">~${s.totalEstimado} cant.</span>
+          </div>
+          ${underWarn}
+        </div>
+
+        <!-- Recomendação -->
+        ${recomHtml}
+      </div>
+    `;
+  }).join('');
+
+  ctr.innerHTML = resumoHtml + cardsHtml;
 }
 
 init();

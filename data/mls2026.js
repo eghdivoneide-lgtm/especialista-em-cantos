@@ -1,5 +1,5 @@
-// MLS 2026 — SINCRONIZADO
-// 103 jogos | 103 com placar | Atualizado: 2026-04-15
+// MLS 2026 — Injeção Varredor v4 (upsert)
+// 118 jogos | Atualizado: 2026-04-22
 window.DADOS_MLS = {
   "times": [
     "Atlanta Utd",
@@ -3689,7 +3689,7 @@ window.DADOS_MLS = {
       "visitante": "Orlando City",
       "data": "12.04.2026 20:00",
       "rodada": null,
-      "fonte": "agente-assistente",
+      "fonte": "varredor-rodada-v4",
       "gols": {
         "ht": {
           "m": 0,
@@ -3723,7 +3723,8 @@ window.DADOS_MLS = {
       "placar": {
         "m": 1,
         "v": 1
-      }
+      },
+      "match_id": "f3LkpxbD"
     },
     {
       "id": "8nNsnbT0",
@@ -3731,7 +3732,7 @@ window.DADOS_MLS = {
       "visitante": "Minnesota United",
       "data": "11.04.2026 23:30",
       "rodada": null,
-      "fonte": "agente-assistente",
+      "fonte": "varredor-rodada-v4",
       "gols": {
         "ht": {
           "m": 1,
@@ -3765,7 +3766,8 @@ window.DADOS_MLS = {
       "placar": {
         "m": 1,
         "v": 2
-      }
+      },
+      "match_id": "8nNsnbT0"
     },
     {
       "id": "nXYYmKbl",
@@ -4270,8 +4272,653 @@ window.DADOS_MLS = {
         "m": 1,
         "v": 1
       }
+    },
+    {
+      "match_id": "GAyrB52T",
+      "id": "GAyrB52T",
+      "mandante": "Los Angeles FC",
+      "visitante": "San Jose Earthquakes",
+      "data": "19.04.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 4
+      }
+    },
+    {
+      "match_id": "lbpREm34",
+      "id": "lbpREm34",
+      "mandante": "Real Salt Lake",
+      "visitante": "San Diego FC",
+      "data": "18.04.2026 22:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "rcwzDRXG",
+      "id": "rcwzDRXG",
+      "mandante": "Seattle Sounders",
+      "visitante": "St. Louis City",
+      "data": "18.04.2026 22:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "0x4Wh6to",
+      "id": "0x4Wh6to",
+      "mandante": "FC Dallas",
+      "visitante": "Los Angeles Galaxy",
+      "data": "18.04.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "tYtJG9Yi",
+      "id": "tYtJG9Yi",
+      "mandante": "Minnesota United",
+      "visitante": "Portland Timbers",
+      "data": "18.04.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "rNMQokZH",
+      "id": "rNMQokZH",
+      "mandante": "Atlanta Utd",
+      "visitante": "Nashville SC",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 4
+        },
+        "ft": {
+          "m": 5,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 17
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "4xBZqT3U",
+      "id": "4xBZqT3U",
+      "mandante": "FC Cincinnati",
+      "visitante": "Chicago Fire",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "f1jq4Wln",
+      "id": "f1jq4Wln",
+      "mandante": "New England Revolution",
+      "visitante": "Columbus Crew",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 4
+        },
+        "ft": {
+          "m": 3,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "jTqh2AJb",
+      "id": "jTqh2AJb",
+      "mandante": "New York City",
+      "visitante": "Charlotte",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "Otr00llB",
+      "id": "Otr00llB",
+      "mandante": "Orlando City",
+      "visitante": "Houston Dynamo",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "UgD0bSIN",
+      "id": "UgD0bSIN",
+      "mandante": "Philadelphia Union",
+      "visitante": "DC United",
+      "data": "18.04.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 13,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "xQJImB45",
+      "id": "xQJImB45",
+      "mandante": "Colorado Rapids",
+      "visitante": "Inter Miami",
+      "data": "18.04.2026 17:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "AqF0gkfA",
+      "id": "AqF0gkfA",
+      "mandante": "CF Montreal",
+      "visitante": "New York Red Bulls",
+      "data": "18.04.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 2,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 32,
+          "v": 68
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "lUQieBPc",
+      "id": "lUQieBPc",
+      "mandante": "Toronto FC",
+      "visitante": "Austin FC",
+      "data": "18.04.2026 14:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 4
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "xtK6X7Xj",
+      "id": "xtK6X7Xj",
+      "mandante": "Vancouver Whitecaps",
+      "visitante": "Sporting Kansas City",
+      "data": "17.04.2026 23:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 25,
+          "v": 3
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      }
     }
   ],
   "totalRodadas": 6,
-  "ultimaAtualizacao": "2026/04/15"
+  "ultimaAtualizacao": "2026-04-22"
 };

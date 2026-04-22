@@ -1,11 +1,11 @@
 // ============================================================
 // LIGA PRO EQUADOR 2026 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-13
+// Atualizado: 2026-04-22 | +campos gols/placar (null pending scrape)
 // ============================================================
 
 window.DADOS_ECU = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-13",
+  "ultimaAtualizacao": "2026-04-22",
   "totalRodadas": 46,
   "times": [
     "Aucas",
@@ -57,7 +57,12 @@ window.DADOS_ECU = {
           "m": 21,
           "v": 4
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "YkX3kLq9",
@@ -90,7 +95,12 @@ window.DADOS_ECU = {
           "m": 12,
           "v": 21
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "nex2QDAt",
@@ -123,7 +133,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 18
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "4vJPrGR0",
@@ -156,7 +171,12 @@ window.DADOS_ECU = {
           "m": 11,
           "v": 11
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "bsGXy8EG",
@@ -189,7 +209,12 @@ window.DADOS_ECU = {
           "m": 11,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "d8vyXwHD",
@@ -222,7 +247,12 @@ window.DADOS_ECU = {
           "m": 6,
           "v": 21
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "QTHPwUq4",
@@ -255,7 +285,12 @@ window.DADOS_ECU = {
           "m": 22,
           "v": 7
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "zLlAT4AL",
@@ -288,7 +323,12 @@ window.DADOS_ECU = {
           "m": 24,
           "v": 5
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "dzJLzMHl",
@@ -321,7 +361,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 7
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "zueAYjhI",
@@ -354,7 +399,12 @@ window.DADOS_ECU = {
           "m": 12,
           "v": 12
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "OxVtwifn",
@@ -387,7 +437,12 @@ window.DADOS_ECU = {
           "m": 20,
           "v": 8
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "SYwIMV95",
@@ -420,7 +475,12 @@ window.DADOS_ECU = {
           "m": 19,
           "v": 5
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "K8zAOiug",
@@ -453,7 +513,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 15
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "W2YlyVOb",
@@ -486,7 +551,12 @@ window.DADOS_ECU = {
           "m": 5,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "zasQK9vI",
@@ -519,7 +589,12 @@ window.DADOS_ECU = {
           "m": 17,
           "v": 12
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "I3EHujFi",
@@ -552,7 +627,12 @@ window.DADOS_ECU = {
           "m": 10,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "jcMVHnNp",
@@ -585,7 +665,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 9
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "lUXiPUUA",
@@ -618,7 +703,12 @@ window.DADOS_ECU = {
           "m": 7,
           "v": 13
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "MegIWUMU",
@@ -651,7 +741,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "hvUsr4PE",
@@ -684,7 +779,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 4
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "GWiWzMUF",
@@ -717,7 +817,12 @@ window.DADOS_ECU = {
           "m": 12,
           "v": 7
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "OdevZaaS",
@@ -750,7 +855,12 @@ window.DADOS_ECU = {
           "m": 19,
           "v": 11
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "8SJCgXuJ",
@@ -783,7 +893,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 14
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "COhp3pDF",
@@ -816,7 +931,12 @@ window.DADOS_ECU = {
           "m": 18,
           "v": 16
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "hxDdcFtf",
@@ -849,7 +969,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 9
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "W8TvznqT",
@@ -882,7 +1007,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 20
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "8jWyTCVo",
@@ -915,7 +1045,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 9
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "xUbG7Nm2",
@@ -948,7 +1083,12 @@ window.DADOS_ECU = {
           "m": 10,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "8CuYIm9U",
@@ -981,7 +1121,12 @@ window.DADOS_ECU = {
           "m": 10,
           "v": 13
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "GC1xFv8d",
@@ -1014,7 +1159,12 @@ window.DADOS_ECU = {
           "m": 25,
           "v": 9
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "0M6bHzYP",
@@ -1047,7 +1197,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 15
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "xhHXtfdD",
@@ -1080,7 +1235,12 @@ window.DADOS_ECU = {
           "m": 10,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "2Rd2zDN5",
@@ -1113,7 +1273,12 @@ window.DADOS_ECU = {
           "m": 4,
           "v": 21
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "U3e89qJk",
@@ -1146,7 +1311,12 @@ window.DADOS_ECU = {
           "m": 7,
           "v": 15
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "02G4egB6",
@@ -1179,7 +1349,12 @@ window.DADOS_ECU = {
           "m": 6,
           "v": 16
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "fo7dhTbc",
@@ -1212,7 +1387,12 @@ window.DADOS_ECU = {
           "m": 14,
           "v": 13
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "nssdK0X7",
@@ -1245,7 +1425,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "2BA4j7T9",
@@ -1278,7 +1463,12 @@ window.DADOS_ECU = {
           "m": 18,
           "v": 7
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "40MTYan1",
@@ -1311,7 +1501,12 @@ window.DADOS_ECU = {
           "m": 14,
           "v": 12
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "bach6APO",
@@ -1344,7 +1539,12 @@ window.DADOS_ECU = {
           "m": 21,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "dEFHpxcl",
@@ -1377,7 +1577,12 @@ window.DADOS_ECU = {
           "m": 17,
           "v": 11
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "88DClobM",
@@ -1410,7 +1615,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 1
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "nyjnveOt",
@@ -1443,7 +1653,12 @@ window.DADOS_ECU = {
           "m": 11,
           "v": 13
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "04XktrfR",
@@ -1476,7 +1691,12 @@ window.DADOS_ECU = {
           "m": 14,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "AFbUG0wp",
@@ -1509,7 +1729,12 @@ window.DADOS_ECU = {
           "m": 8,
           "v": 17
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "t4UqRj0b",
@@ -1542,7 +1767,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "86lOxr03",
@@ -1575,7 +1805,12 @@ window.DADOS_ECU = {
           "m": 10,
           "v": 12
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "6quIRHi2",
@@ -1608,7 +1843,12 @@ window.DADOS_ECU = {
           "m": 5,
           "v": 17
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "4varqPLq",
@@ -1641,7 +1881,12 @@ window.DADOS_ECU = {
           "m": 15,
           "v": 11
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "63utOrYr",
@@ -1674,7 +1919,12 @@ window.DADOS_ECU = {
           "m": 18,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "ILexAhQa",
@@ -1707,7 +1957,12 @@ window.DADOS_ECU = {
           "m": 17,
           "v": 8
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "KOElayCs",
@@ -1740,7 +1995,12 @@ window.DADOS_ECU = {
           "m": 6,
           "v": 14
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "KStATwNk",
@@ -1773,7 +2033,12 @@ window.DADOS_ECU = {
           "m": 13,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "f1gfxZhg",
@@ -1806,7 +2071,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 13
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "27j2VQu9",
@@ -1839,7 +2109,12 @@ window.DADOS_ECU = {
           "m": 22,
           "v": 9
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "jZgp8WfC",
@@ -1872,7 +2147,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "4b9J4clK",
@@ -1905,7 +2185,12 @@ window.DADOS_ECU = {
           "m": 8,
           "v": 20
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "AehUBEem",
@@ -1938,7 +2223,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 8
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "vBfx56r3",
@@ -1971,7 +2261,12 @@ window.DADOS_ECU = {
           "m": 7,
           "v": 8
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "2iKAUP6j",
@@ -2004,7 +2299,12 @@ window.DADOS_ECU = {
           "m": 16,
           "v": 6
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     },
     {
       "match_id": "fRz0N8aN",
@@ -2037,7 +2337,12 @@ window.DADOS_ECU = {
           "m": 11,
           "v": 10
         }
-      }
+      },
+      "gols": {
+        "ht": { "m": null, "v": null },
+        "ft": { "m": null, "v": null }
+      },
+      "placar": { "m": null, "v": null }
     }
   ]
 };
