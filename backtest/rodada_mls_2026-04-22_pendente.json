@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "data": "2026-04-22",
+    "liga": "MLS",
+    "fonte": "Projeção TEACHER do app EDS",
+    "status_liga": "observacao",
+    "stake_referencia": 10,
+    "observacao": "Rodada completa MLS (11 jogos). Liga marcada como observação após lote anterior (-18.3% ROI). Usuário decidiu confiar no motor com stake controlado. Preencher 'resultado' V/D/R e 'odd_real' após o fim da rodada para rodar backtest comparativo."
+  },
+  "projecoes_do_app": [
+    { "mandante": "Columbus Crew",    "visitante": "Los Angeles Galaxy",    "xFT": 9.15,  "xHT": 4.46, "conf": 95, "sniperFT": "UNDER 10",  "sniperHT": "NEUTRO",  "BP": null,       "tmi_m": 0.98, "tmi_v": 1.15, "rc_faixa": "MEDIANO" },
+    { "mandante": "New York City",    "visitante": "FC Cincinnati",         "xFT": 7.53,  "xHT": 3.53, "conf": 95, "sniperFT": "UNDER 10",  "sniperHT": "UNDER 4", "BP": null,       "tmi_m": 0.89, "tmi_v": 1.12, "rc_faixa": "EQUILIBRADO" },
+    { "mandante": "New York Red Bulls","visitante": "DC United",            "xFT": 9.18,  "xHT": 3.95, "conf": 95, "sniperFT": "UNDER 10",  "sniperHT": "UNDER 4", "BP": "NUCLEAR",  "tmi_m": 0.90, "tmi_v": 0.92, "rc_faixa": "ABSOLUTO" },
+    { "mandante": "Orlando City",     "visitante": "Charlotte",             "xFT": 6.87,  "xHT": 3.26, "conf": 93, "sniperFT": "UNDER 10",  "sniperHT": "UNDER 4", "BP": null,       "tmi_m": 1.11, "tmi_v": 0.91, "rc_faixa": "MEDIANO" },
+    { "mandante": "Toronto FC",       "visitante": "Philadelphia Union",    "xFT": 13.67, "xHT": 5.58, "conf": 95, "sniperFT": "OVER 10",   "sniperHT": "OVER 4",  "BP": "NUCLEAR",  "tmi_m": 1.12, "tmi_v": 1.34, "rc_faixa": "ABSOLUTO" },
+    { "mandante": "Atlanta Utd",      "visitante": "New England Revolution","xFT": 6.76,  "xHT": 3.27, "conf": 89, "sniperFT": "UNDER 10",  "sniperHT": "UNDER 4", "BP": null,       "tmi_m": 0.88, "tmi_v": 0.90, "rc_faixa": "EQUILIBRADO" },
+    { "mandante": "FC Dallas",        "visitante": "Minnesota United",      "xFT": 13.62, "xHT": 4.36, "conf": 95, "sniperFT": "OVER 10",   "sniperHT": "NEUTRO",  "BP": null,       "tmi_m": 1.18, "tmi_v": 1.40, "rc_faixa": "MODERADO" },
+    { "mandante": "Houston Dynamo",   "visitante": "San Diego FC",          "xFT": 8.97,  "xHT": 4.12, "conf": 91, "sniperFT": "UNDER 10",  "sniperHT": "UNDER 4", "BP": "MODERADA", "tmi_m": 1.38, "tmi_v": 0.75, "rc_faixa": "MODERADO" },
+    { "mandante": "Real Salt Lake",   "visitante": "Inter Miami",           "xFT": 13.12, "xHT": 6.05, "conf": 95, "sniperFT": "OVER 10",   "sniperHT": "OVER 4",  "BP": null,       "tmi_m": 1.36, "tmi_v": 1.17, "rc_faixa": "MODERADO" },
+    { "mandante": "Los Angeles FC",   "visitante": "Colorado Rapids",       "xFT": 10.60, "xHT": 4.22, "conf": 95, "sniperFT": "NEUTRO",    "sniperHT": "UNDER 4", "BP": "NUCLEAR",  "tmi_m": 1.23, "tmi_v": 0.98, "rc_faixa": "ABSOLUTO" },
+    { "mandante": "San Jose Earthquakes","visitante": "Austin FC",          "xFT": 16.75, "xHT": 6.39, "conf": 95, "sniperFT": "OVER 10",   "sniperHT": "OVER 4",  "BP": "NUCLEAR",  "tmi_m": 1.10, "tmi_v": 0.94, "rc_faixa": "ABSOLUTO" }
+  ],
+  "apostas_recomendadas_preencher": [
+    { "jogo": "Atlanta Utd vs New England",     "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
+    { "jogo": "Orlando City vs Charlotte",      "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
+    { "jogo": "New York City vs FC Cincinnati", "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
+    { "jogo": "Houston Dynamo vs San Diego",    "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 5,  "resultado": null, "prioridade": "B" },
+    { "jogo": "Toronto FC vs Philadelphia",     "mercado": "1x2 FT",     "selecao": "Philadelphia", "odd": null, "stake": 5, "resultado": null, "prioridade": "B" }
+  ]
+}
