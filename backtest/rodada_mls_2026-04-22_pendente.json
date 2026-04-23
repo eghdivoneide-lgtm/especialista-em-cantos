@@ -20,11 +20,21 @@
     { "mandante": "Los Angeles FC",   "visitante": "Colorado Rapids",       "xFT": 10.60, "xHT": 4.22, "conf": 95, "sniperFT": "NEUTRO",    "sniperHT": "UNDER 4", "BP": "NUCLEAR",  "tmi_m": 1.23, "tmi_v": 0.98, "rc_faixa": "ABSOLUTO" },
     { "mandante": "San Jose Earthquakes","visitante": "Austin FC",          "xFT": 16.75, "xHT": 6.39, "conf": 95, "sniperFT": "OVER 10",   "sniperHT": "OVER 4",  "BP": "NUCLEAR",  "tmi_m": 1.10, "tmi_v": 0.94, "rc_faixa": "ABSOLUTO" }
   ],
-  "apostas_recomendadas_preencher": [
-    { "jogo": "Atlanta Utd vs New England",     "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
-    { "jogo": "Orlando City vs Charlotte",      "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
-    { "jogo": "New York City vs FC Cincinnati", "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 10, "resultado": null, "prioridade": "A" },
-    { "jogo": "Houston Dynamo vs San Diego",    "mercado": "O/U FT",     "selecao": "Under 10 FT", "odd": null, "stake": 5,  "resultado": null, "prioridade": "B" },
-    { "jogo": "Toronto FC vs Philadelphia",     "mercado": "1x2 FT",     "selecao": "Philadelphia", "odd": null, "stake": 5, "resultado": null, "prioridade": "B" }
-  ]
+  "apostas_efetivadas": [
+    { "id_casa": "3030973706", "hora": "19:50:43", "jogo": "San Jose Earthquakes vs Austin FC",        "mercado": "HDP HT", "selecao": "San Jose -1.5 (HT)", "ao_vivo": false, "odd": 1.961, "stake": 10.00, "ganho_potencial": 9.61, "resultado": null, "observacao_claude": "ARRISCADA — xHT 6.39 com TMI 1.10/0.94 sugere diferença esperada ~1.2 cantos. Handicap -1.5 exige > 1.5 de diferença. Motor não projetava essa assimetria tão forte." },
+    { "id_casa": "3030972169", "hora": "19:49:49", "jogo": "Los Angeles FC vs Colorado Rapids",        "mercado": "HDP HT", "selecao": "LAFC -1.0 (HT)",      "ao_vivo": false, "odd": 1.800, "stake": 10.00, "ganho_potencial": 8.00, "resultado": null, "observacao_claude": "MODERADA — TMI 1.23/0.98, xHT 4.22 dividido sugere diferença ~1.26. No limite do handicap -1.0 (entre push e green)." },
+    { "id_casa": "3030969648", "hora": "19:48:19", "jogo": "Orlando City vs Charlotte FC",             "mercado": "O/U FT", "selecao": "Under 9.0 FT",         "ao_vivo": true,  "odd": 1.653, "stake": 10.72, "ganho_potencial": 7.00, "resultado": null, "observacao_claude": "FORTE — linha 9.0 mais apertada que 10, mas xFT 6.87 ainda está confortável. 0-0 ao vivo reforça o sinal. Alinhada com Tier A." },
+    { "id_casa": "3030969469", "hora": "19:46:44", "jogo": "Atlanta Utd vs New England Revolution",    "mercado": "O/U FT", "selecao": "Under 9.5 FT",         "ao_vivo": true,  "odd": 1.990, "stake": 10.00, "ganho_potencial": 9.90, "resultado": null, "observacao_claude": "FORTE — melhor combinação de sinal + odd. xFT 6.76, Sniper 91.8%, TMI ambos 0.88/0.90, 0-0 ao vivo. Alinhada com Tier A." },
+    { "id_casa": "3030967267", "hora": "19:39:48", "jogo": "New York City vs FC Cincinnati",           "mercado": "O/U FT", "selecao": "Under 10 FT",          "ao_vivo": true,  "odd": 1.925, "stake": 10.00, "ganho_potencial": 9.25, "resultado": null, "observacao_claude": "FORTE — xFT 7.53 com margem ampla até linha 10. NYC já acertou Under no lote anterior (padrão defensivo confirmado). Alinhada com Tier A." },
+    { "id_casa": "3030963541", "hora": "19:35:26", "jogo": "New York Red Bulls vs DC United",          "mercado": "HDP HT", "selecao": "NYRB -1.0 (HT)",      "ao_vivo": true,  "odd": 1.892, "stake": 10.00, "ganho_potencial": 8.92, "resultado": null, "observacao_claude": "ARRISCADA — TMI 0.90/0.92 indica jogo lento dos DOIS lados. xHT 3.95 distribuído sugere diferença esperada de apenas ~0.4 cantos. Motor sinalizava Under 4 HT, não HDP de favorito." }
+  ],
+  "resumo_pre_resultado": {
+    "total_apostas": 6,
+    "stake_total": 60.72,
+    "ganho_potencial_se_tudo_verde": 52.68,
+    "apostas_fortes": 3,
+    "apostas_moderadas": 1,
+    "apostas_arriscadas": 2,
+    "EV_estimado_por_claude": "+16 a +18 BRL (dominado pelos 3 Unders; HDP HT NYRB e San Jose puxam EV pra baixo)"
+  }
 }
