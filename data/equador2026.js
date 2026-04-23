@@ -1,11 +1,11 @@
 // ============================================================
-// LIGA PRO EQUADOR 2026 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-22 | +campos gols/placar (null pending scrape)
+// ECU 2026 — Injeção Varredor v4 (upsert)
+// 71 jogos | Atualizado: 2026-04-23
 // ============================================================
 
 window.DADOS_ECU = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-22",
+  "ultimaAtualizacao": "2026-04-23",
   "totalRodadas": 46,
   "times": [
     "Aucas",
@@ -13,11 +13,13 @@ window.DADOS_ECU = {
     "Delfin",
     "Dep. Cuenca",
     "Emelec",
+    "Flashscore",
     "Guayaquil City",
     "Ind. del Valle",
     "LDU Quito",
     "Leones del Norte",
     "Libertad",
+    "Libertad v Guayaquil City 21/04/2026 | Football",
     "Macara",
     "Manta",
     "Mushuc Runa",
@@ -59,10 +61,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "YkX3kLq9",
@@ -97,10 +108,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "nex2QDAt",
@@ -135,10 +155,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "4vJPrGR0",
@@ -173,10 +202,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "bsGXy8EG",
@@ -211,10 +249,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "d8vyXwHD",
@@ -249,10 +296,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "QTHPwUq4",
@@ -287,10 +343,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "zLlAT4AL",
@@ -325,10 +390,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "dzJLzMHl",
@@ -363,10 +437,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "zueAYjhI",
@@ -401,10 +484,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "OxVtwifn",
@@ -439,10 +531,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "SYwIMV95",
@@ -477,10 +578,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "K8zAOiug",
@@ -515,10 +625,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "W2YlyVOb",
@@ -553,10 +672,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "zasQK9vI",
@@ -591,10 +719,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "I3EHujFi",
@@ -629,10 +766,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "jcMVHnNp",
@@ -667,10 +813,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "lUXiPUUA",
@@ -705,10 +860,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "MegIWUMU",
@@ -743,10 +907,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "hvUsr4PE",
@@ -781,10 +954,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "GWiWzMUF",
@@ -819,10 +1001,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "OdevZaaS",
@@ -857,10 +1048,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "8SJCgXuJ",
@@ -895,10 +1095,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "COhp3pDF",
@@ -933,10 +1142,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "hxDdcFtf",
@@ -971,10 +1189,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "W8TvznqT",
@@ -1009,10 +1236,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "8jWyTCVo",
@@ -1047,10 +1283,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "xUbG7Nm2",
@@ -1085,10 +1330,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "8CuYIm9U",
@@ -1123,10 +1377,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "GC1xFv8d",
@@ -1161,10 +1424,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "0M6bHzYP",
@@ -1199,10 +1471,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "xhHXtfdD",
@@ -1237,10 +1518,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "2Rd2zDN5",
@@ -1275,10 +1565,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "U3e89qJk",
@@ -1313,10 +1612,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "02G4egB6",
@@ -1351,10 +1659,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "fo7dhTbc",
@@ -1389,10 +1706,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "nssdK0X7",
@@ -1427,10 +1753,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "2BA4j7T9",
@@ -1465,10 +1800,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "40MTYan1",
@@ -1503,10 +1847,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "bach6APO",
@@ -1541,10 +1894,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "dEFHpxcl",
@@ -1579,10 +1941,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "88DClobM",
@@ -1617,10 +1988,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "nyjnveOt",
@@ -1655,10 +2035,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "04XktrfR",
@@ -1693,10 +2082,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "AFbUG0wp",
@@ -1731,10 +2129,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "t4UqRj0b",
@@ -1769,10 +2176,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "86lOxr03",
@@ -1807,10 +2223,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "6quIRHi2",
@@ -1845,10 +2270,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "4varqPLq",
@@ -1883,10 +2317,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "63utOrYr",
@@ -1921,10 +2364,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "ILexAhQa",
@@ -1959,10 +2411,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "KOElayCs",
@@ -1997,10 +2458,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "KStATwNk",
@@ -2035,10 +2505,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "f1gfxZhg",
@@ -2073,10 +2552,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "27j2VQu9",
@@ -2111,10 +2599,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "jZgp8WfC",
@@ -2149,10 +2646,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "4b9J4clK",
@@ -2187,10 +2693,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "AehUBEem",
@@ -2225,10 +2740,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "vBfx56r3",
@@ -2263,10 +2787,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "2iKAUP6j",
@@ -2301,10 +2834,19 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
     },
     {
       "match_id": "fRz0N8aN",
@@ -2339,10 +2881,437 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": { "m": null, "v": null },
-        "ft": { "m": null, "v": null }
+        "ht": {
+          "m": null,
+          "v": null
+        },
+        "ft": {
+          "m": null,
+          "v": null
+        }
       },
-      "placar": { "m": null, "v": null }
+      "placar": {
+        "m": null,
+        "v": null
+      }
+    },
+    {
+      "match_id": "4C6Rfywn",
+      "id": "4C6Rfywn",
+      "mandante": "LDU Quito",
+      "visitante": "Aucas",
+      "data": "22.04.2026 22:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 16
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "xQ4ZhF7b",
+      "id": "xQ4ZhF7b",
+      "mandante": "Barcelona SC",
+      "visitante": "Mushuc Runa",
+      "data": "22.04.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 9,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "MDfMbpvK",
+      "id": "MDfMbpvK",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Orense",
+      "data": "22.04.2026 17:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "hdohgO1s",
+      "id": "hdohgO1s",
+      "mandante": "Delfin",
+      "visitante": "Ind. del Valle",
+      "data": "22.04.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "bgl0i2Wg",
+      "id": "bgl0i2Wg",
+      "mandante": "Leones del Norte",
+      "visitante": "Manta",
+      "data": "22.04.2026 13:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "W6n8kt16",
+      "id": "W6n8kt16",
+      "mandante": "Tecnico U.",
+      "visitante": "Emelec",
+      "data": "21.04.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "vXkGmKVI",
+      "id": "vXkGmKVI",
+      "mandante": "Libertad v Guayaquil City 21/04/2026 | Football",
+      "visitante": "Flashscore",
+      "data": "23/04/2026",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": null,
+        "ft": null
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 14
+        }
+      },
+      "placar": null
+    },
+    {
+      "match_id": "UgvktH6e",
+      "id": "UgvktH6e",
+      "mandante": "Macara",
+      "visitante": "Barcelona SC",
+      "data": "19.04.2026 20:10",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 7,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "xnMsrwxq",
+      "id": "xnMsrwxq",
+      "mandante": "Ind. del Valle",
+      "visitante": "LDU Quito",
+      "data": "19.04.2026 17:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 9,
+          "v": 0
+        },
+        "ft": {
+          "m": 18,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 70,
+          "v": 30
+        },
+        "finalizacoes": {
+          "m": 31,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "WtHtn7fE",
+      "id": "WtHtn7fE",
+      "mandante": "Manta",
+      "visitante": "Dep. Cuenca",
+      "data": "19.04.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": null,
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      }
     }
   ]
 };

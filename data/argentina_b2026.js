@@ -1,8 +1,11 @@
-// Primera B Nacional (Argentina) 2026 — Injeção Varredor v4 (upsert)
-// 164 jogos | Atualizado: 2026-04-22
+// ============================================================
+// ARG_B 2026 — Injeção Varredor v4 (upsert)
+// 164 jogos | Atualizado: 2026-04-23
+// ============================================================
+
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-22",
+  "ultimaAtualizacao": "2026-04-23",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
