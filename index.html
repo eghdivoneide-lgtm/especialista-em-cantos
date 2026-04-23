@@ -594,6 +594,24 @@
   <!-- ══════════════════ BET TRACKER ══════════════════ -->
   <div id="view-tracker" class="view">
     <div class="section-title">📈 Diário de Operações (Bet Tracker)</div>
+    <!-- v2.0: tracker unificado — filtro por liga dentro do próprio tracker -->
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:.7rem 1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap">
+      <span style="font-size:.72rem;color:var(--muted);text-transform:uppercase;font-weight:700;letter-spacing:.5px">🎯 Filtrar por liga:</span>
+      <select id="tracker-filtro-liga" onchange="aplicarFiltroLigaTracker(this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;min-width:180px">
+        <option value="">🌐 Todas as ligas</option>
+        <option value="BR">🇧🇷 Brasileirão</option>
+        <option value="MLS">🇺🇸 MLS</option>
+        <option value="ARG">🇦🇷 Liga Profesional</option>
+        <option value="ARG_B">🇦🇷 Primera B</option>
+        <option value="USL">🇺🇸 USL Championship</option>
+        <option value="BUN">🇩🇪 Bundesliga</option>
+        <option value="ALM">🇦🇺 A-League</option>
+        <option value="J1">🇯🇵 J1 League</option>
+        <option value="CHI">🇨🇱 Primera Div. (CHI)</option>
+        <option value="ECU">🇪🇨 LigaPro (ECU)</option>
+      </select>
+      <span id="tracker-filtro-info" style="font-size:.72rem;color:var(--muted);margin-left:auto">— total de apostas: <strong id="tracker-filtro-count" style="color:var(--text)">0</strong></span>
+    </div>
     <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;" id="chart-roi-container">
       <div style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center;">Crescimento do Lucro Acumulado (ROI)</div>
       <canvas id="chart-roi" style="width:100%;max-height:200px;"></canvas>
@@ -4065,7 +4083,12 @@ function salvarResultadoOficial(mandante, visitante) {
 // ══════════════════════════════════════════════════
 
 let customBets = [];
-function betsKey(){ return `sniper_bets_${LIGA_ATUAL}`; }
+// v2.0 — 2026-04-22: Bet Tracker virou UNIFICADO (diário único, não mais
+// um storage por liga). Cada bet agora carrega o campo `liga`. Filtro por
+// liga acontece na UI via `trackerFiltroLiga`.
+function betsKey(){ return 'sniper_bets_geral'; }
+// Filtro ativo no tracker — '' = todas as ligas. Atualizado pelo dropdown.
+let trackerFiltroLiga = '';
 
 // --- CSV IMPORT/EXPORT ---
 async function exportarRelatorio() {
@@ -4167,6 +4190,7 @@ async function importarDados(event) {
         const existingIDs = new Set(customBets.map(b => b.id.toString()));
         jsonBets.forEach(b => {
           if(!existingIDs.has(b.id.toString())) {
+            if (!b.liga) b.liga = LIGA_ATUAL; // compatibilidade com arquivos de versões antigas
             customBets.push(b);
             importedCount++;
           }
@@ -4186,6 +4210,7 @@ async function importarDados(event) {
             if(!existingIDs.has(bID)) {
               customBets.push({
                 id: parseInt(bID) || new Date().getTime() + i, data: cols[1],
+                liga: LIGA_ATUAL, // CSV legado não tem liga — assume a liga ativa na importação
                 mandante: cols[2], visitante: cols[3], mercado: cols[4],
                 linha: cols[5], odd: parseFloat(cols[6]), unid: parseFloat(cols[7]), status: cols[8]
               });
@@ -4208,7 +4233,32 @@ async function importarDados(event) {
 }
 
 function carregarBets(){
-  try{ const bJson = localStorage.getItem(betsKey()); customBets = bJson ? JSON.parse(bJson) : []; }catch(e){ customBets=[]; }
+  try {
+    // 1. Tenta o novo storage unificado
+    const bJson = localStorage.getItem('sniper_bets_geral');
+    if (bJson) { customBets = JSON.parse(bJson); return; }
+
+    // 2. Migração one-shot: consolida storages antigos `sniper_bets_<liga>`.
+    // Rodou uma vez ao abrir o app após v2.0. Cada bet legado ganha o campo
+    // `liga` deduzido pela própria chave do storage.
+    const ligas = ['BR','MLS','ARG','USL','BUN','ARG_B','ALM','J1','CHI','ECU'];
+    customBets = [];
+    for (const lg of ligas) {
+      try {
+        const antigo = localStorage.getItem('sniper_bets_' + lg);
+        if (!antigo) continue;
+        const bets = JSON.parse(antigo) || [];
+        bets.forEach(b => {
+          if (!b.liga) b.liga = lg;
+          customBets.push(b);
+        });
+      } catch(e) { /* ignora storage corrompido */ }
+    }
+    if (customBets.length > 0) {
+      localStorage.setItem('sniper_bets_geral', JSON.stringify(customBets));
+      console.log('[EDS] Bet Tracker v2.0: ' + customBets.length + ' apostas consolidadas dos storages por liga.');
+    }
+  } catch(e) { customBets = []; }
 }
 carregarBets();
 
@@ -4236,6 +4286,7 @@ function salvarBetTracker() {
   customBets.push({
     id: dt.getTime(),
     data: dt.toISOString().split('T')[0],
+    liga: LIGA_ATUAL,
     mandante: trackerCurrentM,
     visitante: trackerCurrentV,
     mercado, linha, odd, unid,
@@ -4273,10 +4324,10 @@ function deletarBet(id) {
 // Cada lote tem sua própria função com dados hardcoded para rodar 1x.
 // ══════════════════════════════════════════════════
 function importarLoteBacktestMLS_20260422() {
-  if (LIGA_ATUAL !== 'MLS') {
-    alert('⚠️ Troque para a liga MLS antes de importar este lote.\nLiga atual: ' + LIGA_ATUAL);
-    return;
-  }
+  // v2.0: tracker virou unificado — cada bet carrega o campo `liga`.
+  // Não precisa mais exigir que o usuário esteja na MLS; o lote é taggeado
+  // como liga:'MLS' direto.
+  const LIGA_DO_LOTE = 'MLS';
   // Dados das 9 apostas reais da rodada MLS 22/04/2026 (Pinnacle).
   // Fonte: backtest/bets_2026-04-22_mls.json
   const lote = [
@@ -4303,6 +4354,7 @@ function importarLoteBacktestMLS_20260422() {
     customBets.push({
       id: baseId + i,
       data: '2026-04-22',
+      liga: LIGA_DO_LOTE,
       mandante: a.mandante,
       visitante: a.visitante,
       mercado: a.mercado,
@@ -4314,7 +4366,7 @@ function importarLoteBacktestMLS_20260422() {
     novas++;
   });
   localStorage.setItem(betsKey(), JSON.stringify(customBets));
-  alert(`✅ Lote MLS 22/04 importado\n\n${novas} aposta(s) nova(s) adicionada(s) ao Bet Tracker.\n${duplicadas} duplicada(s) ignorada(s).\n\nTotal do lote: 9 apostas (5V 4D) — ROI +3.6%.`);
+  alert(`✅ Lote MLS 22/04 importado\n\n${novas} aposta(s) nova(s) adicionada(s) ao Bet Tracker unificado (liga: MLS).\n${duplicadas} duplicada(s) ignorada(s).\n\nTotal do lote: 9 apostas (5V 4D) — ROI +3.6%.\n\nTroque o filtro de liga no tracker para ver só essas ou 'Todas' para ver consolidado.`);
   renderTracker();
 }
 
@@ -4343,12 +4395,31 @@ function _trackerBetForEV(b) {
   };
 }
 
+// v2.0: atualiza o filtro ativo e re-renderiza.
+function aplicarFiltroLigaTracker(liga) {
+  trackerFiltroLiga = liga || '';
+  renderTracker();
+}
+
+// v2.0: helper — aplica o filtro atual ao array completo de customBets.
+function _betsFiltradas() {
+  if (!trackerFiltroLiga) return customBets;
+  return customBets.filter(b => (b.liga || '') === trackerFiltroLiga);
+}
+
 function renderTracker() {
-  const totalBets = customBets.length;
-  const resolvidas = customBets.filter(b => b.status === 'green' || b.status === 'red');
+  // v2.0: tudo aqui opera sobre o filtro ativo (_betsFiltradas). Passa a
+  // ser "diário de operações dessa liga" ou "diário geral" conforme seletor.
+  const betsFiltro = _betsFiltradas();
+  const totalBets = betsFiltro.length;
+  const resolvidas = betsFiltro.filter(b => b.status === 'green' || b.status === 'red');
   const greens = resolvidas.filter(b => b.status === 'green').length;
   const winrate = resolvidas.length ? (greens / resolvidas.length) * 100 : 0;
-  
+
+  // Atualiza o contador ao lado do seletor de liga.
+  const countEl = document.getElementById('tracker-filtro-count');
+  if (countEl) countEl.textContent = totalBets + (trackerFiltroLiga ? ' (' + trackerFiltroLiga + ')' : ' (todas as ligas)');
+
   let roiAcumulado = 0;
   let totalInvestido = 0;
   resolvidas.forEach(b => {
@@ -4384,8 +4455,11 @@ function renderTracker() {
     </div>
   `).join('');
 
-  if(!customBets.length) {
-    document.getElementById('tbody-tracker').innerHTML = `<tr><td colspan="8" style="text-align:center;padding:2rem;color:var(--muted)">Nenhuma entrada salva até agora.</td></tr>`;
+  if(!betsFiltro.length) {
+    const msg = trackerFiltroLiga
+      ? `Nenhuma entrada para a liga <strong>${trackerFiltroLiga}</strong>. Troque o filtro para 'Todas as ligas' ou importe um lote.`
+      : 'Nenhuma entrada salva até agora.';
+    document.getElementById('tbody-tracker').innerHTML = `<tr><td colspan="8" style="text-align:center;padding:2rem;color:var(--muted)">${msg}</td></tr>`;
     return;
   }
 
@@ -4396,7 +4470,7 @@ function renderTracker() {
     'void': '<span style="background:var(--bg);color:var(--gold);padding:3px 8px;border-radius:4px;font-size:.7rem">♻️ Devolvida</span>'
   };
 
-  document.getElementById('tbody-tracker').innerHTML = [...customBets].reverse().map(b => {
+  document.getElementById('tbody-tracker').innerHTML = [...betsFiltro].reverse().map(b => {
     let resultFin = '';
     if(b.status === 'green') resultFin = `<div style="font-size:.7rem;color:var(--green)">+${fmt((b.odd-1)*b.unid)}u</div>`;
     if(b.status === 'red') resultFin = `<div style="font-size:.7rem;color:#fca5a5">-${fmt(b.unid)}u</div>`;
@@ -4452,7 +4526,8 @@ function renderTracker() {
 }
 
 function renderTrackerAnalytics() {
-  const resolvidas = customBets.filter(b => b.status === 'green' || b.status === 'red');
+  // v2.0: analytics respeita o filtro de liga do tracker
+  const resolvidas = _betsFiltradas().filter(b => b.status === 'green' || b.status === 'red');
   if(!resolvidas.length) { document.getElementById('tracker-analytics').innerHTML = '<div style="color:var(--muted);grid-column:1/-1;padding:1rem;background:var(--bg2);border-radius:8px">❌ Nenhuma aposta resolvida para gerar métricas bayesianas cruzadas... Marque alguns greens ou reds para calibrar a máquina.</div>'; return; }
 
   // ── POR MERCADO ──────────────────────────────────────────
