@@ -609,6 +609,7 @@
         <button onclick="resolverTodasApostas('tracker')" style="background:linear-gradient(135deg,#34d367,#22c55e);border:none;color:#000;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:800;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(52,211,103,0.3);" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 4px 12px rgba(52,211,103,0.5)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(52,211,103,0.3)'" title="Cruza apostas em status 'aberto' com placar/cantos reais coletados">🎯 Resolver Automaticamente</button>
         <input type="file" id="inp-import-data" style="display:none" accept=".html,.csv" onchange="importarDados(event)">
         <button onclick="document.getElementById('inp-import-data').click()" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--green)'" onmouseout="this.style.borderColor='var(--border)'">📂 Importar Dados (.html/.csv)</button>
+        <button onclick="importarLoteBacktestMLS_20260422()" style="background:rgba(139,92,246,0.1);border:1px solid #a78bfa;color:#a78bfa;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='#a78bfa';this.style.color='#000'" onmouseout="this.style.background='rgba(139,92,246,0.1)';this.style.color='#a78bfa'" title="Injeta as 9 apostas reais da rodada MLS 22/04 no tracker (troque para a liga MLS antes)">🗃️ Importar Lote 22/04 MLS</button>
         <button onclick="exportarRelatorio()" style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='rgba(52,211,103,0.1)';this.style.color='var(--green)'">💾 Exportar P/ Pasta Local (Documento Lindo)</button>
         <button onclick="exportarTrackerXLS()" style="background:rgba(245,158,11,0.1);border:1px solid var(--gold);color:var(--gold);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='rgba(245,158,11,0.1)';this.style.color='var(--gold)'">📊 Exportar XLS (Banca)</button>
       </div>
@@ -4261,6 +4262,60 @@ function deletarBet(id) {
     localStorage.setItem(betsKey(), JSON.stringify(customBets));
     renderTracker();
   }
+}
+
+// ══════════════════════════════════════════════════
+// IMPORTADOR DE LOTES DE BACKTEST → BET TRACKER
+// Injeta apostas reais (já resolvidas) do backtest/ no diário local.
+// Uso típico: o operador fechou um lote numa casa externa (Pinnacle);
+// os dados ficam em backtest/bets_*.json para análise, e essa função
+// espelha no Bet Tracker da UI para ver o saldo consolidado no app.
+// Cada lote tem sua própria função com dados hardcoded para rodar 1x.
+// ══════════════════════════════════════════════════
+function importarLoteBacktestMLS_20260422() {
+  if (LIGA_ATUAL !== 'MLS') {
+    alert('⚠️ Troque para a liga MLS antes de importar este lote.\nLiga atual: ' + LIGA_ATUAL);
+    return;
+  }
+  // Dados das 9 apostas reais da rodada MLS 22/04/2026 (Pinnacle).
+  // Fonte: backtest/bets_2026-04-22_mls.json
+  const lote = [
+    { hora:'19:35:26', mandante:'New York Red Bulls',    visitante:'DC United',               mercado:'Handicap HT', linha:'-1.0', odd:1.892, unid:10.00, resultado:'D' },
+    { hora:'19:39:48', mandante:'New York City',         visitante:'FC Cincinnati',           mercado:'Under FT',    linha:'10.0', odd:1.925, unid:10.00, resultado:'V' },
+    { hora:'19:46:44', mandante:'Atlanta Utd',           visitante:'New England Revolution',  mercado:'Under FT',    linha:'9.5',  odd:1.990, unid:10.00, resultado:'D' },
+    { hora:'19:48:19', mandante:'Orlando City',          visitante:'Charlotte',               mercado:'Under FT',    linha:'9.0',  odd:1.653, unid:10.72, resultado:'V' },
+    { hora:'19:49:49', mandante:'Los Angeles FC',        visitante:'Colorado Rapids',         mercado:'Handicap HT', linha:'-1.0', odd:1.800, unid:10.00, resultado:'D' },
+    { hora:'19:50:43', mandante:'San Jose Earthquakes',  visitante:'Austin FC',               mercado:'Handicap HT', linha:'-1.5', odd:1.961, unid:10.00, resultado:'V' },
+    { hora:'19:34:54', mandante:'San Jose Earthquakes',  visitante:'Austin FC',               mercado:'Handicap FT', linha:'-1.0', odd:1.657, unid:13.00, resultado:'V' },
+    { hora:'19:10:58', mandante:'Columbus Crew',         visitante:'Los Angeles Galaxy',      mercado:'Handicap HT', linha:'-1.0', odd:1.900, unid:10.00, resultado:'V' },
+    { hora:'20:20:00', mandante:'Toronto FC',            visitante:'Philadelphia Union',      mercado:'Handicap HT', linha:'-0.5', odd:2.040, unid:10.00, resultado:'D' }
+  ];
+  // Detecta duplicatas pelo par (mandante, visitante, mercado, linha) para não
+  // reinserir se o botão for clicado duas vezes.
+  const existentes = new Set(customBets.map(b =>
+    [b.mandante, b.visitante, b.mercado, b.linha].join('|')
+  ));
+  const mapStatus = { V: 'green', D: 'red', R: 'void' };
+  let novas = 0, duplicadas = 0, baseId = Date.now();
+  lote.forEach((a, i) => {
+    const key = [a.mandante, a.visitante, a.mercado, a.linha].join('|');
+    if (existentes.has(key)) { duplicadas++; return; }
+    customBets.push({
+      id: baseId + i,
+      data: '2026-04-22',
+      mandante: a.mandante,
+      visitante: a.visitante,
+      mercado: a.mercado,
+      linha: a.linha,
+      odd: a.odd,
+      unid: a.unid,
+      status: mapStatus[a.resultado] || 'aberto'
+    });
+    novas++;
+  });
+  localStorage.setItem(betsKey(), JSON.stringify(customBets));
+  alert(`✅ Lote MLS 22/04 importado\n\n${novas} aposta(s) nova(s) adicionada(s) ao Bet Tracker.\n${duplicadas} duplicada(s) ignorada(s).\n\nTotal do lote: 9 apostas (5V 4D) — ROI +3.6%.`);
+  renderTracker();
 }
 
 // Convert a tracker bet (mercado string + linha string) to the format expected by calcEVModelBet
