@@ -627,7 +627,8 @@
         <button onclick="resolverTodasApostas('tracker')" style="background:linear-gradient(135deg,#34d367,#22c55e);border:none;color:#000;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:800;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(52,211,103,0.3);" onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 4px 12px rgba(52,211,103,0.5)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(52,211,103,0.3)'" title="Cruza apostas em status 'aberto' com placar/cantos reais coletados">🎯 Resolver Automaticamente</button>
         <input type="file" id="inp-import-data" style="display:none" accept=".html,.csv" onchange="importarDados(event)">
         <button onclick="document.getElementById('inp-import-data').click()" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--green)'" onmouseout="this.style.borderColor='var(--border)'">📂 Importar Dados (.html/.csv)</button>
-        <button onclick="importarLoteBacktestMLS_20260422()" style="background:rgba(139,92,246,0.1);border:1px solid #a78bfa;color:#a78bfa;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='#a78bfa';this.style.color='#000'" onmouseout="this.style.background='rgba(139,92,246,0.1)';this.style.color='#a78bfa'" title="Injeta as 9 apostas reais da rodada MLS 22/04 no tracker (troque para a liga MLS antes)">🗃️ Importar Lote 22/04 MLS</button>
+        <input type="file" id="inp-import-csv-pinnacle" style="display:none" accept=".csv" onchange="importarCSVPinnacle(event)">
+        <button onclick="document.getElementById('inp-import-csv-pinnacle').click()" style="background:rgba(139,92,246,0.1);border:1px solid #a78bfa;color:#a78bfa;padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='#a78bfa';this.style.color='#000'" onmouseout="this.style.background='rgba(139,92,246,0.1)';this.style.color='#a78bfa'" title="Importa o CSV completo exportado pela Pinnacle — parseia apostas, mapeia liga e mercado, traz resultados já resolvidos">📄 Importar CSV (Pinnacle)</button>
         <button onclick="exportarRelatorio()" style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--green)';this.style.color='#000'" onmouseout="this.style.background='rgba(52,211,103,0.1)';this.style.color='var(--green)'">💾 Exportar P/ Pasta Local (Documento Lindo)</button>
         <button onclick="exportarTrackerXLS()" style="background:rgba(245,158,11,0.1);border:1px solid var(--gold);color:var(--gold);padding:.5rem 1rem;border-radius:6px;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='rgba(245,158,11,0.1)';this.style.color='var(--gold)'">📊 Exportar XLS (Banca)</button>
       </div>
@@ -4316,58 +4317,170 @@ function deletarBet(id) {
 }
 
 // ══════════════════════════════════════════════════
-// IMPORTADOR DE LOTES DE BACKTEST → BET TRACKER
-// Injeta apostas reais (já resolvidas) do backtest/ no diário local.
-// Uso típico: o operador fechou um lote numa casa externa (Pinnacle);
-// os dados ficam em backtest/bets_*.json para análise, e essa função
-// espelha no Bet Tracker da UI para ver o saldo consolidado no app.
-// Cada lote tem sua própria função com dados hardcoded para rodar 1x.
+// IMPORTADOR DE CSV PINNACLE → BET TRACKER (v2.0)
+// Parseia o arquivo "Apostas Simples YYYYMMDD.csv" exportado pela Pinnacle
+// e injeta no tracker unificado. Mapeia campeonato → liga, mercado/período/
+// seleção → schema interno, converte resultado GANHOU/PERDEU/REEMB → status.
+// Lida com encoding corrompido (UTF-8 lido como latin-1 pelo Excel/BOM).
 // ══════════════════════════════════════════════════
-function importarLoteBacktestMLS_20260422() {
-  // v2.0: tracker virou unificado — cada bet carrega o campo `liga`.
-  // Não precisa mais exigir que o usuário esteja na MLS; o lote é taggeado
-  // como liga:'MLS' direto.
-  const LIGA_DO_LOTE = 'MLS';
-  // Dados das 9 apostas reais da rodada MLS 22/04/2026 (Pinnacle).
-  // Fonte: backtest/bets_2026-04-22_mls.json
-  const lote = [
-    { hora:'19:35:26', mandante:'New York Red Bulls',    visitante:'DC United',               mercado:'Handicap HT', linha:'-1.0', odd:1.892, unid:10.00, resultado:'D' },
-    { hora:'19:39:48', mandante:'New York City',         visitante:'FC Cincinnati',           mercado:'Under FT',    linha:'10.0', odd:1.925, unid:10.00, resultado:'V' },
-    { hora:'19:46:44', mandante:'Atlanta Utd',           visitante:'New England Revolution',  mercado:'Under FT',    linha:'9.5',  odd:1.990, unid:10.00, resultado:'D' },
-    { hora:'19:48:19', mandante:'Orlando City',          visitante:'Charlotte',               mercado:'Under FT',    linha:'9.0',  odd:1.653, unid:10.72, resultado:'V' },
-    { hora:'19:49:49', mandante:'Los Angeles FC',        visitante:'Colorado Rapids',         mercado:'Handicap HT', linha:'-1.0', odd:1.800, unid:10.00, resultado:'D' },
-    { hora:'19:50:43', mandante:'San Jose Earthquakes',  visitante:'Austin FC',               mercado:'Handicap HT', linha:'-1.5', odd:1.961, unid:10.00, resultado:'V' },
-    { hora:'19:34:54', mandante:'San Jose Earthquakes',  visitante:'Austin FC',               mercado:'Handicap FT', linha:'-1.0', odd:1.657, unid:13.00, resultado:'V' },
-    { hora:'19:10:58', mandante:'Columbus Crew',         visitante:'Los Angeles Galaxy',      mercado:'Handicap HT', linha:'-1.0', odd:1.900, unid:10.00, resultado:'V' },
-    { hora:'20:20:00', mandante:'Toronto FC',            visitante:'Philadelphia Union',      mercado:'Handicap HT', linha:'-0.5', odd:2.040, unid:10.00, resultado:'D' }
-  ];
-  // Detecta duplicatas pelo par (mandante, visitante, mercado, linha) para não
-  // reinserir se o botão for clicado duas vezes.
-  const existentes = new Set(customBets.map(b =>
-    [b.mandante, b.visitante, b.mercado, b.linha].join('|')
-  ));
-  const mapStatus = { V: 'green', D: 'red', R: 'void' };
-  let novas = 0, duplicadas = 0, baseId = Date.now();
-  lote.forEach((a, i) => {
-    const key = [a.mandante, a.visitante, a.mercado, a.linha].join('|');
-    if (existentes.has(key)) { duplicadas++; return; }
-    customBets.push({
-      id: baseId + i,
-      data: '2026-04-22',
-      liga: LIGA_DO_LOTE,
-      mandante: a.mandante,
-      visitante: a.visitante,
-      mercado: a.mercado,
-      linha: a.linha,
-      odd: a.odd,
-      unid: a.unid,
-      status: mapStatus[a.resultado] || 'aberto'
+
+// Mapa Campeonato Pinnacle → código de liga interno.
+const _PINNACLE_LIGA_MAP = {
+  'Alemanha - Bundesliga': 'BUN',
+  'Argentina - Liga Pro': 'ARG',
+  'Argentina - Primeira B Nacional': 'ARG_B',
+  'Austrália - A-League': 'ALM',
+  'Brasil - Série A': 'BR',
+  'Chile - 1ª División': 'CHI',
+  'EUA - Major League Soccer': 'MLS',
+  'EUA - USL Championship': 'USL',
+  'Equador - Série A': 'ECU',
+  'Japão - J League': 'J1'
+};
+
+// Corrige mojibake típico de UTF-8 lido como Windows-1252 (e o inverso,
+// que aparece no arquivo exportado pela Pinnacle via Excel).
+function _fixEncodingPinnacle(text) {
+  // Detecção simples: se contém sequências "Ã?" ou "Âª", o arquivo foi
+  // UTF-8 lido como latin-1 e re-encodado em UTF-8.
+  if (!/Ã.|Â[ªº°]/.test(text)) return text;
+  const map = {
+    'Ã¡':'á','Ã©':'é','Ã­':'í','Ã³':'ó','Ãº':'ú',
+    'Ã¢':'â','Ãª':'ê','Ã´':'ô',
+    'Ã£':'ã','Ãµ':'õ',
+    'Ã§':'ç',
+    'Ã ':'à',
+    'Ã':'Á','Ã‰':'É','Ã':'Í','Ã“':'Ó','Ãš':'Ú',
+    'Ãƒ':'Ã','Ã‡':'Ç',
+    'Âª':'ª','Âº':'º','Â°':'°','Â':''
+  };
+  let out = text;
+  for (const k in map) out = out.split(k).join(map[k]);
+  return out;
+}
+
+// Converte uma linha do CSV (array de strings já splitado por ;) para
+// o schema do Bet Tracker. Retorna null se a linha não bater no padrão
+// esperado (mercado incomum, linha cabeçalho, etc).
+function _parsearLinhaCSVPinnacle(cols) {
+  if (!cols || cols.length < 12) return null;
+  const [dataStr, camp, tCasa, tFora, mercado, periodo, selecao, oddStr, riscoStr, /*escHT*/, /*escFT*/, resultado] = cols.map(s => (s||'').trim());
+  if (!dataStr || !camp || !tCasa || !tFora) return null;
+  if (dataStr === 'Data') return null; // header
+
+  // Data DD/MM → YYYY-MM-DD (assume 2026; ajustar aqui se virar multi-temporada)
+  const mData = dataStr.match(/^(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?$/);
+  if (!mData) return null;
+  const dd = mData[1].padStart(2,'0');
+  const mm = mData[2].padStart(2,'0');
+  const yyyy = mData[3] ? (mData[3].length === 2 ? '20'+mData[3] : mData[3]) : '2026';
+  const dataISO = `${yyyy}-${mm}-${dd}`;
+
+  const liga = _PINNACLE_LIGA_MAP[camp] || null;
+  if (!liga) return null; // campeonato não mapeado
+
+  let mercadoTracker = null, linha = '';
+  if (mercado === 'O/U') {
+    const mSel = selecao.match(/^(Menos|Mais)\s+de\s+(\d+(?:[.,]\d+)?)/i);
+    if (!mSel) return null;
+    linha = mSel[2].replace(',', '.');
+    const over = /^mais/i.test(mSel[1]);
+    mercadoTracker = periodo === 'HT'
+      ? (over ? 'Over HT' : 'Under HT')
+      : (over ? 'Over FT' : 'Under FT');
+  } else if (mercado === 'HDP') {
+    // Seleção típica: "Los Angeles Galaxy +0.5", "RB Leipzig -0.5", "Western Sydney Wanderers 0.0"
+    const mSel = selecao.match(/([+\-]?\d+(?:[.,]\d+)?)\s*$/);
+    if (!mSel) return null;
+    linha = mSel[1].replace(',', '.');
+    // Preserva sinal: "0.0" vira "0", "-0.5" vira "-0.5"
+    if (!/^[+\-]/.test(linha) && parseFloat(linha) === 0) linha = '0';
+    mercadoTracker = periodo === 'HT' ? 'Handicap HT' : 'Handicap FT';
+  } else {
+    // "Partida Totais da equipe" e outros mercados não cobertos pelo schema
+    // atual do Bet Tracker — pula e contabiliza.
+    return { _skip: true, motivo: 'mercado_nao_suportado', mercado, selecao };
+  }
+
+  const mapStatus = { 'GANHOU': 'green', 'PERDEU': 'red', 'REEMB.': 'void', 'REEMB': 'void' };
+  const status = mapStatus[resultado.toUpperCase()] || 'aberto';
+
+  const odd = parseFloat(oddStr.replace(',', '.'));
+  const unid = parseFloat(riscoStr.replace(',', '.'));
+  if (isNaN(odd) || isNaN(unid)) return null;
+
+  return {
+    data: dataISO,
+    liga,
+    mandante: tCasa,
+    visitante: tFora,
+    mercado: mercadoTracker,
+    linha,
+    odd,
+    unid,
+    status
+  };
+}
+
+function importarCSVPinnacle(event) {
+  const file = event.target.files && event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    let text = e.target.result;
+    text = _fixEncodingPinnacle(text);
+
+    // Split em linhas (aceita \r\n e \n)
+    const linhas = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+    if (linhas.length < 2) { alert('CSV vazio ou sem linhas de dados.'); return; }
+
+    // Dedup contra customBets existentes por chave estável
+    const chaveDe = b => [b.liga, b.data, b.mandante, b.visitante, b.mercado, b.linha, b.odd].join('|');
+    const existentes = new Set(customBets.map(chaveDe));
+
+    let novas = 0, duplicadas = 0, puladas = 0, malformadas = 0;
+    const porLiga = {}, porStatus = { green: 0, red: 0, void: 0, aberto: 0 };
+    let baseId = Date.now();
+
+    linhas.forEach((linha, idx) => {
+      // Pinnacle usa `;` como separador
+      const cols = linha.split(';');
+      const parsed = _parsearLinhaCSVPinnacle(cols);
+      if (!parsed) { malformadas++; return; }
+      if (parsed._skip) { puladas++; return; }
+      if (existentes.has(chaveDe(parsed))) { duplicadas++; return; }
+
+      customBets.push({
+        id: baseId + idx,
+        ...parsed
+      });
+      existentes.add(chaveDe(parsed));
+      novas++;
+      porLiga[parsed.liga] = (porLiga[parsed.liga] || 0) + 1;
+      porStatus[parsed.status] = (porStatus[parsed.status] || 0) + 1;
     });
-    novas++;
-  });
-  localStorage.setItem(betsKey(), JSON.stringify(customBets));
-  alert(`✅ Lote MLS 22/04 importado\n\n${novas} aposta(s) nova(s) adicionada(s) ao Bet Tracker unificado (liga: MLS).\n${duplicadas} duplicada(s) ignorada(s).\n\nTotal do lote: 9 apostas (5V 4D) — ROI +3.6%.\n\nTroque o filtro de liga no tracker para ver só essas ou 'Todas' para ver consolidado.`);
-  renderTracker();
+
+    localStorage.setItem(betsKey(), JSON.stringify(customBets));
+
+    // Resumo por liga ordenado por quantidade
+    const resumoLigas = Object.entries(porLiga)
+      .sort((a,b) => b[1] - a[1])
+      .map(([lg, n]) => `  ${lg}: ${n}`).join('\n');
+    alert(
+      `✅ CSV Pinnacle importado\n\n` +
+      `Apostas novas:     ${novas}\n` +
+      `Duplicadas:        ${duplicadas}\n` +
+      `Puladas (mercado): ${puladas}\n` +
+      `Linhas ruins:      ${malformadas}\n\n` +
+      `Por status: ✅ ${porStatus.green}  ❌ ${porStatus.red}  ♻️ ${porStatus.void}  ⏳ ${porStatus.aberto}\n\n` +
+      `Por liga:\n${resumoLigas}\n\n` +
+      `Use o filtro 'Filtrar por liga' no topo do tracker para recortar.`
+    );
+    renderTracker();
+  };
+  // Lê como UTF-8; o fix de encoding reverte o mojibake se necessário.
+  reader.readAsText(file, 'UTF-8');
+  event.target.value = '';
 }
 
 // Convert a tracker bet (mercado string + linha string) to the format expected by calcEVModelBet
