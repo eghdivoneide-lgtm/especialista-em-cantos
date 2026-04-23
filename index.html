@@ -941,10 +941,36 @@ const MOTOR_CONFIG = Object.freeze({
 // Atualizar após rodar `node backtest/analisar.js` e confirmar tendência em
 // 2 lotes consecutivos. Ver backtest/README.md para critérios.
 const LIGAS_STATUS = Object.freeze({
-  MLS: { status: 'observacao', roi: -18.3, n: 12, desde: '2026-04-22',
-         motivo: 'Primeiro backtest (n=12) mostrou ROI -18.3% e edge -8.8%. Amostra ainda borderline; confirmar no próximo lote antes de baixar OARF.' },
+  MLS: { status: 'observacao', roi: -8.1, n: 21, desde: '2026-04-22',
+         motivo: 'Acumulado 2 lotes: ROI -18.3% (n=12) + +3.6% (n=9) = -8.1% em n=21. Saldo negativo, mas lote 2 estabilizou. Entrar apenas conforme PROTOCOLO_STAKE — Unders com TMI dupla < 1.0 e HDP HT só com cruzamento top 5 × top 10.' },
   ECU: { status: 'suspenso',   roi: -71.3, n: 6,  desde: '2026-04-22',
          motivo: 'Backtest catastrófico (5 derrotas em 6) + usuário reportou 2º lote com mesmo padrão (HDP de favorito errando sistematicamente). Motor sem DNA Escoteiro para ECU, amostra de jogos pequena. Não apostar até recalibrar.' }
+});
+
+// ── PROTOCOLO DE STAKE (regras de entrada disciplinadas, v1.0 — 2026-04-22) ──
+// Após 2 lotes de backtest real (21 apostas MLS), ficou claro que:
+//   • Under FT com TMI dupla baixa foi 4V 1R em 5 tentativas (80% hit)
+//   • HDP HT com cruzamento estático rigoroso (top atk × top concede) funcionou
+//   • HDP HT "porque o time é bonito" drenou ROI consistentemente
+// O protocolo abaixo codifica isso como regra operacional. Ver
+// backtest/protocolo_stake.md para motivação e histórico.
+const PROTOCOLO_STAKE = Object.freeze({
+  // Regra 1 — Under FT reforçado: ambos os times com TMI < 1.0 (jogo apático)
+  // E Sniper FT indicando UNDER. Stake cheio.
+  UNDER_REFORCADO_STAKE: 10,
+  TMI_LIMITE_APATICO: 1.0,
+
+  // Regra 2 — HDP HT liberado: mandante entre top N no ranking de HT pró casa
+  // E visitante entre top M no ranking de HT concede fora. Stake reduzido.
+  HDP_HT_LIBERADO_STAKE: 5,
+  TOP_RANK_ATAQUE_CASA_HT: 5,   // mandante precisa estar nos 5 melhores em atk HT casa
+  TOP_RANK_DEFESA_FORA_HT: 10,  // visitante precisa estar nos 10 piores em defesa HT fora
+
+  // Regra 3 — corolário da 2: se não passa no cruzamento, HDP HT não entra.
+  // Implementada em gerarRecomendacoes(): recs.push só acontece se liberado.
+
+  // Regra 4 — outliers acontecem. Ver banner no dashboard e lembrete abaixo.
+  LEMBRETE_ANTI_REVANCHE: 'Outliers acontecem em ~8% das apostas com 90%+ de probabilidade. Aceitar o stop loss e recalibrar no próximo lote — nunca dobrar stake após red.'
 });
 
 // DADOS_BR pode falhar ao carregar (arquivo ausente, erro de parse). Faz
@@ -1168,6 +1194,57 @@ function getForcaOfensiva(time, contexto, periodo) {
   if (!fc.forca[time]) return 1.0;
   const key = `r_atk_${contexto}_${periodo}`;
   return fc.forca[time][key] || 1.0;
+}
+
+// ══════════════════════════════════════════════════
+// v1.0 — RANKING HT por liga (ataque em casa / concede fora)
+// Usado pelo PROTOCOLO_STAKE para validar se o cruzamento estático
+// (top N atk casa × top M concede fora) habilita a recomendação de HDP HT.
+// ══════════════════════════════════════════════════
+let _rankingHTCache = null;
+let _rankingHTCacheLiga = null;
+function getRankingHT() {
+  const ligaKey = (typeof LIGA_ATUAL !== 'undefined' ? LIGA_ATUAL : 'X') + '_' + (DADOS_2026.jogos?.length || 0);
+  if (_rankingHTCache && _rankingHTCacheLiga === ligaKey) return _rankingHTCache;
+
+  const times = DADOS_2026.times || [];
+  const jogos = (DADOS_2026.jogos || []).filter(j => j && j.cantos && j.cantos.ht);
+
+  // Acumula cantos HT feitos em casa / concedidos fora por time.
+  const acc = {};
+  for (const t of times) acc[t] = { n_casa: 0, ht_pro_casa: 0, n_fora: 0, ht_con_fora: 0 };
+
+  for (const j of jogos) {
+    if (acc[j.mandante]) {
+      acc[j.mandante].n_casa++;
+      acc[j.mandante].ht_pro_casa += (j.cantos.ht.m || 0);
+    }
+    if (acc[j.visitante]) {
+      // "Concede fora" = cantos que o MANDANTE fez no HT
+      acc[j.visitante].n_fora++;
+      acc[j.visitante].ht_con_fora += (j.cantos.ht.m || 0);
+    }
+  }
+
+  // Rank por média (desc) — times sem jogos no papel ficam no fim com val=0.
+  const atkCasaArr = times.map(t => ({
+    time: t, n: acc[t].n_casa,
+    val: acc[t].n_casa > 0 ? acc[t].ht_pro_casa / acc[t].n_casa : 0
+  })).sort((a, b) => b.val - a.val);
+
+  const defForaArr = times.map(t => ({
+    time: t, n: acc[t].n_fora,
+    val: acc[t].n_fora > 0 ? acc[t].ht_con_fora / acc[t].n_fora : 0
+  })).sort((a, b) => b.val - a.val);
+
+  const atkCasaHT = {};
+  atkCasaArr.forEach((x, i) => { atkCasaHT[x.time] = { pos: i + 1, val: +x.val.toFixed(2), n: x.n }; });
+  const defForaHT = {};
+  defForaArr.forEach((x, i) => { defForaHT[x.time] = { pos: i + 1, val: +x.val.toFixed(2), n: x.n }; });
+
+  _rankingHTCache = { atkCasaHT, defForaHT, total: times.length };
+  _rankingHTCacheLiga = ligaKey;
+  return _rankingHTCache;
 }
 
 // ══════════════════════════════════════════════════
@@ -1818,6 +1895,41 @@ function projecaoJogo(mandante, visitante) {
   const dnaM = calcDNA(todosM, mandante);
   const dnaV = calcDNA(todosV, visitante);
 
+  // ══════════════════════════════════════════════════
+  // v1.0 — PROTOCOLO DE STAKE (regras de entrada disciplinadas)
+  // ══════════════════════════════════════════════════
+  // Aplica as 4 regras de bolso definidas em 2026-04-22 após 2 lotes de
+  // backtest MLS. Valores vêm de PROTOCOLO_STAKE (configurável no topo).
+  const rankHT = getRankingHT();
+  const rkM = rankHT.atkCasaHT[mandante] || null;
+  const rkV = rankHT.defForaHT[visitante] || null;
+
+  // Regra 1 — Under FT reforçado: TMI de ambos < 1.0 E Sniper FT indicando UNDER.
+  const under_ft_reforcado = (
+    tmiHome < PROTOCOLO_STAKE.TMI_LIMITE_APATICO &&
+    tmiAway < PROTOCOLO_STAKE.TMI_LIMITE_APATICO &&
+    typeof sniperFT === 'string' && sniperFT.startsWith('UNDER')
+  );
+
+  // Regra 2 — HDP HT liberado: mandante no top N E visitante no top M.
+  const cruzamento_hdp_ht_liberado = !!(
+    rkM && rkV &&
+    rkM.pos <= PROTOCOLO_STAKE.TOP_RANK_ATAQUE_CASA_HT &&
+    rkV.pos <= PROTOCOLO_STAKE.TOP_RANK_DEFESA_FORA_HT
+  );
+
+  const protocolo = {
+    rank_m_atk_ht_casa: rkM,   // { pos, val, n } ou null
+    rank_v_def_ht_fora: rkV,
+    under_ft_reforcado,
+    cruzamento_hdp_ht_liberado,
+    tmi_ambos_baixos: (tmiHome < 1.0 && tmiAway < 1.0),
+    stake_sugerido: {
+      under_ft: under_ft_reforcado ? PROTOCOLO_STAKE.UNDER_REFORCADO_STAKE : 0,
+      hdp_ht:   cruzamento_hdp_ht_liberado ? PROTOCOLO_STAKE.HDP_HT_LIBERADO_STAKE : 0
+    }
+  };
+
   return { expTotalHT, expTotalFT, confFT, oversHT, oversFT, oddsHT, oddsFT, m, v,
     // Cantos individuais por time
     expHomeHT, expAwayHT, expHomeFT, expAwayFT,
@@ -1833,7 +1945,9 @@ function projecaoJogo(mandante, visitante) {
     expBase: { homeHT: +expHomeHT_base.toFixed(2), awayHT: +expAwayHT_base.toFixed(2), home2T: +expHome2T_base.toFixed(2), away2T: +expAway2T_base.toFixed(2) },
     // v3.3: decomposição da confiança (auditoria). `confFT` acima já é o valor
     // final após descontos. Se quiser ver por que a confiança caiu, olhe aqui.
-    confDebug
+    confDebug,
+    // v1.0 PROTOCOLO_STAKE — sinais de entrada disciplinada
+    protocolo
   };
 }
 
@@ -3201,6 +3315,8 @@ function gerarRecomendacoes(p) {
   const rc = p.reisDosCantosData;
   const sn = p.tiroSniperData;
   const bp = p.balaDePrataData;
+  // PROTOCOLO_STAKE: campos produzidos por projecaoJogo em p.protocolo
+  const prot = p.protocolo || {};
 
   // 1. Bala de Prata (1x2 FT) — Mercado de maior valor quando ativo
   if(bp) {
@@ -3238,9 +3354,22 @@ function gerarRecomendacoes(p) {
     }
   });
 
-  // 5. Handicap -1.5 se forte
-  if(p.oddsFT.homeHcp*100 >= 60) {
-    recs.push({mercado:'Handicap -1.5 (Casa)', prob:+(p.oddsFT.homeHcp*100).toFixed(1), odd:+(1/p.oddsFT.homeHcp).toFixed(2), faixa:p.oddsFT.homeHcp*100>=70?'FORTE':'MODERADO', cor:p.oddsFT.homeHcp*100>=70?'#34d367':'#f59e0b', stars:p.oddsFT.homeHcp*100>=70?4:3, tipo:'HCP'});
+  // 5. Handicap -1.5 FT — PROTOCOLO_STAKE regra 2/3:
+  //    Só entra se prob >= 60% E cruzamento HDP HT liberado (mandante top 5
+  //    atk HT casa + visitante top 10 def HT fora). "Time bonito favorito"
+  //    sem essa confirmação estatística deixou de ser recomendado em 2026-04-22.
+  if(p.oddsFT.homeHcp*100 >= 60 && prot.cruzamento_hdp_ht_liberado) {
+    const rkM = prot.rank_m_atk_ht_casa, rkV = prot.rank_v_def_ht_fora;
+    recs.push({
+      mercado: 'Handicap -1.5 (Casa) ✅ cruzamento #' + (rkM?rkM.pos:'?') + ' × #' + (rkV?rkV.pos:'?'),
+      prob: +(p.oddsFT.homeHcp*100).toFixed(1),
+      odd: +(1/p.oddsFT.homeHcp).toFixed(2),
+      faixa: p.oddsFT.homeHcp*100>=70?'FORTE':'MODERADO',
+      cor: p.oddsFT.homeHcp*100>=70?'#34d367':'#f59e0b',
+      stars: p.oddsFT.homeHcp*100>=70?4:3,
+      tipo: 'HCP',
+      protocolo_stake: PROTOCOLO_STAKE.HDP_HT_LIBERADO_STAKE
+    });
   }
 
   // 6. Sniper (OVER/UNDER) — quando decisivo
@@ -3250,11 +3379,25 @@ function gerarRecomendacoes(p) {
   }
   if(sn.ft !== 'NEUTRO') {
     const pOver = sn.pOverFT;
-    recs.push({mercado:`${sn.ft} (Sniper FT)`, prob:sn.ft.includes('OVER')?+pOver.toFixed(1):+(100-pOver).toFixed(1), odd:0, faixa:'SNIPER', cor:sn.corFT, stars:pOver>=65||pOver<=35?5:4, tipo:'SN_FT'});
+    // PROTOCOLO_STAKE regra 1: Under FT reforçado (TMI dupla < 1.0) vira
+    // sinal 5★ com badge "REFORÇADO" e stake cheio.
+    const isUnderReforcado = prot.under_ft_reforcado && sn.ft.includes('UNDER');
+    const baseStars = pOver>=65||pOver<=35?5:4;
+    recs.push({
+      mercado: isUnderReforcado ? `${sn.ft} (Sniper FT) 🎯 REFORÇADO` : `${sn.ft} (Sniper FT)`,
+      prob: sn.ft.includes('OVER')?+pOver.toFixed(1):+(100-pOver).toFixed(1),
+      odd: 0,
+      faixa: isUnderReforcado ? 'SNIPER_REFORCADO' : 'SNIPER',
+      cor: sn.corFT,
+      stars: isUnderReforcado ? 5 : baseStars,
+      tipo: 'SN_FT',
+      protocolo_stake: isUnderReforcado ? PROTOCOLO_STAKE.UNDER_REFORCADO_STAKE : 0
+    });
   }
 
   // Ordenar: primeiro por stars (desc), depois por probabilidade (desc)
-  recs.sort((a,b) => b.stars - a.stars || b.prob - a.prob);
+  // Empate em stars: dar preferência a apostas com stake do protocolo (entradas disciplinadas).
+  recs.sort((a,b) => b.stars - a.stars || (b.protocolo_stake||0) - (a.protocolo_stake||0) || b.prob - a.prob);
 
   // Retornar top 3
   return recs.slice(0,3);
@@ -3349,13 +3492,19 @@ function renderTeacher() {
           recs.forEach((r,i) => {
             const starStr = '⭐'.repeat(r.stars);
             const bgAlpha = i===0 ? '15' : '08';
+            // PROTOCOLO_STAKE: badge de stake sugerido quando a aposta passa no protocolo.
+            const stakeBadge = r.protocolo_stake ? `<span style="font-size:.65rem;background:rgba(52,211,103,0.18);color:var(--green);padding:.15rem .4rem;border-radius:4px;font-weight:700;border:1px solid rgba(52,211,103,0.35);white-space:nowrap">R$ ${r.protocolo_stake}</span>` : '';
             recHTML += `<div style="display:flex;align-items:center;gap:.6rem;padding:.5rem .6rem;margin-bottom:.3rem;background:${r.cor}${bgAlpha};border-radius:6px;border-left:3px solid ${r.cor}">
               <span style="font-size:.82rem;font-weight:800;color:${r.cor};min-width:140px">${r.mercado}</span>
               <span style="font-size:.82rem;font-weight:900;color:var(--text)">${r.prob}%</span>
               ${r.odd > 0 ? `<span style="font-size:.75rem;color:var(--muted)">@${r.odd}</span>` : ''}
+              ${stakeBadge}
               <span style="font-size:.65rem;margin-left:auto">${starStr}</span>
             </div>`;
           });
+          // PROTOCOLO_STAKE regra 4: lembrete anti-revanche no rodapé do card.
+          // Aparece sempre — a ideia é lembrar antes de apostar, não só depois de perder.
+          recHTML += `<div style="margin-top:.5rem;padding:.4rem .6rem;background:rgba(239,68,68,0.05);border-left:3px solid var(--red);border-radius:4px;font-size:.7rem;color:var(--muted);font-style:italic">⚠ Outliers acontecem em ~8% das apostas 90%+. Aceite o red, não dobre stake.</div>`;
           recHTML += `</div>`;
           return recHTML;
         })()}
@@ -3662,6 +3811,8 @@ function trocarLiga(liga) {
   // antigo enquanto o novo dataset ainda está assentando.
   _forcaCantosCache = null;
   _forcaCantosCacheLiga = null;
+  _rankingHTCache = null;
+  _rankingHTCacheLiga = null;
 
   carregarCustomJogos();
   carregarBets();
