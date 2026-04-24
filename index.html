@@ -418,7 +418,7 @@
         <button onclick="varrerCisneNegro()" onmouseover="this.style.background='var(--gold2)'" onmouseout="this.style.background='var(--gold)'" style="background:var(--gold);color:#000;border:none;padding:0.75rem 1.5rem;border-radius:8px;font-weight:800;cursor:pointer;font-size:0.9rem;transition:all 0.2s;box-shadow:0 4px 15px rgba(251,191,36,0.3)">
           🔭 Varrer Frequências Ocultas
         </button>
-        <button onclick="document.getElementById('import-cisne-textarea').value=''" onmouseover="this.style.background='var(--card)';this.style.color='var(--red)'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:0.75rem 1rem;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.2s">Limpar</button>
+        <button onclick="limparCisneNegroLiga()" onmouseover="this.style.background='var(--card)';this.style.color='var(--red)'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:0.75rem 1rem;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.2s" title="Apaga textarea, cards e storage do Cisne Negro DESTA liga (outras ligas preservam seu estado)">🗑️ Limpar</button>
       </div>
     </div>
     
@@ -3092,6 +3092,7 @@ function showView(id) {
   if (id==='teacher') renderTeacher();
   if (id==='apostas') renderApostasReais();
   if (id==='enigma') renderEnigma();
+  if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
 }
 
 function emptyMsg(title, sub='') {
@@ -3837,6 +3838,7 @@ function trocarLiga(liga) {
   carregarCustomJogos();
   carregarBets();
   carregarJogosFuturos(); // ← CRÍTICO: recarrega jogos da rodada para a nova liga
+  carregarEstadoCisneNegro(); // ← v1.1: restaura textarea+cards da nova liga
   scChatHistory = [];
   init();
   showView('dashboard');
@@ -6855,10 +6857,98 @@ NÃO USE ASTERISCOS Markdown. Use exclusivamente as tags HTML para destaques. Se
 // ══════════════════════════════════════════════════
 //  Scanner Cisne Negro - Nassim Taleb Extremista
 // ══════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
+// CISNE NEGRO — persistência por liga (v1.1 — 2026-04-22)
+// Cada liga mantém seu próprio estado (textarea + cards gerados) em
+// localStorage, sob as chaves eds_cisne_texto_<LIGA> e eds_cisne_cards_<LIGA>.
+// Trocar de liga restaura o estado da liga ativa; se nunca foi usada, limpa.
+// ══════════════════════════════════════════════════
+
+function _cisneStorageKeys(liga) {
+  const L = liga || LIGA_ATUAL || 'X';
+  return { txt: 'eds_cisne_texto_' + L, cards: 'eds_cisne_cards_' + L };
+}
+
+// Gera o HTML de um card Cisne Negro (reutilizável entre varrer e restaurar).
+function _cisneCardHTML(jogo) {
+  const proj = projecaoJogo(jogo.m, jogo.v);
+  if (!proj) return null;
+  const diff = Math.abs(proj.expHomeFT - proj.expAwayFT);
+  if (diff < 2.0) return null;
+  const favorito = proj.expHomeFT > proj.expAwayFT ? jogo.m : jogo.v;
+  const superDiff = diff.toFixed(2);
+  const safeM = (jogo.m || '').replace(/'/g, "\\'");
+  const safeV = (jogo.v || '').replace(/'/g, "\\'");
+  return `
+    <div class="label" style="color:var(--gold)">🦢 SELO CISNE NEGRO</div>
+    <div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem;">${jogo.m} <br><span style="font-size:0.8rem;color:var(--muted)">vs</span><br> ${jogo.v}</div>
+    <div style="margin-bottom:.5rem;padding:.5rem;background:rgba(251,191,36,0.1);border-radius:6px;border:1px dashed var(--gold)">
+      <div style="font-size:.7rem;color:var(--muted)">Favorito Absoluto: <span style="font-weight:700;color:var(--text)">${favorito}</span></div>
+      <div style="font-size:.7rem;color:var(--muted)">Vantagem Projetada: <span style="font-weight:700;color:var(--green)">+${superDiff} cantos</span></div>
+      <div style="font-size:.7rem;color:var(--muted)">Nível Matemática: <span style="font-weight:700;color:var(--gold)">Altíssima (Gatilho)</span></div>
+    </div>
+    <button onclick="dispararCoachCisne('${safeM}', '${safeV}')" style="width:100%;margin-top:.2rem;background:var(--card);border:1px solid #6b8f79;color:var(--text);border-radius:6px;padding:.6rem;cursor:pointer;font-size:.75rem;font-weight:700;transition:all 0.2s" onmouseover="this.style.background='var(--green)';this.style.color='#000';this.style.borderColor='var(--green)'" onmouseout="this.style.background='var(--card)';this.style.color='var(--text)';this.style.borderColor='#6b8f79'">🧠 Gerar Veredito SmartCoach</button>
+  `;
+}
+
+// Renderiza a lista de cards Cisne Negro no container (a lista vem como
+// array de {m, v}). Se vazia, mostra o aviso de "nenhum gatilho".
+function renderCisneNegroCards(jogosComSinal) {
+  const ctr = document.getElementById('resultado-cisne-negro');
+  if (!ctr) return 0;
+  ctr.innerHTML = '';
+  let encontrados = 0;
+  (jogosComSinal || []).forEach(jogo => {
+    const html = _cisneCardHTML(jogo);
+    if (!html) return;
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+    card.style.borderColor = 'var(--gold)';
+    card.innerHTML = html;
+    ctr.appendChild(card);
+    encontrados++;
+  });
+  if (encontrados === 0 && (jogosComSinal || []).length > 0) {
+    // Lista tinha jogos mas nenhum passou no filtro (dados mudaram?) — aviso
+    ctr.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Os jogos desta liga não atingem mais o critério Cisne Negro (diff ≥ 2.0). Varra novamente.</div>';
+  }
+  return encontrados;
+}
+
+// Restaura textarea + cards da liga ativa (chamado em showView('cisne-negro')
+// e em trocarLiga). Se a liga não tem estado salvo, limpa os campos.
+function carregarEstadoCisneNegro() {
+  const keys = _cisneStorageKeys();
+  const ta = document.getElementById('import-cisne-textarea');
+  const ctr = document.getElementById('resultado-cisne-negro');
+  if (ta) ta.value = localStorage.getItem(keys.txt) || '';
+  if (ctr) {
+    const cardsJson = localStorage.getItem(keys.cards);
+    if (cardsJson) {
+      try { renderCisneNegroCards(JSON.parse(cardsJson)); }
+      catch(e) { ctr.innerHTML = ''; }
+    } else {
+      ctr.innerHTML = '';
+    }
+  }
+}
+
+// Limpa tudo do Cisne Negro da liga ativa (textarea + cards + storage).
+// Conectado ao botão "Limpar" ao lado do botão de varrer.
+function limparCisneNegroLiga() {
+  const keys = _cisneStorageKeys();
+  localStorage.removeItem(keys.txt);
+  localStorage.removeItem(keys.cards);
+  const ta = document.getElementById('import-cisne-textarea');
+  const ctr = document.getElementById('resultado-cisne-negro');
+  if (ta) ta.value = '';
+  if (ctr) ctr.innerHTML = '';
+}
+
 function varrerCisneNegro() {
   const txt = document.getElementById('import-cisne-textarea').value;
   if(!txt.trim()) { alert("Cole os jogos primeiro para iniciar a varredura."); return; }
-  
+
   const linhas = txt.split('\n');
   const timesConhecidos = DADOS_2026.times;
   let candidatos = [];
@@ -6876,65 +6966,46 @@ function varrerCisneNegro() {
       if(m && v && m !== v) {
          if(!candidatos.find(j => j.m === m && j.v === v)) candidatos.push({m,v});
       }
-      return; 
+      return;
     }
 
     const t = encontrarTimeMaisProximo(linha, timesConhecidos);
     if (t) {
-      if (!timeEsperando) { timeEsperando = t; } 
+      if (!timeEsperando) { timeEsperando = t; }
       else {
          if (timeEsperando !== t && !candidatos.find(j => j.m === timeEsperando && j.v === t)) {
              candidatos.push({ m: timeEsperando, v: t });
          }
-         timeEsperando = null; 
+         timeEsperando = null;
       }
     } else {
       if (linha.length > 3) timeEsperando = null;
     }
   });
 
-  const ctr = document.getElementById('resultado-cisne-negro');
-  ctr.innerHTML = '';
-  let encontrados = 0;
-
   if (candidatos.length === 0) {
     alert("Nenhum time válido identificado para " + LIGA_ATUAL);
     return;
   }
 
-  candidatos.forEach(jogo => {
-     const proj = projecaoJogo(jogo.m, jogo.v);
-     if(!proj) return;
-
-     const diff = Math.abs(proj.expHomeFT - proj.expAwayFT);
-     
-     if(diff >= 2.0) {
-       encontrados++;
-       
-       const favorito = proj.expHomeFT > proj.expAwayFT ? jogo.m : jogo.v;
-       const superDiff = diff.toFixed(2);
-       
-       const card = document.createElement('div');
-       card.className = 'stat-card';
-       card.style.borderColor = 'var(--gold)';
-       card.innerHTML = `
-         <div class="label" style="color:var(--gold)">🦢 SELO CISNE NEGRO</div>
-         <div style="font-size:1.1rem;font-weight:900;color:var(--text);margin-bottom:.5rem;">${jogo.m} <br><span style="font-size:0.8rem;color:var(--muted)">vs</span><br> ${jogo.v}</div>
-         <div style="margin-bottom:.5rem;padding:.5rem;background:rgba(251,191,36,0.1);border-radius:6px;border:1px dashed var(--gold)">
-           <div style="font-size:.7rem;color:var(--muted)">Favorito Absoluto: <span style="font-weight:700;color:var(--text)">${favorito}</span></div>
-           <div style="font-size:.7rem;color:var(--muted)">Vantagem Projetada: <span style="font-weight:700;color:var(--green)">+${superDiff} cantos</span></div>
-           <div style="font-size:.7rem;color:var(--muted)">Nível Matemática: <span style="font-weight:700;color:var(--gold)">Altíssima (Gatilho)</span></div>
-         </div>
-         <button onclick="dispararCoachCisne('${jogo.m}', '${jogo.v}')" style="width:100%;margin-top:.2rem;background:var(--card);border:1px solid #6b8f79;color:var(--text);border-radius:6px;padding:.6rem;cursor:pointer;font-size:.75rem;font-weight:700;transition:all 0.2s" onmouseover="this.style.background='var(--green)';this.style.color='#000';this.style.borderColor='var(--green)'" onmouseout="this.style.background='var(--card)';this.style.color='var(--text)';this.style.borderColor='#6b8f79'">🧠 Gerar Veredito SmartCoach</button>
-       `;
-       ctr.appendChild(card);
-     }
+  // Filtra só os que passam no critério Cisne Negro (diff ≥ 2.0) — esses
+  // são os que vão para o storage, para poder re-renderizar depois.
+  const jogosComSinal = candidatos.filter(j => {
+    const p = projecaoJogo(j.m, j.v);
+    return p && Math.abs(p.expHomeFT - p.expAwayFT) >= 2.0;
   });
 
+  const encontrados = renderCisneNegroCards(jogosComSinal);
+
+  // Persiste estado DA LIGA ATIVA (textarea + lista dos jogos com sinal)
+  const keys = _cisneStorageKeys();
+  localStorage.setItem(keys.txt, txt);
+  localStorage.setItem(keys.cards, JSON.stringify(jogosComSinal));
+
   if (encontrados === 0) {
-    ctr.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Nesta rodada matemática não há jogos com padrão Cisne Negro (diferença > 2.0 cantos). Fique com seu dinheiro no bolso!</div>';
+    document.getElementById('resultado-cisne-negro').innerHTML =
+      '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Nesta rodada matemática não há jogos com padrão Cisne Negro (diferença > 2.0 cantos). Fique com seu dinheiro no bolso!</div>';
   } else {
-    // Alerta confetti de acerto
     try { confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 }, colors: ['#fbbf24', '#f59e0b', '#34d367'] }); } catch(e){}
   }
 }
