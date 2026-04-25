@@ -7582,25 +7582,50 @@ function calcSDE_ENIGMA(mandante, visitante) {
   const sinalInverso = !sinalNormal && rankFora.saldo_ft > rankCasa.saldo_ft;
 
   // ── Linha recomendada ─────────────────────────────────────────────
-  // NUNCA -0.5. Baseado no diferencial de produção.
+  // NUNCA -0.5. Linha FT baseada no diferencial de produção.
+  // Linha HT (v3.4 — 2026-04-25): dinâmica, alinhada com expTotalHT do motor
+  // (antes era hardcoded em 3.5/4.5, desalinhando em jogos defensivos como
+  // Racing × Barracas onde xHT=2.09 mas Enigma mostrava linha 4.5).
   let linhaFT = null, linhaHT = null, confianca = '';
+
+  // Puxa a projeção do motor para saber o volume HT real esperado.
+  // Fallback conservador: se projecaoJogo não conseguir projetar, mantém o
+  // comportamento antigo (3.5/4.5) para não regredir silenciosamente.
+  let expHT = null;
+  try {
+    const _proj = projecaoJogo(mandante, visitante);
+    if (_proj && typeof _proj.expTotalHT === 'number' && _proj.expTotalHT > 0) {
+      expHT = _proj.expTotalHT;
+    }
+  } catch(e) { /* fallback ativo */ }
+
+  // Calcula a linha HT .5 mais próxima ABAIXO da projeção (linha Under que
+  // faz sentido). Ex: xHT 2.09 → 2.5;  xHT 4.2 → 4.5;  xHT 5.3 → 5.5.
+  // Clamp [1.5, 6.5] pra evitar linhas absurdas se a projeção for outlier.
+  function _linhaHTDinamica(ht, fallbackAlta) {
+    if (ht == null) return fallbackAlta ? '4.5' : '3.5';
+    const ceil = Math.ceil(ht * 2) / 2;   // próximo .0 ou .5 acima
+    const linha = ceil > ht ? ceil : ceil + 0.5; // garante linha ACIMA de ht
+    return String(Math.max(1.5, Math.min(6.5, linha)));
+  }
+
   if (sde >= 65) {
     if (diffSaldo >= 4) {
       linhaFT = '-2.5';
-      linhaHT = '4.5';
+      linhaHT = _linhaHTDinamica(expHT, true);   // antes: '4.5'
       confianca = 'ALTA';
     } else if (diffSaldo >= 2.5) {
       linhaFT = '-2.0';
-      linhaHT = '4.5';
+      linhaHT = _linhaHTDinamica(expHT, true);   // antes: '4.5'
       confianca = 'ALTA';
     } else {
       linhaFT = '-1.0';
-      linhaHT = '3.5';
+      linhaHT = _linhaHTDinamica(expHT, false);  // antes: '3.5'
       confianca = 'MÉDIA';
     }
   } else if (sde >= 50) {
     linhaFT = '-1.0';
-    linhaHT = '3.5';
+    linhaHT = _linhaHTDinamica(expHT, false);    // antes: '3.5'
     confianca = 'BAIXA (WATCH)';
   }
 
