@@ -5070,11 +5070,59 @@ function addSCMsg(role, text) {
 }
 
 function getAppContext() {
+  // SmartCoach v3 — awareness total (2026-04-23). 10 seções estruturadas
+  // para o assistente decidir de forma profissional.
   const mode = document.querySelector('.view.active')?.id || 'dashboard';
-  let ctx = `══ CONTEXTO EM TEMPO REAL DO APP ══\nLiga ativa: ${LIGA_ATUAL}\nSeção atual: ${mode}\n`;
+  const NOMES_VIEW = { 'view-dashboard':'Dashboard', 'view-ranking':'Ranking',
+    'view-time':'Análise por Time', 'view-projecao':'Projeção de Jogo',
+    'view-tracker':'Bet Tracker', 'view-ouro':'Bala de Prata',
+    'view-rodada':'Rodada', 'view-teacher':'Projeção Teacher',
+    'view-apostas':'Apostas Reais', 'view-enigma':'Enigma',
+    'view-cisne-negro':'Cisne Negro' };
+  const viewNome = NOMES_VIEW[mode] || mode;
+
+  let ctx = `══ ESTADO DO APP (TEMPO REAL) ══\n`;
+  ctx += `Liga ativa: ${LIGA_ATUAL}\n`;
+  ctx += `Tela em foco: ${viewNome}\n`;
+  ctx += `Data/hora: ${new Date().toLocaleString('pt-BR')}\n`;
+
+  /* ── 🚨 ALERTAS DE LIGA (LIGAS_STATUS) ── */
+  if (typeof LIGAS_STATUS !== 'undefined' && LIGAS_STATUS[LIGA_ATUAL]) {
+    const st = LIGAS_STATUS[LIGA_ATUAL];
+    const icone = st.status === 'suspenso' ? '⛔ SUSPENSA' : '⚠️ EM OBSERVAÇÃO';
+    ctx += `\n🚨 STATUS DA LIGA: ${icone}\n`;
+    ctx += `- ROI medido: ${st.roi}% em n=${st.n} apostas (desde ${st.desde})\n`;
+    ctx += `- Motivo: ${st.motivo}\n`;
+    if (st.status === 'suspenso') {
+      ctx += `- ⚠️ INSTRUÇÃO: liga suspensa por backtest negativo. Em qualquer recomendação, deixe claro que NÃO É PARA APOSTAR nesta liga até recalibração.\n`;
+    } else {
+      ctx += `- ⚠️ INSTRUÇÃO: liga em observação. Recomende stake reduzido e aplique PROTOCOLO_STAKE rigorosamente.\n`;
+    }
+  } else {
+    ctx += `\n✅ Status da liga: OK (sem banner de risco).\n`;
+  }
+
+  /* ── 🛡️ PROTOCOLO_STAKE (regras vivas do motor) ── */
+  if (typeof PROTOCOLO_STAKE !== 'undefined') {
+    const ps = PROTOCOLO_STAKE;
+    ctx += `\n🛡️ PROTOCOLO_STAKE v1.0 (regras de entrada):\n`;
+    ctx += `- Regra 1 — Under FT REFORÇADO: TMI dupla < ${ps.TMI_LIMITE_APATICO} + Sniper FT=UNDER → stake R$ ${ps.UNDER_REFORCADO_STAKE} (sinal forte)\n`;
+    ctx += `- Regra 2 — HDP HT LIBERADO: mandante top ${ps.TOP_RANK_ATAQUE_CASA_HT} atk HT casa + visitante top ${ps.TOP_RANK_DEFESA_FORA_HT} concede HT fora → stake R$ ${ps.HDP_HT_LIBERADO_STAKE}\n`;
+    ctx += `- Regra 3 — HDP HT sem cruzamento: NÃO recomendado (motor já bloqueia automaticamente)\n`;
+    ctx += `- Regra 4 — Anti-revanche: ~8% das apostas 90%+ viram red por variância. NUNCA dobrar stake após red.\n`;
+  }
+
+  /* ── 🎚️ OARF da liga ativa ── */
+  const _OARF_REF = { BR:0.30, MLS:0.20, ARG:0.70, ARG_B:0.70, USL:0.60,
+                      BUN:0.60, CL:0.30, ECU:0.20, ALM:0.60, J1:0.45, CHI:0.15 };
+  const oarfPeso = _OARF_REF[LIGA_ATUAL] || 0.30;
+  const oarfTipo = oarfPeso >= 0.60 ? 'AGRESSIVO (motor confia muito no momentum recente)' :
+                   oarfPeso >= 0.40 ? 'MODERADO' :
+                   oarfPeso >= 0.25 ? 'PADRÃO' : 'CONSERVADOR (peso reduzido por backtest negativo)';
+  ctx += `\n🎚️ OARF: peso ${oarfPeso} — ${oarfTipo}\n`;
 
   /* ── STATS GERAIS DA LIGA ── */
-  const jogos = DADOS_2026.jogos;
+  const jogos = DADOS_2026.jogos || [];
   const jogosValidos = jogos.filter(j => j.cantos !== null);
   const htTotais = jogosValidos.map(j => j.cantos.ht.m + j.cantos.ht.v);
   const ftTotais = jogosValidos.map(j => j.cantos.ft.m + j.cantos.ft.v);
@@ -5200,52 +5248,115 @@ function getAppContext() {
     }
   }
 
-  /* ── BET TRACKER — DESEMPENHO DO APOSTADOR ── */
-  ctx += `\n💰 BET TRACKER (Liga ${LIGA_ATUAL}):\n`;
-  if(customBets.length > 0) {
-    const resolvidas = customBets.filter(b => b.status === 'green' || b.status === 'red');
-    const abertas = customBets.filter(b => b.status === 'aberto');
+  /* ── 💰 BET TRACKER — VISÃO LIGA ATIVA + CONSOLIDADO GERAL ── */
+  // Helper para calcular agregados de um array de bets.
+  const _agg = (lista) => {
+    const resolvidas = lista.filter(b => b.status === 'green' || b.status === 'red');
+    const abertas = lista.filter(b => b.status === 'aberto');
     const greens = resolvidas.filter(b => b.status === 'green').length;
     const reds = resolvidas.filter(b => b.status === 'red').length;
-    const winrate = resolvidas.length ? (greens / resolvidas.length * 100) : 0;
-    let roiAcumulado = 0, totalInvestido = 0;
+    const wr = resolvidas.length ? (greens / resolvidas.length * 100) : 0;
+    let roi = 0, inv = 0;
     resolvidas.forEach(b => {
-      totalInvestido += b.unid;
-      if(b.status === 'green') roiAcumulado += (b.odd - 1) * b.unid;
-      if(b.status === 'red') roiAcumulado -= b.unid;
+      inv += b.unid;
+      if(b.status === 'green') roi += (b.odd - 1) * b.unid;
+      if(b.status === 'red')   roi -= b.unid;
     });
-    const yieldPct = totalInvestido ? (roiAcumulado / totalInvestido * 100) : 0;
-    ctx += `- Total de entradas: ${customBets.length} (${resolvidas.length} resolvidas, ${abertas.length} em aberto)\n`;
-    ctx += `- Greens: ${greens} | Reds: ${reds} | Win Rate: ${fmt(winrate)}%\n`;
-    ctx += `- ROI: ${roiAcumulado >= 0 ? '+' : ''}${fmt(roiAcumulado)}u | Yield: ${yieldPct >= 0 ? '+' : ''}${fmt(yieldPct)}%\n`;
+    const yld = inv ? (roi / inv * 100) : 0;
+    return { total: lista.length, resolvidas: resolvidas.length, abertas: abertas.length,
+             greens, reds, wr, roi, inv, yld, lista, listaResolvida: resolvidas };
+  };
 
-    // Desempenho por mercado
+  // Filtro ativo do tracker (dropdown na UI). Pode estar diferente da liga ativa.
+  const filtroTracker = (typeof trackerFiltroLiga === 'string') ? trackerFiltroLiga : '';
+
+  // Visão da LIGA ATIVA (corrige o bug pré-v2.0 que misturava ligas)
+  const betsLigaAtiva = (customBets || []).filter(b => (b.liga || '') === LIGA_ATUAL);
+  const aLigaAtiva = _agg(betsLigaAtiva);
+
+  ctx += `\n💰 BET TRACKER — LIGA ${LIGA_ATUAL} (filtrado por liga ativa):\n`;
+  if (aLigaAtiva.total > 0) {
+    ctx += `- Entradas: ${aLigaAtiva.total} (${aLigaAtiva.resolvidas} resolvidas, ${aLigaAtiva.abertas} abertas)\n`;
+    ctx += `- ${aLigaAtiva.greens}G/${aLigaAtiva.reds}R | WR ${fmt(aLigaAtiva.wr)}% | ROI ${aLigaAtiva.roi>=0?'+':''}${fmt(aLigaAtiva.roi)}u | Yield ${aLigaAtiva.yld>=0?'+':''}${fmt(aLigaAtiva.yld)}%\n`;
+    // Desempenho por mercado dentro da liga
     const map = {};
-    resolvidas.forEach(b => {
+    aLigaAtiva.listaResolvida.forEach(b => {
       const cat = b.mercado && b.linha ? `${b.mercado} ${b.linha}` : 'Outros';
       if(!map[cat]) map[cat] = { g:0, r:0, roi:0, inv:0 };
       map[cat].inv += b.unid;
       if(b.status === 'green') { map[cat].g++; map[cat].roi += (b.odd-1)*b.unid; }
-      if(b.status === 'red') { map[cat].r++; map[cat].roi -= b.unid; }
+      if(b.status === 'red')   { map[cat].r++; map[cat].roi -= b.unid; }
     });
     if(Object.keys(map).length > 0) {
-      ctx += `- Desempenho por mercado:\n`;
-      Object.keys(map).forEach(k => {
+      ctx += `- Por mercado nesta liga:\n`;
+      Object.keys(map).slice(0, 8).forEach(k => {
         const d = map[k];
-        const wr = (d.g / (d.g + d.r) * 100);
+        const wr = (d.g / (d.g + d.r) * 100) || 0;
         const yl = d.inv ? (d.roi / d.inv * 100) : 0;
-        ctx += `    ${k}: ${d.g}G/${d.r}R (WR ${fmt(wr)}%) | ROI ${d.roi>=0?'+':''}${fmt(d.roi)}u | Yield ${yl>=0?'+':''}${fmt(yl)}%\n`;
+        ctx += `    ${k}: ${d.g}G/${d.r}R | ROI ${d.roi>=0?'+':''}${fmt(d.roi)}u | Yield ${yl>=0?'+':''}${fmt(yl)}%\n`;
       });
     }
-
-    // Últimas 5 bets
-    const ultBets = [...customBets].reverse().slice(0, 5);
-    ctx += `- Últimas ${ultBets.length} entradas:\n`;
+    const ultBets = [...betsLigaAtiva].reverse().slice(0, 5);
+    ctx += `- Últimas ${ultBets.length} entradas nesta liga:\n`;
     ultBets.forEach(b => {
       ctx += `    ${fmtDate(b.data)} ${b.mandante} x ${b.visitante} | ${b.mercado} L.${b.linha} @${fmt(b.odd)} ${b.unid}u → ${b.status.toUpperCase()}\n`;
     });
   } else {
-    ctx += `- Nenhuma aposta registrada nesta liga.\n`;
+    ctx += `- Sem apostas registradas para ${LIGA_ATUAL}.\n`;
+  }
+
+  // Visão CONSOLIDADA (todas as ligas) — sempre presente porque dá panorama
+  const aGeral = _agg(customBets || []);
+  if (aGeral.total > 0) {
+    ctx += `\n🌐 BET TRACKER CONSOLIDADO (todas as ligas):\n`;
+    ctx += `- Total geral: ${aGeral.total} entradas | ${aGeral.greens}G/${aGeral.reds}R | WR ${fmt(aGeral.wr)}% | ROI ${aGeral.roi>=0?'+':''}${fmt(aGeral.roi)}u | Yield ${aGeral.yld>=0?'+':''}${fmt(aGeral.yld)}%\n`;
+    // Distribuição por liga
+    const porLiga = {};
+    aGeral.listaResolvida.forEach(b => {
+      const lg = b.liga || '?';
+      if(!porLiga[lg]) porLiga[lg] = { g:0, r:0, roi:0, inv:0, n:0 };
+      porLiga[lg].n++;
+      porLiga[lg].inv += b.unid;
+      if(b.status === 'green') { porLiga[lg].g++; porLiga[lg].roi += (b.odd-1)*b.unid; }
+      if(b.status === 'red')   { porLiga[lg].r++; porLiga[lg].roi -= b.unid; }
+    });
+    const ranking = Object.entries(porLiga).sort((a,b) => b[1].roi - a[1].roi);
+    ctx += `- Ranking por liga (ROI):\n`;
+    ranking.forEach(([lg, d]) => {
+      const yl = d.inv ? (d.roi / d.inv * 100) : 0;
+      ctx += `    ${lg}: n=${d.n} | ${d.g}G/${d.r}R | ROI ${d.roi>=0?'+':''}${fmt(d.roi)}u | Yield ${yl>=0?'+':''}${fmt(yl)}%\n`;
+    });
+    if (filtroTracker && filtroTracker !== LIGA_ATUAL) {
+      ctx += `- ⚠ NOTA: usuário filtrou o tracker em '${filtroTracker}' (diferente da liga ativa ${LIGA_ATUAL}).\n`;
+    }
+  }
+
+  /* ── 🦢 CISNE NEGRO ATIVO NA LIGA ── */
+  try {
+    const cisneJson = localStorage.getItem('eds_cisne_cards_' + LIGA_ATUAL);
+    if (cisneJson) {
+      const cisneList = JSON.parse(cisneJson);
+      if (Array.isArray(cisneList) && cisneList.length > 0) {
+        ctx += `\n🦢 CISNE NEGRO ATIVO em ${LIGA_ATUAL} (${cisneList.length} jogos com vantagem ≥ 2.0 cantos):\n`;
+        cisneList.slice(0, 6).forEach(j => {
+          const p = projecaoJogo(j.m, j.v);
+          if (p) {
+            const fav = p.expHomeFT > p.expAwayFT ? j.m : j.v;
+            const diff = Math.abs(p.expHomeFT - p.expAwayFT).toFixed(2);
+            ctx += `    🦢 ${j.m} vs ${j.v} | favorito: ${fav} (+${diff} cantos)\n`;
+          }
+        });
+      }
+    }
+  } catch(e) {}
+
+  /* ── 📅 RODADA IMPORTADA (jogosFuturos) ── */
+  if (typeof jogosFuturos !== 'undefined' && Array.isArray(jogosFuturos) && jogosFuturos.length > 0) {
+    ctx += `\n📅 RODADA IMPORTADA — ${jogosFuturos.length} jogo(s) aguardando análise (liga ${LIGA_ATUAL}):\n`;
+    jogosFuturos.slice(0, 8).forEach(j => {
+      ctx += `    ${j.m} x ${j.v}\n`;
+    });
+    if (jogosFuturos.length > 8) ctx += `    ... e mais ${jogosFuturos.length - 8} jogo(s)\n`;
   }
 
   /* ── CALIBRAÇÃO TEACHER (Volvo Test — dados reais validados) ── */
@@ -5406,7 +5517,9 @@ async function sendSCMsg() {
   }
 
   scChatHistory.push({ role: 'user', content: userContent });
-  if(scChatHistory.length > 6) scChatHistory.shift();
+  // v3 awareness — histórico maior porque o contexto é mais rico e a conversa
+  // tende a ser estratégica (operador faz 4-5 perguntas relacionadas seguidas).
+  if(scChatHistory.length > 10) scChatHistory.shift();
 
   const modoAoVivo = temImagem;
 
@@ -5450,14 +5563,46 @@ Sua missão prioritária agora:
 ${getAppContext()}
 ═══════════════════════════════════
 
-═══ COMO USAR OS DADOS ═══
-VOCÊ TEM ACESSO AOS DADOS REAIS DO APOSTADOR. Use-os proativamente:
-- Se perguntar sobre desempenho: responda com base nos dados reais do Bet Tracker acima
-- Se perguntar sobre mercados: cruze o desempenho por mercado com as projeções disponíveis
-- Se perguntar sobre jogos: use os últimos jogos registrados e as médias da liga
-- Se houver projeção ativa na tela: analise com base nos xCorners e probabilidades
-- Se pedir recomendação: cruze o desempenho dele com as oportunidades atuais
-- Se pedir relatório/resumo: gere panorama completo
+═══ COMO USAR O CONTEXTO (HIERARQUIA DE PRIORIDADE) ═══
+Você tem acesso ao ESTADO COMPLETO do app. Aplique nesta ordem:
+
+PRIORIDADE 1 — STATUS DA LIGA (LIGAS_STATUS)
+  Se a liga ativa estiver SUSPENSA (⛔), abra QUALQUER resposta com aviso
+  claro: "Esta liga está suspensa por backtest negativo. NÃO recomendo
+  entrar até recalibração." Só depois discuta o jogo, mas sempre lembrando
+  do status.
+  Se estiver EM OBSERVAÇÃO (⚠️), peça stake reduzido e cite o motivo.
+
+PRIORIDADE 2 — PROTOCOLO_STAKE (regras vivas do motor)
+  Em QUALQUER recomendação de stake/entrada:
+  - Under FT REFORÇADO (TMI dupla baixa + Sniper UNDER) → sugerir stake cheio
+  - HDP HT só com cruzamento top 5 × top 10 (motor já filtrou)
+  - NUNCA sugerir HDP HT "porque o time é favorito" sem o cruzamento
+  - Sempre fechar recomendações com lembrete anti-revanche se for proposta
+    arriscada ("Stop loss = stake cheio. Não dobrar após red.")
+
+PRIORIDADE 3 — OARF e DNA ESCOTEIRO da liga ativa
+  - Liga com OARF AGRESSIVO (≥0.60): projeções refletem momentum recente forte
+  - Liga com OARF CONSERVADOR (<0.25): motor está cético com a liga; cite isso
+  - DNA ESCOTEIRO de muro_duplo / camisa_aberta / etc → ajuste expectativa
+
+PRIORIDADE 4 — BET TRACKER (dois níveis)
+  - "BET TRACKER — LIGA ATIVA": usa quando a pergunta é da liga em foco
+  - "BET TRACKER CONSOLIDADO": usa quando o operador pergunta panorama,
+    histórico geral, ou quando fala em ROI/yield sem especificar liga.
+  - Ranking por liga é fonte de verdade para sugerir foco operacional
+    (ex: "ARG está rendendo +78u, considere mais entradas lá").
+
+PRIORIDADE 5 — CISNE NEGRO E RODADA IMPORTADA
+  Se houver cards Cisne Negro ativos ou jogosFuturos da rodada, eles são
+  o que o operador está olhando AGORA. Trate como prioritário sobre
+  análises hipotéticas.
+
+PRIORIDADE 6 — Históricos, projeção do jogo, calibração Teacher
+  Use como base de raciocínio quando os itens acima não são suficientes.
+
+NUNCA invente número que não está no contexto. Se faltar dado, peça pro
+operador trocar a tela ou puxar a projeção do jogo específico.
 
 REGRAS DE FORMATAÇÃO VISUAL (MUITO IMPORTANTE):
 1. NUNCA use asteriscos (**texto**) para negrito. Use a tag HTML <strong>texto</strong>
