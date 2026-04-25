@@ -3473,8 +3473,9 @@ function renderTeacher() {
     if(bp) badgesHTML += `<span style="background:${bp.cor}22;color:${bp.cor};padding:.15rem .5rem;border-radius:6px;font-size:.7rem;font-weight:900;border:1px solid ${bp.cor}44">🐺 BP ${bp.faixa}</span>`;
     if(p.confFT >= 65 && p.expTotalFT >= 9.5) badgesHTML += `<span style="background:rgba(251,191,36,0.15);color:var(--gold);padding:.15rem .5rem;border-radius:6px;font-size:.7rem;font-weight:900;border:1px solid rgba(251,191,36,0.3)">🔥 TOP OVER</span>`;
 
+    const _mE = j.m.replace(/'/g, "\\'"), _vE = j.v.replace(/'/g, "\\'");
     cardsHTML += `
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:1.2rem;overflow:hidden;backdrop-filter:blur(8px)">
+      <div onclick="setJogoEmFoco('${_mE}', '${_vE}', 'teacher')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:1.2rem;overflow:hidden;backdrop-filter:blur(8px);cursor:pointer" title="Clique para focar — o SmartCoach saberá que você está olhando este jogo">
 
         <!-- HEADER (estilo TEACHER) -->
         <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-bottom:1px solid var(--border)">
@@ -5394,13 +5395,25 @@ function getAppContext() {
     }
   } catch(e) {}
 
-  /* ── 📅 RODADA IMPORTADA (jogosFuturos) ── */
+  /* ── 📅 JOGOS VISÍVEIS NA TELA (depende da view) ── */
+  // Se o operador está em Enigma/Teacher/Rodada, ele está vendo uma LISTA de
+  // jogos na tela. Injetamos os mais relevantes para o SmartCoach conhecer o
+  // universo visual do operador — não precisa "adivinhar" qual ele está olhando
+  // em silêncio; já pode comentar/comparar os jogos listados.
   if (typeof jogosFuturos !== 'undefined' && Array.isArray(jogosFuturos) && jogosFuturos.length > 0) {
-    ctx += `\n📅 RODADA IMPORTADA — ${jogosFuturos.length} jogo(s) aguardando análise (liga ${LIGA_ATUAL}):\n`;
-    jogosFuturos.slice(0, 8).forEach(j => {
-      ctx += `    ${j.m} x ${j.v}\n`;
+    const nomeLista = (mode === 'view-enigma')  ? 'JOGOS NA TELA ENIGMA'
+                    : (mode === 'view-teacher') ? 'JOGOS NA TELA TEACHER'
+                    : (mode === 'view-rodada')  ? 'JOGOS DA RODADA'
+                    : 'RODADA IMPORTADA';
+    ctx += `\n📅 ${nomeLista} — ${jogosFuturos.length} jogo(s) na liga ${LIGA_ATUAL}`;
+    ctx += _jogoEmFoco && _jogoEmFoco.liga === LIGA_ATUAL
+      ? ` (operador com foco em: ${_jogoEmFoco.m} × ${_jogoEmFoco.v}):\n`
+      : ` (operador ainda não clicou em nenhum card — pergunte qual interessa):\n`;
+    jogosFuturos.slice(0, 12).forEach(j => {
+      const foco = (_jogoEmFoco && _jogoEmFoco.m === j.m && _jogoEmFoco.v === j.v) ? ' ← EM FOCO' : '';
+      ctx += `    ${j.m} x ${j.v}${foco}\n`;
     });
-    if (jogosFuturos.length > 8) ctx += `    ... e mais ${jogosFuturos.length - 8} jogo(s)\n`;
+    if (jogosFuturos.length > 12) ctx += `    ... e mais ${jogosFuturos.length - 12} jogo(s)\n`;
   }
 
   /* ── CALIBRAÇÃO TEACHER (Volvo Test — dados reais validados) ── */
@@ -6035,8 +6048,9 @@ function renderRodada() {
     if(isOver) selos += `<span style="background:rgba(251,191,36,0.15);color:var(--gold);padding:.2rem .6rem;border-radius:12px;font-size:.65rem;font-weight:900;border:1px solid rgba(251,191,36,0.3)">🔥 TOP OVER</span> `;
     if(brechaAlert) selos += `<span style="background:rgba(139,92,246,0.2);color:#a78bfa;padding:.2rem .6rem;border-radius:12px;font-size:.65rem;font-weight:900;border:1px solid rgba(139,92,246,0.4)">🔍 BRECHA</span> `;
 
+    const _mEsc = j.m.replace(/'/g, "\\'"), _vEsc = j.v.replace(/'/g, "\\'");
     html += `
-      <div class="stat-card" style="${hasHighlight ? 'border-color:var(--gold);box-shadow:0 5px 20px rgba(251,191,36,0.1)' : ''}">
+      <div class="stat-card" onclick="setJogoEmFoco('${_mEsc}', '${_vEsc}', 'rodada')" style="cursor:pointer;${hasHighlight ? 'border-color:var(--gold);box-shadow:0 5px 20px rgba(251,191,36,0.1)' : ''}" title="Clique para focar — o SmartCoach saberá que você está analisando este jogo">
         ${selos ? `<div style="position:absolute;top:10px;right:10px;display:flex;flex-direction:column;align-items:flex-end;gap:4px">${selos}</div>` : ''}
         <div style="font-size:.68rem;color:var(--muted);margin-bottom:.4rem;text-transform:uppercase;font-weight:800;letter-spacing:1px">PRÉ-ANÁLISE</div>
         <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:.7rem;line-height:1.2;width:65%">${j.m} <br><span style="color:var(--muted);font-weight:400;font-size:.8rem">vs</span> ${j.v}</div>
@@ -7569,8 +7583,11 @@ function renderEnigma() {
       recomHtml = `<div style="margin-top:.8rem;font-size:.75rem;color:var(--muted);font-style:italic;">Sem linha recomendável — aguardar rodada com maior discrepância.</div>`;
     }
 
+    // Escape de aspas simples em nomes de time antes de passar para onclick
+    const mE = m.replace(/'/g, "\\'");
+    const vE = v.replace(/'/g, "\\'");
     return `
-      <div class="${cardClass}">
+      <div class="${cardClass}" onclick="setJogoEmFoco('${mE}', '${vE}', 'enigma')" style="cursor:pointer;" title="Clique para focar — o SmartCoach vai saber exatamente que você está vendo este jogo">
         <!-- Cabeçalho -->
         <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
           <div>
