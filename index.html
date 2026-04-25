@@ -299,14 +299,82 @@
     .sc-btn{background:transparent;border:none;color:var(--text);cursor:pointer;font-size:1rem;opacity:.7;transition:opacity .2s;}
     .sc-btn:hover{opacity:1;}
     #sc-chat{flex:1;padding:1rem;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;}
-    .msg{max-width:85%;padding:.8rem;border-radius:12px;font-size:.85rem;line-height:1.4;}
-    .msg-bot{background:var(--bg3);border:1px solid var(--border);align-self:flex-start;border-bottom-left-radius:2px;}
-    .msg-user{background:var(--card);align-self:flex-end;border-bottom-right-radius:2px;background:rgba(52,211,103,0.15);border:1px solid rgba(52,211,103,0.3);}
-    .msg table{width:100%;border-collapse:collapse;margin:.5rem 0;font-size:.8rem;background:var(--bg2);border-radius:4px;overflow:hidden;}
-    .msg th, .msg td{border:1px solid var(--border);padding:.4rem;text-align:left;}
-    .msg th{background:rgba(52,211,103,0.1);color:var(--green);font-weight:700;}
-    .msg strong{color:var(--green);font-weight:700;}
-    .msg em{color:var(--gold);font-style:normal;}
+    .msg{max-width:90%;padding:.9rem 1rem;border-radius:14px;font-size:.85rem;line-height:1.55;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.01em;}
+    .msg-bot{
+      background:linear-gradient(135deg,rgba(22,32,25,0.95),rgba(14,22,17,0.95));
+      border:1px solid rgba(52,211,103,0.18);
+      align-self:flex-start;border-bottom-left-radius:3px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    }
+    .msg-user{background:rgba(52,211,103,0.12);border:1px solid rgba(52,211,103,0.28);align-self:flex-end;border-bottom-right-radius:3px;color:var(--text);}
+
+    /* ── SmartCoach v3.3 — tipografia e blocos elegantes ── */
+    .msg-bot .sc-h{
+      font-family:'Inter',sans-serif;font-weight:800;color:var(--gold);
+      margin:.85rem 0 .45rem;letter-spacing:.02em;line-height:1.3;
+      padding-bottom:.3rem;border-bottom:1px solid rgba(245,158,11,0.18);
+    }
+    .msg-bot h2.sc-h{font-size:1.02rem;}
+    .msg-bot h3.sc-h{font-size:.92rem;}
+    .msg-bot h4.sc-h{font-size:.85rem;border-bottom:none;padding-bottom:0;}
+    .msg-bot h5.sc-h, .msg-bot h6.sc-h{font-size:.8rem;border-bottom:none;padding-bottom:0;}
+    .msg-bot .sc-h:first-child{margin-top:0;}
+
+    .msg-bot .sc-p{margin:.35rem 0;color:var(--text);}
+    .msg-bot .sc-p:first-child{margin-top:0;}
+    .msg-bot .sc-p:last-child{margin-bottom:0;}
+
+    .msg-bot strong{color:var(--green);font-weight:700;}
+    .msg-bot em{color:var(--gold);font-style:normal;font-weight:600;}
+
+    .msg-bot .sc-div{
+      border:none;height:1px;margin:1rem 0;
+      background:linear-gradient(90deg,transparent,rgba(245,158,11,0.35),transparent);
+    }
+
+    .msg-bot .sc-list{margin:.4rem 0 .4rem 0;padding-left:1.1rem;}
+    .msg-bot .sc-list li{margin:.22rem 0;color:var(--text);position:relative;}
+    .msg-bot ul.sc-list{list-style:none;padding-left:.2rem;}
+    .msg-bot ul.sc-list li::before{content:'▸ ';color:var(--gold);font-weight:700;margin-right:.15rem;}
+    .msg-bot ol.sc-list li::marker{color:var(--gold);font-weight:700;}
+
+    .msg-bot .sc-tab{
+      width:100%;border-collapse:separate;border-spacing:0;
+      margin:.7rem 0;font-size:.8rem;
+      background:var(--bg);border:1px solid rgba(52,211,103,0.15);
+      border-radius:8px;overflow:hidden;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,0.02);
+    }
+    .msg-bot .sc-tab thead th{
+      background:linear-gradient(135deg,rgba(52,211,103,0.14),rgba(245,158,11,0.08));
+      color:var(--gold);font-weight:700;font-size:.72rem;
+      letter-spacing:.05em;text-transform:uppercase;
+      padding:.55rem .65rem;text-align:left;
+      border-bottom:1px solid rgba(52,211,103,0.22);
+    }
+    .msg-bot .sc-tab tbody td{
+      padding:.5rem .65rem;color:var(--text);
+      border-bottom:1px solid rgba(255,255,255,0.04);
+    }
+    .msg-bot .sc-tab tbody tr:last-child td{border-bottom:none;}
+    .msg-bot .sc-tab tbody tr:nth-child(even) td{background:rgba(255,255,255,0.015);}
+    .msg-bot .sc-tab tbody tr:hover td{background:rgba(52,211,103,0.05);}
+    .msg-bot .sc-tab td:first-child{color:var(--muted);font-weight:500;}
+    .msg-bot .sc-tab td strong{color:var(--green);}
+    .msg-bot .sc-tab td em{color:var(--gold);}
+
+    .msg-bot code.sc-inline{
+      background:rgba(52,211,103,0.08);color:var(--green);
+      padding:.05rem .35rem;border-radius:4px;font-size:.78rem;
+      font-family:'SF Mono','Monaco',monospace;letter-spacing:.01em;
+    }
+
+    /* Rótulo discreto "🤖 SmartCoach" sempre visível no topo da bolha */
+    .msg-bot::before{
+      content:'🤖 SmartCoach';display:block;font-size:.62rem;font-weight:700;
+      color:var(--muted);letter-spacing:.1em;text-transform:uppercase;
+      margin-bottom:.5rem;opacity:.6;
+    }
     .sc-input-area{padding:.8rem;background:var(--bg3);border-top:1px solid var(--border);display:flex;flex-direction:column;gap:.5rem;}
     .sc-input-row{display:flex;gap:.5rem;align-items:center;}
     #sc-input{flex:1;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:.6rem .8rem;font-size:.85rem;}
@@ -5080,9 +5148,96 @@ function saveSCKey() {
   addSCMsg('bot', '✅ Chave API salva e carregada! Trazendo a matemática à vida...');
 }
 
+// ══════════════════════════════════════════════════
+// SmartCoach v3.3 — Renderizador Markdown → HTML elegante (2026-04-24)
+// Resolve o caso em que o modelo ignora a instrução "use HTML" e retorna
+// ** asteriscos literais / tabelas ASCII. O cliente pós-processa e entrega
+// HTML formatado no padrão visual EDS.
+// ══════════════════════════════════════════════════
+function _renderSCMarkdown(md) {
+  if (!md) return '';
+  // 1) Escape básico de HTML malicioso ANTES de aplicar markdown (preserva
+  // tags que o Claude já tenha mandado corretamente — estratégia conservadora:
+  // só escapamos < e > que não formam tag conhecida).
+  // Abordagem pragmática: apenas neutralizamos <script> e on* handlers.
+  let s = md
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<\/?(iframe|object|embed|form|input|button|link|meta)[^>]*>/gi, '')
+    .replace(/\son\w+="[^"]*"/gi, '')
+    .replace(/\son\w+='[^']*'/gi, '');
+
+  // 2) CODE INLINE `code` — proteger antes de aplicar outras regras
+  s = s.replace(/`([^`\n]+)`/g, '<code class="sc-inline">$1</code>');
+
+  // 3) SEPARADORES --- ou === → divisor dourado
+  s = s.replace(/^\s*(?:---+|===+)\s*$/gm, '<hr class="sc-div">');
+
+  // 4) CABEÇALHOS (### ## #) → subtítulo dourado
+  s = s.replace(/^######\s+(.+)$/gm, '<h6 class="sc-h">$1</h6>');
+  s = s.replace(/^#####\s+(.+)$/gm, '<h5 class="sc-h">$1</h5>');
+  s = s.replace(/^####\s+(.+)$/gm, '<h4 class="sc-h">$1</h4>');
+  s = s.replace(/^###\s+(.+)$/gm, '<h3 class="sc-h">$1</h3>');
+  s = s.replace(/^##\s+(.+)$/gm, '<h2 class="sc-h">$1</h2>');
+  s = s.replace(/^#\s+(.+)$/gm, '<h2 class="sc-h">$1</h2>');
+
+  // 5) TABELAS MARKDOWN
+  //    | Col1 | Col2 |
+  //    |------|------|
+  //    | A    | B    |
+  // Detecta bloco com ao menos cabeçalho + separador + 1 linha de dados.
+  s = s.replace(/((?:^\|[^\n]*\|\s*\n){2,})/gm, (match) => {
+    const linhas = match.trim().split(/\n/).filter(l => l.trim().startsWith('|'));
+    if (linhas.length < 2) return match;
+    // 2ª linha deve ser separador (| --- | :---: | etc)
+    const sepLinha = linhas[1].replace(/[|\s]/g, '');
+    if (!/^[-:]+$/.test(sepLinha)) return match;
+    const parseRow = l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+    const headers = parseRow(linhas[0]);
+    const rows = linhas.slice(2).map(parseRow);
+    const ths = headers.map(h => `<th>${h}</th>`).join('');
+    const trs = rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
+    return `<table class="sc-tab"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
+  });
+
+  // 6) NEGRITO **texto** e __texto__ → <strong>
+  s = s.replace(/\*\*([^\n*]+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/__([^\n_]+?)__/g, '<strong>$1</strong>');
+
+  // 7) ITÁLICO *texto* e _texto_ → <em>  (dourado pelo CSS)
+  //    Tem que vir depois do negrito pra não pegar *dentro* de ** **.
+  s = s.replace(/(^|[^*])\*([^\n*]+?)\*(?!\*)/g, '$1<em>$2</em>');
+  s = s.replace(/(^|[^_])_([^\n_]+?)_(?!_)/g, '$1<em>$2</em>');
+
+  // 8) LISTAS com bullet "- " ou "* " no início de linha
+  s = s.replace(/(?:^|\n)((?:[-*]\s+.+(?:\n|$))+)/g, (m) => {
+    const itens = m.trim().split(/\n/).map(l => l.replace(/^[-*]\s+/, '').trim());
+    return '\n<ul class="sc-list">' + itens.map(i => `<li>${i}</li>`).join('') + '</ul>';
+  });
+
+  // 9) LISTAS NUMERADAS "1. item"
+  s = s.replace(/(?:^|\n)((?:\d+\.\s+.+(?:\n|$))+)/g, (m) => {
+    const itens = m.trim().split(/\n/).map(l => l.replace(/^\d+\.\s+/, '').trim());
+    return '\n<ol class="sc-list">' + itens.map(i => `<li>${i}</li>`).join('') + '</ol>';
+  });
+
+  // 10) Quebras de linha remanescentes → <br> (evita quebrar dentro de <table>,
+  //     <ul>, <ol>, <hr>, <h*> que já são block-level).
+  // Divide por linha em branco = parágrafo.
+  const blocks = s.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+  s = blocks.map(p => {
+    if (/^<(table|ul|ol|hr|h[1-6]|blockquote)/i.test(p)) return p;
+    return `<p class="sc-p">${p.replace(/\n/g, '<br>')}</p>`;
+  }).join('\n');
+
+  return s;
+}
+
 function addSCMsg(role, text) {
   const chat = document.getElementById('sc-chat');
-  chat.innerHTML += `<div class="msg msg-${role}">${text.replace(/\n/g, '<br>')}</div>`;
+  const body = role === 'bot'
+    ? _renderSCMarkdown(text)           // pós-processa markdown do Claude
+    : text.replace(/\n/g, '<br>');      // mensagem do usuário fica literal
+  chat.innerHTML += `<div class="msg msg-${role}">${body}</div>`;
   chat.scrollTop = chat.scrollHeight;
 }
 
@@ -5661,12 +5816,45 @@ PRIORIDADE 6 — Históricos, projeção do jogo, calibração Teacher
 NUNCA invente número que não está no contexto. Se faltar dado, peça pro
 operador trocar a tela ou puxar a projeção do jogo específico.
 
-REGRAS DE FORMATAÇÃO VISUAL (MUITO IMPORTANTE):
-1. NUNCA use asteriscos (**texto**) para negrito. Use a tag HTML <strong>texto</strong>
-2. NUNCA use listas markdown (- item). Use barras, quebras de linha ou tabelas HTML
-3. Para ênfase: <em> para cor dourada, <strong> para cor verde
-4. Para dados comparativos: SEMPRE use tabelas HTML (<table><tr><th><td>)
-5. Visual luxuoso e limpo — widget profissional de análise quantitativa
+REGRAS DE FORMATAÇÃO VISUAL (MUITO IMPORTANTE — identidade EDS Soluções Inteligentes):
+
+O app TEM RENDERIZADOR MARKDOWN próprio. Você pode usar markdown LIMPO e ele vai
+virar HTML bonito no widget. Padrão a seguir:
+
+1. **NEGRITO** com dois asteriscos (vira verde no visual final)
+2. *ITÁLICO* com um asterisco (vira dourado — use para ÊNFASE/destaque)
+3. TABELAS estilo markdown:
+     | Métrica | Valor |
+     |---------|-------|
+     | xCorners FT | 9.5 |
+   Vão virar tabelas harmônicas com cabeçalho dourado e zebra striping.
+4. TÍTULOS de seção com ##  ou ###  (vira dourado, com linha separadora)
+5. LISTAS com "- item" (vira ▸ dourado) ou "1. item" (numerada)
+6. SEPARADORES com --- entre seções (vira linha dourada degradê)
+7. \`código\` para linhas/números de destaque (ex: \`@1.85\`, \`HDP -1.0\`)
+
+ESTRUTURA RECOMENDADA PARA ANÁLISES:
+  ## 🎯 [Título do jogo ou tópico]
+  [1-2 linhas de contexto]
+
+  ## 📊 O QUE O MOTOR PROJETOU
+  | Métrica | Valor |
+  |---------|-------|
+  | ... | ... |
+
+  ## 🏆 RECOMENDAÇÃO
+  - **Mercado**: [nome] @ [odd]
+  - **Stake**: R$ [X] (conforme PROTOCOLO_STAKE)
+  - **Motivo**: [uma linha]
+
+  ---
+  ⚠️ [Lembrete anti-revanche se aplicável]
+
+NUNCA escreva HTML bruto (<table>, <strong>) — o renderizador converte
+automaticamente do markdown para HTML. Seu markdown limpo vira visual profissional.
+
+NÃO use emojis em excesso — 1 por seção é suficiente. Um visual "carregado de emojis"
+vira amador; um visual com 4-5 emojis bem posicionados vira luxuoso.
 
 Fale com tom de apostador profissional (Punter/Trader). Use emojis estratégicos.
 Ao sugerir oportunidades, foque nas linhas com maior probabilidade e cruze com o histórico real do apostador.
