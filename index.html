@@ -2759,6 +2759,7 @@ function renderProjecao() {
     document.getElementById('resultado-projecao').innerHTML = `<div class="alert">⚠️ Selecione times diferentes!</div>`;
     return;
   }
+  setJogoEmFoco(m, v, 'projecao');
   const p = projecaoJogo(m, v);
   if (!p.m.jogos || !p.v.jogos) {
     document.getElementById('resultado-projecao').innerHTML = `<div class="alert">⚠️ Dados insuficientes para um ou ambos os times.</div>`;
@@ -3332,6 +3333,7 @@ function renderOuro() {
 function carregarProjecaoExata(m, v) {
   document.getElementById('sel-mandante').value = m;
   document.getElementById('sel-visitante').value = v;
+  setJogoEmFoco(m, v, 'projecao');
   showView('projecao');
 }
 
@@ -4096,6 +4098,19 @@ function salvarResultadoOficial(mandante, visitante) {
 // ══════════════════════════════════════════════════
 
 let customBets = [];
+
+// v3 SmartCoach awareness — guarda o último jogo com o qual o operador
+// interagiu (clicou em card, abriu projeção, registrou no tracker, etc).
+// O getAppContext() lê isso para o SmartCoach saber QUAL jogo está sendo
+// olhado mesmo quando o usuário não está na aba Projeção.
+//
+// Estrutura: { m, v, liga, source, ts }
+//   source: 'projecao' | 'cisne' | 'rodada' | 'tracker' | 'teacher' | 'apostas'
+let _jogoEmFoco = null;
+function setJogoEmFoco(m, v, source) {
+  if (!m || !v || m === v) return;
+  _jogoEmFoco = { m, v, liga: LIGA_ATUAL, source: source || 'desconhecido', ts: Date.now() };
+}
 // v2.0 — 2026-04-22: Bet Tracker virou UNIFICADO (diário único, não mais
 // um storage por liga). Cada bet agora carrega o campo `liga`. Filtro por
 // liga acontece na UI via `trackerFiltroLiga`.
@@ -4280,6 +4295,7 @@ let trackerCurrentV = '';
 
 function abrirModalTracker(m, v) {
   trackerCurrentM = m; trackerCurrentV = v;
+  setJogoEmFoco(m, v, 'tracker');
   document.getElementById('modal-tracker-jogo').innerHTML = `<b>${m}</b> vs <b>${v}</b>`;
   document.getElementById('inp-trk-linha').value = '';
   document.getElementById('inp-trk-odd').value = '';
@@ -5145,13 +5161,40 @@ function getAppContext() {
     });
   }
 
-  /* ── PROJEÇÃO ATIVA ── */
-  if (mode === 'view-projecao') {
-    const m = document.getElementById('sel-mandante').value;
-    const v = document.getElementById('sel-visitante').value;
-    if (m && v && m!==v) {
+  /* ── 🎯 JOGO EM FOCO (rastreamento global) ── */
+  // Fonte primária: _jogoEmFoco (atualizado por setJogoEmFoco em todos os
+  // pontos de interação — selects projeção, cards Cisne Negro, modal Tracker,
+  // botão "Analisar Jogo Exato" da rodada, etc).
+  // Fallback: se está na view-projecao com selects preenchidos.
+  let jogoFocoM = null, jogoFocoV = null, jogoFocoSrc = null;
+  if (_jogoEmFoco && _jogoEmFoco.liga === LIGA_ATUAL) {
+    jogoFocoM = _jogoEmFoco.m;
+    jogoFocoV = _jogoEmFoco.v;
+    jogoFocoSrc = _jogoEmFoco.source;
+  }
+  if (mode === 'view-projecao' && !jogoFocoM) {
+    // Fallback se ainda não houve interação rastreada — pega dos selects
+    const m = document.getElementById('sel-mandante')?.value || '';
+    const v = document.getElementById('sel-visitante')?.value || '';
+    if (m && v && m!==v) { jogoFocoM = m; jogoFocoV = v; jogoFocoSrc = 'projecao-selects'; }
+  }
+
+  if (jogoFocoM && jogoFocoV && jogoFocoM !== jogoFocoV) {
+    const m = jogoFocoM, v = jogoFocoV;
+    // Verifica que os times existem na liga ativa antes de projetar
+    const timesAtivos = (DADOS_2026 && DADOS_2026.times) ? DADOS_2026.times : [];
+    if (timesAtivos.includes(m) && timesAtivos.includes(v)) {
       const p = projecaoJogo(m, v);
-      ctx += `\n🎯 PROJEÇÃO ATIVA: ${m} (CASA) vs ${v} (FORA)\n`;
+      if (p) {
+      const fonteDescricao = {
+        'projecao': 'usuário abriu a projeção do jogo',
+        'projecao-selects': 'usuário tem este jogo selecionado na aba Projeção',
+        'cisne': 'usuário clicou no Cisne Negro deste jogo',
+        'rodada': 'usuário visualizando este jogo na rodada importada',
+        'tracker': 'usuário registrou aposta deste jogo no tracker',
+        'teacher': 'usuário visualizando este jogo no Projeção Teacher'
+      }[jogoFocoSrc] || 'jogo recente em interação';
+      ctx += `\n🎯 JOGO EM FOCO (${fonteDescricao}): ${m} (CASA) vs ${v} (FORA)\n`;
       ctx += `- xCorners HT (1º Tempo): ${fmt(p.expTotalHT)} escanteios\n`;
       ctx += `- xCorners FT (Jogo Todo): ${fmt(p.expTotalFT)} escanteios\n`;
       ctx += `- Match Odds HT: Casa ${fmt(p.oddsHT.home*100)}% | Empate ${fmt(p.oddsHT.draw*100)}% | Fora ${fmt(p.oddsHT.away*100)}%\n`;
@@ -5245,8 +5288,9 @@ function getAppContext() {
         const mando = j.mandante === v ? '🏠' : '✈️';
         ctx += `  ${mando} ${fmtDate(j.data)} - ${j.mandante} vs ${j.visitante} | Cantos HT: ${j.cantos.ht.m}x${j.cantos.ht.v} | Cantos FT: ${j.cantos.ft.m}x${j.cantos.ft.v}\n`;
       });
-    }
-  }
+      } // fecha if (p)
+    } // fecha if (timesAtivos.includes...)
+  } // fecha if (jogoFocoM && jogoFocoV && ...)
 
   /* ── 💰 BET TRACKER — VISÃO LIGA ATIVA + CONSOLIDADO GERAL ── */
   // Helper para calcular agregados de um array de bets.
@@ -5924,6 +5968,7 @@ function editDistance(s1, s2) {
 function carregarProjecaoExata(m, v) {
   document.getElementById('sel-mandante').value = m;
   document.getElementById('sel-visitante').value = v;
+  setJogoEmFoco(m, v, 'projecao');
   showView('projecao');
 }
 
@@ -7246,6 +7291,7 @@ function varrerCisneNegro() {
 }
 
 function dispararCoachCisne(m, v) {
+   setJogoEmFoco(m, v, 'cisne');
    showView('ranking');
    document.getElementById('sel-m-rank').value = m;
    document.getElementById('sel-v-rank').value = v;
