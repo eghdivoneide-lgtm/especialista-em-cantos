@@ -960,11 +960,17 @@ const MOTOR_CONFIG = Object.freeze({
 // entrar só com stake reduzido) ou 'suspenso' (banner vermelho, não entrar).
 // Atualizar após rodar `node backtest/analisar.js` e confirmar tendência em
 // 2 lotes consecutivos. Ver backtest/README.md para critérios.
+//
+// Atualização 2026-04-23 (v3.0 — base 158 apostas Pinnacle):
+//   ROI por liga no agregado: ARG +78u, ARG_B +46u, ALM +34u, BUN +33u,
+//   BR +24u, J1 +18u, USL +23u, CHI -31u, MLS -17u, ECU -45u (cumulativo).
 const LIGAS_STATUS = Object.freeze({
-  MLS: { status: 'observacao', roi: -8.1, n: 21, desde: '2026-04-22',
-         motivo: 'Acumulado 2 lotes: ROI -18.3% (n=12) + +3.6% (n=9) = -8.1% em n=21. Saldo negativo, mas lote 2 estabilizou. Entrar apenas conforme PROTOCOLO_STAKE — Unders com TMI dupla < 1.0 e HDP HT só com cruzamento top 5 × top 10.' },
-  ECU: { status: 'suspenso',   roi: -71.3, n: 6,  desde: '2026-04-22',
-         motivo: 'Backtest catastrófico (5 derrotas em 6) + usuário reportou 2º lote com mesmo padrão (HDP de favorito errando sistematicamente). Motor sem DNA Escoteiro para ECU, amostra de jogos pequena. Não apostar até recalibrar.' }
+  MLS: { status: 'observacao', roi: -17.0, n: 32, desde: '2026-04-22',
+         motivo: '158 apostas no tracker confirmam padrão: HDP HT de favorito sem cruzamento drena ROI. PROTOCOLO_STAKE já bloqueia esses sinais. Entrar apenas em Unders com TMI dupla baixa.' },
+  CHI: { status: 'suspenso',   roi: -31.4, n: 6,  desde: '2026-04-23',
+         motivo: 'ROI piorou de +7% (lote 1) para -31u no agregado. Liga sem DNA Escoteiro, com amostra de coleta pequena (~71 jogos / 16 times = 4 jogos por time). Padrão de erro semelhante ao ECU. Suspensa até recalibração com mais dados.' },
+  ECU: { status: 'suspenso',   roi: -44.9, n: 6,  desde: '2026-04-22',
+         motivo: 'Backtest catastrófico (1V 5D no lote 1) confirmado em mais apostas. Motor sem DNA Escoteiro para ECU, amostra de jogos pequena (~7 jogos por time). HDP de favorito errando sistematicamente. Não apostar até recalibrar.' }
 });
 
 // ── PROTOCOLO DE STAKE (regras de entrada disciplinadas, v1.0 — 2026-04-22) ──
@@ -1695,27 +1701,31 @@ function projecaoJogo(mandante, visitante) {
   const expAway2T_base = atkAway2T * defHome2T * l_2tAway * tmiAway * dnaAway;
 
   // ══════════════════════════════════════════════════════════════════════════
-  // v3.2 — AJUSTE OARF (Opponent-Adjusted Recent Form)
-  // Peso calibrado POR LIGA via backtest (FASE 4).
-  // Metodologia: erro médio mínimo em últimas 4 rodadas de cada liga.
+  // v3.3 — AJUSTE OARF (Opponent-Adjusted Recent Form) — RECALIBRADO 2026-04-23
+  // Peso calibrado POR LIGA via backtest REAL (158 apostas Pinnacle).
+  // Metodologia: ROI/edge real em apostas com odd, não erro de projeção.
   //
-  // Ligas CALIBRADAS (pesos otimizados por backtest):
-  //   BR     → 30%   (melhoria 2.7%  — amostra 112 jogos)
-  //   MLS    → 30%   (melhoria 1.3%  — amostra 58 jogos)
-  //   BUN    → 60%   (melhoria 15.7% — amostra 36 jogos)
-  //   ARG    → 60%   (melhoria 20.4% — amostra 40 jogos)
-  //   ARG_B  → 60%   (melhoria 18.0% — amostra 54 jogos)
-  //   USL    → 60%   (melhoria 9.4%  — amostra 49 jogos)
+  // Ligas CALIBRADAS (pesos atualizados pelo agregado real):
+  //   ARG    → 0.70  (ROI +78u em 33 apostas — sinal forte sustentado)
+  //   ARG_B  → 0.70  (ROI +46u em 18 apostas — momentum recente vale mais)
+  //   BUN    → 0.60  (ROI +33u em 13 apostas — manter)
+  //   ALM    → 0.60  (ROI +34u em  9 apostas — subiu de 0.30, momentum claro)
+  //   J1     → 0.45  (ROI +18u em  8 apostas — subiu de 0.30, amostra menor)
+  //   USL    → 0.60  (ROI +23u em  7 apostas — manter, amostra pequena)
+  //   BR     → 0.30  (ROI +24u em 13 apostas — manter, performando ok)
   //
-  // Ligas em FALLBACK (default 30% — calibrar quando dataset crescer):
-  //   CL, ECU, ALM, J1
+  // Ligas em OBSERVAÇÃO/SUSPENSAS (peso reduzido para diminuir exposição):
+  //   MLS    → 0.20  (ROI -17u em 32 apostas — baixou de 0.30, motor com viés)
+  //   CHI    → 0.15  (ROI -31u, suspensa, mas se for liberada fica conservador)
+  //   ECU    → 0.20  (ROI -45u, suspensa, mesmo racional)
   //
   // Override: window.OARF_PESO_OVERRIDE permite testar outros valores.
   // Clamp: ±2.5 cantos/período para evitar swings extremos.
   // ══════════════════════════════════════════════════════════════════════════
   const OARF_PESO_POR_LIGA = {
-    BR:    0.30, MLS:   0.30, ARG:   0.60, ARG_B: 0.60, USL:   0.60,
-    BUN:   0.60, CL:    0.30, ECU:   0.30, ALM:   0.30, J1:    0.30
+    BR:    0.30, MLS:   0.20, ARG:   0.70, ARG_B: 0.70, USL:   0.60,
+    BUN:   0.60, CL:    0.30, ECU:   0.20, ALM:   0.60, J1:    0.45,
+    CHI:   0.15
   };
   const _ligaAtiva = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : 'BR';
   const OARF_PESO = (typeof window !== 'undefined' && typeof window.OARF_PESO_OVERRIDE === 'number')
@@ -4340,6 +4350,84 @@ const _PINNACLE_LIGA_MAP = {
   'Japão - J League': 'J1'
 };
 
+// Mapa de aliases Pinnacle → nome canônico no dataset. A Pinnacle costuma
+// usar nomes longos ("Atlético Tucumán") enquanto nossos JSONs usam abreviações
+// ("Atl. Tucuman"). Sem esse mapa, o EV do modelo no Bet Tracker fica N/D
+// para vários times. Cada item novo aqui resolve um conjunto de apostas.
+//
+// Padrão: "Como aparece na Pinnacle" → "Como está no dataset".
+// Tudo case-sensitive — se a Pinnacle muda capitalização, adicionar variante.
+//
+// Para descobrir nomes faltantes: olhe a coluna "EV MODELO" do tracker;
+// linhas com "N/D" indicam time que precisa entrar aqui.
+const _PINNACLE_ALIAS_TIMES = {
+  // ── ARG (Liga Profesional) ─────────────────────────────────────────
+  'Atlético Tucumán': 'Atl. Tucuman',
+  'Argentinos Juniors': 'Argentinos Jrs',
+  'Independiente Rivadavia': 'Ind. Rivadavia',
+  'Estudiantes de La Plata': 'Estudiantes L.P.',
+  'Estudiantes Rio Cuarto': 'Estudiantes Rio Cuarto',
+  'Sarmiento de Junin': 'Sarmiento',
+  'Defensa Y Justicia': 'Defensa y Justicia',
+  'Defensa y Justicia': 'Defensa y Justicia',
+  'Newells Old Boys': 'Newells Old Boys',
+  'Talleres de Cordoba': 'Talleres',
+  'Deportivo Riestra': 'Dep. Riestra',
+  'Union de Santa Fe': 'Union Santa Fe',
+  'Vélez Sarsfield': 'Velez Sarsfield',
+  'Gimnasia La Plata': 'Gimnasia L.P.',
+  'Gimnasia Mendoza': 'Gimnasia Mendoza',
+  // ── ARG_B (Primera B Nacional) ─────────────────────────────────────
+  'Ferrocarril Midland': 'Ferrocarril Midland',
+  'San Martin de San Juan': 'San Martin SJ',
+  'Colón de Santa Fe': 'Colon Santa Fe',
+  'Atletico Rafaela': 'Atl. Rafaela',
+  'Tristán Suárez': 'Tristan Suarez',
+  'Deportivo Madryn': 'Dep. Madryn',
+  'Deportivo Maipu': 'Dep. Maipu',
+  'Deportivo Moron': 'Dep. Moron',
+  // ── CHI ──────────────────────────────────────────────────────────
+  'Deportes Limache': 'Dep. Limache',
+  'Deportes Concepcion': 'Dep. Concepcion',
+  'Deportes La Serena': 'Dep. La Serena',
+  'Universidad de Concepción': 'Univ. Concepcion',
+  'Universidad de Chile': 'Univ. de Chile',
+  'Everton Vina del Mar': 'Everton Vina',
+  'Union La Calera': 'U. La Calera',
+  // ── MLS ──────────────────────────────────────────────────────────
+  'Atlanta United': 'Atlanta Utd',
+  'Los Angeles Galaxy': 'Los Angeles Galaxy',
+  'D.C. United': 'DC United',
+  // ── BUN ──────────────────────────────────────────────────────────
+  'FC Koln': '1. FC Koln',
+  'Mainz 05': 'Mainz',
+  'Hamburger SV': 'Hamburger SV',
+  // ── ECU ──────────────────────────────────────────────────────────
+  'Tecnico Universitario': 'Tecnico U.',
+  // ── J1 ──────────────────────────────────────────────────────────
+  'Sanfrecce Hiroshima': 'Sanfrecce Hiroshima',
+  'V-Varen Nagasaki': 'V-Varen Nagasaki',
+  'Kashima Antlers': 'Kashima',
+  'Urawa Red Diamonds': 'Urawa',
+  'Yokohama F. Marinos': 'Yokohama F. Marinos',
+  'Kawasaki Frontale': 'Kawasaki Frontale',
+  'Tokyo Verdy': 'Tokyo Verdy',
+  'JEF United Chiba': 'JEF United',
+  'Kyoto Sanga': 'Kyoto Sanga',
+  'Cerezo Osaka': 'Cerezo Osaka',
+  'Gamba Osaka': 'Gamba Osaka',
+  'Avispa Fukuoka': 'Avispa Fukuoka',
+  // ── ALM ──────────────────────────────────────────────────────────
+  'Western Sydney Wanderers': 'W. Sydney Wanderers',
+  'Wellington Phoenix': 'Wellington Phoenix',
+  'Newcastle Jets': 'Newcastle Jets',
+  'Central Coast Mariners': 'Central Coast'
+};
+
+function _aplicarAliasPinnacle(nomeTime) {
+  return _PINNACLE_ALIAS_TIMES[nomeTime] || nomeTime;
+}
+
 // Corrige mojibake típico de UTF-8 lido como Windows-1252 (e o inverso,
 // que aparece no arquivo exportado pela Pinnacle via Excel).
 function _fixEncodingPinnacle(text) {
@@ -4414,8 +4502,10 @@ function _parsearLinhaCSVPinnacle(cols) {
   return {
     data: dataISO,
     liga,
-    mandante: tCasa,
-    visitante: tFora,
+    // Aplica alias Pinnacle → nome canônico do dataset, para que o EV do
+    // modelo no Bet Tracker consiga achar o time via _fuzzyMatchTeam.
+    mandante: _aplicarAliasPinnacle(tCasa),
+    visitante: _aplicarAliasPinnacle(tFora),
     mercado: mercadoTracker,
     linha,
     odd,
