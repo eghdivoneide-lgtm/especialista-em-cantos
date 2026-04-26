@@ -18,6 +18,22 @@
   -->
   <title>Especialista em Cantos | EDS 2026</title>
   <meta name="description" content="Análise avançada de escanteios. Médias HT/FT por time e projeções para jogos futuros."/>
+
+  <!-- ═══ PWA — Progressive Web App (instalável no celular/PC) ═══ -->
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#34d367"/>
+  <meta name="application-name" content="EDS Cantos"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <!-- iOS / Apple -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="EDS Cantos"/>
+  <link rel="apple-touch-icon" href="icon.svg"/>
+  <link rel="icon" type="image/svg+xml" href="icon.svg"/>
+  <!-- Windows / Tile -->
+  <meta name="msapplication-TileColor" content="#0a0f0d"/>
+  <meta name="msapplication-TileImage" content="icon.svg"/>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <!--
     CDNs com versões pinadas + SRI (sha384). Evita que a CDN mude a lib
@@ -905,6 +921,9 @@
   <div class="sc-header">
     <div class="sc-header-title">👨‍💼 SmartCoach PRO</div>
     <div class="sc-header-actions">
+      <button class="sc-btn" title="Iniciar nova conversa (a atual fica salva no histórico)" onclick="novaConversaSC()">🆕</button>
+      <button class="sc-btn" title="Histórico de conversas" onclick="toggleSCHistorico()">📜</button>
+      <button class="sc-btn" title="Exportar conversa atual em HTML" onclick="exportarConversaSCAtual()">📤</button>
       <button class="sc-btn" id="sc-fullscreen-btn" title="Expandir para tela cheia" onclick="toggleSCFullscreen()">⛶</button>
       <button class="sc-btn" title="Configurar API Anthropic" onclick="toggleSCSettings()">⚙️</button>
       <button class="sc-btn" onclick="toggleSC()">✖</button>
@@ -912,6 +931,20 @@
   </div>
   <div id="sc-chat">
     <div class="msg msg-bot">Olá! Sou o <strong>SmartCoach</strong>, sua Inteligência Artificial Especialista em Cantos.<br><br>💡 Configure sua chave lá na ⚙️ e me pergunte sobre as projeções Sniper da rodada!</div>
+  </div>
+  <!-- Sub-view: Histórico de Conversas -->
+  <div id="sc-historico" style="display:none;flex:1;flex-direction:column;background:var(--bg2);overflow:hidden;">
+    <div style="padding:.8rem 1rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap;">
+      <div style="font-size:.85rem;font-weight:800;color:var(--green);">📜 Histórico de Conversas</div>
+      <div style="display:flex;gap:.4rem;">
+        <button onclick="_scLimparTudoHistorico()" style="background:transparent;border:1px solid rgba(239,68,68,0.4);color:#f87171;padding:.35rem .7rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;" title="Apagar TODAS as conversas">🗑️ Limpar tudo</button>
+        <button onclick="toggleSCHistorico()" style="background:var(--green);border:none;color:#000;padding:.35rem .7rem;border-radius:6px;font-size:.7rem;font-weight:800;cursor:pointer;">↩ Voltar ao chat</button>
+      </div>
+    </div>
+    <div style="padding:.6rem 1rem;border-bottom:1px solid var(--border);">
+      <input type="text" id="sc-historico-busca" placeholder="🔍 Buscar por liga, time, palavra..." oninput="renderSCHistorico()" style="width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:.5rem .7rem;font-size:.8rem;outline:none;">
+    </div>
+    <div id="sc-historico-lista" style="flex:1;overflow-y:auto;padding:.6rem;"></div>
   </div>
   <div class="sc-input-area">
     <!-- Preview múltiplas imagens -->
@@ -3547,8 +3580,25 @@ function renderTeacher() {
     return;
   }
 
+  // ── FILTRO DE DATA ────────────────────────────────────────────────────────
+  const filtroBar = _renderFiltroDataBar('teacher', jogosFuturos);
+  const jogosExibir = _filtrarJogosPorData(jogosFuturos, _filtroData.teacher);
+
+  if (jogosExibir.length === 0) {
+    const filtro = _filtroData.teacher;
+    const msg = filtro.modo === 'hoje' ? 'Nenhum jogo agendado para hoje.'
+              : filtro.modo === 'data' ? `Nenhum jogo na data ${_dataBrCurta(filtro.data)}.`
+              : 'Nenhum jogo válido na rodada.';
+    container.innerHTML = filtroBar + `<div style="text-align:center;padding:2rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px">
+      <div style="font-size:2.5rem;margin-bottom:.5rem">📭</div>
+      <strong>${msg}</strong><br>
+      <span style="font-size:.8rem">Clique em <strong style="color:var(--green)">🌐 Visão Geral</strong> para ver todos os jogos da rodada.</span>
+    </div>`;
+    return;
+  }
+
   let cardsHTML = '';
-  jogosFuturos.forEach(j => {
+  jogosExibir.forEach(j => {
     const p = projecaoJogo(j.m, j.v);
     if(!p) return;
     const rc = p.reisDosCantosData;
@@ -3566,7 +3616,10 @@ function renderTeacher() {
 
         <!-- HEADER (estilo TEACHER) -->
         <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-bottom:1px solid var(--border)">
-          <span style="font-size:1.05rem;font-weight:900;color:var(--text)">${j.m} vs ${j.v}</span>
+          <div style="display:flex;flex-direction:column">
+            ${_seloDataHora(j)}
+            <span style="font-size:1.05rem;font-weight:900;color:var(--text)">${j.m} vs ${j.v}</span>
+          </div>
           <div style="display:flex;gap:.4rem;align-items:center">${badgesHTML}</div>
         </div>
 
@@ -3678,7 +3731,7 @@ function renderTeacher() {
       </div>
     `;
   });
-  container.innerHTML = cardsHTML;
+  container.innerHTML = filtroBar + cardsHTML;
 }
 
 // ══════════════════════════════════════════════════
@@ -4762,7 +4815,8 @@ function trocarLiga(liga) {
   carregarBets();
   carregarJogosFuturos(); // ← CRÍTICO: recarrega jogos da rodada para a nova liga
   carregarEstadoCisneNegro(); // ← v1.1: restaura textarea+cards da nova liga
-  scChatHistory = [];
+  // scChatHistory NÃO é mais zerado ao trocar liga (v3.4 — histórico persistente).
+  // A sessão SmartCoach continua ativa, e a nova liga aparece no contexto da próxima mensagem.
   init();
   showView('dashboard');
 }
@@ -5948,6 +6002,279 @@ async function exportarAnaliseIA(textoHTML, m, v) {
 let scKey = localStorage.getItem('smartcoach_key') || '';
 let scChatHistory = [];
 
+// ══════════════════════════════════════════════════
+//  SMARTCOACH — HISTÓRICO DE SESSÕES (v1.0 — 2026-04-26)
+//  Persistência: localStorage 'eds_sc_sessions' (array de sessões)
+//  Sessão = { id, iniciada_em, ultima_atividade, liga, view, jogo_foco, mensagens:[{role,content,ts,hasImages}] }
+//  Cap: 50 sessões (LRU). Nova sessão automática após 30min de inatividade.
+// ══════════════════════════════════════════════════
+const SC_STORAGE_KEY = 'eds_sc_sessions';
+const SC_SESSION_LIMIT = 50;
+const SC_SESSION_GAP_MS = 30 * 60 * 1000;
+
+let scSessionAtivaId = null; // id da sessão sendo escrita
+
+function _scLerSessoes() {
+  try {
+    const raw = localStorage.getItem(SC_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch(e) { return []; }
+}
+
+function _scGravarSessoes(arr) {
+  // LRU: ordena por ultima_atividade DESC, mantém 50
+  const sorted = (arr || []).slice().sort((a,b) => (b.ultima_atividade||'').localeCompare(a.ultima_atividade||''));
+  const capped = sorted.slice(0, SC_SESSION_LIMIT);
+  try { localStorage.setItem(SC_STORAGE_KEY, JSON.stringify(capped)); }
+  catch(e) { console.error('[SmartCoach] falha ao gravar sessões:', e); }
+}
+
+function _scContextoAtual() {
+  const view = document.querySelector('.view.active')?.id || 'dashboard';
+  let jogoFoco = null;
+  try {
+    if (typeof jogoEmFoco !== 'undefined' && jogoEmFoco && jogoEmFoco.m && jogoEmFoco.v) {
+      jogoFoco = `${jogoEmFoco.m} vs ${jogoEmFoco.v}`;
+    }
+  } catch(e) {}
+  return { liga: LIGA_ATUAL || '—', view, jogo_foco: jogoFoco };
+}
+
+function _scNovaSessao() {
+  const ctx = _scContextoAtual();
+  const now = new Date().toISOString();
+  const id = 'sc_' + now.replace(/[^0-9]/g, '').slice(0, 14) + '_' + Math.random().toString(36).slice(2, 6);
+  const sessao = {
+    id,
+    iniciada_em: now,
+    ultima_atividade: now,
+    liga: ctx.liga,
+    view: ctx.view,
+    jogo_foco: ctx.jogo_foco,
+    mensagens: []
+  };
+  const sessoes = _scLerSessoes();
+  sessoes.unshift(sessao);
+  _scGravarSessoes(sessoes);
+  scSessionAtivaId = id;
+  return id;
+}
+
+function _scGarantirSessaoAtiva() {
+  // Cria nova sessão se: (a) não há ativa OU (b) gap > 30min desde última atividade
+  if (!scSessionAtivaId) return _scNovaSessao();
+  const sessoes = _scLerSessoes();
+  const atual = sessoes.find(s => s.id === scSessionAtivaId);
+  if (!atual) return _scNovaSessao();
+  const idade = Date.now() - new Date(atual.ultima_atividade).getTime();
+  if (idade > SC_SESSION_GAP_MS) return _scNovaSessao();
+  return scSessionAtivaId;
+}
+
+function _scAdicionarMensagem(role, content, hasImages) {
+  const id = _scGarantirSessaoAtiva();
+  const sessoes = _scLerSessoes();
+  const idx = sessoes.findIndex(s => s.id === id);
+  if (idx === -1) return;
+  sessoes[idx].mensagens.push({
+    role,
+    content: String(content || ''),
+    ts: new Date().toISOString(),
+    hasImages: !!hasImages
+  });
+  sessoes[idx].ultima_atividade = new Date().toISOString();
+  // Se a sessão foi iniciada antes da liga atual mudar, atualiza metadados
+  const ctx = _scContextoAtual();
+  if (sessoes[idx].mensagens.length === 1) {
+    sessoes[idx].liga = ctx.liga;
+    sessoes[idx].view = ctx.view;
+    sessoes[idx].jogo_foco = ctx.jogo_foco;
+  }
+  _scGravarSessoes(sessoes);
+}
+
+function _scDeletarSessao(id) {
+  const sessoes = _scLerSessoes().filter(s => s.id !== id);
+  _scGravarSessoes(sessoes);
+  if (scSessionAtivaId === id) scSessionAtivaId = null;
+  if (document.getElementById('sc-historico')?.style.display === 'flex') renderSCHistorico();
+}
+
+function _scLimparTudoHistorico() {
+  if (!confirm('Apagar TODAS as conversas do histórico? Esta ação não pode ser desfeita.')) return;
+  localStorage.removeItem(SC_STORAGE_KEY);
+  scSessionAtivaId = null;
+  scChatHistory = [];
+  renderSCHistorico();
+}
+
+function novaConversaSC() {
+  scSessionAtivaId = null;
+  scChatHistory = [];
+  const chat = document.getElementById('sc-chat');
+  if (chat) chat.innerHTML = `<div class="msg msg-bot">🆕 <strong>Nova conversa iniciada.</strong> Pergunta livre ou cole prints — o histórico anterior está salvo em 📜.</div>`;
+  // Volta para o chat se estava no histórico
+  const hist = document.getElementById('sc-historico');
+  if (hist && hist.style.display !== 'none') toggleSCHistorico();
+}
+
+// Toggle entre sub-view de histórico e chat normal
+function toggleSCHistorico() {
+  const hist = document.getElementById('sc-historico');
+  const chat = document.getElementById('sc-chat');
+  const inputArea = document.querySelector('.sc-input-area');
+  if (!hist || !chat) return;
+  if (hist.style.display === 'none' || hist.style.display === '') {
+    hist.style.display = 'flex';
+    chat.style.display = 'none';
+    if (inputArea) inputArea.style.display = 'none';
+    renderSCHistorico();
+  } else {
+    hist.style.display = 'none';
+    chat.style.display = 'flex';
+    if (inputArea) inputArea.style.display = 'flex';
+  }
+}
+
+// Lista todas as sessões com filtro de busca
+function renderSCHistorico() {
+  const lista = document.getElementById('sc-historico-lista');
+  if (!lista) return;
+  const busca = (document.getElementById('sc-historico-busca')?.value || '').trim().toLowerCase();
+  const sessoes = _scLerSessoes();
+
+  const filtradas = !busca ? sessoes : sessoes.filter(s => {
+    const blob = (s.liga + ' ' + (s.jogo_foco||'') + ' ' + (s.view||'') + ' ' + s.mensagens.map(m=>m.content).join(' ')).toLowerCase();
+    return blob.includes(busca);
+  });
+
+  if (filtradas.length === 0) {
+    lista.innerHTML = `<div style="text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;">
+      <div style="font-size:2.5rem;margin-bottom:.5rem;">📭</div>
+      ${busca ? `Nenhuma conversa encontrada para "<strong>${busca}</strong>".` : 'Nenhuma conversa salva ainda. Faça uma pergunta ao SmartCoach para começar.'}
+    </div>`;
+    return;
+  }
+
+  lista.innerHTML = filtradas.map(s => {
+    const ts = new Date(s.iniciada_em);
+    const dataStr = ts.toLocaleDateString('pt-BR', { day:'2-digit', month:'2-digit' });
+    const horaStr = ts.toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' });
+    const primeiraUser = s.mensagens.find(m => m.role === 'user');
+    const preview = primeiraUser ? (primeiraUser.content.slice(0, 90) + (primeiraUser.content.length > 90 ? '...' : '')) : '(sem mensagens)';
+    const totalMsgs = s.mensagens.length;
+    const focoStr = s.jogo_foco ? `🎯 ${s.jogo_foco}` : '';
+    const ativa = s.id === scSessionAtivaId ? `<span style="background:var(--green);color:#000;font-size:.6rem;font-weight:800;padding:.1rem .4rem;border-radius:4px;margin-left:.4rem;">ATIVA</span>` : '';
+    return `
+      <div style="background:var(--bg);border:1px solid ${s.id === scSessionAtivaId ? 'var(--green)' : 'var(--border)'};border-radius:8px;padding:.7rem;margin-bottom:.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.4rem;flex-wrap:wrap;margin-bottom:.4rem;">
+          <div style="font-size:.7rem;color:var(--muted);font-weight:700;">📅 ${dataStr} ${horaStr} · 🏠 ${s.liga} ${focoStr}${ativa}</div>
+          <div style="font-size:.65rem;color:var(--green);font-weight:700;">${totalMsgs} msg${totalMsgs!==1?'s':''}</div>
+        </div>
+        <div style="font-size:.78rem;color:var(--text);line-height:1.4;margin-bottom:.5rem;font-style:italic;">"${preview}"</div>
+        <div style="display:flex;gap:.3rem;flex-wrap:wrap;">
+          <button onclick="_scAbrirSessao('${s.id}')" style="flex:1;min-width:80px;background:var(--green);border:none;color:#000;padding:.35rem .6rem;border-radius:5px;font-size:.7rem;font-weight:800;cursor:pointer;">↗️ Abrir</button>
+          <button onclick="exportarConversaSC('${s.id}')" style="flex:1;min-width:80px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:.35rem .6rem;border-radius:5px;font-size:.7rem;font-weight:700;cursor:pointer;">📤 Exportar</button>
+          <button onclick="if(confirm('Apagar esta conversa?')) _scDeletarSessao('${s.id}')" style="background:transparent;border:1px solid rgba(239,68,68,0.4);color:#f87171;padding:.35rem .6rem;border-radius:5px;font-size:.7rem;font-weight:700;cursor:pointer;">🗑</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// Carrega uma sessão no chat ativo
+function _scAbrirSessao(id) {
+  const sessoes = _scLerSessoes();
+  const s = sessoes.find(x => x.id === id);
+  if (!s) return;
+
+  // Reconstroi scChatHistory para enviar ao Claude (max 10 últimas)
+  scChatHistory = s.mensagens.slice(-10).map(m => ({ role: m.role, content: m.content }));
+  scSessionAtivaId = id;
+
+  // Renderiza no chat
+  const chat = document.getElementById('sc-chat');
+  if (chat) {
+    chat.innerHTML = `<div class="msg msg-bot" style="background:rgba(96,165,250,0.08);border-color:rgba(96,165,250,0.3);">📜 <strong>Conversa carregada</strong> (${s.mensagens.length} mensagens · ${new Date(s.iniciada_em).toLocaleString('pt-BR')}). Continue de onde parou — as próximas mensagens serão salvas nesta sessão.</div>`;
+    s.mensagens.forEach(m => {
+      const body = m.role === 'assistant' ? _renderSCMarkdown(m.content) : m.content.replace(/\n/g, '<br>');
+      const roleClass = m.role === 'assistant' ? 'bot' : 'user';
+      chat.innerHTML += `<div class="msg msg-${roleClass}">${body}</div>`;
+    });
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  // Volta pro chat
+  toggleSCHistorico();
+}
+
+// Exportar UMA sessão específica
+function exportarConversaSC(id) {
+  const s = _scLerSessoes().find(x => x.id === id);
+  if (!s) { alert('Sessão não encontrada.'); return; }
+  _exportarConversaInterno(s);
+}
+
+// Exportar a conversa ATIVA (do header)
+function exportarConversaSCAtual() {
+  if (!scSessionAtivaId) {
+    alert('Nenhuma conversa ativa para exportar. Faça uma pergunta primeiro.');
+    return;
+  }
+  const s = _scLerSessoes().find(x => x.id === scSessionAtivaId);
+  if (!s) { alert('Sessão ativa não encontrada no histórico.'); return; }
+  _exportarConversaInterno(s);
+}
+
+function _exportarConversaInterno(s) {
+  const ts = new Date(s.iniciada_em);
+  const dataStr = ts.toLocaleDateString('pt-BR');
+  const horaStr = ts.toLocaleTimeString('pt-BR');
+  const dataExt = s.iniciada_em.split('T')[0];
+
+  const mensagensHtml = s.mensagens.map(m => {
+    const corpo = m.role === 'assistant' ? _renderSCMarkdown(m.content) : m.content.replace(/\n/g, '<br>').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const tsM = new Date(m.ts).toLocaleString('pt-BR');
+    const cor = m.role === 'assistant' ? 'var(--green)' : 'var(--gold)';
+    const label = m.role === 'assistant' ? '🤖 SmartCoach' : '👤 Operador';
+    const imgFlag = m.hasImages ? ' <span style="background:rgba(96,165,250,0.15);color:#60a5fa;font-size:.65rem;padding:.1rem .4rem;border-radius:3px;font-weight:700;">📸 com prints</span>' : '';
+    return `
+      <div style="margin-bottom:1.2rem;padding:1rem;background:var(--bg2);border-left:3px solid ${cor};border-radius:8px;">
+        <div style="font-size:.7rem;color:${cor};font-weight:800;margin-bottom:.5rem;">${label} <span style="color:var(--muted);font-weight:500;">· ${tsM}</span>${imgFlag}</div>
+        <div style="font-size:.85rem;color:var(--text);line-height:1.6;">${m.role === 'assistant' ? corpo : `<p style="margin:0;">${corpo}</p>`}</div>
+      </div>
+    `;
+  }).join('');
+
+  const focoLine = s.jogo_foco ? `<div>🎯 Jogo em foco: <strong>${s.jogo_foco}</strong></div>` : '';
+
+  const conteudo = `
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;font-size:.85rem;color:var(--text);">
+        <div>📅 Início: <strong>${dataStr} ${horaStr}</strong></div>
+        <div>🏠 Liga: <strong>${s.liga}</strong></div>
+        <div>📺 Tela: <strong>${s.view || '—'}</strong></div>
+        <div>💬 Mensagens: <strong>${s.mensagens.length}</strong></div>
+        ${focoLine}
+      </div>
+    </div>
+    ${mensagensHtml}
+  `;
+
+  // Reusa o helper de export já existente
+  if (typeof _exportarAnaliseHTML === 'function') {
+    _exportarAnaliseHTML({
+      titulo: '🤖 SmartCoach — Conversa',
+      subtitulo: `${s.mensagens.length} mensagens · ${dataStr} ${horaStr}${s.jogo_foco?` · ${s.jogo_foco}`:''}`,
+      conteudoHTML: conteudo,
+      prefixoArquivo: 'SmartCoach',
+      corHeader: 'var(--green)'
+    });
+  } else {
+    alert('Helper de export não disponível.');
+  }
+}
+
 function toggleSC() {
   const drawer = document.getElementById('sc-drawer');
   drawer.classList.toggle('open');
@@ -6575,6 +6902,12 @@ async function sendSCMsg() {
   // tende a ser estratégica (operador faz 4-5 perguntas relacionadas seguidas).
   if(scChatHistory.length > 10) scChatHistory.shift();
 
+  // Persiste user message no histórico de sessões (só texto + flag de imagem)
+  const userTextoPersist = temImagem
+    ? (text || `[print(s) enviado(s) — ${scImageDatas.length}]`)
+    : text;
+  _scAdicionarMensagem('user', userTextoPersist, temImagem);
+
   const modoAoVivo = temImagem;
 
   const systemPrompt = `Você é o *SmartCoach*, a Inteligência Artificial embarcada (Claude Opus) no app 'EDS Especialista em Cantos'.
@@ -6743,7 +7076,10 @@ Esses dados vêm do Escoteiro YAAKEN e são qualitativos — complementam o mode
     const botText = data.content[0].text;
     scChatHistory.push({ role: 'assistant', content: botText });
     if(scChatHistory.length > 6) scChatHistory.shift();
-    
+
+    // Persiste resposta do bot no histórico de sessões
+    _scAdicionarMensagem('assistant', botText, false);
+
     addSCMsg('bot', botText);
   } catch (error) {
     document.querySelector('.sc-loading')?.remove();
@@ -6864,8 +7200,13 @@ function processarTextoRodada() {
     linha = linha.trim();
     if(linha.length < 3) return;
 
+    // NOVO: extrai data/hora da linha antes de tentar identificar times
+    // Suporta "26/04 — 15:00 → Flamengo × Vasco" e variações
+    const parsed = _parsearLinhaJogo(linha);
+    const linhaLimpa = parsed.jogo;
+
     // 1. Tenta quebrar pelo padrão clássico " x ", " × ", " vs " (Leitura Horizontal)
-    const partes = linha.split(/\s+[x×]\s+|\s+vs\.?\s+|\s+-\s+|\s+v\s+/i);
+    const partes = linhaLimpa.split(/\s+[x×]\s+|\s+vs\.?\s+|\s+-\s+|\s+v\s+/i);
     if(partes.length >= 2) {
       const mandanteCru = partes[0].trim();
       const visitanteCru = partes[1].trim();
@@ -6873,13 +7214,21 @@ function processarTextoRodada() {
       const v = encontrarTimeMaisProximo(visitanteCru, timesConhecidos);
 
       if(m && v && m !== v) {
-        if(!jogosFuturos.find(j => j.m === m && j.v === v)) {
-          jogosFuturos.push({ m, v });
+        const existente = jogosFuturos.find(j => j.m === m && j.v === v);
+        if(!existente) {
+          const novo = { m, v };
+          if (parsed.data) novo.data = parsed.data;
+          if (parsed.hora) novo.hora = parsed.hora;
+          jogosFuturos.push(novo);
           detectados++;
+        } else if (parsed.data || parsed.hora) {
+          // Atualiza data/hora de jogo já existente (ex: import inicial sem data, depois com data)
+          if (parsed.data && !existente.data) existente.data = parsed.data;
+          if (parsed.hora && !existente.hora) existente.hora = parsed.hora;
         }
         timeEsperando = null;
       }
-      return; 
+      return;
     }
 
     // 2. Leitura Vertical (OCR geralmente empilha os times um embaixo do outro)
@@ -8196,6 +8545,189 @@ function _cisneStorageKeys(liga) {
   return { txt: 'eds_cisne_texto_' + L, cards: 'eds_cisne_cards_' + L };
 }
 
+// ══════════════════════════════════════════════════
+//  PARSER DE DATA/HORA na linha do jogo (v1.0 — 2026-04-26)
+//  Aceita formatos:
+//    "26/04 — 15:00 → Flamengo × Vasco"
+//    "26/04 15:00 Flamengo x Vasco"
+//    "26/04/2026 - 15:00 - Flamengo vs Vasco"
+//    "Flamengo × Vasco 26/04"
+//    "Flamengo × Vasco" (sem data — devolve null/null)
+//  Aceita separadores: — – - → > : (em qualquer combinação)
+// ══════════════════════════════════════════════════
+function _normalizarDataParts(d, mo, y) {
+  const dd = parseInt(d, 10);
+  const mm = parseInt(mo, 10);
+  if (isNaN(dd) || isNaN(mm) || dd < 1 || dd > 31 || mm < 1 || mm > 12) return null;
+  let yyyy;
+  if (!y) {
+    yyyy = new Date().getFullYear();
+  } else {
+    yyyy = parseInt(y, 10);
+    if (isNaN(yyyy)) return null;
+    if (yyyy < 100) yyyy = 2000 + yyyy;
+  }
+  return `${yyyy}-${String(mm).padStart(2,'0')}-${String(dd).padStart(2,'0')}`;
+}
+
+function _parsearLinhaJogo(linha) {
+  // Retorna { data: 'YYYY-MM-DD'|null, hora: 'HH:MM'|null, jogo: 'string limpa' }
+  let l = (linha || '').trim();
+  if (!l) return { data: null, hora: null, jogo: '' };
+
+  let data = null, hora = null;
+
+  // 1. Tenta data no INÍCIO (DD/MM[/YYYY])
+  const reDataIni = /^(\d{1,2})[\/\-\.](\d{1,2})(?:[\/\-\.](\d{2,4}))?\b/;
+  let m = l.match(reDataIni);
+  if (m) {
+    const d = _normalizarDataParts(m[1], m[2], m[3]);
+    if (d) { data = d; l = l.slice(m[0].length); }
+  }
+
+  // 2. Remove separador inicial (—, –, -, →, >, :)
+  l = l.replace(/^\s*[—–\-→>:]+\s*/, '').trim();
+
+  // 3. Tenta hora HH:MM
+  const reHora = /^(\d{1,2}):(\d{2})\b/;
+  m = l.match(reHora);
+  if (m) {
+    const h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+    if (h >= 0 && h < 24 && mi >= 0 && mi < 60) {
+      hora = `${String(h).padStart(2,'0')}:${String(mi).padStart(2,'0')}`;
+      l = l.slice(m[0].length);
+    }
+  }
+
+  // 4. Remove separador (—, –, -, →, >, :)
+  l = l.replace(/^\s*[—–\-→>:]+\s*/, '').trim();
+
+  // 5. Se ainda não tem data, tenta no FIM da linha
+  if (!data) {
+    const reDataFim = /\s+(\d{1,2})[\/\-\.](\d{1,2})(?:[\/\-\.](\d{2,4}))?\s*$/;
+    m = l.match(reDataFim);
+    if (m) {
+      const d = _normalizarDataParts(m[1], m[2], m[3]);
+      if (d) { data = d; l = l.slice(0, m.index).trim(); }
+    }
+  }
+
+  // 6. Tenta hora no FIM se ainda não tem
+  if (!hora) {
+    const reHoraFim = /\s+(\d{1,2}):(\d{2})\s*$/;
+    m = l.match(reHoraFim);
+    if (m) {
+      const h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+      if (h >= 0 && h < 24 && mi >= 0 && mi < 60) {
+        hora = `${String(h).padStart(2,'0')}:${String(mi).padStart(2,'0')}`;
+        l = l.slice(0, m.index).trim();
+      }
+    }
+  }
+
+  return { data, hora, jogo: l.trim() };
+}
+
+// Helper: data ISO (YYYY-MM-DD) → "DD/MM"
+function _dataBrCurta(iso) {
+  if (!iso) return '';
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return iso;
+  return `${m[3]}/${m[2]}`;
+}
+
+// Helper: data ISO de hoje
+function _dataIsoHoje() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+// ══════════════════════════════════════════════════
+//  FILTRO DE DATA — Teacher e Enigma (estado em memória)
+// ══════════════════════════════════════════════════
+let _filtroData = {
+  teacher: { modo: 'hoje', data: null }, // modo: 'hoje' | 'todas' | 'data'
+  enigma:  { modo: 'hoje', data: null }
+};
+
+function _filtrarJogosPorData(jogos, filtro) {
+  let out;
+  if (filtro.modo === 'todas') out = jogos.slice();
+  else if (filtro.modo === 'hoje') {
+    const hoje = _dataIsoHoje();
+    out = jogos.filter(j => j.data === hoje);
+  } else if (filtro.modo === 'data' && filtro.data) {
+    out = jogos.filter(j => j.data === filtro.data);
+  } else {
+    out = jogos.slice();
+  }
+  // Ordena cronologicamente: data ASC → hora ASC → sem data no fim
+  return out.sort((a, b) => {
+    if (a.data && b.data && a.data !== b.data) return a.data < b.data ? -1 : 1;
+    if (a.data && !b.data) return -1;
+    if (!a.data && b.data) return 1;
+    if (a.hora && b.hora && a.hora !== b.hora) return a.hora < b.hora ? -1 : 1;
+    if (a.hora && !b.hora) return -1;
+    if (!a.hora && b.hora) return 1;
+    return 0;
+  });
+}
+
+function _renderFiltroDataBar(view, jogos) {
+  const filtro = _filtroData[view];
+  const hoje = _dataIsoHoje();
+  const cntHoje = jogos.filter(j => j.data === hoje).length;
+  const cntTotal = jogos.length;
+  const cntSemData = jogos.filter(j => !j.data).length;
+  const datasUnicas = [...new Set(jogos.filter(j => j.data).map(j => j.data))].sort();
+  const exibidos = _filtrarJogosPorData(jogos, filtro).length;
+  const setFn = view === 'teacher' ? 'setFiltroDataTeacher' : 'setFiltroDataEnigma';
+
+  const btnStyle = (ativo) => `padding:.5rem 1rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;transition:all .2s;${ativo ? 'background:var(--green);color:#000;border:1px solid var(--green);' : 'background:transparent;color:var(--muted);border:1px solid var(--border);'}`;
+
+  const opcoes = datasUnicas.map(d => {
+    const cnt = jogos.filter(j => j.data === d).length;
+    const sel = filtro.modo === 'data' && filtro.data === d ? 'selected' : '';
+    return `<option value="${d}" ${sel}>${_dataBrCurta(d)} — ${cnt} jogo${cnt!==1?'s':''}</option>`;
+  }).join('');
+
+  return `
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;margin-bottom:1.2rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;">
+      <span style="font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px;">📅 Filtrar:</span>
+      <button onclick="${setFn}('todas')" style="${btnStyle(filtro.modo === 'todas')}" title="Mostrar todos os jogos da rodada, independente da data">🌐 Visão Geral (${cntTotal})</button>
+      <button onclick="${setFn}('hoje')" style="${btnStyle(filtro.modo === 'hoje')}" title="Mostrar apenas os jogos com data igual a hoje">🕒 Hoje (${cntHoje})</button>
+      ${datasUnicas.length > 0 ? `
+        <select onchange="if(this.value) ${setFn}('data', this.value)" style="background:var(--bg);border:1px solid ${filtro.modo==='data'?'var(--green)':'var(--border)'};color:${filtro.modo==='data'?'var(--green)':'var(--text)'};padding:.5rem .8rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;outline:none;" title="Selecionar uma data específica para filtrar">
+          <option value="">📆 Por data...</option>
+          ${opcoes}
+        </select>
+      ` : ''}
+      <div style="margin-left:auto;font-size:.75rem;color:var(--muted);font-weight:600;">
+        Mostrando <strong style="color:var(--text);">${exibidos}</strong> de ${cntTotal}${cntSemData > 0 ? ` <span style="color:var(--gold);">· 🕒 ${cntSemData} sem data</span>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function setFiltroDataTeacher(modo, data) {
+  _filtroData.teacher = { modo, data: data || null };
+  renderTeacher();
+}
+
+function setFiltroDataEnigma(modo, data) {
+  _filtroData.enigma = { modo, data: data || null };
+  renderEnigma();
+}
+
+// HTML inline de "selo de data/hora" para os cards
+function _seloDataHora(j) {
+  if (!j.data && !j.hora) return '';
+  const dt = j.data ? `📅 ${_dataBrCurta(j.data)}` : '';
+  const hr = j.hora ? `🕒 ${j.hora}` : '';
+  const sep = (dt && hr) ? ' · ' : '';
+  return `<div style="font-size:.7rem;color:var(--gold);font-weight:700;margin-bottom:.2rem;">${dt}${sep}${hr}</div>`;
+}
+
 // Sincroniza o scanner Cisne Negro com a rodada importada.
 // Pega jogos de sniper_rodada_<LIGA>, popula textarea e filtra os com diff ≥ 2.0
 // (mesma lógica do varrerCisneNegro). Retorna quantos jogos passaram no filtro.
@@ -8567,9 +9099,27 @@ function renderEnigma() {
     return;
   }
 
-  // Calcula SDE para cada jogo
-  const resultados = jogosValidos.map(j => ({
+  // ── FILTRO DE DATA ────────────────────────────────────────────────────────
+  const filtroBarEnigma = _renderFiltroDataBar('enigma', jogosValidos);
+  const jogosFiltrados = _filtrarJogosPorData(jogosValidos, _filtroData.enigma);
+
+  if (jogosFiltrados.length === 0) {
+    const filtro = _filtroData.enigma;
+    const msg = filtro.modo === 'hoje' ? 'Nenhum jogo agendado para hoje.'
+              : filtro.modo === 'data' ? `Nenhum jogo na data ${_dataBrCurta(filtro.data)}.`
+              : 'Nenhum jogo válido na rodada.';
+    ctr.innerHTML = filtroBarEnigma + `<div style="text-align:center;padding:2rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px">
+      <div style="font-size:2.5rem;margin-bottom:.5rem">📭</div>
+      <strong>${msg}</strong><br>
+      <span style="font-size:.8rem">Clique em <strong style="color:var(--green)">🌐 Visão Geral</strong> para ver todos os jogos.</span>
+    </div>`;
+    return;
+  }
+
+  // Calcula SDE para cada jogo (preserva data/hora)
+  const resultados = jogosFiltrados.map(j => ({
     m: j.m, v: j.v,
+    data: j.data, hora: j.hora,
     sde: calcSDE_ENIGMA(j.m, j.v)
   }));
 
@@ -8600,7 +9150,7 @@ function renderEnigma() {
         <div style="font-size:.7rem;color:var(--muted);font-weight:700;margin-top:.2rem;">⬜ RUÍDO / SEM SINAL</div>
       </div>
       <div style="background:rgba(52,211,103,0.06);border:1px solid rgba(52,211,103,0.2);border-radius:12px;padding:1rem;text-align:center;">
-        <div style="font-size:2rem;font-weight:900;color:var(--green);">${jogosValidos.length}</div>
+        <div style="font-size:2rem;font-weight:900;color:var(--green);">${jogosFiltrados.length}</div>
         <div style="font-size:.7rem;color:var(--green);font-weight:700;margin-top:.2rem;">⚽ JOGOS ANALISADOS</div>
       </div>
     </div>
@@ -8613,7 +9163,7 @@ function renderEnigma() {
 
   // ── Cards individuais ────────────────────────────────────────────
   const cardsHtml = resultados.map(r => {
-    const { m, v, sde: s } = r;
+    const { m, v, data, hora, sde: s } = r;
     if (!s.valido) return '';
 
     const cardClass = s.classificacao === 'ATIVO' ? 'enigma-card sinal-ativo'
@@ -8685,6 +9235,7 @@ function renderEnigma() {
         <!-- Cabeçalho -->
         <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
           <div>
+            ${_seloDataHora({ data, hora })}
             <div class="enigma-veredito-bar">
               <span class="enigma-team-label">${m}</span>
               <span class="enigma-vs">×</span>
@@ -8806,10 +9357,40 @@ function renderEnigma() {
     `;
   }).join('');
 
-  ctr.innerHTML = resumoHtml + cardsHtml;
+  ctr.innerHTML = filtroBarEnigma + resumoHtml + cardsHtml;
 }
 
 init();
+
+// ══════════════════════════════════════════════════
+//  PWA — Registro do Service Worker (instalação e cache)
+//  Funciona em http://localhost e em qualquer URL HTTPS.
+//  Não funciona em file:// (proteção do browser).
+// ══════════════════════════════════════════════════
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js').then(reg => {
+      console.log('[PWA] Service Worker registrado — escopo:', reg.scope);
+      // Detecta atualização — avisa o operador
+      reg.addEventListener('updatefound', () => {
+        const sw = reg.installing;
+        if (!sw) return;
+        sw.addEventListener('statechange', () => {
+          if (sw.state === 'installed' && navigator.serviceWorker.controller) {
+            // Já tinha versão antiga rodando → existe atualização
+            const banner = document.createElement('div');
+            banner.style.cssText = 'position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#34d367,#22c55e);color:#000;padding:.8rem 1.4rem;border-radius:10px;font-weight:800;font-size:.85rem;box-shadow:0 8px 25px rgba(52,211,103,0.4);z-index:9999;cursor:pointer;display:flex;gap:.6rem;align-items:center;';
+            banner.innerHTML = '🔄 Nova versão disponível — clique para atualizar';
+            banner.onclick = () => { sw.postMessage({ type: 'SKIP_WAITING' }); window.location.reload(); };
+            document.body.appendChild(banner);
+          }
+        });
+      });
+    }).catch(err => console.warn('[PWA] Falha ao registrar SW:', err));
+  });
+} else {
+  console.log('[PWA] Service Worker NÃO registrado (file:// ou browser sem suporte). PWA precisa de http://localhost ou HTTPS.');
+}
 </script>
 </body>
 </html>
