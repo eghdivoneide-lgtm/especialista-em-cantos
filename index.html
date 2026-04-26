@@ -468,6 +468,7 @@
   <button id="btn-tracker"   onclick="showView('tracker')">📈 Bet Tracker</button>
   <button id="btn-apostas"  onclick="showView('apostas')">🎰 Apostas Reais</button>
   <button id="btn-enigma"   onclick="showView('enigma')" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(88,28,235,0.15));border-color:rgba(139,92,246,0.4);color:#a78bfa;">🔮 ENIGMA</button>
+  <button id="btn-auditoria" onclick="showView('auditoria')" style="background:linear-gradient(135deg,rgba(52,211,103,0.15),rgba(34,197,94,0.15));border-color:rgba(52,211,103,0.4);color:var(--green);" title="Memória institucional cross-liga · trilha de auditoria das análises pré-jogo">🔍 Auditoria</button>
 </nav>
 
 <main>
@@ -486,6 +487,7 @@
         <button onclick="varrerCisneNegro()" onmouseover="this.style.background='var(--gold2)'" onmouseout="this.style.background='var(--gold)'" style="background:var(--gold);color:#000;border:none;padding:0.75rem 1.5rem;border-radius:8px;font-weight:800;cursor:pointer;font-size:0.9rem;transition:all 0.2s;box-shadow:0 4px 15px rgba(251,191,36,0.3)">
           🔭 Varrer Frequências Ocultas
         </button>
+        <button onclick="exportarCisneNegroHTML()" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:0.75rem 1rem;border-radius:8px;font-weight:700;cursor:pointer;font-size:0.85rem;transition:all 0.2s" title="Exporta os cards Cisne Negro desta liga em HTML standalone (visual idêntico ao App)">📤 Exportar HTML</button>
         <button onclick="limparCisneNegroLiga()" onmouseover="this.style.background='var(--card)';this.style.color='var(--red)'" onmouseout="this.style.background='transparent';this.style.color='var(--red)'" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:0.75rem 1rem;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.2s" title="Apaga textarea, cards e storage do Cisne Negro DESTA liga (outras ligas preservam seu estado)">🗑️ Limpar</button>
       </div>
     </div>
@@ -821,7 +823,10 @@
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,#a78bfa,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🔮 ENIGMA — Scanner de Discrepância Territorial</div>
         <div style="font-size:.75rem;color:#7c3aed;margin-top:.3rem;font-weight:600;">Motor de Identificação de Anomalias Cantos · Base: Ranking Casa × Fora</div>
       </div>
-      <button onclick="renderEnigma()" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);border:none;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(139,92,246,0.4);">🔄 Re-Analisar</button>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+        <button onclick="exportarEnigmaHTML()" style="background:transparent;color:#a78bfa;border:1px solid rgba(139,92,246,0.5);padding:.6rem 1rem;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='rgba(139,92,246,0.15)'" onmouseout="this.style.background='transparent'" title="Exporta a análise Enigma em HTML standalone (visual idêntico ao App)">📤 Exportar HTML</button>
+        <button onclick="renderEnigma()" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);border:none;color:#fff;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(139,92,246,0.4);">🔄 Re-Analisar</button>
+      </div>
     </div>
     <div id="enigma-legend" style="display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem;">
       <span style="background:rgba(139,92,246,0.15);border:1px solid rgba(139,92,246,0.4);color:#a78bfa;font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">🎯 SDE ≥ 65 = SINAL ATIVO</span>
@@ -831,6 +836,19 @@
       <span style="background:rgba(52,211,103,0.1);border:1px solid var(--green);color:var(--green);font-size:.7rem;font-weight:700;padding:.3rem .7rem;border-radius:6px;">✅ Linhas: -1.0 / -2.0 / -2.5</span>
     </div>
     <div id="wrapper-enigma"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       AUDITORIA — Memória institucional cross-liga
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-auditoria" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--green),var(--green2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🔍 Auditoria — Memória Institucional</div>
+        <div style="font-size:.75rem;color:var(--green);margin-top:.3rem;font-weight:600;">Trilha cruzada das 4 análises pré-jogo · todas as ligas · prova histórica para investidor</div>
+      </div>
+    </div>
+    <div id="wrapper-auditoria"></div>
   </div>
 
 </main>
@@ -3172,6 +3190,7 @@ function showView(id) {
   if (id==='apostas') renderApostasReais();
   if (id==='enigma') renderEnigma();
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
+  if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
 function emptyMsg(title, sub='') {
@@ -3861,6 +3880,829 @@ async function exportarRelatorioTeacherVisuais() {
   a.click();
   URL.revokeObjectURL(a.href);
   alert('✅ Relatório Visual (HTML) exportado com formato IDÊNTICO ao App!');
+}
+
+// ══════════════════════════════════════════════════
+//  EXPORT HTML — Cisne Negro & Enigma (visual idêntico ao App)
+// ══════════════════════════════════════════════════
+function _exportarAnaliseHTML({ titulo, subtitulo, conteudoHTML, prefixoArquivo, corHeader }) {
+  const baseStyle = document.querySelector('style');
+  const baseStyles = baseStyle ? baseStyle.innerHTML : '';
+  const dataExt = new Date().toISOString().split('T')[0];
+  const horaExt = new Date().toLocaleTimeString('pt-BR');
+  const dataPt  = new Date().toLocaleDateString('pt-BR');
+  const nomeArq = `${prefixoArquivo}_${LIGA_ATUAL || 'liga'}_${dataExt}.html`;
+  const cor = corHeader || 'var(--green)';
+
+  const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>${titulo} — ${LIGA_ATUAL || ''} — ${dataExt}</title>
+<style>
+${baseStyles}
+body { background: var(--bg); padding: 2rem; color: var(--text); font-family: 'Inter','Segoe UI',system-ui,sans-serif; margin: 0; }
+.container { max-width: 1100px; margin: 0 auto; }
+.cabecalho-export { text-align: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid ${cor}; }
+.cabecalho-export h1 { color: ${cor}; margin: 0; font-size: 2rem; text-transform: uppercase; letter-spacing: 1.5px; }
+.cabecalho-export p { color: var(--muted); margin-top: .4rem; font-size: .95rem; }
+.cabecalho-export .meta { font-size: .8rem; color: ${cor}; margin-top: .4rem; opacity: .85; }
+.grid4 { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
+.stat-card { background: var(--card); border:1px solid var(--border); border-radius:12px; padding:1rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="cabecalho-export">
+    <h1>${titulo}</h1>
+    <p>${subtitulo}</p>
+    <div class="meta">Liga: ${LIGA_ATUAL || '—'} · ${dataPt} às ${horaExt}</div>
+  </div>
+  ${conteudoHTML}
+  <div style="text-align:center; padding-top:2rem; margin-top:2rem; border-top:1px solid var(--border); color:var(--muted); font-size:.8rem">
+    Gerado pelo Especialista em Cantos · EDS Análise
+  </div>
+</div>
+</body>
+</html>`;
+
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = nomeArq;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function exportarCisneNegroHTML() {
+  const ctr = document.getElementById('resultado-cisne-negro');
+  const cards = ctr ? ctr.querySelectorAll('.stat-card') : [];
+  if (!cards || cards.length === 0) {
+    alert('Nenhum card Cisne Negro para exportar. Clique em "Varrer Frequências Ocultas" antes.');
+    return;
+  }
+
+  // Clona o container e remove os botões SmartCoach (não funcionam fora do App)
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('button').forEach(b => b.remove());
+
+  const conteudoHTML = `<div class="grid4">${clone.innerHTML}</div>`;
+
+  _exportarAnaliseHTML({
+    titulo: '🦢 Radar Cisne Negro',
+    subtitulo: `${cards.length} jogo${cards.length>1?'s':''} com vantagem projetada ≥ 2.0 cantos`,
+    conteudoHTML,
+    prefixoArquivo: 'CisneNegro',
+    corHeader: 'var(--gold)'
+  });
+}
+
+function exportarEnigmaHTML() {
+  const ctr = document.getElementById('wrapper-enigma');
+  if (!ctr || !ctr.innerHTML.trim()) {
+    alert('Nenhuma análise Enigma para exportar. Clique em "Re-Analisar" antes.');
+    return;
+  }
+  const cards = ctr.querySelectorAll('.enigma-card');
+  if (!cards || cards.length === 0) {
+    alert('Nenhum card Enigma para exportar. Importe jogos na rodada e re-analise.');
+    return;
+  }
+
+  // Clona e remove onclick (setJogoEmFoco não existe fora do App) + cursor pointer
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('[onclick]').forEach(el => {
+    el.removeAttribute('onclick');
+    el.style.cursor = 'default';
+    el.removeAttribute('title');
+  });
+
+  _exportarAnaliseHTML({
+    titulo: '🔮 ENIGMA — Discrepância Territorial',
+    subtitulo: `${cards.length} jogo${cards.length>1?'s':''} analisado${cards.length>1?'s':''} pelo motor SDE`,
+    conteudoHTML: clone.innerHTML,
+    prefixoArquivo: 'Enigma',
+    corHeader: '#a78bfa'
+  });
+}
+
+// ══════════════════════════════════════════════════
+//  AUDITORIA — Memória institucional cross-liga (v1.0 — 2026-04-25)
+//  Snapshot consolidado das 4 análises (BP/CN/TC/EN) de TODAS as ligas.
+//  Camada de leitura: NUNCA modifica funções existentes — só reusa motores
+//  (projecaoJogo, calcSDE_ENIGMA) e localStorage namespace 'eds_auditoria_*'.
+// ══════════════════════════════════════════════════
+
+const AUDITORIA_LIGAS = [
+  { code: 'BR',    nome: 'Brasileirão Série A',  flag: '🇧🇷', dadosKey: 'DADOS_BR'    },
+  { code: 'MLS',   nome: 'Major League Soccer',  flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
+  { code: 'ARG',   nome: 'Liga Profesional',     flag: '🇦🇷', dadosKey: 'DADOS_ARG'   },
+  { code: 'USL',   nome: 'USL Championship',     flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
+  { code: 'BUN',   nome: 'Bundesliga',           flag: '🇩🇪', dadosKey: 'DADOS_BUN'   },
+  { code: 'ALM',   nome: 'A-League',             flag: '🇦🇺', dadosKey: 'DADOS_ALM'   },
+  { code: 'J1',    nome: 'J1 League',            flag: '🇯🇵', dadosKey: 'DADOS_J1'    },
+  { code: 'CHI',   nome: 'Primera Div. (CHI)',   flag: '🇨🇱', dadosKey: 'DADOS_CHI'   },
+  { code: 'ECU',   nome: 'LigaPro (ECU)',        flag: '🇪🇨', dadosKey: 'DADOS_ECU'   },
+  { code: 'ARG_B', nome: 'Primera B (ARG)',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' }
+];
+
+// Calcula hash de uma rodada (lista de jogos m+v) para detectar mudança.
+function _auditoriaRodadaHash(jogos) {
+  return (jogos || []).map(j => `${j.m}|${j.v}`).sort().join('::');
+}
+
+// Snapshot da liga ATUALMENTE carregada em DADOS_2026 + jogosFuturos.
+// Caller é responsável por garantir que LIGA_ATUAL/DADOS_2026 já apontam para a liga certa.
+function _snapshotLigaAtual(ligaCode) {
+  const liga = AUDITORIA_LIGAS.find(l => l.code === ligaCode);
+  const dados = window[liga.dadosKey];
+  const temBase = !!(dados && Array.isArray(dados.times) && dados.times.length > 0
+                     && Array.isArray(dados.jogos)
+                     && dados.jogos.filter(j => j && j.cantos && j.cantos.ft).length > 0);
+
+  // Preserva marca "sem rodada esta semana" se ainda válida (≤ 7 dias)
+  let marcaPreservada = null;
+  try {
+    const prevRaw = localStorage.getItem(`eds_auditoria_${ligaCode}`);
+    if (prevRaw) {
+      const prev = JSON.parse(prevRaw);
+      if (prev && prev.marcado_sem_rodada && prev.marcado_sem_rodada.at) {
+        const idadeDias = (Date.now() - new Date(prev.marcado_sem_rodada.at).getTime()) / (1000*60*60*24);
+        if (idadeDias <= 7) marcaPreservada = prev.marcado_sem_rodada;
+      }
+    }
+  } catch(e) {}
+
+  // Cisne Negro pode existir mesmo sem rodada importada
+  let cisne = [];
+  try {
+    const cRaw = localStorage.getItem(`eds_cisne_cards_${ligaCode}`);
+    cisne = cRaw ? JSON.parse(cRaw) : [];
+  } catch(e) { cisne = []; }
+
+  if (!temBase) {
+    const r = {
+      liga: ligaCode,
+      gerado_em: new Date().toISOString(),
+      versao_motor: 'v2.1+TMI',
+      status: 'sem_base',
+      motivo: 'Dataset da liga sem times ou jogos coletados',
+      total_jogos: 0,
+      teacher: [], baladeprata: [], enigma: [], cisne
+    };
+    if (marcaPreservada) r.marcado_sem_rodada = marcaPreservada;
+    return r;
+  }
+
+  // Lê rodada da liga
+  let jogos = [];
+  try {
+    const raw = localStorage.getItem(`sniper_rodada_${ligaCode}`);
+    jogos = raw ? JSON.parse(raw) : [];
+  } catch(e) { jogos = []; }
+
+  if (jogos.length === 0) {
+    const r = {
+      liga: ligaCode,
+      gerado_em: new Date().toISOString(),
+      versao_motor: 'v2.1+TMI',
+      status: 'sem_rodada',
+      motivo: 'Rodada não importada — vá em "Adicionar Jogos"',
+      total_jogos: 0,
+      teacher: [], baladeprata: [], enigma: [], cisne
+    };
+    if (marcaPreservada) r.marcado_sem_rodada = marcaPreservada;
+    return r;
+  }
+
+  // Roda os 3 motores derivados (Teacher → Bala de Prata, Enigma)
+  const teacher = [];
+  const baladeprata = [];
+  const enigma = [];
+
+  jogos.forEach(j => {
+    let p = null;
+    try { p = projecaoJogo(j.m, j.v); } catch(e) { p = null; }
+
+    if (!p) {
+      teacher.push({ m: j.m, v: j.v, valido: false, motivo: 'Time não reconhecido na base' });
+    } else {
+      const rc = p.reisDosCantosData;
+      const sn = p.tiroSniperData;
+      const bp = p.balaDePrataData;
+      teacher.push({
+        m: j.m, v: j.v, valido: true,
+        exp_ht: +p.expTotalHT.toFixed(2),
+        exp_ft: +p.expTotalFT.toFixed(2),
+        conf_ft: +p.confFT.toFixed(1),
+        reis: rc ? { vencedor: rc.vencedor, odd: +rc.odd.toFixed(2), faixa: rc.faixa } : null,
+        sniper: sn ? { ht: sn.ht, ft: sn.ft } : null,
+        bp: bp ? { time: bp.time, odd: +bp.odd.toFixed(2), faixa: bp.faixa } : null
+      });
+      if (bp) {
+        baladeprata.push({ m: j.m, v: j.v, time: bp.time, odd: +bp.odd.toFixed(2), faixa: bp.faixa });
+      }
+    }
+
+    let s = null;
+    try { s = calcSDE_ENIGMA(j.m, j.v); } catch(e) { s = null; }
+    if (s && s.valido) {
+      enigma.push({
+        m: j.m, v: j.v,
+        sde: s.sde, classificacao: s.classificacao, confianca: s.confianca,
+        linhaFT: s.linhaFT || null, linhaHT: s.linhaHT || null,
+        sinalInverso: !!s.sinalInverso,
+        totalEstimado: s.totalEstimado || null
+      });
+    }
+  });
+
+  return {
+    liga: ligaCode,
+    gerado_em: new Date().toISOString(),
+    versao_motor: 'v2.1+TMI',
+    status: 'ok',
+    rodada_hash: _auditoriaRodadaHash(jogos),
+    total_jogos: jogos.length,
+    teacher, baladeprata, enigma, cisne
+  };
+}
+
+// Sincroniza TODAS as ligas. Save → loop silencioso → Restore.
+async function sincronizarTodasLigas() {
+  const btn = document.getElementById('btn-sync-auditoria');
+  const statusEl = document.getElementById('sync-status-auditoria');
+
+  // Snapshot do estado atual — pra restaurar depois
+  const stateOriginal = {
+    liga: LIGA_ATUAL,
+    dados: DADOS_2026,
+    jogos: jogosFuturos.slice()
+  };
+
+  if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+
+  try {
+    for (let i = 0; i < AUDITORIA_LIGAS.length; i++) {
+      const liga = AUDITORIA_LIGAS[i];
+      if (statusEl) {
+        statusEl.style.display = 'block';
+        statusEl.innerHTML = `🔄 Sincronizando <strong>${i+1}/${AUDITORIA_LIGAS.length}</strong> — ${liga.flag} ${liga.nome}...`;
+      }
+      // cede 30ms para o navegador renderizar o status
+      await new Promise(r => setTimeout(r, 30));
+
+      // Swap silencioso (sem trocarLiga — não queremos init/showView)
+      const dados = window[liga.dadosKey];
+      LIGA_ATUAL = liga.code;
+      DADOS_2026 = dados || { times: [], jogos: [] };
+      _forcaCantosCache = null;
+      _forcaCantosCacheLiga = null;
+      _rankingHTCache = null;
+      _rankingHTCacheLiga = null;
+
+      try {
+        const raw = localStorage.getItem(`sniper_rodada_${liga.code}`);
+        jogosFuturos = raw ? JSON.parse(raw) : [];
+      } catch(e) { jogosFuturos = []; }
+
+      const snap = _snapshotLigaAtual(liga.code);
+      try { localStorage.setItem(`eds_auditoria_${liga.code}`, JSON.stringify(snap)); }
+      catch(e) { console.error('[Auditoria] falha ao gravar snapshot de', liga.code, e); }
+    }
+
+    if (statusEl) {
+      statusEl.innerHTML = `✅ Sincronização completa — <strong>${AUDITORIA_LIGAS.length}/${AUDITORIA_LIGAS.length}</strong> ligas auditadas em ${new Date().toLocaleTimeString('pt-BR')}`;
+    }
+  } catch(e) {
+    console.error('[Auditoria] erro durante sincronização:', e);
+    if (statusEl) statusEl.innerHTML = `⚠️ Erro: ${e.message}`;
+  } finally {
+    // Restore TOTAL — o operador nem percebeu
+    LIGA_ATUAL = stateOriginal.liga;
+    DADOS_2026 = stateOriginal.dados;
+    jogosFuturos = stateOriginal.jogos;
+    _forcaCantosCache = null;
+    _forcaCantosCacheLiga = null;
+    _rankingHTCache = null;
+    _rankingHTCacheLiga = null;
+    if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+  }
+
+  // Re-render da tela
+  renderAuditoria();
+}
+
+// Lê todos os snapshots persistidos
+function _lerTodosSnapshots() {
+  const out = {};
+  AUDITORIA_LIGAS.forEach(l => {
+    try {
+      const raw = localStorage.getItem(`eds_auditoria_${l.code}`);
+      if (raw) out[l.code] = JSON.parse(raw);
+    } catch(e) {}
+  });
+  return out;
+}
+
+// Lê hash da rodada ATUAL persistida em sniper_rodada_<LIGA> (pra detectar drift)
+function _lerHashRodadaAtual(ligaCode) {
+  try {
+    const raw = localStorage.getItem(`sniper_rodada_${ligaCode}`);
+    const j = raw ? JSON.parse(raw) : [];
+    return _auditoriaRodadaHash(j);
+  } catch(e) { return ''; }
+}
+
+// Selo (status) de uma análise dentro de um snapshot
+function _seloAuditoria(label, status) {
+  // status: 'ok' (verde), 'sem-sinal' (cinza), 'falta' (vermelho), 'stale' (amarelo), 'sem-rodada' (azul)
+  const map = {
+    ok:           { bg: 'rgba(52,211,103,0.15)',  bd: 'var(--green)',          cor: 'var(--green)', icon: '✅' },
+   'sem-sinal':   { bg: 'rgba(107,143,121,0.10)', bd: 'var(--border)',         cor: 'var(--muted)', icon: '⚪' },
+    stale:        { bg: 'rgba(245,158,11,0.12)',  bd: 'rgba(245,158,11,0.5)',  cor: 'var(--gold)',  icon: '🟡' },
+    falta:        { bg: 'rgba(239,68,68,0.10)',   bd: 'rgba(239,68,68,0.4)',   cor: '#f87171',      icon: '🔴' },
+   'sem-rodada':  { bg: 'rgba(96,165,250,0.10)',  bd: 'rgba(96,165,250,0.4)',  cor: '#60a5fa',      icon: '📭' }
+  };
+  const m = map[status] || map.falta;
+  return `<span style="display:inline-flex;align-items:center;gap:.25rem;background:${m.bg};border:1px solid ${m.bd};color:${m.cor};font-size:.7rem;font-weight:700;padding:.25rem .5rem;border-radius:6px;">${m.icon} ${label}</span>`;
+}
+
+function _classificarLiga(snap, hashAtual) {
+  // Retorna { selos: {bp,cn,tc,en}, status: 'ok'|'parcial'|'falta'|'sem-rodada', desatualizada, marcada }
+
+  // Marca "sem rodada esperado" — sai das pendências, vira selo azul
+  const marcada = !!(snap && snap.marcado_sem_rodada && snap.marcado_sem_rodada.at &&
+                     ((Date.now() - new Date(snap.marcado_sem_rodada.at).getTime()) / (1000*60*60*24)) <= 7);
+  if (marcada && snap && (snap.status === 'sem_rodada' || snap.status === 'sem_base')) {
+    const cnCount = (snap.cisne || []).length;
+    return {
+      selos: {
+        tc: 'sem-rodada',
+        bp: 'sem-rodada',
+        cn: cnCount > 0 ? 'ok' : 'sem-rodada',
+        en: 'sem-rodada'
+      },
+      status: 'sem-rodada',
+      desatualizada: false,
+      marcada: true
+    };
+  }
+
+  if (!snap || snap.status === 'sem_base') {
+    return {
+      selos: { bp:'falta', cn:'falta', tc:'falta', en:'falta' },
+      status: 'falta',
+      desatualizada: false,
+      marcada: false
+    };
+  }
+
+  const desatualizada = snap.status === 'ok' && (snap.rodada_hash || '') !== hashAtual && hashAtual !== '';
+  const teacherValido = (snap.teacher || []).filter(t => t.valido).length;
+  const bpCount = (snap.baladeprata || []).length;
+  const cnCount = (snap.cisne || []).length;
+  const enCount = (snap.enigma || []).length;
+
+  const selos = {
+    tc: teacherValido > 0 ? (desatualizada ? 'stale' : 'ok') : 'falta',
+    bp: teacherValido > 0
+        ? (bpCount > 0 ? (desatualizada ? 'stale' : 'ok') : 'sem-sinal')
+        : 'falta',
+    cn: cnCount > 0 ? 'ok' : 'falta',
+    en: enCount > 0 ? (desatualizada ? 'stale' : 'ok') : 'falta'
+  };
+
+  let status = 'ok';
+  const okItems = ['tc','bp','cn','en'].filter(k => selos[k] === 'ok' || selos[k] === 'sem-sinal').length;
+  if (okItems === 4) status = desatualizada ? 'parcial' : 'ok';
+  else if (okItems > 0) status = 'parcial';
+  else status = 'falta';
+
+  return { selos, status, desatualizada, marcada: false };
+}
+
+// Marca uma liga como "sem rodada esta semana" — sai das pendências por 7 dias
+function marcarLigaSemRodada(ligaCode) {
+  const liga = AUDITORIA_LIGAS.find(l => l.code === ligaCode);
+  if (!liga) return;
+  let snap = null;
+  try {
+    const raw = localStorage.getItem(`eds_auditoria_${ligaCode}`);
+    if (raw) snap = JSON.parse(raw);
+  } catch(e) {}
+  if (!snap) {
+    snap = {
+      liga: ligaCode,
+      gerado_em: new Date().toISOString(),
+      versao_motor: 'v2.1+TMI',
+      status: 'sem_rodada',
+      motivo: 'Marcado manualmente como sem rodada',
+      total_jogos: 0,
+      teacher: [], baladeprata: [], enigma: [], cisne: []
+    };
+  }
+  snap.marcado_sem_rodada = { at: new Date().toISOString() };
+  localStorage.setItem(`eds_auditoria_${ligaCode}`, JSON.stringify(snap));
+  renderAuditoria();
+}
+
+function removerMarcacaoSemRodada(ligaCode) {
+  let snap = null;
+  try {
+    const raw = localStorage.getItem(`eds_auditoria_${ligaCode}`);
+    if (raw) snap = JSON.parse(raw);
+  } catch(e) {}
+  if (!snap) return;
+  delete snap.marcado_sem_rodada;
+  localStorage.setItem(`eds_auditoria_${ligaCode}`, JSON.stringify(snap));
+  renderAuditoria();
+}
+
+// Card individual de uma liga
+function _renderAuditoriaLigaCard(liga, snap, classif) {
+  const { selos, desatualizada, marcada } = classif;
+  const corBorda = marcada ? 'rgba(96,165,250,0.5)'
+                 : classif.status === 'ok' ? 'var(--green)'
+                 : classif.status === 'parcial' ? 'var(--gold)'
+                 : 'rgba(239,68,68,0.5)';
+
+  const teacherValido = snap ? (snap.teacher || []).filter(t => t.valido).length : 0;
+  const bpCount = snap ? (snap.baladeprata || []).length : 0;
+  const cnCount = snap ? (snap.cisne || []).length : 0;
+  const enCount = snap ? (snap.enigma || []).length : 0;
+  const totalJogos = snap ? (snap.total_jogos || 0) : 0;
+
+  const dataGer = snap && snap.gerado_em
+    ? new Date(snap.gerado_em).toLocaleString('pt-BR', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' })
+    : '—';
+
+  const motivoLinha = snap && snap.motivo
+    ? `<div style="font-size:.7rem;color:#f87171;margin-top:.4rem;font-style:italic;">${snap.motivo}</div>`
+    : '';
+
+  const staleAlert = desatualizada
+    ? `<div style="margin-top:.4rem;font-size:.7rem;color:var(--gold);font-weight:700;">🟡 Snapshot desatualizado — rodada mudou após sincronização</div>`
+    : '';
+
+  const marcaInfo = marcada && snap.marcado_sem_rodada
+    ? (() => {
+        const dt = new Date(snap.marcado_sem_rodada.at);
+        const idadeDias = Math.floor((Date.now() - dt.getTime()) / (1000*60*60*24));
+        const expira = 7 - idadeDias;
+        return `<div style="margin-top:.4rem;font-size:.7rem;color:#60a5fa;font-weight:700;">📭 Sem rodada esta semana (marcado há ${idadeDias}d · expira em ${expira}d)</div>`;
+      })()
+    : '';
+
+  const iconStatus = marcada ? '📭'
+                   : classif.status === 'ok' ? '🟢'
+                   : classif.status === 'parcial' ? '🟡'
+                   : '🔴';
+
+  return `
+    <div class="stat-card" style="border:1px solid ${corBorda};cursor:pointer;" onclick="toggleAuditoriaDetalhe('${liga.code}')">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;margin-bottom:.6rem;">
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:var(--text);">${liga.flag} ${liga.nome}</div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:.2rem;">Código: <span style="color:var(--text);font-weight:700;">${liga.code}</span> · Snapshot: ${dataGer}</div>
+        </div>
+        <div style="font-size:1.2rem;">${iconStatus}</div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem;">
+        ${_seloAuditoria('Teacher', selos.tc)}
+        ${_seloAuditoria('Bala de Prata', selos.bp)}
+        ${_seloAuditoria('Cisne Negro', selos.cn)}
+        ${_seloAuditoria('Enigma', selos.en)}
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.3rem;font-size:.7rem;text-align:center;background:rgba(255,255,255,0.02);padding:.5rem;border-radius:6px;border:1px solid rgba(255,255,255,0.04);">
+        <div><div style="font-weight:800;color:var(--text);font-size:.9rem;">${teacherValido}</div><div style="color:var(--muted);">TC</div></div>
+        <div><div style="font-weight:800;color:${bpCount>0?'var(--gold)':'var(--muted)'};font-size:.9rem;">${bpCount}</div><div style="color:var(--muted);">BP</div></div>
+        <div><div style="font-weight:800;color:${cnCount>0?'var(--gold)':'var(--muted)'};font-size:.9rem;">${cnCount}</div><div style="color:var(--muted);">CN</div></div>
+        <div><div style="font-weight:800;color:${enCount>0?'#a78bfa':'var(--muted)'};font-size:.9rem;">${enCount}</div><div style="color:var(--muted);">EN</div></div>
+      </div>
+
+      <div style="font-size:.7rem;color:var(--muted);margin-top:.5rem;">
+        ${totalJogos} jogo${totalJogos!==1?'s':''} na rodada
+      </div>
+      ${marcada ? '' : motivoLinha}
+      ${staleAlert}
+      ${marcaInfo}
+
+      <div id="aud-detalhe-${liga.code}" style="display:none;margin-top:.8rem;padding-top:.8rem;border-top:1px solid var(--border);"></div>
+
+      <div style="margin-top:.6rem;display:flex;gap:.4rem;flex-wrap:wrap;">
+        <button onclick="event.stopPropagation();sincronizarLigaIndividual('${liga.code}')" style="flex:1;min-width:120px;background:transparent;border:1px solid var(--green);color:var(--green);padding:.4rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;" title="Recarrega só esta liga e atualiza o snapshot">🔄 Sincronizar só esta</button>
+        ${marcada
+          ? `<button onclick="event.stopPropagation();removerMarcacaoSemRodada('${liga.code}')" style="flex:1;min-width:120px;background:transparent;border:1px solid #60a5fa;color:#60a5fa;padding:.4rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;" title="Remove a marcação 'sem rodada' (volta a aparecer em pendências)">↩️ Remover marca</button>`
+          : (totalJogos === 0 && (!snap || snap.status !== 'ok')
+              ? `<button onclick="event.stopPropagation();marcarLigaSemRodada('${liga.code}')" style="flex:1;min-width:120px;background:transparent;border:1px solid #60a5fa;color:#60a5fa;padding:.4rem;border-radius:6px;font-size:.7rem;font-weight:700;cursor:pointer;" title="Marca esta liga como 'sem rodada esta semana' — sai das pendências por 7 dias">📭 Sem rodada esta semana</button>`
+              : '')
+        }
+      </div>
+    </div>
+  `;
+}
+
+// Sincroniza UMA liga só (botão por card)
+async function sincronizarLigaIndividual(ligaCode) {
+  const liga = AUDITORIA_LIGAS.find(l => l.code === ligaCode);
+  if (!liga) return;
+
+  const stateOriginal = {
+    liga: LIGA_ATUAL,
+    dados: DADOS_2026,
+    jogos: jogosFuturos.slice()
+  };
+
+  try {
+    const dados = window[liga.dadosKey];
+    LIGA_ATUAL = liga.code;
+    DADOS_2026 = dados || { times: [], jogos: [] };
+    _forcaCantosCache = null; _forcaCantosCacheLiga = null;
+    _rankingHTCache = null;   _rankingHTCacheLiga = null;
+    try {
+      const raw = localStorage.getItem(`sniper_rodada_${liga.code}`);
+      jogosFuturos = raw ? JSON.parse(raw) : [];
+    } catch(e) { jogosFuturos = []; }
+
+    const snap = _snapshotLigaAtual(liga.code);
+    localStorage.setItem(`eds_auditoria_${liga.code}`, JSON.stringify(snap));
+  } finally {
+    LIGA_ATUAL = stateOriginal.liga;
+    DADOS_2026 = stateOriginal.dados;
+    jogosFuturos = stateOriginal.jogos;
+    _forcaCantosCache = null; _forcaCantosCacheLiga = null;
+    _rankingHTCache = null;   _rankingHTCacheLiga = null;
+  }
+
+  renderAuditoria();
+}
+
+// Drill-down: tabela cruzada de todos os jogos com vereditos das 4 análises
+function toggleAuditoriaDetalhe(ligaCode) {
+  const el = document.getElementById('aud-detalhe-' + ligaCode);
+  if (!el) return;
+  if (el.style.display === 'block') { el.style.display = 'none'; return; }
+
+  const snap = _lerTodosSnapshots()[ligaCode];
+  if (!snap || snap.status !== 'ok') {
+    el.innerHTML = `<div style="font-size:.75rem;color:var(--muted);font-style:italic;">Sem dados detalhados — sincronize esta liga primeiro.</div>`;
+    el.style.display = 'block';
+    return;
+  }
+
+  const teacherMap = {};
+  (snap.teacher || []).forEach(t => { teacherMap[`${t.m}|${t.v}`] = t; });
+  const enigmaMap = {};
+  (snap.enigma || []).forEach(e => { enigmaMap[`${e.m}|${e.v}`] = e; });
+  const cisneSet = new Set((snap.cisne || []).map(c => `${c.m}|${c.v}`));
+
+  const linhas = (snap.teacher || []).map(t => {
+    const key = `${t.m}|${t.v}`;
+    const en = enigmaMap[key];
+    const noCisne = cisneSet.has(key);
+
+    const cellTC = t.valido
+      ? `<span style="color:var(--text);">~${t.exp_ft.toFixed(1)} cantos · conf ${t.conf_ft}%</span>`
+      : `<span style="color:#f87171;">${t.motivo}</span>`;
+
+    const cellBP = (t.bp && t.bp.time)
+      ? `<span style="color:var(--gold);font-weight:700;">🐺 ${t.bp.time} (odd ${t.bp.odd})</span>`
+      : `<span style="color:var(--muted);">—</span>`;
+
+    const cellCN = noCisne
+      ? `<span style="color:var(--gold);font-weight:700;">🦢 marcado</span>`
+      : `<span style="color:var(--muted);">—</span>`;
+
+    const cellEN = en
+      ? `<span style="color:${en.classificacao==='ATIVO'?'#a78bfa':en.classificacao==='WATCH'?'var(--gold)':'var(--muted)'};font-weight:700;">${en.classificacao} (SDE ${en.sde})${en.linhaFT?` · ${en.linhaFT}`:''}</span>`
+      : `<span style="color:var(--muted);">—</span>`;
+
+    return `
+      <tr>
+        <td style="padding:.4rem .5rem;font-weight:700;color:var(--text);font-size:.75rem;">${t.m}<br><span style="color:var(--muted);font-weight:400;">vs ${t.v}</span></td>
+        <td style="padding:.4rem .5rem;font-size:.7rem;">${cellTC}</td>
+        <td style="padding:.4rem .5rem;font-size:.7rem;">${cellBP}</td>
+        <td style="padding:.4rem .5rem;font-size:.7rem;">${cellCN}</td>
+        <td style="padding:.4rem .5rem;font-size:.7rem;">${cellEN}</td>
+      </tr>
+    `;
+  }).join('');
+
+  el.innerHTML = `
+    <div style="font-size:.7rem;color:var(--muted);margin-bottom:.4rem;font-weight:700;">📋 TABELA CRUZADA — ${snap.total_jogos} jogos · motor ${snap.versao_motor}</div>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:.7rem;">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04);">
+            <th style="padding:.4rem .5rem;text-align:left;color:var(--muted);font-weight:700;">JOGO</th>
+            <th style="padding:.4rem .5rem;text-align:left;color:var(--muted);font-weight:700;">TEACHER</th>
+            <th style="padding:.4rem .5rem;text-align:left;color:var(--muted);font-weight:700;">BALA DE PRATA</th>
+            <th style="padding:.4rem .5rem;text-align:left;color:var(--muted);font-weight:700;">CISNE NEGRO</th>
+            <th style="padding:.4rem .5rem;text-align:left;color:var(--muted);font-weight:700;">ENIGMA</th>
+          </tr>
+        </thead>
+        <tbody>${linhas}</tbody>
+      </table>
+    </div>
+  `;
+  el.style.display = 'block';
+}
+
+// Render principal da view de Auditoria
+function renderAuditoria() {
+  const ctr = document.getElementById('wrapper-auditoria');
+  if (!ctr) return;
+
+  const snaps = _lerTodosSnapshots();
+
+  // Classifica cada liga
+  const classifs = {};
+  AUDITORIA_LIGAS.forEach(l => {
+    const hashAtual = _lerHashRodadaAtual(l.code);
+    classifs[l.code] = _classificarLiga(snaps[l.code], hashAtual);
+  });
+
+  // Status global
+  const okCount = AUDITORIA_LIGAS.filter(l => classifs[l.code].status === 'ok').length;
+  const parcialCount = AUDITORIA_LIGAS.filter(l => classifs[l.code].status === 'parcial').length;
+  const faltaCount = AUDITORIA_LIGAS.filter(l => classifs[l.code].status === 'falta').length;
+  const semRodadaCount = AUDITORIA_LIGAS.filter(l => classifs[l.code].marcada).length;
+  const algumSync = Object.keys(snaps).length > 0;
+
+  // Pendências (exclui ligas marcadas como "sem rodada esta semana")
+  const pendencias = [];
+  AUDITORIA_LIGAS.forEach(l => {
+    const snap = snaps[l.code];
+    const c = classifs[l.code];
+    if (c.marcada) return; // sai das pendências por 7 dias
+    if (!snap) {
+      pendencias.push(`${l.flag} <strong>${l.nome}</strong>: nunca sincronizada`);
+      return;
+    }
+    if (snap.status === 'sem_base') {
+      pendencias.push(`${l.flag} <strong>${l.nome}</strong>: ${snap.motivo}`);
+      return;
+    }
+    if (snap.status === 'sem_rodada') {
+      pendencias.push(`${l.flag} <strong>${l.nome}</strong>: ${snap.motivo} <span style="opacity:.7;font-size:.7rem;">(ou clique 📭 no card se a liga não tem rodada esta semana)</span>`);
+      return;
+    }
+    const falta = [];
+    if (c.selos.cn === 'falta') falta.push('Cisne Negro (cole os jogos no scanner desta liga)');
+    if (c.selos.tc === 'falta') falta.push('Teacher');
+    if (c.selos.en === 'falta') falta.push('Enigma');
+    if (c.desatualizada) falta.push('snapshot desatualizado (rode novo sync)');
+    if (falta.length > 0) pendencias.push(`${l.flag} <strong>${l.nome}</strong>: ${falta.join(' · ')}`);
+  });
+
+  const cardsHtml = AUDITORIA_LIGAS.map(l =>
+    _renderAuditoriaLigaCard(l, snaps[l.code], classifs[l.code])
+  ).join('');
+
+  ctr.innerHTML = `
+    <!-- Painel de comando -->
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">
+        <div>
+          <div style="font-size:1rem;font-weight:800;color:var(--text);">📦 Memória Institucional Cross-Liga</div>
+          <div style="font-size:.78rem;color:var(--muted);margin-top:.2rem;">Trilha de auditoria das análises pré-jogo · ${AUDITORIA_LIGAS.length} ligas monitoradas</div>
+        </div>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+          <button id="btn-sync-auditoria" onclick="sincronizarTodasLigas()" style="background:linear-gradient(135deg,var(--green),var(--green2));border:none;color:#000;padding:.7rem 1.3rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(52,211,103,0.3);">🔄 Sincronizar Todas (10)</button>
+          <button onclick="exportarAuditoriaJSON()" style="background:transparent;color:var(--green);border:1px solid var(--green);padding:.7rem 1rem;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;" title="Exporta a memória completa em JSON (para investidor / arquivo histórico)">📤 Exportar JSON</button>
+          <button onclick="exportarAuditoriaHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.7rem 1rem;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;" title="Exporta visual idêntico ao App em HTML">📤 Exportar HTML</button>
+        </div>
+      </div>
+      <div id="sync-status-auditoria" style="display:none;font-size:.85rem;color:var(--text);background:rgba(52,211,103,0.08);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;margin-bottom:1rem;"></div>
+
+      <!-- Status global -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.8rem;">
+        <div style="background:rgba(52,211,103,0.10);border:1px solid var(--green);border-radius:10px;padding:.8rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:var(--green);">${okCount}</div>
+          <div style="font-size:.7rem;color:var(--green);font-weight:700;">🟢 SINCRONIZADAS</div>
+        </div>
+        <div style="background:rgba(245,158,11,0.10);border:1px solid var(--gold);border-radius:10px;padding:.8rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:var(--gold);">${parcialCount}</div>
+          <div style="font-size:.7rem;color:var(--gold);font-weight:700;">🟡 PARCIAIS</div>
+        </div>
+        <div style="background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.5);border-radius:10px;padding:.8rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:#f87171;">${faltaCount}</div>
+          <div style="font-size:.7rem;color:#f87171;font-weight:700;">🔴 PENDENTES</div>
+        </div>
+        <div style="background:rgba(96,165,250,0.10);border:1px solid rgba(96,165,250,0.4);border-radius:10px;padding:.8rem;text-align:center;" title="Ligas marcadas pelo operador como sem rodada esta semana — saem de pendências por 7 dias">
+          <div style="font-size:1.6rem;font-weight:900;color:#60a5fa;">${semRodadaCount}</div>
+          <div style="font-size:.7rem;color:#60a5fa;font-weight:700;">📭 SEM RODADA</div>
+        </div>
+        <div style="background:rgba(139,92,246,0.10);border:1px solid rgba(139,92,246,0.4);border-radius:10px;padding:.8rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:#a78bfa;">${AUDITORIA_LIGAS.length}</div>
+          <div style="font-size:.7rem;color:#a78bfa;font-weight:700;">📦 LIGAS TOTAIS</div>
+        </div>
+      </div>
+    </div>
+
+    ${!algumSync ? `
+      <div style="background:rgba(139,92,246,0.08);border:1px dashed rgba(139,92,246,0.4);border-radius:12px;padding:1.5rem;text-align:center;margin-bottom:1.5rem;">
+        <div style="font-size:1rem;font-weight:800;color:#a78bfa;margin-bottom:.4rem;">🚀 Primeira sincronização</div>
+        <div style="font-size:.85rem;color:var(--muted);">Clique em <strong>"🔄 Sincronizar Todas (10)"</strong> para gerar a memória institucional inicial.</div>
+      </div>
+    ` : ''}
+
+    ${pendencias.length > 0 ? `
+      <div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.3);border-radius:12px;padding:1.2rem;margin-bottom:1.5rem;">
+        <div style="font-size:.85rem;font-weight:800;color:var(--gold);margin-bottom:.6rem;">⚠️ Pendências (${pendencias.length})</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.3rem;">
+          ${pendencias.map(p => `<li style="font-size:.78rem;color:var(--text);padding:.3rem .5rem;background:rgba(255,255,255,0.02);border-radius:6px;">${p}</li>`).join('')}
+        </ul>
+      </div>
+    ` : algumSync ? `
+      <div style="background:rgba(52,211,103,0.06);border:1px solid var(--green);border-radius:12px;padding:1rem;text-align:center;margin-bottom:1.5rem;">
+        <div style="font-size:.9rem;font-weight:800;color:var(--green);">✅ Tudo sincronizado — memória institucional atualizada</div>
+      </div>
+    ` : ''}
+
+    <!-- Grid de ligas -->
+    <div class="grid4" style="margin-bottom:1.5rem;">
+      ${cardsHtml}
+    </div>
+
+    <div style="font-size:.7rem;color:var(--muted);text-align:center;padding-top:1rem;border-top:1px solid var(--border);">
+      💡 Clique em qualquer card para ver a tabela cruzada das 4 análises por jogo.
+    </div>
+  `;
+}
+
+// === Exports ===
+
+function exportarAuditoriaJSON() {
+  const snaps = _lerTodosSnapshots();
+  if (Object.keys(snaps).length === 0) {
+    alert('Nenhum snapshot para exportar. Clique em "🔄 Sincronizar Todas" primeiro.');
+    return;
+  }
+  const exportObj = {
+    gerado_em: new Date().toISOString(),
+    versao_motor: 'v2.1+TMI',
+    total_ligas: Object.keys(snaps).length,
+    ligas: snaps
+  };
+  const json = JSON.stringify(exportObj, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const dataExt = new Date().toISOString().split('T')[0];
+  const fileName = `auditoria_completa_${dataExt}.json`;
+  if (window.showSaveFilePicker) {
+    window.showSaveFilePicker({
+      suggestedName: fileName,
+      types: [{ description: 'JSON Auditoria', accept: { 'application/json': ['.json'] } }]
+    }).then(h => h.createWritable().then(w => w.write(json).then(() => w.close())))
+      .then(() => alert('✅ Memória completa exportada!'))
+      .catch(e => { if(e.name !== 'AbortError') console.error(e); });
+  } else {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(a.href);
+    alert('✅ Memória completa exportada para downloads!');
+  }
+}
+
+function exportarAuditoriaHTML() {
+  const ctr = document.getElementById('wrapper-auditoria');
+  if (!ctr || !ctr.innerHTML.trim()) {
+    alert('Renderize a Auditoria primeiro (entre na aba 🔍 Auditoria).');
+    return;
+  }
+  const snaps = _lerTodosSnapshots();
+  if (Object.keys(snaps).length === 0) {
+    alert('Nenhum snapshot para exportar. Sincronize primeiro.');
+    return;
+  }
+
+  // Clona, remove botões interativos
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('button').forEach(b => b.remove());
+  clone.querySelectorAll('[onclick]').forEach(el => {
+    el.removeAttribute('onclick');
+    el.style.cursor = 'default';
+  });
+  // Expande todos os detalhes
+  clone.querySelectorAll('[id^="aud-detalhe-"]').forEach(d => { d.style.display = 'block'; });
+  // Remove o painel de comando (só botões e status)
+  const primeiroPainel = clone.querySelector('.bg3, [style*="background:var(--bg3)"]');
+  // Em vez de remover o painel inteiro (que tem o status global), só limpa o sync-status
+  const syncStatus = clone.querySelector('#sync-status-auditoria');
+  if (syncStatus) syncStatus.remove();
+
+  _exportarAnaliseHTML({
+    titulo: '📦 Auditoria Cross-Liga',
+    subtitulo: `${Object.keys(snaps).length} ligas auditadas · ${AUDITORIA_LIGAS.length} totais`,
+    conteudoHTML: clone.innerHTML,
+    prefixoArquivo: 'Auditoria',
+    corHeader: 'var(--green)'
+  });
 }
 
 // ══════════════════════════════════════════════════
@@ -5250,7 +6092,7 @@ function getAppContext() {
     'view-tracker':'Bet Tracker', 'view-ouro':'Bala de Prata',
     'view-rodada':'Rodada', 'view-teacher':'Projeção Teacher',
     'view-apostas':'Apostas Reais', 'view-enigma':'Enigma',
-    'view-cisne-negro':'Cisne Negro' };
+    'view-cisne-negro':'Cisne Negro', 'view-auditoria':'Auditoria' };
   const viewNome = NOMES_VIEW[mode] || mode;
 
   let ctx = `══ ESTADO DO APP (TEMPO REAL) ══\n`;
@@ -6068,7 +6910,10 @@ function processarTextoRodada() {
 
   if(detectados > 0) {
     localStorage.setItem(`sniper_rodada_${LIGA_ATUAL}`, JSON.stringify(jogosFuturos));
-    alert(`🎯 Inteligência Concluída! ${detectados} jogos interceptados no texto/imagem e importados para a aba de projeção.`);
+    // Sincroniza Cisne Negro automaticamente (textarea + cards filtrados ≥ 2.0)
+    let cisneEncontrados = 0;
+    try { cisneEncontrados = _sincronizarCisneComRodada(LIGA_ATUAL); } catch(e) { console.error('[Cisne sync]', e); }
+    alert(`🎯 Inteligência Concluída! ${detectados} jogos interceptados e importados para a aba de projeção.\n\n🦢 Cisne Negro sincronizado: ${cisneEncontrados} jogo(s) com vantagem ≥ 2.0 cantos já filtrado(s).`);
     document.getElementById('inp-jogos-texto').value = '';
     showView('rodada');
   } else {
@@ -7349,6 +8194,42 @@ NÃO USE ASTERISCOS Markdown. Use exclusivamente as tags HTML para destaques. Se
 function _cisneStorageKeys(liga) {
   const L = liga || LIGA_ATUAL || 'X';
   return { txt: 'eds_cisne_texto_' + L, cards: 'eds_cisne_cards_' + L };
+}
+
+// Sincroniza o scanner Cisne Negro com a rodada importada.
+// Pega jogos de sniper_rodada_<LIGA>, popula textarea e filtra os com diff ≥ 2.0
+// (mesma lógica do varrerCisneNegro). Retorna quantos jogos passaram no filtro.
+function _sincronizarCisneComRodada(liga) {
+  liga = liga || LIGA_ATUAL;
+  let jogos = [];
+  try {
+    const raw = localStorage.getItem(`sniper_rodada_${liga}`);
+    jogos = raw ? JSON.parse(raw) : [];
+  } catch(e) { jogos = []; }
+  if (jogos.length === 0) return 0;
+
+  const textoCisne = jogos.map(j => `${j.m} x ${j.v}`).join('\n');
+  const jogosComSinal = jogos.filter(j => {
+    try {
+      const p = projecaoJogo(j.m, j.v);
+      return p && Math.abs(p.expHomeFT - p.expAwayFT) >= 2.0;
+    } catch(e) { return false; }
+  });
+
+  const keys = _cisneStorageKeys(liga);
+  localStorage.setItem(keys.txt, textoCisne);
+  localStorage.setItem(keys.cards, JSON.stringify(jogosComSinal));
+
+  // Se o operador estiver na view Cisne Negro DA MESMA liga, atualiza UI também
+  if (liga === LIGA_ATUAL) {
+    const ta = document.getElementById('import-cisne-textarea');
+    if (ta) ta.value = textoCisne;
+    const ctr = document.getElementById('resultado-cisne-negro');
+    if (ctr && document.getElementById('view-cisne-negro').classList.contains('active')) {
+      renderCisneNegroCards(jogosComSinal);
+    }
+  }
+  return jogosComSinal.length;
 }
 
 // Gera o HTML de um card Cisne Negro (reutilizável entre varrer e restaurar).
