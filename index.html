@@ -87,23 +87,50 @@
     .logo-text p{font-size:.7rem;color:var(--muted);font-weight:500;letter-spacing:.5px;text-transform:uppercase;}
     .badge{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;font-size:.65rem;font-weight:800;padding:.25rem .6rem;border-radius:99px;letter-spacing:.5px;}
 
-    /* ── NAV ── */
-    nav{
-      display:flex;gap:.5rem;padding:1rem 2rem;
-      background:var(--bg2);border-bottom:1px solid var(--border);
+    /* ── NAV (v2 — tabs de grupo + sub-nav contextual) ── */
+    /* Tabs de grupo (sempre visível no topo) */
+    .nav-grupos {
+      display:flex; gap:.2rem; padding:0 2rem;
+      background:var(--bg3); border-bottom:1px solid var(--border);
+      overflow-x:auto; flex-wrap:wrap;
+    }
+    .nav-grupos .tab-grupo {
+      background:transparent; color:var(--muted); border:none;
+      border-bottom:3px solid transparent;
+      padding:.85rem 1.4rem; font-size:.85rem; font-weight:800;
+      cursor:pointer; transition:all .15s; white-space:nowrap;
+      font-family:'Inter',sans-serif; letter-spacing:.3px;
+    }
+    .nav-grupos .tab-grupo:hover { color:var(--text); background:rgba(255,255,255,0.02); }
+    .nav-grupos .tab-grupo.active {
+      color:var(--green); border-bottom-color:var(--green);
+      background:rgba(52,211,103,0.05);
+    }
+    .nav-grupos .tab-grupo.has-active::after {
+      content:'•'; color:var(--green); font-size:1.2rem; margin-left:.4rem; line-height:0;
+    }
+    /* Sub-nav contextual (mostra views do grupo ativo) */
+    nav, #nav-subnav {
+      display:flex; gap:.5rem; padding:1rem 2rem;
+      background:var(--bg2); border-bottom:1px solid var(--border);
       overflow-x:auto;
     }
-    nav button{
-      background:transparent;border:1px solid var(--border);
-      color:var(--muted);font-family:'Inter',sans-serif;font-size:.8rem;font-weight:600;
-      padding:.5rem 1rem;border-radius:8px;cursor:pointer;
-      transition:all .2s;white-space:nowrap;
+    nav button, #nav-subnav button {
+      background:transparent; border:1px solid var(--border);
+      color:var(--muted); font-family:'Inter',sans-serif;
+      font-size:.8rem; font-weight:600;
+      padding:.5rem 1rem; border-radius:8px; cursor:pointer;
+      transition:all .2s; white-space:nowrap;
     }
-    nav button.active,nav button:hover{
-      background:var(--glass);border-color:var(--green);color:var(--green);
+    nav button.active, nav button:hover,
+    #nav-subnav button.active, #nav-subnav button:hover {
+      background:var(--glass); border-color:var(--green); color:var(--green);
     }
     #btn-enigma.active, #btn-enigma:hover {
-      background:rgba(139,92,246,0.2) !important;border-color:#a78bfa !important;color:#a78bfa !important;
+      background:rgba(139,92,246,0.2) !important; border-color:#a78bfa !important; color:#a78bfa !important;
+    }
+    #btn-auditoria.active, #btn-auditoria:hover {
+      background:rgba(52,211,103,0.2) !important; border-color:var(--green) !important; color:var(--green) !important;
     }
 
     /* ── ENIGMA ── */
@@ -471,21 +498,15 @@
      com desempenho suspeito nos backtests. Populado em renderLigaObservacao(). -->
 <div id="banner-liga-observacao" style="display:none;padding:.9rem 2rem;border-bottom:1px solid var(--border);font-size:.82rem;font-weight:600;line-height:1.4"></div>
 
-<nav>
-  <button class="active" id="btn-dashboard" onclick="showView('dashboard')">📊 Dashboard</button>
-  <button id="btn-ranking"   onclick="showView('ranking')">🏆 Ranking Times</button>
-  <button id="btn-ouro"      onclick="showView('ouro')">🐺 Bala de Prata</button>
-  <button id="btn-cisne-negro" onclick="showView('cisne-negro')">🦢 Cisne Negro</button>
-  <button id="btn-time"      onclick="showView('time')">👕 Por Time</button>
-  <button id="btn-projecao"  onclick="showView('projecao')">🔮 Projeção de Jogo</button>
-  <button id="btn-adicionar" onclick="showView('adicionar')">📥 Adicionar Jogos</button>
-  <button id="btn-rodada"    onclick="showView('rodada')">📅 Próximos Jogos</button>
-  <button id="btn-teacher"   onclick="showView('teacher')">🏗️ Projeção TEACHER</button>
-  <button id="btn-tracker"   onclick="showView('tracker')">📈 Bet Tracker</button>
-  <button id="btn-apostas"  onclick="showView('apostas')">🎰 Apostas Reais</button>
-  <button id="btn-enigma"   onclick="showView('enigma')" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(88,28,235,0.15));border-color:rgba(139,92,246,0.4);color:#a78bfa;">🔮 ENIGMA</button>
-  <button id="btn-auditoria" onclick="showView('auditoria')" style="background:linear-gradient(135deg,rgba(52,211,103,0.15),rgba(34,197,94,0.15));border-color:rgba(52,211,103,0.4);color:var(--green);" title="Memória institucional cross-liga · trilha de auditoria das análises pré-jogo">🔍 Auditoria</button>
+<!-- Tabs de grupo (sempre visíveis) — agrupam as 13 views por contexto -->
+<nav class="nav-grupos" id="nav-grupos">
+  <button class="tab-grupo" data-grupo="visao"     onclick="setNavGrupo('visao')">📊 Visão Geral</button>
+  <button class="tab-grupo" data-grupo="analise"   onclick="setNavGrupo('analise')">🎯 Análise Pré-Jogo</button>
+  <button class="tab-grupo" data-grupo="operacao"  onclick="setNavGrupo('operacao')">📈 Operação</button>
+  <button class="tab-grupo" data-grupo="auditoria" onclick="setNavGrupo('auditoria')">🔍 Auditoria</button>
 </nav>
+<!-- Sub-nav contextual (renderizada via JS conforme grupo ativo) -->
+<nav id="nav-subnav"></nav>
 
 <main>
 
@@ -3205,13 +3226,93 @@ function renderProjecao() {
 }
 
 // ══════════════════════════════════════════════════
-//  NAVEGAÇÃO
+//  NAVEGAÇÃO v2 — Tabs de grupo + sub-nav contextual
 // ══════════════════════════════════════════════════
+// Mapa: cada view pertence a 1 grupo
+const VIEW_TO_GRUPO = {
+  'dashboard':   'visao',
+  'ranking':     'visao',
+  'time':        'visao',
+  'adicionar':   'analise',
+  'rodada':      'analise',
+  'teacher':     'analise',
+  'ouro':        'analise',
+  'cisne-negro': 'analise',
+  'enigma':      'analise',
+  'projecao':    'analise',
+  'tracker':     'operacao',
+  'apostas':     'operacao',
+  'auditoria':   'auditoria'
+};
+
+// Itens da sub-nav por grupo (label, id, e style opcional pra Enigma/Auditoria)
+const SUBNAV_BY_GRUPO = {
+  visao: [
+    { id: 'dashboard',  label: '📊 Dashboard' },
+    { id: 'ranking',    label: '🏆 Ranking Times' },
+    { id: 'time',       label: '👕 Por Time' }
+  ],
+  analise: [
+    { id: 'adicionar',   label: '📥 Adicionar Jogos' },
+    { id: 'rodada',      label: '📅 Próximos Jogos' },
+    { id: 'teacher',     label: '🏗️ Projeção TEACHER' },
+    { id: 'ouro',        label: '🐺 Bala de Prata' },
+    { id: 'cisne-negro', label: '🦢 Cisne Negro' },
+    { id: 'enigma',      label: '🔮 ENIGMA',
+      style: 'background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(88,28,235,0.15));border-color:rgba(139,92,246,0.4);color:#a78bfa;' },
+    { id: 'projecao',    label: '🔮 Projeção de Jogo' }
+  ],
+  operacao: [
+    { id: 'tracker', label: '📈 Bet Tracker' },
+    { id: 'apostas', label: '🎰 Apostas Reais' }
+  ],
+  auditoria: [
+    { id: 'auditoria', label: '🔍 Auditoria Cross-Liga',
+      style: 'background:linear-gradient(135deg,rgba(52,211,103,0.15),rgba(34,197,94,0.15));border-color:rgba(52,211,103,0.4);color:var(--green);' }
+  ]
+};
+
+// Renderiza a sub-nav do grupo, marcando ativa a view passada
+function _renderSubNav(grupo, viewAtiva) {
+  const sub = document.getElementById('nav-subnav');
+  if (!sub) return;
+  const itens = SUBNAV_BY_GRUPO[grupo] || [];
+  sub.innerHTML = itens.map(it => {
+    const cls = (it.id === viewAtiva) ? 'active' : '';
+    const styleAttr = it.style ? ` style="${it.style}"` : '';
+    const titleAttr = it.id === 'auditoria' ? ' title="Memória institucional cross-liga · trilha de auditoria das análises pré-jogo"' : '';
+    return `<button id="btn-${it.id}" class="${cls}"${styleAttr}${titleAttr} onclick="showView('${it.id}')">${it.label}</button>`;
+  }).join('');
+}
+
+// Marca o grupo ativo nas tabs de grupo (e adiciona dot indicador "•" se a view atual está nele)
+function _atualizarTabsGrupo(grupoAtivo, viewAtiva) {
+  const grupoDaView = VIEW_TO_GRUPO[viewAtiva];
+  document.querySelectorAll('.tab-grupo').forEach(b => {
+    const g = b.dataset.grupo;
+    b.classList.toggle('active', g === grupoAtivo);
+    b.classList.toggle('has-active', g === grupoDaView && g !== grupoAtivo);
+  });
+}
+
+// Clique numa tab de grupo: troca pra primeira view do grupo (se ainda não estamos lá)
+function setNavGrupo(grupo) {
+  const viewAtual = (document.querySelector('.view.active')?.id || '').replace('view-','');
+  const grupoAtual = VIEW_TO_GRUPO[viewAtual];
+  if (grupoAtual === grupo) return; // já está nesse grupo, nada a fazer
+  const primeira = (SUBNAV_BY_GRUPO[grupo] || [])[0];
+  if (primeira) showView(primeira.id);
+}
+
 function showView(id) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('view-'+id).classList.add('active');
-  document.getElementById('btn-'+id).classList.add('active');
+
+  // Sincroniza nav (grupo + sub-nav)
+  const grupo = VIEW_TO_GRUPO[id] || 'visao';
+  _renderSubNav(grupo, id);
+  _atualizarTabsGrupo(grupo, id);
+
   if (id==='ranking') { renderRankingHeader(); renderRanking(); }
   if (id==='dashboard') renderDashboard();
   if (id==='time') renderTime();
@@ -9361,6 +9462,11 @@ function renderEnigma() {
 }
 
 init();
+
+// Inicializa nav v2 (sub-nav contextual + grupo ativo no boot)
+// Dashboard é a view padrão (já tem .active no HTML), então populamos a sub-nav do grupo "visao".
+_renderSubNav('visao', 'dashboard');
+_atualizarTabsGrupo('visao', 'dashboard');
 
 // ══════════════════════════════════════════════════
 //  PWA — Registro do Service Worker (instalação e cache)
