@@ -320,7 +320,7 @@ window.DADOS_BR = {
     {
       "id": "bwFhcK06",
       "rodada": 8,
-      "data": "2026-04-01",
+      "data": "2026-03-23",
       "mandante": "Cruzeiro",
       "visitante": "Vitória",
       "placar": {
@@ -361,7 +361,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Internacional",
       "visitante": "Athletico-PR",
       "placar": {
@@ -402,7 +402,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Coritiba",
       "visitante": "Red Bull Bragantino",
       "placar": {
@@ -443,7 +443,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Atlético-MG",
       "visitante": "Palmeiras",
       "placar": {
@@ -484,7 +484,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Fluminense",
       "visitante": "Grêmio",
       "placar": {
@@ -525,7 +525,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Corinthians",
       "visitante": "Bahia",
       "placar": {
@@ -566,7 +566,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Chapecoense",
       "visitante": "Santos",
       "placar": {
@@ -607,7 +607,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "São Paulo",
       "visitante": "Flamengo",
       "placar": {
@@ -648,7 +648,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 8,
-      "data": "2026-04-04",
+      "data": "2026-03-23",
       "mandante": "Mirassol",
       "visitante": "Vasco",
       "placar": {
@@ -689,7 +689,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 9,
-      "data": "2026-04-04",
+      "data": "2026-03-25",
       "mandante": "Botafogo",
       "visitante": "Cruzeiro",
       "placar": {
@@ -730,7 +730,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 9,
-      "data": "2026-04-04",
+      "data": "2026-03-25",
       "mandante": "Flamengo",
       "visitante": "Internacional",
       "placar": {
@@ -771,7 +771,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 9,
-      "data": "2026-04-04",
+      "data": "2026-03-25",
       "mandante": "Red Bull Bragantino",
       "visitante": "Atlético-MG",
       "placar": {
@@ -812,7 +812,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 9,
-      "data": "2026-04-04",
+      "data": "2026-03-25",
       "mandante": "Santos",
       "visitante": "São Paulo",
       "placar": {
@@ -853,7 +853,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 9,
-      "data": "2026-04-04",
+      "data": "2026-03-25",
       "mandante": "Remo",
       "visitante": "Mirassol",
       "placar": {
@@ -894,7 +894,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 10,
-      "data": "2026-04-04",
+      "data": "2026-03-26",
       "mandante": "Grêmio",
       "visitante": "Botafogo",
       "placar": {
@@ -935,7 +935,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 10,
-      "data": "2026-04-04",
+      "data": "2026-03-26",
       "mandante": "Bahia",
       "visitante": "Fluminense",
       "placar": {
@@ -976,7 +976,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 10,
-      "data": "2026-04-04",
+      "data": "2026-03-26",
       "mandante": "Vasco",
       "visitante": "Chapecoense",
       "placar": {
@@ -1017,7 +1017,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 10,
-      "data": "2026-04-04",
+      "data": "2026-03-26",
       "mandante": "Cruzeiro",
       "visitante": "Coritiba",
       "placar": {
@@ -1058,7 +1058,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Mirassol",
       "visitante": "Cruzeiro",
       "placar": {
@@ -1099,7 +1099,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Chapecoense",
       "visitante": "Coritiba",
       "placar": {
@@ -1140,7 +1140,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Atlético-MG",
       "visitante": "Remo",
       "placar": {
@@ -1181,7 +1181,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Vasco",
       "visitante": "Bahia",
       "placar": {
@@ -1222,7 +1222,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "São Paulo",
       "visitante": "Grêmio",
       "placar": {
@@ -1263,7 +1263,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Athletico-PR",
       "visitante": "Santos",
       "placar": {
@@ -1304,7 +1304,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Fluminense",
       "visitante": "Botafogo",
       "placar": {
@@ -1345,7 +1345,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Corinthians",
       "visitante": "Red Bull Bragantino",
       "placar": {
@@ -1386,7 +1386,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 11,
-      "data": "2026-04-04",
+      "data": "2026-03-27",
       "mandante": "Internacional",
       "visitante": "Palmeiras",
       "placar": {
@@ -1427,7 +1427,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 12,
-      "data": "2026-04-04",
+      "data": "2026-03-29",
       "mandante": "Athletico-PR",
       "visitante": "Corinthians",
       "placar": {
@@ -1468,7 +1468,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 12,
-      "data": "2026-04-04",
+      "data": "2026-03-29",
       "mandante": "Remo",
       "visitante": "Internacional",
       "placar": {
@@ -1509,7 +1509,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Red Bull Bragantino",
       "visitante": "Athletico-PR",
       "placar": {
@@ -1550,7 +1550,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Coritiba",
       "visitante": "São Paulo",
       "placar": {
@@ -1591,7 +1591,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Cruzeiro",
       "visitante": "Corinthians",
       "placar": {
@@ -1632,7 +1632,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Palmeiras",
       "visitante": "Fluminense",
       "placar": {
@@ -1673,7 +1673,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Grêmio",
       "visitante": "Atlético-MG",
       "placar": {
@@ -1714,7 +1714,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 13,
-      "data": "2026-04-04",
+      "data": "2026-03-30",
       "mandante": "Santos",
       "visitante": "Vasco",
       "placar": {
@@ -1755,7 +1755,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Mirassol",
       "visitante": "Santos",
       "placar": {
@@ -1796,7 +1796,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Atlético-MG",
       "visitante": "Internacional",
       "placar": {
@@ -1837,7 +1837,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Flamengo",
       "visitante": "Cruzeiro",
       "placar": {
@@ -1878,7 +1878,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Corinthians",
       "visitante": "Coritiba",
       "placar": {
@@ -1919,7 +1919,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Remo",
       "visitante": "Fluminense",
       "placar": {
@@ -1960,7 +1960,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Vasco",
       "visitante": "Palmeiras",
       "placar": {
@@ -2001,7 +2001,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "São Paulo",
       "visitante": "Chapecoense",
       "placar": {
@@ -2042,7 +2042,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 14,
-      "data": "2026-04-04",
+      "data": "2026-03-31",
       "mandante": "Grêmio",
       "visitante": "Red Bull Bragantino",
       "placar": {
@@ -2083,7 +2083,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Botafogo",
       "visitante": "Flamengo",
       "placar": {
@@ -2124,7 +2124,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Santos",
       "visitante": "Corinthians",
       "placar": {
@@ -2165,7 +2165,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Internacional",
       "visitante": "Bahia",
       "placar": {
@@ -2206,7 +2206,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Fluminense",
       "visitante": "Athletico-PR",
       "placar": {
@@ -2247,7 +2247,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Palmeiras",
       "visitante": "Mirassol",
       "placar": {
@@ -2288,7 +2288,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Coritiba",
       "visitante": "Remo",
       "placar": {
@@ -2329,7 +2329,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Cruzeiro",
       "visitante": "Vasco",
       "placar": {
@@ -2370,7 +2370,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Red Bull Bragantino",
       "visitante": "São Paulo",
       "placar": {
@@ -2411,7 +2411,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 15,
-      "data": "2026-04-04",
+      "data": "2026-04-02",
       "mandante": "Chapecoense",
       "visitante": "Grêmio",
       "placar": {
@@ -2452,7 +2452,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Palmeiras",
       "visitante": "Botafogo",
       "placar": {
@@ -2493,7 +2493,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Bahia",
       "visitante": "Red Bull Bragantino",
       "placar": {
@@ -2534,7 +2534,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Athletico-PR",
       "visitante": "Cruzeiro",
       "placar": {
@@ -2575,7 +2575,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Mirassol",
       "visitante": "Coritiba",
       "placar": {
@@ -2616,7 +2616,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Atlético-MG",
       "visitante": "São Paulo",
       "placar": {
@@ -2657,7 +2657,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Vasco",
       "visitante": "Fluminense",
       "placar": {
@@ -2698,7 +2698,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Santos",
       "visitante": "Internacional",
       "placar": {
@@ -2739,7 +2739,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Flamengo",
       "visitante": "Remo",
       "placar": {
@@ -2780,7 +2780,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 16,
-      "data": "2026-04-04",
+      "data": "2026-04-03",
       "mandante": "Chapecoense",
       "visitante": "Corinthians",
       "placar": {
@@ -3190,7 +3190,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 18,
-      "data": "2026-04-04",
+      "data": "2026-04-06",
       "mandante": "Athletico-PR",
       "visitante": "Botafogo",
       "placar": {
@@ -3231,7 +3231,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 18,
-      "data": "2026-04-04",
+      "data": "2026-04-06",
       "mandante": "Internacional",
       "visitante": "São Paulo",
       "placar": {
@@ -3272,7 +3272,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Botafogo",
       "visitante": "Mirassol",
       "placar": {
@@ -3313,7 +3313,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Bahia",
       "visitante": "Athletico-PR",
       "placar": {
@@ -3354,7 +3354,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Coritiba",
       "visitante": "Vasco",
       "placar": {
@@ -3395,7 +3395,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Fluminense",
       "visitante": "Corinthians",
       "placar": {
@@ -3436,7 +3436,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Santos",
       "visitante": "Remo",
       "placar": {
@@ -3477,7 +3477,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Chapecoense",
       "visitante": "Atlético-MG",
       "placar": {
@@ -3518,7 +3518,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Palmeiras",
       "visitante": "Grêmio",
       "placar": {
@@ -3559,7 +3559,7 @@ window.DADOS_BR = {
     {
       "id": "",
       "rodada": 19,
-      "data": "2026-04-04",
+      "data": "2026-04-07",
       "mandante": "Red Bull Bragantino",
       "visitante": "Flamengo",
       "placar": {
@@ -3600,7 +3600,7 @@ window.DADOS_BR = {
     {
       "id": "IsSHKEbU",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Grêmio",
       "visitante": "Remo",
       "placar": {
@@ -3641,7 +3641,7 @@ window.DADOS_BR = {
     {
       "id": "ABu1Oda5",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Mirassol",
       "visitante": "Red Bull Bragantino",
       "placar": {
@@ -3682,7 +3682,7 @@ window.DADOS_BR = {
     {
       "id": "ULezwdEb",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Bahia",
       "visitante": "Palmeiras",
       "placar": {
@@ -3723,7 +3723,7 @@ window.DADOS_BR = {
     {
       "id": "2oxgQIUh",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Corinthians",
       "visitante": "Internacional",
       "placar": {
@@ -3764,7 +3764,7 @@ window.DADOS_BR = {
     {
       "id": "WQT9MzUH",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Atlético-MG",
       "visitante": "Athletico-PR",
       "placar": {
@@ -3805,7 +3805,7 @@ window.DADOS_BR = {
     {
       "id": "Ac0S9cpC",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Flamengo",
       "visitante": "Santos",
       "placar": {
@@ -3846,7 +3846,7 @@ window.DADOS_BR = {
     {
       "id": "QmkqyzqB",
       "rodada": 21,
-      "data": "2026-04-05",
+      "data": "2026-04-10",
       "mandante": "Chapecoense",
       "visitante": "Vitória",
       "placar": {
@@ -3887,7 +3887,7 @@ window.DADOS_BR = {
     {
       "id": "j78z8yFO",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Vasco",
       "visitante": "Botafogo",
       "placar": {
@@ -3928,7 +3928,7 @@ window.DADOS_BR = {
     {
       "id": "d8cSvIqn",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "Coritiba",
       "visitante": "Fluminense",
       "placar": {
@@ -3969,7 +3969,7 @@ window.DADOS_BR = {
     {
       "id": "6JrpSv0t",
       "rodada": 20,
-      "data": "2026-04-05",
+      "data": "2026-04-08",
       "mandante": "São Paulo",
       "visitante": "Cruzeiro",
       "placar": {
