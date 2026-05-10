@@ -2810,6 +2810,293 @@ window.DADOS_CHI = {
         "m": 3,
         "v": 0
       }
+    },
+    {
+      "id": "inject_CHI_0_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "Union La Calera",
+      "visitante": "Coquimbo",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_1_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "A. Italiano",
+      "visitante": "Limache",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_2_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "Nublense",
+      "visitante": "O'Higgins",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_3_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "U. De Chile",
+      "visitante": "U. Catolica",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 7,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_4_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "La Serena",
+      "visitante": "Huachipato",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_5_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "U. De Concepcion",
+      "visitante": "Colo Colo",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 17
+        }
+      }
+    },
+    {
+      "id": "inject_CHI_6_20260426",
+      "rodada": 71,
+      "data": "2026-04-26",
+      "mandante": "Everton",
+      "visitante": "Cobresal",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 15
+        }
+      }
     }
   ]
 };

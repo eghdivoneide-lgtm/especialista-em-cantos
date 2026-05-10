@@ -1,11 +1,11 @@
 // ============================================================
-// ARG_B 2026 — Injeção Varredor v4 (upsert)
-// 164 jogos | Atualizado: 2026-04-23
+// ARG_B 2026 — Injeção Varredor v4 (rodada 2026-05-05)
+// 199 jogos | Atualizado: 2026-05-05
 // ============================================================
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-04-23",
+  "ultimaAtualizacao": "2026-05-05",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
@@ -6772,6 +6772,1475 @@ window.DADOS_ARG_B = {
         "v": 0
       },
       "match_id": "vqoNKEDj"
+    },
+    {
+      "id": "inject_ARG_B_0_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "San Miguel",
+      "visitante": "Los Andes",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 11,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_1_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "San Telmo",
+      "visitante": "All Boys",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_2_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Temperley",
+      "visitante": "Patronato",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 3
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_3_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "San Martin S.J.",
+      "visitante": "Quilmes",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_4_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Gimnasia Jujuy",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 8,
+          "v": 1
+        },
+        "ft": {
+          "m": 11,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 3
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_5_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Deportivo Moron",
+      "visitante": "Racing Cordoba",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_6_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Nueva Chicago",
+      "visitante": "Colegiales",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_7_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Tristan Suarez",
+      "visitante": "Gimnasia y Tiro",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 4
+        },
+        "ft": {
+          "m": 8,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_8_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Acassuso",
+      "visitante": "CA Estudiantes",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 3,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_9_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Midland",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_10_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Agropecuario",
+      "visitante": "San Martin T.",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_11_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Def. de Belgrano",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 12
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_12_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Central Norte",
+      "visitante": "Ciudad Bolivar",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_13_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Chaco For Ever",
+      "visitante": "CA Mitre",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 8,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 12
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_14_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Club A. Guemes",
+      "visitante": "Atletico Atlanta",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_15_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Almagro",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 1
+        },
+        "ft": {
+          "m": 10,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 5
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_16_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Godoy Cruz",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        }
+      }
+    },
+    {
+      "id": "inject_ARG_B_17_20260426",
+      "rodada": 114,
+      "data": "2026-04-26",
+      "mandante": "Ferro",
+      "visitante": "Almirante Brown",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        }
+      }
+    },
+    {
+      "match_id": "Um0mxypH",
+      "id": "Um0mxypH",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Agropecuario",
+      "data": "04.05.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "fBLpIFho",
+      "id": "fBLpIFho",
+      "mandante": "Quilmes",
+      "visitante": "Chacarita Juniors",
+      "data": "04.05.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "WI78U2fL",
+      "id": "WI78U2fL",
+      "mandante": "Racing Cordoba",
+      "visitante": "Deportivo Madryn",
+      "data": "03.05.2026 17:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "nJawYy1D",
+      "id": "nJawYy1D",
+      "mandante": "Godoy Cruz",
+      "visitante": "Deportivo Moron",
+      "data": "03.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "088WuJph",
+      "id": "088WuJph",
+      "mandante": "Midland",
+      "visitante": "Club A. Guemes",
+      "data": "03.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "OGnmNKne",
+      "id": "OGnmNKne",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Ferro",
+      "data": "03.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 21
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 4
+      }
+    },
+    {
+      "match_id": "2Dt6Pc0B",
+      "id": "2Dt6Pc0B",
+      "mandante": "Patronato",
+      "visitante": "Nueva Chicago",
+      "data": "03.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "WtjeLbH7",
+      "id": "WtjeLbH7",
+      "mandante": "Almirante Brown",
+      "visitante": "Chaco For Ever",
+      "data": "03.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 4
+        },
+        "ft": {
+          "m": 3,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "YXlkTu1n",
+      "id": "YXlkTu1n",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Deportivo Maipu",
+      "data": "03.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 10,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "6omcRJVb",
+      "id": "6omcRJVb",
+      "mandante": "Almagro",
+      "visitante": "Temperley",
+      "data": "03.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "CxTsq29E",
+      "id": "CxTsq29E",
+      "mandante": "CA Mitre",
+      "visitante": "Acassuso",
+      "data": "03.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "AwpENyVN",
+      "id": "AwpENyVN",
+      "mandante": "Colegiales",
+      "visitante": "San Martin S.J.",
+      "data": "03.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "dz2uvcF4",
+      "id": "dz2uvcF4",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Tristan Suarez",
+      "data": "03.05.2026 13:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "OlILJSTk",
+      "id": "OlILJSTk",
+      "mandante": "San Martin T.",
+      "visitante": "Atl. Rafaela",
+      "data": "02.05.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "bgRkstvR",
+      "id": "bgRkstvR",
+      "mandante": "CA Estudiantes",
+      "visitante": "San Telmo",
+      "data": "02.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "SlgvPtIr",
+      "id": "SlgvPtIr",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Central Norte",
+      "data": "02.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 2
+        },
+        "ft": {
+          "m": 12,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "ji6UZcW0",
+      "id": "ji6UZcW0",
+      "mandante": "Los Andes",
+      "visitante": "Colon Santa Fe",
+      "data": "02.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
     }
   ]
 };

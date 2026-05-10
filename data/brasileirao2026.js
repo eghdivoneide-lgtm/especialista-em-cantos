@@ -1,17 +1,18 @@
 // ============================================================
-// BRASILEIRÃO SÉRIE A 2026 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-20 | +10 jogos cirúrgicos
+// BR 2026 — Injeção Varredor v4 (rodada 2026-05-05)
+// 137 jogos | Atualizado: 2026-05-05
 // ============================================================
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
-  "ultimaAtualizacao": "2026-04-20",
+  "ultimaAtualizacao": "2026-05-05",
   "totalRodadas": 22,
   "times": [
     "Athletico-PR",
     "Atlético-MG",
     "Bahia",
     "Botafogo",
+    "Red Bull Bragantino",
     "Chapecoense",
     "Corinthians",
     "Coritiba",
@@ -22,12 +23,12 @@ window.DADOS_BR = {
     "Internacional",
     "Mirassol",
     "Palmeiras",
-    "Red Bull Bragantino",
     "Remo",
     "Santos",
     "São Paulo",
     "Vasco",
     "Vitória"
+  
   ],
   "jogos": [
     {
@@ -4420,7 +4421,7 @@ window.DADOS_BR = {
     {
       "match_id": "27VXsrde",
       "id": "27VXsrde",
-      "mandante": "Flamengo RJ",
+      "mandante": "Flamengo",
       "visitante": "Bahia",
       "data": "19.04.2026 19:30",
       "rodada": null,
@@ -4463,7 +4464,7 @@ window.DADOS_BR = {
     {
       "match_id": "dUj7dsBl",
       "id": "dUj7dsBl",
-      "mandante": "Bragantino",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Remo",
       "data": "19.04.2026 18:30",
       "rodada": null,
@@ -4550,7 +4551,7 @@ window.DADOS_BR = {
       "match_id": "tIQAG22K",
       "id": "tIQAG22K",
       "mandante": "Coritiba",
-      "visitante": "Atletico-MG",
+      "visitante": "Atlético-MG",
       "data": "19.04.2026 16:00",
       "rodada": null,
       "fonte": "agente-cirurgico",
@@ -4679,7 +4680,7 @@ window.DADOS_BR = {
       "match_id": "hdpGfLu1",
       "id": "hdpGfLu1",
       "mandante": "Cruzeiro",
-      "visitante": "Gremio",
+      "visitante": "Grêmio",
       "data": "18.04.2026 20:30",
       "rodada": null,
       "fonte": "agente-cirurgico",
@@ -4721,7 +4722,7 @@ window.DADOS_BR = {
     {
       "match_id": "drWuBtQs",
       "id": "drWuBtQs",
-      "mandante": "Vitoria",
+      "mandante": "Vitória",
       "visitante": "Corinthians",
       "data": "18.04.2026 20:00",
       "rodada": null,
@@ -4764,8 +4765,8 @@ window.DADOS_BR = {
     {
       "match_id": "IcKl9Kff",
       "id": "IcKl9Kff",
-      "mandante": "Chapecoense-SC",
-      "visitante": "Botafogo RJ",
+      "mandante": "Chapecoense",
+      "visitante": "Botafogo",
       "data": "18.04.2026 18:30",
       "rodada": null,
       "fonte": "agente-cirurgico",
@@ -4808,7 +4809,7 @@ window.DADOS_BR = {
       "match_id": "bZOttMQ7",
       "id": "bZOttMQ7",
       "mandante": "Vasco",
-      "visitante": "Sao Paulo",
+      "visitante": "São Paulo",
       "data": "18.04.2026 18:30",
       "rodada": null,
       "fonte": "agente-cirurgico",
@@ -4845,6 +4846,846 @@ window.DADOS_BR = {
       "placar": {
         "m": 2,
         "v": 1
+      }
+    },
+    {
+      "id": "inject_BR_0_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Bahia",
+      "visitante": "Santos",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_BR_1_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Botafogo",
+      "visitante": "Internacional",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_BR_2_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Remo",
+      "visitante": "Cruzeiro",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_BR_3_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "São Paulo",
+      "visitante": "Mirassol",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 12,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_BR_4_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Corinthians",
+      "visitante": "Vasco",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 21
+        }
+      }
+    },
+    {
+      "id": "inject_BR_5_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Grêmio",
+      "visitante": "Coritiba",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 22,
+          "v": 15
+        }
+      }
+    },
+    {
+      "id": "inject_BR_6_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Athletico-PR",
+      "visitante": "Vitória",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_BR_7_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Red Bull Bragantino",
+      "visitante": "Palmeiras",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 3
+        },
+        "ft": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_BR_8_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Atlético-MG",
+      "visitante": "Flamengo",
+      "placar": {
+        "m": 0,
+        "v": 4
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 9
+        }
+      }
+    },
+    {
+      "id": "inject_BR_9_20260426",
+      "rodada": 23,
+      "data": "2026-04-26",
+      "mandante": "Fluminense",
+      "visitante": "Chapecoense",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 71,
+          "v": 29
+        },
+        "finalizacoes": {
+          "m": 30,
+          "v": 8
+        }
+      }
+    },
+    {
+      "match_id": "UHLnIzeM",
+      "id": "UHLnIzeM",
+      "mandante": "Mirassol",
+      "visitante": "Corinthians",
+      "data": "03.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "vmuVUDvS",
+      "id": "vmuVUDvS",
+      "mandante": "Chapecoense",
+      "visitante": "Red Bull Bragantino",
+      "data": "03.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "fa5RAhmd",
+      "id": "fa5RAhmd",
+      "mandante": "Internacional",
+      "visitante": "Fluminense",
+      "data": "03.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 33,
+          "v": 67
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "OdjE3ytT",
+      "id": "OdjE3ytT",
+      "mandante": "Flamengo",
+      "visitante": "Vasco",
+      "data": "03.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 20
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "0xUVLIec",
+      "id": "0xUVLIec",
+      "mandante": "São Paulo",
+      "visitante": "Bahia",
+      "data": "03.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 8
+        },
+        "ft": {
+          "m": 14,
+          "v": 10
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 20
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "l22JCEIq",
+      "id": "l22JCEIq",
+      "mandante": "Cruzeiro",
+      "visitante": "Atlético-MG",
+      "data": "02.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "zerEYeu3",
+      "id": "zerEYeu3",
+      "mandante": "Athletico-PR",
+      "visitante": "Grêmio",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 7,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "d4NvKdQ9",
+      "id": "d4NvKdQ9",
+      "mandante": "Palmeiras",
+      "visitante": "Santos",
+      "data": "02.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 22,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "rLoMWZ9F",
+      "id": "rLoMWZ9F",
+      "mandante": "Vitória",
+      "visitante": "Coritiba",
+      "data": "02.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "8URpbF3j",
+      "id": "8URpbF3j",
+      "mandante": "Botafogo",
+      "visitante": "Remo",
+      "data": "02.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 4
+        },
+        "ft": {
+          "m": 9,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
       }
     }
   ]

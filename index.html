@@ -480,15 +480,12 @@
       <h1>Especialista em Cantos</h1>
       <select id="seletor-liga" onchange="trocarLiga(this.value)">
         <option value="BR">🇧🇷 Brasileirão Série A</option>
-        <option value="MLS">🇺🇸 Major League Soccer ⚠</option>
+        <option value="BR_B">🇧🇷 Brasileirão Série B</option>
         <option value="ARG">🇦🇷 Liga Profesional</option>
+        <option value="ARG_B">🇦🇷 Primera B (ARG)</option>
+        <option value="MLS">🇺🇸 Major League Soccer</option>
         <option value="USL">🇺🇸 USL Championship</option>
         <option value="BUN">🇩🇪 Bundesliga</option>
-        <option value="ALM">🇦🇺 A-League</option>
-        <option value="J1">🇯🇵 J1 League</option>
-        <option value="CHI">🇨🇱 Primera Div. (CHI)</option>
-        <option value="ECU">🇪🇨 LigaPro (ECU) ⛔</option>
-        <option value="ARG_B">🇦🇷 Primera B (ARG)</option>
       </select>
     </div>
   </div>
@@ -572,7 +569,10 @@
 
   <!-- ══════════════════ BALA DE PRATA ══════════════════ -->
   <div id="view-ouro" class="view">
-    <div class="section-title" style="color:var(--gold)">🐺 Bala de Prata (Alvos Ouro Sniper)</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
+      <div class="section-title" style="color:var(--gold);margin-bottom:0">🐺 Bala de Prata (Alvos Ouro Sniper)</div>
+      <button onclick="exportarBalaPrataHTML()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.55rem 1.1rem;border-radius:8px;font-weight:800;font-size:.82rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">📤 Exportar Relatório HTML</button>
+    </div>
     <div id="wrapper-ouro"></div>
   </div>
 
@@ -707,15 +707,12 @@
       <select id="tracker-filtro-liga" onchange="aplicarFiltroLigaTracker(this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;min-width:180px">
         <option value="">🌐 Todas as ligas</option>
         <option value="BR">🇧🇷 Brasileirão</option>
-        <option value="MLS">🇺🇸 MLS</option>
+        <option value="BR_B">🇧🇷 Brasileirão B</option>
         <option value="ARG">🇦🇷 Liga Profesional</option>
         <option value="ARG_B">🇦🇷 Primera B</option>
+        <option value="MLS">🇺🇸 MLS</option>
         <option value="USL">🇺🇸 USL Championship</option>
         <option value="BUN">🇩🇪 Bundesliga</option>
-        <option value="ALM">🇦🇺 A-League</option>
-        <option value="J1">🇯🇵 J1 League</option>
-        <option value="CHI">🇨🇱 Primera Div. (CHI)</option>
-        <option value="ECU">🇪🇨 LigaPro (ECU)</option>
       </select>
       <span id="tracker-filtro-info" style="font-size:.72rem;color:var(--muted);margin-left:auto">— total de apostas: <strong id="tracker-filtro-count" style="color:var(--text)">0</strong></span>
     </div>
@@ -876,6 +873,39 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
+       FILTRO OURO — Entradas refinadas validadas em 358 apostas reais
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-filtro-ouro" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#fbbf24,#f59e0b,#fde68a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🥇 FILTRO OURO — Entradas Refinadas</div>
+        <div style="font-size:.75rem;color:var(--gold);margin-top:.3rem;font-weight:600;">Por liga · Critérios validados em 358 apostas reais (Pinnacle + Betano)</div>
+      </div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+        <button onclick="recalcularFiltroOuro()" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);">🔄 Recalcular Liga Atual</button>
+        <button onclick="exportarFiltroOuroHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.55rem 1rem;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;">📤 Exportar HTML</button>
+      </div>
+    </div>
+    <div id="wrapper-filtro-ouro"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       VENCEDOR CANTOS — Laboratório de classificação por força
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-vencedor-cantos" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Vencedor Cantos — Laboratório</div>
+        <div style="font-size:.75rem;color:var(--gold);margin-top:.3rem;font-weight:600;">Quem fica na frente em cantos · HT e FT · classificação por força do sinal</div>
+      </div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+        <button onclick="exportarVencedorCantosHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.55rem 1rem;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'" title="Exporta esta análise em HTML standalone">📤 Exportar HTML</button>
+      </div>
+    </div>
+    <div id="wrapper-vencedor-cantos"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
        AUDITORIA — Memória institucional cross-liga
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-auditoria" class="view">
@@ -999,19 +1029,31 @@
   Cache-bust: ?v= força o browser a baixar a versão nova dos datasets
   quando o Varredor atualiza os dados. Incrementar sempre que recoletar.
 -->
+<!-- ═══ LIGAS ATIVAS v2.0 (2026-05-08) — foco em 7 ligas operáveis ═══ -->
 <script src="data/usl2026.js?v=2026-04-22b"></script>
 <script src="data/memoria_qualitativa.js?v=2026-04-22b"></script>
 <script src="data/argentina2026.js?v=2026-04-22b"></script>
 <script src="data/mls2026.js?v=2026-04-22b"></script>
 <script src="data/brasileirao2026.js?v=2026-04-22b"></script>
 <script src="data/bundesliga2026.js?v=2026-04-22b"></script>
-<script src="data/aleague2026.js?v=2026-04-22b"></script>
-<script src="data/j1league2026.js?v=2026-04-22b"></script>
-<script src="data/chile2026.js?v=2026-04-22b"></script>
-<script src="data/equador2026.js?v=2026-04-22b"></script>
 <script src="data/argentina_b2026.js?v=2026-04-22b"></script>
+<script src="data/brasileiraoB2026.js?v=2026-04-30"></script>
+<!-- ═══ LIGAS DESATIVADAS — descomente para reabilitar ═══
+<script src="data/aleague2026.js?v=2026-04-22b"></script>      ALM (temporada finalizando)
+<script src="data/j1league2026.js?v=2026-04-22b"></script>     J1 (calibração ruim, fuso difícil)
+<script src="data/chile2026.js?v=2026-04-22b"></script>        CHI
+<script src="data/equador2026.js?v=2026-04-22b"></script>      ECU
+<script src="data/metropolitana2026.js?v=2026-04-30"></script> ARG_M (Primera B Metro — sem dados)
+<script src="data/j2j3league2026.js?v=2026-04-30"></script>    J2/J3 (sem HDP nas bancas)
+<script src="data/chinasuper2026.js?v=2026-04-30"></script>    CHN_SUP (calibração imatura)
+<script src="data/chinaone2026.js?v=2026-04-30"></script>      CHN_1
+<script src="data/chinatwo2026.js?v=2026-04-30"></script>      CHN_2
+<script src="data/j2league2026.js?v=2026-04-30"></script>      J2
+═══════════════════════════════════════════════════════════════ -->
 <script src="data/dna_escoteiro.js?v=2026-04-22b"></script>
 <script src="data/escoteiro_BR.js?v=2026-04-22b"></script>
+<!-- PATCH J1 — calibração linha base (v1.1, 2026-05-05). Cria window.J1_PATCH_LINHAS / window.getLinhaFTPatched. Não toca em MOTOR_CONFIG/LIGAS_STATUS. Reverter = remover esta linha. -->
+<script src="Auditoria Especialista em cantos/_Patches/patch_j1_aplicar.js?v=2026-05-05"></script>
 <script>
   // ── DIAGNÓSTICO DE BOOT ── Loga quais datasets carregaram e quais não.
   // Executa ANTES do script principal, então capturamos o estado real de
@@ -1019,7 +1061,11 @@
   (function() {
     const mapa = { BR:'DADOS_BR', MLS:'DADOS_MLS', ARG:'DADOS_ARG', USL:'DADOS_USL',
                    BUN:'DADOS_BUN', ARG_B:'DADOS_ARG_B', CHI:'DADOS_CHI',
-                   ECU:'DADOS_ECU', J1:'DADOS_J1', ALM:'DADOS_ALM' };
+                   ECU:'DADOS_ECU', J1:'DADOS_J1', ALM:'DADOS_ALM',
+                   BR_B:'DADOS_BR_B', ARG_M:'DADOS_ARG_M',
+                   J2_J3:'DADOS_J2_J3', CHN_SUP:'DADOS_CHN_SUP',
+                   CHN_1:'DADOS_CHN_1', CHN_2:'DADOS_CHN_2',
+                   J2:'DADOS_J2' };
     const ok = [], falha = [];
     for (const k in mapa) {
       const d = window[mapa[k]];
@@ -1113,6 +1159,69 @@ const LIGAS_STATUS = Object.freeze({
          motivo: 'Backtest catastrófico (1V 5D no lote 1) confirmado em mais apostas. Motor sem DNA Escoteiro para ECU, amostra de jogos pequena (~7 jogos por time). HDP de favorito errando sistematicamente. Não apostar até recalibrar.' }
 });
 
+// ══════════════════════════════════════════════════════════════════
+//  LIGA_DNA v3.0 (2026-05-10) — DNA cultural por liga
+//
+//  Premissa: cada liga tem perfil próprio (ofensivo/equilibrado/trucado)
+//  e usar régua única em todas é o que estava gerando 40% WR em ARG_B
+//  faixa MODERADA enquanto BR acertava 80% na MESMA faixa.
+//
+//  Médias HT/FT calculadas dos data/<liga>2026.js (rodada validada 2026-05-08):
+//    Ofensivas (FT ~10):    BR (10.01), MLS (10.05), BR_B (10.44)
+//    Equilibradas (FT 9-10): BUN (9.73), USL (9.19)
+//    Trucadas (FT ~8.5):     ARG (8.51), ARG_B (8.60)
+//
+//  cisneThreshold: validado em 707 jogos walkforward + 358 apostas Pinnacle.
+//    ARG/ARG_B: 1.5 (faixa 1.5-2.0 tem 73% WR — captura mais sinais bons)
+//    MLS: 2.5 (memória: ROI +8% só com Δ≥3, ROI -7% com Δ 2.0-2.5)
+//    Demais: 2.0 (padrão validado)
+//
+//  Arquétipos não mexem em faixas BP/Reis/Sniper (ficam globais — preserva
+//  sinais que já funcionam, ex: BP NUCLEAR >90% prob com 78% WR).
+//  Multiplicadores afetam APENAS o score do Filtro OURO.
+// ══════════════════════════════════════════════════════════════════
+const LIGA_DNA = Object.freeze({
+  BR:    { arquetipo: 'ofensiva',    cisneThreshold: 2.0, mediaHT: 4.51, mediaFT: 10.01 },
+  BR_B:  { arquetipo: 'ofensiva',    cisneThreshold: 2.0, mediaHT: 4.87, mediaFT: 10.44 },
+  MLS:   { arquetipo: 'ofensiva',    cisneThreshold: 2.5, mediaHT: 4.61, mediaFT: 10.05 },
+  BUN:   { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.37, mediaFT: 9.73  },
+  USL:   { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.41, mediaFT: 9.19  },
+  ARG:   { arquetipo: 'trucada',     cisneThreshold: 1.5, mediaHT: 4.09, mediaFT: 8.51  },
+  ARG_B: { arquetipo: 'trucada',     cisneThreshold: 1.5, mediaHT: 4.12, mediaFT: 8.60  }
+});
+
+// Multiplicadores por arquétipo aplicados no _scoreVencedor e _scoreUnder
+// do FILTRO OURO. NUNCA reduzem peso de NUCLEAR/ABSOLUTO (sinais que sempre
+// funcionam) — só ajustam FORTE/MODERADA conforme o DNA da liga.
+const ARQUETIPO_MULT = Object.freeze({
+  ofensiva: {
+    bp_nuclear: 1.0, bp_forte: 1.0, bp_moderada: 1.0,   // BR/MLS sem mexer
+    reis_absoluto: 1.0, reis_dominante: 1.0, reis_moderado: 1.0,
+    diff_alto: 1.0,
+    under_premium: 1.0  // ARG/ARG_B Under não é desta categoria
+  },
+  equilibrada: {
+    bp_nuclear: 1.0, bp_forte: 0.85, bp_moderada: 0.7, // BUN/USL: MODERADA vale menos
+    reis_absoluto: 1.0, reis_dominante: 0.9, reis_moderado: 0.7,
+    diff_alto: 1.0,
+    under_premium: 0.8
+  },
+  trucada: {
+    bp_nuclear: 1.1, bp_forte: 0.55, bp_moderada: 0.0, // ARG/ARG_B: NUC vale +10%, MODERADA zerada (40% WR)
+    reis_absoluto: 1.1, reis_dominante: 0.7, reis_moderado: 0.0,
+    diff_alto: 1.0,
+    under_premium: 1.25 // Under em ARG_B é onde brilha (+25 em vez de +20)
+  }
+});
+
+function getLigaDNA(liga) {
+  return (liga && LIGA_DNA[liga]) ? LIGA_DNA[liga] : { arquetipo: 'equilibrada', cisneThreshold: 2.0 };
+}
+function getArqMult(liga) {
+  const dna = getLigaDNA(liga);
+  return ARQUETIPO_MULT[dna.arquetipo] || ARQUETIPO_MULT.equilibrada;
+}
+
 // ── PROTOCOLO DE STAKE (regras de entrada disciplinadas, v1.0 — 2026-04-22) ──
 // Após 2 lotes de backtest real (21 apostas MLS), ficou claro que:
 //   • Under FT com TMI dupla baixa foi 4V 1R em 5 tentativas (80% hit)
@@ -1142,8 +1251,8 @@ const PROTOCOLO_STAKE = Object.freeze({
 // DADOS_BR pode falhar ao carregar (arquivo ausente, erro de parse). Faz
 // fallback para a primeira liga disponível; se nenhuma carregou, usa um stub
 // vazio para o app não explodir no boot — trocarLiga() depois avisa o usuário.
-const _LIGAS_PRIORIDADE = ['DADOS_BR','DADOS_ARG','DADOS_MLS','DADOS_USL','DADOS_BUN','DADOS_ARG_B','DADOS_CHI','DADOS_ECU','DADOS_J1','DADOS_ALM'];
-const _LIGA_KEYS        = ['BR','ARG','MLS','USL','BUN','ARG_B','CHI','ECU','J1','ALM'];
+const _LIGAS_PRIORIDADE = ['DADOS_BR','DADOS_ARG','DADOS_MLS','DADOS_USL','DADOS_BUN','DADOS_ARG_B','DADOS_BR_B'];
+const _LIGA_KEYS        = ['BR','ARG','MLS','USL','BUN','ARG_B','BR_B'];
 let DADOS_2026 = null;
 let LIGA_ATUAL = 'BR';
 for (let i = 0; i < _LIGAS_PRIORIDADE.length; i++) {
@@ -1224,7 +1333,30 @@ function getOvers(lambda, lines) {
   return overs;
 }
 
-function getMatchOdds(lamH, lamA) {
+// ══════════════════════════════════════════════════════════════════
+//  FAV_DOMINANCE v1.1 (2026-05-08) — Fator de calibração por liga
+//  Calibrado contra 82 sinais BP da rodada 01-04/05/2026 + walk-forward.
+//  Poisson puro superestima dominância do favorito em ligas equilibradas
+//  (J1, BUN, CHN_SUP). Aqui aplicamos correção empírica:
+//    - fator < 1.0 → reduz prob do favorito (azarão rouba cantos)
+//    - fator > 1.0 → app subestimava (favorito domina mais)
+//  Fatores SUAVIZADOS — interpolam 50% entre Poisson puro e fator total.
+//  Aceita-se um pouco de superestimação em troca de não zerar fontes
+//  medianas (ARG/ARG_B). Recalibrar a cada 3-5 rodadas.
+// ══════════════════════════════════════════════════════════════════
+const FAV_DOMINANCE = {
+  // 7 ligas ativas v2.0 (2026-05-08)
+  MLS:     1.03,
+  BR:      0.96,
+  ARG:     0.89,
+  USL:     0.87,
+  ARG_B:   0.85,
+  BR_B:    0.83,
+  BUN:     0.79,  // azarão rouba cantos
+  _default: 0.92
+};
+
+function getMatchOdds(lamH, lamA, liga) {
   let home = 0, away = 0, draw = 0, homeHcp = 0;
   for (let h = 0; h <= 25; h++) {
     for (let a = 0; a <= 25; a++) {
@@ -1237,10 +1369,32 @@ function getMatchOdds(lamH, lamA) {
     }
   }
   const norm = home + away + draw || 1;
+  let pH = home / norm, pA = away / norm, pD = draw / norm;
+
+  // Patch v1.1: ajusta dominância do favorito conforme liga
+  if (liga) {
+    const fav = (liga in FAV_DOMINANCE) ? FAV_DOMINANCE[liga] : FAV_DOMINANCE._default;
+    const ladoFav = pH >= pA ? 'H' : 'A';
+    if (fav < 1.0) {
+      // Reduz prob favorito, manda pro empate (azarão rouba cantos)
+      const pFav = ladoFav === 'H' ? pH : pA;
+      const ajuste = pFav * (1 - fav);
+      if (ladoFav === 'H') pH -= ajuste; else pA -= ajuste;
+      pD += ajuste;
+    } else if (fav > 1.0) {
+      // Aumenta prob favorito puxando do empate (com clamp pra não estourar)
+      const ganho = fav - 1.0;
+      const pFav = ladoFav === 'H' ? pH : pA;
+      const ajuste = Math.min(pD * ganho * 2, pD * 0.9, 1 - pFav);
+      if (ladoFav === 'H') pH += ajuste; else pA += ajuste;
+      pD -= ajuste;
+    }
+  }
+
   return {
-    home: home / norm,
-    draw: draw / norm,
-    away: away / norm,
+    home: pH,
+    draw: pD,
+    away: pA,
     homeHcp: homeHcp / norm
   };
 }
@@ -1976,8 +2130,9 @@ function projecaoJogo(mandante, visitante) {
   const oversHT = getOvers(expTotalHT, [2.5, 3.5, 4.5, 5.5, 6.5]);
   const oversFT = getOvers(expTotalFT, [7.5, 8.5, 9.5, 10.5, 11.5, 12.5]);
   
-  const oddsHT = getMatchOdds(expHomeHT, expAwayHT);
-  const oddsFT = getMatchOdds(expHomeHT + expHome2T, expAwayHT + expAway2T);
+  const _ligaCalc = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : null;
+  const oddsHT = getMatchOdds(expHomeHT, expAwayHT, _ligaCalc);
+  const oddsFT = getMatchOdds(expHomeHT + expHome2T, expAwayHT + expAway2T, _ligaCalc);
 
   // ── REIS DOS CANTOS (Selo do TIME — 5 faixas) ──
   const oddCasaFT = 1 / oddsFT.home;
@@ -1998,8 +2153,13 @@ function projecaoJogo(mandante, visitante) {
 
   // ── TIRO SNIPER v2 (Zona Neutra Poisson — elimina viés OVER) ──
   // Limiares e linhas referenciam MOTOR_CONFIG para facilitar recalibração.
-  const _SNI_HT = MOTOR_CONFIG.SNIPER_LINHA_HT;
-  const _SNI_FT = MOTOR_CONFIG.SNIPER_LINHA_FT;
+  // Motor v3.4 (PATCH J1 — 2026-05-05): se window.getLinha*Patched existir e a
+  // liga ativa tiver patch (hoje só J1), usa linha customizada; senão, default global.
+  const _SNI_HT_BASE = MOTOR_CONFIG.SNIPER_LINHA_HT;
+  const _SNI_FT_BASE = MOTOR_CONFIG.SNIPER_LINHA_FT;
+  const _LIGA_ATIVA_PATCH = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : null;
+  const _SNI_HT = (typeof window !== 'undefined' && window.getLinhaHTPatched) ? window.getLinhaHTPatched(_LIGA_ATIVA_PATCH, _SNI_HT_BASE) : _SNI_HT_BASE;
+  const _SNI_FT = (typeof window !== 'undefined' && window.getLinhaFTPatched) ? window.getLinhaFTPatched(_LIGA_ATIVA_PATCH, _SNI_FT_BASE) : _SNI_FT_BASE;
   const _LIM_OV = MOTOR_CONFIG.SNIPER_LIMIAR_OVER;
   const _LIM_UN = MOTOR_CONFIG.SNIPER_LIMIAR_UNDER;
 
@@ -2020,12 +2180,18 @@ function projecaoJogo(mandante, visitante) {
   const tiroSniperData = { ft: sniperFT, ht: sniperHT, corFT: sniperCorFT, corHT: sniperCorHT, pOverHT: +pOverHT.toFixed(1), pOverFT: +pOverFT.toFixed(1) };
 
   // ── BALA DE PRATA (Selo do JOGO — classificação por odd) ──
+  // J1/CHN_SUP foram removidas do app v2.0 (2026-05-08), bloqueio histórico
+  // mantido vazio caso ligas voltem como experimentais.
+  const _BP_LIGAS_BLOQUEADAS = [];
   const bpOdd = Math.min(oddCasaFT, oddForaFT);
   const bpTime = oddCasaFT <= oddForaFT ? mandante : visitante;
   let bpFaixa = null, bpCor = null;
-  if (bpOdd <= 1.35)      { bpFaixa = 'NUCLEAR';  bpCor = '#dc2626'; }
-  else if (bpOdd <= 1.50) { bpFaixa = 'FORTE';    bpCor = '#f59e0b'; }
-  else if (bpOdd <= 1.63) { bpFaixa = 'MODERADA'; bpCor = '#34d367'; }
+  const _bpLigaBloqueada = _BP_LIGAS_BLOQUEADAS.includes(_ligaCalc);
+  if (!_bpLigaBloqueada) {
+    if (bpOdd <= 1.35)      { bpFaixa = 'NUCLEAR';  bpCor = '#dc2626'; }
+    else if (bpOdd <= 1.50) { bpFaixa = 'FORTE';    bpCor = '#f59e0b'; }
+    else if (bpOdd <= 1.63) { bpFaixa = 'MODERADA'; bpCor = '#34d367'; }
+  }
   const balaDePrataData = bpFaixa ? { time: bpTime, odd: bpOdd, faixa: bpFaixa, cor: bpCor } : null;
 
   // ── Memória Qualitativa ──
@@ -3230,19 +3396,21 @@ function renderProjecao() {
 // ══════════════════════════════════════════════════
 // Mapa: cada view pertence a 1 grupo
 const VIEW_TO_GRUPO = {
-  'dashboard':   'visao',
-  'ranking':     'visao',
-  'time':        'visao',
-  'adicionar':   'analise',
-  'rodada':      'analise',
-  'teacher':     'analise',
-  'ouro':        'analise',
-  'cisne-negro': 'analise',
-  'enigma':      'analise',
-  'projecao':    'analise',
-  'tracker':     'operacao',
-  'apostas':     'operacao',
-  'auditoria':   'auditoria'
+  'dashboard':       'visao',
+  'ranking':         'visao',
+  'time':            'visao',
+  'adicionar':       'analise',
+  'rodada':          'analise',
+  'teacher':         'analise',
+  'ouro':            'analise',
+  'cisne-negro':     'analise',
+  'vencedor-cantos': 'analise',
+  'filtro-ouro':     'analise',
+  'enigma':          'analise',
+  'projecao':        'analise',
+  'tracker':         'operacao',
+  'apostas':         'operacao',
+  'auditoria':       'auditoria'
 };
 
 // Itens da sub-nav por grupo (label, id, e style opcional pra Enigma/Auditoria)
@@ -3258,6 +3426,10 @@ const SUBNAV_BY_GRUPO = {
     { id: 'teacher',     label: '🏗️ Projeção TEACHER' },
     { id: 'ouro',        label: '🐺 Bala de Prata' },
     { id: 'cisne-negro', label: '🦢 Cisne Negro' },
+    { id: 'vencedor-cantos', label: '🏆 Vencedor Cantos',
+      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(251,191,36,0.15));border-color:rgba(245,158,11,0.4);color:var(--gold);' },
+    { id: 'filtro-ouro', label: '🥇 Filtro OURO',
+      style: 'background:linear-gradient(135deg,rgba(251,191,36,0.25),rgba(245,158,11,0.2),rgba(253,230,138,0.15));border-color:var(--gold);color:var(--gold);font-weight:800;' },
     { id: 'enigma',      label: '🔮 ENIGMA',
       style: 'background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(88,28,235,0.15));border-color:rgba(139,92,246,0.4);color:#a78bfa;' },
     { id: 'projecao',    label: '🔮 Projeção de Jogo' }
@@ -3324,6 +3496,8 @@ function showView(id) {
   if (id==='apostas') renderApostasReais();
   if (id==='enigma') renderEnigma();
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
+  if (id==='vencedor-cantos') renderVencedorCantos(); // laboratório de força do sinal
+  if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -3355,8 +3529,26 @@ function renderOuro() {
       return;
     }
 
+    // ── FILTRO DE DATA (v3.1 — 2026-05-10) ─────────────────────────────────
+    const filtroBarBala = _renderFiltroDataBar('bala', jogosFuturos);
+    const jogosExibirBala = _filtrarJogosPorData(jogosFuturos, _filtroData.bala);
+
+    if (jogosExibirBala.length === 0) {
+      const f = _filtroData.bala;
+      const msg = f.modo === 'hoje' ? 'Nenhum jogo agendado para hoje.'
+                : f.modo === 'data' ? `Nenhum jogo na data ${_dataBrCurta(f.data)}.`
+                : 'Nenhum jogo válido na rodada.';
+      document.getElementById('wrapper-ouro').innerHTML = filtroBarBala +
+        `<div style="text-align:center;padding:2rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px">
+           <div style="font-size:2.5rem;margin-bottom:.5rem">📭</div>
+           <strong>${msg}</strong><br>
+           <span style="font-size:.8rem">Clique em <strong style="color:var(--green)">🌐 Visão Geral</strong> para ver todos os jogos da rodada.</span>
+         </div>`;
+      return;
+    }
+
     const confrontos = [];
-    jogosFuturos.forEach(j => {
+    jogosExibirBala.forEach(j => {
       const p = projecaoJogo(j.m, j.v);
       if(!p || !p.m || !p.v) return;
       confrontos.push({ m: j.m, v: j.v, p, rc: p.reisDosCantosData, sn: p.tiroSniperData, bp: p.balaDePrataData });
@@ -3372,6 +3564,7 @@ function renderOuro() {
     const topOver = confrontos.filter(c => c.p.confFT >= 65 && c.p.expTotalFT >= 9.5).sort((a,b) => b.p.expTotalFT - a.p.expTotalFT);
 
     document.getElementById('wrapper-ouro').innerHTML = `
+      ${filtroBarBala}
       <!-- ═══ BALA DE PRATA (Selo do JOGO) ═══ -->
       <div style="background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(0,0,0,0.4));border-left:4px solid var(--gold);padding:1rem;border-radius:12px;margin-bottom:1.5rem;color:var(--text);line-height:1.6">
         <div style="font-size:1.2rem;font-weight:900;color:var(--gold);margin-bottom:.3rem">🐺 Bala de Prata (Selo do JOGO)</div>
@@ -4140,6 +4333,39 @@ function exportarEnigmaHTML() {
   });
 }
 
+function exportarBalaPrataHTML() {
+  const ctr = document.getElementById('wrapper-ouro');
+  if (!ctr || !ctr.innerHTML.trim()) {
+    alert('Nenhuma análise Bala de Prata para exportar. Abra a aba 🐺 Bala de Prata primeiro.');
+    return;
+  }
+  const cards = ctr.querySelectorAll('.stat-card');
+  const linhas = ctr.querySelectorAll('table tbody tr');
+  if (cards.length === 0 && linhas.length === 0) {
+    alert('Nenhum jogo na rodada. Importe a rodada antes de exportar.');
+    return;
+  }
+
+  const ligaInfo = (typeof AUDITORIA_LIGAS !== 'undefined') ? AUDITORIA_LIGAS.find(l => l.code === LIGA_ATUAL) : null;
+  const ligaLabel = ligaInfo ? `${ligaInfo.flag} ${ligaInfo.nome}` : LIGA_ATUAL;
+
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('button').forEach(b => b.remove());
+  clone.querySelectorAll('[onclick]').forEach(el => {
+    el.removeAttribute('onclick');
+    el.style.cursor = 'default';
+    el.removeAttribute('title');
+  });
+
+  _exportarAnaliseHTML({
+    titulo: '🐺 Bala de Prata',
+    subtitulo: `${ligaLabel} · Alvos Ouro Sniper · ${cards.length} card(s) BP · ${linhas.length} linha(s) Reis dos Cantos`,
+    conteudoHTML: clone.innerHTML,
+    prefixoArquivo: 'BalaDePrata',
+    corHeader: 'var(--gold)'
+  });
+}
+
 // ══════════════════════════════════════════════════
 //  AUDITORIA — Memória institucional cross-liga (v1.0 — 2026-04-25)
 //  Snapshot consolidado das 4 análises (BP/CN/TC/EN) de TODAS as ligas.
@@ -4149,15 +4375,12 @@ function exportarEnigmaHTML() {
 
 const AUDITORIA_LIGAS = [
   { code: 'BR',    nome: 'Brasileirão Série A',  flag: '🇧🇷', dadosKey: 'DADOS_BR'    },
-  { code: 'MLS',   nome: 'Major League Soccer',  flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
+  { code: 'BR_B',  nome: 'Brasileirão Série B',  flag: '🇧🇷', dadosKey: 'DADOS_BR_B'  },
   { code: 'ARG',   nome: 'Liga Profesional',     flag: '🇦🇷', dadosKey: 'DADOS_ARG'   },
+  { code: 'ARG_B', nome: 'Primera B (ARG)',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' },
+  { code: 'MLS',   nome: 'Major League Soccer',  flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
   { code: 'USL',   nome: 'USL Championship',     flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
-  { code: 'BUN',   nome: 'Bundesliga',           flag: '🇩🇪', dadosKey: 'DADOS_BUN'   },
-  { code: 'ALM',   nome: 'A-League',             flag: '🇦🇺', dadosKey: 'DADOS_ALM'   },
-  { code: 'J1',    nome: 'J1 League',            flag: '🇯🇵', dadosKey: 'DADOS_J1'    },
-  { code: 'CHI',   nome: 'Primera Div. (CHI)',   flag: '🇨🇱', dadosKey: 'DADOS_CHI'   },
-  { code: 'ECU',   nome: 'LigaPro (ECU)',        flag: '🇪🇨', dadosKey: 'DADOS_ECU'   },
-  { code: 'ARG_B', nome: 'Primera B (ARG)',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' }
+  { code: 'BUN',   nome: 'Bundesliga',           flag: '🇩🇪', dadosKey: 'DADOS_BUN'   }
 ];
 
 // Calcula hash de uma rodada (lista de jogos m+v) para detectar mudança.
@@ -4881,7 +5104,7 @@ carregarCustomJogos();
 
 function trocarLiga(liga) {
   // Guard 1: liga precisa existir no mapa
-  const ligaMap = { BR: window.DADOS_BR, MLS: window.DADOS_MLS, ARG: window.DADOS_ARG, USL: window.DADOS_USL, BUN: window.DADOS_BUN, ALM: window.DADOS_ALM, J1: window.DADOS_J1, CHI: window.DADOS_CHI, ECU: window.DADOS_ECU, ARG_B: window.DADOS_ARG_B };
+  const ligaMap = { BR: window.DADOS_BR, BR_B: window.DADOS_BR_B, ARG: window.DADOS_ARG, ARG_B: window.DADOS_ARG_B, MLS: window.DADOS_MLS, USL: window.DADOS_USL, BUN: window.DADOS_BUN };
   const novosDados = ligaMap[liga];
 
   // Guard 2: dataset precisa ter times E jogos com cantos válidos. Ligas só com
@@ -4916,6 +5139,8 @@ function trocarLiga(liga) {
   carregarBets();
   carregarJogosFuturos(); // ← CRÍTICO: recarrega jogos da rodada para a nova liga
   carregarEstadoCisneNegro(); // ← v1.1: restaura textarea+cards da nova liga
+  // Filtro OURO: invalida cache pra recalcular na nova liga
+  if (typeof _filtroOuroState !== 'undefined') _filtroOuroState.cache = null;
   // scChatHistory NÃO é mais zerado ao trocar liga (v3.4 — histórico persistente).
   // A sessão SmartCoach continua ativa, e a nova liga aparece no contexto da próxima mensagem.
   init();
@@ -5425,7 +5650,10 @@ const _PINNACLE_LIGA_MAP = {
   'Argentina - Primeira B Nacional': 'ARG_B',
   'Austrália - A-League': 'ALM',
   'Brasil - Série A': 'BR',
+  'Brasil - Série B': 'BR_B',
   'Chile - 1ª División': 'CHI',
+  'China - League One': 'CHN_1',
+  'China - Superliga': 'CHN_S',
   'EUA - Major League Soccer': 'MLS',
   'EUA - USL Championship': 'USL',
   'Equador - Série A': 'ECU',
@@ -5694,6 +5922,36 @@ function _betsFiltradas() {
   return customBets.filter(b => (b.liga || '') === trackerFiltroLiga);
 }
 
+// ── ROI BANCA — métrica de crescimento de patrimônio ──
+// Yield mede eficiência por aposta; ROI BANCA mede o crescimento da banca inicial.
+// Banca inicial é guardada por LIGA (ou geral se filtro = todas).
+function _bancaKey() {
+  return 'eds_banca_inicial' + (trackerFiltroLiga ? ('_' + trackerFiltroLiga) : '');
+}
+function getBancaInicial() {
+  const v = parseFloat(localStorage.getItem(_bancaKey()));
+  return isNaN(v) || v <= 0 ? 0 : v;
+}
+function setBancaInicial() {
+  const escopo = trackerFiltroLiga ? 'da liga ' + trackerFiltroLiga : 'geral (todas as ligas)';
+  const atual = getBancaInicial();
+  const v = prompt(
+    '🏦 Banca inicial ' + escopo + ' (R$)\n\n' +
+    'Usada para calcular ROI sobre Banca = quanto seu patrimônio cresceu.\n' +
+    'Diferente de Yield (eficiência por aposta).\n\n' +
+    'Deixe em branco para remover.',
+    atual || ''
+  );
+  if (v === null) return;
+  const valor = parseFloat((v || '').replace(',','.'));
+  if ((v||'').trim() === '' || isNaN(valor) || valor <= 0) {
+    localStorage.removeItem(_bancaKey());
+  } else {
+    localStorage.setItem(_bancaKey(), String(valor));
+  }
+  renderTracker();
+}
+
 function renderTracker() {
   // v2.0: tudo aqui opera sobre o filtro ativo (_betsFiltradas). Passa a
   // ser "diário de operações dessa liga" ou "diário geral" conforme seletor.
@@ -5727,17 +5985,33 @@ function renderTracker() {
     try { confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } }); } catch(e){}
   }
 
+  // ROI BANCA — calculado se o operador definiu banca inicial
+  const bancaInicial = getBancaInicial();
+  const bancaAtual = bancaInicial + roiAcumulado;
+  const roiBancaPct = bancaInicial > 0 ? (roiAcumulado / bancaInicial) * 100 : null;
+  const cardBancaCor = roiBancaPct === null ? 'var(--gold)'
+                     : roiBancaPct >= 0 ? 'var(--green)' : 'var(--red)';
+
   const cards = [
     { label:'Entradas Totais', value: totalBets, sub:'Registradas na máquina', icon:'📋' },
     { label:'Win Rate (Acertos)', value: fmt(winrate)+'%', sub: greens + ' Greens faturados', icon:'🎯' },
-    { label:'ROI Líquido', value: (roiAcumulado >= 0 ? '+' : '') + fmt(roiAcumulado) + 'u', sub:`💰 YIELD: <strong style="color:${yieldPct>=0?'var(--green)':'var(--red)'}">${yieldPct>=0?'+':''}${fmt(yieldPct)}%</strong>`, icon:'📈' }
+    { label:'ROI Líquido', value: (roiAcumulado >= 0 ? '+' : '') + fmt(roiAcumulado) + 'u', sub:`💰 YIELD: <strong style="color:${yieldPct>=0?'var(--green)':'var(--red)'}">${yieldPct>=0?'+':''}${fmt(yieldPct)}%</strong>`, icon:'📈' },
+    { label:'ROI Banca',
+      value: roiBancaPct !== null ? ((roiBancaPct >= 0 ? '+' : '') + fmt(roiBancaPct) + '%') : '⚙️ Definir',
+      sub: roiBancaPct !== null
+        ? `🏦 R$ ${fmt(bancaInicial)} → <strong style="color:${roiBancaPct>=0?'var(--green)':'var(--red)'}">R$ ${fmt(bancaAtual)}</strong>`
+        : '<span style="color:var(--gold);font-style:italic">Clique para definir banca inicial</span>',
+      icon:'🏦',
+      clickable: true,
+      cor: cardBancaCor
+    }
   ];
 
   document.getElementById('tracker-cards').innerHTML = cards.map(c => `
-    <div class="stat-card" style="border:${c.label==='ROI Líquido'?'2px solid var(--green)':''}">
+    <div class="stat-card" style="border:${c.label==='ROI Líquido'?'2px solid var(--green)':c.label==='ROI Banca'?'2px solid '+c.cor:''};${c.clickable?'cursor:pointer':''}" ${c.clickable?'onclick="setBancaInicial()" title="Clique para definir/atualizar banca inicial"':''}>
       <div class="icon">${c.icon}</div>
       <div class="label" style="color:var(--gold)">${c.label}</div>
-      <div class="value" style="color:${c.label==='ROI Líquido' && roiAcumulado < 0 ? 'var(--red)' : 'var(--text)'}">${c.value}</div>
+      <div class="value" style="color:${c.label==='ROI Líquido' && roiAcumulado < 0 ? 'var(--red)' : c.label==='ROI Banca' ? c.cor : 'var(--text)'}">${c.value}</div>
       <div class="sub">${c.sub}</div>
     </div>
   `).join('');
@@ -6520,7 +6794,9 @@ function getAppContext() {
     'view-tracker':'Bet Tracker', 'view-ouro':'Bala de Prata',
     'view-rodada':'Rodada', 'view-teacher':'Projeção Teacher',
     'view-apostas':'Apostas Reais', 'view-enigma':'Enigma',
-    'view-cisne-negro':'Cisne Negro', 'view-auditoria':'Auditoria' };
+    'view-cisne-negro':'Cisne Negro', 'view-vencedor-cantos':'Vencedor Cantos',
+    'view-filtro-ouro':'Filtro OURO',
+    'view-auditoria':'Auditoria' };
   const viewNome = NOMES_VIEW[mode] || mode;
 
   let ctx = `══ ESTADO DO APP (TEMPO REAL) ══\n`;
@@ -7367,7 +7643,25 @@ function processarTextoRodada() {
     document.getElementById('inp-jogos-texto').value = '';
     showView('rodada');
   } else {
-    if(txt.length > 5 && jogosFuturos.length > 0) { alert("✅ INFORMAÇÃO: A Inteligência leu seu texto, mas percebeu que os jogos já estão na sua lista abaixo (não foram duplicados).\n\nPara testar do zero, clique no botão 🗑️ Limpar Rodada primeiro."); } else { alert("⚠️ NENHUM time lido! (Falta de Cache)\n\n🔴 IMPORTANTE: Aperte Ctrl+F5 para forçar o navegador a baixar a versão corrigida do dicionário ARG."); }
+    if(txt.length > 5 && jogosFuturos.length > 0) {
+      alert("✅ INFORMAÇÃO: A Inteligência leu seu texto, mas percebeu que os jogos já estão na sua lista abaixo (não foram duplicados).\n\nPara testar do zero, clique no botão 🗑️ Limpar Rodada primeiro.");
+    } else {
+      const ligaInfo = (typeof AUDITORIA_LIGAS !== 'undefined') ? AUDITORIA_LIGAS.find(l => l.code === LIGA_ATUAL) : null;
+      const ligaLabel = ligaInfo ? `${ligaInfo.flag} ${ligaInfo.nome}` : LIGA_ATUAL;
+      const qtdTimes = (DADOS_2026 && DADOS_2026.times) ? DADOS_2026.times.length : 0;
+      const primeirasLinhas = (txt.split('\n').filter(l => l.trim().length > 3).slice(0,3).map(l => '   • ' + l.trim()).join('\n')) || '   (vazio)';
+      alert(
+        `⚠️ Nenhum time reconhecido na liga ativa.\n\n` +
+        `🏳️ Liga ativa: ${ligaLabel}  (LIGA_ATUAL=${LIGA_ATUAL})\n` +
+        `📚 Dicionário tem: ${qtdTimes} times\n\n` +
+        `Primeiras linhas do texto:\n${primeirasLinhas}\n\n` +
+        `🔧 Possíveis causas:\n` +
+        `  1. Liga ativa errada — troca no seletor pra liga do texto colado\n` +
+        `  2. Nomes muito diferentes do dicionário (OCR ruim)\n` +
+        `  3. Dataset da liga ainda sem times — rode o varredor\n\n` +
+        `Se acabou de atualizar o app, abra em janela anônima (Ctrl+Shift+N) ou limpe cache (Ctrl+Shift+Del).`
+      );
+    }
   }
 }
 
@@ -7767,15 +8061,12 @@ function _getAllTeamsFromAllLeagues() {
   // v3.1: TODAS as 10 ligas carregadas no app (antes só 5 eram reconhecidas)
   const allData = [
     { key: 'BR',    dados: window.DADOS_BR    },
-    { key: 'MLS',   dados: window.DADOS_MLS   },
-    { key: 'USL',   dados: window.DADOS_USL   },
+    { key: 'BR_B',  dados: window.DADOS_BR_B  },
     { key: 'ARG',   dados: window.DADOS_ARG   },
     { key: 'ARG_B', dados: window.DADOS_ARG_B },
-    { key: 'BUN',   dados: window.DADOS_BUN   },
-    { key: 'CL',    dados: window.DADOS_CHI   },
-    { key: 'ECU',   dados: window.DADOS_ECU   },
-    { key: 'ALM',   dados: window.DADOS_ALM   },
-    { key: 'J1',    dados: window.DADOS_J1    }
+    { key: 'MLS',   dados: window.DADOS_MLS   },
+    { key: 'USL',   dados: window.DADOS_USL   },
+    { key: 'BUN',   dados: window.DADOS_BUN   }
   ];
   allData.forEach(({ key, dados }) => {
     if (!dados || !dados.times) return;
@@ -8747,8 +9038,11 @@ function _dataIsoHoje() {
 //  FILTRO DE DATA — Teacher e Enigma (estado em memória)
 // ══════════════════════════════════════════════════
 let _filtroData = {
-  teacher: { modo: 'hoje', data: null }, // modo: 'hoje' | 'todas' | 'data'
-  enigma:  { modo: 'hoje', data: null }
+  teacher:           { modo: 'hoje', data: null }, // modo: 'hoje' | 'todas' | 'data'
+  enigma:            { modo: 'hoje', data: null },
+  'vencedor-cantos': { modo: 'hoje', data: null },
+  bala:              { modo: 'hoje', data: null }, // v3.1 (2026-05-10): filtro de data no BP
+  cisne:             { modo: 'hoje', data: null }  // v3.1 (2026-05-10): filtro de data no Cisne
 };
 
 function _filtrarJogosPorData(jogos, filtro) {
@@ -8782,7 +9076,11 @@ function _renderFiltroDataBar(view, jogos) {
   const cntSemData = jogos.filter(j => !j.data).length;
   const datasUnicas = [...new Set(jogos.filter(j => j.data).map(j => j.data))].sort();
   const exibidos = _filtrarJogosPorData(jogos, filtro).length;
-  const setFn = view === 'teacher' ? 'setFiltroDataTeacher' : 'setFiltroDataEnigma';
+  const setFn = view === 'teacher' ? 'setFiltroDataTeacher'
+              : view === 'enigma'  ? 'setFiltroDataEnigma'
+              : view === 'bala'    ? 'setFiltroDataBala'
+              : view === 'cisne'   ? 'setFiltroDataCisne'
+              : 'setFiltroDataVencedorCantos';
 
   const btnStyle = (ativo) => `padding:.5rem 1rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;transition:all .2s;${ativo ? 'background:var(--green);color:#000;border:1px solid var(--green);' : 'background:transparent;color:var(--muted);border:1px solid var(--border);'}`;
 
@@ -8820,6 +9118,28 @@ function setFiltroDataEnigma(modo, data) {
   renderEnigma();
 }
 
+function setFiltroDataVencedorCantos(modo, data) {
+  _filtroData['vencedor-cantos'] = { modo, data: data || null };
+  renderVencedorCantos();
+}
+
+function setFiltroDataBala(modo, data) {
+  _filtroData.bala = { modo, data: data || null };
+  renderOuro();
+}
+
+function setFiltroDataCisne(modo, data) {
+  _filtroData.cisne = { modo, data: data || null };
+  // Re-renderiza com a lista atual de cards salva no storage da liga ativa
+  const keys = _cisneStorageKeys();
+  const cardsJson = localStorage.getItem(keys.cards);
+  let lista = [];
+  if (cardsJson) {
+    try { lista = JSON.parse(cardsJson); } catch(e) {}
+  }
+  renderCisneNegroCards(lista);
+}
+
 // HTML inline de "selo de data/hora" para os cards
 function _seloDataHora(j) {
   if (!j.data && !j.hora) return '';
@@ -8827,6 +9147,784 @@ function _seloDataHora(j) {
   const hr = j.hora ? `🕒 ${j.hora}` : '';
   const sep = (dt && hr) ? ' · ' : '';
   return `<div style="font-size:.7rem;color:var(--gold);font-weight:700;margin-bottom:.2rem;">${dt}${sep}${hr}</div>`;
+}
+
+// ══════════════════════════════════════════════════
+//  VENCEDOR CANTOS — Laboratório de classificação (v1.0 — 2026-04-30)
+//  Foco: quem vence em cantos (HT/FT) + Δ + classificação por força.
+//  NÃO mostra total de cantos (Enigma já cobre). NÃO mexe no Cisne (preservado).
+// ══════════════════════════════════════════════════
+let _vencedorCantosState = {
+  filtroClasse: 'todos',  // todos | dominio_forte | reversoes
+  filtroLado:   'todos',  // todos | mandante | visitante
+  ordem:        'diff_ft_desc'  // diff_ft_desc | diff_ht_desc | cronologico
+};
+
+const _VC_CLASSES = {
+  DOMINIO_TOTAL: { ordem: 4, label: 'DOMÍNIO TOTAL', cor: 'var(--gold)',  bg: 'rgba(245,158,11,0.18)', borda: 'var(--gold)',                icon: '👑' },
+  FORTE:         { ordem: 3, label: 'FORTE',          cor: 'var(--green)', bg: 'rgba(52,211,103,0.15)',  borda: 'var(--green)',               icon: '⚫' },
+  CLARA:         { ordem: 2, label: 'CLARA',          cor: '#34d367',      bg: 'rgba(52,211,103,0.06)',  borda: 'rgba(52,211,103,0.4)',       icon: '🟢' },
+  LEVE:          { ordem: 1, label: 'LEVE',           cor: '#60a5fa',      bg: 'rgba(96,165,250,0.08)',  borda: 'rgba(96,165,250,0.4)',       icon: '💧' },
+  EQUILIBRADO:   { ordem: 0, label: 'EQUILIBRADO',    cor: 'var(--muted)', bg: 'rgba(107,143,121,0.08)', borda: 'var(--border)',              icon: '⚖️' }
+};
+
+// Classifica um jogo a partir da projeção do motor.
+// Retorna { vencedorHT, vencedorFT, diffHT, diffFT, classHT, classFT, reversao }
+function _classificarVencedorCantos(p) {
+  const expHomeHT = p.expHomeHT || 0;
+  const expAwayHT = p.expAwayHT || 0;
+  const expHomeFT = p.expHomeFT || 0;
+  const expAwayFT = p.expAwayFT || 0;
+
+  const diffHT = expHomeHT - expAwayHT;  // sinalizado: + = mandante, - = visitante
+  const diffFT = expHomeFT - expAwayFT;
+  const absHT = Math.abs(diffHT);
+  const absFT = Math.abs(diffFT);
+
+  const vencedorHT = absHT < 0.3 ? 'EQUIL' : (diffHT > 0 ? 'M' : 'V');
+  const vencedorFT = absFT < 0.5 ? 'EQUIL' : (diffFT > 0 ? 'M' : 'V');
+
+  // Classificação FT (escala principal)
+  let classFT = 'EQUILIBRADO';
+  if (absFT >= 4.0)      classFT = 'DOMINIO_TOTAL';
+  else if (absFT >= 2.5) classFT = 'FORTE';
+  else if (absFT >= 1.5) classFT = 'CLARA';
+  else if (absFT >= 0.5) classFT = 'LEVE';
+
+  // Classificação HT (escala proporcional ~50% do FT)
+  let classHT = 'EQUILIBRADO';
+  if (absHT >= 2.0)      classHT = 'DOMINIO_TOTAL';
+  else if (absHT >= 1.3) classHT = 'FORTE';
+  else if (absHT >= 0.7) classHT = 'CLARA';
+  else if (absHT >= 0.3) classHT = 'LEVE';
+
+  // Reversão = vencedores diferentes E ambos com sinal claro (>= 0.3 HT, >= 0.5 FT)
+  const reversao = vencedorHT !== 'EQUIL' && vencedorFT !== 'EQUIL'
+                && vencedorHT !== vencedorFT;
+
+  return { expHomeHT, expAwayHT, expHomeFT, expAwayFT,
+           diffHT, diffFT, absHT, absFT,
+           vencedorHT, vencedorFT, classHT, classFT, reversao };
+}
+
+function setVencedorCantosFiltro(tipo, valor) {
+  if (tipo === 'classe')      _vencedorCantosState.filtroClasse = valor;
+  else if (tipo === 'lado')   _vencedorCantosState.filtroLado = valor;
+  else if (tipo === 'ordem')  _vencedorCantosState.ordem = valor;
+  renderVencedorCantos();
+}
+
+function _renderVencedorCantosCard(r) {
+  const cFT = _VC_CLASSES[r.classFT];
+  const cHT = _VC_CLASSES[r.classHT];
+
+  const teamHT = r.vencedorHT === 'EQUIL' ? '⚖️ Equilíbrio'
+               : r.vencedorHT === 'M' ? '🏠 ' + r.m
+               : '✈️ ' + r.v;
+  const teamFT = r.vencedorFT === 'EQUIL' ? '⚖️ Equilíbrio'
+               : r.vencedorFT === 'M' ? '🏠 ' + r.m
+               : '✈️ ' + r.v;
+
+  const dtHora = (r.data || r.hora)
+    ? `<div style="font-size:.7rem;color:var(--gold);font-weight:700;margin-bottom:.4rem;">📅 ${_dataBrCurta(r.data)||'—'}${r.hora?' · 🕒 '+r.hora:''}</div>`
+    : '';
+
+  const tagCoerencia = r.reversao
+    ? `<span style="background:rgba(139,92,246,0.18);border:1px solid rgba(139,92,246,0.5);color:#a78bfa;font-size:.68rem;font-weight:800;padding:.2rem .6rem;border-radius:5px;letter-spacing:.3px;">⚡ REVERSÃO HT→FT</span>`
+    : (r.vencedorHT === r.vencedorFT && r.vencedorHT !== 'EQUIL'
+       ? `<span style="background:rgba(52,211,103,0.1);color:var(--green);font-size:.68rem;font-weight:700;padding:.2rem .6rem;border-radius:5px;">✅ COERENTE HT=FT</span>`
+       : `<span style="background:rgba(107,143,121,0.08);color:var(--muted);font-size:.68rem;font-weight:700;padding:.2rem .6rem;border-radius:5px;">— Sem padrão claro</span>`);
+
+  const borderStyle = r.reversao
+    ? 'border:2px solid rgba(139,92,246,0.55);box-shadow:0 0 18px rgba(139,92,246,0.15);'
+    : `border:1px solid ${cFT.borda};`;
+
+  return `
+    <div style="background:var(--card);${borderStyle}border-radius:12px;padding:1rem 1.1rem;margin-bottom:.7rem;">
+      ${dtHora}
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:.7rem;">
+        <span style="font-size:1rem;font-weight:800;color:var(--text);">${r.m} <span style="color:var(--muted);font-size:.78rem;">vs</span> ${r.v}</span>
+        ${tagCoerencia}
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;">
+        <!-- HT -->
+        <div style="background:${cHT.bg};border:1px solid ${cHT.borda};border-radius:8px;padding:.75rem;">
+          <div style="font-size:.6rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.35rem;">🏆 1º Tempo (HT)</div>
+          <div style="font-size:.95rem;font-weight:800;color:var(--text);margin-bottom:.25rem;">${teamHT}</div>
+          ${r.vencedorHT !== 'EQUIL' ? `<div style="font-size:.78rem;color:${cHT.cor};font-weight:700;">Vantagem: +${r.absHT.toFixed(1)} cantos</div>` : `<div style="font-size:.7rem;color:var(--muted);font-style:italic;">Δ ${r.absHT.toFixed(1)} cantos</div>`}
+          <div style="font-size:.62rem;color:${cHT.cor};font-weight:800;margin-top:.4rem;letter-spacing:.3px;">${cHT.icon} ${cHT.label}</div>
+        </div>
+        <!-- FT -->
+        <div style="background:${cFT.bg};border:1px solid ${cFT.borda};border-radius:8px;padding:.75rem;">
+          <div style="font-size:.6rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.35rem;">🏆 Jogo todo (FT)</div>
+          <div style="font-size:.95rem;font-weight:800;color:var(--text);margin-bottom:.25rem;">${teamFT}</div>
+          ${r.vencedorFT !== 'EQUIL' ? `<div style="font-size:.78rem;color:${cFT.cor};font-weight:700;">Vantagem: +${r.absFT.toFixed(1)} cantos</div>` : `<div style="font-size:.7rem;color:var(--muted);font-style:italic;">Δ ${r.absFT.toFixed(1)} cantos</div>`}
+          <div style="font-size:.62rem;color:${cFT.cor};font-weight:800;margin-top:.4rem;letter-spacing:.3px;">${cFT.icon} ${cFT.label}</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderVencedorCantos() {
+  const ctr = document.getElementById('wrapper-vencedor-cantos');
+  if (!ctr) return;
+
+  if (!jogosFuturos || jogosFuturos.length === 0) {
+    ctr.innerHTML = `<div class="empty"><div class="eicon">📭</div>
+      <strong>Nenhum jogo na rodada</strong>
+      <p>Importe os jogos na aba "📥 Adicionar Jogos" e volte ao Vencedor Cantos.</p>
+      <button onclick="showView('adicionar')" style="margin-top:1rem;background:linear-gradient(135deg,#fbbf24,#f59e0b);border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;cursor:pointer;">📥 Ir para Adicionar Jogos</button>
+    </div>`;
+    return;
+  }
+
+  const timesAtivos = new Set(DADOS_2026.times || []);
+  const jogosValidos = jogosFuturos.filter(j => timesAtivos.has(j.m) && timesAtivos.has(j.v));
+  if (!jogosValidos.length) {
+    ctr.innerHTML = `<div class="empty"><div class="eicon">⚠️</div><strong>Times não reconhecidos</strong><p>Verifique se os nomes dos times correspondem à liga carregada.</p></div>`;
+    return;
+  }
+
+  // Filtro de data (reusa)
+  const filtroBar = _renderFiltroDataBar('vencedor-cantos', jogosValidos);
+  const jogosPorData = _filtrarJogosPorData(jogosValidos, _filtroData['vencedor-cantos']);
+
+  // Calcula classificação para cada jogo
+  let resultados = jogosPorData.map(j => {
+    const p = projecaoJogo(j.m, j.v);
+    if (!p) return null;
+    const c = _classificarVencedorCantos(p);
+    return { m: j.m, v: j.v, data: j.data, hora: j.hora, ...c };
+  }).filter(Boolean);
+
+  // Sumário (sobre TODOS antes dos filtros de classe/lado, pra contadores fiéis)
+  const cont = { DOMINIO_TOTAL: 0, FORTE: 0, CLARA: 0, LEVE: 0, EQUILIBRADO: 0, REVERSAO: 0 };
+  resultados.forEach(r => {
+    cont[r.classFT]++;
+    if (r.reversao) cont.REVERSAO++;
+  });
+
+  // Aplicar filtros de classe e lado
+  let filtrados = resultados;
+  const st = _vencedorCantosState;
+  if (st.filtroClasse === 'dominio_forte') {
+    filtrados = filtrados.filter(r => ['DOMINIO_TOTAL','FORTE'].includes(r.classFT));
+  } else if (st.filtroClasse === 'reversoes') {
+    filtrados = filtrados.filter(r => r.reversao);
+  }
+  if (st.filtroLado === 'mandante') filtrados = filtrados.filter(r => r.vencedorFT === 'M');
+  else if (st.filtroLado === 'visitante') filtrados = filtrados.filter(r => r.vencedorFT === 'V');
+
+  // Ordenação
+  if (st.ordem === 'diff_ft_desc') filtrados.sort((a,b) => b.absFT - a.absFT);
+  else if (st.ordem === 'diff_ht_desc') filtrados.sort((a,b) => b.absHT - a.absHT);
+  else if (st.ordem === 'cronologico') filtrados.sort((a,b) => {
+    if (a.data && b.data && a.data !== b.data) return a.data < b.data ? -1 : 1;
+    if (a.data && !b.data) return -1;
+    if (!a.data && b.data) return 1;
+    if (a.hora && b.hora && a.hora !== b.hora) return a.hora < b.hora ? -1 : 1;
+    return 0;
+  });
+
+  // ── Sumário ──
+  const sumario = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin-bottom:1.2rem;">
+      ${['DOMINIO_TOTAL','FORTE','CLARA','LEVE','EQUILIBRADO'].map(cls => {
+        const opts = _VC_CLASSES[cls];
+        return `<div style="background:${opts.bg};border:1px solid ${opts.borda};border-radius:10px;padding:.7rem;text-align:center;">
+          <div style="font-size:1.5rem;font-weight:900;color:${opts.cor};">${cont[cls]}</div>
+          <div style="font-size:.6rem;color:${opts.cor};font-weight:700;text-transform:uppercase;letter-spacing:.3px;">${opts.icon} ${opts.label}</div>
+        </div>`;
+      }).join('')}
+      <div style="background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.45);border-radius:10px;padding:.7rem;text-align:center;">
+        <div style="font-size:1.5rem;font-weight:900;color:#a78bfa;">${cont.REVERSAO}</div>
+        <div style="font-size:.6rem;color:#a78bfa;font-weight:700;text-transform:uppercase;letter-spacing:.3px;">⚡ REVERSÃO</div>
+      </div>
+    </div>
+  `;
+
+  // ── Filtros extras ──
+  const filtrosExtras = `
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:.7rem 1rem;margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;">
+      <span style="font-size:.7rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.5px;">🎚️ Refinar:</span>
+      <select onchange="setVencedorCantosFiltro('classe', this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .7rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;outline:none;">
+        <option value="todos" ${st.filtroClasse==='todos'?'selected':''}>🏆 Todas as classes</option>
+        <option value="dominio_forte" ${st.filtroClasse==='dominio_forte'?'selected':''}>👑 Domínio + Forte</option>
+        <option value="reversoes" ${st.filtroClasse==='reversoes'?'selected':''}>⚡ Só Reversões</option>
+      </select>
+      <select onchange="setVencedorCantosFiltro('lado', this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .7rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;outline:none;">
+        <option value="todos" ${st.filtroLado==='todos'?'selected':''}>🔄 Todos os lados</option>
+        <option value="mandante" ${st.filtroLado==='mandante'?'selected':''}>🏠 Só mandantes</option>
+        <option value="visitante" ${st.filtroLado==='visitante'?'selected':''}>✈️ Só visitantes</option>
+      </select>
+      <select onchange="setVencedorCantosFiltro('ordem', this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .7rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;outline:none;">
+        <option value="diff_ft_desc" ${st.ordem==='diff_ft_desc'?'selected':''}>📊 Δ FT (maior primeiro)</option>
+        <option value="diff_ht_desc" ${st.ordem==='diff_ht_desc'?'selected':''}>📊 Δ HT (maior primeiro)</option>
+        <option value="cronologico" ${st.ordem==='cronologico'?'selected':''}>⏰ Cronológico</option>
+      </select>
+      <span style="margin-left:auto;font-size:.75rem;color:var(--muted);font-weight:600;">Mostrando <strong style="color:var(--text);">${filtrados.length}</strong>/${resultados.length}</span>
+    </div>
+  `;
+
+  // ── Cards ──
+  const cards = filtrados.length === 0
+    ? `<div style="text-align:center;padding:2rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px;">
+        <div style="font-size:2.5rem;margin-bottom:.5rem;">📭</div>
+        <strong>Nenhum jogo bate com os filtros atuais.</strong><br>
+        <span style="font-size:.8rem;">Mude o filtro de classe/lado ou clique em "🌐 Visão Geral".</span>
+      </div>`
+    : filtrados.map(_renderVencedorCantosCard).join('');
+
+  ctr.innerHTML = filtroBar + sumario + filtrosExtras + cards;
+}
+
+// Export HTML standalone (visual idêntico ao app)
+function exportarVencedorCantosHTML() {
+  const ctr = document.getElementById('wrapper-vencedor-cantos');
+  if (!ctr || !ctr.innerHTML.trim()) {
+    alert('Renderize a aba primeiro (entre em "🏆 Vencedor Cantos").');
+    return;
+  }
+  // Conta cards renderizados
+  const cards = ctr.querySelectorAll('[style*="border-radius:12px"][style*="margin-bottom:.7rem"]').length;
+
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('button, select').forEach(el => el.remove());
+  clone.querySelectorAll('[onclick]').forEach(el => { el.removeAttribute('onclick'); el.style.cursor = 'default'; });
+
+  if (typeof _exportarAnaliseHTML === 'function') {
+    _exportarAnaliseHTML({
+      titulo: '🏆 Vencedor Cantos',
+      subtitulo: `Classificação por força do sinal · ${cards} jogo${cards!==1?'s':''} analisado${cards!==1?'s':''}`,
+      conteudoHTML: clone.innerHTML,
+      prefixoArquivo: 'VencedorCantos',
+      corHeader: 'var(--gold)'
+    });
+  } else {
+    alert('Helper de export não disponível.');
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  FILTRO OURO — Entradas refinadas (por liga ativa)
+//  Critérios validados em 358 apostas reais (Pinnacle + Betano)
+// ══════════════════════════════════════════════════════════════════
+// Pesos validados:
+// - Reis ABSOLUTO 81.8% win → peso 25
+// - BP NUCLEAR 64.5% win → peso 20
+// - HDP linha ±2 70.8% win → peso 25 (Cisne Negro implícito)
+// - Mandante 76% vs Visitante 54% → peso 8 mandante
+// - Ligas premium ARG_B 31.7% ROI, ALM 14.6%, BUN 8.3% → peso 10
+// - Ligas ruins BR -7.5% ROI, CHI -7.6%, ECU -71% → penalidade -15
+// ══════════════════════════════════════════════════════════════════
+
+// v2.0 (2026-05-08): redefinido após auditoria 01-04/05 + remoção de 10 ligas
+const FILTRO_OURO_LIGAS_PREMIUM_VEN = ['ARG', 'ARG_B', 'MLS'];  // 80%+ na rodada
+const FILTRO_OURO_LIGAS_RUINS_VEN   = ['BR'];                    // 33% Cisne histórico
+const FILTRO_OURO_LIGAS_PREMIUM_UND = ['ARG_B', 'BR_B', 'MLS']; // ARG removida (Vencedor explode total)
+const FILTRO_OURO_LIGAS_RUINS_UND   = ['BUN', 'USL'];            // BUN/USL Under volátil
+const FILTRO_OURO_SCORE_MIN_VEN = 60;
+const FILTRO_OURO_SCORE_MIN_UND = 55;
+
+let _filtroOuroState = {
+  abaAtiva: 'vencedor', // vencedor | under | lista-negra | multiplas
+  cache: null,           // resultado de gerarFiltroOuroLigaAtual
+  cacheTimestamp: null
+};
+
+function _scoreVencedor(p, liga) {
+  let s = 0;
+  if (!p) return 0;
+  // v3.0 (2026-05-10): aplica multiplicadores por arquétipo da liga.
+  // Ofensivas (BR/BR_B/MLS): mantém todos os pesos (já funcionavam).
+  // Equilibradas (BUN/USL): reduz peso de FORTE/MODERADA (50% WR não compensa).
+  // Trucadas (ARG/ARG_B): zera MODERADA (era armadilha 40% WR), aumenta NUCLEAR/ABSOLUTO (70-100% WR).
+  const mult = getArqMult(liga);
+
+  // Reis dos Cantos
+  if (p.reisDosCantosData && p.reisDosCantosData.faixa) {
+    const f = p.reisDosCantosData.faixa;
+    if (f === 'ABSOLUTO') s += 25 * mult.reis_absoluto;
+    else if (f === 'DOMINANTE') s += 18 * mult.reis_dominante;
+    else if (f === 'MODERADO') s += 10 * mult.reis_moderado;
+  }
+
+  // Bala de Prata
+  if (p.balaDePrataData && p.balaDePrataData.faixa) {
+    const f = p.balaDePrataData.faixa;
+    if (f === 'NUCLEAR') s += 20 * mult.bp_nuclear;
+    else if (f === 'FORTE') s += 12 * mult.bp_forte;
+    else if (f === 'MODERADA') s += 5 * mult.bp_moderada;
+  }
+
+  // Δ projetado (Cisne Negro implícito)
+  const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
+  if (diff >= 4.0) s += 25 * mult.diff_alto;
+  else if (diff >= 3.0) s += 18 * mult.diff_alto;
+  else if (diff >= 2.0) s += 12;
+  else if (diff >= 1.5) s += 6;
+
+  // Mandante apontado (76% vs Visitante 54% — validado nos dados)
+  if ((p.expHomeFT||0) > (p.expAwayFT||0)) s += 8;
+
+  // Liga
+  if (FILTRO_OURO_LIGAS_PREMIUM_VEN.indexOf(liga) >= 0) s += 10;
+  if (FILTRO_OURO_LIGAS_RUINS_VEN.indexOf(liga) >= 0) s -= 15;
+
+  // Confiança
+  if ((p.confFT||0) >= 70) s += 5;
+
+  return Math.max(0, Math.min(100, s));
+}
+
+function _scoreUnder(p, liga) {
+  let s = 0;
+  if (!p || !p.tiroSniperData) return 0;
+  // v3.0 (2026-05-10): trucadas (ARG/ARG_B) ganham bonus extra no Under
+  // (×1.25), porque jogo travado favorece Under. Equilibradas (BUN/USL)
+  // perdem peso (×0.8) — Under nessas ligas é mais volátil.
+  const mult = getArqMult(liga);
+  const sn = p.tiroSniperData;
+
+  // Sniper UNDER FT/HT
+  if (sn.ft && typeof sn.ft === 'string' && sn.ft.indexOf('UNDER') === 0) s += 25;
+  if (sn.ht && typeof sn.ht === 'string' && sn.ht.indexOf('UNDER') === 0) s += 15;
+
+  // exp_ft baixa
+  if ((p.expTotalFT||99) <= 7) s += 20;
+  else if ((p.expTotalFT||99) <= 8.5) s += 12;
+
+  // Confiança
+  if ((p.confFT||0) >= 70) s += 15;
+  else if ((p.confFT||0) >= 60) s += 8;
+
+  // Liga premium UND com multiplicador por arquétipo (trucadas valem +25)
+  if (FILTRO_OURO_LIGAS_PREMIUM_UND.indexOf(liga) >= 0) s += 20 * mult.under_premium;
+  if (FILTRO_OURO_LIGAS_RUINS_UND.indexOf(liga) >= 0) s -= 10;
+
+  return Math.max(0, Math.min(100, s));
+}
+
+// Calcula linha sugerida pra HDP baseado no Δ projetado
+function _linhaHDPSugerida(diff) {
+  if (diff >= 4.0) return '-2.5';
+  if (diff >= 3.0) return '-2.0';
+  if (diff >= 2.0) return '-1.5';
+  if (diff >= 1.5) return '-1.0';
+  return '-0.5';
+}
+
+// Engine por liga — processa APENAS a liga ativa (LIGA_ATUAL)
+// Mais simples, foco operacional, sem swap de estado.
+function gerarFiltroOuroLigaAtual() {
+  const ligaInfo = AUDITORIA_LIGAS.find(l => l.code === LIGA_ATUAL);
+  const ligaFlag = ligaInfo ? ligaInfo.flag : '🏳️';
+  const ligaNome = ligaInfo ? ligaInfo.nome : LIGA_ATUAL;
+
+  const resultados = [];
+  const hojeIso = _dataIsoHoje();
+
+  // Filtro de rodada ativa: só jogos com data >= hoje OU sem data
+  const jogosRodada = (jogosFuturos || []).filter(j => !j.data || j.data >= hojeIso);
+
+  jogosRodada.forEach(j => {
+    try {
+      const p = projecaoJogo(j.m, j.v);
+      if (!p) return;
+      const sV = _scoreVencedor(p, LIGA_ATUAL);
+      const sU = _scoreUnder(p, LIGA_ATUAL);
+      const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
+      const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
+      resultados.push({
+        liga: LIGA_ATUAL,
+        ligaFlag,
+        ligaNome,
+        m: j.m, v: j.v, data: j.data, hora: j.hora,
+        scoreVencedor: sV,
+        scoreUnder: sU,
+        favorito,
+        diff: diff,
+        linhaHDPSugerida: _linhaHDPSugerida(diff),
+        expFT: p.expTotalFT || 0,
+        expHT: p.expTotalHT || 0,
+        confFT: p.confFT || 0,
+        reisFaixa: p.reisDosCantosData ? p.reisDosCantosData.faixa : null,
+        reisOdd: p.reisDosCantosData ? p.reisDosCantosData.odd : null,
+        bpFaixa: p.balaDePrataData ? p.balaDePrataData.faixa : null,
+        sniperFT: p.tiroSniperData ? p.tiroSniperData.ft : null,
+        sniperHT: p.tiroSniperData ? p.tiroSniperData.ht : null
+      });
+    } catch(e) {}
+  });
+
+  return {
+    resultados,
+    liga: LIGA_ATUAL,
+    ligaFlag,
+    ligaNome,
+    totalRodada: jogosRodada.length,
+    geradoEm: new Date().toISOString()
+  };
+}
+
+function recalcularFiltroOuro() {
+  // Cache é por liga — limpa só a da liga ativa
+  _filtroOuroState.cache = null;
+  renderFiltroOuro();
+}
+
+function setFiltroOuroAba(aba) {
+  _filtroOuroState.abaAtiva = aba;
+  renderFiltroOuro();
+}
+
+function renderFiltroOuro() {
+  const ctr = document.getElementById('wrapper-filtro-ouro');
+  if (!ctr) return;
+
+  // Cache por liga — invalida se a liga mudou
+  if (!_filtroOuroState.cache || _filtroOuroState.cache.liga !== LIGA_ATUAL) {
+    _filtroOuroState.cache = gerarFiltroOuroLigaAtual();
+    _filtroOuroState.cacheTimestamp = Date.now();
+  }
+
+  const dados = _filtroOuroState.cache;
+
+  // Empty state — nenhum jogo na rodada ativa da liga
+  if (!dados || !dados.resultados || dados.resultados.length === 0) {
+    ctr.innerHTML = `<div class="empty"><div class="eicon">📭</div>
+      <strong>Nenhum jogo na rodada ativa de ${dados ? dados.ligaFlag + ' ' + dados.ligaNome : LIGA_ATUAL}</strong>
+      <p>Importe os jogos da próxima rodada em "📥 Adicionar Jogos" para esta liga.</p>
+      <button onclick="showView('adicionar')" style="margin-top:1rem;background:linear-gradient(135deg,#fbbf24,#f59e0b);border:none;color:#000;padding:.6rem 1.2rem;border-radius:8px;font-weight:800;cursor:pointer;">📥 Ir para Adicionar Jogos</button>
+    </div>`;
+    return;
+  }
+
+  // Painel resumo no topo
+  const ouroVen = dados.resultados.filter(r => r.scoreVencedor >= FILTRO_OURO_SCORE_MIN_VEN).length;
+  const ouroUnd = dados.resultados.filter(r => r.scoreUnder >= FILTRO_OURO_SCORE_MIN_UND).length;
+  const listaNegra = dados.resultados.filter(r => _ehListaNegra(r)).length;
+  const totalJogos = dados.resultados.length;
+  const ts = new Date(_filtroOuroState.cacheTimestamp);
+  const tsStr = ts.toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' });
+
+  const painelResumo = `
+    <div style="background:linear-gradient(135deg,rgba(251,191,36,0.10),rgba(245,158,11,0.06));border:2px solid var(--gold);border-radius:14px;padding:1.2rem 1.5rem;margin-bottom:1.5rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">
+        <div>
+          <div style="font-size:1.1rem;font-weight:800;color:var(--gold);">🥇 ${dados.ligaFlag} ${dados.ligaNome}</div>
+          <div style="font-size:.78rem;color:var(--muted);margin-top:.2rem;">${totalJogos} jogos da rodada ativa · Calculado às ${tsStr} · Critérios validados em 358 apostas reais</div>
+        </div>
+        <div style="font-size:.7rem;color:var(--muted);font-style:italic;text-align:right;">💡 Troque a liga no seletor do header para ver outras ligas</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;">
+        <div style="background:rgba(245,158,11,0.15);border:1px solid var(--gold);border-radius:10px;padding:.7rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:var(--gold);">${ouroVen}</div>
+          <div style="font-size:.65rem;color:var(--gold);font-weight:800;">🏆 OURO VENCEDOR</div>
+        </div>
+        <div style="background:rgba(96,165,250,0.12);border:1px solid #60a5fa;border-radius:10px;padding:.7rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:#60a5fa;">${ouroUnd}</div>
+          <div style="font-size:.65rem;color:#60a5fa;font-weight:800;">📊 OURO UNDER</div>
+        </div>
+        <div style="background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.5);border-radius:10px;padding:.7rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:#f87171;">${listaNegra}</div>
+          <div style="font-size:.65rem;color:#f87171;font-weight:800;">🚨 LISTA NEGRA</div>
+        </div>
+        <div style="background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.5);border-radius:10px;padding:.7rem;text-align:center;">
+          <div style="font-size:1.6rem;font-weight:900;color:#a78bfa;">${totalJogos}</div>
+          <div style="font-size:.65rem;color:#a78bfa;font-weight:800;">⚽ TOTAL JOGOS</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Tabs
+  const aba = _filtroOuroState.abaAtiva;
+  const tabBtnStyle = (ativo) => `padding:.7rem 1.2rem;border-radius:8px;font-size:.82rem;font-weight:800;cursor:pointer;transition:all .15s;border:1px solid ${ativo ? 'var(--gold)' : 'var(--border)'};${ativo ? 'background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#000;box-shadow:0 4px 12px rgba(245,158,11,0.3);' : 'background:transparent;color:var(--muted);'}`;
+  const tabs = `
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+      <button onclick="setFiltroOuroAba('vencedor')" style="${tabBtnStyle(aba==='vencedor')}">🏆 Vencedor em Cantos (${ouroVen})</button>
+      <button onclick="setFiltroOuroAba('under')" style="${tabBtnStyle(aba==='under')}">📊 Over/Under (${ouroUnd})</button>
+      <button onclick="setFiltroOuroAba('lista-negra')" style="${tabBtnStyle(aba==='lista-negra')}">🚨 Lista Negra (${listaNegra})</button>
+      <button onclick="setFiltroOuroAba('multiplas')" style="${tabBtnStyle(aba==='multiplas')}">🎲 Múltiplas da Rodada</button>
+    </div>
+  `;
+
+  // Conteúdo da aba
+  let conteudo = '';
+  if (aba === 'vencedor') conteudo = _renderFiltroOuroTabVencedor(dados);
+  else if (aba === 'under') conteudo = _renderFiltroOuroTabUnder(dados);
+  else if (aba === 'lista-negra') conteudo = _renderFiltroOuroTabListaNegra(dados);
+  else if (aba === 'multiplas') conteudo = _renderFiltroOuroTabMultiplas(dados);
+
+  ctr.innerHTML = painelResumo + tabs + conteudo;
+}
+
+function _ehListaNegra(r) {
+  // Combos historicamente perdedores (validados em 358 apostas + auditoria 01-04/05)
+  if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) return true; // BR HDP perde
+  // Ligas catastróficas (CHI/ECU/CHN_SUP) foram removidas do app v2.0
+  return false;
+}
+
+function _renderFiltroOuroTabVencedor(dados) {
+  const filtrados = dados.resultados
+    .filter(r => r.scoreVencedor >= FILTRO_OURO_SCORE_MIN_VEN)
+    .sort((a,b) => b.scoreVencedor - a.scoreVencedor);
+  if (filtrados.length === 0) {
+    return `<div style="text-align:center;padding:3rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px;">
+      <div style="font-size:2.5rem;margin-bottom:.5rem;">📭</div>
+      <strong>Nenhum jogo OURO Vencedor nesta rodada.</strong><br>
+      <span style="font-size:.85rem;">Score mínimo: ${FILTRO_OURO_SCORE_MIN_VEN}/100. Reduza o filtro ou aguarde mais rodadas.</span>
+    </div>`;
+  }
+  return filtrados.map(r => _cardOuroVencedor(r)).join('');
+}
+
+function _cardOuroVencedor(r) {
+  const dt = (r.data || r.hora) ? `<div style="font-size:.7rem;color:var(--gold);font-weight:700;margin-bottom:.4rem;">${_dataBrCurta(r.data)||''}${r.hora?' · 🕒 '+r.hora:''}</div>` : '';
+  const estrelas = r.scoreVencedor >= 90 ? '⭐⭐⭐⭐⭐' : r.scoreVencedor >= 80 ? '⭐⭐⭐⭐' : r.scoreVencedor >= 70 ? '⭐⭐⭐' : '⭐⭐';
+  const reisInfo = r.reisFaixa ? `Reis ${r.reisFaixa} (odd ${r.reisOdd?r.reisOdd.toFixed(2):'?'})` : '';
+  const bpInfo = r.bpFaixa ? `BP ${r.bpFaixa}` : '';
+
+  return `
+    <div style="background:linear-gradient(135deg,var(--card),rgba(245,158,11,0.04));border:2px solid var(--gold);border-radius:14px;padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:0 4px 16px rgba(245,158,11,0.12);">
+      ${dt}
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.7rem;">
+        <div>
+          <div style="font-size:.7rem;color:var(--gold);font-weight:800;letter-spacing:.5px;text-transform:uppercase;">🥇 OURO VENCEDOR ${estrelas}</div>
+          <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-top:.2rem;">${r.ligaFlag} ${r.m} <span style="color:var(--muted);font-size:.8rem;">×</span> ${r.v}</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--gold);line-height:1;">${r.scoreVencedor}</div>
+          <div style="font-size:.6rem;color:var(--muted);font-weight:700;">SCORE / 100</div>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:.7rem;margin-bottom:.6rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;font-size:.78rem;">
+          <div>🏆 <strong style="color:var(--green);">Favorito</strong>: ${r.favorito}</div>
+          <div>📊 <strong style="color:var(--gold);">Linha sugerida</strong>: HDP ${r.linhaHDPSugerida}</div>
+          <div>📈 Δ projetado: <strong>${r.diff.toFixed(1)} cantos</strong></div>
+          <div>🎯 Confiança: <strong>${r.confFT.toFixed(0)}%</strong></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;font-size:.7rem;">
+        ${r.reisFaixa ? `<span style="background:rgba(245,158,11,0.15);border:1px solid var(--gold);color:var(--gold);padding:.2rem .5rem;border-radius:5px;font-weight:700;">${reisInfo}</span>` : ''}
+        ${r.bpFaixa ? `<span style="background:rgba(52,211,103,0.12);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">${bpInfo}</span>` : ''}
+        ${r.diff >= 2.0 ? `<span style="background:rgba(167,139,250,0.12);border:1px solid #a78bfa;color:#a78bfa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">🦢 Cisne ativo</span>` : ''}
+        ${FILTRO_OURO_LIGAS_PREMIUM_VEN.indexOf(r.liga) >= 0 ? `<span style="background:rgba(52,211,103,0.10);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">Liga premium (${r.liga})</span>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function _renderFiltroOuroTabUnder(dados) {
+  const filtrados = dados.resultados
+    .filter(r => r.scoreUnder >= FILTRO_OURO_SCORE_MIN_UND)
+    .sort((a,b) => b.scoreUnder - a.scoreUnder);
+  if (filtrados.length === 0) {
+    return `<div style="text-align:center;padding:3rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px;">
+      <div style="font-size:2.5rem;margin-bottom:.5rem;">📭</div>
+      <strong>Nenhum jogo OURO Under nesta rodada.</strong>
+    </div>`;
+  }
+  return filtrados.map(r => _cardOuroUnder(r)).join('');
+}
+
+function _cardOuroUnder(r) {
+  const dt = (r.data || r.hora) ? `<div style="font-size:.7rem;color:#60a5fa;font-weight:700;margin-bottom:.4rem;">${_dataBrCurta(r.data)||''}${r.hora?' · 🕒 '+r.hora:''}</div>` : '';
+  const estrelas = r.scoreUnder >= 90 ? '⭐⭐⭐⭐⭐' : r.scoreUnder >= 80 ? '⭐⭐⭐⭐' : r.scoreUnder >= 70 ? '⭐⭐⭐' : '⭐⭐';
+  const linhaUnder = r.expFT <= 7 ? 'UNDER 9.5' : r.expFT <= 8.5 ? 'UNDER 10' : 'UNDER 10.5';
+
+  return `
+    <div style="background:linear-gradient(135deg,var(--card),rgba(96,165,250,0.04));border:2px solid #60a5fa;border-radius:14px;padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:0 4px 16px rgba(96,165,250,0.12);">
+      ${dt}
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.7rem;">
+        <div>
+          <div style="font-size:.7rem;color:#60a5fa;font-weight:800;letter-spacing:.5px;text-transform:uppercase;">📊 OURO UNDER ${estrelas}</div>
+          <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-top:.2rem;">${r.ligaFlag} ${r.m} <span style="color:var(--muted);font-size:.8rem;">×</span> ${r.v}</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:1.8rem;font-weight:900;color:#60a5fa;line-height:1;">${r.scoreUnder}</div>
+          <div style="font-size:.6rem;color:var(--muted);font-weight:700;">SCORE / 100</div>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(96,165,250,0.25);border-radius:8px;padding:.7rem;margin-bottom:.6rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;font-size:.78rem;">
+          <div>📊 <strong style="color:#60a5fa;">Linha sugerida</strong>: ${linhaUnder}</div>
+          <div>📉 exp_ft: <strong>${r.expFT.toFixed(1)} cantos</strong></div>
+          <div>⏱️ Sniper FT: <strong>${r.sniperFT||'—'}</strong></div>
+          <div>🎯 Confiança: <strong>${r.confFT.toFixed(0)}%</strong></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.4rem;font-size:.7rem;">
+        ${r.sniperHT && r.sniperHT.indexOf('UNDER')===0 ? `<span style="background:rgba(96,165,250,0.15);border:1px solid #60a5fa;color:#60a5fa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">UNDER HT confirmado</span>` : ''}
+        ${FILTRO_OURO_LIGAS_PREMIUM_UND.indexOf(r.liga) >= 0 ? `<span style="background:rgba(52,211,103,0.10);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">Liga UNDER premium (${r.liga})</span>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function _renderFiltroOuroTabListaNegra(dados) {
+  const filtrados = dados.resultados.filter(r => _ehListaNegra(r)).sort((a,b) => a.liga.localeCompare(b.liga));
+  if (filtrados.length === 0) {
+    return `<div style="text-align:center;padding:3rem;color:var(--green);background:rgba(52,211,103,0.05);border:1px solid var(--green);border-radius:12px;">
+      <div style="font-size:2.5rem;margin-bottom:.5rem;">✅</div>
+      <strong>Nenhum jogo na lista negra desta rodada.</strong><br>
+      <span style="font-size:.85rem;color:var(--muted);">Boa rodada para operar — sem combos historicamente perdedores.</span>
+    </div>`;
+  }
+  return `<div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:1rem 1.2rem;margin-bottom:1rem;">
+    <div style="font-size:.85rem;color:#f87171;font-weight:800;margin-bottom:.4rem;">🚨 EVITAR — combos historicamente perdedores</div>
+    <div style="font-size:.78rem;color:var(--text);">Estes jogos batem com critérios que historicamente PERDEM dinheiro (ROI negativo em 358 apostas auditadas). Considere pular ou operar mercado diferente.</div>
+  </div>` + filtrados.map(r => _cardListaNegra(r)).join('');
+}
+
+function _cardListaNegra(r) {
+  const motivos = [];
+  if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga BR Série A em HDP: 45.5% win, ROI -10.6% (n=11)');
+  // CHI/ECU/CHN_SUP removidas do app v2.0; motivos podados.
+
+  return `
+    <div style="background:rgba(239,68,68,0.05);border:2px solid rgba(239,68,68,0.4);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.6rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem;">
+        <div style="font-size:1rem;font-weight:800;color:var(--text);">${r.ligaFlag} ${r.m} × ${r.v}</div>
+        <span style="background:rgba(239,68,68,0.18);border:1px solid rgba(239,68,68,0.5);color:#f87171;font-size:.65rem;font-weight:800;padding:.2rem .5rem;border-radius:5px;">🚨 EVITAR</span>
+      </div>
+      ${motivos.map(m => `<div style="font-size:.75rem;color:#f87171;margin-bottom:.2rem;">• ${m}</div>`).join('')}
+      <div style="font-size:.7rem;color:var(--muted);margin-top:.4rem;font-style:italic;">💡 Recomendação: pular este jogo OU operar Over/Under em vez de HDP.</div>
+    </div>
+  `;
+}
+
+function _renderFiltroOuroTabMultiplas(dados) {
+  const top5Ven = dados.resultados
+    .filter(r => r.scoreVencedor >= FILTRO_OURO_SCORE_MIN_VEN)
+    .sort((a,b) => b.scoreVencedor - a.scoreVencedor)
+    .slice(0, 5);
+
+  const top5Und = dados.resultados
+    .filter(r => r.scoreUnder >= FILTRO_OURO_SCORE_MIN_UND)
+    .sort((a,b) => b.scoreUnder - a.scoreUnder)
+    .slice(0, 5);
+
+  // Odd estimada (proporcional ao score, default ~1.85-1.95)
+  const oddEstimada = (score) => 1.50 + ((100 - score) / 100) * 0.80; // score 100 → 1.50, score 60 → 1.82
+  const probEstimada = (score) => 0.50 + (score / 100) * 0.30; // score 100 → 80%, score 60 → 68%
+
+  const oddCombinada = (lista) => lista.reduce((acc, r) => acc * oddEstimada(r.scoreVencedor || r.scoreUnder), 1);
+  const probCombinada = (lista) => lista.reduce((acc, r) => acc * probEstimada(r.scoreVencedor || r.scoreUnder), 1);
+
+  if (top5Ven.length === 0 && top5Und.length === 0) {
+    return `<div style="text-align:center;padding:3rem;color:var(--muted);background:var(--bg3);border:1px dashed var(--border);border-radius:12px;">
+      <div style="font-size:2.5rem;margin-bottom:.5rem;">📭</div>
+      <strong>Não há jogos OURO suficientes para múltiplas.</strong><br>
+      <span style="font-size:.85rem;">Aguarde rodadas com mais oportunidades validadas.</span>
+    </div>`;
+  }
+
+  const aviso = `<div style="background:rgba(245,158,11,0.08);border:1px solid var(--gold);border-radius:10px;padding:1rem 1.2rem;margin-bottom:1.2rem;">
+    <div style="font-size:.85rem;color:var(--gold);font-weight:800;margin-bottom:.4rem;">🎲 MÚLTIPLAS RECREATIVAS</div>
+    <div style="font-size:.78rem;color:var(--text);line-height:1.5;">⚠️ Múltiplas têm <strong>risco multiplicativo</strong> — UM red perde tudo. Use stake <strong>baixa</strong> (R$ 1-2 max). Os jogos abaixo são os de maior score do nosso sistema.</div>
+  </div>`;
+
+  let conteudo = aviso;
+
+  if (top5Ven.length > 0) {
+    const oddCV = oddCombinada(top5Ven);
+    const probCV = probCombinada(top5Ven);
+    conteudo += `<div style="background:linear-gradient(135deg,var(--card),rgba(245,158,11,0.04));border:2px solid var(--gold);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1rem;">
+      <div style="font-size:1rem;font-weight:800;color:var(--gold);margin-bottom:.8rem;">🏆 MÚLTIPLA VENCEDORES (${top5Ven.length} jogos)</div>
+      ${top5Ven.map((r, i) => `
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:.7rem;margin-bottom:.5rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem;">
+            <div style="font-size:.85rem;font-weight:700;color:var(--text);">${i+1}. ${r.ligaFlag} ${r.m} × ${r.v}</div>
+            <div style="font-size:.7rem;color:var(--gold);font-weight:800;">Score ${r.scoreVencedor}</div>
+          </div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:.3rem;">
+            🏆 ${r.favorito} · HDP ${r.linhaHDPSugerida} · odd estimada @ ${oddEstimada(r.scoreVencedor).toFixed(2)}
+          </div>
+        </div>
+      `).join('')}
+      <div style="background:rgba(245,158,11,0.10);border:1px solid var(--gold);border-radius:10px;padding:.8rem 1rem;margin-top:.6rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;font-size:.85rem;">
+          <div>💰 <strong style="color:var(--gold);">Odd combinada</strong>: ${oddCV.toFixed(2)}</div>
+          <div>📊 <strong style="color:var(--green);">Prob estimada</strong>: ${(probCV*100).toFixed(0)}%</div>
+          <div>🎯 <strong>Stake</strong>: R$ 1,00 (recreativa)</div>
+          <div>💸 <strong>Retorno potencial</strong>: R$ ${oddCV.toFixed(2)}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  if (top5Und.length > 0) {
+    const oddCU = oddCombinada(top5Und);
+    const probCU = probCombinada(top5Und);
+    conteudo += `<div style="background:linear-gradient(135deg,var(--card),rgba(96,165,250,0.04));border:2px solid #60a5fa;border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1rem;">
+      <div style="font-size:1rem;font-weight:800;color:#60a5fa;margin-bottom:.8rem;">📊 MÚLTIPLA UNDER (${top5Und.length} jogos)</div>
+      ${top5Und.map((r, i) => `
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(96,165,250,0.25);border-radius:8px;padding:.7rem;margin-bottom:.5rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem;">
+            <div style="font-size:.85rem;font-weight:700;color:var(--text);">${i+1}. ${r.ligaFlag} ${r.m} × ${r.v}</div>
+            <div style="font-size:.7rem;color:#60a5fa;font-weight:800;">Score ${r.scoreUnder}</div>
+          </div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:.3rem;">
+            📊 ${r.expFT <= 7 ? 'UNDER 9.5' : r.expFT <= 8.5 ? 'UNDER 10' : 'UNDER 10.5'} · exp_ft ${r.expFT.toFixed(1)} · odd estimada @ ${oddEstimada(r.scoreUnder).toFixed(2)}
+          </div>
+        </div>
+      `).join('')}
+      <div style="background:rgba(96,165,250,0.10);border:1px solid #60a5fa;border-radius:10px;padding:.8rem 1rem;margin-top:.6rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;font-size:.85rem;">
+          <div>💰 <strong style="color:#60a5fa;">Odd combinada</strong>: ${oddCU.toFixed(2)}</div>
+          <div>📊 <strong style="color:var(--green);">Prob estimada</strong>: ${(probCU*100).toFixed(0)}%</div>
+          <div>🎯 <strong>Stake</strong>: R$ 1,00 (recreativa)</div>
+          <div>💸 <strong>Retorno potencial</strong>: R$ ${oddCU.toFixed(2)}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // Super múltipla
+  if (top5Ven.length > 0 && top5Und.length > 0) {
+    const oddSuper = oddCombinada(top5Ven) * oddCombinada(top5Und);
+    const probSuper = probCombinada(top5Ven) * probCombinada(top5Und);
+    conteudo += `<div style="background:linear-gradient(135deg,rgba(167,139,250,0.10),rgba(245,158,11,0.06));border:2px solid #a78bfa;border-radius:14px;padding:1.2rem 1.4rem;">
+      <div style="font-size:1rem;font-weight:800;color:#a78bfa;margin-bottom:.6rem;">🎯 SUPER MÚLTIPLA (${top5Ven.length + top5Und.length} jogos combinados)</div>
+      <div style="font-size:.78rem;color:var(--muted);margin-bottom:.7rem;">Combina TODAS as ${top5Ven.length} vencedoras + ${top5Und.length} unders. Risco máximo, retorno máximo.</div>
+      <div style="background:rgba(167,139,250,0.10);border:1px solid #a78bfa;border-radius:10px;padding:.8rem 1rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;font-size:.9rem;">
+          <div>💰 <strong style="color:#a78bfa;">Odd combinada</strong>: ${oddSuper.toFixed(2)}</div>
+          <div>📊 <strong>Prob estimada</strong>: ${(probSuper*100).toFixed(1)}%</div>
+          <div>🎯 <strong>Stake sugerida</strong>: R$ 0,50 (alto risco)</div>
+          <div>💸 <strong>Retorno potencial</strong>: R$ ${(oddSuper*0.5).toFixed(2)}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  return conteudo;
+}
+
+function exportarFiltroOuroHTML() {
+  const ctr = document.getElementById('wrapper-filtro-ouro');
+  if (!ctr || !ctr.innerHTML.trim()) {
+    alert('Renderize a aba primeiro.');
+    return;
+  }
+  const clone = ctr.cloneNode(true);
+  clone.querySelectorAll('button').forEach(b => b.remove());
+  clone.querySelectorAll('[onclick]').forEach(el => { el.removeAttribute('onclick'); el.style.cursor = 'default'; });
+
+  if (typeof _exportarAnaliseHTML === 'function') {
+    _exportarAnaliseHTML({
+      titulo: '🥇 Filtro OURO',
+      subtitulo: 'Entradas refinadas por liga · validadas em 358 apostas reais',
+      conteudoHTML: clone.innerHTML,
+      prefixoArquivo: 'FiltroOURO',
+      corHeader: 'var(--gold)'
+    });
+  }
 }
 
 // Sincroniza o scanner Cisne Negro com a rodada importada.
@@ -8841,11 +9939,13 @@ function _sincronizarCisneComRodada(liga) {
   } catch(e) { jogos = []; }
   if (jogos.length === 0) return 0;
 
+  // v3.0: threshold do Cisne é por liga (ARG/ARG_B 1.5, MLS 2.5, demais 2.0)
+  const cisneThreshold = getLigaDNA(liga).cisneThreshold;
   const textoCisne = jogos.map(j => `${j.m} x ${j.v}`).join('\n');
   const jogosComSinal = jogos.filter(j => {
     try {
       const p = projecaoJogo(j.m, j.v);
-      return p && Math.abs(p.expHomeFT - p.expAwayFT) >= 2.0;
+      return p && Math.abs(p.expHomeFT - p.expAwayFT) >= cisneThreshold;
     } catch(e) { return false; }
   });
 
@@ -8893,8 +9993,20 @@ function renderCisneNegroCards(jogosComSinal) {
   const ctr = document.getElementById('resultado-cisne-negro');
   if (!ctr) return 0;
   ctr.innerHTML = '';
+
+  const todos = jogosComSinal || [];
+  const filtrados = _filtrarJogosPorData(todos, _filtroData.cisne);
+
+  // v3.1 (2026-05-10): barra de filtro de data no topo do grid
+  if (todos.length > 0) {
+    const barraWrapper = document.createElement('div');
+    barraWrapper.style.cssText = 'grid-column:1/-1';
+    barraWrapper.innerHTML = _renderFiltroDataBar('cisne', todos);
+    ctr.appendChild(barraWrapper);
+  }
+
   let encontrados = 0;
-  (jogosComSinal || []).forEach(jogo => {
+  filtrados.forEach(jogo => {
     const html = _cisneCardHTML(jogo);
     if (!html) return;
     const card = document.createElement('div');
@@ -8904,9 +10016,19 @@ function renderCisneNegroCards(jogosComSinal) {
     ctr.appendChild(card);
     encontrados++;
   });
-  if (encontrados === 0 && (jogosComSinal || []).length > 0) {
-    // Lista tinha jogos mas nenhum passou no filtro (dados mudaram?) — aviso
-    ctr.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Os jogos desta liga não atingem mais o critério Cisne Negro (diff ≥ 2.0). Varra novamente.</div>';
+
+  if (encontrados === 0 && todos.length > 0) {
+    const f = _filtroData.cisne;
+    const msgFiltro = f.modo === 'hoje' ? 'Nenhum sinal Cisne Negro agendado para hoje.'
+                    : f.modo === 'data' ? `Nenhum sinal Cisne Negro na data ${_dataBrCurta(f.data)}.`
+                    : 'Os jogos desta liga não atingem mais o critério Cisne Negro. Varra novamente.';
+    const empty = document.createElement('div');
+    empty.style.cssText = 'grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)';
+    empty.innerHTML = `<strong>${msgFiltro}</strong>` +
+      (f.modo !== 'todas'
+        ? '<br><span style="font-size:.8rem">Clique em <strong style="color:var(--green)">🌐 Visão Geral</strong> para ver todos os sinais.</span>'
+        : '');
+    ctr.appendChild(empty);
   }
   return encontrados;
 }
@@ -8984,11 +10106,12 @@ function varrerCisneNegro() {
     return;
   }
 
-  // Filtra só os que passam no critério Cisne Negro (diff ≥ 2.0) — esses
-  // são os que vão para o storage, para poder re-renderizar depois.
+  // Filtra só os que passam no critério Cisne Negro — threshold por liga
+  // v3.0 (2026-05-10): ARG/ARG_B 1.5, MLS 2.5, demais 2.0.
+  const cisneThreshold = getLigaDNA(LIGA_ATUAL).cisneThreshold;
   const jogosComSinal = candidatos.filter(j => {
     const p = projecaoJogo(j.m, j.v);
-    return p && Math.abs(p.expHomeFT - p.expAwayFT) >= 2.0;
+    return p && Math.abs(p.expHomeFT - p.expAwayFT) >= cisneThreshold;
   });
 
   const encontrados = renderCisneNegroCards(jogosComSinal);

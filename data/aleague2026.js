@@ -4222,6 +4222,252 @@ window.DADOS_ALM = {
         "m": 2,
         "v": 2
       }
+    },
+    {
+      "id": "inject_ALM_0_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "Macarthur FC",
+      "visitante": "Wellington Phoenix",
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 26,
+          "v": 12
+        }
+      }
+    },
+    {
+      "id": "inject_ALM_1_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "Newcastle Jets",
+      "visitante": "Central Coast Mariners",
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_ALM_2_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "WS Wanderers",
+      "visitante": "Melbourne Victory",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 14
+        }
+      }
+    },
+    {
+      "id": "inject_ALM_3_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "Perth Glory",
+      "visitante": "Brisbane Roar",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 4
+        },
+        "ft": {
+          "m": 2,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 29,
+          "v": 71
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_ALM_4_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "Sydney FC",
+      "visitante": "Auckland FC",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        }
+      }
+    },
+    {
+      "id": "inject_ALM_5_20260426",
+      "rodada": 73,
+      "data": "2026-04-26",
+      "mandante": "Melbourne City",
+      "visitante": "Adelaide United",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 10
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 17
+        }
+      }
     }
   ]
 };

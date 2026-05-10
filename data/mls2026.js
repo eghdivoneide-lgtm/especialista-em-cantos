@@ -1,5 +1,8 @@
-// MLS 2026 — Injeção Varredor v4 (upsert)
-// 118 jogos | Atualizado: 2026-04-22
+// ============================================================
+// MLS 2026 — Injeção Varredor v4 (rodada 2026-05-05)
+// 148 jogos | Atualizado: 2026-05-05
+// ============================================================
+
 window.DADOS_MLS = {
   "times": [
     "Atlanta Utd",
@@ -4917,8 +4920,1268 @@ window.DADOS_MLS = {
         "m": 3,
         "v": 0
       }
+    },
+    {
+      "id": "inject_MLS_0_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Toronto FC",
+      "visitante": "Atlanta Utd",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 5
+        },
+        "ft": {
+          "m": 8,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_1_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "CF Montreal",
+      "visitante": "New York City",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_3_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Columbus Crew",
+      "visitante": "Philadelphia Union",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_4_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "DC United",
+      "visitante": "Orlando City",
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 5
+        },
+        "ft": {
+          "m": 7,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_5_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "FC Cincinnati",
+      "visitante": "New York Red Bulls",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 19
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_6_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Inter Miami",
+      "visitante": "New England Revolution",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 16
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_7_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Austin FC",
+      "visitante": "Houston Dynamo",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_8_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Chicago Fire",
+      "visitante": "Sporting Kansas City",
+      "placar": {
+        "m": 5,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 71,
+          "v": 29
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 6
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_9_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Nashville SC",
+      "visitante": "Charlotte",
+      "placar": {
+        "m": 4,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_10_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "St. Louis City",
+      "visitante": "San Jose Earthquakes",
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 10,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 9
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_11_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "San Diego FC",
+      "visitante": "Portland Timbers",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_12_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Seattle Sounders",
+      "visitante": "FC Dallas",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 4,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 12
+        }
+      }
+    },
+    {
+      "id": "inject_MLS_13_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Vancouver Whitecaps",
+      "visitante": "Colorado Rapids",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 13
+        }
+      }
+    },
+    {
+      "id": "inject_fix_MLS_1_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Minnesota United",
+      "visitante": "Los Angeles FC",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 11,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_fix_MLS_2_20260426",
+      "rodada": 8,
+      "data": "2026-04-26",
+      "mandante": "Los Angeles Galaxy",
+      "visitante": "Real Salt Lake",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 15
+        }
+      }
+    },
+    {
+      "match_id": "2qevfSqS",
+      "id": "2qevfSqS",
+      "mandante": "Austin FC",
+      "visitante": "St. Louis City",
+      "data": "03.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 15
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "fJiWelFF",
+      "id": "fJiWelFF",
+      "mandante": "New York City",
+      "visitante": "DC United",
+      "data": "03.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 73,
+          "v": 27
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 19
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "jsXCrgck",
+      "id": "jsXCrgck",
+      "mandante": "Los Angeles Galaxy",
+      "visitante": "Vancouver Whitecaps",
+      "data": "02.05.2026 23:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 19
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "Y33NcAp3",
+      "id": "Y33NcAp3",
+      "mandante": "San Diego FC",
+      "visitante": "Los Angeles FC",
+      "data": "02.05.2026 22:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "neezxTNq",
+      "id": "neezxTNq",
+      "mandante": "Chicago Fire",
+      "visitante": "FC Cincinnati",
+      "data": "02.05.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 33,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "6cByz7hd",
+      "id": "6cByz7hd",
+      "mandante": "Houston Dynamo",
+      "visitante": "Colorado Rapids",
+      "data": "02.05.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "bqhYky5F",
+      "id": "bqhYky5F",
+      "mandante": "Atlanta Utd",
+      "visitante": "CF Montreal",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "82ByvGgU",
+      "id": "82ByvGgU",
+      "mandante": "Columbus Crew",
+      "visitante": "Minnesota United",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "CGynbJvn",
+      "id": "CGynbJvn",
+      "mandante": "New England Revolution",
+      "visitante": "Charlotte",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "Ktufdc9b",
+      "id": "Ktufdc9b",
+      "mandante": "New York Red Bulls",
+      "visitante": "FC Dallas",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "G8Y2fyvB",
+      "id": "G8Y2fyvB",
+      "mandante": "Philadelphia Union",
+      "visitante": "Nashville SC",
+      "data": "02.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "258TuxPH",
+      "id": "258TuxPH",
+      "mandante": "Inter Miami",
+      "visitante": "Orlando City",
+      "data": "02.05.2026 20:15",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 8,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 26,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 4
+      }
+    },
+    {
+      "match_id": "6wFKsbf5",
+      "id": "6wFKsbf5",
+      "mandante": "Real Salt Lake",
+      "visitante": "Portland Timbers",
+      "data": "02.05.2026 17:45",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 25,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "YPGCqKPh",
+      "id": "YPGCqKPh",
+      "mandante": "Sporting Kansas City",
+      "visitante": "Seattle Sounders",
+      "data": "02.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 9
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 26
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "KbtslFZR",
+      "id": "KbtslFZR",
+      "mandante": "Toronto FC",
+      "visitante": "San Jose Earthquakes",
+      "data": "02.05.2026 14:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 9
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
     }
   ],
   "totalRodadas": 6,
-  "ultimaAtualizacao": "2026-04-22"
+  "ultimaAtualizacao": "2026-05-05"
 };

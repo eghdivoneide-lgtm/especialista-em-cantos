@@ -3312,6 +3312,334 @@ window.DADOS_ECU = {
         "m": 0,
         "v": 1
       }
+    },
+    {
+      "id": "inject_ECU_0_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Mushuc Runa",
+      "visitante": "Dep. Cuenca",
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 16
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_1_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Ind. del Valle",
+      "visitante": "Leones del Norte",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_2_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Emelec",
+      "visitante": "LDU Quito",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 14
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_3_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Macara",
+      "visitante": "Libertad",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 4
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 14
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_4_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Guayaquil City",
+      "visitante": "Tecnico U.",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 21
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_5_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Orense",
+      "visitante": "Barcelona SC",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 7
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_6_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Manta",
+      "visitante": "U. Catolica",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_ECU_7_20260426",
+      "rodada": 47,
+      "data": "2026-04-26",
+      "mandante": "Aucas",
+      "visitante": "Delfin",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 73,
+          "v": 27
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 7
+        }
+      }
     }
   ]
 };

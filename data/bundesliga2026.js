@@ -1,11 +1,11 @@
 // ============================================================
-// BUNDESLIGA 2025/26 — MOTOR FANTASMA v5 (por time)
-// Atualizado: 2026-04-20 | Histórico preservado
+// BUN 2026 — Injeção Varredor v4 (rodada 2026-05-05)
+// 288 jogos | Atualizado: 2026-05-05
 // ============================================================
 
 window.DADOS_BUN = {
   "temporada": "Bundesliga (Alemanha)",
-  "ultimaAtualizacao": "2026-04-20",
+  "ultimaAtualizacao": "2026-05-05",
   "totalRodadas": 218,
   "times": [
     "Augsburg",
@@ -10101,6 +10101,762 @@ window.DADOS_BUN = {
       "placar": {
         "m": 1,
         "v": 1
+      }
+    },
+    {
+      "id": "inject_BUN_0_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "RB Leipzig",
+      "visitante": "Union Berlin",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 10,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 5
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_1_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Augsburg",
+      "visitante": "Eintracht Frankfurt",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 19
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_2_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "FC Koln",
+      "visitante": "Bayer Leverkusen",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 5
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 25,
+          "v": 8
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_3_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Heidenheim",
+      "visitante": "St. Pauli",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_4_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Mainz",
+      "visitante": "Bayern Munich",
+      "placar": {
+        "m": 3,
+        "v": 4
+      },
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 30,
+          "v": 70
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 11
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_5_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Wolfsburg",
+      "visitante": "B. Monchengladbach",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 5
+        },
+        "ft": {
+          "m": 8,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_6_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Hamburger SV",
+      "visitante": "Hoffenheim",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 9
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 15
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_7_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Stuttgart",
+      "visitante": "Werder Bremen",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 2
+        },
+        "ft": {
+          "m": 14,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 9
+        }
+      }
+    },
+    {
+      "id": "inject_BUN_8_20260426",
+      "rodada": 219,
+      "data": "2026-04-26",
+      "mandante": "Dortmund",
+      "visitante": "Freiburg",
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 7
+        }
+      }
+    },
+    {
+      "match_id": "nq7nAez3",
+      "id": "nq7nAez3",
+      "mandante": "Freiburg",
+      "visitante": "Wolfsburg",
+      "data": "03.05.2026 14:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "EcNSkRll",
+      "id": "EcNSkRll",
+      "mandante": "B. Monchengladbach",
+      "visitante": "Dortmund",
+      "data": "03.05.2026 12:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      }
+    },
+    {
+      "match_id": "tAEqnqlD",
+      "id": "tAEqnqlD",
+      "mandante": "St. Pauli",
+      "visitante": "Mainz",
+      "data": "03.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 5
+        },
+        "ft": {
+          "m": 7,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 17
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "rivf45np",
+      "id": "rivf45np",
+      "mandante": "Bayer Leverkusen",
+      "visitante": "RB Leipzig",
+      "data": "02.05.2026 13:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      }
+    },
+    {
+      "match_id": "bJ2N9ROM",
+      "id": "bJ2N9ROM",
+      "mandante": "Bayern Munich",
+      "visitante": "Heidenheim",
+      "data": "02.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 13,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 75,
+          "v": 25
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "U7x22qHd",
+      "id": "U7x22qHd",
+      "mandante": "Eintracht Frankfurt",
+      "visitante": "Hamburger SV",
+      "data": "02.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "8G6V9ntK",
+      "id": "8G6V9ntK",
+      "mandante": "Hoffenheim",
+      "visitante": "Stuttgart",
+      "data": "02.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 22,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      }
+    },
+    {
+      "match_id": "KfQzl5J0",
+      "id": "KfQzl5J0",
+      "mandante": "Union Berlin",
+      "visitante": "FC Koln",
+      "data": "02.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      }
+    },
+    {
+      "match_id": "Kd5f8Z4F",
+      "id": "Kd5f8Z4F",
+      "mandante": "Werder Bremen",
+      "visitante": "Augsburg",
+      "data": "02.05.2026 10:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
       }
     }
   ]

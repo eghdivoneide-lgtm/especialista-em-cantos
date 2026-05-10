@@ -19,3 +19,10 @@ scraper/package-lock.json
 _backups/
 data/_quarentena/
 _arquivo-backups-*/
+
+# Plan files locais do Claude Code
+.claude/
+
+# Arquivos temporários do Word
+~$*.docx
+~$*.doc
