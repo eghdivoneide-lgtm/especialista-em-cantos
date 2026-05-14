@@ -659,17 +659,26 @@
 
   <!-- ══════════════════ POR TIME ══════════════════ -->
   <div id="view-time" class="view">
-    <div class="controls">
-      <div class="select-group">
-        <label>Selecionar Time</label>
-        <select id="sel-time" onchange="renderTime()">
-          <option value="">— Escolha um time —</option>
-        </select>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
+      <div class="controls" style="margin-bottom:0">
+        <div class="select-group">
+          <label>Selecionar Time</label>
+          <select id="sel-time" onchange="renderTime()">
+            <option value="">— Escolha um time —</option>
+          </select>
+        </div>
       </div>
+      <button id="btn-export-time" onclick="exportarTimeHTML()" style="display:none;background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.55rem 1.1rem;border-radius:8px;font-weight:800;font-size:.82rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">📤 Exportar Relatório HTML</button>
+    </div>
+    <div id="dna-time"></div>
+    <div id="tabs-time" style="display:none;gap:.5rem;margin-bottom:1rem;padding:.25rem;background:var(--bg2);border-radius:10px;border:1px solid var(--border);width:fit-content">
+      <button id="tab-time-geral" onclick="setAbaTime('geral')" style="padding:.45rem 1.1rem;border-radius:7px;border:none;cursor:pointer;font-size:.78rem;font-weight:700;transition:all .2s">🌐 Geral</button>
+      <button id="tab-time-casa" onclick="setAbaTime('casa')" style="padding:.45rem 1.1rem;border-radius:7px;border:none;cursor:pointer;font-size:.78rem;font-weight:700;transition:all .2s">🏠 Em Casa</button>
+      <button id="tab-time-fora" onclick="setAbaTime('fora')" style="padding:.45rem 1.1rem;border-radius:7px;border:none;cursor:pointer;font-size:.78rem;font-weight:700;transition:all .2s">✈️ Fora de Casa</button>
     </div>
     <div id="stats-time"></div>
     <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;display:none;" id="chart-time-container">
-      <div style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center;">Tendência de Escanteios (Últimas 15 Partidas)</div>
+      <div id="chart-time-titulo" style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center;">Tendência de Escanteios (Últimas 15 Partidas)</div>
       <canvas id="chart-time" style="width:100%;max-height:250px;"></canvas>
     </div>
     <div id="jogos-time"></div>
@@ -2515,35 +2524,273 @@ function renderRankingInsights(rank) {
 // ══════════════════════════════════════════════════
 //  RENDER — POR TIME
 // ══════════════════════════════════════════════════
+// ── Estado da view "Por Time" — v2.0 (2026-05-14) ──
+let _timeViewState = { aba: 'geral' };  // geral | casa | fora
+
+function setAbaTime(aba) {
+  _timeViewState.aba = aba;
+  renderTime();
+}
+
 function renderTime() {
   const time = document.getElementById('sel-time').value;
-  if (!time) { document.getElementById('stats-time').innerHTML=''; document.getElementById('jogos-time').innerHTML=''; return; }
-  const s = getStatsTime(time);
-  if (!s.jogos) {
-    document.getElementById('stats-time').innerHTML = emptyMsg('Sem jogos registrados','para este time ainda.');
-    document.getElementById('jogos-time').innerHTML = '';
+  const btnExport = document.getElementById('btn-export-time');
+  const tabsTime = document.getElementById('tabs-time');
+  if (!time) {
+    document.getElementById('dna-time').innerHTML = '';
+    document.getElementById('stats-time').innerHTML='';
+    document.getElementById('jogos-time').innerHTML='';
+    document.getElementById('chart-time-container').style.display = 'none';
+    if (btnExport) btnExport.style.display = 'none';
+    if (tabsTime) tabsTime.style.display = 'none';
     return;
   }
+  const s = getStatsTime(time);
+  if (!s.jogos) {
+    document.getElementById('dna-time').innerHTML = '';
+    document.getElementById('stats-time').innerHTML = emptyMsg('Sem jogos registrados','para este time ainda.');
+    document.getElementById('jogos-time').innerHTML = '';
+    document.getElementById('chart-time-container').style.display = 'none';
+    if (btnExport) btnExport.style.display = 'none';
+    if (tabsTime) tabsTime.style.display = 'none';
+    return;
+  }
+
+  // Mostra botão export + tabs
+  if (btnExport) btnExport.style.display = 'inline-block';
+  if (tabsTime) tabsTime.style.display = 'flex';
+  _atualizarTabsTime();
+
+  // ── DNA DO TIME (sempre visível, em cima das tabs) ──
+  document.getElementById('dna-time').innerHTML = _renderDNATime(time, s);
+
+  // ── Stats por contexto ──
+  const aba = _timeViewState.aba;
+  const ctx = _statsTimePorContexto(s, aba);
+  const ctxIcon = aba === 'casa' ? '🏠' : aba === 'fora' ? '✈️' : '🌐';
+  const ctxLabel = aba === 'casa' ? 'Em Casa' : aba === 'fora' ? 'Fora de Casa' : 'Geral';
+
   document.getElementById('stats-time').innerHTML = `
     <div class="grid4" style="margin-bottom:1rem">
-      <div class="stat-card"><div class="icon">📋</div><div class="label">Jogos</div><div class="value">${s.jogos}</div></div>
-      <div class="stat-card"><div class="icon">⏱️</div><div class="label">Média HT Pró</div><div class="value" style="color:var(--gold)">${fmt(s.media.ht_geral)}</div><div class="sub">Cantos Sofridos HT: ${fmt((s.media.ht_casa_c+s.media.ht_fora_c)/2)}</div></div>
-      <div class="stat-card"><div class="icon">⚽</div><div class="label">Média FT Pró</div><div class="value">${fmt(s.media.ft_geral)}</div><div class="sub">Cantos Sofridos FT: ${fmt(s.media.ft_geral_c)}</div></div>
-      <div class="stat-card"><div class="icon">📈</div><div class="label">Total Médio c/ Concedidos</div><div class="value">${fmt(s.media.ft_geral + s.media.ft_geral_c)}</div></div>
+      <div class="stat-card"><div class="icon">📋</div><div class="label">${ctxIcon} Jogos ${ctxLabel}</div><div class="value">${ctx.n}</div></div>
+      <div class="stat-card"><div class="icon">⏱️</div><div class="label">Média HT Pró</div><div class="value" style="color:var(--gold)">${fmt(ctx.ht_pro)}</div><div class="sub">Cantos Sofridos HT: ${fmt(ctx.ht_con)}</div></div>
+      <div class="stat-card"><div class="icon">⚽</div><div class="label">Média FT Pró</div><div class="value">${fmt(ctx.ft_pro)}</div><div class="sub">Cantos Sofridos FT: ${fmt(ctx.ft_con)}</div></div>
+      <div class="stat-card"><div class="icon">📈</div><div class="label">Total Médio (Pró+Conc.)</div><div class="value">${fmt(ctx.ft_pro + ctx.ft_con)}</div></div>
     </div>
   `;
-  const sorted = [...s.jogosData].sort((a,b) => a.rodada - b.rodada || new Date(a.data) - new Date(b.data));
+
+  // ── Histórico filtrado pelo contexto ──
+  const jogosFiltrados = aba === 'casa' ? s.jogosData.filter(j => j.mandante === time)
+                       : aba === 'fora' ? s.jogosData.filter(j => j.visitante === time)
+                       : s.jogosData;
+  const sorted = [...jogosFiltrados].sort((a,b) => a.rodada - b.rodada || new Date(a.data) - new Date(b.data));
+
+  if (sorted.length === 0) {
+    document.getElementById('jogos-time').innerHTML = `
+      <div class="section-title">📅 Histórico de Jogos — ${ctxIcon} ${ctxLabel}</div>
+      <div style="background:var(--bg3);border:1px dashed var(--border);border-radius:10px;padding:1rem;color:var(--muted);font-size:.85rem;text-align:center">
+        Nenhum jogo do ${time} ${aba === 'casa' ? 'em casa' : 'fora de casa'} registrado.
+      </div>
+    `;
+    document.getElementById('chart-time-container').style.display = 'none';
+    return;
+  }
+
   document.getElementById('jogos-time').innerHTML = `
-    <div class="section-title">📅 Histórico de Jogos</div>
+    <div class="section-title">📅 Histórico de Jogos — ${ctxIcon} ${ctxLabel}</div>
     <div class="jogos-list">${sorted.map(jogoRow).join('')}</div>
   `;
-  
-  if (sorted.length > 0) {
-    document.getElementById('chart-time-container').style.display = 'block';
-    setTimeout(() => desenharGraficoTendencia(time, sorted), 50);
-  } else {
-    document.getElementById('chart-time-container').style.display = 'none';
+
+  document.getElementById('chart-time-container').style.display = 'block';
+  const titulo = document.getElementById('chart-time-titulo');
+  if (titulo) titulo.textContent = `Tendência de Escanteios — ${ctxIcon} ${ctxLabel} (Últimas 15 Partidas)`;
+  setTimeout(() => desenharGraficoTendencia(time, sorted), 50);
+}
+
+// Calcula stats do contexto ativo (geral / casa / fora)
+function _statsTimePorContexto(s, aba) {
+  if (aba === 'casa') {
+    const n = s.jogosData.filter(j => j.mandante === s.time).length;
+    return { n, ht_pro: s.media.ht_casa, ht_con: s.media.ht_casa_c, ft_pro: s.media.ft_casa, ft_con: s.media.ft_casa_c };
   }
+  if (aba === 'fora') {
+    const n = s.jogosData.filter(j => j.visitante === s.time).length;
+    return { n, ht_pro: s.media.ht_fora, ht_con: s.media.ht_fora_c, ft_pro: s.media.ft_fora, ft_con: s.media.ft_fora_c };
+  }
+  return { n: s.jogos, ht_pro: s.media.ht_geral, ht_con: s.media.ht_geral_c, ft_pro: s.media.ft_geral, ft_con: s.media.ft_geral_c };
+}
+
+// Aplica estilo ativo nas tabs
+function _atualizarTabsTime() {
+  const ativa = _timeViewState.aba;
+  ['geral','casa','fora'].forEach(k => {
+    const btn = document.getElementById('tab-time-' + k);
+    if (!btn) return;
+    if (k === ativa) {
+      btn.style.background = 'var(--green)';
+      btn.style.color = '#0a0f0d';
+    } else {
+      btn.style.background = 'transparent';
+      btn.style.color = 'var(--muted)';
+    }
+  });
+}
+
+// Renderiza bloco DNA do Time (sempre visível em cima das tabs)
+function _renderDNATime(time, s) {
+  // Busca DNA Escoteiro da liga atual com fuzzy de nome
+  const dnaLiga = window.DNA_ESCOTEIRO && window.DNA_ESCOTEIRO[LIGA_ATUAL];
+  let dna = null;
+  if (dnaLiga) {
+    if (dnaLiga[time]) dna = dnaLiga[time];
+    else {
+      const key = Object.keys(dnaLiga).find(k =>
+        time.toLowerCase().includes(k.toLowerCase()) || k.toLowerCase().includes(time.toLowerCase())
+      );
+      if (key) dna = dnaLiga[key];
+    }
+  }
+
+  const nCasa = s.jogosData.filter(j => j.mandante === time).length;
+  const nFora = s.jogosData.filter(j => j.visitante === time).length;
+  const deltaCasaFora = (s.media.ft_casa || 0) - (s.media.ft_fora || 0);
+  const deltaIcon = deltaCasaFora > 1 ? '🏠 muito mais forte em casa'
+                  : deltaCasaFora > 0.3 ? '🏠 mais forte em casa'
+                  : deltaCasaFora < -1 ? '✈️ rende mais fora'
+                  : deltaCasaFora < -0.3 ? '✈️ ligeiramente melhor fora'
+                  : '⚖️ equilibrado casa/fora';
+
+  // DNA Escoteiro (perfil, forma, multipliers, alertas)
+  let dnaEscoteiroHTML = '';
+  if (dna) {
+    const perfilCor = {
+      'OFENSIVO': 'var(--green)', 'OFENSIVO_SOLIDO': 'var(--green)',
+      'EQUILIBRADO': 'var(--gold)', 'CAMISA_ABERTA': '#a78bfa',
+      'DEFENSIVO': '#fb923c', 'MURO_DUPLO': 'var(--red)', 'VULNERAVEL': '#fb923c',
+      'PASSIVO': 'var(--muted)', 'PADRAO': 'var(--text)'
+    };
+    const corPerfil = perfilCor[dna.perfil] || 'var(--text)';
+
+    // Forma recente (string VVDED)
+    const formaSpan = dna.forma ? dna.forma.split('').map(c => {
+      const cor = c === 'V' ? 'var(--green)' : c === 'D' ? 'var(--red)' : 'var(--gold)';
+      return `<span style="display:inline-block;width:1.4rem;height:1.4rem;line-height:1.4rem;text-align:center;background:${cor};color:#000;border-radius:4px;font-weight:900;font-size:.7rem;margin:0 1px">${c}</span>`;
+    }).join('') : '<span style="color:var(--muted)">—</span>';
+
+    // Alertas (de notas ou alertas dependendo se foi enriquecido)
+    const alertasArr = dna.alertas?.length ? dna.alertas : (dna.notas || []);
+    const alertasHTML = alertasArr.length
+      ? `<div style="margin-top:.6rem;font-size:.75rem">${alertasArr.map(a => `<div style="padding:.3rem .5rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:4px;margin-bottom:.3rem">${a}</div>`).join('')}</div>`
+      : '';
+
+    // Tendência de cantos (se enriquecido)
+    const tendCantos = dna.tendencia_cantos
+      ? `<div style="font-size:.7rem;color:var(--muted)">Tendência cantos: <strong style="color:${dna.tendencia_cantos === 'crescente' ? 'var(--green)' : 'var(--gold)'}">${dna.tendencia_cantos}</strong></div>`
+      : '';
+
+    const fatorAtaque = dna.fator_ataque != null
+      ? `<div style="font-size:.7rem;color:var(--muted)">Fator ataque (liga): <strong style="color:var(--text)">${dna.fator_ataque}</strong></div>`
+      : '';
+
+    dnaEscoteiroHTML = `
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:.8rem">
+        <div style="font-weight:800;color:var(--gold);font-size:.85rem;margin-bottom:.6rem">🧬 DNA Escoteiro YAAKEN</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;font-size:.78rem">
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.2rem">Perfil tático</div>
+            <div style="font-weight:900;color:${corPerfil};font-size:.95rem">${dna.perfil || '—'}</div>
+          </div>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.2rem">Forma (5 últimos)</div>
+            <div>${formaSpan}</div>
+          </div>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.2rem">Estilo</div>
+            <div style="font-size:.78rem;color:var(--text)">
+              ${dna.perfil_ataque ? `<div>Ataque: <strong>${dna.perfil_ataque}</strong></div>` : ''}
+              ${dna.perfil_defesa_vis ? `<div>Defesa (vis.): <strong>${dna.perfil_defesa_vis}</strong></div>` : ''}
+              ${!dna.perfil_ataque && !dna.perfil_defesa_vis ? '<div style="color:var(--muted)">—</div>' : ''}
+            </div>
+          </div>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.2rem">Multiplicadores motor</div>
+            <div style="font-size:.72rem;color:var(--text)">
+              <div>Perfil: <strong>${(dna.multPerfil != null ? dna.multPerfil : 1.0).toFixed(2)}</strong></div>
+              <div>Fora: <strong>${(dna.multFora != null ? dna.multFora : 1.0).toFixed(2)}</strong></div>
+              <div>Supressão: <strong>${(dna.multSupressao != null ? dna.multSupressao : 1.0).toFixed(2)}</strong></div>
+            </div>
+          </div>
+          ${tendCantos || fatorAtaque ? `
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.2rem">DNA profundo</div>
+            ${tendCantos}
+            ${fatorAtaque}
+          </div>` : ''}
+        </div>
+        ${alertasHTML}
+      </div>
+    `;
+  }
+
+  // Bloco Comportamento Casa vs Fora (sempre — derivado de getStatsTime)
+  const comportamentoHTML = `
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:.8rem">
+      <div style="font-weight:800;color:var(--text);font-size:.85rem;margin-bottom:.6rem">📊 Comportamento — Casa vs Fora <span style="font-weight:400;color:var(--muted);font-size:.7rem">${deltaIcon}</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;font-size:.78rem">
+        <div style="background:var(--bg);border-left:3px solid var(--green);border-radius:6px;padding:.6rem .8rem">
+          <div style="font-weight:800;color:var(--green);font-size:.8rem;margin-bottom:.3rem">🏠 Em Casa (${nCasa} jogos)</div>
+          <div style="color:var(--text)">FT Pró: <strong>${fmt(s.media.ft_casa)}</strong> · Sofridos: <strong>${fmt(s.media.ft_casa_c)}</strong></div>
+          <div style="color:var(--text)">HT Pró: <strong>${fmt(s.media.ht_casa)}</strong> · Sofridos: <strong>${fmt(s.media.ht_casa_c)}</strong></div>
+          <div style="color:var(--muted);margin-top:.3rem">Saldo FT: <strong style="color:${s.media.ft_casa - s.media.ft_casa_c > 0 ? 'var(--green)' : 'var(--red)'}">${(s.media.ft_casa - s.media.ft_casa_c).toFixed(2)}</strong></div>
+        </div>
+        <div style="background:var(--bg);border-left:3px solid #fb923c;border-radius:6px;padding:.6rem .8rem">
+          <div style="font-weight:800;color:#fb923c;font-size:.8rem;margin-bottom:.3rem">✈️ Fora de Casa (${nFora} jogos)</div>
+          <div style="color:var(--text)">FT Pró: <strong>${fmt(s.media.ft_fora)}</strong> · Sofridos: <strong>${fmt(s.media.ft_fora_c)}</strong></div>
+          <div style="color:var(--text)">HT Pró: <strong>${fmt(s.media.ht_fora)}</strong> · Sofridos: <strong>${fmt(s.media.ht_fora_c)}</strong></div>
+          <div style="color:var(--muted);margin-top:.3rem">Saldo FT: <strong style="color:${s.media.ft_fora - s.media.ft_fora_c > 0 ? 'var(--green)' : 'var(--red)'}">${(s.media.ft_fora - s.media.ft_fora_c).toFixed(2)}</strong></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  return `
+    <div class="section-title">🧬 DNA do ${time}</div>
+    ${dnaEscoteiroHTML || `<div style="background:var(--bg3);border:1px dashed var(--border);border-radius:8px;padding:.8rem;color:var(--muted);font-size:.78rem;margin-bottom:.5rem">⚠️ DNA Escoteiro não disponível para ${time} (liga ainda sem perfil qualitativo cadastrado)</div>`}
+    ${comportamentoHTML}
+  `;
+}
+
+// Exporta o conteúdo da aba "Por Time" como HTML standalone
+function exportarTimeHTML() {
+  const time = document.getElementById('sel-time').value;
+  if (!time) { alert('Selecione um time primeiro.'); return; }
+  if (typeof _exportarAnaliseHTML !== 'function') { alert('Função de exportação não disponível.'); return; }
+
+  const ligaInfo = (typeof AUDITORIA_LIGAS !== 'undefined') ? AUDITORIA_LIGAS.find(l => l.code === LIGA_ATUAL) : null;
+  const ligaLabel = ligaInfo ? `${ligaInfo.flag} ${ligaInfo.nome}` : LIGA_ATUAL;
+
+  const dnaHTML = document.getElementById('dna-time').innerHTML;
+  const statsHTML = document.getElementById('stats-time').innerHTML;
+  const chartContainer = document.getElementById('chart-time-container');
+  const chartHTML = chartContainer && chartContainer.style.display !== 'none'
+    ? '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem"><div style="font-weight:700;color:var(--text);margin-bottom:1rem;font-size:.9rem;text-align:center">' +
+      (document.getElementById('chart-time-titulo')?.textContent || 'Tendência de Escanteios') +
+      '</div><div style="color:var(--muted);font-size:.75rem;text-align:center;padding:1rem">📊 Gráfico de tendência (renderiza dinamicamente no app)</div></div>'
+    : '';
+  const jogosHTML = document.getElementById('jogos-time').innerHTML;
+
+  const aba = _timeViewState.aba;
+  const ctxLabel = aba === 'casa' ? '🏠 Em Casa' : aba === 'fora' ? '✈️ Fora de Casa' : '🌐 Geral';
+
+  const conteudoHTML = dnaHTML + statsHTML + chartHTML + jogosHTML;
+
+  _exportarAnaliseHTML({
+    titulo: `👕 Análise por Time — ${time}`,
+    subtitulo: `${ligaLabel} · Filtro: ${ctxLabel}`,
+    conteudoHTML,
+    prefixoArquivo: `Time_${time.replace(/[^a-zA-Z0-9]/g,'_')}`,
+    corHeader: 'var(--gold)'
+  });
 }
 
 // ══════════════════════════════════════════════════
