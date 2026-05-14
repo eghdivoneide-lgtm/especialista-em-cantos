@@ -479,13 +479,21 @@
     <div class="logo-text">
       <h1>Especialista em Cantos</h1>
       <select id="seletor-liga" onchange="trocarLiga(this.value)">
-        <option value="BR">🇧🇷 Brasileirão Série A</option>
-        <option value="BR_B">🇧🇷 Brasileirão Série B</option>
-        <option value="ARG">🇦🇷 Liga Profesional</option>
-        <option value="ARG_B">🇦🇷 Primera B (ARG)</option>
-        <option value="MLS">🇺🇸 Major League Soccer</option>
-        <option value="USL">🇺🇸 USL Championship</option>
-        <option value="BUN">🇩🇪 Bundesliga</option>
+        <optgroup label="🇧🇷 Brasil">
+          <option value="BR">Brasileirão Série A</option>
+          <option value="BR_B">Brasileirão Série B</option>
+        </optgroup>
+        <optgroup label="🇦🇷 Argentina">
+          <option value="ARG">Liga Profesional</option>
+          <option value="ARG_B">Primera B Nacional</option>
+        </optgroup>
+        <optgroup label="🇺🇸 EUA">
+          <option value="MLS">MLS</option>
+          <option value="USL">USL Championship</option>
+        </optgroup>
+        <optgroup label="🇩🇪 Alemanha">
+          <option value="BUN">Bundesliga</option>
+        </optgroup>
       </select>
     </div>
   </div>
@@ -704,15 +712,23 @@
     <!-- v2.0: tracker unificado — filtro por liga dentro do próprio tracker -->
     <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:.7rem 1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap">
       <span style="font-size:.72rem;color:var(--muted);text-transform:uppercase;font-weight:700;letter-spacing:.5px">🎯 Filtrar por liga:</span>
-      <select id="tracker-filtro-liga" onchange="aplicarFiltroLigaTracker(this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;min-width:180px">
+      <select id="tracker-filtro-liga" onchange="aplicarFiltroLigaTracker(this.value)" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:6px;font-size:.85rem;font-weight:600;cursor:pointer;min-width:200px">
         <option value="">🌐 Todas as ligas</option>
-        <option value="BR">🇧🇷 Brasileirão</option>
-        <option value="BR_B">🇧🇷 Brasileirão B</option>
-        <option value="ARG">🇦🇷 Liga Profesional</option>
-        <option value="ARG_B">🇦🇷 Primera B</option>
-        <option value="MLS">🇺🇸 MLS</option>
-        <option value="USL">🇺🇸 USL Championship</option>
-        <option value="BUN">🇩🇪 Bundesliga</option>
+        <optgroup label="🇧🇷 Brasil">
+          <option value="BR">Brasileirão Série A</option>
+          <option value="BR_B">Brasileirão Série B</option>
+        </optgroup>
+        <optgroup label="🇦🇷 Argentina">
+          <option value="ARG">Liga Profesional</option>
+          <option value="ARG_B">Primera B Nacional</option>
+        </optgroup>
+        <optgroup label="🇺🇸 EUA">
+          <option value="MLS">MLS</option>
+          <option value="USL">USL Championship</option>
+        </optgroup>
+        <optgroup label="🇩🇪 Alemanha">
+          <option value="BUN">Bundesliga</option>
+        </optgroup>
       </select>
       <span id="tracker-filtro-info" style="font-size:.72rem;color:var(--muted);margin-left:auto">— total de apostas: <strong id="tracker-filtro-count" style="color:var(--text)">0</strong></span>
     </div>
@@ -1029,7 +1045,7 @@
   Cache-bust: ?v= força o browser a baixar a versão nova dos datasets
   quando o Varredor atualiza os dados. Incrementar sempre que recoletar.
 -->
-<!-- ═══ LIGAS ATIVAS v2.0 (2026-05-08) — foco em 7 ligas operáveis ═══ -->
+<!-- ═══ LIGAS ATIVAS v2.1 (2026-05-10) — 7 ligas operáveis, agrupadas por país ═══ -->
 <script src="data/usl2026.js?v=2026-04-22b"></script>
 <script src="data/memoria_qualitativa.js?v=2026-04-22b"></script>
 <script src="data/argentina2026.js?v=2026-04-22b"></script>
@@ -1043,7 +1059,7 @@
 <script src="data/j1league2026.js?v=2026-04-22b"></script>     J1 (calibração ruim, fuso difícil)
 <script src="data/chile2026.js?v=2026-04-22b"></script>        CHI
 <script src="data/equador2026.js?v=2026-04-22b"></script>      ECU
-<script src="data/metropolitana2026.js?v=2026-04-30"></script> ARG_M (Primera B Metro — sem dados)
+<script src="data/metropolitana2026.js?v=2026-04-30"></script> ARG_M (Primera B Metro — fora por decisão)
 <script src="data/j2j3league2026.js?v=2026-04-30"></script>    J2/J3 (sem HDP nas bancas)
 <script src="data/chinasuper2026.js?v=2026-04-30"></script>    CHN_SUP (calibração imatura)
 <script src="data/chinaone2026.js?v=2026-04-30"></script>      CHN_1
@@ -1345,7 +1361,7 @@ function getOvers(lambda, lines) {
 //  medianas (ARG/ARG_B). Recalibrar a cada 3-5 rodadas.
 // ══════════════════════════════════════════════════════════════════
 const FAV_DOMINANCE = {
-  // 7 ligas ativas v2.0 (2026-05-08)
+  // 7 ligas ativas v2.1 (2026-05-10) — agrupadas por país no seletor
   MLS:     1.03,
   BR:      0.96,
   ARG:     0.89,
@@ -4374,13 +4390,13 @@ function exportarBalaPrataHTML() {
 // ══════════════════════════════════════════════════
 
 const AUDITORIA_LIGAS = [
-  { code: 'BR',    nome: 'Brasileirão Série A',  flag: '🇧🇷', dadosKey: 'DADOS_BR'    },
-  { code: 'BR_B',  nome: 'Brasileirão Série B',  flag: '🇧🇷', dadosKey: 'DADOS_BR_B'  },
-  { code: 'ARG',   nome: 'Liga Profesional',     flag: '🇦🇷', dadosKey: 'DADOS_ARG'   },
-  { code: 'ARG_B', nome: 'Primera B (ARG)',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' },
-  { code: 'MLS',   nome: 'Major League Soccer',  flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
-  { code: 'USL',   nome: 'USL Championship',     flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
-  { code: 'BUN',   nome: 'Bundesliga',           flag: '🇩🇪', dadosKey: 'DADOS_BUN'   }
+  { code: 'BR',    nome: 'Brasileirão Série A',     flag: '🇧🇷', dadosKey: 'DADOS_BR'    },
+  { code: 'BR_B',  nome: 'Brasileirão Série B',     flag: '🇧🇷', dadosKey: 'DADOS_BR_B'  },
+  { code: 'ARG',   nome: 'Liga Profesional',        flag: '🇦🇷', dadosKey: 'DADOS_ARG'   },
+  { code: 'ARG_B', nome: 'Primera B Nacional',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' },
+  { code: 'MLS',   nome: 'Major League Soccer',     flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
+  { code: 'USL',   nome: 'USL Championship',        flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
+  { code: 'BUN',   nome: 'Bundesliga',              flag: '🇩🇪', dadosKey: 'DADOS_BUN'   }
 ];
 
 // Calcula hash de uma rodada (lista de jogos m+v) para detectar mudança.
