@@ -7144,17 +7144,18 @@ function getAppContext() {
 
   /* ── 🧬 DNA PROFUNDO — Perfis Normalizados por Liga ── */
   (function() {
-    const _perfilBase = LIGA_ATUAL === 'BR'  ? window.PERFIS_BR
-                      : LIGA_ATUAL === 'ARG' ? window.PERFIS_ARG
-                      : null;
-    if (!_perfilBase || !jogoFocoM || !jogoFocoV) return;
+    const _ligaDNA = window.DNA_ESCOTEIRO && (
+      LIGA_ATUAL === 'BR'  ? window.DNA_ESCOTEIRO.BR  :
+      LIGA_ATUAL === 'ARG' ? window.DNA_ESCOTEIRO.ARG :
+      null);
+    if (!_ligaDNA || !jogoFocoM || !jogoFocoV) return;
     const _findPerfil = (nome) => {
-      if (_perfilBase[nome]) return _perfilBase[nome];
-      const key = Object.keys(_perfilBase).find(k =>
+      if (_ligaDNA[nome]) return _ligaDNA[nome];
+      const key = Object.keys(_ligaDNA).find(k =>
         nome.toLowerCase().includes(k.toLowerCase()) ||
         k.toLowerCase().includes(nome.toLowerCase())
       );
-      return key ? _perfilBase[key] : null;
+      return key ? _ligaDNA[key] : null;
     };
     const dnaM = _findPerfil(jogoFocoM);
     const dnaV = _findPerfil(jogoFocoV);
@@ -7167,7 +7168,7 @@ function getAppContext() {
       ctx += `  xFT Casa: ${dnaM.xFT_mandante}\n`;
       ctx += `  Tendência: ${dnaM.tendencia_cantos}\n`;
       ctx += `  Fator Ataque: ${dnaM.fator_ataque}\n`;
-      ctx += `  Alertas: ${dnaM.alertas.length ? dnaM.alertas.join(', ') : 'nenhum'}\n`;
+      ctx += `  Alertas: ${dnaM.alertas?.join(', ') || dnaM.notas?.join(', ') || 'nenhum'}\n`;
     }
     if (dnaV) {
       ctx += `✈️ ${jogoFocoV}:\n`;
@@ -7176,7 +7177,7 @@ function getAppContext() {
       ctx += `  xFT Casa: ${dnaV.xFT_mandante}\n`;
       ctx += `  Tendência: ${dnaV.tendencia_cantos}\n`;
       ctx += `  Fator Ataque: ${dnaV.fator_ataque}\n`;
-      ctx += `  Alertas: ${dnaV.alertas.length ? dnaV.alertas.join(', ') : 'nenhum'}\n`;
+      ctx += `  Alertas: ${dnaV.alertas?.join(', ') || dnaV.notas?.join(', ') || 'nenhum'}\n`;
     }
     ctx += `═══════════════════\n`;
   })();

@@ -1,7 +1,8 @@
-// perfis_arg2026.js — Perfis normalizados Argentina Liga Profesional 2026
-// Schema ARG já rico — remapeamento via normalizarPerfil(nome, raw, 'ARG')
+// perfis_arg2026.js — Enriquece window.DNA_ESCOTEIRO.ARG com dados de cantos
+// Fonte: perfis_arg2026.json (xHT, xFT, tendencia, volatilidade, fatores, alertas)
+// Não cria variável paralela — mescla direto no objeto existente via Object.assign
 (function() {
-  const raw = {
+  var rawARG = {
     "Instituto":              { n_jogos:7,  xHT_mandante:3.61, xFT_mandante:4.84, xHT_visitante:1.82, xFT_visitante:4.89, posse_media:49.3, finalizacoes_media:8.9,  tendencia_cantos:"crescente",         volatilidade:1.75, perfil_ataque:"PADRAO",    perfil_defesa_vis:"VULNERAVEL",    fator_ataque:0.97, fator_defesa:1.39, alertas:[] },
     "Velez Sarsfield":        { n_jogos:7,  xHT_mandante:1.81, xFT_mandante:4.5,  xHT_visitante:0.93, xFT_visitante:2.03, posse_media:53.8, finalizacoes_media:8.8,  tendencia_cantos:"estavel",           volatilidade:2.05, perfil_ataque:"PADRAO",    perfil_defesa_vis:"FORTALEZA",     fator_ataque:0.9,  fator_defesa:0.58, alertas:[] },
     "Union de Santa Fe":      { n_jogos:6,  xHT_mandante:3.99, xFT_mandante:6.8,  xHT_visitante:0.83, xFT_visitante:4.62, posse_media:53.7, finalizacoes_media:14.2, tendencia_cantos:"crescente",         volatilidade:2.36, perfil_ataque:"DOMINANTE", perfil_defesa_vis:"VULNERAVEL",    fator_ataque:1.37, fator_defesa:1.31, alertas:["OVER_HT_FAVORAVEL: pressão no 1T acima da média da liga"] },
@@ -33,8 +34,23 @@
     "Tigre":                  { n_jogos:7,  xHT_mandante:1.06, xFT_mandante:3.2,  xHT_visitante:2.6,  xFT_visitante:4.92, posse_media:43.9, finalizacoes_media:10.0, tendencia_cantos:"decrescente",       volatilidade:2.56, perfil_ataque:"REATIVO",   perfil_defesa_vis:"VULNERAVEL",    fator_ataque:0.64, fator_defesa:1.4,  alertas:["JOGO_FECHADO_HT: raramente gera cantos no 1T"] },
     "Estudiantes Rio Cuarto": { n_jogos:7,  xHT_mandante:1.51, xFT_mandante:5.19, xHT_visitante:4.3,  xFT_visitante:6.6,  posse_media:41.2, finalizacoes_media:9.6,  tendencia_cantos:"crescente_forte",   volatilidade:2.88, perfil_ataque:"PADRAO",    perfil_defesa_vis:"SANGRA_CANTOS", fator_ataque:1.04, fator_defesa:1.87, alertas:["ALVO_OVER: sangra cantos como visitante — confrontos vs ele tendem a OVER","FORMA_ASCENDENTE: cantos aumentando significativamente nos últimos jogos"] }
   };
-  window.PERFIS_ARG = {};
-  Object.keys(raw).forEach(function(nome) {
-    window.PERFIS_ARG[nome] = window.normalizarPerfil(nome, raw[nome], 'ARG');
-  });
+
+  var enriquecer = function() {
+    if (!window.DNA_ESCOTEIRO || !window.DNA_ESCOTEIRO.ARG) return;
+    Object.keys(rawARG).forEach(function(nome) {
+      var existente = window.DNA_ESCOTEIRO.ARG[nome];
+      if (!existente) return;
+      Object.assign(existente, window.normalizarPerfil(rawARG[nome], 'ARG'));
+      if (!existente.alertas || !existente.alertas.length) {
+        existente.alertas = existente.notas || [];
+      }
+    });
+    console.log('[EDS] DNA_ESCOTEIRO.ARG enriquecido com dados de cantos ✅');
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enriquecer);
+  } else {
+    enriquecer();
+  }
 })();
