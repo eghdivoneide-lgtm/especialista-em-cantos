@@ -1054,6 +1054,9 @@
 <script src="data/escoteiro_BR.js?v=2026-04-22b"></script>
 <!-- PATCH J1 — calibração linha base (v1.1, 2026-05-05). Cria window.J1_PATCH_LINHAS / window.getLinhaFTPatched. Não toca em MOTOR_CONFIG/LIGAS_STATUS. Reverter = remover esta linha. -->
 <script src="Auditoria Especialista em cantos/_Patches/patch_j1_aplicar.js?v=2026-05-05"></script>
+<script src="data/normalizador_perfis.js?v=1.0"></script>
+<script src="data/perfis_br2026.js?v=1.0"></script>
+<script src="data/perfis_arg2026.js?v=1.0"></script>
 <script>
   // ── DIAGNÓSTICO DE BOOT ── Loga quais datasets carregaram e quais não.
   // Executa ANTES do script principal, então capturamos o estado real de
@@ -7138,6 +7141,45 @@ function getAppContext() {
       });
     }
   }
+
+  /* ── 🧬 DNA PROFUNDO — Perfis Normalizados por Liga ── */
+  (function() {
+    const _perfilBase = LIGA_ATUAL === 'BR'  ? window.PERFIS_BR
+                      : LIGA_ATUAL === 'ARG' ? window.PERFIS_ARG
+                      : null;
+    if (!_perfilBase || !jogoFocoM || !jogoFocoV) return;
+    const _findPerfil = (nome) => {
+      if (_perfilBase[nome]) return _perfilBase[nome];
+      const key = Object.keys(_perfilBase).find(k =>
+        nome.toLowerCase().includes(k.toLowerCase()) ||
+        k.toLowerCase().includes(nome.toLowerCase())
+      );
+      return key ? _perfilBase[key] : null;
+    };
+    const dnaM = _findPerfil(jogoFocoM);
+    const dnaV = _findPerfil(jogoFocoV);
+    if (!dnaM && !dnaV) return;
+    ctx += `\n═══ DNA PROFUNDO ═══\n`;
+    if (dnaM) {
+      ctx += `🏠 ${jogoFocoM}:\n`;
+      ctx += `  Perfil Ataque: ${dnaM.perfil_ataque}\n`;
+      ctx += `  Perfil Defesa Vis: ${dnaM.perfil_defesa_vis}\n`;
+      ctx += `  xFT Casa: ${dnaM.xFT_mandante}\n`;
+      ctx += `  Tendência: ${dnaM.tendencia_cantos}\n`;
+      ctx += `  Fator Ataque: ${dnaM.fator_ataque}\n`;
+      ctx += `  Alertas: ${dnaM.alertas.length ? dnaM.alertas.join(', ') : 'nenhum'}\n`;
+    }
+    if (dnaV) {
+      ctx += `✈️ ${jogoFocoV}:\n`;
+      ctx += `  Perfil Ataque: ${dnaV.perfil_ataque}\n`;
+      ctx += `  Perfil Defesa Vis: ${dnaV.perfil_defesa_vis}\n`;
+      ctx += `  xFT Casa: ${dnaV.xFT_mandante}\n`;
+      ctx += `  Tendência: ${dnaV.tendencia_cantos}\n`;
+      ctx += `  Fator Ataque: ${dnaV.fator_ataque}\n`;
+      ctx += `  Alertas: ${dnaV.alertas.length ? dnaV.alertas.join(', ') : 'nenhum'}\n`;
+    }
+    ctx += `═══════════════════\n`;
+  })();
 
   return ctx;
 }
