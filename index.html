@@ -931,6 +931,26 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
+       MÚLTIPLAS ELITE — Curadoria SmartCoach IA
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-multiplas-elite" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--gold),#ffe359);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Múltiplas de Elite da Rodada</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria SmartCoach IA · 3 camadas (motor v3.0 + memória DNA + julgamento) · 4 escalões piramidais</div>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas SmartCoach</button>
+        <button onclick="exportarMultiplasHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.65rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">📤 Exportar HTML</button>
+        <button onclick="limparMultiplasElite()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpar cache local e regerar">🗑️ Limpar Cache</button>
+      </div>
+    </div>
+    <div id="multiplas-status"></div>
+    <div id="multiplas-resumo-candidatos"></div>
+    <div id="multiplas-resultado"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
        AUDITORIA — Memória institucional cross-liga
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-auditoria" class="view">
@@ -1077,6 +1097,7 @@
 ═══════════════════════════════════════════════════════════════ -->
 <script src="data/dna_escoteiro.js?v=2026-04-22b"></script>
 <script src="data/escoteiro_BR.js?v=2026-04-22b"></script>
+<script src="data/memoria_dna.js?v=2026-05-14"></script>
 <!-- PATCH J1 — calibração linha base (v1.1, 2026-05-05). Cria window.J1_PATCH_LINHAS / window.getLinhaFTPatched. Não toca em MOTOR_CONFIG/LIGAS_STATUS. Reverter = remover esta linha. -->
 <script src="Auditoria Especialista em cantos/_Patches/patch_j1_aplicar.js?v=2026-05-05"></script>
 <script src="data/normalizador_perfis.js?v=1.0"></script>
@@ -1248,6 +1269,103 @@ function getLigaDNA(liga) {
 function getArqMult(liga) {
   const dna = getLigaDNA(liga);
   return ARQUETIPO_MULT[dna.arquetipo] || ARQUETIPO_MULT.equilibrada;
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  MEMÓRIA DNA — Acesso à análise comportamental cravada (v1.0 — 2026-05-14)
+//  Lê window.MEMORIA_DNA (carregado de data/memoria_dna.js)
+//  179 times analisados em 7 ligas + 12 assinaturas + buckets + divergências
+// ══════════════════════════════════════════════════════════════════
+function _normNomeMemoria(s) {
+  return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+}
+
+function getMemoriaTime(liga, time) {
+  if (!window.MEMORIA_DNA || !liga || !time) return null;
+  const memLiga = window.MEMORIA_DNA[liga];
+  if (!memLiga || !memLiga.times) return null;
+  // Match exato primeiro
+  if (memLiga.times[time]) return memLiga.times[time];
+  // Match fuzzy
+  const alvo = _normNomeMemoria(time);
+  const key = Object.keys(memLiga.times).find(k => {
+    const kn = _normNomeMemoria(k);
+    return kn === alvo || kn.includes(alvo) || alvo.includes(kn);
+  });
+  return key ? memLiga.times[key] : null;
+}
+
+// Formata bloco textual da memória DNA pra um jogo específico (consumido pelo SmartCoach)
+function _formatarMemoriaJogoDNA(liga, mandante, visitante) {
+  if (!window.MEMORIA_DNA) return '';
+  const dnaM = getMemoriaTime(liga, mandante);
+  const dnaV = getMemoriaTime(liga, visitante);
+  if (!dnaM && !dnaV) return '';
+
+  let txt = '\n🎭 PERFIL COMPORTAMENTAL (memória DNA v1.0 — auditoria comportamental cravada):\n';
+
+  // === MANDANTE ===
+  if (dnaM) {
+    const id = dnaM.identidade || {};
+    txt += `\n🏠 ${mandante} — ${id.categoria||'?'} (PowerScore ${id.powerScore||'?'}, perfil ${id.perfil_dna||'?'}, forma ${id.forma||'N/D'})\n`;
+    // Bucket relevante (mandante em casa vs categoria do visitante)
+    const catV = (getMemoriaTime(liga, visitante)?.identidade?.categoria || 'medio').toLowerCase().replace('ã','a');
+    const bucketKey = 'casa_vs_' + catV;
+    const bk = dnaM.buckets && dnaM.buckets[bucketKey];
+    if (bk && bk.qualifier !== 'amostra_insuficiente') {
+      txt += `  📍 Contexto direto (${bucketKey}, n=${bk.n}, ${bk.qualifier}): pró ${bk.cantos_pro_media}/sof ${bk.cantos_sofridos_media}, diff ${bk.diferencial>0?'+':''}${bk.diferencial}`;
+      if (bk.padrao_detectado) txt += ` [PADRÃO DETECTADO ${bk.variacao_vs_baseline_pct>0?'+':''}${bk.variacao_vs_baseline_pct}% vs baseline]`;
+      txt += `\n`;
+    }
+    // Assinaturas presentes
+    const ass = (dnaM.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
+    if (ass.length > 0) txt += `  🏷️ Assinaturas: ${ass.join(', ')}\n`;
+    // Narrativa profissional
+    if (dnaM.narrativa) txt += `  📋 ${dnaM.narrativa}\n`;
+  }
+
+  // === VISITANTE ===
+  if (dnaV) {
+    const id = dnaV.identidade || {};
+    txt += `\n✈️ ${visitante} — ${id.categoria||'?'} (PowerScore ${id.powerScore||'?'}, perfil ${id.perfil_dna||'?'}, forma ${id.forma||'N/D'})\n`;
+    const catM = (getMemoriaTime(liga, mandante)?.identidade?.categoria || 'medio').toLowerCase().replace('ã','a');
+    const bucketKey = 'fora_vs_' + catM;
+    const bk = dnaV.buckets && dnaV.buckets[bucketKey];
+    if (bk && bk.qualifier !== 'amostra_insuficiente') {
+      txt += `  📍 Contexto direto (${bucketKey}, n=${bk.n}, ${bk.qualifier}): pró ${bk.cantos_pro_media}/sof ${bk.cantos_sofridos_media}, diff ${bk.diferencial>0?'+':''}${bk.diferencial}`;
+      if (bk.padrao_detectado) txt += ` [PADRÃO DETECTADO ${bk.variacao_vs_baseline_pct>0?'+':''}${bk.variacao_vs_baseline_pct}% vs baseline]`;
+      txt += `\n`;
+    }
+    const ass = (dnaV.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
+    if (ass.length > 0) txt += `  🏷️ Assinaturas: ${ass.join(', ')}\n`;
+    if (dnaV.narrativa) txt += `  📋 ${dnaV.narrativa}\n`;
+  }
+
+  // === DIVERGÊNCIAS DNA × PERFORMANCE (alerta crítico!) ===
+  const memLiga = window.MEMORIA_DNA[liga];
+  const divergencias = (memLiga && memLiga.divergencias_dna_performance) || [];
+  const divM = divergencias.find(d => _normNomeMemoria(d.time) === _normNomeMemoria(mandante));
+  const divV = divergencias.find(d => _normNomeMemoria(d.time) === _normNomeMemoria(visitante));
+  if (divM || divV) {
+    txt += `\n⚠️ DIVERGÊNCIA DNA × PERFORMANCE DETECTADA — MOTOR PODE ESTAR ENGANADO:\n`;
+    if (divM) txt += `  🚨 ${mandante}: ${divM.tipo_divergencia} (severidade ${divM.severidade.toUpperCase()}) — desinflar confiança no perfil DNA\n`;
+    if (divV) txt += `  🚨 ${visitante}: ${divV.tipo_divergencia} (severidade ${divV.severidade.toUpperCase()}) — desinflar confiança no perfil DNA\n`;
+  }
+
+  // === CRUZAMENTO DNA × DNA (padrão da liga pra esse par de perfis) ===
+  if (dnaM && dnaV && memLiga.matriz_dna_cruzamentos) {
+    const perfilM = dnaM.identidade?.perfil_dna;
+    const perfilV = dnaV.identidade?.perfil_dna;
+    if (perfilM && perfilV) {
+      const cruzKey = `${perfilM}_vs_${perfilV}`;
+      const cruz = memLiga.matriz_dna_cruzamentos[cruzKey];
+      if (cruz && cruz.qualifier !== 'amostra_insuficiente') {
+        txt += `\n🧬 PADRÃO DA LIGA (${perfilM} × ${perfilV}): ${cruz.cantos_media_total} cantos/jogo, mandante domina ${cruz.domina_mandante_pct}% dos jogos (${cruz.qualifier}, n=${cruz.n_jogos})\n`;
+      }
+    }
+  }
+
+  return txt;
 }
 
 // ── PROTOCOLO DE STAKE (regras de entrada disciplinadas, v1.0 — 2026-04-22) ──
@@ -3676,6 +3794,7 @@ const VIEW_TO_GRUPO = {
   'projecao':        'analise',
   'tracker':         'operacao',
   'apostas':         'operacao',
+  'multiplas-elite': 'operacao',
   'auditoria':       'auditoria'
 };
 
@@ -3702,7 +3821,9 @@ const SUBNAV_BY_GRUPO = {
   ],
   operacao: [
     { id: 'tracker', label: '📈 Bet Tracker' },
-    { id: 'apostas', label: '🎰 Apostas Reais' }
+    { id: 'apostas', label: '🎰 Apostas Reais' },
+    { id: 'multiplas-elite', label: '🏆 Múltiplas Elite',
+      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' }
   ],
   auditoria: [
     { id: 'auditoria', label: '🔍 Auditoria Cross-Liga',
@@ -3764,6 +3885,7 @@ function showView(id) {
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
   if (id==='vencedor-cantos') renderVencedorCantos(); // laboratório de força do sinal
   if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
+  if (id==='multiplas-elite') renderMultiplasElite(); // curadoria SmartCoach IA
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -7062,6 +7184,7 @@ function getAppContext() {
     'view-apostas':'Apostas Reais', 'view-enigma':'Enigma',
     'view-cisne-negro':'Cisne Negro', 'view-vencedor-cantos':'Vencedor Cantos',
     'view-filtro-ouro':'Filtro OURO',
+    'view-multiplas-elite':'Múltiplas Elite',
     'view-auditoria':'Auditoria' };
   const viewNome = NOMES_VIEW[mode] || mode;
 
@@ -7209,6 +7332,12 @@ function getAppContext() {
           }
         }
       }
+
+      // ── MEMÓRIA DNA v1.0 — Análise comportamental cravada (auditoria 14/05/2026) ──
+      try {
+        const memTxt = _formatarMemoriaJogoDNA(LIGA_ATUAL, m, v);
+        if (memTxt) ctx += memTxt;
+      } catch(e) {}
 
       // ── ÚLTIMOS 5 JOGOS EM CASA do mandante (dados situacionais reais) ──
       const casaM = jogosValidos.filter(j => j.mandante === m).slice(-5).reverse();
@@ -7723,7 +7852,46 @@ DNA ESCOTEIRO: Se o contexto incluir "🧬 DNA ESCOTEIRO", use esses dados para:
 - Avisar quando visitante tem "Perda fora alta" (projeção pode estar inflada)
 - Mencionar tendência de empate quando ALTO
 - Citar a forma recente (VVVVV = em chama, DDDDD = crise)
-Esses dados vêm do Escoteiro YAAKEN e são qualitativos — complementam o modelo Poisson.`;
+Esses dados vêm do Escoteiro YAAKEN e são qualitativos — complementam o modelo Poisson.
+
+🎭 MEMÓRIA DNA v1.0 (PRIORIDADE MÁXIMA — auditoria comportamental cravada em 179 times):
+Quando o contexto contiver "🎭 PERFIL COMPORTAMENTAL", você tem acesso à análise comportamental
+PROFUNDA de cada time. USE ESSES DADOS COMO REFERÊNCIA PRIMÁRIA, acima de médias genéricas.
+
+Estrutura disponível por time:
+- **PowerScore (0-100)** + categoria (ELITE / MÉDIO / AZARÃO) — performance real recente
+- **Contexto direto (bucket)**: como o time se comporta NO CENÁRIO específico (casa vs categoria
+  do adversário). Quando há "PADRÃO DETECTADO" + qualifier "consolidado", trate como sinal forte.
+- **Assinaturas comportamentais nomeadas** (presentes apenas se evidência objetiva):
+  • BLITZ_INICIAL: cantos concentrados no 1º tempo
+  • RETRANCA_AVANÇADA: sofre cantos majoritariamente no 2T (jogo recua)
+  • ATAQUE_ESTERIL: encosta na área mas converte pouco (cantos altos, gols baixos)
+  • EFETIVIDADE_CLINICA: gols altos com cantos baixos (eficiência cirúrgica)
+  • MURO_DEFENSIVO: cantos sofridos baixos + gols sofridos baixos
+  • DEFESA_PRECARIA: cantos e gols sofridos acima da média
+  • RUPTURA_HOME: diferença grande casa/fora
+  • ELITE_KILLER: rende MAIS contra elite do que contra azarão
+  • CARRINHO_FACIL: domina azarões com folga
+  • DESEQUILIBRA_FAVORITO: quando é favorito, abre placar de cantos
+  • SUCUMBE_AZARÃO: quando é azarão, sofre muitos cantos
+- **Narrativa profissional pronta** (use como sumário)
+
+🚨 ALERTAS DE DIVERGÊNCIA DNA × PERFORMANCE (CRÍTICO):
+Quando o contexto mostrar "⚠️ DIVERGÊNCIA DNA × PERFORMANCE DETECTADA":
+1. **Time tem perfil DNA forte (ex: MURO_DUPLO, OFENSIVO_SOLIDO) mas performance recente NÃO bate.**
+2. **NÃO CONFIE cegamente** nos multiplicadores DNA Escoteiro pra esse time — o motor pode estar
+   sendo enganado pelo perfil estático (foi exatamente isso que falhou em Grêmio × Flamengo).
+3. Tipos:
+   - "Ofensivo subentregando" → desinflar confiança em HDP forte; considerar Under
+   - "Defensivo medíocre" → não apostar Under achando que o time é fortaleza; pode estourar
+   - "Passivo elite" → time forte mas com cantos baixos; cuidado com Over
+   - "Vulnerável elite" → time forte mas sofre cantos; cuidado com HDP -2.0+
+4. Severidade ALTA → reduzir stake / abster do mercado direcional.
+
+🧬 PADRÃO DA LIGA (cruzamento DNA × DNA):
+Quando o contexto mostrar "🧬 PADRÃO DA LIGA", é o cruzamento de perfis na liga ativa
+(ex: EQUILIBRADO × OFENSIVO no BR gera 11.5 cantos/jogo). Use como referência adicional
+pra calibrar expectativa de volume e dominância territorial.`;
 
 
   try {
@@ -9810,6 +9978,345 @@ function _scoreUnder(p, liga) {
   if (FILTRO_OURO_LIGAS_RUINS_UND.indexOf(liga) >= 0) s -= 10;
 
   return Math.max(0, Math.min(100, s));
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  MÚLTIPLAS ELITE — Curadoria SmartCoach IA (v1.0 — 2026-05-14)
+//
+//  Pipeline em 3 camadas:
+//  1. Motor v3.0: calcula score Vencedor + score Under em todos os jogos
+//  2. Filtros de exclusão: divergências DNA alta, sample insuficiente
+//  3. SmartCoach IA: seleciona 5/10/15/20 a dedo com memória DNA
+//
+//  Output: 4 múltiplas piramidais (ELITE 5 ⊂ 10 ⊂ 15 ⊂ 20)
+// ══════════════════════════════════════════════════════════════════
+let _multiplasEliteState = {
+  candidatos: null,     // [] de candidatos pós-filtro (atualizado on render)
+  multiplas: null,      // resultado da IA: { e5, e10, e15, e20, tese, gerado_em }
+  loading: false
+};
+
+function _linhaUnderSugerida(expFT) {
+  if (expFT <= 7.0) return '7.5';
+  if (expFT <= 8.5) return '8.5';
+  if (expFT <= 9.5) return '9.5';
+  return '10.5';
+}
+
+// Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
+function gerarCandidatosMultiplas() {
+  const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN'];
+  const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
+  const candidatos = [];
+  const ligasComRodada = [];
+  const ligasSemRodada = [];
+  const ligaOriginal = LIGA_ATUAL;
+  const dadosOriginal = DADOS_2026;
+
+  ligas.forEach(L => {
+    try {
+      const dadosLiga = window['DADOS_'+L];
+      if (!dadosLiga || !dadosLiga.times) { ligasSemRodada.push(L+' (sem dataset)'); return; }
+      const raw = localStorage.getItem('sniper_rodada_'+L);
+      const jogosLiga = raw ? JSON.parse(raw) : [];
+      if (jogosLiga.length === 0) { ligasSemRodada.push(L); return; }
+      const naFaixa = jogosLiga.filter(j => !j.data || j.data >= hojeIso);
+      if (naFaixa.length === 0) { ligasSemRodada.push(L+' (rodada passada)'); return; }
+
+      // Troca contexto pra calcular projeção dessa liga
+      LIGA_ATUAL = L;
+      DADOS_2026 = dadosLiga;
+      _forcaCantosCache = null; _forcaCantosCacheLiga = null;
+      _rankingHTCache = null; _rankingHTCacheLiga = null;
+
+      ligasComRodada.push(L+' ('+naFaixa.length+'j)');
+      naFaixa.forEach(j => {
+        try {
+          const p = projecaoJogo(j.m, j.v);
+          if (!p) return;
+          const sV = _scoreVencedor(p, L);
+          const sU = _scoreUnder(p, L);
+          const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
+          const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
+
+          // Filtros de exclusão — divergência DNA alta de QUALQUER um dos times
+          const memLiga = window.MEMORIA_DNA && window.MEMORIA_DNA[L];
+          const divs = (memLiga && memLiga.divergencias_dna_performance) || [];
+          const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+          const divM = divs.find(d => normN(d.time) === normN(j.m));
+          const divV = divs.find(d => normN(d.time) === normN(j.v));
+          const alertaDiv = [];
+          if (divM && divM.severidade === 'alta') alertaDiv.push(j.m+': '+divM.tipo_divergencia);
+          if (divV && divV.severidade === 'alta') alertaDiv.push(j.v+': '+divV.tipo_divergencia);
+
+          candidatos.push({
+            liga: L, m: j.m, v: j.v, data: j.data, hora: j.hora,
+            scoreVencedor: sV, scoreUnder: sU,
+            favorito, diff: +diff.toFixed(2),
+            linhaHDP: _linhaHDPSugerida(diff),
+            linhaUnder: _linhaUnderSugerida(p.expTotalFT||10),
+            expTotalFT: +((p.expTotalFT||0)).toFixed(2),
+            expHT: +((p.expTotalHT||0)).toFixed(2),
+            confFT: Math.round(p.confFT||0),
+            reisFaixa: p.reisDosCantosData ? p.reisDosCantosData.faixa : null,
+            bpFaixa: p.balaDePrataData ? p.balaDePrataData.faixa : null,
+            bpOdd: p.balaDePrataData ? +p.balaDePrataData.odd.toFixed(2) : null,
+            sniperFT: p.tiroSniperData ? p.tiroSniperData.ft : null,
+            divergencia_alta: alertaDiv.length > 0 ? alertaDiv : null
+          });
+        } catch(e) {}
+      });
+    } catch(e) {}
+  });
+
+  // Restaura contexto original
+  LIGA_ATUAL = ligaOriginal;
+  DADOS_2026 = dadosOriginal;
+  _forcaCantosCache = null; _forcaCantosCacheLiga = null;
+  _rankingHTCache = null; _rankingHTCacheLiga = null;
+
+  return { candidatos, ligasComRodada, ligasSemRodada };
+}
+
+// Gera múltiplas via SmartCoach IA — chama API Anthropic
+async function gerarMultiplasElite() {
+  if (!scKey) {
+    alert('⚠️ Configure a chave Anthropic no SmartCoach (engrenagem ⚙️) antes de gerar.');
+    return;
+  }
+  if (_multiplasEliteState.loading) return;
+
+  _multiplasEliteState.loading = true;
+  const btn = document.getElementById('btn-gerar-multiplas');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria SmartCoach em andamento...'; }
+  document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/3:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
+
+  // ETAPA 1: candidatos
+  const { candidatos, ligasComRodada, ligasSemRodada } = gerarCandidatosMultiplas();
+  _multiplasEliteState.candidatos = candidatos;
+
+  if (candidatos.length === 0) {
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum candidato encontrado.</strong> Importe rodadas nas ligas (📋 Análise da Rodada) com jogos futuros antes de gerar múltiplas.<br><br>Ligas sem rodada/jogos futuros: ${ligasSemRodada.join(', ')||'—'}</div>`;
+    _multiplasEliteState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
+    return;
+  }
+
+  // ETAPA 2: monta prompt e chama IA
+  document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/3:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. SmartCoach curando seleção piramidal...</div>`;
+
+  const prompt = _montarPromptMultiplas(candidatos);
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': scKey,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 4096,
+        temperature: 0.3,
+        system: `Você é o SmartCoach — o maior analista de cantos/escanteios do mundo. Você acabou de receber TODA a memória DNA cravada (179 times, 12 assinaturas comportamentais, 1074 buckets situacionais, 19 divergências DNA × Performance) das 7 ligas operáveis.
+
+Sua missão agora é a curadoria final das MÚLTIPLAS ELITE da rodada. Selecionar a dedo entre os candidatos pré-filtrados pelo motor as melhores entradas pra construir 4 múltiplas piramidais (ELITE 5, ELITE 10, ELITE 15, ELITE 20) — onde a estrutura é OBRIGATÓRIAMENTE piramidal: cada escalão maior CONTÉM TODOS os jogos do escalão anterior + adiciona mais.
+
+REGRAS DE SELEÇÃO:
+1. ELITE 5: as 5 entradas mais BLINDADAS da rodada. Score mínimo alto, evidência convergente (BP NUCLEAR + Cisne forte + memória DNA confirmando + sem divergência alta).
+2. ELITE 10 = ELITE 5 + 5 picks adicionais (próximas melhores, podem ter score um pouco menor mas SEM divergência alta).
+3. ELITE 15 = ELITE 10 + 5 picks (podem aceitar sample sugestivo, evitar divergência alta).
+4. ELITE 20 = ELITE 15 + 5 picks (top adicional dos candidatos restantes).
+
+CRITÉRIOS DURANTE A SELEÇÃO:
+- MIX LIVRE entre HDP FT e Under FT — escolha o mercado certo pra cada jogo (HDP quando Vencedor forte, Under quando jogo travado).
+- INDEPENDÊNCIA: evite múltiplos jogos da mesma liga no mesmo dia se possível (correlação meteorológica/arbitragem).
+- NÃO INCLUA jogos com \`divergencia_alta\` (são justamente onde o motor pode falhar).
+- Priorize jogos com confluência: BP NUCLEAR + Cisne ≥ 2.5 + score ≥ 70 são picks de OURO.
+
+FORMATO DE SAÍDA — RETORNE APENAS JSON VÁLIDO, sem markdown wrap, sem comentários:
+{
+  "tese_geral": "1-2 frases sobre o estado da rodada e nível de confiança geral",
+  "elite5": {
+    "picks": [
+      {"liga":"ARG","jogo":"River × San Lorenzo","mercado":"HDP","linha":"-1.5","favorito":"River Plate","justificativa":"1 frase com evidência numérica"},
+      ...4 mais
+    ],
+    "tese": "1-2 frases sobre a múltipla específica"
+  },
+  "elite10": { "picks": [...10, sendo os 5 da elite5 + 5 novos], "tese": "..." },
+  "elite15": { "picks": [...15], "tese": "..." },
+  "elite20": { "picks": [...20], "tese": "..." }
+}
+
+IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer também na elite10, elite15 e elite20 (sempre nas primeiras posições).`,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error('API: ' + (err.error?.message || res.status));
+    }
+    const data = await res.json();
+    const txt = data.content[0].text;
+
+    // Tenta parsear JSON (pode vir com markdown wrap)
+    let parsed;
+    try {
+      const limpo = txt.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
+      parsed = JSON.parse(limpo);
+    } catch(e) {
+      throw new Error('SmartCoach retornou JSON inválido. Tente regerar. Início: ' + txt.slice(0, 200));
+    }
+
+    _multiplasEliteState.multiplas = { ...parsed, gerado_em: new Date().toISOString(), candidatos_n: candidatos.length };
+
+    // Cache local
+    try {
+      const hojeKey = new Date().toISOString().slice(0,10);
+      localStorage.setItem('eds_multiplas_elite_'+hojeKey, JSON.stringify(_multiplasEliteState.multiplas));
+    } catch(e) {}
+
+    renderMultiplasElite();
+  } catch(error) {
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria SmartCoach:</strong> ${error.message}<br><br>Verifique o console (F12) para detalhes. Chave Anthropic precisa de Tier ≥ 1.</div>`;
+    console.error('[Multiplas Elite]', error);
+  } finally {
+    _multiplasEliteState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🔄 Regerar Múltiplas'; }
+  }
+}
+
+function _montarPromptMultiplas(candidatos) {
+  let p = `Você recebeu ${candidatos.length} candidatos pré-filtrados pelo motor v3.0 (Filtro OURO recalibrado). Selecione as MÚLTIPLAS ELITE 5/10/15/20 conforme system prompt.\n\n`;
+  p += `CANDIDATOS (ordenados por score Vencedor descendente):\n\n`;
+  const sorted = [...candidatos].sort((a,b) => Math.max(b.scoreVencedor,b.scoreUnder) - Math.max(a.scoreVencedor,a.scoreUnder));
+
+  sorted.forEach((c, i) => {
+    p += `[${i+1}] ${c.liga} · ${c.m} × ${c.v}${c.data?' ('+c.data+')':''}\n`;
+    p += `   Scores: Vencedor=${c.scoreVencedor.toFixed(0)} · Under=${c.scoreUnder.toFixed(0)} | xCornersFT=${c.expTotalFT} | Conf=${c.confFT}%\n`;
+    p += `   Sinais: ${c.bpFaixa?'BP '+c.bpFaixa+' @'+c.bpOdd:'sem BP'} | Cisne Δ=${c.diff} | Reis=${c.reisFaixa||'—'} | Sniper FT=${c.sniperFT||'—'}\n`;
+    p += `   Sugestão motor: HDP ${c.linhaHDP} ${c.favorito} OU Under ${c.linhaUnder}\n`;
+    if (c.divergencia_alta) p += `   🚨 DIVERGÊNCIA ALTA detectada: ${c.divergencia_alta.join(', ')} — EVITAR\n`;
+    // Memória DNA dos 2 times
+    const dM = getMemoriaTime(c.liga, c.m);
+    const dV = getMemoriaTime(c.liga, c.v);
+    if (dM) {
+      const ass = (dM.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
+      p += `   🧬 ${c.m}: ${dM.identidade.categoria} PS${dM.identidade.powerScore} · ${dM.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
+    }
+    if (dV) {
+      const ass = (dV.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
+      p += `   🧬 ${c.v}: ${dV.identidade.categoria} PS${dV.identidade.powerScore} · ${dV.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
+    }
+    p += `\n`;
+  });
+
+  p += `\nMonte as 4 múltiplas piramidais conforme system prompt. RETORNE APENAS JSON.`;
+  return p;
+}
+
+function renderMultiplasElite() {
+  const ctr = document.getElementById('multiplas-resultado');
+  const status = document.getElementById('multiplas-status');
+  const resumo = document.getElementById('multiplas-resumo-candidatos');
+  if (!ctr) return;
+
+  // Tenta restaurar do cache se ainda não tem em memória
+  if (!_multiplasEliteState.multiplas) {
+    try {
+      const hojeKey = new Date().toISOString().slice(0,10);
+      const cached = localStorage.getItem('eds_multiplas_elite_'+hojeKey);
+      if (cached) _multiplasEliteState.multiplas = JSON.parse(cached);
+    } catch(e) {}
+  }
+
+  // Resumo de candidatos (se já calculou)
+  if (_multiplasEliteState.candidatos) {
+    const c = _multiplasEliteState.candidatos;
+    const porLiga = {};
+    c.forEach(x => porLiga[x.liga] = (porLiga[x.liga]||0)+1);
+    resumo.innerHTML = `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:1rem;font-size:.82rem;color:var(--text)">📊 <strong>${c.length} candidatos</strong> em ${Object.keys(porLiga).length} ligas: ${Object.entries(porLiga).map(([L,n])=>L+' ('+n+')').join(' · ')}</div>`;
+  } else {
+    resumo.innerHTML = '';
+  }
+
+  if (!_multiplasEliteState.multiplas) {
+    if (status && !status.innerHTML.trim()) {
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas SmartCoach</strong> para curadoria piramidal.</div>';
+    }
+    ctr.innerHTML = '';
+    return;
+  }
+
+  const m = _multiplasEliteState.multiplas;
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria SmartCoach concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
+
+  ctr.innerHTML = ['elite5','elite10','elite15','elite20'].map(k => _cardMultipla(k, m[k])).filter(Boolean).join('');
+}
+
+function _cardMultipla(escalao, dados) {
+  if (!dados || !Array.isArray(dados.picks)) return '';
+  const tit = { elite5: '💎 ELITE 5', elite10: '🎯 ELITE 10', elite15: '⚡ ELITE 15', elite20: '🚀 ELITE 20' }[escalao];
+  const cor = { elite5: '#16a34a', elite10: '#0ea5e9', elite15: '#8b5cf6', elite20: '#f59e0b' }[escalao];
+  const probApprox = (escalao==='elite5'?0.237 : escalao==='elite10'?0.056 : escalao==='elite15'?0.013 : 0.003) * 100;
+  const oddApprox = { elite5: '~22x', elite10: '~470x', elite15: '~10.200x', elite20: '~221.000x' }[escalao];
+
+  const rows = dados.picks.map((p,i) => `
+    <tr style="border-bottom:1px solid var(--border)">
+      <td style="padding:.5rem .7rem;color:var(--muted);text-align:center;font-weight:700">${i+1}</td>
+      <td style="padding:.5rem .7rem;font-weight:700">${p.jogo}</td>
+      <td style="padding:.5rem .7rem;color:var(--muted)">${p.liga}</td>
+      <td style="padding:.5rem .7rem"><span style="background:${cor}22;color:${cor};padding:.15rem .5rem;border-radius:5px;font-weight:700;font-size:.72rem">${p.mercado} ${p.linha||''}</span></td>
+      <td style="padding:.5rem .7rem;font-size:.78rem;color:var(--text)">${p.favorito||'—'}</td>
+      <td style="padding:.5rem .7rem;font-size:.75rem;color:var(--muted)">${p.justificativa||''}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div style="background:var(--card);border:1px solid var(--border);border-left:4px solid ${cor};border-radius:12px;padding:1.2rem;margin-bottom:1.2rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.6rem">
+        <div style="font-size:1.15rem;font-weight:900;color:${cor}">${tit} <span style="font-size:.72rem;font-weight:600;color:var(--muted)">— ${dados.picks.length} picks</span></div>
+        <div style="font-size:.72rem;color:var(--muted)">Prob composta estimada: <strong style="color:var(--text)">~${probApprox.toFixed(1)}%</strong> · Odd acumulada: <strong style="color:${cor}">${oddApprox}</strong></div>
+      </div>
+      ${dados.tese ? `<div style="background:var(--bg3);border-radius:6px;padding:.5rem .8rem;margin-bottom:.6rem;font-size:.78rem;color:var(--text);font-style:italic">🧠 ${dados.tese}</div>` : ''}
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Jogo</th><th>Liga</th><th>Mercado</th><th>Favorito</th><th>Justificativa</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+function exportarMultiplasHTML() {
+  if (!_multiplasEliteState.multiplas) { alert('Gere as múltiplas primeiro.'); return; }
+  if (typeof _exportarAnaliseHTML !== 'function') { alert('Função de exportação indisponível.'); return; }
+  const ctr = document.getElementById('multiplas-resultado');
+  const status = document.getElementById('multiplas-status');
+  const conteudoHTML = (status?.innerHTML||'') + (ctr?.innerHTML||'');
+  _exportarAnaliseHTML({
+    titulo: '🏆 Múltiplas Elite — Curadoria SmartCoach',
+    subtitulo: 'Seleção piramidal (5/10/15/20) gerada pelo SmartCoach IA com memória DNA cravada',
+    conteudoHTML,
+    prefixoArquivo: 'MultiplasElite',
+    corHeader: 'var(--gold)'
+  });
+}
+
+function limparMultiplasElite() {
+  if (!confirm('Limpar cache de múltiplas? Você precisará regerar (com custo de tokens).')) return;
+  _multiplasEliteState.multiplas = null;
+  _multiplasEliteState.candidatos = null;
+  try {
+    const hojeKey = new Date().toISOString().slice(0,10);
+    localStorage.removeItem('eds_multiplas_elite_'+hojeKey);
+  } catch(e) {}
+  renderMultiplasElite();
 }
 
 // Calcula linha sugerida pra HDP baseado no Δ projetado
