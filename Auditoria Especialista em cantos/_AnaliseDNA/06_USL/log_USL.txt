@@ -1,0 +1,31 @@
+═══ AUDITORIA — USL — 2026-05-14 ═══
+Liga: USL Championship
+Total jogos: 94 | Válidos: 94
+Times: 25
+DNA disponível: sim
+
+— Etapa 1: PowerScore + categoria —
+— Etapa 2: Baselines —
+Baseline liga: 9.19 cantos/jogo (HT=4.41)
+— Etapa 3: Bucket Matrix —
+— Etapa 4: 12 Assinaturas —
+  BLITZ_INICIAL: 13 times
+  RETRANCA_AVANCADA: 3 times
+  EFETIVIDADE_CLINICA: 9 times
+  ATAQUE_ESTERIL: 1 times
+  MURO_DEFENSIVO: 1 times
+  DEFESA_PRECARIA: 1 times
+  RUPTURA_HOME: 8 times
+  ELITE_KILLER: 3 times
+  CARRINHO_FACIL: 0 times
+  DESEQUILIBRA_FAVORITO: 2 times
+  SUCUMBE_AZARAO: 2 times
+  TERMOMETRO_FORMA: 0 times
+— Etapa 5: Narrativas —
+— Etapa 6: Matriz DNA × DNA —
+Cruzamentos detectados: 19
+— Etapa 7: Montagem da memória —
+— Etapa 8: Divergências DNA × Performance: 2 detectadas
+
+Tempo de processamento: 0.03s
+Arquivos gerados: memoria_USL.json, relatorio_USL.html, CHECKPOINT_USL.md

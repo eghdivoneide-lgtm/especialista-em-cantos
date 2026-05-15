@@ -1,0 +1,42 @@
+═══ AUDITORIA — BR_B — 2026-05-14 ═══
+Liga: Brasileirão Série B
+Total jogos: 68 | Válidos: 68
+Times: 20
+DNA disponível: sim
+
+— Etapa 1: PowerScore + categoria —
+— Etapa 2: Baselines —
+Baseline liga: 10.44 cantos/jogo (HT=4.87)
+— Etapa 3: Bucket Matrix —
+— Etapa 4: 12 Assinaturas —
+  BLITZ_INICIAL: 8 times
+  RETRANCA_AVANCADA: 3 times
+  EFETIVIDADE_CLINICA: 4 times
+  ATAQUE_ESTERIL: 2 times
+  MURO_DEFENSIVO: 0 times
+  DEFESA_PRECARIA: 0 times
+  RUPTURA_HOME: 10 times
+  ELITE_KILLER: 1 times
+  CARRINHO_FACIL: 0 times
+  DESEQUILIBRA_FAVORITO: 0 times
+  SUCUMBE_AZARAO: 0 times
+  TERMOMETRO_FORMA: 0 times
+— Etapa 5: Narrativas —
+— Etapa 6: Matriz DNA × DNA —
+Cruzamentos detectados: 15
+— Etapa 7: Montagem da memória —
+— Etapa 8: Divergências DNA × Performance: 2 detectadas
+
+— ⚠️ AVISO: cobertura de placar baixa (13.2%) —
+Assinaturas placar-dependentes com nao_avaliavel por time:
+  ATAQUE_ESTERIL (2 times sem dados):
+    Avai, Novorizontino
+  MURO_DEFENSIVO (2 times sem dados):
+    Avai, Novorizontino
+  DEFESA_PRECARIA (2 times sem dados):
+    Avai, Novorizontino
+  EFETIVIDADE_CLINICA (2 times sem dados):
+    Avai, Novorizontino
+
+Tempo de processamento: 0.03s
+Arquivos gerados: memoria_BR_B.json, relatorio_BR_B.html, CHECKPOINT_BR_B.md
