@@ -1,11 +1,11 @@
 // ============================================================
-// ARG_B 2026 — Injeção Varredor v4 (rodada 2026-05-05)
-// 199 jogos | Atualizado: 2026-05-05
+// ARG_B 2026 — Mesclagem Rico+Pobre (uniformização)
+// 234 jogos | Atualizado: 2026-05-20
 // ============================================================
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-05-05",
+  "ultimaAtualizacao": "2026-05-20",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
@@ -85,6 +85,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/MwBSuBt1/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.20",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:13:13.455Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "3 - 0"
       }
     },
     {
@@ -126,6 +217,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/EoTZwkBD/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 9,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.68",
+        "oddEmpate": "3.20",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:13:42.480Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -167,6 +349,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/0SI3K3EN/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 20
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 11
+        },
+        "cantos": {
+          "m": 4,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.65",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:14:12.151Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 2"
       }
     },
     {
@@ -208,6 +481,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/xYwUtcQ1/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 6
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "3.00",
+        "oddV": "2.55"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:14:42.348Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 1"
       }
     },
     {
@@ -249,6 +613,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/jy6tj13F/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 9,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "3.10",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:15:12.107Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -290,6 +745,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/EFU9Solf/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.02.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "2.30",
+        "oddEmpate": "2.57",
+        "oddV": "3.90"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:15:41.992Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -331,6 +877,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/zRzEADS8/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.82",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:16:12.208Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -372,6 +1009,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/v1CBhu7N/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.75",
+        "oddV": "3.30"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:16:42.380Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -413,6 +1141,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/4zt4m2rA/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "5-3-1-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.57",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:17:12.130Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 2"
       }
     },
     {
@@ -454,6 +1273,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/YByy7mu0/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-1-1"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.70",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:17:41.711Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -495,6 +1405,103 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/na9wXtbT/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "30.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cantos": {
+          "m": 9,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-3-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.45",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:18:11.726Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -536,6 +1543,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/407jHw2E/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:18:40.066Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -577,6 +1678,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/zNp2gFhA/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.65",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:19:11.108Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "0 - 2"
       }
     },
     {
@@ -618,6 +1810,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/SICrCQ3D/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 13,
+          "v": 8
+        },
+        "cantos": {
+          "m": 7,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.45",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:19:40.835Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -659,6 +1942,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/xAip3VKr/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.57",
+        "oddEmpate": "3.00",
+        "oddV": "2.85"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:20:11.446Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -700,6 +2074,101 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/hpE3f1xB/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-1-3-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:20:40.822Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -741,6 +2210,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Imy1U7Js/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.10",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:21:10.771Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -782,6 +2342,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/UuWmmglR/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.33",
+        "oddEmpate": "4.50",
+        "oddV": "10.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:21:39.109Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -823,6 +2474,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QBHJsXBl/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.57",
+        "oddEmpate": "3.20",
+        "oddV": "7.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:22:09.787Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -864,6 +2606,103 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/fs6M1h3K/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "11.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "2.70",
+        "oddV": "2.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:22:39.273Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -905,6 +2744,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/WS25B8Vh/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.03.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 15
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 7,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "3.90",
+        "oddEmpate": "2.45",
+        "oddV": "2.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:23:08.429Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -946,6 +2876,100 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/4vWF40I8/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 10
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.30",
+        "oddEmpate": "2.65",
+        "oddV": "2.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:23:38.857Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 3"
       }
     },
     {
@@ -986,6 +3010,94 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 2
         }
+      },
+      "url": "https://www.flashscore.com/match/IN7YiNY2/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "2.85",
+        "oddV": "6.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:24:08.142Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "3 - 2"
       }
     },
     {
@@ -1027,6 +3139,103 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/8vZL8icL/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.57",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:24:38.254Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1068,6 +3277,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QPdhdWQs/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "11.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "4.33",
+        "oddEmpate": "3.00",
+        "oddV": "1.96"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:25:08.618Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -1109,6 +3412,103 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/C6nMxoUi/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 10
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.50",
+        "oddEmpate": "3.00",
+        "oddV": "2.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:25:38.715Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -1150,6 +3550,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/06PO2vmL/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.75",
+        "oddEmpate": "2.65",
+        "oddV": "2.85"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:26:09.346Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1191,6 +3682,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/0nwlpBFd/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 9
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 1
+        },
+        "cantos": {
+          "m": 0,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-5-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "3.00",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:26:37.898Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -1232,6 +3817,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/8EkVZTeK/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "3.00",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:27:08.356Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -1273,6 +3949,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/WUPfdN7b/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.02.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 7,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-5-1"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.00",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:27:39.087Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1314,6 +4081,97 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/bybxVgSr/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 7,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.70",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:28:07.380Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "1 - 3"
       }
     },
     {
@@ -1355,6 +4213,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QoYS89Am/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 7,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.70",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:28:37.838Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -1396,6 +4348,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/KlZngRFO/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.65",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:29:07.564Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1437,6 +4483,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/O4U3gzA7/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 2,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.30",
+        "oddEmpate": "2.70",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:29:36.791Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "3 - 0"
       }
     },
     {
@@ -1478,6 +4615,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/rmlAigNM/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 1
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 6,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.65",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:30:07.306Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -1519,6 +4747,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/YDxukFJE/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 12,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.82",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:30:38.406Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -1560,6 +4879,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Mij1fAef/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-5-1"
+      },
+      "mercado": {
+        "oddM": "3.20",
+        "oddEmpate": "2.75",
+        "oddV": "2.45"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:31:08.093Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -1601,6 +5014,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/nPhU54aU/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.57",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:31:38.844Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -1642,6 +5143,94 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/dxBfcIAr/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 12,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.70",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:32:08.718Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 2"
       }
     },
     {
@@ -1683,6 +5272,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/SKPtnXpp/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 14:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.75",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:32:38.642Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -1724,6 +5404,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/pzeh19ke/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.85",
+        "oddV": "3.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:33:09.637Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1765,6 +5539,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/O4Mnbqwn/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.02.2026 17:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.50",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:33:40.408Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -1806,6 +5671,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QqLUY2TG/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.03.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 5
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.57",
+        "oddEmpate": "2.70",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:34:10.568Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -1847,6 +5803,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/GIkLrJek/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:34:40.605Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "1 - 2"
       }
     },
     {
@@ -1888,6 +5935,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/n3akluYR/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.10",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:35:09.716Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -1929,6 +6067,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/nTSHQPI6/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.85",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:35:40.339Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -1970,6 +6199,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/KIhRnAz2/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.40",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:36:09.799Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -2011,6 +6331,99 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/bogrmJUp/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 0
+        },
+        "cantos": {
+          "m": 6,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "Desconhecida",
+        "v": "Desconhecida"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "2.82",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:36:39.044Z",
+        "campos_disponiveis": 12,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "formacao_m",
+          "formacao_v"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -2052,6 +6465,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/WMsdkODc/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 7
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-1-1"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "2.82",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:37:08.720Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 2"
       }
     },
     {
@@ -2093,6 +6597,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/EBfM7QUH/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "27.03.2026 22:10",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.65",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:37:38.712Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2134,6 +6729,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/n147XXVj/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.03.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.55",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:38:07.803Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -2175,6 +6861,103 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/SfUeLUtR/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.82",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:38:36.008Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2216,6 +6999,94 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/h4xo7vMG/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 6
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.82",
+        "oddEmpate": "2.65",
+        "oddV": "3.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:39:06.619Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 0"
       }
     },
     {
@@ -2257,6 +7128,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/CQhUu2NH/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.02.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.65",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:39:36.345Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -2298,6 +7260,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/h2FeMPqB/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "27.03.2026 18:15",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.75",
+        "oddEmpate": "2.65",
+        "oddV": "2.85"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:40:07.293Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2339,6 +7392,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/AaZNbVom/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.25",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:40:36.173Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2380,6 +7524,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/veigeyOc/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 4
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:41:04.664Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -2421,6 +7656,103 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Kh9zEnZ0/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.82",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:41:33.949Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2462,6 +7794,97 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/reMQO3mJ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 9
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.50",
+        "oddEmpate": "2.75",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:42:02.286Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 2",
+        "ft": "2 - 3"
       }
     },
     {
@@ -2503,6 +7926,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/SGkgRBR7/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.55",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:42:32.652Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2544,6 +8061,103 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Is09RKLj/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "08.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.68",
+        "oddEmpate": "3.20",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:43:02.142Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -2585,6 +8199,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/E74AjSfJ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:43:30.925Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
       }
     },
     {
@@ -2626,6 +8331,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/OMuvemoC/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.03.2026 13:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-1-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:44:02.145Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -2667,6 +8460,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/jutUAMMi/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 8
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.70",
+        "oddEmpate": "2.85",
+        "oddV": "2.65"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:44:31.794Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 2"
       }
     },
     {
@@ -2708,6 +8592,103 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/n7Zx90i4/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.65",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:45:00.730Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -2749,6 +8730,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/f5l9hlQ6/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.30",
+        "oddEmpate": "2.57",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:45:31.153Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -2790,6 +8862,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/j9sWd9Ga/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.45",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:45:59.968Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -2831,6 +8994,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/GvReedue/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.57",
+        "oddEmpate": "2.75",
+        "oddV": "3.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:46:29.686Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -2872,6 +9126,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/6kq1amK7/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-1-1"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.65",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:46:59.323Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -2913,6 +9258,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/pvixvthU/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.30",
+        "oddEmpate": "2.57",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:47:28.335Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -2954,6 +9390,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/611pTXde/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-5-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.79",
+        "oddEmpate": "3.00",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:47:58.040Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -2995,6 +9522,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/tEddEVnQ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.70",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:48:28.714Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -3036,6 +9651,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/KCazFsxo/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 17:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "1.79",
+        "oddEmpate": "2.82",
+        "oddV": "6.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:48:57.589Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
       }
     },
     {
@@ -3077,6 +9786,97 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Iq1D9n05/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 8
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 5
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-1-1"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "2.70",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:49:26.255Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "0 - 3"
       }
     },
     {
@@ -3118,6 +9918,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/OQFRF84l/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.65",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:49:55.659Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -3159,6 +10053,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QkOvQ7pn/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.50",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:50:24.408Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 2"
       }
     },
     {
@@ -3200,6 +10185,97 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/IJHMzPb4/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "29.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 17
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 11
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "3-5-2",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "2.75",
+        "oddEmpate": "2.70",
+        "oddV": "2.82"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:50:54.024Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "0 - 3"
       }
     },
     {
@@ -3241,6 +10317,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/ChkJlW5k/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 6
+        },
+        "cantos": {
+          "m": 10,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.00",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:51:22.466Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "2 - 2"
       }
     },
     {
@@ -3282,6 +10449,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/WnRnOoFb/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "5-2-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.65",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:51:50.499Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
       }
     },
     {
@@ -3323,6 +10581,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/ADEdDU0t/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "27.03.2026 22:10",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 27,
+          "v": 73
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.75",
+        "oddV": "3.30"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:52:19.567Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
       }
     },
     {
@@ -3364,6 +10713,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/SQpOJJA6/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.10",
+        "oddV": "6.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:52:49.268Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -3405,6 +10845,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/8p6cYIPa/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 5
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 5
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.85",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:53:19.445Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "2 - 2"
       }
     },
     {
@@ -3446,6 +10977,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/YNaSVvMi/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 17:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "2.82",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:53:48.781Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -3487,6 +11109,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/h6ZYBpVI/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 9,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.68",
+        "oddEmpate": "3.00",
+        "oddV": "6.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:54:19.277Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -3528,6 +11244,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/8tW9Dc6N/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "07.04.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 6
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "2.82",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:54:48.811Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
       }
     },
     {
@@ -3569,6 +11376,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/fB9jQzjT/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-1-3-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.57",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:55:19.232Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 2"
       }
     },
     {
@@ -3610,6 +11508,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/AqL5QOSE/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.70",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:55:49.028Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 0"
       }
     },
     {
@@ -3651,6 +11643,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/U5ykanUF/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.51",
+        "oddEmpate": "3.40",
+        "oddV": "8.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:56:18.910Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -3692,6 +11775,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/vo8C5Tkd/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-1-3-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.75",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:56:48.694Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 1"
       }
     },
     {
@@ -3733,6 +11907,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Wxbz4GEi/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.85",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:57:18.466Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -3774,6 +12036,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/hjmNlvAt/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.45",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:57:48.558Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -3815,6 +12165,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/23iqSdLG/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.75",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:58:16.716Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 2",
+        "ft": "0 - 2"
       }
     },
     {
@@ -3856,6 +12297,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/p6TJ2Lz8/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.70",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:58:46.506Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -3897,6 +12429,103 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/S6l7RACF/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 4
+        },
+        "cantos": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.70",
+        "oddV": "3.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:59:17.089Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -3938,6 +12567,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/fuBQEXS9/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 37,
+          "v": 63
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.70",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T04:59:46.506Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -3979,6 +12699,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/nRs1FJyB/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 7,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 8
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.75",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:00:15.876Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -4020,6 +12834,97 @@ window.DADOS_ARG_B = {
           "v": 3
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/QFycXicd/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 10
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.57",
+        "oddV": "3.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:00:45.803Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "3 - 3"
       }
     },
     {
@@ -4061,6 +12966,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/6kw9rI5c/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 8
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.70",
+        "oddEmpate": "2.57",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:01:15.300Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 2"
       }
     },
     {
@@ -4102,6 +13098,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/b9ggHKk1/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "20.03.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.50",
+        "oddEmpate": "2.65",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:01:45.373Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -4143,6 +13230,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/dteWBPDL/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.79",
+        "oddEmpate": "2.82",
+        "oddV": "6.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:02:16.035Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -4184,6 +13362,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/ENKl5KeD/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 8
+        },
+        "cantos": {
+          "m": 8,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "3-5-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.70",
+        "oddEmpate": "2.57",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:02:45.555Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
       }
     },
     {
@@ -4225,6 +13497,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/8rgabCrT/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.02.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "3.00",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:03:15.391Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -4266,6 +13629,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/WMi1FbKD/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "23.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 7
+        },
+        "cantos": {
+          "m": 4,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.57",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:03:45.791Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "3 - 1"
       }
     },
     {
@@ -4307,6 +13761,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/xvDDUzPO/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "28.02.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 9,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.10",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:04:16.126Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 2"
       }
     },
     {
@@ -4348,6 +13893,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Sh9YCBcM/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 5
+        },
+        "cantos": {
+          "m": 10,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:04:45.712Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -4389,6 +14022,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/bqbwNAwK/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 6
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.65",
+        "oddEmpate": "2.57",
+        "oddV": "3.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:05:15.792Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -4430,6 +14154,94 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/APdODoq9/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.00",
+        "oddV": "6.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:05:44.968Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -4471,6 +14283,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/tCJ4WdfC/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "2.57",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:06:15.168Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -4512,6 +14415,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/M76u92dl/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 9
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.82",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:06:43.391Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -4553,6 +14547,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/URl9Hl1s/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-3-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.82",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:07:13.144Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
       }
     },
     {
@@ -4594,6 +14676,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/M3GTi4Mk/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "2.85",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:07:43.942Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -4635,6 +14808,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/0vqWHcuJ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.68",
+        "oddEmpate": "3.10",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:08:12.691Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -4676,6 +14940,94 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/YRiFLutf/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 6
+        },
+        "cantos": {
+          "m": 5,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "3.00",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:08:43.375Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -4717,6 +15069,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/v1vgHu7b/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.20",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:09:12.616Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -4758,6 +15198,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/jswIFSVg/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.03.2026 14:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.65",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:09:42.509Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -4799,6 +15330,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/2JZdcQbS/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.03.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 5
+        },
+        "cantos": {
+          "m": 0,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:10:12.017Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "3 - 0"
       }
     },
     {
@@ -4840,6 +15462,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/4jdr2fq4/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:10:40.965Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -4881,6 +15594,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/6ybzUIj4/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "05.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 8,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.50",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:11:09.795Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
       }
     },
     {
@@ -4922,6 +15726,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/2s0pJtLl/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.75",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:11:39.126Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -4963,6 +15858,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/GQy363yq/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.03.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:12:09.943Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -5004,6 +15990,103 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/fL4m7tR0/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 8,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "3.90"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:12:40.247Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -5045,6 +16128,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/hGUVhj6j/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.02.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 7,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.70",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:13:09.915Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -5086,6 +16260,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/lItWnIvg/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "01.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.57",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:13:39.153Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -5127,6 +16392,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/IFHu8yUp/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.04.2026 22:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "2.85",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:14:10.017Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -5168,6 +16524,100 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/rZppJ1xn/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.04.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-3-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "3.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:14:39.411Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -5209,6 +16659,100 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/EyIigZJF/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "11.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-5-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.70",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:15:08.708Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
       }
     },
     {
@@ -5250,6 +16794,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/2HWHtdzA/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.00",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:15:39.159Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -5291,6 +16926,94 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/nVHlzuem/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "27.02.2026 22:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.79",
+        "oddEmpate": "2.75",
+        "oddV": "6.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:16:07.893Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -5332,6 +17055,97 @@ window.DADOS_ARG_B = {
           "v": 2
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/tUCzTNmK/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 6
+        },
+        "cantos": {
+          "m": 7,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.75",
+        "oddV": "3.30"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:16:38.279Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
       }
     },
     {
@@ -5373,6 +17187,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/0Iki0YDG/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.02.2026 22:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.10",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:17:08.197Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -5414,6 +17319,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Wb9EO2cR/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 14
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.82",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:17:36.922Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
       }
     },
     {
@@ -5455,6 +17451,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/KtoaTWs3/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "21.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 14,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.75",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:18:05.234Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -5496,6 +17583,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/lvzB4s6e/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 0,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "3.00",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:18:34.461Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -5537,6 +17715,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/nwj57kLq/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.02.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.57",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:19:03.602Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -5578,6 +17847,97 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/bDHHGgbc/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "14.02.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-3-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.96",
+        "oddEmpate": "3.00",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:19:34.295Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -5619,6 +17979,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/b7tQD606/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.03.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 15
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 7
+        },
+        "cantos": {
+          "m": 3,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "2.85",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:20:04.914Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -5660,6 +18111,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/GnRIu1XP/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "02.03.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.68",
+        "oddEmpate": "3.30",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:20:34.733Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -5701,6 +18243,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/UTJyjri2/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.03.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.70",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:21:04.895Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 1"
       }
     },
     {
@@ -5742,6 +18372,97 @@ window.DADOS_ARG_B = {
           "v": 0
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/Q1l7N1Bs/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "22.02.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 30,
+          "v": 70
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "3.40",
+        "oddEmpate": "2.65",
+        "oddV": "2.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:21:34.716Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -5783,6 +18504,94 @@ window.DADOS_ARG_B = {
           "v": 1
         },
         "ht": null
+      },
+      "url": "https://www.flashscore.com/match/6BEqeek3/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.04.2026 18:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "2.85",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:22:03.557Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 1"
       }
     },
     {
@@ -5817,6 +18626,98 @@ window.DADOS_ARG_B = {
           "m": 3,
           "v": 3
         }
+      },
+      "url": "https://www.flashscore.com/match/zVUPvz5M/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.04.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.82",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:22:55.330Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "1 - 2",
+        "ht": "1 - 2"
       }
     },
     {
@@ -5851,6 +18752,101 @@ window.DADOS_ARG_B = {
           "m": 5,
           "v": 1
         }
+      },
+      "url": "https://www.flashscore.com/match/vqoNKEDj/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 9
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 7
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.82",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:23:39.190Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 0",
+        "ht": "0 - 0"
       }
     },
     {
@@ -5885,6 +18881,97 @@ window.DADOS_ARG_B = {
           "m": 0,
           "v": 5
         }
+      },
+      "url": "https://www.flashscore.com/match/IkYlZDSq/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.04.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 17
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 8
+        },
+        "cantos": {
+          "m": 1,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 5
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.10",
+        "oddEmpate": "2.45",
+        "oddV": "2.85"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-20T05:22:32.652Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "2 - 2"
       }
     },
     {
@@ -5954,7 +19041,102 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 0
       },
-      "match_id": "Kf86m4mf"
+      "match_id": "Kf86m4mf",
+      "url": "https://www.flashscore.com/match/Kf86m4mf/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "20.04.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.75",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-28T23:30:27.091Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
     },
     {
       "id": "4rrA7PvQ",
@@ -5997,7 +19179,102 @@ window.DADOS_ARG_B = {
         "m": 4,
         "v": 1
       },
-      "match_id": "4rrA7PvQ"
+      "match_id": "4rrA7PvQ",
+      "url": "https://www.flashscore.com/match/4rrA7PvQ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "20.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 12,
+          "v": 7
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "3.00",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-28T23:30:56.424Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "4 - 1"
+      }
     },
     {
       "id": "GM1ForI6",
@@ -6040,7 +19317,99 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 1
       },
-      "match_id": "GM1ForI6"
+      "match_id": "GM1ForI6",
+      "url": "https://www.flashscore.com/match/GM1ForI6/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 10,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "2.85",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-28T23:31:26.737Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 1"
+      }
     },
     {
       "id": "SAUq5R9C",
@@ -6083,7 +19452,102 @@ window.DADOS_ARG_B = {
         "m": 3,
         "v": 0
       },
-      "match_id": "SAUq5R9C"
+      "match_id": "SAUq5R9C",
+      "url": "https://www.flashscore.com/match/SAUq5R9C/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:11:58.692Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "3 - 0"
+      }
     },
     {
       "id": "lz0NqMnJ",
@@ -6126,7 +19590,102 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "lz0NqMnJ"
+      "match_id": "lz0NqMnJ",
+      "url": "https://www.flashscore.com/match/lz0NqMnJ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 7,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.82",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:12:30.159Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
     },
     {
       "id": "tIp07Hjt",
@@ -6169,7 +19728,99 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 0
       },
-      "match_id": "tIp07Hjt"
+      "match_id": "tIp07Hjt",
+      "url": "https://www.flashscore.com/match/tIp07Hjt/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 0,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:13:00.515Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
     },
     {
       "id": "8zB0iDlS",
@@ -6212,7 +19863,96 @@ window.DADOS_ARG_B = {
         "m": 6,
         "v": 1
       },
-      "match_id": "8zB0iDlS"
+      "match_id": "8zB0iDlS",
+      "url": "https://www.flashscore.com/match/8zB0iDlS/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 14,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 11
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.56",
+        "oddEmpate": "3.20",
+        "oddV": "8.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:13:31.034Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "6 - 1"
+      }
     },
     {
       "id": "AcxH3Zk5",
@@ -6255,7 +19995,100 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "AcxH3Zk5"
+      "match_id": "AcxH3Zk5",
+      "url": "https://www.flashscore.com/match/AcxH3Zk5/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:14:03.183Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
     },
     {
       "id": "lrl85eLh",
@@ -6298,7 +20131,99 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 1
       },
-      "match_id": "lrl85eLh"
+      "match_id": "lrl85eLh",
+      "url": "https://www.flashscore.com/match/lrl85eLh/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.65",
+        "oddV": "3.90"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:14:48.315Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 1",
+        "ht": "0 - 1"
+      }
     },
     {
       "id": "0YkupVt2",
@@ -6341,7 +20266,104 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 1
       },
-      "match_id": "0YkupVt2"
+      "match_id": "0YkupVt2",
+      "url": "https://www.flashscore.com/match/0YkupVt2/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "19.04.2026 14:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cantos": {
+          "m": 8,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "Desconhecida",
+        "v": "Desconhecida"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "2.65",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:15:34.504Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "formacao_m",
+          "formacao_v"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "1 - 1",
+        "ht": "1 - 1"
+      }
     },
     {
       "id": "0OSi35vP",
@@ -6384,7 +20406,99 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 0
       },
-      "match_id": "0OSi35vP"
+      "match_id": "0OSi35vP",
+      "url": "https://www.flashscore.com/match/0OSi35vP/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 10,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 7,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:16:28.290Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
     },
     {
       "id": "46dWoiCk",
@@ -6427,7 +20541,100 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "46dWoiCk"
+      "match_id": "46dWoiCk",
+      "url": "https://www.flashscore.com/match/46dWoiCk/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 7
+        },
+        "cantos": {
+          "m": 6,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:17:03.865Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 0",
+        "ht": "0 - 0"
+      }
     },
     {
       "id": "UJfr78dc",
@@ -6470,7 +20677,100 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "UJfr78dc"
+      "match_id": "UJfr78dc",
+      "url": "https://www.flashscore.com/match/UJfr78dc/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:18:04.913Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
     },
     {
       "id": "SvrR7YY8",
@@ -6513,7 +20813,96 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "SvrR7YY8"
+      "match_id": "SvrR7YY8",
+      "url": "https://www.flashscore.com/match/SvrR7YY8/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 8,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-5-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "3.00",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:18:47.150Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
     },
     {
       "id": "rPkO1DKH",
@@ -6556,7 +20945,99 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "rPkO1DKH"
+      "match_id": "rPkO1DKH",
+      "url": "https://www.flashscore.com/match/rPkO1DKH/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-3-1-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "2.85",
+        "oddV": "6.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:19:42.854Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 0",
+        "ht": "0 - 0"
+      }
     },
     {
       "id": "Qoli5nR9",
@@ -6599,7 +21080,105 @@ window.DADOS_ARG_B = {
         "m": 2,
         "v": 0
       },
-      "match_id": "Qoli5nR9"
+      "match_id": "Qoli5nR9",
+      "url": "https://www.flashscore.com/match/Qoli5nR9/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.57",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:20:25.270Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
     },
     {
       "id": "xQ7dq54j",
@@ -6642,7 +21221,99 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "xQ7dq54j"
+      "match_id": "xQ7dq54j",
+      "url": "https://www.flashscore.com/match/xQ7dq54j/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "2.85",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:21:16.311Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 0",
+        "ht": "0 - 0"
+      }
     },
     {
       "id": "nTfakQIs",
@@ -6685,7 +21356,99 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 1
       },
-      "match_id": "nTfakQIs"
+      "match_id": "nTfakQIs",
+      "url": "https://www.flashscore.com/match/nTfakQIs/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.04.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "3.10",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:22:08.031Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 1",
+        "ht": "0 - 1"
+      }
     },
     {
       "id": "zVUPvz5M",
@@ -6728,7 +21491,99 @@ window.DADOS_ARG_B = {
         "m": 1,
         "v": 2
       },
-      "match_id": "zVUPvz5M"
+      "match_id": "zVUPvz5M",
+      "url": "https://www.flashscore.com/match/zVUPvz5M/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.04.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.10",
+        "oddEmpate": "2.82",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:22:55.330Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "1 - 2",
+        "ht": "1 - 2"
+      }
     },
     {
       "id": "vqoNKEDj",
@@ -6771,7 +21626,102 @@ window.DADOS_ARG_B = {
         "m": 0,
         "v": 0
       },
-      "match_id": "vqoNKEDj"
+      "match_id": "vqoNKEDj",
+      "url": "https://www.flashscore.com/match/vqoNKEDj/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "13.04.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 9
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 7
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.82",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-04-22T02:23:39.190Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ft": "0 - 0",
+        "ht": "0 - 0"
+      }
     },
     {
       "id": "inject_ARG_B_0_20260426",
@@ -7552,6 +22502,92 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 3
+      },
+      "url": "https://www.flashscore.com/match/Um0mxypH/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.05.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 14
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 8
+        },
+        "cantos": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:55:41.611Z",
+        "campos_disponiveis": 12,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_amarelos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "2 - 3"
       }
     },
     {
@@ -7595,6 +22631,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 0,
         "v": 0
+      },
+      "url": "https://www.flashscore.com/match/fBLpIFho/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "04.05.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 9,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.70",
+        "oddV": "3.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:56:12.154Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
       }
     },
     {
@@ -7638,6 +22766,101 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 2
+      },
+      "url": "https://www.flashscore.com/match/WI78U2fL/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 6
+        },
+        "cantos": {
+          "m": 10,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.00",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-12T11:57:34.489Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 2"
       }
     },
     {
@@ -7681,6 +22904,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 2
+      },
+      "url": "https://www.flashscore.com/match/nJawYy1D/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-3-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.70",
+        "oddV": "4.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:06:09.304Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "2 - 2"
       }
     },
     {
@@ -7724,6 +23039,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/088WuJph/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.00",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:06:38.291Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -7767,6 +23174,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 4
+      },
+      "url": "https://www.flashscore.com/match/OGnmNKne/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 21
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 13
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 7
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "3.30",
+        "oddEmpate": "2.55",
+        "oddV": "2.57"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:07:08.216Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 4"
       }
     },
     {
@@ -7810,6 +23309,101 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/2Dt6Pc0B/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 6
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "3.00",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:07:44.194Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
       }
     },
     {
@@ -7853,6 +23447,101 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 0
+      },
+      "url": "https://www.flashscore.com/match/WtjeLbH7/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.70",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:08:14.730Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     },
     {
@@ -7896,6 +23585,101 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/YXlkTu1n/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 10,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.61",
+        "oddEmpate": "3.20",
+        "oddV": "7.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:08:45.891Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -7939,6 +23723,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/6omcRJVb/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 7
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.10",
+        "oddEmpate": "2.65",
+        "oddV": "2.65"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:09:19.187Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -7982,6 +23858,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 0
+      },
+      "url": "https://www.flashscore.com/match/CxTsq29E/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.40",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:09:48.732Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -8025,6 +23993,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 0
+      },
+      "url": "https://www.flashscore.com/match/AwpENyVN/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.82",
+        "oddV": "3.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:10:18.148Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     },
     {
@@ -8068,6 +24128,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 3,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/dz2uvcF4/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "03.05.2026 13:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.45",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:10:50.708Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "3 - 1"
       }
     },
     {
@@ -8111,6 +24263,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 2,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/OlILJSTk/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "02.05.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "2.82",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:11:21.098Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
       }
     },
     {
@@ -8154,6 +24398,101 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/bgRkstvR/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "02.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "2.82",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:11:52.778Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -8197,6 +24536,98 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/SlgvPtIr/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "02.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 14
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 12,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.00",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:12:21.696Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
       }
     },
     {
@@ -8240,6 +24671,4846 @@ window.DADOS_ARG_B = {
       "placar": {
         "m": 1,
         "v": 1
+      },
+      "url": "https://www.flashscore.com/match/ji6UZcW0/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "02.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.57",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-05T04:12:53.082Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "UoLTH6b2",
+      "id": "UoLTH6b2",
+      "mandante": "San Martin T.",
+      "visitante": "Gimnasia Jujuy",
+      "data": "12.05.2026 21:10",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/UoLTH6b2/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "12.05.2026 21:10",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 1
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "2.45",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:17:30.923Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "Iu39jpSQ",
+      "id": "Iu39jpSQ",
+      "mandante": "Nueva Chicago",
+      "visitante": "Almagro",
+      "data": "11.05.2026 19:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/Iu39jpSQ/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "11.05.2026 19:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.00",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:18:01.022Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "QsbulliB",
+      "id": "QsbulliB",
+      "mandante": "Ferro",
+      "visitante": "Def. de Belgrano",
+      "data": "11.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/QsbulliB/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "11.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.10",
+        "oddV": "5.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-18T22:17:27.556Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "vB75yB75",
+      "id": "vB75yB75",
+      "mandante": "Colon Santa Fe",
+      "visitante": "All Boys",
+      "data": "10.05.2026 18:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/vB75yB75/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 7
+        },
+        "cantos": {
+          "m": 7,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-1-3-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:48:11.350Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "3 - 2"
+      }
+    },
+    {
+      "match_id": "Y71mnSLN",
+      "id": "Y71mnSLN",
+      "mandante": "Central Norte",
+      "visitante": "Deportivo Madryn",
+      "data": "10.05.2026 17:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 5
+        },
+        "ft": {
+          "m": 2,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
+      "url": "https://www.flashscore.com/match/Y71mnSLN/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 9
+        },
+        "cantos": {
+          "m": 2,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:48:41.330Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "2 - 3"
+      }
+    },
+    {
+      "match_id": "4S9WkAMb",
+      "id": "4S9WkAMb",
+      "mandante": "Chaco For Ever",
+      "visitante": "Ciudad Bolivar",
+      "data": "10.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 3
+        },
+        "ft": {
+          "m": 9,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/4S9WkAMb/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 9
+        },
+        "cantos": {
+          "m": 9,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-3-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:49:10.192Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
+      }
+    },
+    {
+      "match_id": "AVFlug8t",
+      "id": "AVFlug8t",
+      "mandante": "Godoy Cruz",
+      "visitante": "Racing Cordoba",
+      "data": "10.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/AVFlug8t/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "3.00",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:49:40.443Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "W8CZw7rL",
+      "id": "W8CZw7rL",
+      "mandante": "Agropecuario",
+      "visitante": "Atletico Atlanta",
+      "data": "10.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/W8CZw7rL/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:50:10.109Z",
+        "campos_disponiveis": 12,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "O6iEWOze",
+      "id": "O6iEWOze",
+      "mandante": "Club A. Guemes",
+      "visitante": "Quilmes",
+      "data": "10.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/O6iEWOze/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:50:39.296Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "d26OiWin",
+      "id": "d26OiWin",
+      "mandante": "Acassuso",
+      "visitante": "Almirante Brown",
+      "data": "10.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 37,
+          "v": 63
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/d26OiWin/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 37,
+          "v": 63
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 6
+        },
+        "cantos": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 33,
+          "v": 67
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.85",
+        "oddEmpate": "2.75",
+        "oddV": "2.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:51:08.412Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "UJMEU257",
+      "id": "UJMEU257",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Colegiales",
+      "data": "10.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/UJMEU257/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "10.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.65",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:51:39.280Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "Or9RuTD8",
+      "id": "Or9RuTD8",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Gimnasia y Tiro",
+      "data": "09.05.2026 18:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/Or9RuTD8/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 18:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 8
+        },
+        "cantos": {
+          "m": 7,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:52:09.147Z",
+        "campos_disponiveis": 12,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "dQE0h6cE",
+      "id": "dQE0h6cE",
+      "mandante": "San Martin S.J.",
+      "visitante": "Patronato",
+      "data": "09.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/dQE0h6cE/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 8
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.10",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:52:40.022Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "zw1EZlxI",
+      "id": "zw1EZlxI",
+      "mandante": "San Miguel",
+      "visitante": "CA Estudiantes",
+      "data": "09.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/zw1EZlxI/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.70",
+        "oddV": "3.30"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:53:09.966Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "lOguoOkl",
+      "id": "lOguoOkl",
+      "mandante": "Temperley",
+      "visitante": "Deportivo Maipu",
+      "data": "09.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 0,
+          "v": 5
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 5
+      },
+      "url": "https://www.flashscore.com/match/lOguoOkl/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 11
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 9
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "3.00",
+        "oddV": "3.90"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:53:40.349Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 4",
+        "ft": "0 - 5"
+      }
+    },
+    {
+      "match_id": "Wp4cwXxg",
+      "id": "Wp4cwXxg",
+      "mandante": "Deportivo Moron",
+      "visitante": "Los Andes",
+      "data": "09.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/Wp4cwXxg/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 6,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:54:10.321Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "8jaMXS6U",
+      "id": "8jaMXS6U",
+      "mandante": "San Telmo",
+      "visitante": "CA Mitre",
+      "data": "09.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/8jaMXS6U/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.75",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:54:40.657Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "jgg6Yp6r",
+      "id": "jgg6Yp6r",
+      "mandante": "Tristan Suarez",
+      "visitante": "Midland",
+      "data": "09.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
+      "url": "https://www.flashscore.com/match/jgg6Yp6r/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "09.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 7
+        },
+        "cantos": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-5-1"
+      },
+      "mercado": {
+        "oddM": "Oculta",
+        "oddEmpate": "Oculta",
+        "oddV": "Oculta"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-13T16:55:10.943Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht",
+          "odds"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 3"
+      }
+    },
+    {
+      "match_id": "voOE2m64",
+      "id": "voOE2m64",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Chaco For Ever",
+      "data": "18.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/voOE2m64/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "18.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.20",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:09:06.876Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "GzodstkD",
+      "id": "GzodstkD",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Nueva Chicago",
+      "data": "17.05.2026 17:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/GzodstkD/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "3.25",
+        "oddV": "4.33"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:09:35.618Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "I3TdC0lm",
+      "id": "I3TdC0lm",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "San Martin T.",
+      "data": "17.05.2026 17:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/I3TdC0lm/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.85",
+        "oddEmpate": "2.65",
+        "oddV": "2.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:10:05.909Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "Ac6Veu46",
+      "id": "Ac6Veu46",
+      "mandante": "Quilmes",
+      "visitante": "Tristan Suarez",
+      "data": "17.05.2026 17:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 7,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/Ac6Veu46/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 17:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 7,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.57",
+        "oddEmpate": "2.65",
+        "oddV": "3.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:10:36.475Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "0 - 1"
+      }
+    },
+    {
+      "match_id": "6PavfJYI",
+      "id": "6PavfJYI",
+      "mandante": "Midland",
+      "visitante": "Agropecuario",
+      "data": "17.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/6PavfJYI/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 14,
+          "v": 8
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.91",
+        "oddEmpate": "3.10",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:11:05.834Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "Ia11gqTj",
+      "id": "Ia11gqTj",
+      "mandante": "CA Mitre",
+      "visitante": "San Miguel",
+      "data": "17.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/Ia11gqTj/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 12,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 71,
+          "v": 29
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.57",
+        "oddV": "4.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:11:35.535Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "4 - 0"
+      }
+    },
+    {
+      "match_id": "2RJEaN4s",
+      "id": "2RJEaN4s",
+      "mandante": "Patronato",
+      "visitante": "Chacarita Juniors",
+      "data": "17.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/2RJEaN4s/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.82",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:12:04.453Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "WrTr5qsK",
+      "id": "WrTr5qsK",
+      "mandante": "Almagro",
+      "visitante": "San Martin S.J.",
+      "data": "17.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/WrTr5qsK/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 10
+        },
+        "cantos": {
+          "m": 2,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.10",
+        "oddEmpate": "2.85",
+        "oddV": "2.45"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:12:33.939Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "rNnlq2K0",
+      "id": "rNnlq2K0",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Temperley",
+      "data": "17.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/rNnlq2K0/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.20",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:13:04.368Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "rJU549yh",
+      "id": "rJU549yh",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Ferro",
+      "data": "17.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/rJU549yh/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "17.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.75",
+        "oddV": "2.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:13:34.272Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
+      }
+    },
+    {
+      "match_id": "nBRM0RzH",
+      "id": "nBRM0RzH",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Acassuso",
+      "data": "16.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/nBRM0RzH/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.30",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:14:03.712Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "Ot8Nc1Zg",
+      "id": "Ot8Nc1Zg",
+      "mandante": "Colegiales",
+      "visitante": "Club A. Guemes",
+      "data": "16.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/Ot8Nc1Zg/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.00",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:14:33.251Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "4 - 1"
+      }
+    },
+    {
+      "match_id": "8QFVb55T",
+      "id": "8QFVb55T",
+      "mandante": "Almirante Brown",
+      "visitante": "San Telmo",
+      "data": "16.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/8QFVb55T/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 0,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.85",
+        "oddV": "4.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:15:03.602Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "Y7qlHnLc",
+      "id": "Y7qlHnLc",
+      "mandante": "CA Estudiantes",
+      "visitante": "Colon Santa Fe",
+      "data": "16.05.2026 15:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/Y7qlHnLc/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 15:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.40",
+        "oddEmpate": "2.65",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:15:33.068Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "2my5D4KM",
+      "id": "2my5D4KM",
+      "mandante": "Los Andes",
+      "visitante": "Godoy Cruz",
+      "data": "16.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 37,
+          "v": 63
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/2my5D4KM/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 37,
+          "v": 63
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-5-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.65",
+        "oddV": "3.25"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:16:02.315Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "bJnQHMQP",
+      "id": "bJnQHMQP",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Atl. Rafaela",
+      "data": "16.05.2026 13:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/bJnQHMQP/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "16.05.2026 13:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "2.82",
+        "oddV": "5.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:16:32.364Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "jPsKt6qo",
+      "id": "jPsKt6qo",
+      "mandante": "Racing Cordoba",
+      "visitante": "Central Norte",
+      "data": "15.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/jPsKt6qo/#/match-summary",
+      "liga": "Primera B Nacional (Argentina)",
+      "codigo_liga": "ARG_B",
+      "data_partida": "15.05.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "2.85",
+        "oddV": "5.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-19T17:17:01.548Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        },
+        "estatisticas_2t_removida": true
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
       }
     }
   ]

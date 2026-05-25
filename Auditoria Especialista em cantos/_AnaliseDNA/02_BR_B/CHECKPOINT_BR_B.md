@@ -1,16 +1,16 @@
 # 🚦 CHECKPOINT — Brasileirão Série B (BR_B)
 
-Gerado em **2026-05-14** · Validação rápida em 5 min
+Gerado em **2026-05-16** · Validação rápida em 5 min
 
 ---
 
 ## 1. Sanity Check — Contagens
 
-- **Jogos processados:** 68
+- **Jogos processados:** 77
 - **Times no dataset:** 20
 - **Times com DNA Escoteiro:** 20
-- **Baseline da liga:** 10.44 cantos/jogo (σ=4.13)
-- **Cobertura placar:** 9/68 (13.2%)
+- **Baseline da liga:** 10.39 cantos/jogo (σ=4.04)
+- **Cobertura placar:** 18/77 (23.4%)
 
 ## 2. Distribuição de Categorias
 
@@ -27,32 +27,32 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
 | 1 | Sao Bernardo | 97.5 | ELITE | OFENSIVO | `DVVDE` | 6 |
-| 2 | Vila Nova FC | 92.5 | ELITE | OFENSIVO | `EVVEV` | 7 |
-| 3 | Fortaleza | 87.5 | ELITE | EQUILIBRADO | `VEVVE` | 7 |
-| 4 | Sport Recife | 82.5 | ELITE | DEFENSIVO | `VEVEE` | 7 |
-| 5 | Operario-PR | 77.5 | ELITE | DEFENSIVO | `DEEEV` | 7 |
+| 2 | Vila Nova FC | 92.5 | ELITE | OFENSIVO | `EVVEV` | 8 |
+| 3 | Fortaleza | 87.5 | ELITE | EQUILIBRADO | `VEVVE` | 8 |
+| 4 | Sport Recife | 82.5 | ELITE | DEFENSIVO | `VEVEE` | 8 |
+| 5 | Operario-PR | 77.5 | ELITE | DEFENSIVO | `DEEEV` | 8 |
 
 ### 🪨 Bottom 5 (menor PowerScore)
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 16 | Goias | 22.5 | AZARÃO | EQUILIBRADO | `DVDED` | 6 |
-| 17 | Ponte Preta | 17.5 | AZARÃO | EQUILIBRADO | `DDEVD` | 7 |
-| 18 | CRB | 12.5 | AZARÃO | EQUILIBRADO | `EDDDE` | 7 |
+| 16 | Goias | 22.5 | AZARÃO | EQUILIBRADO | `DVDED` | 7 |
+| 17 | Ponte Preta | 17.5 | AZARÃO | EQUILIBRADO | `DDEVD` | 8 |
+| 18 | CRB | 12.5 | AZARÃO | EQUILIBRADO | `EDDDE` | 8 |
 | 19 | Londrina | 7.5 | AZARÃO | EQUILIBRADO | `DEDDE` | 7 |
-| 20 | America MG | 2.5 | AZARÃO | VULNERAVEL | `EDEDD` | 7 |
+| 20 | America MG | 2.5 | AZARÃO | VULNERAVEL | `EDEDD` | 8 |
 
 ## 4. Frequência das 12 Assinaturas
 
 | Assinatura | Times c/ presença | % times |
 |---|---|---|
-| RUPTURA_HOME | 10 | 50% |
+| RUPTURA_HOME | 9 | 45% |
 | BLITZ_INICIAL | 8 | 40% |
+| ATAQUE_ESTERIL | 7 | 35% |
 | EFETIVIDADE_CLINICA | 4 | 20% |
-| RETRANCA_AVANCADA | 3 | 15% |
-| ATAQUE_ESTERIL | 2 | 10% |
+| RETRANCA_AVANCADA | 2 | 10% |
+| MURO_DEFENSIVO | 2 | 10% |
 | ELITE_KILLER | 1 | 5% |
-| MURO_DEFENSIVO | 0 | 0% |
 | DEFESA_PRECARIA | 0 | 0% |
 | CARRINHO_FACIL | 0 | 0% |
 | DESEQUILIBRA_FAVORITO | 0 | 0% |
@@ -64,11 +64,11 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 | Bucket | Consolidado (n≥5) | Sugestivo (n=3-4) | Insuficiente (n<3) | Padrão detectado |
 |---|---|---|---|---|
 | casa_vs_elite | 0 | 0 | 20 | **0** |
-| casa_vs_medio | 0 | 2 | 18 | **0** |
+| casa_vs_medio | 0 | 2 | 18 | **1** |
 | casa_vs_azarao | 0 | 1 | 19 | **1** |
 | fora_vs_elite | 0 | 0 | 20 | **0** |
 | fora_vs_medio | 0 | 2 | 18 | **1** |
-| fora_vs_azarao | 0 | 0 | 20 | **0** |
+| fora_vs_azarao | 0 | 2 | 18 | **2** |
 
 ## 6. Surpresas detectadas (top 3 para revisão visual)
 
@@ -109,15 +109,23 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - v_pct = (casa 0% + fora 0%) / 2 = **0** × 0.25 = **0**
 - **PowerRaw total = 27.9** → percentil na liga = **2.5** → categoria **AZARÃO**
 
+**Bucket detalhado (fora_vs_azarao, n=3, sugestivo):**
+
+- cantos pró média = **7** (σ=2.94)
+- cantos sofridos média = **2.67** (σ=0.47)
+- diferencial = **4.33** | win_rate_cantos = 66.7%
+- variação vs baseline pró (6.75): **+3.7%**
+- padrão detectado? **✅ SIM**
+
 ## 8. Matriz DNA × DNA — Linhas-chave (top 5 por cantos totais)
 
 | Mandante × Visitante | Cantos total | Mand × Vis | Dom mand % | n | Qualifier |
 |---|---|---|---|---|---|
-| DEFENSIVO × EQUILIBRADO | **13.33** | 9.22 × 4.11 | 100% | 9 | consolidado |
-| EQUILIBRADO × DEFENSIVO | **12.43** | 7.71 × 4.71 | 57.1% | 7 | consolidado |
-| DEFENSIVO × DEFENSIVO | **11.5** | 6.38 × 5.13 | 37.5% | 8 | consolidado |
+| EQUILIBRADO × OFENSIVO | **13** | 7.33 × 5.67 | 66.7% | 3 | sugestivo |
+| DEFENSIVO × EQUILIBRADO | **12.27** | 8.45 × 3.82 | 100% | 11 | consolidado |
+| EQUILIBRADO × DEFENSIVO | **11.89** | 7.89 × 4 | 66.7% | 9 | consolidado |
+| DEFENSIVO × DEFENSIVO | **11.56** | 6.89 × 4.67 | 44.4% | 9 | consolidado |
 | OFENSIVO × DEFENSIVO | **11.33** | 5.67 × 5.67 | 33.3% | 3 | sugestivo |
-| EQUILIBRADO × VULNERAVEL | **11.33** | 3 × 8.33 | 0% | 3 | sugestivo |
 
 ## 9. Divergências DNA-Escoteiro × Performance Real
 
@@ -126,12 +134,12 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Time | Categoria | Perfil DNA | Tipo de divergência | Severidade | Evidência |
 |---|---|---|---|---|---|
-| **Sao Bernardo** | ELITE | OFENSIVO | Ofensivo subentregando | MEDIA | cantos_pro=4.17 \| media_liga_cantos_pro=5.22 \| gap_vs_media_pct=20.1 \| gols_pro=3 \| power_score=97.5 \| n_jogos=6 |
-| **Nautico** | AZARÃO | DEFENSIVO | Defensivo medíocre | MEDIA | cantos_sofridos=6 \| media_liga_cantos_sof=5.22 \| cantos_sof_vs_media_pct=14.9 \| acima_da_media=true \| gols_sofridos=1 \| power_score=27.5 \| n_jogos=7 |
+| **Sao Bernardo** | ELITE | OFENSIVO | Ofensivo subentregando | MEDIA | cantos_pro=4.17 \| media_liga_cantos_pro=5.19 \| gap_vs_media_pct=19.7 \| gols_pro=3 \| power_score=97.5 \| n_jogos=6 |
+| **Nautico** | AZARÃO | DEFENSIVO | Defensivo medíocre | BAIXA | cantos_sofridos=5.63 \| media_liga_cantos_sof=5.19 \| cantos_sof_vs_media_pct=8.5 \| acima_da_media=true \| gols_sofridos=0.5 \| power_score=27.5 \| n_jogos=8 |
 
 ## 10. Anomalias e limitações detectadas
 
-- Cobertura de placar baixa (13.2%) → assinaturas EFETIVIDADE_CLINICA, ATAQUE_ESTERIL, MURO_DEFENSIVO, DEFESA_PRECARIA podem estar com baixa confiabilidade
+- Cobertura de placar baixa (23.4%) → assinaturas EFETIVIDADE_CLINICA, ATAQUE_ESTERIL, MURO_DEFENSIVO, DEFESA_PRECARIA podem estar com baixa confiabilidade
 
 ---
 

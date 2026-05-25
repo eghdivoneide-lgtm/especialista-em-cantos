@@ -1,16 +1,16 @@
 # 🚦 CHECKPOINT — Major League Soccer (MLS)
 
-Gerado em **2026-05-14** · Validação rápida em 5 min
+Gerado em **2026-05-16** · Validação rápida em 5 min
 
 ---
 
 ## 1. Sanity Check — Contagens
 
-- **Jogos processados:** 163
+- **Jogos processados:** 177
 - **Times no dataset:** 30
 - **Times com DNA Escoteiro:** 30
-- **Baseline da liga:** 10.1 cantos/jogo (σ=3.43)
-- **Cobertura placar:** 163/163 (100%)
+- **Baseline da liga:** 10.16 cantos/jogo (σ=3.41)
+- **Cobertura placar:** 177/177 (100%)
 
 ## 2. Distribuição de Categorias
 
@@ -26,49 +26,49 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 1 | Vancouver Whitecaps | 98.3 | ELITE | OFENSIVO_SOLIDO | `DVVVV` | 11 |
-| 2 | Nashville SC | 95 | ELITE | OFENSIVO_SOLIDO | `VVVEV` | 11 |
-| 3 | San Jose Earthquakes | 91.7 | ELITE | OFENSIVO_SOLIDO | `VDVVV` | 11 |
-| 4 | Los Angeles FC | 88.3 | ELITE | OFENSIVO_SOLIDO | `EVVVV` | 11 |
-| 5 | Seattle Sounders | 85 | ELITE | EQUILIBRADO | `EVVDV` | 10 |
+| 1 | Vancouver Whitecaps | 98.3 | ELITE | OFENSIVO_SOLIDO | `DVVVV` | 12 |
+| 2 | Nashville SC | 95 | ELITE | OFENSIVO_SOLIDO | `VVVEV` | 12 |
+| 3 | San Jose Earthquakes | 91.7 | ELITE | OFENSIVO_SOLIDO | `VDVVV` | 12 |
+| 4 | Los Angeles FC | 88.3 | ELITE | OFENSIVO_SOLIDO | `EVVVV` | 12 |
+| 5 | Seattle Sounders | 85 | ELITE | EQUILIBRADO | `EVVDV` | 11 |
 
 ### 🪨 Bottom 5 (menor PowerScore)
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 26 | New York Red Bulls | 15 | AZARÃO | EQUILIBRADO | `DEDVV` | 11 |
-| 27 | St. Louis City | 11.7 | AZARÃO | VULNERAVEL | `VDEDD` | 11 |
-| 28 | Philadelphia Union | 8.3 | AZARÃO | EQUILIBRADO | `DDVDD` | 11 |
-| 29 | Orlando City | 5 | AZARÃO | EQUILIBRADO | `DVEDD` | 11 |
-| 30 | Sporting Kansas City | 1.7 | AZARÃO | VULNERAVEL | `DVDED` | 11 |
+| 26 | New York Red Bulls | 15 | AZARÃO | EQUILIBRADO | `DEDVV` | 12 |
+| 27 | St. Louis City | 11.7 | AZARÃO | VULNERAVEL | `VDEDD` | 12 |
+| 28 | Philadelphia Union | 8.3 | AZARÃO | EQUILIBRADO | `DDVDD` | 12 |
+| 29 | Orlando City | 5 | AZARÃO | EQUILIBRADO | `DVEDD` | 12 |
+| 30 | Sporting Kansas City | 1.7 | AZARÃO | VULNERAVEL | `DVDED` | 12 |
 
 ## 4. Frequência das 12 Assinaturas
 
 | Assinatura | Times c/ presença | % times |
 |---|---|---|
-| BLITZ_INICIAL | 11 | 37% |
+| BLITZ_INICIAL | 12 | 40% |
 | EFETIVIDADE_CLINICA | 9 | 30% |
-| RUPTURA_HOME | 8 | 27% |
-| ELITE_KILLER | 5 | 17% |
+| RUPTURA_HOME | 6 | 20% |
+| ELITE_KILLER | 6 | 20% |
+| CARRINHO_FACIL | 4 | 13% |
 | DESEQUILIBRA_FAVORITO | 4 | 13% |
 | SUCUMBE_AZARAO | 4 | 13% |
 | RETRANCA_AVANCADA | 3 | 10% |
-| CARRINHO_FACIL | 3 | 10% |
 | ATAQUE_ESTERIL | 2 | 7% |
 | DEFESA_PRECARIA | 2 | 7% |
-| MURO_DEFENSIVO | 1 | 3% |
+| MURO_DEFENSIVO | 0 | 0% |
 | TERMOMETRO_FORMA | 0 | 0% |
 
 ## 5. Sample Size dos 6 Buckets (qualidade da matriz)
 
 | Bucket | Consolidado (n≥5) | Sugestivo (n=3-4) | Insuficiente (n<3) | Padrão detectado |
 |---|---|---|---|---|
-| casa_vs_elite | 0 | 5 | 25 | **4** |
-| casa_vs_medio | 0 | 10 | 20 | **7** |
-| casa_vs_azarao | 0 | 7 | 23 | **6** |
-| fora_vs_elite | 1 | 6 | 23 | **4** |
-| fora_vs_medio | 1 | 9 | 20 | **6** |
-| fora_vs_azarao | 0 | 4 | 26 | **4** |
+| casa_vs_elite | 0 | 8 | 22 | **6** |
+| casa_vs_medio | 0 | 12 | 18 | **8** |
+| casa_vs_azarao | 0 | 8 | 22 | **7** |
+| fora_vs_elite | 1 | 7 | 22 | **5** |
+| fora_vs_medio | 2 | 11 | 17 | **7** |
+| fora_vs_azarao | 0 | 7 | 23 | **5** |
 
 ## 6. Surpresas detectadas (top 3 para revisão visual)
 
@@ -93,7 +93,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **6.75** (σ=3.34)
 - cantos sofridos média = **4.5** (σ=2.18)
 - diferencial = **2.25** | win_rate_cantos = 75%
-- variação vs baseline pró (5.82): **+16%**
+- variação vs baseline pró (5.83): **+15.8%**
 - padrão detectado? **✅ SIM**
 
 ### FC Cincinnati (MÉDIO)
@@ -111,7 +111,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **5.75** (σ=3.63)
 - cantos sofridos média = **5** (σ=2.45)
 - diferencial = **0.75** | win_rate_cantos = 50%
-- variação vs baseline pró (5.27): **+9.1%**
+- variação vs baseline pró (4.92): **+16.9%**
 - padrão detectado? **❌ NÃO**
 
 ### Sporting Kansas City (AZARÃO)
@@ -129,7 +129,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **3.5** (σ=1.66)
 - cantos sofridos média = **5.75** (σ=2.05)
 - diferencial = **-2.25** | win_rate_cantos = 25%
-- variação vs baseline pró (3.09): **+13.3%**
+- variação vs baseline pró (3.17): **+10.4%**
 - padrão detectado? **✅ SIM**
 
 ## 8. Matriz DNA × DNA — Linhas-chave (top 5 por cantos totais)
@@ -139,7 +139,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 | OFENSIVO_SOLIDO × VULNERAVEL | **11.75** | 7.5 × 4.25 | 75% | 4 | sugestivo |
 | EQUILIBRADO × VULNERAVEL | **11.33** | 6.33 × 5 | 33.3% | 3 | sugestivo |
 | OFENSIVO_SOLIDO × EQUILIBRADO | **11.23** | 7.23 × 4 | 76.9% | 13 | consolidado |
-| EQUILIBRADO × EQUILIBRADO | **11.19** | 5.48 × 5.7 | 40.7% | 27 | consolidado |
+| EQUILIBRADO × EQUILIBRADO | **11.13** | 5.3 × 5.83 | 40% | 30 | consolidado |
 | OFENSIVO_SOLIDO × OFENSIVO | **11** | 6.33 × 4.67 | 66.7% | 3 | sugestivo |
 
 ## 9. Divergências DNA-Escoteiro × Performance Real
@@ -149,9 +149,8 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Time | Categoria | Perfil DNA | Tipo de divergência | Severidade | Evidência |
 |---|---|---|---|---|---|
-| **Nashville SC** | ELITE | OFENSIVO_SOLIDO | Ofensivo subentregando | MEDIA | cantos_pro=4.45 \| media_liga_cantos_pro=5.05 \| gap_vs_media_pct=11.9 \| gols_pro=2.09 \| power_score=95 \| n_jogos=11 |
-| **New England Revolution** | MÉDIO | OFENSIVO | Ofensivo subentregando | ALTA | cantos_pro=3.1 \| media_liga_cantos_pro=5.05 \| gap_vs_media_pct=38.6 \| gols_pro=1.8 \| power_score=65 \| n_jogos=10 |
-| **New York City** | MÉDIO | OFENSIVO | Ofensivo subentregando | MEDIA | cantos_pro=4.09 \| media_liga_cantos_pro=5.05 \| gap_vs_media_pct=19 \| gols_pro=1.64 \| power_score=51.7 \| n_jogos=11 |
+| **New England Revolution** | MÉDIO | OFENSIVO | Ofensivo subentregando | ALTA | cantos_pro=3.36 \| media_liga_cantos_pro=5.08 \| gap_vs_media_pct=33.9 \| gols_pro=1.64 \| power_score=65 \| n_jogos=11 |
+| **New York City** | MÉDIO | OFENSIVO | Ofensivo subentregando | MEDIA | cantos_pro=3.92 \| media_liga_cantos_pro=5.08 \| gap_vs_media_pct=22.8 \| gols_pro=1.58 \| power_score=51.7 \| n_jogos=12 |
 
 ## 10. Anomalias e limitações detectadas
 

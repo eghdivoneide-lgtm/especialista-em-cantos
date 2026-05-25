@@ -1,31 +1,31 @@
-═══ AUDITORIA — BR — 2026-05-14 ═══
+═══ AUDITORIA — BR — 2026-05-16 ═══
 Liga: Brasileirão Série A
-Total jogos: 137 | Válidos: 137
+Total jogos: 147 | Válidos: 147
 Times: 20
 DNA disponível: sim
 
 — Etapa 1: PowerScore + categoria —
 — Etapa 2: Baselines —
-Baseline liga: 10.01 cantos/jogo (HT=4.51)
+Baseline liga: 10.09 cantos/jogo (HT=4.61)
 — Etapa 3: Bucket Matrix —
 — Etapa 4: 12 Assinaturas —
-  BLITZ_INICIAL: 5 times
-  RETRANCA_AVANCADA: 2 times
-  EFETIVIDADE_CLINICA: 5 times
+  BLITZ_INICIAL: 6 times
+  RETRANCA_AVANCADA: 1 times
+  EFETIVIDADE_CLINICA: 4 times
   ATAQUE_ESTERIL: 0 times
   MURO_DEFENSIVO: 0 times
   DEFESA_PRECARIA: 0 times
-  RUPTURA_HOME: 5 times
-  ELITE_KILLER: 7 times
+  RUPTURA_HOME: 4 times
+  ELITE_KILLER: 6 times
   CARRINHO_FACIL: 1 times
-  DESEQUILIBRA_FAVORITO: 3 times
+  DESEQUILIBRA_FAVORITO: 4 times
   SUCUMBE_AZARAO: 2 times
   TERMOMETRO_FORMA: 0 times
 — Etapa 5: Narrativas —
 — Etapa 6: Matriz DNA × DNA —
-Cruzamentos detectados: 25
+Cruzamentos detectados: 26
 — Etapa 7: Montagem da memória —
 — Etapa 8: Divergências DNA × Performance: 2 detectadas
 
-Tempo de processamento: 0.03s
+Tempo de processamento: 0.04s
 Arquivos gerados: memoria_BR.json, relatorio_BR.html, CHECKPOINT_BR.md

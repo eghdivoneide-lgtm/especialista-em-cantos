@@ -1,5 +1,5 @@
 ═══════════════════════════════════════════════
-  VALIDAÇÃO DE DATASETS — 2026-05-14
+  VALIDAÇÃO DE DATASETS — 2026-05-15
 ═══════════════════════════════════════════════
 
 DNA_ESCOTEIRO carregado. Ligas com entrada: BR, MLS, ARG, ARG_B, USL, BUN, BR_B, J2, J2_J3, ARG_M, CHN_1, CHN_2, CHN_SUP

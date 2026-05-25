@@ -291,20 +291,31 @@ function detectarDivergenciasDnaPerformance(memoria, baselineLiga) {
       }
     }
     // CASO 2 — Defensivo medíocre: perfil defensivo forte + AZARÃO
+    // SÓ cria divergência se time DE FATO está sofrendo MAIS que a média
+    // (acima_da_media === true). Time defensivo forte que sofre MENOS que a
+    // média NÃO é "defensivo medíocre" — é defesa boa funcionando.
     else if (PERFIS_FORTES_DEFENSIVOS.includes(perfil) && cat === 'AZARÃO') {
-      tipo = 'Defensivo medíocre';
       const ratioSof = mediaLigaCantosSof > 0 ? b.cantos_sofridos_geral / mediaLigaCantosSof : 1;
       const acimaMedia = b.cantos_sofridos_geral > mediaLigaCantosSof;
-      evidencia = {
-        cantos_sofridos: b.cantos_sofridos_geral,
-        media_liga_cantos_sof: r(mediaLigaCantosSof),
-        cantos_sof_vs_media_pct: r((ratioSof - 1) * 100, 1),
-        acima_da_media: acimaMedia,
-        gols_sofridos: b.gols_sofridos_geral,
-        power_score: rk.powerScore,
-        n_jogos: n
-      };
-      magnitudeRel = Math.max(0.25, Math.abs(ratioSof - 1));
+      // v1.2 (2026-05-15): filtro de direção semântica.
+      // Auditoria externa identificou que Math.abs(ratioSof - 1) capturava
+      // tanto times sofrendo MUITO (medíocres reais) quanto times sofrendo
+      // POUCO (defesas boas falsamente flagueadas). 8 de 13 falsos positivos.
+      // Correção: só cria divergência quando acima_da_media === true.
+      if (acimaMedia) {
+        tipo = 'Defensivo medíocre';
+        evidencia = {
+          cantos_sofridos: b.cantos_sofridos_geral,
+          media_liga_cantos_sof: r(mediaLigaCantosSof),
+          cantos_sof_vs_media_pct: r((ratioSof - 1) * 100, 1),
+          acima_da_media: acimaMedia,
+          gols_sofridos: b.gols_sofridos_geral,
+          power_score: rk.powerScore,
+          n_jogos: n
+        };
+        // Magnitude direcional: só conta o excesso (ratioSof - 1 quando > 0)
+        magnitudeRel = ratioSof - 1;
+      }
     }
     // CASO 3 — Passivo elite
     else if (PERFIS_PASSIVOS.includes(perfil) && cat === 'ELITE') {

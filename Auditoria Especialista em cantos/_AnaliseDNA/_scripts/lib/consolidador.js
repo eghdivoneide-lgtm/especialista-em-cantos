@@ -61,7 +61,7 @@ function renderSumario(master) {
   const top10 = todos.slice(0, 10);
 
   // Comparativo de assinaturas por liga
-  const ligasIds = ['BR', 'BR_B', 'ARG', 'ARG_B', 'MLS', 'USL', 'BUN'].filter(l => master[l]);
+  const ligasIds = ['BR', 'BR_B', 'ARG', 'ARG_B', 'MLS', 'USL', 'BUN', 'J1', 'J2_J3'].filter(l => master[l]);
 
   let html = `<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Auditoria DNA — Sumário Executivo</title><style>${CSS}</style></head><body><div class="container">`;
   html += `<h1>📊 Sumário Executivo — Auditoria DNA por Time</h1>`;

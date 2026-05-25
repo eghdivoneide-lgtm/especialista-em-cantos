@@ -1,8 +1,8 @@
 # Metodologia Aplicada — Auditoria DNA por Time
 
-Gerado em: **2026-05-14T23:08:44.900Z**
+Gerado em: **2026-05-16T01:08:05.123Z**
 Versão: v1.0
-Ligas: 7 | Times totais: 179
+Ligas: 9 | Times totais: 239
 
 ---
 

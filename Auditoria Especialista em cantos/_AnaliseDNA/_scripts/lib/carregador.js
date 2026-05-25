@@ -12,7 +12,10 @@ const LIGAS = [
   { id: 'ARG_B', nome: 'Argentina — Primera Nacional', arq: 'argentina_b2026.js',  varDados: 'DADOS_ARG_B', varDna: 'ARG_B' },
   { id: 'MLS',   nome: 'Major League Soccer',           arq: 'mls2026.js',          varDados: 'DADOS_MLS',   varDna: 'MLS'   },
   { id: 'USL',   nome: 'USL Championship',              arq: 'usl2026.js',          varDados: 'DADOS_USL',   varDna: 'USL'   },
-  { id: 'BUN',   nome: 'Bundesliga',                    arq: 'bundesliga2026.js',   varDados: 'DADOS_BUN',   varDna: 'BUN'   }
+  { id: 'BUN',   nome: 'Bundesliga',                    arq: 'bundesliga2026.js',   varDados: 'DADOS_BUN',   varDna: 'BUN'   },
+  // v3.1 (2026-05-15) — Japão reativado
+  { id: 'J1',    nome: 'J1 League',                     arq: 'j1league2026.js',     varDados: 'DADOS_J1',    varDna: 'J1'    },
+  { id: 'J2_J3', nome: 'J2 + J3 League',                arq: 'j2j3league2026.js',   varDados: 'DADOS_J2_J3', varDna: 'J2_J3' }
 ];
 
 function carregarDataset(arquivo, varName) {
@@ -48,7 +51,7 @@ function carregarDnaEscoteiro() {
 
 function carregarLiga(ligaId) {
   const meta = LIGAS.find(l => l.id === ligaId);
-  if (!meta) throw new Error(`Liga ${ligaId} não está no escopo (BR, BR_B, ARG, ARG_B, MLS, USL, BUN)`);
+  if (!meta) throw new Error(`Liga ${ligaId} não está no escopo (BR, BR_B, ARG, ARG_B, MLS, USL, BUN, J1, J2_J3)`);
   const dados = carregarDataset(meta.arq, meta.varDados);
   const dna = carregarDnaEscoteiro();
   return {

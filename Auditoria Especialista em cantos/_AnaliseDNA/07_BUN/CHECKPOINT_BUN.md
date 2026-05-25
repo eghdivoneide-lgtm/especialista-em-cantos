@@ -1,16 +1,16 @@
 # 🚦 CHECKPOINT — Bundesliga (BUN)
 
-Gerado em **2026-05-14** · Validação rápida em 5 min
+Gerado em **2026-05-16** · Validação rápida em 5 min
 
 ---
 
 ## 1. Sanity Check — Contagens
 
-- **Jogos processados:** 288
+- **Jogos processados:** 297
 - **Times no dataset:** 18
 - **Times com DNA Escoteiro:** 18
-- **Baseline da liga:** 9.73 cantos/jogo (σ=3.54)
-- **Cobertura placar:** 35/288 (12.2%)
+- **Baseline da liga:** 9.71 cantos/jogo (σ=3.53)
+- **Cobertura placar:** 44/297 (14.8%)
 
 ## 2. Distribuição de Categorias
 
@@ -26,31 +26,31 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 1 | Bayern Munich | 97.2 | ELITE | OFENSIVO_SOLIDO | `VVVEV` | 32 |
-| 2 | Dortmund | 91.7 | ELITE | OFENSIVO_SOLIDO | `DEEVV` | 32 |
-| 3 | RB Leipzig | 86.1 | ELITE | OFENSIVO_SOLIDO | `DVVVV` | 32 |
-| 4 | Bayer Leverkusen | 80.6 | ELITE | OFENSIVO | `EDEVV` | 32 |
-| 5 | Stuttgart | 75 | ELITE | OFENSIVO | `VEDDV` | 32 |
+| 1 | Bayern Munich | 97.2 | ELITE | OFENSIVO_SOLIDO | `VVVEV` | 33 |
+| 2 | Dortmund | 91.7 | ELITE | OFENSIVO_SOLIDO | `DEEVV` | 33 |
+| 3 | RB Leipzig | 86.1 | ELITE | OFENSIVO_SOLIDO | `DVVVV` | 33 |
+| 4 | Bayer Leverkusen | 80.6 | ELITE | OFENSIVO | `EDEVV` | 33 |
+| 5 | Stuttgart | 75 | ELITE | OFENSIVO | `VEDDV` | 33 |
 
 ### 🪨 Bottom 5 (menor PowerScore)
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 14 | St. Pauli | 25 | AZARÃO | VULNERAVEL | `EVVDE` | 32 |
-| 15 | Union Berlin | 19.4 | AZARÃO | EQUILIBRADO | `DDEDV` | 32 |
-| 16 | Werder Bremen | 13.9 | AZARÃO | EQUILIBRADO | `DDDDD` | 32 |
-| 17 | Wolfsburg | 8.3 | AZARÃO | EQUILIBRADO | `DEDDD` | 32 |
-| 18 | Heidenheim | 2.8 | AZARÃO | EQUILIBRADO | `DEDED` | 32 |
+| 14 | St. Pauli | 25 | AZARÃO | VULNERAVEL | `EVVDE` | 33 |
+| 15 | Union Berlin | 19.4 | AZARÃO | EQUILIBRADO | `DDEDV` | 33 |
+| 16 | Werder Bremen | 13.9 | AZARÃO | EQUILIBRADO | `DDDDD` | 33 |
+| 17 | Wolfsburg | 8.3 | AZARÃO | EQUILIBRADO | `DEDDD` | 33 |
+| 18 | Heidenheim | 2.8 | AZARÃO | EQUILIBRADO | `DEDED` | 33 |
 
 ## 4. Frequência das 12 Assinaturas
 
 | Assinatura | Times c/ presença | % times |
 |---|---|---|
 | RUPTURA_HOME | 6 | 33% |
-| BLITZ_INICIAL | 4 | 22% |
-| EFETIVIDADE_CLINICA | 3 | 17% |
+| BLITZ_INICIAL | 5 | 28% |
+| EFETIVIDADE_CLINICA | 4 | 22% |
 | ELITE_KILLER | 3 | 17% |
-| DESEQUILIBRA_FAVORITO | 3 | 17% |
+| DESEQUILIBRA_FAVORITO | 2 | 11% |
 | SUCUMBE_AZARAO | 1 | 6% |
 | RETRANCA_AVANCADA | 0 | 0% |
 | ATAQUE_ESTERIL | 0 | 0% |
@@ -63,12 +63,12 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Bucket | Consolidado (n≥5) | Sugestivo (n=3-4) | Insuficiente (n<3) | Padrão detectado |
 |---|---|---|---|---|
-| casa_vs_elite | 9 | 9 | 0 | **10** |
+| casa_vs_elite | 10 | 8 | 0 | **10** |
 | casa_vs_medio | 18 | 0 | 0 | **7** |
-| casa_vs_azarao | 9 | 9 | 0 | **14** |
-| fora_vs_elite | 9 | 9 | 0 | **16** |
+| casa_vs_azarao | 13 | 5 | 0 | **15** |
+| fora_vs_elite | 11 | 7 | 0 | **16** |
 | fora_vs_medio | 18 | 0 | 0 | **3** |
-| fora_vs_azarao | 9 | 9 | 0 | **12** |
+| fora_vs_azarao | 10 | 8 | 0 | **12** |
 
 ## 6. Surpresas detectadas (top 3 para revisão visual)
 
@@ -93,7 +93,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **6** (σ=2)
 - cantos sofridos média = **4.13** (σ=1.62)
 - diferencial = **1.88** | win_rate_cantos = 50%
-- variação vs baseline pró (6.44): **-6.8%**
+- variação vs baseline pró (6.33): **-5.2%**
 - padrão detectado? **❌ NÃO**
 
 ### Augsburg (MÉDIO)
@@ -106,12 +106,12 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - v_pct = (casa 38% + fora 31%) / 2 = **34.5** × 0.25 = **8.63**
 - **PowerRaw total = 60.43** → percentil na liga = **47.2** → categoria **MÉDIO**
 
-**Bucket detalhado (fora_vs_medio, n=7, consolidado):**
+**Bucket detalhado (casa_vs_medio, n=7, consolidado):**
 
-- cantos pró média = **3.29** (σ=1.58)
-- cantos sofridos média = **5.14** (σ=2.36)
-- diferencial = **-1.86** | win_rate_cantos = 14.3%
-- variação vs baseline pró (4.53): **-27.5%**
+- cantos pró média = **5.71** (σ=2.43)
+- cantos sofridos média = **5.29** (σ=2.25)
+- diferencial = **0.43** | win_rate_cantos = 42.9%
+- variação vs baseline pró (4.45): **+28.4%**
 - padrão detectado? **✅ SIM**
 
 ### Heidenheim (AZARÃO)
@@ -124,20 +124,20 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - v_pct = (casa 25% + fora 6%) / 2 = **15.5** × 0.25 = **3.88**
 - **PowerRaw total = 41.37** → percentil na liga = **2.8** → categoria **AZARÃO**
 
-**Bucket detalhado (casa_vs_medio, n=7, consolidado):**
+**Bucket detalhado (fora_vs_medio, n=8, consolidado):**
 
-- cantos pró média = **5.14** (σ=2.64)
-- cantos sofridos média = **5.14** (σ=2.17)
-- diferencial = **0** | win_rate_cantos = 71.4%
-- variação vs baseline pró (4.5): **+14.3%**
+- cantos pró média = **4.75** (σ=2.99)
+- cantos sofridos média = **4.25** (σ=1.85)
+- diferencial = **0.5** | win_rate_cantos = 37.5%
+- variação vs baseline pró (4.48): **+6%**
 - padrão detectado? **❌ NÃO**
 
 ## 8. Matriz DNA × DNA — Linhas-chave (top 5 por cantos totais)
 
 | Mandante × Visitante | Cantos total | Mand × Vis | Dom mand % | n | Qualifier |
 |---|---|---|---|---|---|
-| CAMISA_ABERTA × EQUILIBRADO | **11.6** | 7 × 4.6 | 60% | 10 | consolidado |
-| OFENSIVO_SOLIDO × EQUILIBRADO | **11** | 7.77 × 3.23 | 83.9% | 31 | consolidado |
+| CAMISA_ABERTA × EQUILIBRADO | **11.55** | 7.09 × 4.45 | 63.6% | 11 | consolidado |
+| OFENSIVO_SOLIDO × EQUILIBRADO | **10.91** | 7.72 × 3.19 | 84.4% | 32 | consolidado |
 | OFENSIVO_SOLIDO × OFENSIVO | **10.67** | 5.83 × 4.83 | 33.3% | 6 | consolidado |
 | EQUILIBRADO × CAMISA_ABERTA | **10.6** | 5.1 × 5.5 | 30% | 10 | consolidado |
 | OFENSIVO × EQUILIBRADO | **10.19** | 6.38 × 3.81 | 52.4% | 21 | consolidado |
@@ -151,7 +151,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 ## 10. Anomalias e limitações detectadas
 
-- Cobertura de placar baixa (12.2%) → assinaturas EFETIVIDADE_CLINICA, ATAQUE_ESTERIL, MURO_DEFENSIVO, DEFESA_PRECARIA podem estar com baixa confiabilidade
+- Cobertura de placar baixa (14.8%) → assinaturas EFETIVIDADE_CLINICA, ATAQUE_ESTERIL, MURO_DEFENSIVO, DEFESA_PRECARIA podem estar com baixa confiabilidade
 
 ---
 

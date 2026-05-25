@@ -1,12 +1,12 @@
-═══ AUDITORIA — ARG — 2026-05-14 ═══
+═══ AUDITORIA — ARG — 2026-05-16 ═══
 Liga: Argentina — Liga Profesional
-Total jogos: 239 | Válidos: 239
+Total jogos: 249 | Válidos: 249
 Times: 30
 DNA disponível: sim
 
 — Etapa 1: PowerScore + categoria —
 — Etapa 2: Baselines —
-Baseline liga: 8.51 cantos/jogo (HT=4.09)
+Baseline liga: 8.57 cantos/jogo (HT=4.1)
 — Etapa 3: Bucket Matrix —
 — Etapa 4: 12 Assinaturas —
   BLITZ_INICIAL: 14 times
@@ -14,9 +14,9 @@ Baseline liga: 8.51 cantos/jogo (HT=4.09)
   EFETIVIDADE_CLINICA: 2 times
   ATAQUE_ESTERIL: 3 times
   MURO_DEFENSIVO: 1 times
-  DEFESA_PRECARIA: 1 times
+  DEFESA_PRECARIA: 0 times
   RUPTURA_HOME: 10 times
-  ELITE_KILLER: 8 times
+  ELITE_KILLER: 7 times
   CARRINHO_FACIL: 1 times
   DESEQUILIBRA_FAVORITO: 4 times
   SUCUMBE_AZARAO: 3 times
@@ -25,7 +25,7 @@ Baseline liga: 8.51 cantos/jogo (HT=4.09)
 — Etapa 6: Matriz DNA × DNA —
 Cruzamentos detectados: 31
 — Etapa 7: Montagem da memória —
-— Etapa 8: Divergências DNA × Performance: 4 detectadas
+— Etapa 8: Divergências DNA × Performance: 1 detectadas
 
-Tempo de processamento: 0.03s
+Tempo de processamento: 0.04s
 Arquivos gerados: memoria_ARG.json, relatorio_ARG.html, CHECKPOINT_ARG.md

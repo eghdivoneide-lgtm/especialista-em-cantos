@@ -1,16 +1,16 @@
 # 🚦 CHECKPOINT — Argentina — Liga Profesional (ARG)
 
-Gerado em **2026-05-14** · Validação rápida em 5 min
+Gerado em **2026-05-16** · Validação rápida em 5 min
 
 ---
 
 ## 1. Sanity Check — Contagens
 
-- **Jogos processados:** 239
+- **Jogos processados:** 249
 - **Times no dataset:** 30
 - **Times com DNA Escoteiro:** 30
-- **Baseline da liga:** 8.51 cantos/jogo (σ=3.16)
-- **Cobertura placar:** 239/239 (100%)
+- **Baseline da liga:** 8.57 cantos/jogo (σ=3.23)
+- **Cobertura placar:** 249/249 (100%)
 
 ## 2. Distribuição de Categorias
 
@@ -26,11 +26,11 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 1 | Ind. Rivadavia | 98.3 | ELITE | OFENSIVO_SOLIDO | `VVVVD` | 16 |
-| 2 | River Plate | 95 | ELITE | EQUILIBRADO | `VVVVD` | 16 |
-| 3 | Estudiantes L.P. | 91.7 | ELITE | DEFENSIVO | `EVVDE` | 16 |
-| 4 | Velez Sarsfield | 88.3 | ELITE | DEFENSIVO | `VVEVE` | 16 |
-| 5 | Belgrano | 85 | ELITE | DEFENSIVO | `VEVVV` | 16 |
+| 1 | Ind. Rivadavia | 98.3 | ELITE | OFENSIVO_SOLIDO | `VVVVD` | 17 |
+| 2 | River Plate | 95 | ELITE | EQUILIBRADO | `VVVVD` | 17 |
+| 3 | Estudiantes L.P. | 91.7 | ELITE | DEFENSIVO | `EVVDE` | 17 |
+| 4 | Velez Sarsfield | 88.3 | ELITE | DEFENSIVO | `VVEVE` | 17 |
+| 5 | Belgrano | 85 | ELITE | DEFENSIVO | `VEVVV` | 18 |
 
 ### 🪨 Bottom 5 (menor PowerScore)
 
@@ -48,26 +48,26 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 |---|---|---|
 | BLITZ_INICIAL | 14 | 47% |
 | RUPTURA_HOME | 10 | 33% |
-| ELITE_KILLER | 8 | 27% |
+| ELITE_KILLER | 7 | 23% |
 | DESEQUILIBRA_FAVORITO | 4 | 13% |
 | ATAQUE_ESTERIL | 3 | 10% |
 | SUCUMBE_AZARAO | 3 | 10% |
 | RETRANCA_AVANCADA | 2 | 7% |
 | EFETIVIDADE_CLINICA | 2 | 7% |
 | MURO_DEFENSIVO | 1 | 3% |
-| DEFESA_PRECARIA | 1 | 3% |
 | CARRINHO_FACIL | 1 | 3% |
+| DEFESA_PRECARIA | 0 | 0% |
 | TERMOMETRO_FORMA | 0 | 0% |
 
 ## 5. Sample Size dos 6 Buckets (qualidade da matriz)
 
 | Bucket | Consolidado (n≥5) | Sugestivo (n=3-4) | Insuficiente (n<3) | Padrão detectado |
 |---|---|---|---|---|
-| casa_vs_elite | 0 | 14 | 16 | **9** |
-| casa_vs_medio | 4 | 16 | 10 | **14** |
-| casa_vs_azarao | 2 | 11 | 17 | **9** |
-| fora_vs_elite | 2 | 14 | 14 | **14** |
-| fora_vs_medio | 1 | 20 | 9 | **10** |
+| casa_vs_elite | 1 | 14 | 15 | **9** |
+| casa_vs_medio | 5 | 17 | 8 | **16** |
+| casa_vs_azarao | 2 | 12 | 16 | **8** |
+| fora_vs_elite | 4 | 14 | 12 | **16** |
+| fora_vs_medio | 2 | 20 | 8 | **10** |
 | fora_vs_azarao | 3 | 10 | 17 | **7** |
 
 ## 6. Surpresas detectadas (top 3 para revisão visual)
@@ -90,12 +90,12 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - v_pct = (casa 67% + fora 57%) / 2 = **62** × 0.25 = **15.5**
 - **PowerRaw total = 111** → percentil na liga = **98.3** → categoria **ELITE**
 
-**Bucket detalhado (casa_vs_elite, n=4, sugestivo):**
+**Bucket detalhado (casa_vs_elite, n=5, consolidado):**
 
-- cantos pró média = **4.5** (σ=2.29)
-- cantos sofridos média = **5** (σ=2.55)
-- diferencial = **-0.5** | win_rate_cantos = 50%
-- variação vs baseline pró (4.44): **+1.4%**
+- cantos pró média = **4.6** (σ=2.06)
+- cantos sofridos média = **5** (σ=2.28)
+- diferencial = **-0.4** | win_rate_cantos = 40%
+- variação vs baseline pró (4.47): **+2.9%**
 - padrão detectado? **❌ NÃO**
 
 ### Tigre (MÉDIO)
@@ -138,11 +138,11 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Mandante × Visitante | Cantos total | Mand × Vis | Dom mand % | n | Qualifier |
 |---|---|---|---|---|---|
+| EQUILIBRADO × DEFENSIVO | **9.75** | 6.15 × 3.6 | 75% | 20 | consolidado |
 | OFENSIVO × DEFENSIVO | **9.57** | 5.86 × 3.71 | 71.4% | 7 | consolidado |
-| DEFENSIVO × OFENSIVO | **9.5** | 4 × 5.5 | 16.7% | 6 | consolidado |
 | DEFENSIVO × VULNERAVEL | **9.43** | 5.71 × 3.71 | 71.4% | 7 | consolidado |
 | OFENSIVO_SOLIDO × DEFENSIVO | **9.33** | 5.33 × 4 | 66.7% | 3 | sugestivo |
-| EQUILIBRADO × DEFENSIVO | **9.32** | 5.58 × 3.74 | 73.7% | 19 | consolidado |
+| EQUILIBRADO × EQUILIBRADO | **9.25** | 7 × 2.25 | 75% | 8 | consolidado |
 
 ## 9. Divergências DNA-Escoteiro × Performance Real
 
@@ -151,10 +151,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Time | Categoria | Perfil DNA | Tipo de divergência | Severidade | Evidência |
 |---|---|---|---|---|---|
-| **Racing Club** | AZARÃO | MURO_DUPLO | Defensivo medíocre | ALTA | cantos_sofridos=4.25 \| media_liga_cantos_sof=4.25 \| cantos_sof_vs_media_pct=0 \| acima_da_media=false \| gols_sofridos=0.88 \| power_score=28.3 \| n_jogos=16 |
-| **Platense** | AZARÃO | MURO_DUPLO | Defensivo medíocre | ALTA | cantos_sofridos=3.38 \| media_liga_cantos_sof=4.25 \| cantos_sof_vs_media_pct=-20.5 \| acima_da_media=false \| gols_sofridos=0.94 \| power_score=25 \| n_jogos=16 |
-| **Dep. Riestra** | AZARÃO | MURO_DUPLO | Defensivo medíocre | ALTA | cantos_sofridos=4.19 \| media_liga_cantos_sof=4.25 \| cantos_sof_vs_media_pct=-1.4 \| acima_da_media=false \| gols_sofridos=0.75 \| power_score=8.3 \| n_jogos=16 |
-| **Aldosivi** | AZARÃO | DEFENSIVO | Defensivo medíocre | ALTA | cantos_sofridos=5.13 \| media_liga_cantos_sof=4.25 \| cantos_sof_vs_media_pct=20.7 \| acima_da_media=true \| gols_sofridos=1.13 \| power_score=5 \| n_jogos=16 |
+| **Aldosivi** | AZARÃO | DEFENSIVO | Defensivo medíocre | MEDIA | cantos_sofridos=5.13 \| media_liga_cantos_sof=4.29 \| cantos_sof_vs_media_pct=19.6 \| acima_da_media=true \| gols_sofridos=1.13 \| power_score=5 \| n_jogos=16 |
 
 ## 10. Anomalias e limitações detectadas
 

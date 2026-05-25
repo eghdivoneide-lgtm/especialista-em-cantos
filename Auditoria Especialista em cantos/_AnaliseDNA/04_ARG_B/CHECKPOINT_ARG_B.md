@@ -1,16 +1,16 @@
 # 🚦 CHECKPOINT — Argentina — Primera Nacional (ARG_B)
 
-Gerado em **2026-05-14** · Validação rápida em 5 min
+Gerado em **2026-05-16** · Validação rápida em 5 min
 
 ---
 
 ## 1. Sanity Check — Contagens
 
-- **Jogos processados:** 198
+- **Jogos processados:** 216
 - **Times no dataset:** 36
 - **Times com DNA Escoteiro:** 36
-- **Baseline da liga:** 8.6 cantos/jogo (σ=3.14)
-- **Cobertura placar:** 198/198 (100%)
+- **Baseline da liga:** 8.6 cantos/jogo (σ=3.16)
+- **Cobertura placar:** 216/216 (100%)
 
 ## 2. Distribuição de Categorias
 
@@ -26,33 +26,33 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 1 | Atletico Atlanta | 98.6 | ELITE | OFENSIVO_SOLIDO | `VVVV` | 12 |
-| 2 | Almirante Brown | 95.8 | ELITE | DEFENSIVO | `VVV` | 11 |
-| 3 | Gimnasia Jujuy | 93.1 | ELITE | OFENSIVO_SOLIDO | `VEE` | 11 |
-| 4 | Deportivo Moron | 90.3 | ELITE | OFENSIVO_SOLIDO | `VVE` | 11 |
-| 5 | Ferro | 87.5 | ELITE | OFENSIVO | `VDV` | 11 |
+| 1 | Atletico Atlanta | 98.6 | ELITE | OFENSIVO_SOLIDO | `VVVV` | 13 |
+| 2 | Almirante Brown | 95.8 | ELITE | DEFENSIVO | `VVV` | 12 |
+| 3 | Gimnasia Jujuy | 93.1 | ELITE | OFENSIVO_SOLIDO | `VEE` | 12 |
+| 4 | Deportivo Moron | 90.3 | ELITE | OFENSIVO_SOLIDO | `VVE` | 12 |
+| 5 | Ferro | 87.5 | ELITE | OFENSIVO | `VDV` | 12 |
 
 ### 🪨 Bottom 5 (menor PowerScore)
 
 | # | Time | PowerScore | Categoria | Perfil DNA | Forma | n |
 |---|---|---|---|---|---|---|
-| 32 | Club A. Guemes | 12.5 | AZARÃO | VULNERAVEL | `EDD` | 11 |
-| 33 | San Miguel | 9.7 | AZARÃO | DEFENSIVO | `ED` | 10 |
-| 34 | Def. de Belgrano | 6.9 | AZARÃO | VULNERAVEL | `DDE` | 11 |
-| 35 | Acassuso | 4.2 | AZARÃO | DEFENSIVO | `EDD` | 11 |
-| 36 | Almagro | 1.4 | AZARÃO | VULNERAVEL | `DDE` | 11 |
+| 32 | Club A. Guemes | 12.5 | AZARÃO | VULNERAVEL | `EDD` | 12 |
+| 33 | San Miguel | 9.7 | AZARÃO | DEFENSIVO | `ED` | 11 |
+| 34 | Def. de Belgrano | 6.9 | AZARÃO | VULNERAVEL | `DDE` | 12 |
+| 35 | Acassuso | 4.2 | AZARÃO | DEFENSIVO | `EDD` | 12 |
+| 36 | Almagro | 1.4 | AZARÃO | VULNERAVEL | `DDE` | 12 |
 
 ## 4. Frequência das 12 Assinaturas
 
 | Assinatura | Times c/ presença | % times |
 |---|---|---|
 | RUPTURA_HOME | 15 | 42% |
-| BLITZ_INICIAL | 11 | 31% |
+| BLITZ_INICIAL | 13 | 36% |
 | ELITE_KILLER | 11 | 31% |
+| CARRINHO_FACIL | 4 | 11% |
 | SUCUMBE_AZARAO | 4 | 11% |
-| EFETIVIDADE_CLINICA | 3 | 8% |
-| ATAQUE_ESTERIL | 3 | 8% |
-| CARRINHO_FACIL | 2 | 6% |
+| EFETIVIDADE_CLINICA | 2 | 6% |
+| ATAQUE_ESTERIL | 1 | 3% |
 | DESEQUILIBRA_FAVORITO | 1 | 3% |
 | RETRANCA_AVANCADA | 0 | 0% |
 | MURO_DEFENSIVO | 0 | 0% |
@@ -64,11 +64,11 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 | Bucket | Consolidado (n≥5) | Sugestivo (n=3-4) | Insuficiente (n<3) | Padrão detectado |
 |---|---|---|---|---|
 | casa_vs_elite | 0 | 5 | 31 | **3** |
-| casa_vs_medio | 4 | 10 | 22 | **9** |
-| casa_vs_azarao | 0 | 6 | 30 | **3** |
-| fora_vs_elite | 0 | 6 | 30 | **5** |
-| fora_vs_medio | 1 | 14 | 21 | **10** |
-| fora_vs_azarao | 0 | 5 | 31 | **3** |
+| casa_vs_medio | 5 | 10 | 21 | **9** |
+| casa_vs_azarao | 0 | 9 | 27 | **6** |
+| fora_vs_elite | 1 | 6 | 29 | **6** |
+| fora_vs_medio | 4 | 14 | 18 | **13** |
+| fora_vs_azarao | 0 | 6 | 30 | **4** |
 
 ## 6. Surpresas detectadas (top 3 para revisão visual)
 
@@ -95,7 +95,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **5.2** (σ=2.64)
 - cantos sofridos média = **4.2** (σ=1.72)
 - diferencial = **1** | win_rate_cantos = 60%
-- variação vs baseline pró (4.75): **+9.5%**
+- variação vs baseline pró (4.62): **+12.6%**
 - padrão detectado? **❌ NÃO**
 
 ### San Martin S.J. (MÉDIO)
@@ -113,7 +113,7 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - cantos pró média = **2.5** (σ=1.12)
 - cantos sofridos média = **4.25** (σ=1.92)
 - diferencial = **-1.75** | win_rate_cantos = 25%
-- variação vs baseline pró (4.33): **-42.3%**
+- variação vs baseline pró (4.38): **-42.9%**
 - padrão detectado? **✅ SIM**
 
 ### Almagro (AZARÃO)
@@ -126,23 +126,23 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 - v_pct = (casa 0% + fora 0%) / 2 = **0** × 0.25 = **0**
 - **PowerRaw total = 10.87** → percentil na liga = **1.4** → categoria **AZARÃO**
 
-**Bucket detalhado (casa_vs_medio, n=3, sugestivo):**
+**Bucket detalhado (fora_vs_medio, n=4, sugestivo):**
 
-- cantos pró média = **5.67** (σ=1.7)
-- cantos sofridos média = **5** (σ=1.41)
-- diferencial = **0.67** | win_rate_cantos = 33.3%
-- variação vs baseline pró (5): **+13.3%**
-- padrão detectado? **❌ NÃO**
+- cantos pró média = **4** (σ=2.12)
+- cantos sofridos média = **6.5** (σ=2.5)
+- diferencial = **-2.5** | win_rate_cantos = 0%
+- variação vs baseline pró (4.83): **-17.2%**
+- padrão detectado? **✅ SIM**
 
 ## 8. Matriz DNA × DNA — Linhas-chave (top 5 por cantos totais)
 
 | Mandante × Visitante | Cantos total | Mand × Vis | Dom mand % | n | Qualifier |
 |---|---|---|---|---|---|
 | EQUILIBRADO × VULNERAVEL | **10.8** | 7.2 × 3.6 | 100% | 5 | consolidado |
+| MURO_DUPLO × OFENSIVO | **10.25** | 4.75 × 5.5 | 50% | 4 | sugestivo |
 | OFENSIVO × DEFENSIVO | **10.2** | 8.2 × 2 | 100% | 5 | consolidado |
 | DEFENSIVO × OFENSIVO | **10.17** | 6.17 × 4 | 83.3% | 6 | consolidado |
-| VULNERAVEL × MURO_DUPLO | **10** | 5.33 × 4.67 | 33.3% | 6 | consolidado |
-| DEFENSIVO × EQUILIBRADO | **9.88** | 7 × 2.88 | 100% | 8 | consolidado |
+| MURO_DUPLO × VULNERAVEL | **10** | 6.67 × 3.33 | 100% | 3 | sugestivo |
 
 ## 9. Divergências DNA-Escoteiro × Performance Real
 
@@ -151,12 +151,8 @@ Gerado em **2026-05-14** · Validação rápida em 5 min
 
 | Time | Categoria | Perfil DNA | Tipo de divergência | Severidade | Evidência |
 |---|---|---|---|---|---|
-| **Quilmes** | AZARÃO | MURO_DUPLO | Defensivo medíocre | ALTA | cantos_sofridos=3.64 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=-15.3 \| acima_da_media=false \| gols_sofridos=0.73 \| power_score=23.6 \| n_jogos=11 |
-| **Colon Santa Fe** | AZARÃO | DEFENSIVO | Defensivo medíocre | ALTA | cantos_sofridos=3.18 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=-26 \| acima_da_media=false \| gols_sofridos=0.73 \| power_score=20.8 \| n_jogos=11 |
-| **All Boys** | AZARÃO | MURO_DUPLO | Defensivo medíocre | ALTA | cantos_sofridos=2.4 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=-44.2 \| acima_da_media=false \| gols_sofridos=0.7 \| power_score=18.1 \| n_jogos=10 |
-| **Central Norte** | AZARÃO | DEFENSIVO | Defensivo medíocre | ALTA | cantos_sofridos=4.45 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=3.5 \| acima_da_media=true \| gols_sofridos=0.73 \| power_score=15.3 \| n_jogos=11 |
-| **San Miguel** | AZARÃO | DEFENSIVO | Defensivo medíocre | ALTA | cantos_sofridos=3.8 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=-11.6 \| acima_da_media=false \| gols_sofridos=1 \| power_score=9.7 \| n_jogos=10 |
-| **Acassuso** | AZARÃO | DEFENSIVO | Defensivo medíocre | ALTA | cantos_sofridos=5.18 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=20.5 \| acima_da_media=true \| gols_sofridos=1.18 \| power_score=4.2 \| n_jogos=11 |
+| **Central Norte** | AZARÃO | DEFENSIVO | Defensivo medíocre | BAIXA | cantos_sofridos=4.58 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=6.5 \| acima_da_media=true \| gols_sofridos=0.92 \| power_score=15.3 \| n_jogos=12 |
+| **Acassuso** | AZARÃO | DEFENSIVO | Defensivo medíocre | MEDIA | cantos_sofridos=5.17 \| media_liga_cantos_sof=4.3 \| cantos_sof_vs_media_pct=20.2 \| acima_da_media=true \| gols_sofridos=1.08 \| power_score=4.2 \| n_jogos=12 |
 
 ## 10. Anomalias e limitações detectadas
 

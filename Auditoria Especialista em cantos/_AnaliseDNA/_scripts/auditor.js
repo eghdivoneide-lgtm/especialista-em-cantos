@@ -24,7 +24,9 @@ const DATA_HOJE = new Date().toISOString().slice(0, 10);
 
 const PASTA_LIGA = {
   BR: '01_BR', BR_B: '02_BR_B', ARG: '03_ARG', ARG_B: '04_ARG_B',
-  MLS: '05_MLS', USL: '06_USL', BUN: '07_BUN'
+  MLS: '05_MLS', USL: '06_USL', BUN: '07_BUN',
+  // v3.1 (2026-05-15) — Japão reativado
+  J1: '08_J1', J2_J3: '09_J2_J3'
 };
 
 function logarParaArquivo(ligaId, linhas) {
@@ -307,7 +309,7 @@ if (cmd === 'validar') {
 } else {
   console.log(`Uso:
   node auditor.js validar
-  node auditor.js liga <ID>          (ex: BR, BR_B, ARG, ARG_B, MLS, USL, BUN)
+  node auditor.js liga <ID>          (ex: BR, BR_B, ARG, ARG_B, MLS, USL, BUN, J1, J2_J3)
   node auditor.js todas-exceto-br
   node auditor.js consolidar`);
 }
