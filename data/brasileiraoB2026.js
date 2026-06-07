@@ -1,11 +1,11 @@
 // ============================================================
-// BR_B 2026 — Mesclagem Rico+Pobre (uniformização)
-// 87 jogos | Atualizado: 2026-05-20
+// BR_B 2026 — Injeção rodada 22-25/05/2026 (com aliases)
+// 97 jogos | Atualizado: 2026-05-27
 // ============================================================
 
 window.DADOS_BR_B = {
   "temporada": "Brasileirão Série B",
-  "ultimaAtualizacao": "2026-05-20",
+  "ultimaAtualizacao": "2026-05-27",
   "totalRodadas": 40,
   "times": [
     "America MG",
@@ -13525,6 +13525,1586 @@ window.DADOS_BR_B = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 3"
+      }
+    },
+    {
+      "match_id": "8MfdLO5L",
+      "id": "8MfdLO5L",
+      "mandante": "Botafogo SP",
+      "visitante": "Athletic Club",
+      "data": "25.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/8MfdLO5L/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "25.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 2
+        },
+        "passes": {
+          "m": "(332/413)",
+          "v": "69%"
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": {
+          "m": 14,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "passes": {
+          "m": "(139/176)",
+          "v": "74%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 8,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.00",
+        "oddV": "3.60"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:38:16.282Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 1",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "IFnrCKS7",
+      "id": "IFnrCKS7",
+      "mandante": "Operario-PR",
+      "visitante": "Criciuma",
+      "data": "24.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/IFnrCKS7/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "24.05.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 8,
+          "v": 6
+        },
+        "passes": {
+          "m": "(273/357)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 13,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "passes": {
+          "m": "(145/183)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 5,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "2.85",
+        "oddV": "3.90"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:38:46.704Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "lIT7SuDl",
+      "id": "lIT7SuDl",
+      "mandante": "Avai",
+      "visitante": "Goias",
+      "data": "24.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/lIT7SuDl/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "24.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 8
+        },
+        "cantos": {
+          "m": 1,
+          "v": 6
+        },
+        "passes": {
+          "m": "(277/340)",
+          "v": "88%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 5
+        },
+        "faltas": {
+          "m": 15,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 6,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 3
+        },
+        "passes": {
+          "m": "(165/199)",
+          "v": "83%"
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": {
+          "m": 12,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "3.10",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:39:16.696Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 2"
+      }
+    },
+    {
+      "match_id": "p2lzEtbe",
+      "id": "p2lzEtbe",
+      "mandante": "America MG",
+      "visitante": "Vila Nova FC",
+      "data": "24.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/p2lzEtbe/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "24.05.2026 18:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 4,
+          "v": 4
+        },
+        "passes": {
+          "m": "(372/455)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 15,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(191/233)",
+          "v": "79%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.10",
+        "oddV": "3.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:39:46.631Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "raVNOcCD",
+      "id": "raVNOcCD",
+      "mandante": "CRB",
+      "visitante": "Ponte Preta",
+      "data": "24.05.2026 16:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 12,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 33,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/raVNOcCD/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "24.05.2026 16:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 33,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 4
+        },
+        "cantos": {
+          "m": 12,
+          "v": 5
+        },
+        "passes": {
+          "m": "(386/453)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 13,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": {
+          "m": 16,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 8
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "passes": {
+          "m": "(225/261)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-3-2-1"
+      },
+      "mercado": {
+        "oddM": "1.46",
+        "oddEmpate": "3.90",
+        "oddV": "7.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:40:16.643Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "4 - 2"
+      }
+    },
+    {
+      "match_id": "hnrxY1kR",
+      "id": "hnrxY1kR",
+      "mandante": "Atletico GO",
+      "visitante": "Sao Bernardo",
+      "data": "24.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/hnrxY1kR/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "24.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "passes": {
+          "m": "(308/377)",
+          "v": "82%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 15,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "passes": {
+          "m": "(126/161)",
+          "v": "78%"
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 7,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 5
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "3.10",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:40:47.462Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
+      }
+    },
+    {
+      "match_id": "zgI9n14K",
+      "id": "zgI9n14K",
+      "mandante": "Juventude",
+      "visitante": "Sport Recife",
+      "data": "23.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/zgI9n14K/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "23.05.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "passes": {
+          "m": "(290/361)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 19,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "passes": {
+          "m": "(157/192)",
+          "v": "81%"
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 11,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "3.10",
+        "oddV": "3.40"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:41:16.630Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 1"
+      }
+    },
+    {
+      "match_id": "pMvUZNKE",
+      "id": "pMvUZNKE",
+      "mandante": "Fortaleza",
+      "visitante": "Londrina",
+      "data": "23.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/pMvUZNKE/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "23.05.2026 18:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "passes": {
+          "m": "(405/458)",
+          "v": "85%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 14,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "passes": {
+          "m": "(255/282)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 8,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-4-2-1",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.53",
+        "oddEmpate": "3.90",
+        "oddV": "6.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:41:46.004Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 0"
+      }
+    },
+    {
+      "match_id": "v5oSF2Tr",
+      "id": "v5oSF2Tr",
+      "mandante": "Novorizontino",
+      "visitante": "Ceara",
+      "data": "23.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/v5oSF2Tr/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "23.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "passes": {
+          "m": "(295/361)",
+          "v": "83%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 18,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "passes": {
+          "m": "(130/162)",
+          "v": "85%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 10,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "3.10",
+        "oddV": "3.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:42:15.752Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "zZRFQJs1",
+      "id": "zZRFQJs1",
+      "mandante": "Nautico",
+      "visitante": "Cuiaba",
+      "data": "22.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/zZRFQJs1/#/match-summary",
+      "liga": "Brasileirão Série B",
+      "codigo_liga": "BR_B",
+      "data_partida": "22.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 1
+        },
+        "passes": {
+          "m": "(426/516)",
+          "v": "71%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": {
+          "m": 16,
+          "v": 20
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 75,
+          "v": 25
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "passes": {
+          "m": "(248/292)",
+          "v": "62%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 5,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.00",
+        "oddV": "5.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T02:42:44.724Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
       }
     }
   ]

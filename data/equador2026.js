@@ -1,11 +1,11 @@
 // ============================================================
-// ECU 2026 — Remoção de duplicatas inject_X (8 removidos)
-// 111 jogos | Atualizado: 2026-05-22
+// ECU 2026 — Injeção rodada 22-25/05/2026 (com aliases)
+// 119 jogos | Atualizado: 2026-05-27
 // ============================================================
 
 window.DADOS_ECU = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-05-22",
+  "ultimaAtualizacao": "2026-05-27",
   "totalRodadas": 46,
   "times": [
     "Aucas",
@@ -17718,6 +17718,1276 @@ window.DADOS_ECU = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "KOYHaus4",
+      "id": "KOYHaus4",
+      "mandante": "Aucas",
+      "visitante": "Manta",
+      "data": "25.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/KOYHaus4/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "25.05.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 3
+        },
+        "cantos": {
+          "m": 8,
+          "v": 4
+        },
+        "passes": {
+          "m": "(537/614)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 8,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 77,
+          "v": 23
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "passes": {
+          "m": "(252/294)",
+          "v": "54%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 1,
+          "v": 2
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-5-1"
+      },
+      "mercado": {
+        "oddM": "1.41",
+        "oddEmpate": "4.10",
+        "oddV": "7.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:29:26.429Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "3 - 1"
+      }
+    },
+    {
+      "match_id": "0x7n1X0B",
+      "id": "0x7n1X0B",
+      "mandante": "Delfin",
+      "visitante": "Barcelona SC",
+      "data": "24.05.2026 20:10",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 1,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/0x7n1X0B/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "24.05.2026 20:10",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 18
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 6
+        },
+        "cantos": {
+          "m": 1,
+          "v": 8
+        },
+        "passes": {
+          "m": "(139/231)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 9
+        },
+        "faltas": {
+          "m": 14,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 31,
+          "v": 69
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "passes": {
+          "m": "(68/109)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 6,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "3.50",
+        "oddEmpate": "3.10",
+        "oddV": "2.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:29:55.320Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "rJDduBek",
+      "id": "rJDduBek",
+      "mandante": "Emelec",
+      "visitante": "Macara",
+      "data": "24.05.2026 17:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/rJDduBek/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "24.05.2026 17:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 14
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "passes": {
+          "m": "(250/331)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 4,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "passes": {
+          "m": "(157/191)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 1,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.50",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:30:26.024Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "CWjPcJBG",
+      "id": "CWjPcJBG",
+      "mandante": "Tecnico U.",
+      "visitante": "Leones del Norte",
+      "data": "24.05.2026 15:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/CWjPcJBG/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "24.05.2026 15:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 1
+        },
+        "passes": {
+          "m": "(250/312)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 1
+        },
+        "faltas": {
+          "m": 13,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 9
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 0
+        },
+        "passes": {
+          "m": "(149/182)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 8,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "5-3-2",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "3.10",
+        "oddV": "3.70"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:30:56.621Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "CbV911Ci",
+      "id": "CbV911Ci",
+      "mandante": "Dep. Cuenca",
+      "visitante": "LDU Quito",
+      "data": "23.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/CbV911Ci/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "23.05.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(393/462)",
+          "v": "79%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        },
+        "impedimentos": {
+          "m": 4,
+          "v": 1
+        },
+        "faltas": {
+          "m": 5,
+          "v": 17
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 2
+        },
+        "passes": {
+          "m": "(229/269)",
+          "v": "79%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 3,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "3.10",
+        "oddV": "2.35"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:31:26.272Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
+      }
+    },
+    {
+      "match_id": "SO8v3gWb",
+      "id": "SO8v3gWb",
+      "mandante": "Orense",
+      "visitante": "U. Catolica",
+      "data": "23.05.2026 18:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 22,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/SO8v3gWb/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "23.05.2026 18:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 22,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 4
+        },
+        "cantos": {
+          "m": 6,
+          "v": 5
+        },
+        "passes": {
+          "m": "(384/446)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 14,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 8
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(155/188)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 8,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "3.40",
+        "oddV": "2.15"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:31:57.121Z",
+        "campos_disponiveis": 24,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "IydQgkgo",
+      "id": "IydQgkgo",
+      "mandante": "Mushuc Runa",
+      "visitante": "Guayaquil City",
+      "data": "23.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/IydQgkgo/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "23.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 23,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 3
+        },
+        "cantos": {
+          "m": 10,
+          "v": 1
+        },
+        "passes": {
+          "m": "(337/398)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 10,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "passes": {
+          "m": "(172/205)",
+          "v": "83%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 4,
+          "v": 2
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.50",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:32:28.190Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "2 - 2"
+      }
+    },
+    {
+      "match_id": "ng5faBVN",
+      "id": "ng5faBVN",
+      "mandante": "Ind. del Valle",
+      "visitante": "Libertad",
+      "data": "22.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 8,
+          "v": 0
+        },
+        "ft": {
+          "m": 12,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 29,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
+      "url": "https://www.flashscore.com/match/ng5faBVN/#/match-summary",
+      "liga": "Liga Pro Equador",
+      "codigo_liga": "ECU",
+      "data_partida": "22.05.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 29,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 4
+        },
+        "cantos": {
+          "m": 12,
+          "v": 1
+        },
+        "passes": {
+          "m": "(503/565)",
+          "v": "79%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 12,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 8,
+          "v": 0
+        },
+        "passes": {
+          "m": "(278/311)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 3,
+          "v": 3
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "1.25",
+        "oddEmpate": "5.50",
+        "oddV": "10.00"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:32:59.082Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 3"
       }
     }
   ]

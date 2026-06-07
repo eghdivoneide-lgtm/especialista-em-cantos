@@ -1,11 +1,11 @@
 // ============================================================
-// USL 2026 — Mesclagem Rico+Pobre (uniformização)
-// 106 jogos | Atualizado: 2026-05-20
+// USL 2026 — Injeção rodada 22-25/05/2026 (com aliases)
+// 117 jogos | Atualizado: 2026-05-27
 // ============================================================
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
-  "ultimaAtualizacao": "2026-05-20",
+  "ultimaAtualizacao": "2026-05-27",
   "totalRodadas": 5,
   "times": [
     "Birmingham",
@@ -16767,6 +16767,1747 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 2"
+      }
+    },
+    {
+      "match_id": "r5FVJ2f3",
+      "id": "r5FVJ2f3",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Colorado Springs",
+      "data": "23.05.2026 23:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 17
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/r5FVJ2f3/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 23:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 17
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 6
+        },
+        "passes": {
+          "m": "(252/343)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 15,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "passes": {
+          "m": "(138/183)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 9,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.82",
+        "oddEmpate": "3.40",
+        "oddV": "2.20"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:11:33.036Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "IqZJcCw1",
+      "id": "IqZJcCw1",
+      "mandante": "Monterey Bay",
+      "visitante": "Birmingham",
+      "data": "23.05.2026 23:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/IqZJcCw1/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 23:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 4
+        },
+        "passes": {
+          "m": "(447/502)",
+          "v": "82%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 24,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "passes": {
+          "m": "(293/314)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 8,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "3.45",
+        "oddV": "2.62"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:12:03.750Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "pdAEJg0K",
+      "id": "pdAEJg0K",
+      "mandante": "Orange County SC",
+      "visitante": "Oakland Roots",
+      "data": "23.05.2026 23:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 20
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/pdAEJg0K/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 23:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 20
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 6
+        },
+        "passes": {
+          "m": "(253/364)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 5,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(153/201)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 2,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "3.35",
+        "oddV": "2.65"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:12:32.613Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "3 - 2"
+      }
+    },
+    {
+      "match_id": "vaNSej8D",
+      "id": "vaNSej8D",
+      "mandante": "New Mexico",
+      "visitante": "Charleston",
+      "data": "23.05.2026 22:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 13
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/vaNSej8D/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 22:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 13
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "passes": {
+          "m": "(360/420)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": {
+          "m": 17,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 64,
+          "v": 36
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "passes": {
+          "m": "(244/278)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": {
+          "m": 7,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-4-1"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "3.40",
+        "oddV": "2.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:13:02.836Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 0"
+      }
+    },
+    {
+      "match_id": "xfkgCBhf",
+      "id": "xfkgCBhf",
+      "mandante": "San Antonio",
+      "visitante": "Sacramento Republic",
+      "data": "23.05.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 0,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 15
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/xfkgCBhf/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 15
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cantos": {
+          "m": 0,
+          "v": 7
+        },
+        "passes": {
+          "m": "(240/312)",
+          "v": "82%"
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 9,
+          "v": 2
+        },
+        "faltas": {
+          "m": 19,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 4
+        },
+        "passes": {
+          "m": "(117/153)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 4,
+          "v": 1
+        },
+        "faltas": {
+          "m": 9,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.55",
+        "oddEmpate": "2.85",
+        "oddV": "2.82"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:13:33.021Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "4tioEXNs",
+      "id": "4tioEXNs",
+      "mandante": "Rhode Island",
+      "visitante": "Brooklyn",
+      "data": "23.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/4tioEXNs/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "passes": {
+          "m": "(293/394)",
+          "v": "81%"
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 11,
+          "v": 19
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "passes": {
+          "m": "(178/229)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 5,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "1.60",
+        "oddEmpate": "3.90",
+        "oddV": "4.65"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:14:03.902Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "4 - 1"
+      }
+    },
+    {
+      "match_id": "YLr2AkN6",
+      "id": "YLr2AkN6",
+      "mandante": "Tampa Bay",
+      "visitante": "Phoenix Rising",
+      "data": "23.05.2026 20:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/YLr2AkN6/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 20:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "passes": {
+          "m": "(306/388)",
+          "v": "84%"
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 21,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "passes": {
+          "m": "(171/210)",
+          "v": "84%"
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 8,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.57",
+        "oddEmpate": "3.90",
+        "oddV": "4.80"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:14:34.248Z",
+        "campos_disponiveis": 20,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_amarelos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "3 - 0",
+        "ft": "3 - 0"
+      }
+    },
+    {
+      "match_id": "UPXrda2d",
+      "id": "UPXrda2d",
+      "mandante": "Indy Eleven",
+      "visitante": "Lexington",
+      "data": "23.05.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 8
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/UPXrda2d/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 6
+        },
+        "passes": {
+          "m": "(300/365)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": {
+          "m": 17,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "passes": {
+          "m": "(151/181)",
+          "v": "83%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 8,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "3.35",
+        "oddV": "2.67"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:15:03.734Z",
+        "campos_disponiveis": 24,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "3 - 1"
+      }
+    },
+    {
+      "match_id": "AJVBaY8l",
+      "id": "AJVBaY8l",
+      "mandante": "Miami FC",
+      "visitante": "Louisville City",
+      "data": "23.05.2026 20:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 6
+        },
+        "ft": {
+          "m": 0,
+          "v": 9
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 17
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 3
+      },
+      "url": "https://www.flashscore.com/match/AJVBaY8l/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 20:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 17
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 8
+        },
+        "cantos": {
+          "m": 0,
+          "v": 9
+        },
+        "passes": {
+          "m": "(230/321)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 15,
+          "v": 20
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 42,
+          "v": 58
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 0,
+          "v": 6
+        },
+        "passes": {
+          "m": "(126/171)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 8,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "5.40",
+        "oddEmpate": "3.80",
+        "oddV": "1.53"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:15:33.096Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 1",
+        "ft": "4 - 3"
+      }
+    },
+    {
+      "match_id": "GIDwItPF",
+      "id": "GIDwItPF",
+      "mandante": "Loudoun",
+      "visitante": "Detroit",
+      "data": "23.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/GIDwItPF/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "23.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 1,
+          "v": 5
+        },
+        "passes": {
+          "m": "(351/433)",
+          "v": "73%"
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 20,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 0,
+          "v": 4
+        },
+        "passes": {
+          "m": "(150/187)",
+          "v": "74%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 11,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "3-4-2-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.87",
+        "oddEmpate": "3.30",
+        "oddV": "2.22"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:16:02.868Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "0 - 0"
+      }
+    },
+    {
+      "match_id": "MaUzbLXq",
+      "id": "MaUzbLXq",
+      "mandante": "FC Tulsa",
+      "visitante": "Hartford Athletic",
+      "data": "22.05.2026 21:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 31,
+          "v": 69
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 17
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/MaUzbLXq/#/match-summary",
+      "liga": "USL Championship",
+      "codigo_liga": "USL",
+      "data_partida": "22.05.2026 21:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 31,
+          "v": 69
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 17
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cantos": {
+          "m": 3,
+          "v": 5
+        },
+        "passes": {
+          "m": "(89/178)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 15,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 38,
+          "v": 62
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(58/101)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 9,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "5-4-1"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "3.10",
+        "oddV": "2.85"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:16:34.274Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
       }
     }
   ]

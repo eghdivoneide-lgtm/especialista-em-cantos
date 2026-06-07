@@ -496,19 +496,11 @@
         <optgroup label="🇩🇪 Alemanha">
           <option value="BUN">Bundesliga</option>
         </optgroup>
-        <optgroup label="🇯🇵 Japão">
-          <option value="J1">J1 League</option>
-          <option value="J2_J3">J2 + J3 League</option>
-        </optgroup>
         <optgroup label="🇨🇱 Chile">
           <option value="CHI">Primera División</option>
         </optgroup>
         <optgroup label="🇪🇨 Equador">
           <option value="ECU">Liga Pro</option>
-        </optgroup>
-        <optgroup label="🇨🇳 China">
-          <option value="CHN_SUP">Super League</option>
-          <option value="CHN_1">League One</option>
         </optgroup>
       </select>
     </div>
@@ -589,6 +581,15 @@
       </div>
     </div>
     <div id="wrapper-rodada" class="grid4" style="margin-bottom:2rem"></div>
+  </div>
+
+  <!-- ══════════════════ TOP 3 (sinais cirúrgicos validados em backtest) ══════════════════ -->
+  <div id="view-top3" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
+      <div class="section-title" style="color:var(--gold);margin-bottom:0">🏆 TOP 3 — Sinais cirúrgicos (backtest walk-forward)</div>
+      <div style="font-size:.7rem;color:var(--muted)">Apenas critérios com WR ≥ 70% no histórico</div>
+    </div>
+    <div id="wrapper-top3"></div>
   </div>
 
   <!-- ══════════════════ BALA DE PRATA ══════════════════ -->
@@ -761,19 +762,11 @@
         <optgroup label="🇩🇪 Alemanha">
           <option value="BUN">Bundesliga</option>
         </optgroup>
-        <optgroup label="🇯🇵 Japão">
-          <option value="J1">J1 League</option>
-          <option value="J2_J3">J2 + J3 League</option>
-        </optgroup>
         <optgroup label="🇨🇱 Chile">
           <option value="CHI">Primera División</option>
         </optgroup>
         <optgroup label="🇪🇨 Equador">
           <option value="ECU">Liga Pro</option>
-        </optgroup>
-        <optgroup label="🇨🇳 China">
-          <option value="CHN_SUP">Super League</option>
-          <option value="CHN_1">League One</option>
         </optgroup>
       </select>
       <span id="tracker-filtro-info" style="font-size:.72rem;color:var(--muted);margin-left:auto">— total de apostas: <strong id="tracker-filtro-count" style="color:var(--text)">0</strong></span>
@@ -1133,14 +1126,11 @@
 <script src="data/bundesliga2026.js?v=2026-04-22b"></script>
 <script src="data/argentina_b2026.js?v=2026-04-22b"></script>
 <script src="data/brasileiraoB2026.js?v=2026-04-30"></script>
-<!-- ═══ LIGAS JAPÃO REATIVADAS — 2026-05-15 ═══ -->
-<script src="data/j1league2026.js?v=v3.6-1779603668"></script>      <!-- J1 League -->
-<script src="data/j2j3league2026.js?v=2026-05-15"></script>    <!-- J2 + J3 League -->
-<!-- ═══ LIGAS REATIVADAS — 2026-05-20 (CHI, ECU, CHN_SUP, CHN_1 com histórico completo) ═══ -->
+<!-- ═══ LIGAS ASIÁTICAS REMOVIDAS — 2026-05-25 (J1, J2_J3, CHN_SUP, CHN_1 banidas por falta de padrão estatístico) ═══ -->
+<!-- Arquivos movidos para data/_aposentadas/ — manter histórico mas fora do app -->
+<!-- ═══ LIGAS REATIVADAS — 2026-05-20 (CHI, ECU) ═══ -->
 <script src="data/chile2026.js?v=v3.6-1779603668"></script>         <!-- CHI Primera División -->
 <script src="data/equador2026.js?v=v3.6-1779603668"></script>       <!-- ECU Liga Pro -->
-<script src="data/chinasuper2026.js?v=v3.6-1779603668"></script>    <!-- CHN_SUP Super League -->
-<script src="data/chinaone2026.js?v=v3.6-1779603668"></script>      <!-- CHN_1 League One -->
 <!-- ═══ LIGAS AINDA DESATIVADAS — descomente para reabilitar ═══
 <script src="data/aleague2026.js?v=2026-04-22b"></script>      ALM (temporada finalizando)
 <script src="data/metropolitana2026.js?v=2026-04-30"></script> ARG_M (Primera B Metro — fora por decisão)
@@ -1163,11 +1153,9 @@
   (function() {
     const mapa = { BR:'DADOS_BR', MLS:'DADOS_MLS', ARG:'DADOS_ARG', USL:'DADOS_USL',
                    BUN:'DADOS_BUN', ARG_B:'DADOS_ARG_B', CHI:'DADOS_CHI',
-                   ECU:'DADOS_ECU', J1:'DADOS_J1', ALM:'DADOS_ALM',
-                   BR_B:'DADOS_BR_B', ARG_M:'DADOS_ARG_M',
-                   J2_J3:'DADOS_J2_J3', CHN_SUP:'DADOS_CHN_SUP',
-                   CHN_1:'DADOS_CHN_1', CHN_2:'DADOS_CHN_2',
-                   J2:'DADOS_J2' };
+                   ECU:'DADOS_ECU', ALM:'DADOS_ALM',
+                   BR_B:'DADOS_BR_B', ARG_M:'DADOS_ARG_M' };
+                   // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1, CHN_2, J2) removidas 2026-05-25
     const ok = [], falha = [];
     for (const k in mapa) {
       const d = window[mapa[k]];
@@ -1255,8 +1243,8 @@ const MOTOR_CONFIG = Object.freeze({
 const LIGAS_STATUS = Object.freeze({
   MLS: { status: 'observacao', roi: -17.0, n: 32, desde: '2026-04-22',
          motivo: '158 apostas no tracker confirmam padrão: HDP HT de favorito sem cruzamento drena ROI. PROTOCOLO_STAKE já bloqueia esses sinais. Entrar apenas em Unders com TMI dupla baixa.' },
-  CHI: { status: 'suspenso',   roi: -31.4, n: 6,  desde: '2026-04-23',
-         motivo: 'ROI piorou de +7% (lote 1) para -31u no agregado. Liga sem DNA Escoteiro, com amostra de coleta pequena (~71 jogos / 16 times = 4 jogos por time). Padrão de erro semelhante ao ECU. Suspensa até recalibração com mais dados.' },
+  CHI: { status: 'observacao', roi: -31.4, n: 6,  desde: '2026-05-27',
+         motivo: 'RECALIBRADA 2026-05-27 — amostra cresceu para 103 jogos (~6.4/time). Backtest cego identificou X=2.0 como mau (63% WR / +19% ROI) vs X=1.75-1.85 (79-82% WR / +43-47% ROI). Liga é menos polarizada que ARG_B/ECU (mando +11.7pp). Aplicado cisneThreshold=1.85 (intermediário conservador). Reativada em OBSERVAÇÃO — registrar 10-15 picks reais antes de confirmar.' },
   ECU: { status: 'suspenso',   roi: -44.9, n: 6,  desde: '2026-04-22',
          motivo: 'Backtest catastrófico (1V 5D no lote 1) confirmado em mais apostas. Motor sem DNA Escoteiro para ECU, amostra de jogos pequena (~7 jogos por time). HDP de favorito errando sistematicamente. Não apostar até recalibrar.' },
   // v3.1 (2026-05-15) — J1 reativada em modo maturação. J2_J3 reativada operacional total.
@@ -1294,20 +1282,14 @@ const LIGA_DNA = Object.freeze({
   USL:   { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.35, mediaFT: 9.15  },
   ARG:   { arquetipo: 'trucada',     cisneThreshold: 1.5, mediaHT: 4.08, mediaFT: 8.56  },
   ARG_B: { arquetipo: 'trucada',     cisneThreshold: 1.5, mediaHT: 4.06, mediaFT: 8.60  },
-  // v3.1 (2026-05-15) — Japão reativado com calibração baseada em médias reais
-  J1:    { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.17, mediaFT: 9.61  },
-  J2_J3: { arquetipo: 'ofensiva',    cisneThreshold: 2.0, mediaHT: 4.53, mediaFT: 9.87  },
   // v3.5 (2026-05-24): ALM cadastrada com 96 jogos reais — perfil ofensivo alto volume
   ALM:   { arquetipo: 'ofensiva',    cisneThreshold: 2.0, mediaHT: 4.72, mediaFT: 10.28 },
-  // v3.6 (2026-05-24): 4 ligas integradas no mecanismo cultural — médias calculadas do banco real
-  //   CHI (96 jogos):     equilibrada, mediaFT 9.55
-  //   ECU (111 jogos):    equilibrada, mediaFT 9.22
-  //   CHN_SUP (105 jogos):ofensiva,    mediaFT 10.38
-  //   CHN_1 (63 jogos):   equilibrada, mediaFT 9.29
-  CHI:    { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.67, mediaFT: 9.55  },
-  ECU:    { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.27, mediaFT: 9.22  },
-  CHN_SUP:{ arquetipo: 'ofensiva',    cisneThreshold: 2.0, mediaHT: 5.02, mediaFT: 10.38 },
-  CHN_1:  { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.71, mediaFT: 9.29  }
+  // v3.6 (2026-05-24): 2 ligas sul-americanas integradas — médias calculadas do banco real
+  //   CHI (96 jogos):  equilibrada, mediaFT 9.55
+  //   ECU (111 jogos): equilibrada, mediaFT 9.22
+  CHI:   { arquetipo: 'equilibrada', cisneThreshold: 1.85, mediaHT: 4.63, mediaFT: 9.52  }, // recalib 2026-05-27: backtest cego em 103 jogos sugeriu X ótimo 1.75 (WR 82% ROI +47%); aplicado X=1.85 conservador (passo intermediário). Liga menos polarizada (+11.7pp mando vs +35pp ARG_B) → exige threshold menor.
+  ECU:   { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.27, mediaFT: 9.22  }
+  // v3.8 (2026-05-25): J1, J2_J3, CHN_SUP, CHN_1 REMOVIDAS — sem padrão estatístico consistente
 });
 
 // Multiplicadores por arquétipo aplicados no _scoreVencedor e _scoreUnder
@@ -1491,13 +1473,31 @@ function _formatarMemoriaJogoDNA(liga, mandante, visitante) {
     }
   }
 
+  // === DOSSIÊS FORENSES (v2.0 — 2026-06-02) ===
+  // Anexa o markdown completo dos dossiês por time (5 blocos forense),
+  // injetado por projeto-fantasma/_injetor_dossies_smartcoach.js
+  if (dnaM?.dossie_forense_md) {
+    const meta = dnaM.dossie_forense_meta || {};
+    txt += `\n\n╔═══════════════════════════════════════════════════════════════════╗\n`;
+    txt += `║ 📋 DOSSIÊ FORENSE — ${mandante} (mandante) — ${meta.tipo||'auto'}\n`;
+    txt += `╚═══════════════════════════════════════════════════════════════════╝\n`;
+    txt += dnaM.dossie_forense_md + '\n';
+  }
+  if (dnaV?.dossie_forense_md) {
+    const meta = dnaV.dossie_forense_meta || {};
+    txt += `\n\n╔═══════════════════════════════════════════════════════════════════╗\n`;
+    txt += `║ 📋 DOSSIÊ FORENSE — ${visitante} (visitante) — ${meta.tipo||'auto'}\n`;
+    txt += `╚═══════════════════════════════════════════════════════════════════╝\n`;
+    txt += dnaV.dossie_forense_md + '\n';
+  }
+
   return txt;
 }
 
 // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL COMPLETA das 7 LIGAS.
 // Comandante autorizou Opção A: SmartCoach recebe TUDO de TODAS as ligas
 // em toda chamada. Sem ressalvas de custo de API — decisão do operador.
-const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','J1','J2_J3','CHI','ECU','CHN_SUP','CHN_1'];
+const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU','ALM','CHN_2','J2_J3']; // v2.0 (2026-06-02): +4 ligas com dossiês forenses
 
 function _formatarMemoriaTodasAsLigas() {
   if (!window.MEMORIA_DNA) return '';
@@ -1747,6 +1747,66 @@ const PROTOCOLO_STAKE = Object.freeze({
 // DADOS_BR pode falhar ao carregar (arquivo ausente, erro de parse). Faz
 // fallback para a primeira liga disponível; se nenhuma carregou, usa um stub
 // vazio para o app não explodir no boot — trocarLiga() depois avisa o usuário.
+// ══════════════════════════════════════════════════════════════════
+// ALIASES DE TIMES — deduplica grafias diferentes do mesmo time
+// Fix 2026-05-25: dataset bruto tem "Sao Paulo" / "São Paulo" etc como
+// times separados, inflando ranking e quebrando projeções. Aliases canônicos
+// aplicados na troca de liga (1 vez por boot) consolidam tudo de forma
+// transparente para todas as funções (projeção, Cisne, Bala, OURO etc.).
+// Auditoria 25/05/2026: só BR tinha duplicatas reais. Outras ligas limpas.
+// ══════════════════════════════════════════════════════════════════
+const ALIASES_TIMES_POR_LIGA = {
+  BR: {
+    'Atletico-MG':     'Atlético-MG',
+    'Sao Paulo':       'São Paulo',
+    'Gremio':          'Grêmio',
+    'Vitoria':         'Vitória',
+    'Flamengo RJ':     'Flamengo',
+    'Botafogo RJ':     'Botafogo',
+    'Chapecoense-SC':  'Chapecoense',
+    'Bragantino':      'Red Bull Bragantino'
+  }
+};
+
+function _canonicalNome(liga, nome) {
+  const map = ALIASES_TIMES_POR_LIGA[liga];
+  return (map && map[nome]) ? map[nome] : nome;
+}
+
+function _timesCanonicalDe(liga, fonteTimes) {
+  const nomes = fonteTimes.map(t => (typeof t === 'string' ? t : t.nome));
+  const canon = new Set();
+  for (const n of nomes) canon.add(_canonicalNome(liga, n));
+  return [...canon].sort();
+}
+
+function _aplicarAliasesAoBanco(liga, dados) {
+  if (!dados || !ALIASES_TIMES_POR_LIGA[liga]) return dados;
+  if (dados._aliasesAplicados) return dados;
+  const map = ALIASES_TIMES_POR_LIGA[liga];
+  if (Array.isArray(dados.jogos)) {
+    for (const j of dados.jogos) {
+      if (j.mandante  && map[j.mandante])  j.mandante  = map[j.mandante];
+      if (j.visitante && map[j.visitante]) j.visitante = map[j.visitante];
+    }
+  }
+  if (Array.isArray(dados.times) && dados.times.length) {
+    const ehObjeto = typeof dados.times[0] !== 'string';
+    const vistos = new Set();
+    const novos = [];
+    for (const t of dados.times) {
+      const nome = ehObjeto ? t.nome : t;
+      const canon = map[nome] || nome;
+      if (vistos.has(canon)) continue;
+      vistos.add(canon);
+      novos.push(ehObjeto ? Object.assign({}, t, { nome: canon }) : canon);
+    }
+    dados.times = novos;
+  }
+  dados._aliasesAplicados = true;
+  return dados;
+}
+
 const _LIGAS_PRIORIDADE = ['DADOS_BR','DADOS_ARG','DADOS_MLS','DADOS_USL','DADOS_BUN','DADOS_ARG_B','DADOS_BR_B'];
 const _LIGA_KEYS        = ['BR','ARG','MLS','USL','BUN','ARG_B','BR_B'];
 let DADOS_2026 = null;
@@ -1762,6 +1822,14 @@ for (let i = 0; i < _LIGAS_PRIORIDADE.length; i++) {
 if (!DADOS_2026) {
   DADOS_2026 = { times: [], jogos: [], totalRodadas: 0, temporada: 'sem-dados' };
   console.error('[EDS] Nenhum dataset de liga carregou. App em modo degradado.');
+}
+// Normaliza o dataset carregado no boot (aplica aliases canônicos)
+_aplicarAliasesAoBanco(LIGA_ATUAL, DADOS_2026);
+// Aplica preventivamente em TODAS as ligas carregadas — futuras trocarLiga()
+// vão pegar dados já normalizados
+for (const k of Object.keys(ALIASES_TIMES_POR_LIGA)) {
+  const varname = 'DADOS_' + k;
+  if (window[varname]) _aplicarAliasesAoBanco(k, window[varname]);
 }
 
 function avg(arr){ return arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0; }
@@ -1849,20 +1917,15 @@ const FAV_DOMINANCE = {
   ARG_B:   0.85,
   BR_B:    0.83,
   BUN:     0.79,  // azarão rouba cantos
-  // Japão reativado — equilíbrio asiático similar à Bundesliga (azarões resistem)
-  J1:      0.85,
-  J2_J3:   0.88,
-  // v3.7 (2026-05-24): 5 ligas calibradas via dominância empírica do mandante
+  // v3.7 (2026-05-24): 3 ligas calibradas via dominância empírica do mandante
   //   (% jogos com home cantos > away cantos) — sample ≥ 63 jogos cada
-  //   ECU 59.5% → 0.94 | ALM 56.3% → 0.96 | CHN_SUP 56.2% → 0.94
-  //   CHI 51.0% → 0.85 | CHN_1 50.8% → 0.83
+  //   ECU 59.5% → 0.94 | ALM 56.3% → 0.96 | CHI 51.0% → 0.85
   //   Heurística: 50%=equilíbrio total → ~0.83 | 56%+ ofensiva → ~0.94-0.96
   ECU:     0.94,
   ALM:     0.96,
-  CHN_SUP: 0.94,
   CHI:     0.85,
-  CHN_1:   0.83,
   _default: 0.92
+  // v3.8 (2026-05-25): J1, J2_J3, CHN_SUP, CHN_1 REMOVIDAS
 };
 
 function getMatchOdds(lamH, lamA, liga) {
@@ -2206,8 +2269,9 @@ function ordenarRanking(key) {
 function _avgArr(arr) { return arr.length ? arr.reduce((s,x)=>s+x,0)/arr.length : 0; }
 
 function getRankingData(tab) {
+  // Dataset já normalizado por _aplicarAliasesAoBanco no boot/troca de liga
+  // (definição em ALIASES_TIMES_POR_LIGA, próximo à linha 1725).
   const jogosValidos = DADOS_2026.jogos.filter(j => j.cantos !== null);
-  // times é array de strings (nomes) ou objetos com .nome — suporta ambos
   const nomes = DADOS_2026.times.map(t => (typeof t === 'string' ? t : t.nome));
   return nomes.map(t => {
     const casa = jogosValidos.filter(j => j.mandante === t);
@@ -2659,6 +2723,38 @@ function projecaoJogo(mandante, visitante) {
   else if (rcOdd <= 1.90) { rcFaixa = 'MEDIANO';     rcCor = '#f97316'; }
   else                    { rcFaixa = 'EQUILIBRADO'; rcCor = '#ef4444'; }
   const reisDosCantosData = { vencedor: rcVencedor, odd: rcOdd, faixa: rcFaixa, cor: rcCor, lado: rcLado };
+
+  // ── v4.1 (2026-06-06): OVERRIDE DNA na coroa Reis dos Cantos ──
+  // Se o bônus DNA do vencedor apontar direção forte (|Δ|≥12) OPOSTA ao motor,
+  // INVERTE a coroa e recalcula faixa pela magnitude do delta DNA.
+  // Se confirmar (mesma direção) com Δ≥18, sobe a faixa se for EQUILIBRADO.
+  if (typeof window !== 'undefined' && window.USAR_AJUSTE_DNA !== false && window.MEMORIA_DNA && typeof _bonusDNA_Vencedor === 'function') {
+    try {
+      const _deltaRC = _bonusDNA_Vencedor(mandante, visitante, _ligaCalc);
+      const _mag = Math.abs(_deltaRC);
+      if (_mag >= 12) {
+        const _dnaCasa = _deltaRC > 0;
+        const _motorCasa = (rcLado === 'casa');
+        if (_dnaCasa !== _motorCasa) {
+          reisDosCantosData.vencedor = _dnaCasa ? mandante : visitante;
+          reisDosCantosData.lado     = _dnaCasa ? 'casa' : 'fora';
+          reisDosCantosData.odd      = _dnaCasa ? oddCasaFT : oddForaFT;
+          if (_mag >= 25)      { reisDosCantosData.faixa = 'DOMINANTE';  reisDosCantosData.cor = '#34d367'; }
+          else if (_mag >= 18) { reisDosCantosData.faixa = 'MODERADO';   reisDosCantosData.cor = '#f59e0b'; }
+          else                 { reisDosCantosData.faixa = 'MEDIANO';    reisDosCantosData.cor = '#f97316'; }
+          reisDosCantosData.dna_override = true;
+          reisDosCantosData.dna_delta = _deltaRC;
+        } else if (_mag >= 18 && reisDosCantosData.faixa === 'EQUILIBRADO') {
+          reisDosCantosData.faixa = 'MODERADO'; reisDosCantosData.cor = '#f59e0b';
+          reisDosCantosData.dna_confirm = true;
+          reisDosCantosData.dna_delta = _deltaRC;
+        } else {
+          reisDosCantosData.dna_confirm = true;
+          reisDosCantosData.dna_delta = _deltaRC;
+        }
+      }
+    } catch(e) { /* DNA opcional — falha silenciosa preserva motor puro */ }
+  }
 
   // ── TIRO SNIPER v2 (Zona Neutra Poisson — elimina viés OVER) ──
   // Limiares e linhas referenciam MOTOR_CONFIG para facilitar recalibração.
@@ -3820,6 +3916,185 @@ function calcEV(inputId, probModelo) {
   }
 }
 
+// ══════════════════════════════════════════════════════════════════════════════
+//  RENDER — TOP 3 (sinais cirúrgicos validados em backtest walk-forward)
+// ══════════════════════════════════════════════════════════════════════════════
+// Critérios derivados de backtest em 507 picks Over/Under + 464 picks HDP.
+// Apenas combinações com WR ≥ 70% e n ≥ 10 históricos qualificam.
+// ARG e ARG_B podem retornar mais que 3 picks (sem limite — ligas mais assertivas).
+// Outras ligas: máximo 3 picks por bloco.
+// Backtest base: projeto-fantasma/_backtest_multipla.js + _backtest_hdp_top3.js
+const TOP3_CRITERIOS = Object.freeze({
+  // HDP: cada critério é uma função(p, ligaStats) que retorna {match, linha, label, wrEsperado}
+  // OU: cada critério é uma função que retorna {match, mercado, label, wrEsperado}
+  HDP: {
+    ARG: [
+      { id:'arg_h1', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 3.0)',                   wr:93, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
+      { id:'arg_h2', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 2.0 + saldo ≥ 3)',       wr:91, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 2.0 && (fav.saldo >= 3) },
+      { id:'arg_h3', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 2.5)',                   wr:86, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 2.5 }
+    ],
+    ARG_B: [
+      { id:'argb_h1', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 3.0)',                  wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
+      { id:'argb_h2', linha:-1.0, label:'HDP -1.0 favorito (diff ≥ 3.0)',                  wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
+      { id:'argb_h3', linha:-1.5, label:'HDP -1.5 favorito (diff ≥ 3.0)',                  wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
+      { id:'argb_h4', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 2.5 + saldo ≥ 2)',      wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 2.5 && (fav.saldo >= 2) }
+    ],
+    ECU: [
+      { id:'ecu_h1', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 1.5)',                   wr:79, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 1.5 },
+      { id:'ecu_h2', linha:-1.0, label:'HDP -1.0 favorito (diff ≥ 1.5)',                   wr:74, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 1.5 }
+    ]
+  },
+  OU: {
+    ARG_B: [
+      { id:'argb_o1', mercado:'UNDER 8.5', label:'UNDER 8.5 (ambas médias < 8)',           wr:82, fn:(p,fav,opo) => fav.media < 8 && opo.media < 8 },
+      { id:'argb_o2', mercado:'UNDER 10',  label:'UNDER 10 (ambas médias < 8)',            wr:82, fn:(p,fav,opo) => fav.media < 8 && opo.media < 8 },
+      { id:'argb_o3', mercado:'OVER 8.5',  label:'OVER 8.5 (expTotal > 10)',               wr:73, fn:(p,fav,opo) => p.expTotalFT > 10 }
+    ],
+    MLS: [
+      { id:'mls_o1',  mercado:'OVER 8.5', label:'OVER 8.5 (ambas médias > 10)',            wr:82, fn:(p,fav,opo) => fav.media > 10 && opo.media > 10 },
+      { id:'mls_o2',  mercado:'OVER 8.5', label:'OVER 8.5 (expTotal > 10)',                wr:70, fn:(p,fav,opo) => p.expTotalFT > 10 }
+    ],
+    USL: [
+      { id:'usl_o1',  mercado:'UNDER 10', label:'UNDER 10 (expTotal < 8.5)',               wr:80, fn:(p,fav,opo) => p.expTotalFT < 8.5 }
+    ],
+    BR_B: [
+      { id:'brb_o1',  mercado:'OVER 8.5', label:'OVER 8.5 (ambas médias > 9.5)',           wr:71, fn:(p,fav,opo) => fav.media > 9.5 && opo.media > 9.5 }
+    ],
+    ARG: [
+      { id:'arg_o1',  mercado:'UNDER 10', label:'UNDER 10 (ambas médias < 8)',             wr:70, fn:(p,fav,opo) => fav.media < 8 && opo.media < 8 }
+    ],
+    BR: [
+      { id:'br_o1',   mercado:'OVER 8.5', label:'OVER 8.5 (expTotal > 11)',                wr:70, fn:(p,fav,opo) => p.expTotalFT > 11 }
+    ]
+  }
+});
+
+// Pra calcular médias/saldo de cada time (versão simplificada — usa DADOS_2026)
+function _top3StatsTime(nomeTime) {
+  if (!DADOS_2026 || !DADOS_2026.jogos) return null;
+  const todos = DADOS_2026.jogos.filter(j => (j.mandante === nomeTime || j.visitante === nomeTime) && j.cantos?.ft);
+  if (todos.length < 4) return null;
+  const totais = todos.map(j => j.cantos.ft.m + j.cantos.ft.v);
+  const media = totais.reduce((s,x) => s+x, 0) / totais.length;
+  const pro = todos.reduce((s,j) => s + (j.mandante===nomeTime ? j.cantos.ft.m : j.cantos.ft.v), 0) / todos.length;
+  const con = todos.reduce((s,j) => s + (j.mandante===nomeTime ? j.cantos.ft.v : j.cantos.ft.m), 0) / todos.length;
+  return { media, pro, con, saldo: pro - con, n: todos.length };
+}
+
+function renderTop3() {
+  const container = document.getElementById('wrapper-top3');
+  if (!container) return;
+  if (!jogosFuturos || jogosFuturos.length === 0) {
+    container.innerHTML = `<div style="text-align:center;padding:3rem;color:var(--muted);background:var(--bg3);border-radius:12px">
+      <div style="font-size:3rem;margin-bottom:1rem">🏆</div>
+      <strong>Cole a rodada para ver os TOP 3 sinais.</strong><br>
+      <span style="font-size:.85rem">Vai em "📥 Adicionar Jogos" e cole os confrontos.</span>
+    </div>`;
+    return;
+  }
+
+  const liga = LIGA_ATUAL || 'BR';
+  const ligaNome = ({BR:'🇧🇷 Brasileirão A',BR_B:'🇧🇷 Brasileirão B',ARG:'🇦🇷 Argentina Pro',ARG_B:'🇦🇷 Argentina B',MLS:'🇺🇸 MLS',USL:'🇺🇸 USL',CHI:'🇨🇱 Chile',ECU:'🇪🇨 Equador'})[liga] || liga;
+  const semLimiteARG = (liga === 'ARG' || liga === 'ARG_B'); // ligas mais assertivas: sem cap em 3
+  const maxPicks = semLimiteARG ? 99 : 3;
+
+  const critHDP = (TOP3_CRITERIOS.HDP[liga] || []);
+  const critOU  = (TOP3_CRITERIOS.OU[liga]  || []);
+
+  // Pra cada jogo da rodada, avalia se algum critério bate
+  const picksHDP = [];
+  const picksOU = [];
+  for (const j of jogosFuturos) {
+    const p = projecaoJogo(j.m, j.v);
+    if (!p) continue;
+    const statsM = _top3StatsTime(j.m);
+    const statsV = _top3StatsTime(j.v);
+    if (!statsM || !statsV) continue;
+
+    // Determina favorito (maior exp)
+    const ehMandFav = p.expHomeFT >= p.expAwayFT;
+    const favNome = ehMandFav ? j.m : j.v;
+    const opoNome = ehMandFav ? j.v : j.m;
+    const fav = ehMandFav ? statsM : statsV;
+    const opo = ehMandFav ? statsV : statsM;
+
+    // HDP
+    for (const c of critHDP) {
+      if (c.fn(p, fav, opo)) {
+        picksHDP.push({ jogo:j, favorito:favNome, oponente:opoNome, linha:c.linha, label:c.label, wr:c.wr, score: c.wr });
+      }
+    }
+    // OU
+    for (const c of critOU) {
+      if (c.fn(p, fav, opo)) {
+        picksOU.push({ jogo:j, label:c.label, mercado:c.mercado, wr:c.wr, score:c.wr });
+      }
+    }
+  }
+
+  // Ordena por score (WR esperado) e corta
+  picksHDP.sort((a,b) => b.score - a.score);
+  picksOU.sort((a,b) => b.score - a.score);
+  const topHDP = picksHDP.slice(0, maxPicks);
+  const topOU  = picksOU.slice(0, maxPicks);
+
+  // Render
+  const _star = wr => wr >= 80 ? '⭐⭐⭐⭐⭐' : wr >= 75 ? '⭐⭐⭐⭐' : wr >= 70 ? '⭐⭐⭐' : '⭐⭐';
+
+  function _bloco(titulo, icone, cor, picks, mensagemVazia) {
+    if (picks.length === 0) {
+      return `<div style="background:var(--bg3);border:1px dashed var(--border);border-radius:12px;padding:1.5rem;text-align:center;color:var(--muted);margin-bottom:1.2rem">
+        <div style="font-size:.9rem;font-weight:700;color:${cor};margin-bottom:.4rem">${icone} ${titulo}</div>
+        <div style="font-size:.8rem">${mensagemVazia}</div>
+      </div>`;
+    }
+    return `<div style="background:linear-gradient(135deg,${cor}15,rgba(0,0,0,0.4));border-left:4px solid ${cor};padding:1rem 1.2rem;border-radius:12px;margin-bottom:.8rem">
+        <div style="font-size:1.1rem;font-weight:900;color:${cor};margin-bottom:.3rem">${icone} ${titulo} <span style="color:var(--muted);font-weight:600;font-size:.85rem">· ${picks.length} pick${picks.length>1?'s':''}</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr;gap:.6rem;margin-bottom:1.5rem">
+        ${picks.map((p,i) => `
+          <div style="background:var(--card);border:1px solid var(--border);border-left:3px solid ${cor};border-radius:10px;padding:.9rem 1.1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+            <span style="font-size:1rem;font-weight:900;color:${cor};min-width:24px">${i+1}.</span>
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:.92rem;font-weight:800;color:var(--text)">${p.jogo.m} <span style="color:var(--muted);font-weight:400">vs</span> ${p.jogo.v}</div>
+              <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">${p.label}${p.favorito ? ' · <strong style="color:'+cor+'">'+p.favorito+'</strong>' : ''}</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:.95rem;font-weight:900;color:var(--green)">${p.wr}%</div>
+              <div style="font-size:.65rem;color:var(--muted)">${_star(p.wr)}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  }
+
+  const total = topHDP.length + topOU.length;
+  const cabecalho = `<div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;margin-bottom:1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
+    <div>
+      <div style="font-size:.95rem;font-weight:800;color:var(--text)">${ligaNome} ${semLimiteARG ? '<span style="background:rgba(245,158,11,0.2);color:var(--gold);padding:.15rem .5rem;border-radius:6px;font-size:.65rem;font-weight:800;margin-left:.5rem">🏆 LIGA OURO · sem limite</span>' : ''}</div>
+      <div style="font-size:.75rem;color:var(--muted);margin-top:.2rem">${jogosFuturos.length} jogos · ${total} sinais TOP detectados (HDP ${topHDP.length} · OU ${topOU.length})</div>
+    </div>
+  </div>`;
+
+  // Bloqueio CHI/ECU/sem critérios
+  if (critHDP.length === 0 && critOU.length === 0) {
+    container.innerHTML = cabecalho + `<div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:1.5rem;text-align:center">
+      <div style="font-size:2rem;margin-bottom:.5rem">🚫</div>
+      <strong style="color:var(--red);font-size:.95rem">Liga ${liga} sem sinais validados em backtest</strong>
+      <div style="font-size:.78rem;color:var(--muted);margin-top:.6rem">Critérios HDP/Over/Under da liga não atingiram 70% WR em walk-forward (≥10 picks).</div>
+      <div style="font-size:.72rem;color:var(--muted);margin-top:.3rem">Use outras abas (Bala de Prata, Teacher) para análises gerais — sem garantia de WR alto.</div>
+    </div>`;
+    return;
+  }
+
+  container.innerHTML = cabecalho +
+    _bloco('HDP Asiático Forte', '🎯', '#3b82f6', topHDP, critHDP.length === 0 ? `Liga ${liga} sem critério HDP validado.` : 'Nenhum jogo da rodada atende aos critérios HDP TOP.') +
+    _bloco('Over / Under FT', '📊', '#10b981', topOU, critOU.length === 0 ? `Liga ${liga} sem critério OU validado.` : 'Nenhum jogo da rodada atende aos critérios OU TOP.') +
+    `<div style="margin-top:1rem;padding:.7rem 1rem;background:rgba(245,158,11,0.05);border-left:3px solid var(--gold);border-radius:6px;font-size:.72rem;color:var(--muted);font-style:italic">
+      ⚠️ WR esperado vem de backtest histórico walk-forward (sem leak temporal). Samples por critério: 10-28 picks. Pode variar ±5pp na operação real. Aceite os reds, não dobre stake.
+    </div>`;
+}
+
 // ══════════════════════════════════════════════════
 //  RENDER — PROJEÇÃO
 // ══════════════════════════════════════════════════
@@ -4167,6 +4442,7 @@ const VIEW_TO_GRUPO = {
   'time':            'visao',
   'adicionar':       'analise',
   'rodada':          'analise',
+  'top3':            'analise',
   'teacher':         'analise',
   'ouro':            'analise',
   'cisne-negro':     'analise',
@@ -4190,6 +4466,8 @@ const SUBNAV_BY_GRUPO = {
   analise: [
     { id: 'adicionar',   label: '📥 Adicionar Jogos' },
     { id: 'rodada',      label: '📅 Próximos Jogos' },
+    { id: 'top3',        label: '🏆 TOP 3',
+      style: 'background:linear-gradient(135deg,rgba(251,191,36,0.28),rgba(253,230,138,0.18),rgba(245,158,11,0.22));border-color:var(--gold);color:var(--gold);font-weight:800;' },
     { id: 'teacher',     label: '🏗️ Projeção TEACHER' },
     { id: 'ouro',        label: '🐺 Bala de Prata' },
     { id: 'cisne-negro', label: '🦢 Cisne Negro' },
@@ -4262,6 +4540,7 @@ function showView(id) {
   if (id==='ouro') renderOuro();
   if (id==='rodada') renderRodada();
   if (id==='teacher') renderTeacher();
+  if (id==='top3') renderTop3();
   if (id==='apostas') renderApostasReais();
   if (id==='enigma') renderEnigma();
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
@@ -5994,7 +6273,7 @@ carregarCustomJogos();
 
 function trocarLiga(liga) {
   // Guard 1: liga precisa existir no mapa
-  const ligaMap = { BR: window.DADOS_BR, BR_B: window.DADOS_BR_B, ARG: window.DADOS_ARG, ARG_B: window.DADOS_ARG_B, MLS: window.DADOS_MLS, USL: window.DADOS_USL, BUN: window.DADOS_BUN, J1: window.DADOS_J1, J2_J3: window.DADOS_J2_J3, CHI: window.DADOS_CHI, ECU: window.DADOS_ECU, CHN_SUP: window.DADOS_CHN_SUP, CHN_1: window.DADOS_CHN_1 };
+  const ligaMap = { BR: window.DADOS_BR, BR_B: window.DADOS_BR_B, ARG: window.DADOS_ARG, ARG_B: window.DADOS_ARG_B, MLS: window.DADOS_MLS, USL: window.DADOS_USL, BUN: window.DADOS_BUN, CHI: window.DADOS_CHI, ECU: window.DADOS_ECU }; // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1) removidas 2026-05-25
   const novosDados = ligaMap[liga];
 
   // Guard 2: dataset precisa ter times E jogos com cantos válidos. Ligas só com
@@ -6016,6 +6295,9 @@ function trocarLiga(liga) {
   }
 
   LIGA_ATUAL = liga;
+  // Fix 2026-05-25: normaliza nomes de times (idempotente — aplicada 1x por liga).
+  // Boot já normaliza no carregamento; trocar liga garante quando dataset chegar tarde.
+  _aplicarAliasesAoBanco(liga, novosDados);
   DADOS_2026 = novosDados;
 
   // Invalida caches do motor ao trocar liga — evita recalcular com força do time
@@ -6450,7 +6732,7 @@ function carregarBets(){
     // 2. Migração one-shot: consolida storages antigos `sniper_bets_<liga>`.
     // Rodou uma vez ao abrir o app após v2.0. Cada bet legado ganha o campo
     // `liga` deduzido pela própria chave do storage.
-    const ligas = ['BR','MLS','ARG','USL','BUN','ARG_B','ALM','J1','CHI','ECU'];
+    const ligas = ['BR','MLS','ARG','USL','BUN','ARG_B','ALM','CHI','ECU']; // J1 removida 2026-05-25 (bets antigas preservadas em localStorage)
     customBets = [];
     for (const lg of ligas) {
       try {
@@ -6674,12 +6956,10 @@ const _PINNACLE_LIGA_MAP = {
   'Brasil - Série A': 'BR',
   'Brasil - Série B': 'BR_B',
   'Chile - 1ª División': 'CHI',
-  'China - League One': 'CHN_1',
-  'China - Superliga': 'CHN_S',
   'EUA - Major League Soccer': 'MLS',
   'EUA - USL Championship': 'USL',
-  'Equador - Série A': 'ECU',
-  'Japão - J League': 'J1'
+  'Equador - Série A': 'ECU'
+  // Ligas asiáticas (J League, China Superliga, China League One) removidas 2026-05-25
 };
 
 // Mapa de aliases Pinnacle → nome canônico no dataset. A Pinnacle costuma
@@ -8662,10 +8942,11 @@ Você tem DUAS fontes de "memória", e elas NÃO são intercambiáveis:
    • MLS — Major League Soccer (30 times, 163 jogos)
    • USL — USL Championship (25 times, 94 jogos)
    • BUN — Bundesliga (18 times, 288 jogos)
-   • J1 — J1 League (20 times, 129 jogos)  🇯🇵
-   • J2_J3 — J2 + J3 League (40 times, 278 jogos)  🇯🇵
+   • CHI — Chile Primera División (16 times, 96 jogos)  🇨🇱
+   • ECU — Equador LigaPro (18 times, 111 jogos)  🇪🇨
    ────────────────────────────────────────────
-   TOTAL: 239 times, 1.594 jogos no ecossistema
+   TOTAL: 213 times, 1.404 jogos no ecossistema
+   (J1, J2_J3, CHN_SUP, CHN_1 removidas em 2026-05-25 por falta de padrão consistente)
 
    Para cada uma das 9 ligas você tem injetado:
    - MEMORIA_DNA completa: PowerScore, categoria, perfil DNA, buckets
@@ -10894,13 +11175,13 @@ let _filtroOuroState = {
   cacheTimestamp: null
 };
 
-function _scoreVencedor(p, liga) {
+function _scoreVencedor(p, liga, mandante, visitante) {
   let s = 0;
   if (!p) return 0;
   // v3.0 (2026-05-10): aplica multiplicadores por arquétipo da liga.
-  // Ofensivas (BR/BR_B/MLS): mantém todos os pesos (já funcionavam).
-  // Equilibradas (BUN/USL): reduz peso de FORTE/MODERADA (50% WR não compensa).
-  // Trucadas (ARG/ARG_B): zera MODERADA (era armadilha 40% WR), aumenta NUCLEAR/ABSOLUTO (70-100% WR).
+  // v4.0 (2026-06-06): FUSÃO motor + DNA — assinaturas, ΔPS e buckets SOMAM pontos
+  //                    diretamente (não mais multiplicador pós-hoc). Resolve discrepância
+  //                    motor × SmartCoach: agora os dois "cérebros" usam a mesma base.
   const mult = getArqMult(liga);
 
   // Reis dos Cantos
@@ -10936,15 +11217,99 @@ function _scoreVencedor(p, liga) {
   // Confiança
   if ((p.confFT||0) >= 70) s += 5;
 
+  // ═══ v4.0 — BÔNUS DNA INTEGRADO (mandante + visitante via MEMORIA_DNA) ═══
+  // O SmartCoach já usa esses sinais naturalmente. Agora o motor também usa.
+  if (window.USAR_AJUSTE_DNA !== false && mandante && visitante) {
+    s += _bonusDNA_Vencedor(mandante, visitante, liga);
+  }
+
   return Math.max(0, Math.min(100, s));
 }
 
-function _scoreUnder(p, liga) {
+// ═══ v4.0 — BÔNUS DNA PARA VENCEDOR ═══
+// Soma/subtrai pontos com base em ΔPowerScore, assinaturas ATIVAS e perfis DNA.
+// Clamp interno [-30, +30] pra não estourar o range do score.
+function _bonusDNA_Vencedor(mandante, visitante, liga) {
+  if (!window.MEMORIA_DNA) return 0;
+  const dnaM = getMemoriaTime(liga, mandante);
+  const dnaV = getMemoriaTime(liga, visitante);
+  if (!dnaM && !dnaV) return 0;
+
+  let delta = 0;
+  function ass(dna, nome) { return (dna?.assinaturas||[]).find(a => a.nome===nome && a.presente===true && a.qualifier==='consolidado'); }
+
+  // ── DIVERGÊNCIA DNA × PERFORMANCE (penalidade dura)
+  const memLiga = window.MEMORIA_DNA[liga] || {};
+  const divs = memLiga.divergencias_dna_performance || [];
+  const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const divM = divs.find(d => normN(d.time) === normN(mandante));
+  const divV = divs.find(d => normN(d.time) === normN(visitante));
+  if (divM?.severidade === 'alta') delta -= 12;
+  else if (divM?.severidade === 'media') delta -= 5;
+  if (divV?.severidade === 'alta') delta -= 12;
+  else if (divV?.severidade === 'media') delta -= 5;
+
+  // ── BUCKET CASA × CATEGORIA DO VISITANTE
+  if (dnaM && dnaV) {
+    const catV = (dnaV.identidade?.categoria || 'medio').toLowerCase().replace('ã','a').replace('é','e');
+    const bk = dnaM.buckets?.['casa_vs_'+catV];
+    if (bk && bk.qualifier !== 'amostra_insuficiente') {
+      const varPct = bk.variacao_vs_baseline_pct || 0;
+      const peso = bk.qualifier === 'consolidado' ? 1.0 : 0.5;
+      if (varPct >= 20) delta += 8 * peso;
+      else if (varPct <= -20) delta -= 8 * peso;
+    }
+  }
+
+  // ── MATRIZ DNA × DNA
+  if (dnaM && dnaV && memLiga.matriz_dna_cruzamentos) {
+    const cruz = memLiga.matriz_dna_cruzamentos[`${dnaM.identidade?.perfil_dna}_vs_${dnaV.identidade?.perfil_dna}`];
+    if (cruz?.qualifier === 'consolidado' && cruz.domina_mandante_pct >= 70) {
+      delta += 6;
+    }
+  }
+
+  // ── DOSSIÊ TÁTICO (vs_top3 / vs_lanterna3)
+  if (dnaM?.dossie_tatico) {
+    const dt = dnaM.dossie_tatico;
+    if (dt.vs_top3?.padrao === 'ENGOLIDO_PELO_TOP' && dnaV?.identidade?.categoria === 'ELITE') delta -= 10;
+    if (dt.vs_lanterna3?.padrao === 'DOMINA_FACIL' && dnaV?.identidade?.categoria === 'AZARÃO') delta += 6;
+  }
+
+  // ── ASSINATURAS ATIVAS DO MANDANTE
+  if (ass(dnaM, 'RUPTURA_HOME')) delta += 10;
+  if (ass(dnaM, 'BLITZ_INICIAL')) delta += 8;
+  if (ass(dnaM, 'CARRINHO_FACIL')) delta += 5;
+  if (ass(dnaM, 'ATAQUE_ESTERIL')) delta -= 6;
+  if (ass(dnaM, 'DESEQUILIBRA_FAVORITO') && (dnaM?.identidade?.powerScore||0) > (dnaV?.identidade?.powerScore||0)) delta -= 12;
+
+  // ── ASSINATURAS ATIVAS DO VISITANTE
+  if (ass(dnaV, 'ELITE_KILLER')) delta -= 12;
+  if (ass(dnaV, 'SUCUMBE_AZARAO')) delta += 12;
+  if (ass(dnaV, 'MURO_DEFENSIVO')) delta -= 6;
+  if (ass(dnaV, 'DESEQUILIBRA_FAVORITO') && (dnaV?.identidade?.powerScore||0) > (dnaM?.identidade?.powerScore||0)) delta += 8;
+  if (dnaV?.identidade?.perfil_dna === 'VULNERAVEL') delta += 6;
+
+  // ── ΔPowerScore (assimetria competitiva — sinal MASTER)
+  if (dnaM?.identidade?.powerScore != null && dnaV?.identidade?.powerScore != null) {
+    const psDiff = (dnaM.identidade.powerScore||0) - (dnaV.identidade.powerScore||0);
+    if (psDiff >= 25) delta += 22;
+    else if (psDiff >= 15) delta += 15;
+    else if (psDiff >= 10) delta += 9;
+    else if (psDiff <= -25) delta -= 22;
+    else if (psDiff <= -15) delta -= 15;
+    else if (psDiff <= -10) delta -= 9;
+  }
+
+  // Clamp interno: bônus DNA não pode exceder ±30 pontos absolutos
+  return Math.max(-30, Math.min(30, delta));
+}
+
+function _scoreUnder(p, liga, mandante, visitante) {
   let s = 0;
   if (!p || !p.tiroSniperData) return 0;
-  // v3.0 (2026-05-10): trucadas (ARG/ARG_B) ganham bonus extra no Under
-  // (×1.25), porque jogo travado favorece Under. Equilibradas (BUN/USL)
-  // perdem peso (×0.8) — Under nessas ligas é mais volátil.
+  // v4.0 (2026-06-06): integra DNA — perfis DEFENSIVOS, MURO_DUPLO no visitante,
+  // BLITZ ativo, e ΔPS alto AGORA são considerados no score direto.
   const mult = getArqMult(liga);
   const sn = p.tiroSniperData;
 
@@ -10964,7 +11329,227 @@ function _scoreUnder(p, liga) {
   if (FILTRO_OURO_LIGAS_PREMIUM_UND.indexOf(liga) >= 0) s += 20 * mult.under_premium;
   if (FILTRO_OURO_LIGAS_RUINS_UND.indexOf(liga) >= 0) s -= 10;
 
+  // ═══ v4.0 — BÔNUS DNA INTEGRADO ═══
+  if (window.USAR_AJUSTE_DNA !== false && mandante && visitante) {
+    s += _bonusDNA_Under(mandante, visitante, liga);
+  }
+
   return Math.max(0, Math.min(100, s));
+}
+
+// ═══ v4.0 — BÔNUS DNA PARA UNDER ═══
+function _bonusDNA_Under(mandante, visitante, liga) {
+  if (!window.MEMORIA_DNA) return 0;
+  const dnaM = getMemoriaTime(liga, mandante);
+  const dnaV = getMemoriaTime(liga, visitante);
+  if (!dnaM && !dnaV) return 0;
+
+  let delta = 0;
+  function ass(dna, nome) { return (dna?.assinaturas||[]).find(a => a.nome===nome && a.presente===true && a.qualifier==='consolidado'); }
+
+  // ── Visitante MURO_DEFENSIVO ou perfil_dna MURO_DUPLO → +Under
+  if (ass(dnaV, 'MURO_DEFENSIVO')) delta += 8;
+  if (dnaV?.identidade?.perfil_dna === 'MURO_DUPLO') delta += 6;
+  if (dnaM?.identidade?.perfil_dna === 'DEFENSIVO' && dnaV?.identidade?.perfil_dna === 'DEFENSIVO') delta += 8;
+
+  // ── Sinais OFENSIVOS reduzem Under
+  if (ass(dnaM, 'BLITZ_INICIAL') || ass(dnaV, 'BLITZ_INICIAL')) delta -= 6;
+  if (ass(dnaM, 'CARRINHO_FACIL') || ass(dnaV, 'CARRINHO_FACIL')) delta -= 5;
+  if (ass(dnaM, 'RUPTURA_HOME')) delta -= 5;
+  if (ass(dnaM, 'DEFESA_PRECARIA')) delta -= 6;
+
+  // ── ΔPS alto = jogo desigual = pace abre = penaliza Under
+  if (dnaM?.identidade?.powerScore != null && dnaV?.identidade?.powerScore != null) {
+    const psDiff = Math.abs((dnaM.identidade.powerScore||0) - (dnaV.identidade.powerScore||0));
+    if (psDiff >= 25) delta -= 14;
+    else if (psDiff >= 15) delta -= 8;
+    else if (psDiff >= 10) delta -= 4;
+  }
+
+  // ── Bucket low pace consolidado → reforça Under
+  if (dnaM && dnaV) {
+    const catV = (dnaV.identidade?.categoria || 'medio').toLowerCase().replace('ã','a').replace('é','e');
+    const bk = dnaM.buckets?.['casa_vs_'+catV];
+    if (bk && bk.qualifier === 'consolidado') {
+      const totalCantos = (bk.cantos_pro_media||0) + (bk.cantos_sofridos_media||0);
+      if (totalCantos <= 8.5) delta += 6;
+      else if (totalCantos >= 11) delta -= 6;
+    }
+  }
+
+  return Math.max(-25, Math.min(25, delta));
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  C-LITE — AJUSTE DNA APLICADO AO SCORE DO MOTOR (v1.0 — 2026-06-04)
+//
+//  Após o motor estatístico calcular sV/sU, esta função AJUSTA a confiança
+//  consultando MEMORIA_DNA (buckets, divergencias, matriz_dna_cruzamentos)
+//  e os dossiês forenses injetados.
+//
+//  NÃO MODIFICA O MOTOR — só multiplica o score resultante por fator [0.7, 1.3].
+//  Toggle: window.USAR_AJUSTE_DNA = false para desligar.
+//
+//  Retorna: { scoreAjustado, mult, motivos[] }
+// ══════════════════════════════════════════════════════════════════
+window.USAR_AJUSTE_DNA = window.USAR_AJUSTE_DNA !== false; // ON por padrão
+
+function ajusteDNA_LITE(scoreOriginal, mandante, visitante, liga, tipoMercado) {
+  // Disable: passthrough
+  if (!window.USAR_AJUSTE_DNA || !window.MEMORIA_DNA) {
+    return { scoreAjustado: scoreOriginal, mult: 1.0, motivos: ['DNA off'] };
+  }
+
+  const dnaM = getMemoriaTime(liga, mandante);
+  const dnaV = getMemoriaTime(liga, visitante);
+  if (!dnaM && !dnaV) {
+    return { scoreAjustado: scoreOriginal, mult: 1.0, motivos: ['sem DNA dos times'] };
+  }
+
+  let mult = 1.0;
+  const motivos = [];
+  const memLiga = window.MEMORIA_DNA[liga] || {};
+  const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+
+  // ═══ 1. DIVERGÊNCIA DNA × PERFORMANCE — penaliza ambos os mercados ═══
+  const divs = memLiga.divergencias_dna_performance || [];
+  const divM = divs.find(d => normN(d.time) === normN(mandante));
+  const divV = divs.find(d => normN(d.time) === normN(visitante));
+  if (divM?.severidade === 'alta') { mult *= 0.75; motivos.push(`div ${mandante}: -25%`); }
+  else if (divM?.severidade === 'media') { mult *= 0.90; motivos.push(`div ${mandante}: -10%`); }
+  if (divV?.severidade === 'alta') { mult *= 0.75; motivos.push(`div ${visitante}: -25%`); }
+  else if (divV?.severidade === 'media') { mult *= 0.90; motivos.push(`div ${visitante}: -10%`); }
+
+  // ═══ 2. BUCKET SITUACIONAL — confirma ou contradiz ═══
+  if (dnaM && dnaV) {
+    const catV = (dnaV.identidade?.categoria || 'medio').toLowerCase().replace('ã','a').replace('é','e');
+    const bucketMand = dnaM.buckets?.['casa_vs_'+catV];
+    if (bucketMand && bucketMand.qualifier !== 'amostra_insuficiente') {
+      const varPct = bucketMand.variacao_vs_baseline_pct || 0;
+      const pesoBucket = bucketMand.qualifier === 'consolidado' ? 1.0 : 0.5;
+
+      if (tipoMercado === 'vencedor') {
+        // Bucket pró: mandante domina cantos contra essa categoria → reforça vencedor
+        if (varPct >= 20) { mult *= (1 + 0.15 * pesoBucket); motivos.push(`bucket ${mandante}→ven +${(15*pesoBucket).toFixed(0)}%`); }
+        else if (varPct <= -20) { mult *= (1 - 0.15 * pesoBucket); motivos.push(`bucket ${mandante}→ven -${(15*pesoBucket).toFixed(0)}%`); }
+      } else if (tipoMercado === 'under') {
+        // Bucket de baixo volume reforça Under
+        const totalCantos = (bucketMand.cantos_pro_media||0) + (bucketMand.cantos_sofridos_media||0);
+        if (totalCantos <= 8.5) { mult *= (1 + 0.10 * pesoBucket); motivos.push(`bucket low pace +${(10*pesoBucket).toFixed(0)}%`); }
+        else if (totalCantos >= 11) { mult *= (1 - 0.10 * pesoBucket); motivos.push(`bucket high pace -${(10*pesoBucket).toFixed(0)}%`); }
+      }
+    }
+  }
+
+  // ═══ 3. MATRIZ DNA × DNA — padrão da liga pra esse par de perfis ═══
+  if (dnaM && dnaV && memLiga.matriz_dna_cruzamentos) {
+    const perfilM = dnaM.identidade?.perfil_dna;
+    const perfilV = dnaV.identidade?.perfil_dna;
+    if (perfilM && perfilV) {
+      const cruz = memLiga.matriz_dna_cruzamentos[`${perfilM}_vs_${perfilV}`];
+      if (cruz && cruz.qualifier === 'consolidado') {
+        if (tipoMercado === 'vencedor' && cruz.domina_mandante_pct >= 70) {
+          mult *= 1.10; motivos.push(`matriz dom_mand ${cruz.domina_mandante_pct}%`);
+        } else if (tipoMercado === 'under' && cruz.cantos_media_total < 9) {
+          mult *= 1.10; motivos.push(`matriz low pace ${cruz.cantos_media_total}`);
+        } else if (tipoMercado === 'under' && cruz.cantos_media_total > 11) {
+          mult *= 0.90; motivos.push(`matriz high pace ${cruz.cantos_media_total}`);
+        }
+      }
+    }
+  }
+
+  // ═══ 4. DOSSIÊ TÁTICO — sinais de padrão extremo ═══
+  if (dnaM?.dossie_tatico) {
+    const dt = dnaM.dossie_tatico;
+    // Vs top3: mandante engolido por elites → penaliza vencedor se adv é ELITE
+    if (tipoMercado === 'vencedor' && dt.vs_top3?.padrao === 'ENGOLIDO_PELO_TOP' && dnaV?.identidade?.categoria === 'ELITE') {
+      mult *= 0.80; motivos.push(`${mandante} engolido por ELITE -20%`);
+    }
+    // Vs lanterna3: mandante domina fácil → reforça vencedor se adv é AZARÃO
+    if (tipoMercado === 'vencedor' && dt.vs_lanterna3?.padrao === 'DOMINA_FACIL' && dnaV?.identidade?.categoria === 'AZARÃO') {
+      mult *= 1.10; motivos.push(`${mandante} domina AZARÃO +10%`);
+    }
+  }
+
+  // ═══ 5. ASSINATURAS ATIVAS — sinais comportamentais cravados (v2.0 — 2026-06-06) ═══
+  // Lê o array .assinaturas[] de cada time e ajusta conforme cada perfil presente+consolidado.
+  // Captura sinais que o motor estatístico ignora completamente.
+  function getAssAtiva(dna, nome) {
+    return (dna?.assinaturas||[]).find(a => a.nome === nome && a.presente === true && a.qualifier === 'consolidado');
+  }
+
+  // VENCEDOR — favorece o lado com assinaturas ofensivas/dominantes
+  if (tipoMercado === 'vencedor' && dnaM && dnaV) {
+    // Mandante com RUPTURA_HOME — produz cantos em casa
+    if (getAssAtiva(dnaM, 'RUPTURA_HOME')) { mult *= 1.10; motivos.push(`${mandante} RUPTURA_HOME★ +10%`); }
+    // Mandante com BLITZ_INICIAL — cantos cedo, vence HDP
+    if (getAssAtiva(dnaM, 'BLITZ_INICIAL')) { mult *= 1.08; motivos.push(`${mandante} BLITZ_INICIAL★ +8%`); }
+    // Mandante com CARRINHO_FACIL — gera cantos com facilidade
+    if (getAssAtiva(dnaM, 'CARRINHO_FACIL')) { mult *= 1.05; motivos.push(`${mandante} CARRINHO_FACIL★ +5%`); }
+    // Mandante com DESEQUILIBRA_FAVORITO — sabota quando é favorito (penalidade se PS > visitante)
+    if (getAssAtiva(dnaM, 'DESEQUILIBRA_FAVORITO') && (dnaM.identidade?.powerScore||0) > (dnaV.identidade?.powerScore||0)) {
+      mult *= 0.85; motivos.push(`${mandante} DESEQUILIBRA_FAVORITO★ -15%`);
+    }
+    // Mandante com ATAQUE_ESTERIL — não converte chances em cantos
+    if (getAssAtiva(dnaM, 'ATAQUE_ESTERIL')) { mult *= 0.92; motivos.push(`${mandante} ATAQUE_ESTERIL★ -8%`); }
+
+    // Visitante com ELITE_KILLER — vence times maiores fora
+    if (getAssAtiva(dnaV, 'ELITE_KILLER')) { mult *= 0.88; motivos.push(`${visitante} ELITE_KILLER★ -12%`); }
+    // Visitante com SUCUMBE_AZARAO — perde fora consistentemente (boost pró mandante)
+    if (getAssAtiva(dnaV, 'SUCUMBE_AZARAO')) { mult *= 1.10; motivos.push(`${visitante} SUCUMBE_AZARAO★ pró mandante +10%`); }
+    // Visitante MURO_DEFENSIVO — trava jogo, dificulta dominância em cantos
+    if (getAssAtiva(dnaV, 'MURO_DEFENSIVO')) { mult *= 0.92; motivos.push(`${visitante} MURO_DEFENSIVO★ -8%`); }
+    // Visitante DESEQUILIBRA_FAVORITO — se PS visitante > mandante, mandante ganha indiretamente
+    if (getAssAtiva(dnaV, 'DESEQUILIBRA_FAVORITO') && (dnaV.identidade?.powerScore||0) > (dnaM.identidade?.powerScore||0)) {
+      mult *= 1.08; motivos.push(`${visitante} DESEQUILIBRA_FAVORITO★ +8% (favorito sabota-se)`);
+    }
+  }
+
+  // UNDER — favorece quando há defesas sólidas em ambos lados
+  if (tipoMercado === 'under' && dnaM && dnaV) {
+    // Visitante MURO_DUPLO ou MURO_DEFENSIVO consolidado → boost Under
+    if (getAssAtiva(dnaV, 'MURO_DEFENSIVO')) { mult *= 1.10; motivos.push(`${visitante} MURO_DEFENSIVO★ +10%`); }
+    if (dnaV?.identidade?.perfil_dna === 'MURO_DUPLO') { mult *= 1.08; motivos.push(`${visitante} perfil MURO_DUPLO +8%`); }
+    // Mandante DEFESA_PRECARIA — abre o jogo, contradiz Under
+    if (getAssAtiva(dnaM, 'DEFESA_PRECARIA')) { mult *= 0.92; motivos.push(`${mandante} DEFESA_PRECARIA★ -8%`); }
+    // Qualquer time com CARRINHO_FACIL → mais cantos, contra Under
+    if (getAssAtiva(dnaM, 'CARRINHO_FACIL') || getAssAtiva(dnaV, 'CARRINHO_FACIL')) {
+      mult *= 0.93; motivos.push(`CARRINHO_FACIL★ ativo -7%`);
+    }
+    // Qualquer BLITZ_INICIAL → cantos cedo, pace acelera
+    if (getAssAtiva(dnaM, 'BLITZ_INICIAL') || getAssAtiva(dnaV, 'BLITZ_INICIAL')) {
+      mult *= 0.93; motivos.push(`BLITZ_INICIAL★ ativo -7%`);
+    }
+  }
+
+  // ═══ 6. ΔPOWERSCORE — assimetria competitiva (v2.0 — 2026-06-06) ═══
+  // Quando há diferencial alto de PowerScore, motor estatístico subestima o lado superior.
+  // SmartCoach usa esse sinal naturalmente — replicamos no C-LITE.
+  if (dnaM?.identidade?.powerScore != null && dnaV?.identidade?.powerScore != null) {
+    const psDiff = (dnaM.identidade.powerScore||0) - (dnaV.identidade.powerScore||0);
+    const absPS = Math.abs(psDiff);
+
+    if (tipoMercado === 'vencedor') {
+      // ΔPS pró mandante (positivo): boost vencedor; ΔPS pró visitante (negativo): rebaixa
+      if (psDiff >= 25) { mult *= 1.18; motivos.push(`ΔPS +${psDiff.toFixed(0)} mandante super-favorito +18%`); }
+      else if (psDiff >= 15) { mult *= 1.12; motivos.push(`ΔPS +${psDiff.toFixed(0)} mandante claramente superior +12%`); }
+      else if (psDiff >= 10) { mult *= 1.07; motivos.push(`ΔPS +${psDiff.toFixed(0)} mandante levemente superior +7%`); }
+      else if (psDiff <= -25) { mult *= 0.82; motivos.push(`ΔPS ${psDiff.toFixed(0)} visitante super-favorito -18%`); }
+      else if (psDiff <= -15) { mult *= 0.88; motivos.push(`ΔPS ${psDiff.toFixed(0)} visitante claramente superior -12%`); }
+      else if (psDiff <= -10) { mult *= 0.93; motivos.push(`ΔPS ${psDiff.toFixed(0)} visitante levemente superior -7%`); }
+    } else if (tipoMercado === 'under') {
+      // |ΔPS| alto = jogo desigual = lado superior ataca, lado inferior sucumbe = pace abre
+      if (absPS >= 25) { mult *= 0.85; motivos.push(`|ΔPS| ${absPS.toFixed(0)} jogo muito desigual -15%`); }
+      else if (absPS >= 15) { mult *= 0.92; motivos.push(`|ΔPS| ${absPS.toFixed(0)} jogo desigual -8%`); }
+    }
+  }
+
+  // ═══ 7. CLAMP DE SEGURANÇA — ajuste máximo ±30% ═══
+  mult = Math.max(0.70, Math.min(1.30, mult));
+
+  const scoreAjustado = Math.max(0, Math.min(100, scoreOriginal * mult));
+  return { scoreAjustado: Math.round(scoreAjustado), mult: +mult.toFixed(2), motivos };
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -10992,7 +11577,7 @@ function _linhaUnderSugerida(expFT) {
 
 // Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
 function gerarCandidatosMultiplas() {
-  const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','J1','J2_J3'];
+  const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
   const candidatos = [];
   const ligasComRodada = [];
@@ -11021,8 +11606,14 @@ function gerarCandidatosMultiplas() {
         try {
           const p = projecaoJogo(j.m, j.v);
           if (!p) return;
-          const sV = _scoreVencedor(p, L);
-          const sU = _scoreUnder(p, L);
+          // v4.0 — DNA já integrado dentro de _scoreVencedor/_scoreUnder
+          const sV = _scoreVencedor(p, L, j.m, j.v);
+          const sU = _scoreUnder(p, L, j.m, j.v);
+          // Score "motor puro" sem DNA (para auditoria/comparação no card)
+          const sV_motor = _scoreVencedor(p, L);
+          const sU_motor = _scoreUnder(p, L);
+          const ajV = { scoreAjustado: sV, mult: sV_motor>0 ? +(sV/sV_motor).toFixed(2) : 1.0, motivos: sV !== sV_motor ? [`DNA Δ${sV-sV_motor>=0?'+':''}${sV-sV_motor} pts`] : [] };
+          const ajU = { scoreAjustado: sU, mult: sU_motor>0 ? +(sU/sU_motor).toFixed(2) : 1.0, motivos: sU !== sU_motor ? [`DNA Δ${sU-sU_motor>=0?'+':''}${sU-sU_motor} pts`] : [] };
           const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
           const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
 
@@ -11039,6 +11630,8 @@ function gerarCandidatosMultiplas() {
           candidatos.push({
             liga: L, m: j.m, v: j.v, data: j.data, hora: j.hora,
             scoreVencedor: sV, scoreUnder: sU,
+            scoreVencedor_motor: sV_motor, scoreUnder_motor: sU_motor,
+            dna_ajuste_ven: ajV, dna_ajuste_und: ajU,
             favorito, diff: +diff.toFixed(2),
             linhaHDP: _linhaHDPSugerida(diff),
             linhaUnder: _linhaUnderSugerida(p.expTotalFT||10),
@@ -11594,8 +12187,13 @@ function gerarFiltroOuroLigaAtual() {
     try {
       const p = projecaoJogo(j.m, j.v);
       if (!p) return;
-      const sV = _scoreVencedor(p, LIGA_ATUAL);
-      const sU = _scoreUnder(p, LIGA_ATUAL);
+      // v4.0 — DNA já integrado
+      const sV = _scoreVencedor(p, LIGA_ATUAL, j.m, j.v);
+      const sU = _scoreUnder(p, LIGA_ATUAL, j.m, j.v);
+      const sV_motor = _scoreVencedor(p, LIGA_ATUAL);
+      const sU_motor = _scoreUnder(p, LIGA_ATUAL);
+      const ajV = { scoreAjustado: sV, mult: sV_motor>0 ? +(sV/sV_motor).toFixed(2) : 1.0, motivos: sV !== sV_motor ? [`DNA Δ${sV-sV_motor>=0?'+':''}${sV-sV_motor} pts`] : [] };
+      const ajU = { scoreAjustado: sU, mult: sU_motor>0 ? +(sU/sU_motor).toFixed(2) : 1.0, motivos: sU !== sU_motor ? [`DNA Δ${sU-sU_motor>=0?'+':''}${sU-sU_motor} pts`] : [] };
       const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
       const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
       resultados.push({
@@ -11605,6 +12203,10 @@ function gerarFiltroOuroLigaAtual() {
         m: j.m, v: j.v, data: j.data, hora: j.hora,
         scoreVencedor: sV,
         scoreUnder: sU,
+        scoreVencedor_motor: sV_motor,
+        scoreUnder_motor: sU_motor,
+        dna_ajuste_ven: ajV,
+        dna_ajuste_und: ajU,
         favorito,
         diff: diff,
         linhaHDPSugerida: _linhaHDPSugerida(diff),
@@ -11750,6 +12352,19 @@ function _cardOuroVencedor(r) {
   const reisInfo = r.reisFaixa ? `Reis ${r.reisFaixa} (odd ${r.reisOdd?r.reisOdd.toFixed(2):'?'})` : '';
   const bpInfo = r.bpFaixa ? `BP ${r.bpFaixa}` : '';
 
+  // C-LITE: badge de ajuste DNA + score original quando houve mudança
+  let dnaBadge = '';
+  let scoreBlocoSec = '';
+  if (r.dna_ajuste_ven && r.dna_ajuste_ven.mult !== 1.0) {
+    const m = r.dna_ajuste_ven.mult;
+    const cor = m > 1 ? 'var(--green)' : '#f87171';
+    const sinal = m > 1 ? '+' : '';
+    const pct = ((m - 1) * 100).toFixed(0);
+    const tooltipMotivos = (r.dna_ajuste_ven.motivos || []).join(' | ').replace(/"/g, '&quot;');
+    dnaBadge = `<span title="${tooltipMotivos}" style="background:rgba(167,139,250,0.12);border:1px solid #a78bfa;color:#a78bfa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">🧬 DNA ${sinal}${pct}% (mult ${m.toFixed(2)})</span>`;
+    scoreBlocoSec = `<div style="font-size:.62rem;color:var(--muted);font-weight:600;margin-top:.15rem;">motor: ${r.scoreVencedor_motor} → <span style="color:${cor};">${r.scoreVencedor}</span></div>`;
+  }
+
   return `
     <div style="background:linear-gradient(135deg,var(--card),rgba(245,158,11,0.04));border:2px solid var(--gold);border-radius:14px;padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:0 4px 16px rgba(245,158,11,0.12);">
       ${dt}
@@ -11761,6 +12376,7 @@ function _cardOuroVencedor(r) {
         <div style="text-align:right;">
           <div style="font-size:1.8rem;font-weight:900;color:var(--gold);line-height:1;">${r.scoreVencedor}</div>
           <div style="font-size:.6rem;color:var(--muted);font-weight:700;">SCORE / 100</div>
+          ${scoreBlocoSec}
         </div>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:.7rem;margin-bottom:.6rem;">
@@ -11776,6 +12392,7 @@ function _cardOuroVencedor(r) {
         ${r.bpFaixa ? `<span style="background:rgba(52,211,103,0.12);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">${bpInfo}</span>` : ''}
         ${r.diff >= 2.0 ? `<span style="background:rgba(167,139,250,0.12);border:1px solid #a78bfa;color:#a78bfa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">🦢 Cisne ativo</span>` : ''}
         ${FILTRO_OURO_LIGAS_PREMIUM_VEN.indexOf(r.liga) >= 0 ? `<span style="background:rgba(52,211,103,0.10);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">Liga premium (${r.liga})</span>` : ''}
+        ${dnaBadge}
       </div>
     </div>
   `;
@@ -11799,6 +12416,19 @@ function _cardOuroUnder(r) {
   const estrelas = r.scoreUnder >= 90 ? '⭐⭐⭐⭐⭐' : r.scoreUnder >= 80 ? '⭐⭐⭐⭐' : r.scoreUnder >= 70 ? '⭐⭐⭐' : '⭐⭐';
   const linhaUnder = r.expFT <= 7 ? 'UNDER 9.5' : r.expFT <= 8.5 ? 'UNDER 10' : 'UNDER 10.5';
 
+  // C-LITE
+  let dnaBadge = '';
+  let scoreBlocoSec = '';
+  if (r.dna_ajuste_und && r.dna_ajuste_und.mult !== 1.0) {
+    const m = r.dna_ajuste_und.mult;
+    const cor = m > 1 ? 'var(--green)' : '#f87171';
+    const sinal = m > 1 ? '+' : '';
+    const pct = ((m - 1) * 100).toFixed(0);
+    const tooltipMotivos = (r.dna_ajuste_und.motivos || []).join(' | ').replace(/"/g, '&quot;');
+    dnaBadge = `<span title="${tooltipMotivos}" style="background:rgba(167,139,250,0.12);border:1px solid #a78bfa;color:#a78bfa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">🧬 DNA ${sinal}${pct}% (mult ${m.toFixed(2)})</span>`;
+    scoreBlocoSec = `<div style="font-size:.62rem;color:var(--muted);font-weight:600;margin-top:.15rem;">motor: ${r.scoreUnder_motor} → <span style="color:${cor};">${r.scoreUnder}</span></div>`;
+  }
+
   return `
     <div style="background:linear-gradient(135deg,var(--card),rgba(96,165,250,0.04));border:2px solid #60a5fa;border-radius:14px;padding:1.1rem 1.3rem;margin-bottom:.8rem;box-shadow:0 4px 16px rgba(96,165,250,0.12);">
       ${dt}
@@ -11810,6 +12440,7 @@ function _cardOuroUnder(r) {
         <div style="text-align:right;">
           <div style="font-size:1.8rem;font-weight:900;color:#60a5fa;line-height:1;">${r.scoreUnder}</div>
           <div style="font-size:.6rem;color:var(--muted);font-weight:700;">SCORE / 100</div>
+          ${scoreBlocoSec}
         </div>
       </div>
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(96,165,250,0.25);border-radius:8px;padding:.7rem;margin-bottom:.6rem;">
@@ -11823,6 +12454,7 @@ function _cardOuroUnder(r) {
       <div style="display:flex;flex-wrap:wrap;gap:.4rem;font-size:.7rem;">
         ${r.sniperHT && r.sniperHT.indexOf('UNDER')===0 ? `<span style="background:rgba(96,165,250,0.15);border:1px solid #60a5fa;color:#60a5fa;padding:.2rem .5rem;border-radius:5px;font-weight:700;">UNDER HT confirmado</span>` : ''}
         ${FILTRO_OURO_LIGAS_PREMIUM_UND.indexOf(r.liga) >= 0 ? `<span style="background:rgba(52,211,103,0.10);border:1px solid var(--green);color:var(--green);padding:.2rem .5rem;border-radius:5px;font-weight:700;">Liga UNDER premium (${r.liga})</span>` : ''}
+        ${dnaBadge}
       </div>
     </div>
   `;

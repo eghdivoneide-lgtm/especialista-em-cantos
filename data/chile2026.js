@@ -1,11 +1,11 @@
 // ============================================================
-// CHI 2026 — Remoção de duplicatas inject_X (7 removidos)
-// 96 jogos | Atualizado: 2026-05-22
+// CHI 2026 — Injeção rodada 22-25/05/2026 (com aliases)
+// 103 jogos | Atualizado: 2026-05-27
 // ============================================================
 
 window.DADOS_CHI = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-05-22",
+  "ultimaAtualizacao": "2026-05-27",
   "totalRodadas": 70,
   "times": [
     "A. Italiano",
@@ -14664,6 +14664,1118 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "5 - 1"
+      }
+    },
+    {
+      "match_id": "dnhSxrHU",
+      "id": "dnhSxrHU",
+      "mandante": "U. Catolica",
+      "visitante": "Colo Colo",
+      "data": "24.05.2026 19:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/dnhSxrHU/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "24.05.2026 19:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 8,
+          "v": 1
+        },
+        "passes": {
+          "m": "(259/325)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 9,
+          "v": 17
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        },
+        "passes": {
+          "m": "(100/129)",
+          "v": "83%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 5,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-1-2"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "3.30",
+        "oddV": "3.10"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:24:20.237Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "GjPhg31B",
+      "id": "GjPhg31B",
+      "mandante": "La Serena",
+      "visitante": "Limache",
+      "data": "24.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/GjPhg31B/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "24.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 2
+        },
+        "cantos": {
+          "m": 4,
+          "v": 6
+        },
+        "passes": {
+          "m": "(240/306)",
+          "v": "82%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 8,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 4
+        },
+        "passes": {
+          "m": "(142/179)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 5,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "3.30",
+        "oddV": "2.82"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:24:49.488Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "4 - 1"
+      }
+    },
+    {
+      "match_id": "l0eAgXCi",
+      "id": "l0eAgXCi",
+      "mandante": "D. Concepcion",
+      "visitante": "Huachipato",
+      "data": "24.05.2026 13:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 11
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "url": "https://www.flashscore.com/match/l0eAgXCi/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "24.05.2026 13:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "passes": {
+          "m": "(213/304)",
+          "v": "78%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 13,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "passes": {
+          "m": "(126/170)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "3.30",
+        "oddV": "2.65"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:25:20.114Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 0",
+        "ft": "2 - 0"
+      }
+    },
+    {
+      "match_id": "zgufisWN",
+      "id": "zgufisWN",
+      "mandante": "Union La Calera",
+      "visitante": "Palestino",
+      "data": "23.05.2026 21:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/zgufisWN/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "23.05.2026 21:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 5
+        },
+        "passes": {
+          "m": "(432/520)",
+          "v": "70%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 4
+        },
+        "faltas": {
+          "m": 7,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "passes": {
+          "m": "(227/267)",
+          "v": "73%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 4
+        },
+        "faltas": {
+          "m": 1,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.85",
+        "oddEmpate": "3.20",
+        "oddV": "2.32"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:25:48.845Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 2",
+        "ft": "1 - 2"
+      }
+    },
+    {
+      "match_id": "dQbIiBs4",
+      "id": "dQbIiBs4",
+      "mandante": "Nublense",
+      "visitante": "U. De Concepcion",
+      "data": "23.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 34,
+          "v": 66
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 18
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "url": "https://www.flashscore.com/match/dQbIiBs4/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "23.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 34,
+          "v": 66
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 18
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cantos": {
+          "m": 2,
+          "v": 5
+        },
+        "passes": {
+          "m": "(176/265)",
+          "v": "84%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 11,
+          "v": 4
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 35,
+          "v": 65
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "passes": {
+          "m": "(97/136)",
+          "v": "88%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 7,
+          "v": 2
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "3-5-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.75",
+        "oddV": "4.75"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:26:18.782Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "2 - 0",
+        "ft": "2 - 2"
+      }
+    },
+    {
+      "match_id": "nBXyco2n",
+      "id": "nBXyco2n",
+      "mandante": "A. Italiano",
+      "visitante": "Cobresal",
+      "data": "23.05.2026 13:30",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 12
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/nBXyco2n/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "23.05.2026 13:30",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 4
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "passes": {
+          "m": "(380/464)",
+          "v": "77%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 6,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "passes": {
+          "m": "(214/256)",
+          "v": "74%"
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 4,
+          "v": 1
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.66",
+        "oddEmpate": "3.90",
+        "oddV": "4.50"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:26:49.551Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "1 - 1",
+        "ft": "2 - 1"
+      }
+    },
+    {
+      "match_id": "rwRpePWb",
+      "id": "rwRpePWb",
+      "mandante": "Everton",
+      "visitante": "Coquimbo",
+      "data": "22.05.2026 16:00",
+      "rodada": null,
+      "fonte": "varredor-rodada-v4-2026-05-26",
+      "gols": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 14
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "url": "https://www.flashscore.com/match/rwRpePWb/#/match-summary",
+      "liga": "Primera División (Chile)",
+      "codigo_liga": "CHI",
+      "data_partida": "22.05.2026 16:00",
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 14
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 7
+        },
+        "passes": {
+          "m": "(320/411)",
+          "v": "70%"
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 10,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "passes": {
+          "m": "(152/195)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 6,
+          "v": 2
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-1-1",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "3.00",
+        "oddEmpate": "3.10",
+        "oddV": "2.35"
+      },
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-05-26T03:27:19.281Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      },
+      "placar_str": {
+        "ht": "0 - 0",
+        "ft": "1 - 1"
       }
     }
   ]
