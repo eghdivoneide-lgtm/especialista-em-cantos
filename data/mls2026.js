@@ -1,6 +1,6 @@
 // ============================================================
-// MLS 2026 — Injeção rodada 22-25/05/2026 (com aliases)
-// 207 jogos | Atualizado: 2026-05-27
+// DADOS_MLS — ENRIQUECIMENTO TABELA (2026-06-11T16-32-26)
+// Total jogos: 207
 // ============================================================
 
 window.DADOS_MLS = {
@@ -195,6 +195,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -355,6 +361,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -512,6 +524,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -669,6 +687,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "4 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -826,6 +850,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -983,6 +1013,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -1140,6 +1176,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -1300,6 +1342,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 3",
         "ft": "4 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -1457,6 +1505,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -1614,6 +1668,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -1768,6 +1828,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -1928,6 +1994,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "6 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -2085,6 +2157,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -2242,6 +2320,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -2399,6 +2483,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -2556,6 +2646,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -2713,6 +2809,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "4 - 0",
         "ft": "6 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -2873,6 +2975,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 1",
         "ft": "6 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -3024,6 +3132,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -3178,6 +3292,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -3335,6 +3455,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -3492,6 +3618,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -3649,6 +3781,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 10,
+        "pts_visitante": 17
       }
     },
     {
@@ -3809,6 +3947,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -3966,6 +4110,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -4123,6 +4273,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -4280,6 +4436,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -4437,6 +4599,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -4594,6 +4762,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -4751,6 +4925,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -4908,6 +5088,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -5062,6 +5248,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -5219,6 +5411,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -5376,6 +5574,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -5536,6 +5740,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -5690,6 +5900,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -5847,6 +6063,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 10,
+        "pts_visitante": 17
       }
     },
     {
@@ -6004,6 +6226,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -6161,6 +6389,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 3",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -6324,6 +6558,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -6481,6 +6721,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -6638,6 +6884,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -6792,6 +7044,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -6955,6 +7213,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -7112,6 +7376,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -7272,6 +7542,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -7432,6 +7708,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -7589,6 +7871,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -7746,6 +8034,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 6,
+        "pts_visitante": 21
       }
     },
     {
@@ -7900,6 +8194,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -8057,6 +8357,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -8220,6 +8526,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -8377,6 +8689,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -8534,6 +8852,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -8691,6 +9015,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -8851,6 +9181,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -9005,6 +9341,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -9165,6 +9507,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -9322,6 +9670,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -9479,6 +9833,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -9639,6 +9999,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -9796,6 +10162,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 2",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -9956,6 +10328,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -10113,6 +10491,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -10270,6 +10654,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -10427,6 +10817,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -10584,6 +10980,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -10741,6 +11143,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -10895,6 +11303,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -11055,6 +11469,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -11212,6 +11632,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -11369,6 +11795,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -11526,6 +11958,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -11683,6 +12121,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 6,
+        "pts_visitante": 21
       }
     },
     {
@@ -11840,6 +12284,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -12003,6 +12453,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 10,
+        "pts_visitante": 17
       }
     },
     {
@@ -12157,6 +12613,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -12314,6 +12776,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "5 - 0",
         "ft": "6 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -12468,6 +12936,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -12625,6 +13099,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -12779,6 +13259,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -12936,6 +13422,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -13093,6 +13585,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -13250,6 +13748,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -13407,6 +13911,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -13567,6 +14077,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "4 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -13724,6 +14240,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -13878,6 +14400,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -14041,6 +14569,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -14200,6 +14734,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -14363,6 +14903,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -14518,6 +15064,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "6 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -14676,6 +15228,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -14834,6 +15392,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -14989,6 +15553,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -15147,6 +15717,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -15302,6 +15878,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -15454,6 +16036,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -15609,6 +16197,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -15767,6 +16361,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -15925,6 +16525,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -16083,6 +16689,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -16244,6 +16856,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -16404,6 +17022,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -16563,6 +17187,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "4 - 1",
         "ft": "4 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 10,
+        "pts_visitante": 17
       }
     },
     {
@@ -16716,6 +17346,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -16877,6 +17513,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 2",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -17036,6 +17678,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -17195,6 +17843,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -17354,6 +18008,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -17511,6 +18171,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -17670,6 +18336,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 6,
+        "pts_visitante": 21
       }
     },
     {
@@ -17831,6 +18503,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -17991,6 +18669,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -18153,6 +18837,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -18313,6 +19003,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -18474,6 +19170,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -18633,6 +19335,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -18674,6 +19382,12 @@ window.DADOS_MLS = {
           "m": 9,
           "v": 6
         }
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -18715,6 +19429,12 @@ window.DADOS_MLS = {
           "m": 8,
           "v": 4
         }
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -18756,6 +19476,12 @@ window.DADOS_MLS = {
           "m": 7,
           "v": 10
         }
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -18797,6 +19523,12 @@ window.DADOS_MLS = {
           "m": 15,
           "v": 8
         }
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -18838,6 +19570,12 @@ window.DADOS_MLS = {
           "m": 15,
           "v": 19
         }
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -18879,6 +19617,12 @@ window.DADOS_MLS = {
           "m": 18,
           "v": 16
         }
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -18920,6 +19664,12 @@ window.DADOS_MLS = {
           "m": 13,
           "v": 11
         }
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -18961,6 +19711,12 @@ window.DADOS_MLS = {
           "m": 17,
           "v": 6
         }
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -19002,6 +19758,12 @@ window.DADOS_MLS = {
           "m": 13,
           "v": 8
         }
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 6,
+        "pts_visitante": 21
       }
     },
     {
@@ -19043,6 +19805,12 @@ window.DADOS_MLS = {
           "m": 21,
           "v": 9
         }
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -19084,6 +19852,12 @@ window.DADOS_MLS = {
           "m": 10,
           "v": 11
         }
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -19125,6 +19899,12 @@ window.DADOS_MLS = {
           "m": 9,
           "v": 12
         }
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -19166,6 +19946,12 @@ window.DADOS_MLS = {
           "m": 20,
           "v": 13
         }
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 32,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -19207,6 +19993,12 @@ window.DADOS_MLS = {
           "m": 23,
           "v": 7
         }
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -19248,6 +20040,12 @@ window.DADOS_MLS = {
           "m": 16,
           "v": 15
         }
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -19407,6 +20205,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -19566,6 +20370,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -19725,6 +20535,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -19884,6 +20700,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -20043,6 +20865,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -20202,6 +21030,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -20364,6 +21198,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -20523,6 +21363,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -20682,6 +21528,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 6,
+        "pts_visitante": 21
       }
     },
     {
@@ -20841,6 +21693,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -20997,6 +21855,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -21156,6 +22020,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "3 - 1",
         "ft": "3 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -21312,6 +22182,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -21471,6 +22347,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -21630,6 +22512,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -21789,6 +22677,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -21948,6 +22842,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -22104,6 +23004,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 19,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -22263,6 +23169,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "4 - 0",
         "ft": "6 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -22422,6 +23334,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -22578,6 +23496,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 10,
+        "pts_visitante": 17
       }
     },
     {
@@ -22740,6 +23664,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -22902,6 +23832,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 9,
+        "pts_visitante": 18
       }
     },
     {
@@ -23061,6 +23997,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -23220,6 +24162,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 11,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -23379,6 +24327,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -23538,6 +24492,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -23694,6 +24654,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -23853,6 +24819,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -24009,6 +24981,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -24168,6 +25146,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -24327,6 +25311,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     },
     {
@@ -24486,6 +25476,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -24645,6 +25641,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -24804,6 +25806,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -24963,6 +25971,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -25119,6 +26133,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -25275,6 +26295,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -25434,6 +26460,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -25593,6 +26625,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 5"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 2,
+        "pts_visitante": 31
       }
     },
     {
@@ -25752,6 +26790,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 1,
+        "pts_visitante": 33
       }
     },
     {
@@ -25911,6 +26955,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -26070,6 +27120,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -26229,6 +27285,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -26385,6 +27447,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 5,
+        "pts_visitante": 24
       }
     },
     {
@@ -26544,6 +27612,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -26700,6 +27774,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 32,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -26859,6 +27939,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 11,
+        "pts_visitante": 16
       }
     },
     {
@@ -27018,6 +28104,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 7,
+        "pts_visitante": 20
       }
     },
     {
@@ -27177,6 +28269,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 24,
+        "pos_visitante": 9,
+        "pts_visitante": 20
       }
     },
     {
@@ -27336,6 +28434,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": 14,
+        "pos_visitante": 15,
+        "pts_visitante": 11
       }
     },
     {
@@ -27498,6 +28602,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 22,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -27654,6 +28764,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -27816,6 +28932,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 12,
+        "pts_visitante": 16
       }
     },
     {
@@ -27972,6 +29094,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 25,
+        "pos_visitante": 8,
+        "pts_visitante": 22
       }
     },
     {
@@ -28131,6 +29259,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 22,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -28290,6 +29424,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 14,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -28449,6 +29589,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 7,
+        "pos_visitante": 10,
+        "pts_visitante": 16
       }
     },
     {
@@ -28608,6 +29754,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 14,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -28760,6 +29912,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 24,
+        "pos_visitante": 6,
+        "pts_visitante": 24
       }
     },
     {
@@ -28918,6 +30076,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "4 - 4",
         "ft": "6 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 31,
+        "pos_visitante": 15,
+        "pts_visitante": 7
       }
     },
     {
@@ -29076,6 +30240,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 16,
+        "pos_visitante": 14,
+        "pts_visitante": 11
       }
     },
     {
@@ -29234,6 +30404,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 20,
+        "pos_visitante": 7,
+        "pts_visitante": 22
       }
     },
     {
@@ -29395,6 +30571,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 16,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -29553,6 +30735,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 3",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 14,
+        "pos_visitante": 2,
+        "pts_visitante": 32
       }
     },
     {
@@ -29711,6 +30899,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 17,
+        "pos_visitante": 1,
+        "pts_visitante": 32
       }
     },
     {
@@ -29869,6 +31063,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 26,
+        "pos_visitante": 13,
+        "pts_visitante": 14
       }
     },
     {
@@ -30027,6 +31227,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 33,
+        "pos_visitante": 8,
+        "pts_visitante": 19
       }
     },
     {
@@ -30185,6 +31391,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": 11,
+        "pos_visitante": 5,
+        "pts_visitante": 22
       }
     },
     {
@@ -30346,6 +31558,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 21,
+        "pos_visitante": 4,
+        "pts_visitante": 25
       }
     },
     {
@@ -30504,6 +31722,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "4 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 18,
+        "pos_visitante": 11,
+        "pts_visitante": 14
       }
     },
     {
@@ -30662,6 +31886,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "6 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 20,
+        "pos_visitante": 12,
+        "pts_visitante": 14
       }
     },
     {
@@ -30820,6 +32050,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 22,
+        "pos_visitante": 3,
+        "pts_visitante": 26
       }
     },
     {
@@ -30975,6 +32211,12 @@ window.DADOS_MLS = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 16,
+        "pos_visitante": 14,
+        "pts_visitante": 14
       }
     }
   ],

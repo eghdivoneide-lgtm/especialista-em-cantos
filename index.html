@@ -1119,7 +1119,7 @@
 -->
 <!-- ═══ LIGAS ATIVAS v2.1 (2026-05-10) — 7 ligas operáveis, agrupadas por país ═══ -->
 <script src="data/usl2026.js?v=2026-04-22b"></script>
-<script src="data/memoria_qualitativa.js?v=2026-05-16-9ligas"></script>
+<!-- memoria_qualitativa.js removido em v4.0 (2026-06-28): fonte defasada substituída por MEMORIA_DNA (fonte única) -->
 <script src="data/argentina2026.js?v=2026-04-22b"></script>
 <script src="data/mls2026.js?v=2026-04-22b"></script>
 <script src="data/brasileirao2026.js?v=2026-04-22b"></script>
@@ -1139,7 +1139,7 @@
 ═══════════════════════════════════════════════════════════════ -->
 <script src="data/dna_escoteiro.js?v=2026-05-16-j1"></script>
 <script src="data/escoteiro_BR.js?v=2026-04-22b"></script>
-<script src="data/memoria_dna.js?v=2026-05-17-v17-individual"></script>
+<script src="data/memoria_dna.js?v=2026-06-28-v40-9ativas"></script>
 <!-- PATCH J1 removido em 2026-05-15: arquivo patch_j1_aplicar.js inexistente
      (causava 404 ao carregar). Calibração da J1 agora está consolidada em
      LIGA_DNA + FAV_DOMINANCE (motor v3.1) — não precisa de patch externo. -->
@@ -1246,10 +1246,8 @@ const LIGAS_STATUS = Object.freeze({
   CHI: { status: 'observacao', roi: -31.4, n: 6,  desde: '2026-05-27',
          motivo: 'RECALIBRADA 2026-05-27 — amostra cresceu para 103 jogos (~6.4/time). Backtest cego identificou X=2.0 como mau (63% WR / +19% ROI) vs X=1.75-1.85 (79-82% WR / +43-47% ROI). Liga é menos polarizada que ARG_B/ECU (mando +11.7pp). Aplicado cisneThreshold=1.85 (intermediário conservador). Reativada em OBSERVAÇÃO — registrar 10-15 picks reais antes de confirmar.' },
   ECU: { status: 'suspenso',   roi: -44.9, n: 6,  desde: '2026-04-22',
-         motivo: 'Backtest catastrófico (1V 5D no lote 1) confirmado em mais apostas. Motor sem DNA Escoteiro para ECU, amostra de jogos pequena (~7 jogos por time). HDP de favorito errando sistematicamente. Não apostar até recalibrar.' },
-  // v3.1 (2026-05-15) — J1 reativada em modo maturação. J2_J3 reativada operacional total.
-  J1:  { status: 'observacao', roi: null, n: 0, desde: '2026-05-15',
-         motivo: 'Reativada em 2026-05-15 com paridade DNA parcial. DNA_ESCOTEIRO sintético gerado em 2026-05-16 (amostra crítica: 29 de 129 jogos com placar, máx 4/time) — multiplicadores neutros 1.0 e cada perfil traz aviso explícito de amostra pequena. Buckets situacionais ainda com ~6 jogos/time = ~1 jogo por bucket. Aguardar 2-3 rodadas de coleta antes de operar com stake real. Operacionalmente em maturação — usar apenas para análise comparativa via SmartCoach.' }
+         motivo: 'ROI -45u. Reintegrada ao DNA institucional em 2026-06-28 (119 jogos, 16 times) — SmartCoach já analisa, mas ainda SEM DNA Escoteiro. Não apostar até revalidar.' }
+  // v4.0 (2026-06-28) — J1/J2_J3 REMOVIDAS do escopo (alta volatilidade, fora do seletor).
 });
 
 // ══════════════════════════════════════════════════════════════════
@@ -1367,9 +1365,7 @@ const SNIPER_LINHAS_POR_LIGA = Object.freeze({
   MLS:   { ft: 10.5, ht: 5   },  // média real FT=10.30 HT=4.78
   ALM:   { ft: 10.5, ht: 4.5 },  // média real FT=10.28 HT=4.72
   BUN:   { ft: 9.5,  ht: 4   },  // média real FT=9.74  HT=4.39
-  J1:    { ft: 9.5,  ht: 4   },  // média real FT=9.61  HT=4.17
   BR:    { ft: 10,   ht: 4   },  // média real FT=10.08 HT=4.59 — sem alteração
-  J2_J3: { ft: 10,   ht: 4   },  // média real FT=9.87  HT=4.53 — sem alteração
 });
 
 window.getLinhaFTPatched = function(liga, fallback) {
@@ -1497,7 +1493,7 @@ function _formatarMemoriaJogoDNA(liga, mandante, visitante) {
 // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL COMPLETA das 7 LIGAS.
 // Comandante autorizou Opção A: SmartCoach recebe TUDO de TODAS as ligas
 // em toda chamada. Sem ressalvas de custo de API — decisão do operador.
-const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU','ALM','CHN_2','J2_J3']; // v2.0 (2026-06-02): +4 ligas com dossiês forenses
+const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // v4.0 (2026-06-28): 9 ligas ATIVAS do seletor. J1/J2_J3/ALM/CHN_2 removidas (fora de escopo)
 
 function _formatarMemoriaTodasAsLigas() {
   if (!window.MEMORIA_DNA) return '';
@@ -2544,18 +2540,18 @@ function projecaoJogo(mandante, visitante) {
 
     if (dM || dV) {
       dnaAtivo = true;
-      if (dM) { dnaHome *= dM.multPerfil; dnaPerfM = dM.perfil; }
+      if (dM) { dnaHome *= (dM.multPerfil ?? 1.0); dnaPerfM = dM.perfil; }
       if (dV) {
-        dnaAway *= dV.multPerfil;
+        dnaAway *= (dV.multPerfil ?? 1.0);
         dnaPerfV = dV.perfil;
-        dnaAway *= dV.multFora;
+        dnaAway *= (dV.multFora ?? 1.0);
       }
-      if (dM && dM.multSupressao < 1.0) {
-        dnaAway *= (1 + (dM.multSupressao - 1) * 0.5);
-      }
-      if (dV && dV.multSupressao < 1.0) {
-        dnaHome *= (1 + (dV.multSupressao - 1) * 0.5);
-      }
+      const supM = dM ? (dM.multSupressao ?? 1.0) : 1.0;
+      const supV = dV ? (dV.multSupressao ?? 1.0) : 1.0;
+      if (supM < 1.0) dnaAway *= (1 + (supM - 1) * 0.5);
+      if (supV < 1.0) dnaHome *= (1 + (supV - 1) * 0.5);
+      if (!Number.isFinite(dnaHome)) dnaHome = 1.0;
+      if (!Number.isFinite(dnaAway)) dnaAway = 1.0;
       dnaHome = Math.max(MOTOR_CONFIG.DNA_HOME_MIN, Math.min(MOTOR_CONFIG.DNA_HOME_MAX, dnaHome));
       dnaAway = Math.max(MOTOR_CONFIG.DNA_AWAY_MIN, Math.min(MOTOR_CONFIG.DNA_AWAY_MAX, dnaAway));
     }
@@ -2591,7 +2587,7 @@ function projecaoJogo(mandante, visitante) {
   // ══════════════════════════════════════════════════════════════════════════
   const OARF_PESO_POR_LIGA = {
     BR:    0.30, MLS:   0.20, ARG:   0.70, ARG_B: 0.70, USL:   0.60,
-    BUN:   0.60, CL:    0.30, ECU:   0.20, ALM:   0.60, J1:    0.45,
+    BUN:   0.60, CL:    0.30, ECU:   0.20, ALM:   0.60,
     CHI:   0.15
   };
   const _ligaAtiva = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : 'BR';
@@ -2739,16 +2735,20 @@ function projecaoJogo(mandante, visitante) {
           reisDosCantosData.vencedor = _dnaCasa ? mandante : visitante;
           reisDosCantosData.lado     = _dnaCasa ? 'casa' : 'fora';
           reisDosCantosData.odd      = _dnaCasa ? oddCasaFT : oddForaFT;
-          if (_mag >= 25)      { reisDosCantosData.faixa = 'DOMINANTE';  reisDosCantosData.cor = '#34d367'; }
-          else if (_mag >= 18) { reisDosCantosData.faixa = 'MODERADO';   reisDosCantosData.cor = '#f59e0b'; }
-          else                 { reisDosCantosData.faixa = 'MEDIANO';    reisDosCantosData.cor = '#f97316'; }
+          // v4.3 (2026-06-28): faixa coerente com a ODD REAL do novo lado (não pela magnitude do DNA).
+          // Corrige bug de auditoria: override rotulava DOMINANTE um azarão de odd alta.
+          const _oddNova = reisDosCantosData.odd;
+          if (_oddNova <= 1.30)      { reisDosCantosData.faixa = 'ABSOLUTO';    reisDosCantosData.cor = '#3b82f6'; }
+          else if (_oddNova <= 1.54) { reisDosCantosData.faixa = 'DOMINANTE';   reisDosCantosData.cor = '#34d367'; }
+          else if (_oddNova <= 1.75) { reisDosCantosData.faixa = 'MODERADO';    reisDosCantosData.cor = '#f59e0b'; }
+          else if (_oddNova <= 1.90) { reisDosCantosData.faixa = 'MEDIANO';     reisDosCantosData.cor = '#f97316'; }
+          else                       { reisDosCantosData.faixa = 'EQUILIBRADO'; reisDosCantosData.cor = '#ef4444'; }
           reisDosCantosData.dna_override = true;
           reisDosCantosData.dna_delta = _deltaRC;
-        } else if (_mag >= 18 && reisDosCantosData.faixa === 'EQUILIBRADO') {
-          reisDosCantosData.faixa = 'MODERADO'; reisDosCantosData.cor = '#f59e0b';
-          reisDosCantosData.dna_confirm = true;
-          reisDosCantosData.dna_delta = _deltaRC;
         } else {
+          // v4.3 (2026-06-28): DNA concorda com o motor — apenas REGISTRA o sinal.
+          // NÃO infla a faixa (antes promovia EQUILIBRADO→MODERADO por magnitude do DNA —
+          // bug de auditoria). A faixa segue a odd real.
           reisDosCantosData.dna_confirm = true;
           reisDosCantosData.dna_delta = _deltaRC;
         }
@@ -8207,6 +8207,80 @@ function addSCMsg(role, text) {
   chat.scrollTop = chat.scrollHeight;
 }
 
+// ═══ CAMADA USL (consultiva) — classificação de cantos + fator casa ═══
+// Sinais validados por walk-forward 28/06 (G×S 73%; mandante -0.5 em equilíbrio nas
+// ligas mando-fortes 62%, n=268). NÃO altera o pick do motor — só informa o SmartCoach.
+const _USL_LIGAS_MANDO_FORTE = ['BR','BR_B','ARG_B','BUN','ECU'];
+function _uslClasse(d){ if(d>=2.0)return'G_STRONG'; if(d>=0.75)return'G'; if(d>=-0.75)return'N'; if(d>=-2.0)return'S'; return'S_STRONG'; }
+function _uslDiff(nome,jogos,modo){
+  let s=0,n=0;
+  for(const j of jogos){
+    if(!j.cantos||!j.cantos.ft||typeof j.cantos.ft.m!=='number'||typeof j.cantos.ft.v!=='number')continue;
+    if(j.mandante===nome && modo!=='fora'){ s+=j.cantos.ft.m-j.cantos.ft.v; n++; }
+    else if(j.visitante===nome && modo!=='casa'){ s+=j.cantos.ft.v-j.cantos.ft.m; n++; }
+  }
+  return n>=3 ? s/n : null;
+}
+function _uslMapaLiga(){
+  if(typeof DADOS_2026==='undefined'||!DADOS_2026.jogos) return {};
+  const jogos=DADOS_2026.jogos, out={};
+  for(const t of (DADOS_2026.times||[])){
+    const dg=_uslDiff(t,jogos,'geral');
+    if(dg===null) continue;
+    out[t]={ geral:+dg.toFixed(2), classe:_uslClasse(dg) };
+  }
+  return out;
+}
+function _uslSinalJogo(mapa,m,v){
+  const M=mapa[m], V=mapa[v];
+  if(!M||!V) return null;
+  const isG=c=>c==='G'||c==='G_STRONG', isS=c=>c==='S'||c==='S_STRONG';
+  const sinais=[];
+  if(isG(M.classe)&&isS(V.classe)) sinais.push('G×S → lean MANDANTE no duelo de cantos (73% walk-forward)');
+  if(Math.abs(M.geral-V.geral)<1.0 && _USL_LIGAS_MANDO_FORTE.indexOf(LIGA_ATUAL)>=0)
+    sinais.push('EQUILÍBRIO + liga mando-forte → lean MANDANTE -0.5 cantos (62%, n=268; ROI depende da odd)');
+  return { M, V, sinais };
+}
+function _formatarUSL_Contexto(){
+  let mapa; try{ mapa=_uslMapaLiga(); }catch(e){ return ''; }
+  if(!Object.keys(mapa).length) return '';
+  let txt = `\n\n🧭 CAMADA USL (cantos diretos — CONSULTIVA, validada por backtest 28/06; NÃO altera o pick do motor):\n`;
+  txt += `   Classe por diferencial de cantos pró-contra: G_STRONG≥+2 · G≥+0.75 · N · S≤-0.75 · S_STRONG≤-2.\n`;
+  if(typeof jogosFuturos!=='undefined' && jogosFuturos && jogosFuturos.length){
+    const linhas=[];
+    for(const j of jogosFuturos.slice(0,14)){
+      const s=_uslSinalJogo(mapa,j.m,j.v);
+      if(s && s.sinais.length) linhas.push(`   • ${j.m}[${s.M.classe}] x ${j.v}[${s.V.classe}]: ${s.sinais.join(' | ')}`);
+    }
+    txt += linhas.length ? `   Sinais validados na rodada:\n`+linhas.join('\n')+'\n'
+                         : `   (Nenhum sinal USL validado disparou nesta rodada.)\n`;
+  }
+  return txt;
+}
+
+// ═══ CALIBRAÇÃO VS MERCADO (Pinnacle) — consultiva, NÃO altera pick ═══
+// Injeta, por jogo da rodada, o Δ projetado pelo app + a volatilidade (CV) de cada time,
+// para o SmartCoach comparar com a linha da Pinnacle que o operador informar.
+function _formatarCalibracaoMercado(){
+  if(typeof DADOS_2026==='undefined'||!DADOS_2026.jogos) return '';
+  if(typeof jogosFuturos==='undefined'||!jogosFuturos||!jogosFuturos.length) return '';
+  const jogos=DADOS_2026.jogos; const linhas=[];
+  for(const j of jogosFuturos.slice(0,14)){
+    let p; try{ p=projecaoJogo(j.m,j.v); }catch(e){ continue; }
+    if(!p) continue;
+    const delta=(p.expHomeFT||0)-(p.expAwayFT||0);
+    const rc=p.reisDosCantosData||{};
+    const dM=calcDNA(jogos,j.m), dV=calcDNA(jogos,j.v);
+    const fav=rc.lado==='casa'?j.m:(rc.lado==='fora'?j.v:'—');
+    linhas.push(`   ${j.m}[CV ${dM.cv}%] x ${j.v}[CV ${dV.cv}%]: app Δ=${delta>=0?'+':''}${delta.toFixed(1)} cantos · linha ${fav} ${rc.faixa||''}`);
+  }
+  if(!linhas.length) return '';
+  let txt=`\n\n📊 CALIBRAÇÃO VS MERCADO — projeção do app + volatilidade (CV) por jogo:\n`;
+  txt+=linhas.join('\n')+'\n';
+  txt+=`   → Quando o operador informar a linha da PINNACLE, compare com o Δ/linha acima. Divergência ≥2 cantos = SUSPEITAR DO APP (Pinnacle é sharp). Time VOLÁTIL (CV>40%) → encolher para o mercado e usar mediana (1 jogo atípico, ex 13×1, infla a média).\n`;
+  return txt;
+}
+
 function getAppContext() {
   // SmartCoach v3 — awareness total (2026-04-23). 10 seções estruturadas
   // para o assistente decidir de forma profissional.
@@ -8269,9 +8343,7 @@ function getAppContext() {
 
   /* ── 🎚️ OARF da liga ativa ── */
   const _OARF_REF = { BR:0.30, BR_B:0.30, MLS:0.20, ARG:0.70, ARG_B:0.70, USL:0.60,
-                      BUN:0.60, CL:0.30, ECU:0.20, ALM:0.60, J1:0.45, CHI:0.15,
-                      // v3.1 (2026-05-15) — Japão reativado
-                      J2_J3:0.45 };
+                      BUN:0.60, CL:0.30, ECU:0.20, ALM:0.60, CHI:0.15 };
   const oarfPeso = _OARF_REF[LIGA_ATUAL] || 0.30;
   const oarfTipo = oarfPeso >= 0.60 ? 'AGRESSIVO (motor confia muito no momentum recente)' :
                    oarfPeso >= 0.40 ? 'MODERADO' :
@@ -8562,27 +8634,18 @@ function getAppContext() {
     if (jogosFuturos.length > 12) ctx += `    ... e mais ${jogosFuturos.length - 12} jogo(s)\n`;
   }
 
-  /* ── CALIBRAÇÃO TEACHER (Volvo Test — dados reais validados) ── */
-  const memQ = window.MEMORIA_QUALITATIVA && window.MEMORIA_QUALITATIVA[LIGA_ATUAL];
-  const calTeacher = memQ && memQ.calibracao_teacher;
-  if (calTeacher) {
-    ctx += `\n🏗️ CALIBRAÇÃO TEACHER — ${LIGA_ATUAL} (Volvo Test v2, Rodada ${calTeacher.rodada_validada}):\n`;
-    ctx += `- Jogos validados: ${calTeacher.jogos_validados}\n`;
-    ctx += `- Média real HT: ${calTeacher.media_cantos_ht_real} cantos | Média real FT: ${calTeacher.media_cantos_ft_real} cantos\n`;
-    ctx += `- Taxa Over 3.5 HT: ${calTeacher.taxa_over_3_5_ht}% | Over 4.5 HT: ${calTeacher.taxa_over_4_5_ht}%\n`;
-    ctx += `- Taxa Over 8.5 FT: ${calTeacher.taxa_over_8_5_ft}% | Over 9.5 FT: ${calTeacher.taxa_over_9_5_ft}% | Over 10.5 FT: ${calTeacher.taxa_over_10_5_ft}%\n`;
-    ctx += `- Variância FT: min=${calTeacher.min_cantos_ft} max=${calTeacher.max_cantos_ft} | Variância HT: min=${calTeacher.min_cantos_ht} max=${calTeacher.max_cantos_ht}\n`;
-    if (calTeacher.insights && calTeacher.insights.length) {
-      ctx += `- Insights Teacher:\n`;
-      calTeacher.insights.forEach(ins => { ctx += `    ⚡ ${ins}\n`; });
-    }
-    if (calTeacher.jogos_destaque && calTeacher.jogos_destaque.length) {
-      ctx += `- Jogos destaque (alta produção):\n`;
-      calTeacher.jogos_destaque.forEach(j => {
-        ctx += `    ${j.mandante} vs ${j.visitante} → HT: ${j.cantos_ht} | FT: ${j.cantos_ft}\n`;
-      });
-    }
-  }
+  /* ── CALIBRAÇÃO TEACHER removida em v4.0 (2026-06-28) — FONTE ÚNICA ──
+     MEMORIA_QUALITATIVA estava defasada (gerada 2026-04-09/05-16, sem CHI/ECU,
+     ainda com J1/J2_J3) e divergia do MEMORIA_DNA. Para evitar o SmartCoach
+     puxar baselines de duas fontes com idades diferentes, esta injeção foi
+     removida. Fonte única agora: MEMORIA_DNA (baselines, buckets, assinaturas e
+     dossiê jogo-a-jogo regenerados em 2026-06-28 a partir do dataset ao vivo). */
+
+  /* ── 🧭 CAMADA USL (consultiva) — sinais de cantos validados por backtest 28/06 ── */
+  try { ctx += _formatarUSL_Contexto(); } catch(e) {}
+
+  /* ── 📊 CALIBRAÇÃO VS MERCADO (Pinnacle) — consultiva ── */
+  try { ctx += _formatarCalibracaoMercado(); } catch(e) {}
 
   /* ── 🧬 DNA PROFUNDO — Perfis Normalizados por Liga ── */
   (function() {
@@ -8920,6 +8983,20 @@ async function sendSCMsg() {
   const systemPrompt = `Você é o *SmartCoach*, a Inteligência Artificial embarcada (Claude Opus) no app 'EDS Especialista em Cantos'.
 Você é um consultor de apostas esportivas especializado EXCLUSIVAMENTE em escanteios (corners).
 Você tem ACESSO TOTAL E EM TEMPO REAL aos dados do app do apostador — use-os proativamente.
+
+═══ 📊 CALIBRAÇÃO VS MERCADO (Pinnacle) — REGRA SHARP ═══
+A Pinnacle é o book mais "sharp" (margem baixa, limites altos) — a linha dela é a MELHOR
+estimativa de probabilidade real. Quando o operador informar a linha da Pinnacle (texto ou print):
+1. Compare com o Δ/linha projetado pelo app (injetado no contexto desta chamada).
+2. Divergência grande (|Δ_app − linha_Pinnacle| ≥ 2 cantos) → SUSPEITE DO APP, não do mercado.
+   • app >> mercado → SUPERESTIMAÇÃO do favorito (caso mais comum).
+   • app << mercado → subestimação (raro; pode ser value, mas desconfie).
+3. Pese pela VOLATILIDADE (CV): time VOLÁTIL (CV>40%) → projeção do app é menos confiável.
+   Recomende ENCOLHER a linha para perto da Pinnacle e usar MEDIANA/média aparada (1 jogo
+   atípico — ex. 13×1 — infla a média e a projeção).
+4. NUNCA trate um gap enorme app-vs-mercado como "value garantido": quase sempre é erro do
+   MODELO. A Pinnacle erra pouco.
+5. Entregue uma "linha calibrada" — mais próxima da Pinnacle, especialmente se volátil.
 
 ═══ ⚠️ DISTINÇÃO CRÍTICA — DUAS MEMÓRIAS ═══
 Você tem DUAS fontes de "memória", e elas NÃO são intercambiáveis:
@@ -9508,8 +9585,40 @@ function renderRodada() {
     return;
   }
 
-  // ── BLINDAGEM: detectar jogos de outra liga ────────────────────────────────
-  const timesAtivos = new Set(DADOS_2026.times || []);
+  // ── BLINDAGEM: detectar jogos de outra liga (com auto-remap fuzzy) ──────────
+  const timesAtivosList = DADOS_2026.times || [];
+  const timesAtivos = new Set(timesAtivosList);
+  // v4.2 (2026-06-28) — R3: trava anti-mascaramento. Se a MAIORIA dos times da rodada
+  // não pertence à liga ativa, é import de liga errada — NÃO remapear (o fuzzy poderia
+  // "encaixar" times estrangeiros em nomes locais e esconder o erro). Mostra o alerta.
+  const _timesRodada = [...new Set(jogosFuturos.flatMap(j => [j.m, j.v]))];
+  // v4.3 (2026-06-28): "genuinamente de fora" = sem match fuzzy aceitável (não só grafia diferente),
+  // + piso absoluto de 4 times p/ não bloquear rodada curta com 2-3 grafias novas (auditoria R3).
+  const _foraDaLiga = _timesRodada.filter(t => !timesAtivos.has(t) && !encontrarTimeMaisProximo(t, timesAtivosList));
+  if (_foraDaLiga.length >= 4 && _foraDaLiga.length / _timesRodada.length > 0.6) {
+    container.innerHTML = `
+      <div style="grid-column:1/-1;background:rgba(239,68,68,0.08);border:2px solid var(--red);border-radius:12px;padding:1.5rem;margin-bottom:1rem">
+        <div style="font-size:1rem;font-weight:900;color:var(--red);margin-bottom:.5rem">⚠️ Liga incorreta — ${Math.round(100*_foraDaLiga.length/_timesRodada.length)}% dos times não são da liga ${LIGA_ATUAL}</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-bottom:1rem">Esta rodada parece ser de outro campeonato. Troque para a liga correta ou limpe e reimporte. (Remap automático bloqueado para não mascarar o erro.)</div>
+        <div style="font-size:.75rem;color:var(--gold);margin-bottom:1rem">${_foraDaLiga.slice(0,12).join(', ')}</div>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <button onclick="limparRodada()" style="background:var(--red);border:none;color:#fff;padding:.5rem 1rem;border-radius:6px;font-size:.8rem;font-weight:700;cursor:pointer">🗑️ Limpar Rodada</button>
+          <button onclick="showView('adicionar')" style="background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:.5rem 1rem;border-radius:6px;font-size:.8rem;cursor:pointer">📥 Reimportar Rodada</button>
+        </div>
+      </div>`;
+    return;
+  }
+  let remapou = false;
+  jogosFuturos = jogosFuturos.map(j => {
+    let { m, v } = j;
+    if (!timesAtivos.has(m)) { const r = encontrarTimeMaisProximo(m, timesAtivosList); if (r) { m = r; remapou = true; } }
+    if (!timesAtivos.has(v)) { const r = encontrarTimeMaisProximo(v, timesAtivosList); if (r) { v = r; remapou = true; } }
+    return m !== j.m || v !== j.v ? { ...j, m, v } : j;
+  });
+  // Deduplica após remap (evita duplicatas quando o mesmo jogo existia com nome antigo e novo)
+  const seen = new Set();
+  jogosFuturos = jogosFuturos.filter(j => { const k = j.m + '|' + j.v; return seen.has(k) ? false : seen.add(k); });
+  if (remapou) localStorage.setItem(`sniper_rodada_${LIGA_ATUAL}`, JSON.stringify(jogosFuturos));
   const jogosInvalidos = jogosFuturos.filter(j => !timesAtivos.has(j.m) || !timesAtivos.has(j.v));
   if (jogosInvalidos.length > 0) {
     const nomes = jogosInvalidos.map(j => `${j.m} vs ${j.v}`).join(', ');
@@ -11229,8 +11338,13 @@ function _scoreVencedor(p, liga, mandante, visitante) {
 // ═══ v4.0 — BÔNUS DNA PARA VENCEDOR ═══
 // Soma/subtrai pontos com base em ΔPowerScore, assinaturas ATIVAS e perfis DNA.
 // Clamp interno [-30, +30] pra não estourar o range do score.
+// v4.2 (2026-06-28): Whitelist de ligas com DNA validado/operado. O bônus DNA e o
+// override da coroa Reis dos Cantos só disparam para estas. CHI/ECU (DNA recém-criado,
+// nunca backtestado) ficam baseline puro até validação walk-forward. Resolve R2/R5 da auditoria.
+const LIGAS_OVERRIDE_DNA = new Set(['BR','BR_B','ARG','ARG_B','MLS','USL','BUN']);
 function _bonusDNA_Vencedor(mandante, visitante, liga) {
   if (!window.MEMORIA_DNA) return 0;
+  if (!LIGAS_OVERRIDE_DNA.has(liga)) return 0;
   const dnaM = getMemoriaTime(liga, mandante);
   const dnaV = getMemoriaTime(liga, visitante);
   if (!dnaM && !dnaV) return 0;
@@ -11302,7 +11416,9 @@ function _bonusDNA_Vencedor(mandante, visitante, liga) {
   }
 
   // Clamp interno: bônus DNA não pode exceder ±30 pontos absolutos
-  return Math.max(-30, Math.min(30, delta));
+  // v4.2: NaN-guard no retorno (R4) — score nunca recebe NaN do bônus DNA.
+  const _bonus = Math.max(-30, Math.min(30, delta));
+  return Number.isFinite(_bonus) ? _bonus : 0;
 }
 
 function _scoreUnder(p, liga, mandante, visitante) {
@@ -11340,6 +11456,7 @@ function _scoreUnder(p, liga, mandante, visitante) {
 // ═══ v4.0 — BÔNUS DNA PARA UNDER ═══
 function _bonusDNA_Under(mandante, visitante, liga) {
   if (!window.MEMORIA_DNA) return 0;
+  if (!LIGAS_OVERRIDE_DNA.has(liga)) return 0;
   const dnaM = getMemoriaTime(liga, mandante);
   const dnaV = getMemoriaTime(liga, visitante);
   if (!dnaM && !dnaV) return 0;
@@ -11377,7 +11494,8 @@ function _bonusDNA_Under(mandante, visitante, liga) {
     }
   }
 
-  return Math.max(-25, Math.min(25, delta));
+  const _bonus = Math.max(-25, Math.min(25, delta));
+  return Number.isFinite(_bonus) ? _bonus : 0;
 }
 
 // ══════════════════════════════════════════════════════════════════

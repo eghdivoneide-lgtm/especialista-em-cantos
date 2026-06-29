@@ -1,11 +1,9 @@
-// ============================================================
-// ARG 2026 — Mesclagem Rico+Pobre (uniformização)
-// 253 jogos | Atualizado: 2026-05-20
-// ============================================================
+// DADOS_ARG — INJEÇÃO COLHEITA COPA 2026-06-29
+// Total jogos: 254
 
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina 2026",
-  "ultimaAtualizacao": "2026-05-20",
+  "ultimaAtualizacao": "2026-06-29",
   "totalRodadas": 16,
   "times": [
     "Aldosivi",
@@ -194,6 +192,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -350,6 +354,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -506,6 +516,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -659,6 +675,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -818,6 +840,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -977,6 +1005,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -1133,6 +1167,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -1289,6 +1329,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -1442,6 +1488,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -1598,6 +1650,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -1754,6 +1812,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -1912,6 +1976,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -2070,6 +2140,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -2229,6 +2305,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -2385,6 +2467,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -2538,6 +2626,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -2694,6 +2788,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -2850,6 +2950,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -3006,6 +3112,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -3162,6 +3274,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -3318,6 +3436,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -3471,6 +3595,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -3633,6 +3763,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -3786,6 +3922,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -3942,6 +4084,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -4101,6 +4249,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -4257,6 +4411,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -4410,6 +4570,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -4563,6 +4729,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -4725,6 +4897,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -4881,6 +5059,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -5037,6 +5221,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -5193,6 +5383,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -5349,6 +5545,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -5505,6 +5707,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -5661,6 +5869,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -5817,6 +6031,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -5979,6 +6199,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -6141,6 +6367,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -6291,6 +6523,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -6447,6 +6685,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -6603,6 +6847,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -6759,6 +7009,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -6915,6 +7171,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -7068,6 +7330,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -7221,6 +7489,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -7377,6 +7651,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -7533,6 +7813,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -7691,6 +7977,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -7849,6 +8141,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -8007,6 +8305,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -8162,6 +8466,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -8317,6 +8627,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -8475,6 +8791,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -8633,6 +8955,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -8674,7 +9002,13 @@ window.DADOS_ARG = {
         "m": 2,
         "v": 1
       },
-      "data": "08.02.2026 17:00"
+      "data": "08.02.2026 17:00",
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
+      }
     },
     {
       "id": "Ig2EGReD",
@@ -8715,7 +9049,13 @@ window.DADOS_ARG = {
         "m": 1,
         "v": 0
       },
-      "data": "09.02.2026 19:15"
+      "data": "09.02.2026 19:15",
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
+      }
     },
     {
       "id": "xMBJRi4E",
@@ -8871,6 +9211,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -9027,6 +9373,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -9183,6 +9535,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -9339,6 +9697,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -9495,6 +9859,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -9651,6 +10021,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -9807,6 +10183,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -9966,6 +10348,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -10122,6 +10510,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -10275,6 +10669,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -10431,6 +10831,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -10587,6 +10993,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -10743,6 +11155,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -10899,6 +11317,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -11055,6 +11479,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -11211,6 +11641,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -11367,6 +11803,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -11523,6 +11965,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -11682,6 +12130,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -11838,6 +12292,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -11994,6 +12454,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -12150,6 +12616,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -12306,6 +12778,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -12462,6 +12940,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -12618,6 +13102,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -12771,6 +13261,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -12930,6 +13426,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -13086,6 +13588,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -13242,6 +13750,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -13398,6 +13912,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -13554,6 +14074,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -13710,6 +14236,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -13863,6 +14395,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -14016,6 +14554,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -14172,6 +14716,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -14328,6 +14878,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -14487,6 +15043,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -14646,6 +15208,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -14802,6 +15370,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -14958,6 +15532,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -15114,6 +15694,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -15270,6 +15856,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -15432,6 +16024,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -15585,6 +16183,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -15747,6 +16351,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -15903,6 +16513,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -16059,6 +16675,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -16215,6 +16837,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -16371,6 +16999,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -16527,6 +17161,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -16683,6 +17323,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -16839,6 +17485,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -16995,6 +17647,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -17151,6 +17809,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -17307,6 +17971,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -17460,6 +18130,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -17616,6 +18292,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -17772,6 +18454,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -17928,6 +18616,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -18084,6 +18778,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -18240,6 +18940,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -18396,6 +19102,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -18549,6 +19261,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 3",
         "ft": "4 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -18708,6 +19426,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -18864,6 +19588,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -19020,6 +19750,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -19176,6 +19912,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -19332,6 +20074,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -19488,6 +20236,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -19644,6 +20398,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -19800,6 +20560,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -19959,6 +20725,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -20115,6 +20887,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -20271,6 +21049,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -20430,6 +21214,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -20586,6 +21376,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -20742,6 +21538,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -20898,6 +21700,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -21054,6 +21862,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -21210,6 +22024,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -21372,6 +22192,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -21528,6 +22354,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -21684,6 +22516,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -21843,6 +22681,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -21999,6 +22843,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -22155,6 +23005,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 5"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -22311,6 +23167,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -22467,6 +23329,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -22623,6 +23491,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -22779,6 +23653,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -22932,6 +23812,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -23091,6 +23977,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -23247,6 +24139,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -23403,6 +24301,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -23562,6 +24466,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -23724,6 +24634,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -23883,6 +24799,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -24039,6 +24961,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -24198,6 +25126,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -24354,6 +25288,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -24510,6 +25450,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -24663,6 +25609,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -24819,6 +25771,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -24975,6 +25933,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "5 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -25131,6 +26095,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -25287,6 +26257,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -25443,6 +26419,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -25601,6 +26583,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -25758,6 +26746,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "Indisponível"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -25915,6 +26909,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "Indisponível"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -26072,6 +27072,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "Indisponível"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -26229,6 +27235,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -26386,6 +27398,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "Indisponível"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -26546,6 +27564,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -26707,6 +27731,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "Indisponível"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -26864,6 +27894,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -27021,6 +28057,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -27181,6 +28223,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -27338,6 +28386,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -27501,6 +28555,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -27658,6 +28718,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -27815,6 +28881,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -27972,6 +29044,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -28131,6 +29209,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -28290,6 +29374,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -28447,6 +29537,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -28604,6 +29700,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -28764,6 +29866,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -28921,6 +30029,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -29078,6 +30192,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -29235,6 +30355,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -29392,6 +30518,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -29549,6 +30681,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -29706,6 +30844,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -29863,6 +31007,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -30026,6 +31176,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -30180,6 +31336,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -30337,6 +31499,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -30496,6 +31664,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -30655,6 +31829,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -30814,6 +31994,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -30973,6 +32159,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -31132,6 +32324,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "4 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -31291,6 +32489,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -31447,6 +32651,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -31606,6 +32816,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -31765,6 +32981,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -31927,6 +33149,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -32086,6 +33314,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -32245,6 +33479,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -32401,6 +33641,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -32560,6 +33806,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -32719,6 +33971,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -32760,6 +34018,12 @@ window.DADOS_ARG = {
           "m": 8,
           "v": 13
         }
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -32801,6 +34065,12 @@ window.DADOS_ARG = {
           "m": 14,
           "v": 12
         }
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -32842,6 +34112,12 @@ window.DADOS_ARG = {
           "m": 15,
           "v": 9
         }
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -32883,6 +34159,12 @@ window.DADOS_ARG = {
           "m": 23,
           "v": 10
         }
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -32924,6 +34206,12 @@ window.DADOS_ARG = {
           "m": 5,
           "v": 17
         }
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 14,
+        "pts_visitante": null
       }
     },
     {
@@ -32965,6 +34253,12 @@ window.DADOS_ARG = {
           "m": 16,
           "v": 10
         }
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -33006,6 +34300,12 @@ window.DADOS_ARG = {
           "m": 10,
           "v": 15
         }
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -33047,6 +34347,12 @@ window.DADOS_ARG = {
           "m": 23,
           "v": 5
         }
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -33088,6 +34394,12 @@ window.DADOS_ARG = {
           "m": 24,
           "v": 7
         }
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 15,
+        "pts_visitante": null
       }
     },
     {
@@ -33129,6 +34441,12 @@ window.DADOS_ARG = {
           "m": 7,
           "v": 6
         }
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -33170,6 +34488,12 @@ window.DADOS_ARG = {
           "m": 11,
           "v": 6
         }
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -33211,6 +34535,12 @@ window.DADOS_ARG = {
           "m": 15,
           "v": 10
         }
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -33252,6 +34582,12 @@ window.DADOS_ARG = {
           "m": 12,
           "v": 14
         }
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -33293,6 +34629,12 @@ window.DADOS_ARG = {
           "m": 11,
           "v": 5
         }
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -33458,6 +34800,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -33617,6 +34965,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -33776,6 +35130,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 15,
+        "pts_mandante": null,
+        "pos_visitante": 10,
+        "pts_visitante": null
       }
     },
     {
@@ -33936,6 +35296,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 11,
+        "pts_visitante": null
       }
     },
     {
@@ -34096,6 +35462,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -34256,6 +35628,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": null,
+        "pos_visitante": 3,
+        "pts_visitante": null
       }
     },
     {
@@ -34416,6 +35794,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -34578,6 +35962,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -34737,6 +36127,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": null,
+        "pos_visitante": 12,
+        "pts_visitante": null
       }
     },
     {
@@ -34893,6 +36289,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -35055,6 +36457,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -35214,6 +36622,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -35373,6 +36787,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -35532,6 +36952,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": null,
+        "pos_visitante": 13,
+        "pts_visitante": null
       }
     },
     {
@@ -35690,6 +37116,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 14,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -35849,6 +37281,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -36005,6 +37443,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -36167,6 +37611,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -36332,6 +37782,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 4,
+        "pts_visitante": null
       }
     },
     {
@@ -36491,6 +37947,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
       }
     },
     {
@@ -36650,6 +38112,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -36809,6 +38277,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 2,
+        "pts_visitante": null
       }
     },
     {
@@ -36968,6 +38442,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": null,
+        "pos_visitante": 8,
+        "pts_visitante": null
       }
     },
     {
@@ -37130,6 +38610,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": null,
+        "pos_visitante": 7,
+        "pts_visitante": null
       }
     },
     {
@@ -37292,6 +38778,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -37451,6 +38943,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": null,
+        "pos_visitante": 9,
+        "pts_visitante": null
       }
     },
     {
@@ -37610,6 +39108,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 1,
+        "pts_visitante": null
       }
     },
     {
@@ -37769,6 +39273,12 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": null,
+        "pos_visitante": 5,
+        "pts_visitante": null
       }
     },
     {
@@ -37928,6 +39438,101 @@ window.DADOS_ARG = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": null,
+        "pos_visitante": 6,
+        "pts_visitante": null
+      }
+    },
+    {
+      "match_id": "M1KbYCx1",
+      "mandante": "River Plate",
+      "visitante": "Belgrano",
+      "rodada": null,
+      "data": "24.05.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": {
+          "m": 7,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "placar": "2 - 3",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.25",
+        "oddEmpate": "2.65",
+        "oddV": "4.00"
+      },
+      "url": "https://www.flashscore.com/match/M1KbYCx1/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T17:37:15.402Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
       }
     }
   ]

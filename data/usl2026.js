@@ -1,11 +1,9 @@
-// ============================================================
-// USL 2026 — Injeção rodada 22-25/05/2026 (com aliases)
-// 117 jogos | Atualizado: 2026-05-27
-// ============================================================
+// DADOS_USL — INJEÇÃO COLHEITA COPA 2026-06-29
+// Total jogos: 145
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
-  "ultimaAtualizacao": "2026-05-27",
+  "ultimaAtualizacao": "2026-06-29",
   "totalRodadas": 5,
   "times": [
     "Birmingham",
@@ -191,6 +189,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 10,
+        "pts_visitante": 12
       }
     },
     {
@@ -349,6 +353,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 12,
+        "pos_visitante": 12,
+        "pts_visitante": 11
       }
     },
     {
@@ -510,6 +520,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 13,
+        "pos_visitante": 6,
+        "pts_visitante": 15
       }
     },
     {
@@ -667,6 +683,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 16,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -824,6 +846,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 19
       }
     },
     {
@@ -981,6 +1009,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 2,
+        "pts_visitante": 20
       }
     },
     {
@@ -1138,6 +1172,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 28,
+        "pos_visitante": 11,
+        "pts_visitante": 9
       }
     },
     {
@@ -1298,6 +1338,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 16,
+        "pos_visitante": 9,
+        "pts_visitante": 12
       }
     },
     {
@@ -1455,6 +1501,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 16,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -1612,6 +1664,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 14,
+        "pos_visitante": 3,
+        "pts_visitante": 18
       }
     },
     {
@@ -1769,6 +1827,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 18,
+        "pos_visitante": 5,
+        "pts_visitante": 17
       }
     },
     {
@@ -1926,6 +1990,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 14,
+        "pos_visitante": 8,
+        "pts_visitante": 13
       }
     },
     {
@@ -2083,6 +2153,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 3,
+        "pos_visitante": 7,
+        "pts_visitante": 16
       }
     },
     {
@@ -2240,6 +2316,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 12,
+        "pos_visitante": 12,
+        "pts_visitante": 8
       }
     },
     {
@@ -2394,6 +2476,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 8,
+        "pts_visitante": 13
       }
     },
     {
@@ -2551,6 +2639,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 16,
+        "pos_visitante": 4,
+        "pts_visitante": 16
       }
     },
     {
@@ -2708,6 +2802,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 13,
+        "pos_visitante": 12,
+        "pts_visitante": 11
       }
     },
     {
@@ -2865,6 +2965,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 7,
+        "pts_visitante": 14
       }
     },
     {
@@ -3019,6 +3125,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 16,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -3176,6 +3288,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 28,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -3333,6 +3451,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 8,
+        "pts_visitante": 14
       }
     },
     {
@@ -3490,6 +3614,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 17,
+        "pos_visitante": 10,
+        "pts_visitante": 11
       }
     },
     {
@@ -3644,6 +3774,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 18,
+        "pos_visitante": 4,
+        "pts_visitante": 18
       }
     },
     {
@@ -3804,6 +3940,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "4 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 20,
+        "pos_visitante": 9,
+        "pts_visitante": 12
       }
     },
     {
@@ -3961,6 +4103,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 7,
+        "pts_visitante": 16
       }
     },
     {
@@ -4121,6 +4269,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 11,
+        "pos_visitante": 6,
+        "pts_visitante": 15
       }
     },
     {
@@ -4275,6 +4429,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 16,
+        "pos_visitante": 7,
+        "pts_visitante": 14
       }
     },
     {
@@ -4438,6 +4598,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 19
       }
     },
     {
@@ -4595,6 +4761,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 16,
+        "pos_visitante": 1,
+        "pts_visitante": 21
       }
     },
     {
@@ -4752,6 +4924,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 12,
+        "pos_visitante": 9,
+        "pts_visitante": 13
       }
     },
     {
@@ -4903,6 +5081,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 13,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -5060,6 +5244,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 18,
+        "pos_visitante": 12,
+        "pts_visitante": 8
       }
     },
     {
@@ -5214,6 +5404,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "3 - 1",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 20,
+        "pos_visitante": 7,
+        "pts_visitante": 16
       }
     },
     {
@@ -5374,6 +5570,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -5531,6 +5733,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -5691,6 +5899,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 11,
+        "pos_visitante": 8,
+        "pts_visitante": 14
       }
     },
     {
@@ -5845,6 +6059,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 3,
+        "pts_visitante": 18
       }
     },
     {
@@ -6002,6 +6222,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 11,
+        "pos_visitante": 4,
+        "pts_visitante": 16
       }
     },
     {
@@ -6159,6 +6385,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -6313,6 +6545,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 13,
+        "pos_visitante": 3,
+        "pts_visitante": 16
       }
     },
     {
@@ -6467,6 +6705,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 15,
+        "pos_visitante": 8,
+        "pts_visitante": 13
       }
     },
     {
@@ -6624,6 +6868,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -6781,6 +7031,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 11,
+        "pos_visitante": 1,
+        "pts_visitante": 28
       }
     },
     {
@@ -6938,6 +7194,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 3,
+        "pos_visitante": 8,
+        "pts_visitante": 14
       }
     },
     {
@@ -7095,6 +7357,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 17,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -7252,6 +7520,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 12,
+        "pos_visitante": 2,
+        "pts_visitante": 20
       }
     },
     {
@@ -7410,6 +7684,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 11,
+        "pos_visitante": 1,
+        "pts_visitante": 21
       }
     },
     {
@@ -7568,6 +7848,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 7,
+        "pts_visitante": 14
       }
     },
     {
@@ -7726,6 +8012,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 13,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -7884,6 +8176,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 15,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -8042,6 +8340,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 13,
+        "pts_mandante": 3,
+        "pos_visitante": 1,
+        "pts_visitante": 28
       }
     },
     {
@@ -8200,6 +8504,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 18,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -8358,6 +8668,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 13,
+        "pos_visitante": 10,
+        "pts_visitante": 12
       }
     },
     {
@@ -8516,6 +8832,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 10,
+        "pts_visitante": 11
       }
     },
     {
@@ -8674,6 +8996,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 20,
+        "pos_visitante": 5,
+        "pts_visitante": 17
       }
     },
     {
@@ -8832,6 +9160,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 16,
+        "pos_visitante": 8,
+        "pts_visitante": 14
       }
     },
     {
@@ -8990,6 +9324,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 4,
+        "pts_visitante": 18
       }
     },
     {
@@ -9149,6 +9489,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 11,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -9306,6 +9652,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 12,
+        "pos_visitante": 9,
+        "pts_visitante": 13
       }
     },
     {
@@ -9463,6 +9815,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 16,
+        "pos_visitante": 7,
+        "pts_visitante": 14
       }
     },
     {
@@ -9623,6 +9981,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 7,
+        "pts_visitante": 16
       }
     },
     {
@@ -9780,6 +10144,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 19
       }
     },
     {
@@ -9934,6 +10304,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 28,
+        "pos_visitante": 4,
+        "pts_visitante": 16
       }
     },
     {
@@ -10091,6 +10467,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 5,
+        "pts_visitante": 17
       }
     },
     {
@@ -10248,6 +10630,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 3",
         "ft": "0 - 4"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 14,
+        "pos_visitante": 6,
+        "pts_visitante": 15
       }
     },
     {
@@ -10405,6 +10793,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 18,
+        "pos_visitante": 12,
+        "pts_visitante": 11
       }
     },
     {
@@ -10559,6 +10953,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 12,
+        "pos_visitante": 9,
+        "pts_visitante": 12
       }
     },
     {
@@ -10716,6 +11116,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 18,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -10873,6 +11279,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 2",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 2,
+        "pts_visitante": 20
       }
     },
     {
@@ -11030,6 +11442,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 1,
+        "pts_visitante": 21
       }
     },
     {
@@ -11189,6 +11607,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 16,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -11345,6 +11769,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "4 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 5,
+        "pts_visitante": 17
       }
     },
     {
@@ -11507,6 +11937,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 9,
+        "pts_visitante": 13
       }
     },
     {
@@ -11663,6 +12099,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 11,
+        "pos_visitante": 3,
+        "pts_visitante": 18
       }
     },
     {
@@ -11828,6 +12270,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 16,
+        "pos_visitante": 3,
+        "pts_visitante": 16
       }
     },
     {
@@ -11987,6 +12435,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 10,
+        "pts_visitante": 12
       }
     },
     {
@@ -12146,6 +12600,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "2 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 15,
+        "pos_visitante": 1,
+        "pts_visitante": 21
       }
     },
     {
@@ -12305,6 +12765,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 14,
+        "pos_visitante": 11,
+        "pts_visitante": 9
       }
     },
     {
@@ -12464,6 +12930,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 16,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -12623,6 +13095,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 16,
+        "pos_visitante": 4,
+        "pts_visitante": 18
       }
     },
     {
@@ -12782,6 +13260,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 13,
+        "pos_visitante": 12,
+        "pts_visitante": 11
       }
     },
     {
@@ -12941,6 +13425,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 20,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -13100,6 +13590,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 17,
+        "pos_visitante": 1,
+        "pts_visitante": 28
       }
     },
     {
@@ -13259,6 +13755,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 11,
+        "pos_visitante": 3,
+        "pts_visitante": 16
       }
     },
     {
@@ -13421,6 +13923,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 12,
+        "pos_visitante": 10,
+        "pts_visitante": 12
       }
     },
     {
@@ -13580,6 +14088,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 13,
+        "pos_visitante": 2,
+        "pts_visitante": 19
       }
     },
     {
@@ -13739,6 +14253,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 8,
+        "pts_visitante": 13
       }
     },
     {
@@ -13898,6 +14418,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 10,
+        "pts_visitante": 11
       }
     },
     {
@@ -14057,6 +14583,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 28,
+        "pos_visitante": 3,
+        "pts_visitante": 18
       }
     },
     {
@@ -14222,6 +14754,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "4 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 17,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -14381,6 +14919,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 16,
+        "pos_visitante": 12,
+        "pts_visitante": 8
       }
     },
     {
@@ -14537,6 +15081,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 6,
+        "pts_mandante": 16,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -14696,6 +15246,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 18,
+        "pos_visitante": 2,
+        "pts_visitante": 20
       }
     },
     {
@@ -14855,6 +15411,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 4,
+        "pts_visitante": 16
       }
     },
     {
@@ -15017,6 +15579,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 4,
+        "pts_mandante": 16,
+        "pos_visitante": 6,
+        "pts_visitante": 15
       }
     },
     {
@@ -15182,6 +15750,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 5,
+        "pts_mandante": 16,
+        "pos_visitante": 1,
+        "pts_visitante": 21
       }
     },
     {
@@ -15341,6 +15915,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 14,
+        "pos_visitante": 11,
+        "pts_visitante": 12
       }
     },
     {
@@ -15500,6 +16080,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 1,
+        "pts_visitante": 28
       }
     },
     {
@@ -15656,6 +16242,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 8,
+        "pos_visitante": 11,
+        "pts_visitante": 9
       }
     },
     {
@@ -15815,6 +16407,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 14,
+        "pos_visitante": 4,
+        "pts_visitante": 18
       }
     },
     {
@@ -15974,6 +16572,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 18,
+        "pos_visitante": 13,
+        "pts_visitante": 3
       }
     },
     {
@@ -16130,6 +16734,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 20,
+        "pos_visitante": 6,
+        "pts_visitante": 16
       }
     },
     {
@@ -16289,6 +16899,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 8,
+        "pts_mandante": 13,
+        "pos_visitante": 2,
+        "pts_visitante": 19
       }
     },
     {
@@ -16448,6 +17064,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 12,
+        "pos_visitante": 12,
+        "pts_visitante": 11
       }
     },
     {
@@ -16608,6 +17230,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 10,
+        "pts_mandante": 11,
+        "pos_visitante": 7,
+        "pts_visitante": 16
       }
     },
     {
@@ -16767,6 +17395,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 14,
+        "pos_visitante": 6,
+        "pts_visitante": 15
       }
     },
     {
@@ -16925,6 +17559,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 12,
+        "pos_visitante": 8,
+        "pts_visitante": 13
       }
     },
     {
@@ -17083,6 +17723,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 12,
+        "pts_mandante": 11,
+        "pos_visitante": 10,
+        "pts_visitante": 11
       }
     },
     {
@@ -17241,6 +17887,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 2"
+      },
+      "tabela": {
+        "pos_mandante": 2,
+        "pts_mandante": 19,
+        "pos_visitante": 4,
+        "pts_visitante": 16
       }
     },
     {
@@ -17399,6 +18051,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 14,
+        "pos_visitante": 5,
+        "pts_visitante": 17
       }
     },
     {
@@ -17557,6 +18215,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "2 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 21,
+        "pos_visitante": 9,
+        "pts_visitante": 13
       }
     },
     {
@@ -17715,6 +18379,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "4 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 9,
+        "pts_mandante": 12,
+        "pos_visitante": 12,
+        "pts_visitante": 8
       }
     },
     {
@@ -17867,6 +18537,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 1,
+        "pts_mandante": 28,
+        "pos_visitante": 5,
+        "pts_visitante": 16
       }
     },
     {
@@ -18031,6 +18707,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 1"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 18,
+        "pos_visitante": 10,
+        "pts_visitante": 12
       }
     },
     {
@@ -18189,6 +18871,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "4 - 3"
+      },
+      "tabela": {
+        "pos_mandante": 7,
+        "pts_mandante": 16,
+        "pos_visitante": 2,
+        "pts_visitante": 20
       }
     },
     {
@@ -18347,6 +19035,12 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 11,
+        "pts_mandante": 9,
+        "pos_visitante": 4,
+        "pts_visitante": 18
       }
     },
     {
@@ -18508,6 +19202,2509 @@ window.DADOS_USL = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 0"
+      },
+      "tabela": {
+        "pos_mandante": 3,
+        "pts_mandante": 16,
+        "pos_visitante": 8,
+        "pts_visitante": 14
+      }
+    },
+    {
+      "match_id": "zoulw0E7",
+      "mandante": "Oakland Roots",
+      "visitante": "Miami FC",
+      "rodada": null,
+      "data": "13.06.2026 23:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 7,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "faltas": {
+          "m": 17,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "placar": "0 - 0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "5-4-1"
+      },
+      "mercado": {
+        "oddM": "1.50",
+        "oddEmpate": "4.00",
+        "oddV": "5.40"
+      },
+      "url": "https://www.flashscore.com/match/zoulw0E7/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:19:05.846Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "EVjuuMqe",
+      "mandante": "New Mexico",
+      "visitante": "Orange County SC",
+      "rodada": null,
+      "data": "13.06.2026 22:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 63,
+          "v": 37
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 15
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 18,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "placar": "1 - 1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.85",
+        "oddEmpate": "3.65",
+        "oddV": "3.45"
+      },
+      "url": "https://www.flashscore.com/match/EVjuuMqe/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:19:36.417Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "Sb05Sr0k",
+      "mandante": "Colorado Springs",
+      "visitante": "Sacramento Republic",
+      "rodada": null,
+      "data": "13.06.2026 22:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 5
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 5
+        },
+        "faltas": {
+          "m": 18,
+          "v": 17
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "placar": "0 - 1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.00",
+        "oddEmpate": "3.10",
+        "oddV": "3.55"
+      },
+      "url": "https://www.flashscore.com/match/Sb05Sr0k/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:20:05.374Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "zP3DQMU1",
+      "mandante": "El Paso",
+      "visitante": "Phoenix Rising",
+      "rodada": null,
+      "data": "13.06.2026 22:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": {
+          "m": 17,
+          "v": 21
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": "1 - 1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.35",
+        "oddV": "3.00"
+      },
+      "url": "https://www.flashscore.com/match/zP3DQMU1/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:20:35.208Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "xULQZQ7F",
+      "mandante": "Birmingham",
+      "visitante": "Las Vegas Lights",
+      "rodada": null,
+      "data": "13.06.2026 21:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 2,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "placar": "1 - 2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.90",
+        "oddEmpate": "3.35",
+        "oddV": "3.65"
+      },
+      "url": "https://www.flashscore.com/match/xULQZQ7F/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:21:05.117Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "65mXtrFr",
+      "mandante": "Louisville City",
+      "visitante": "Brooklyn",
+      "rodada": null,
+      "data": "13.06.2026 21:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 14,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 25,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 7,
+          "v": 9
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 10,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "placar": "2 - 2",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "3-4-2-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.35",
+        "oddEmpate": "4.80",
+        "oddV": "6.70"
+      },
+      "url": "https://www.flashscore.com/match/65mXtrFr/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:21:35.084Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "rROYX4xS",
+      "mandante": "Charleston",
+      "visitante": "FC Tulsa",
+      "rodada": null,
+      "data": "13.06.2026 20:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 10,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": {
+          "m": 9,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "placar": "5 - 1",
+      "gols": {
+        "ft": {
+          "m": 5,
+          "v": 1
+        },
+        "ht": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "1.62",
+        "oddEmpate": "3.50",
+        "oddV": "5.10"
+      },
+      "url": "https://www.flashscore.com/match/rROYX4xS/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:22:06.808Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "vXQDgLbl",
+      "mandante": "Tampa Bay",
+      "visitante": "Hartford Athletic",
+      "rodada": null,
+      "data": "13.06.2026 20:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 8,
+          "v": 1
+        },
+        "ft": {
+          "m": 15,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 76,
+          "v": 24
+        },
+        "finalizacoes": {
+          "m": 28,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 11,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "placar": "0 - 1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-1-4-1"
+      },
+      "mercado": {
+        "oddM": "1.45",
+        "oddEmpate": "4.05",
+        "oddV": "6.00"
+      },
+      "url": "https://www.flashscore.com/match/vXQDgLbl/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:22:36.513Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "jXo0lQM8",
+      "mandante": "Lexington",
+      "visitante": "San Antonio",
+      "rodada": null,
+      "data": "13.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 6
+        },
+        "ft": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 4
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 9,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "placar": "2 - 0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-4-1"
+      },
+      "mercado": {
+        "oddM": "1.72",
+        "oddEmpate": "3.70",
+        "oddV": "4.05"
+      },
+      "url": "https://www.flashscore.com/match/jXo0lQM8/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:23:05.619Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "2iXZ036E",
+      "mandante": "Pittsburgh",
+      "visitante": "Indy Eleven",
+      "rodada": null,
+      "data": "13.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 16,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "placar": "1 - 0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-4-2-1",
+        "v": "4-5-1"
+      },
+      "mercado": {
+        "oddM": "1.87",
+        "oddEmpate": "3.15",
+        "oddV": "4.05"
+      },
+      "url": "https://www.flashscore.com/match/2iXZ036E/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:23:35.381Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "r1urasyR",
+      "mandante": "Sporting Jax",
+      "visitante": "Detroit",
+      "rodada": null,
+      "data": "13.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 10
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 13,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "placar": "2 - 6",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 6
+        },
+        "ht": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "5-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "5.10",
+        "oddEmpate": "3.65",
+        "oddV": "1.60"
+      },
+      "url": "https://www.flashscore.com/match/r1urasyR/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:24:07.294Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "Opp8n4iL",
+      "mandante": "Loudoun",
+      "visitante": "Rhode Island",
+      "rodada": null,
+      "data": "13.06.2026 19:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 3
+        },
+        "ft": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": {
+          "m": 13,
+          "v": 17
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "placar": "1 - 4",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "3-4-3",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "3.65",
+        "oddEmpate": "3.40",
+        "oddV": "1.88"
+      },
+      "url": "https://www.flashscore.com/match/Opp8n4iL/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:24:36.541Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "l8uWDqod",
+      "mandante": "Phoenix Rising",
+      "visitante": "Louisville City",
+      "rodada": null,
+      "data": "10.06.2026 23:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 4
+        },
+        "ft": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 1
+        },
+        "faltas": {
+          "m": 16,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "placar": "0 - 2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "2.90",
+        "oddEmpate": "3.35",
+        "oddV": "2.18"
+      },
+      "url": "https://www.flashscore.com/match/l8uWDqod/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:25:06.237Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "htnNF5Gq",
+      "mandante": "Monterey Bay",
+      "visitante": "Sporting Jax",
+      "rodada": null,
+      "data": "10.06.2026 23:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 19,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "placar": "2 - 1",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "1.57",
+        "oddEmpate": "3.95",
+        "oddV": "4.75"
+      },
+      "url": "https://www.flashscore.com/match/htnNF5Gq/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-15T01:25:35.291Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "GAs6Kl34",
+      "mandante": "Colorado Springs",
+      "visitante": "San Antonio",
+      "rodada": null,
+      "data": "24.06.2026 21:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 6
+        },
+        "faltas": {
+          "m": 15,
+          "v": 20
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "placar": "1 - 2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-4-1"
+      },
+      "mercado": {
+        "oddM": "1.70",
+        "oddEmpate": "3.35",
+        "oddV": "4.65"
+      },
+      "url": "https://www.flashscore.com/match/GAs6Kl34/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:07:06.792Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "8pvbMAYi",
+      "mandante": "Charleston",
+      "visitante": "Loudoun",
+      "rodada": null,
+      "data": "24.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 12,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "placar": "4 - 1",
+      "gols": {
+        "ft": {
+          "m": 4,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.42",
+        "oddEmpate": "4.40",
+        "oddV": "6.10"
+      },
+      "url": "https://www.flashscore.com/match/8pvbMAYi/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:07:37.782Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "xQVEISXG",
+      "mandante": "Miami FC",
+      "visitante": "Orange County SC",
+      "rodada": null,
+      "data": "24.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 18,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": "2 - 4",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 4
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.18",
+        "oddEmpate": "3.30",
+        "oddV": "2.95"
+      },
+      "url": "https://www.flashscore.com/match/xQVEISXG/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:08:08.276Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "nLYm4TIN",
+      "mandante": "Sacramento Republic",
+      "visitante": "New Mexico",
+      "rodada": null,
+      "data": "21.06.2026 00:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 11,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "placar": "0 - 1",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.62",
+        "oddEmpate": "3.60",
+        "oddV": "4.85"
+      },
+      "url": "https://www.flashscore.com/match/nLYm4TIN/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:08:40.164Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "f9hhw48U",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Orange County SC",
+      "rodada": null,
+      "data": "20.06.2026 23:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 17
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 8,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 14,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 6
+        }
+      },
+      "placar": "2 - 3",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.12",
+        "oddEmpate": "3.20",
+        "oddV": "3.20"
+      },
+      "url": "https://www.flashscore.com/match/f9hhw48U/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:09:09.294Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "jguu6klB",
+      "mandante": "Phoenix Rising",
+      "visitante": "Oakland Roots",
+      "rodada": null,
+      "data": "20.06.2026 23:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 9,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        },
+        "faltas": {
+          "m": 6,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 6
+        }
+      },
+      "placar": "3 - 4",
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-1-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.15",
+        "oddEmpate": "3.30",
+        "oddV": "3.00"
+      },
+      "url": "https://www.flashscore.com/match/jguu6klB/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:09:40.277Z",
+        "campos_disponiveis": 23,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "MDmO9Xln",
+      "mandante": "Monterey Bay",
+      "visitante": "El Paso",
+      "rodada": null,
+      "data": "20.06.2026 23:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 17,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 4
+        }
+      },
+      "placar": "1 - 0",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "2.72",
+        "oddEmpate": "3.15",
+        "oddV": "2.42"
+      },
+      "url": "https://www.flashscore.com/match/MDmO9Xln/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:10:09.722Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "2Zw44xD6",
+      "mandante": "FC Tulsa",
+      "visitante": "Colorado Springs",
+      "rodada": null,
+      "data": "20.06.2026 21:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 1
+        },
+        "faltas": {
+          "m": 19,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "placar": "1 - 2",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.57",
+        "oddEmpate": "3.20",
+        "oddV": "2.50"
+      },
+      "url": "https://www.flashscore.com/match/2Zw44xD6/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:10:39.075Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "Ygnm8KDs",
+      "mandante": "Birmingham",
+      "visitante": "Loudoun",
+      "rodada": null,
+      "data": "20.06.2026 21:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 15
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": {
+          "m": 9,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "placar": "1 - 1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-1-2"
+      },
+      "mercado": {
+        "oddM": "1.70",
+        "oddEmpate": "3.70",
+        "oddV": "4.10"
+      },
+      "url": "https://www.flashscore.com/match/Ygnm8KDs/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:11:10.495Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "ULud6brf",
+      "mandante": "Brooklyn",
+      "visitante": "Tampa Bay",
+      "rodada": null,
+      "data": "20.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 11,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "placar": "0 - 2",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "5.00",
+        "oddEmpate": "3.90",
+        "oddV": "1.55"
+      },
+      "url": "https://www.flashscore.com/match/ULud6brf/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:11:43.430Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "b1XC2GsJ",
+      "mandante": "Hartford Athletic",
+      "visitante": "Pittsburgh",
+      "rodada": null,
+      "data": "20.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 12,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 12,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "placar": "0 - 0",
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.32",
+        "oddEmpate": "2.95",
+        "oddV": "3.05"
+      },
+      "url": "https://www.flashscore.com/match/b1XC2GsJ/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:12:13.882Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "riKJb7to",
+      "mandante": "Sporting Jax",
+      "visitante": "Charleston",
+      "rodada": null,
+      "data": "20.06.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        },
+        "faltas": {
+          "m": 11,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "placar": "2 - 5",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 5
+        },
+        "ht": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "5.30",
+        "oddEmpate": "4.05",
+        "oddV": "1.50"
+      },
+      "url": "https://www.flashscore.com/match/riKJb7to/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:12:44.291Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "zaKMiaT0",
+      "mandante": "FC Tulsa",
+      "visitante": "Monterey Bay",
+      "rodada": null,
+      "data": "17.06.2026 21:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 36,
+          "v": 64
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        },
+        "faltas": {
+          "m": 12,
+          "v": 19
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "placar": "2 - 0",
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "3-4-2-1",
+        "v": "3-4-3"
+      },
+      "mercado": {
+        "oddM": "1.72",
+        "oddEmpate": "3.70",
+        "oddV": "4.00"
+      },
+      "url": "https://www.flashscore.com/match/zaKMiaT0/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:13:15.085Z",
+        "campos_disponiveis": 21,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "OK0HDtjK",
+      "mandante": "Oakland Roots",
+      "visitante": "Birmingham",
+      "rodada": null,
+      "data": "17.06.2026 16:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 3
+        },
+        "ft": {
+          "m": 11,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 67,
+          "v": 33
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 18,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": "1 - 1",
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.82",
+        "oddEmpate": "3.45",
+        "oddV": "3.85"
+      },
+      "url": "https://www.flashscore.com/match/OK0HDtjK/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-06-28T18:13:46.265Z",
+        "campos_disponiveis": 22,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "ataques_perigosos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
       }
     }
   ]
