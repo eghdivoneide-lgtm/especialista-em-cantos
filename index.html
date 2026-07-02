@@ -1241,13 +1241,10 @@ const MOTOR_CONFIG = Object.freeze({
 //   ROI por liga no agregado: ARG +78u, ARG_B +46u, ALM +34u, BUN +33u,
 //   BR +24u, J1 +18u, USL +23u, CHI -31u, MLS -17u, ECU -45u (cumulativo).
 const LIGAS_STATUS = Object.freeze({
-  MLS: { status: 'observacao', roi: -17.0, n: 32, desde: '2026-04-22',
-         motivo: '158 apostas no tracker confirmam padrão: HDP HT de favorito sem cruzamento drena ROI. PROTOCOLO_STAKE já bloqueia esses sinais. Entrar apenas em Unders com TMI dupla baixa.' },
-  CHI: { status: 'observacao', roi: -31.4, n: 6,  desde: '2026-05-27',
-         motivo: 'RECALIBRADA 2026-05-27 — amostra cresceu para 103 jogos (~6.4/time). Backtest cego identificou X=2.0 como mau (63% WR / +19% ROI) vs X=1.75-1.85 (79-82% WR / +43-47% ROI). Liga é menos polarizada que ARG_B/ECU (mando +11.7pp). Aplicado cisneThreshold=1.85 (intermediário conservador). Reativada em OBSERVAÇÃO — registrar 10-15 picks reais antes de confirmar.' },
-  ECU: { status: 'suspenso',   roi: -44.9, n: 6,  desde: '2026-04-22',
-         motivo: 'ROI -45u. Reintegrada ao DNA institucional em 2026-06-28 (119 jogos, 16 times) — SmartCoach já analisa, mas ainda SEM DNA Escoteiro. Não apostar até revalidar.' }
-  // v4.0 (2026-06-28) — J1/J2_J3 REMOVIDAS do escopo (alta volatilidade, fora do seletor).
+  // 2026-06-30: marcas de status REMOVIDAS por decisão do usuário — todas as 9 ligas ATIVAS, sem banner.
+  // Histórico preservado (ROI medido em amostras pequenas, antes das bases serem completadas):
+  //   MLS -17.0% (n=32) · CHI -31.4% (n=6) · ECU -44.9% (n=6).
+  // Para reativar um alerta, recolocar a entrada aqui (ex.: ECU: { status:'suspenso', roi:-44.9, n:6, desde:'...', motivo:'...' }).
 });
 
 // ══════════════════════════════════════════════════════════════════
