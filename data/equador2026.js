@@ -1,5 +1,5 @@
-// DADOS_ECU — INJEÇÃO COLHEITA COPA 2026-06-29
-// Total jogos: 126
+// DADOS_ECU — ENRIQUECIMENTO RICOS 2026-07-02
+// Total: 126
 
 window.DADOS_ECU = {
   "temporada": "2026",
@@ -59,18 +59,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/4GWdZ8gB/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -221,18 +221,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 3
       },
       "url": "https://www.flashscore.com/match/YkX3kLq9/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -383,18 +383,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/nex2QDAt/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -545,18 +545,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/4vJPrGR0/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -707,18 +707,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/bsGXy8EG/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -872,18 +872,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/d8vyXwHD/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1034,18 +1034,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 3,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/QTHPwUq4/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1199,18 +1199,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/zLlAT4AL/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1361,18 +1361,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/dzJLzMHl/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1526,18 +1526,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/zueAYjhI/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1694,18 +1694,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/OxVtwifn/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -1856,18 +1856,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 4,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 4,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/SYwIMV95/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2018,18 +2018,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/K8zAOiug/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2183,18 +2183,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/W2YlyVOb/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2348,18 +2348,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/zasQK9vI/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2513,18 +2513,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/I3EHujFi/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2675,18 +2675,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/jcMVHnNp/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2834,18 +2834,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/lUXiPUUA/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -2996,18 +2996,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 3,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/MegIWUMU/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3158,18 +3158,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/hvUsr4PE/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3320,18 +3320,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/GWiWzMUF/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3482,18 +3482,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/OdevZaaS/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3644,18 +3644,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/8SJCgXuJ/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3806,18 +3806,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/COhp3pDF/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -3965,18 +3965,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/hxDdcFtf/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4124,18 +4124,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/W8TvznqT/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4283,18 +4283,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/8jWyTCVo/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4445,18 +4445,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/xUbG7Nm2/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4607,18 +4607,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/8CuYIm9U/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4769,18 +4769,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/GC1xFv8d/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -4937,18 +4937,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 3,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/0M6bHzYP/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5099,18 +5099,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/xhHXtfdD/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5258,18 +5258,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/2Rd2zDN5/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5420,18 +5420,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/U3e89qJk/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5586,18 +5586,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/02G4egB6/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5748,18 +5748,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/fo7dhTbc/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -5913,18 +5913,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/nssdK0X7/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6075,18 +6075,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/2BA4j7T9/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6237,18 +6237,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/40MTYan1/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6396,18 +6396,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/bach6APO/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6558,18 +6558,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/dEFHpxcl/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6717,18 +6717,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/88DClobM/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -6880,18 +6880,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/nyjnveOt/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7045,18 +7045,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/04XktrfR/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7214,18 +7214,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/AFbUG0wp/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7373,18 +7373,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/t4UqRj0b/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7582,18 +7582,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/6quIRHi2/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7741,18 +7741,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/4varqPLq/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -7903,18 +7903,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/63utOrYr/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8065,18 +8065,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/ILexAhQa/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8233,18 +8233,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 3,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/KOElayCs/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8395,18 +8395,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/KStATwNk/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8557,18 +8557,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/f1gfxZhg/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8719,18 +8719,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/27j2VQu9/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -8881,18 +8881,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/jZgp8WfC/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9040,18 +9040,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 2
       },
       "url": "https://www.flashscore.com/match/4b9J4clK/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9202,18 +9202,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 0
       },
       "url": "https://www.flashscore.com/match/AehUBEem/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9361,18 +9361,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 0,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/vBfx56r3/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9523,18 +9523,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 2,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/2iKAUP6j/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9691,18 +9691,18 @@ window.DADOS_ECU = {
         }
       },
       "gols": {
-        "ht": {
-          "m": null,
-          "v": null
-        },
         "ft": {
-          "m": null,
-          "v": null
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "placar": {
-        "m": null,
-        "v": null
+        "m": 1,
+        "v": 1
       },
       "url": "https://www.flashscore.com/match/fRz0N8aN/#/match-summary",
       "liga": "Liga Pro (Equador)",
@@ -9832,11 +9832,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -9991,12 +9991,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -10147,13 +10147,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -10309,13 +10309,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10468,12 +10468,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -10630,13 +10630,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10942,12 +10942,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -11101,13 +11101,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -11260,11 +11260,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": null,
         "ft": {
           "m": 0,
           "v": 1
-        }
+        },
+        "ht": null
       },
       "cantos": {
         "ht": {
@@ -11416,13 +11416,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -11574,13 +11574,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -11738,11 +11738,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -11896,12 +11896,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -12057,13 +12057,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -12215,12 +12215,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 3
-        },
         "ft": {
           "m": 2,
+          "v": 3
+        },
+        "ht": {
+          "m": 1,
           "v": 3
         }
       },
@@ -12373,11 +12373,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -12534,12 +12534,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -12692,12 +12692,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -12856,13 +12856,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -13014,13 +13014,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13172,13 +13172,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -13330,13 +13330,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13485,12 +13485,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13644,11 +13644,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -13809,12 +13809,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -13968,11 +13968,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -14131,12 +14131,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -14287,12 +14287,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14446,12 +14446,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -14605,12 +14605,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 4,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -14764,12 +14764,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14920,13 +14920,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15078,13 +15078,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15230,11 +15230,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -15389,11 +15389,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -15497,12 +15497,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -15659,13 +15659,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15818,12 +15818,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -15983,12 +15983,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -16142,12 +16142,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -16301,12 +16301,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -16460,11 +16460,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -16618,11 +16618,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -16773,12 +16773,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -16934,12 +16934,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -17092,13 +17092,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -17250,13 +17250,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -17408,13 +17408,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17566,12 +17566,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -17727,12 +17727,12 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -17885,13 +17885,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -18043,11 +18043,11 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -18201,13 +18201,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -18359,13 +18359,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18517,13 +18517,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -18681,13 +18681,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -18839,13 +18839,13 @@ window.DADOS_ECU = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19033,7 +19033,10 @@ window.DADOS_ECU = {
           "v": 1
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19120,7 +19123,10 @@ window.DADOS_ECU = {
           "v": 2
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19209,7 +19215,10 @@ window.DADOS_ECU = {
           "v": 2
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19298,7 +19307,10 @@ window.DADOS_ECU = {
           "v": 1
         }
       },
-      "placar": "2 - 4",
+      "placar": {
+        "m": 2,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -19387,7 +19399,10 @@ window.DADOS_ECU = {
           "v": 2
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -19475,7 +19490,10 @@ window.DADOS_ECU = {
           "v": 2
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19563,7 +19581,10 @@ window.DADOS_ECU = {
           "v": 6
         }
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,

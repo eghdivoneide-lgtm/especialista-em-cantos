@@ -1,7 +1,5 @@
-// ============================================================
-// DADOS_MLS — ENRIQUECIMENTO TABELA (2026-06-11T16-32-26)
-// Total jogos: 207
-// ============================================================
+// DADOS_MLS — ENRIQUECIMENTO RICOS 2026-07-02
+// Total: 207
 
 window.DADOS_MLS = {
   "times": [
@@ -42,13 +40,13 @@ window.DADOS_MLS = {
       "mandante": "San Diego FC",
       "visitante": "Real Salt Lake",
       "gols": {
+        "ft": {
+          "m": 5,
+          "v": 0
+        },
         "ht": {
           "m": 0,
           "v": 0
-        },
-        "ft": {
-          "m": 2,
-          "v": 2
         }
       },
       "cantos": {
@@ -208,13 +206,13 @@ window.DADOS_MLS = {
       "mandante": "Portland Timbers",
       "visitante": "Los Angeles Galaxy",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -374,11 +372,11 @@ window.DADOS_MLS = {
       "mandante": "Minnesota United",
       "visitante": "Seattle Sounders",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -537,13 +535,13 @@ window.DADOS_MLS = {
       "mandante": "FC Cincinnati",
       "visitante": "CF Montreal",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -700,13 +698,13 @@ window.DADOS_MLS = {
       "mandante": "New York City",
       "visitante": "Inter Miami",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -863,13 +861,13 @@ window.DADOS_MLS = {
       "mandante": "Vancouver Whitecaps",
       "visitante": "San Jose Earthquakes",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1026,11 +1024,11 @@ window.DADOS_MLS = {
       "mandante": "Austin FC",
       "visitante": "Los Angeles FC",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -1189,13 +1187,13 @@ window.DADOS_MLS = {
       "mandante": "FC Dallas",
       "visitante": "Houston Dynamo",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1355,13 +1353,13 @@ window.DADOS_MLS = {
       "mandante": "Sporting Kansas City",
       "visitante": "Colorado Rapids",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1518,13 +1516,13 @@ window.DADOS_MLS = {
       "mandante": "St. Louis City",
       "visitante": "New England Revolution",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1681,11 +1679,11 @@ window.DADOS_MLS = {
       "mandante": "Atlanta Utd",
       "visitante": "DC United",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -1841,13 +1839,13 @@ window.DADOS_MLS = {
       "mandante": "Charlotte",
       "visitante": "New York Red Bulls",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 6,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2007,12 +2005,12 @@ window.DADOS_MLS = {
       "mandante": "Nashville SC",
       "visitante": "Orlando City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2170,13 +2168,13 @@ window.DADOS_MLS = {
       "mandante": "Philadelphia Union",
       "visitante": "Chicago Fire",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2333,13 +2331,13 @@ window.DADOS_MLS = {
       "mandante": "Toronto FC",
       "visitante": "Columbus Crew",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2496,13 +2494,13 @@ window.DADOS_MLS = {
       "mandante": "San Jose Earthquakes",
       "visitante": "Seattle Sounders",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2659,12 +2657,12 @@ window.DADOS_MLS = {
       "mandante": "Vancouver Whitecaps",
       "visitante": "Minnesota United",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 6,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2822,13 +2820,13 @@ window.DADOS_MLS = {
       "mandante": "New England Revolution",
       "visitante": "FC Cincinnati",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 6,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2988,12 +2986,12 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles FC",
       "visitante": "St. Louis City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -3145,13 +3143,13 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles Galaxy",
       "visitante": "Sporting Kansas City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3305,13 +3303,13 @@ window.DADOS_MLS = {
       "mandante": "Real Salt Lake",
       "visitante": "Austin FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3468,13 +3466,13 @@ window.DADOS_MLS = {
       "mandante": "Chicago Fire",
       "visitante": "DC United",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3631,13 +3629,13 @@ window.DADOS_MLS = {
       "mandante": "FC Dallas",
       "visitante": "San Diego FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3794,13 +3792,13 @@ window.DADOS_MLS = {
       "mandante": "Houston Dynamo",
       "visitante": "Portland Timbers",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3960,11 +3958,11 @@ window.DADOS_MLS = {
       "mandante": "Charlotte",
       "visitante": "Inter Miami",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4123,13 +4121,13 @@ window.DADOS_MLS = {
       "mandante": "New York City",
       "visitante": "Colorado Rapids",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4286,13 +4284,13 @@ window.DADOS_MLS = {
       "mandante": "Orlando City",
       "visitante": "CF Montreal",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4449,13 +4447,13 @@ window.DADOS_MLS = {
       "mandante": "Columbus Crew",
       "visitante": "Nashville SC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4612,13 +4610,13 @@ window.DADOS_MLS = {
       "mandante": "Atlanta Utd",
       "visitante": "Philadelphia Union",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4775,13 +4773,13 @@ window.DADOS_MLS = {
       "mandante": "Toronto FC",
       "visitante": "New York Red Bulls",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4938,13 +4936,13 @@ window.DADOS_MLS = {
       "mandante": "FC Cincinnati",
       "visitante": "Toronto FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5101,13 +5099,13 @@ window.DADOS_MLS = {
       "mandante": "New York Red Bulls",
       "visitante": "CF Montreal",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5261,12 +5259,12 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles FC",
       "visitante": "FC Dallas",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -5424,13 +5422,13 @@ window.DADOS_MLS = {
       "mandante": "Portland Timbers",
       "visitante": "Vancouver Whitecaps",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5587,13 +5585,13 @@ window.DADOS_MLS = {
       "mandante": "Colorado Rapids",
       "visitante": "Los Angeles Galaxy",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5753,13 +5751,13 @@ window.DADOS_MLS = {
       "mandante": "Nashville SC",
       "visitante": "Minnesota United",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5913,13 +5911,13 @@ window.DADOS_MLS = {
       "mandante": "Sporting Kansas City",
       "visitante": "San Diego FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6076,13 +6074,13 @@ window.DADOS_MLS = {
       "mandante": "St. Louis City",
       "visitante": "Seattle Sounders",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6239,13 +6237,13 @@ window.DADOS_MLS = {
       "mandante": "Atlanta Utd",
       "visitante": "Real Salt Lake",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6402,13 +6400,13 @@ window.DADOS_MLS = {
       "mandante": "Charlotte",
       "visitante": "Austin FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6571,11 +6569,11 @@ window.DADOS_MLS = {
       "mandante": "Columbus Crew",
       "visitante": "Chicago Fire",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -6734,13 +6732,13 @@ window.DADOS_MLS = {
       "mandante": "Philadelphia Union",
       "visitante": "San Jose Earthquakes",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6897,13 +6895,13 @@ window.DADOS_MLS = {
       "mandante": "DC United",
       "visitante": "Inter Miami",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7057,12 +7055,12 @@ window.DADOS_MLS = {
       "mandante": "New York City",
       "visitante": "Orlando City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -7226,12 +7224,12 @@ window.DADOS_MLS = {
       "mandante": "San Diego FC",
       "visitante": "St. Louis City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -7389,13 +7387,13 @@ window.DADOS_MLS = {
       "mandante": "Orlando City",
       "visitante": "Inter Miami",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7555,13 +7553,13 @@ window.DADOS_MLS = {
       "mandante": "Philadelphia Union",
       "visitante": "New York City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7721,12 +7719,12 @@ window.DADOS_MLS = {
       "mandante": "Austin FC",
       "visitante": "DC United",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -7884,12 +7882,12 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles Galaxy",
       "visitante": "Charlotte",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -8047,12 +8045,12 @@ window.DADOS_MLS = {
       "mandante": "Vancouver Whitecaps",
       "visitante": "Toronto FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -8207,11 +8205,11 @@ window.DADOS_MLS = {
       "mandante": "FC Dallas",
       "visitante": "Nashville SC",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -8370,13 +8368,13 @@ window.DADOS_MLS = {
       "mandante": "Houston Dynamo",
       "visitante": "Los Angeles FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8539,13 +8537,13 @@ window.DADOS_MLS = {
       "mandante": "Sporting Kansas City",
       "visitante": "Columbus Crew",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8702,13 +8700,13 @@ window.DADOS_MLS = {
       "mandante": "Real Salt Lake",
       "visitante": "Seattle Sounders",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8865,12 +8863,12 @@ window.DADOS_MLS = {
       "mandante": "San Jose Earthquakes",
       "visitante": "Atlanta Utd",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9028,12 +9026,12 @@ window.DADOS_MLS = {
       "mandante": "Colorado Rapids",
       "visitante": "Portland Timbers",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9194,12 +9192,12 @@ window.DADOS_MLS = {
       "mandante": "Minnesota United",
       "visitante": "FC Cincinnati",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9354,12 +9352,12 @@ window.DADOS_MLS = {
       "mandante": "Chicago Fire",
       "visitante": "CF Montreal",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9520,12 +9518,12 @@ window.DADOS_MLS = {
       "mandante": "New York Red Bulls",
       "visitante": "New England Revolution",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9683,12 +9681,12 @@ window.DADOS_MLS = {
       "mandante": "Seattle Sounders",
       "visitante": "Colorado Rapids",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9846,13 +9844,13 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles Galaxy",
       "visitante": "New York City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10012,13 +10010,13 @@ window.DADOS_MLS = {
       "mandante": "Portland Timbers",
       "visitante": "Columbus Crew",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10175,12 +10173,12 @@ window.DADOS_MLS = {
       "mandante": "San Diego FC",
       "visitante": "CF Montreal",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -10341,12 +10339,12 @@ window.DADOS_MLS = {
       "mandante": "San Jose Earthquakes",
       "visitante": "Sporting Kansas City",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -10504,12 +10502,12 @@ window.DADOS_MLS = {
       "mandante": "Los Angeles FC",
       "visitante": "Inter Miami",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -10667,13 +10665,13 @@ window.DADOS_MLS = {
       "mandante": "Austin FC",
       "visitante": "Minnesota United",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10830,13 +10828,13 @@ window.DADOS_MLS = {
       "mandante": "FC Dallas",
       "visitante": "Toronto FC",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10993,13 +10991,13 @@ window.DADOS_MLS = {
       "mandante": "Houston Dynamo",
       "visitante": "Chicago Fire",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -11156,13 +11154,13 @@ window.DADOS_MLS = {
       "mandante": "Nashville SC",
       "visitante": "New England Revolution",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -11316,12 +11314,12 @@ window.DADOS_MLS = {
       "mandante": "DC United",
       "visitante": "Philadelphia Union",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11482,13 +11480,13 @@ window.DADOS_MLS = {
       "mandante": "Orlando City",
       "visitante": "New York Red Bulls",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -11645,12 +11643,12 @@ window.DADOS_MLS = {
       "mandante": "Vancouver Whitecaps",
       "visitante": "Real Salt Lake",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11808,12 +11806,12 @@ window.DADOS_MLS = {
       "mandante": "FC Cincinnati",
       "visitante": "Atlanta Utd",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11971,13 +11969,13 @@ window.DADOS_MLS = {
       "mandante": "St. Louis City",
       "visitante": "Charlotte",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12135,13 +12133,13 @@ window.DADOS_MLS = {
       "visitante": "Minnesota United",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12298,11 +12296,11 @@ window.DADOS_MLS = {
       "visitante": "San Diego FC",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 3,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 3,
           "v": 0
         }
@@ -12467,12 +12465,12 @@ window.DADOS_MLS = {
       "visitante": "Portland Timbers",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
           "v": 2
         }
       },
@@ -12627,12 +12625,12 @@ window.DADOS_MLS = {
       "visitante": "Orlando City",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 5,
-          "v": 0
-        },
         "ft": {
           "m": 6,
+          "v": 0
+        },
+        "ht": {
+          "m": 5,
           "v": 0
         }
       },
@@ -12790,11 +12788,11 @@ window.DADOS_MLS = {
       "visitante": "Nashville SC",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -12950,13 +12948,13 @@ window.DADOS_MLS = {
       "visitante": "Seattle Sounders",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13113,13 +13111,13 @@ window.DADOS_MLS = {
       "visitante": "Columbus Crew",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13273,13 +13271,13 @@ window.DADOS_MLS = {
       "visitante": "Philadelphia Union",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -13436,13 +13434,13 @@ window.DADOS_MLS = {
       "visitante": "FC Dallas",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 0,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
         }
       },
       "cantos": {
@@ -13599,13 +13597,13 @@ window.DADOS_MLS = {
       "visitante": "Austin FC",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -13762,13 +13760,13 @@ window.DADOS_MLS = {
       "visitante": "St. Louis City",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13925,13 +13923,13 @@ window.DADOS_MLS = {
       "visitante": "FC Cincinnati",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -14091,12 +14089,12 @@ window.DADOS_MLS = {
       "visitante": "CF Montreal",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -14254,13 +14252,13 @@ window.DADOS_MLS = {
       "visitante": "Sporting Kansas City",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -14414,13 +14412,13 @@ window.DADOS_MLS = {
       "visitante": "Colorado Rapids",
       "data": "06/04/2026",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -14585,12 +14583,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -14750,11 +14748,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -14919,13 +14917,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 6,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -15080,11 +15078,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -15244,13 +15242,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15408,13 +15406,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -15569,13 +15567,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -15733,13 +15731,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -15894,11 +15892,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -16052,12 +16050,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -16213,13 +16211,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -16377,13 +16375,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -16541,13 +16539,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -16705,13 +16703,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -16873,13 +16871,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17039,13 +17037,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 4,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 4,
+          "v": 1
         }
       },
       "cantos": {
@@ -17204,13 +17202,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -17363,11 +17361,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 2
         }
@@ -17530,12 +17528,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -17695,13 +17693,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17860,13 +17858,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -18025,12 +18023,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -18188,13 +18186,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18353,13 +18351,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18520,11 +18518,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -18686,13 +18684,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
         }
       },
       "cantos": {
@@ -18854,13 +18852,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -19020,13 +19018,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -19187,11 +19185,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 3,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 3,
           "v": 0
         }
@@ -19354,13 +19352,13 @@ window.DADOS_MLS = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19401,11 +19399,11 @@ window.DADOS_MLS = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -19448,11 +19446,11 @@ window.DADOS_MLS = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -19495,13 +19493,13 @@ window.DADOS_MLS = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -19542,11 +19540,11 @@ window.DADOS_MLS = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -19589,13 +19587,13 @@ window.DADOS_MLS = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19636,11 +19634,11 @@ window.DADOS_MLS = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -19683,12 +19681,12 @@ window.DADOS_MLS = {
         "v": 0
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -19730,13 +19728,13 @@ window.DADOS_MLS = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -19777,13 +19775,13 @@ window.DADOS_MLS = {
         "v": 3
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -19824,13 +19822,13 @@ window.DADOS_MLS = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -19871,11 +19869,11 @@ window.DADOS_MLS = {
         "v": 1
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 1
         }
@@ -19918,12 +19916,12 @@ window.DADOS_MLS = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -19965,11 +19963,11 @@ window.DADOS_MLS = {
         "v": 1
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -20012,12 +20010,12 @@ window.DADOS_MLS = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -20046,6 +20044,91 @@ window.DADOS_MLS = {
         "pts_mandante": 20,
         "pos_visitante": 3,
         "pts_visitante": 26
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 15
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 8
+        },
+        "cantos": {
+          "m": 7,
+          "v": 0
+        },
+        "passes": {
+          "m": "(304/397)",
+          "v": "85%"
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 3,
+          "v": 1
+        },
+        "faltas": {
+          "m": 16,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 40,
+          "v": 60
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cantos": {
+          "m": 5,
+          "v": 0
+        },
+        "passes": {
+          "m": "(159/199)",
+          "v": "84%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "3.50",
+        "oddV": "2.70"
       }
     },
     {
@@ -20057,12 +20140,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -20222,13 +20305,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -20387,13 +20470,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -20552,13 +20635,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -20717,13 +20800,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 2
         }
       },
       "cantos": {
@@ -20882,12 +20965,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -21047,12 +21130,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -21215,13 +21298,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -21380,12 +21463,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -21545,13 +21628,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21710,11 +21793,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -21872,13 +21955,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 3,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 4
+        },
+        "ht": {
+          "m": 3,
+          "v": 1
         }
       },
       "cantos": {
@@ -22037,11 +22120,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -22199,11 +22282,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -22364,11 +22447,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -22529,13 +22612,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 1,
           "v": 4
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -22694,13 +22777,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -22859,12 +22942,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -23021,12 +23104,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 4,
-          "v": 0
-        },
         "ft": {
           "m": 6,
+          "v": 0
+        },
+        "ht": {
+          "m": 4,
           "v": 0
         }
       },
@@ -23186,13 +23269,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -23351,12 +23434,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -23513,11 +23596,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -23681,12 +23764,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
           "v": 2
         }
       },
@@ -23849,13 +23932,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -24014,13 +24097,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -24179,12 +24262,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
           "v": 2
         }
       },
@@ -24344,12 +24427,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -24509,12 +24592,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -24671,13 +24754,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -24836,13 +24919,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -24998,12 +25081,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25163,12 +25246,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -25328,13 +25411,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -25493,13 +25576,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -25658,11 +25741,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -25823,13 +25906,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -25988,13 +26071,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -26150,13 +26233,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -26312,13 +26395,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -26477,13 +26560,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 5
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -26642,13 +26725,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
         }
       },
       "cantos": {
@@ -26807,13 +26890,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -26972,13 +27055,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -27137,11 +27220,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -27302,13 +27385,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -27464,11 +27547,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -27629,13 +27712,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -27791,12 +27874,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -27956,13 +28039,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -28121,13 +28204,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -28286,13 +28369,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -28451,12 +28534,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -28619,12 +28702,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -28781,13 +28864,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -28949,12 +29032,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -29111,13 +29194,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -29276,13 +29359,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -29441,12 +29524,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -29606,13 +29689,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -29771,12 +29854,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -29929,12 +30012,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 4,
-          "v": 4
-        },
         "ft": {
           "m": 6,
+          "v": 4
+        },
+        "ht": {
+          "m": 4,
           "v": 4
         }
       },
@@ -30093,11 +30176,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -30257,11 +30340,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -30421,11 +30504,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -30588,11 +30671,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 3
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 3
         }
@@ -30752,13 +30835,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
         }
       },
       "cantos": {
@@ -30916,12 +30999,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -31080,12 +31163,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -31244,12 +31327,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
           "v": 2
         }
       },
@@ -31408,11 +31491,11 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -31575,13 +31658,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 4
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -31739,13 +31822,13 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 6,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -31903,12 +31986,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -32067,12 +32150,12 @@ window.DADOS_MLS = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },

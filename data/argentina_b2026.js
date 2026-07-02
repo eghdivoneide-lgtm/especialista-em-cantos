@@ -1,5 +1,5 @@
-// DADOS_ARG_B — REBUILD DEDUP 2026-06-30
-// Total jogos: 323
+// DADOS_ARG_B — ENRIQUECIMENTO RICOS 2026-07-02
+// Total: 323
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
@@ -76,13 +76,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "3-0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/MwBSuBt1/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -208,13 +214,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/EoTZwkBD/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -340,13 +352,19 @@ window.DADOS_ARG_B = {
           "v": 20
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/0SI3K3EN/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -472,13 +490,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "3-1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/xYwUtcQ1/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -604,13 +628,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/jy6tj13F/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -736,13 +766,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/EFU9Solf/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -868,13 +904,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/zRzEADS8/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1000,13 +1042,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/v1CBhu7N/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1132,13 +1180,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/4zt4m2rA/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1264,13 +1318,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/YByy7mu0/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1396,13 +1456,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/na9wXtbT/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1534,13 +1600,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/407jHw2E/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1669,13 +1741,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/zNp2gFhA/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1801,13 +1879,19 @@ window.DADOS_ARG_B = {
           "v": 13
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/SICrCQ3D/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -1933,13 +2017,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/xAip3VKr/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2065,13 +2155,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/hpE3f1xB/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2201,13 +2297,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Imy1U7Js/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2333,13 +2435,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/UuWmmglR/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2465,13 +2573,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/QBHJsXBl/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2597,13 +2711,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/fs6M1h3K/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2735,13 +2855,19 @@ window.DADOS_ARG_B = {
           "v": 15
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/WS25B8Vh/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -2867,13 +2993,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "0-3",
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/4vWF40I8/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3002,11 +3134,18 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "3-2",
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "url": "https://www.flashscore.com/match/IN7YiNY2/#/match-summary",
@@ -3130,13 +3269,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/8vZL8icL/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3268,13 +3413,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/QPdhdWQs/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3403,13 +3554,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/C6nMxoUi/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3541,13 +3698,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/06PO2vmL/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3673,13 +3836,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/0nwlpBFd/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3808,13 +3977,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/8EkVZTeK/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -3940,13 +4115,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/WUPfdN7b/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4072,13 +4253,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "1-3",
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/bybxVgSr/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4204,13 +4391,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/QoYS89Am/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4339,13 +4532,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/KlZngRFO/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4474,13 +4673,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "3-0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/O4U3gzA7/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4606,13 +4811,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/rmlAigNM/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4738,13 +4949,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/YDxukFJE/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -4870,13 +5087,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Mij1fAef/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5005,13 +5228,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/nPhU54aU/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5134,13 +5363,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/dxBfcIAr/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5263,13 +5498,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/SKPtnXpp/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5395,13 +5636,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/pzeh19ke/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5530,13 +5777,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/O4Mnbqwn/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5662,13 +5915,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/QqLUY2TG/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5794,13 +6053,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/GIkLrJek/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -5926,13 +6191,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/n3akluYR/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6058,13 +6329,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/nTSHQPI6/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6190,13 +6467,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/KIhRnAz2/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6322,13 +6605,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/bogrmJUp/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6456,13 +6745,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/WMsdkODc/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6588,13 +6883,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/EBfM7QUH/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6720,13 +7021,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/n147XXVj/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6852,13 +7159,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/SfUeLUtR/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -6990,13 +7303,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "3-0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/h4xo7vMG/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7119,13 +7438,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/CQhUu2NH/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7251,13 +7576,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/h2FeMPqB/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7383,13 +7714,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/AaZNbVom/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7515,13 +7852,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/veigeyOc/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7647,13 +7990,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Kh9zEnZ0/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7785,13 +8134,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "2-3",
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/reMQO3mJ/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -7917,13 +8272,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/SGkgRBR7/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8052,13 +8413,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Is09RKLj/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8190,13 +8557,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/E74AjSfJ/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8322,13 +8695,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/OMuvemoC/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8451,13 +8830,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/jutUAMMi/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8583,13 +8968,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/n7Zx90i4/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8721,13 +9112,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/f5l9hlQ6/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8853,13 +9250,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/j9sWd9Ga/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -8985,13 +9388,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/GvReedue/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9117,13 +9526,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/6kq1amK7/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9249,13 +9664,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/pvixvthU/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9381,13 +9802,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/611pTXde/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9513,13 +9940,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/tEddEVnQ/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9642,13 +10075,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/KCazFsxo/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9777,13 +10216,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "0-3",
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/Iq1D9n05/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -9909,13 +10354,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/OQFRF84l/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10044,13 +10495,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "2-2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/QkOvQ7pn/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10176,13 +10633,19 @@ window.DADOS_ARG_B = {
           "v": 17
         }
       },
-      "placar": "0-3",
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/IJHMzPb4/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10308,13 +10771,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "2-2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/ChkJlW5k/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10440,13 +10909,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/WnRnOoFb/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10572,13 +11047,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/ADEdDU0t/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10704,13 +11185,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/SQpOJJA6/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10836,13 +11323,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "2-2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/8p6cYIPa/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -10968,13 +11461,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/YNaSVvMi/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11100,13 +11599,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/h6ZYBpVI/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11235,13 +11740,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/8tW9Dc6N/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11367,13 +11878,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/fB9jQzjT/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11499,13 +12016,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "3-0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/AqL5QOSE/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11634,13 +12157,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/U5ykanUF/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11766,13 +12295,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "3-1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/vo8C5Tkd/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -11898,13 +12433,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Wxbz4GEi/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12027,13 +12568,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/hjmNlvAt/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12156,13 +12703,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       },
       "url": "https://www.flashscore.com/match/23iqSdLG/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12288,13 +12841,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/p6TJ2Lz8/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12420,13 +12979,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/S6l7RACF/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12558,13 +13123,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/fuBQEXS9/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12690,13 +13261,19 @@ window.DADOS_ARG_B = {
           "v": 1
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/nRs1FJyB/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12825,13 +13402,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "3-3",
+      "placar": {
+        "m": 3,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 3
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/QFycXicd/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -12957,13 +13540,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/6kw9rI5c/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13089,13 +13678,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/b9ggHKk1/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13221,13 +13816,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/dteWBPDL/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13353,13 +13954,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/ENKl5KeD/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13488,13 +14095,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/8rgabCrT/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13620,13 +14233,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "3-1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/WMi1FbKD/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13752,13 +14371,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "0-2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/xvDDUzPO/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -13884,13 +14509,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Sh9YCBcM/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14013,13 +14644,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/bqbwNAwK/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14145,13 +14782,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/APdODoq9/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14274,13 +14917,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/tCJ4WdfC/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14406,13 +15055,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/M76u92dl/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14538,13 +15193,19 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/URl9Hl1s/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14667,13 +15328,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/M3GTi4Mk/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14799,13 +15466,19 @@ window.DADOS_ARG_B = {
           "v": 1
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/0vqWHcuJ/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -14931,13 +15604,19 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/YRiFLutf/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15060,13 +15739,19 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/v1vgHu7b/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15189,13 +15874,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/jswIFSVg/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15321,13 +16012,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "3-0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/2JZdcQbS/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15453,13 +16150,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/4jdr2fq4/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15585,13 +16288,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/6ybzUIj4/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15717,13 +16426,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/2s0pJtLl/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15849,13 +16564,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/GQy363yq/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -15981,13 +16702,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/fL4m7tR0/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16119,13 +16846,19 @@ window.DADOS_ARG_B = {
           "v": 3
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/hGUVhj6j/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16251,13 +16984,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/lItWnIvg/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16383,13 +17122,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/IFHu8yUp/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16515,13 +17260,19 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/rZppJ1xn/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16650,13 +17401,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0-1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/EyIigZJF/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16785,13 +17542,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/2HWHtdzA/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -16917,13 +17680,19 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/nVHlzuem/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17046,13 +17815,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 2
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/tUCzTNmK/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17178,13 +17953,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/0Iki0YDG/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17310,13 +18091,19 @@ window.DADOS_ARG_B = {
           "v": 14
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Wb9EO2cR/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17442,13 +18229,19 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/KtoaTWs3/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17574,13 +18367,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/lvzB4s6e/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17706,13 +18505,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "1-1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/nwj57kLq/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17838,13 +18643,19 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "2-1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       },
       "url": "https://www.flashscore.com/match/bDHHGgbc/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -17970,13 +18781,19 @@ window.DADOS_ARG_B = {
           "v": 15
         }
       },
-      "placar": "2-0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/b7tQD606/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -18102,13 +18919,19 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/GnRIu1XP/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -18234,13 +19057,19 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "3-1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/UTJyjri2/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -18363,13 +19192,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
           "v": 0
         },
-        "ht": null
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/Q1l7N1Bs/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -18495,13 +19330,19 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "3-1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
           "v": 1
         },
-        "ht": null
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       },
       "url": "https://www.flashscore.com/match/6BEqeek3/#/match-summary",
       "liga": "Primera B Nacional (Argentina)",
@@ -18604,7 +19445,10 @@ window.DADOS_ARG_B = {
         "pos_visitante": null,
         "pts_visitante": null
       },
-      "placar": "1-2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -18730,7 +19574,10 @@ window.DADOS_ARG_B = {
         "pos_visitante": null,
         "pts_visitante": null
       },
-      "placar": "0-0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -18859,7 +19706,10 @@ window.DADOS_ARG_B = {
         "pos_visitante": null,
         "pts_visitante": null
       },
-      "placar": "2-2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -18984,7 +19834,10 @@ window.DADOS_ARG_B = {
         "pos_visitante": null,
         "pts_visitante": null
       },
-      "placar": "1-0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19006,12 +19859,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -19144,13 +19997,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -19282,13 +20135,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -19417,12 +20270,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -19555,11 +20408,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -19693,12 +20546,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -19828,13 +20681,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 6,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -19960,11 +20813,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -20096,11 +20949,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -20231,11 +21084,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -20371,12 +21224,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -20506,11 +21359,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -20642,11 +21495,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -20778,11 +21631,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -20910,11 +21763,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -21045,12 +21898,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -21186,11 +22039,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -21321,11 +22174,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -21487,7 +22340,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -21578,7 +22434,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21670,7 +22529,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -21761,7 +22623,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21852,7 +22717,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -21941,7 +22809,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22032,7 +22903,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22124,7 +22998,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22216,7 +23093,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22306,7 +23186,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22397,7 +23280,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22488,7 +23374,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22579,7 +23468,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22670,7 +23562,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22761,7 +23656,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22851,7 +23749,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22942,7 +23843,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -23031,7 +23935,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -23093,13 +24000,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -23222,11 +24129,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -23357,13 +24264,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -23495,13 +24402,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -23630,13 +24537,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -23765,13 +24672,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 4
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -23900,13 +24807,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -24038,12 +24945,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -24176,12 +25083,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -24314,12 +25221,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -24449,12 +25356,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -24584,12 +25491,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -24719,13 +25626,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -24854,12 +25761,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -24989,11 +25896,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -25127,12 +26034,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -25262,12 +26169,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -25397,12 +26304,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25535,11 +26442,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -25667,12 +26574,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -25802,13 +26709,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -25938,13 +26845,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -26077,13 +26984,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26213,13 +27120,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -26348,11 +27255,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -26481,13 +27388,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26617,11 +27524,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -26752,12 +27659,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -26884,12 +27791,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -27017,13 +27924,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -27152,13 +28059,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -27287,13 +28194,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 4
-        },
         "ft": {
           "m": 0,
           "v": 5
+        },
+        "ht": {
+          "m": 0,
+          "v": 4
         }
       },
       "cantos": {
@@ -27422,11 +28329,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -27558,11 +28465,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -27693,13 +28600,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -27829,11 +28736,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -27964,12 +28871,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -28099,12 +29006,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -28234,11 +29141,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -28366,12 +29273,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -28501,12 +29408,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -28642,12 +29549,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -28783,13 +29690,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -28921,12 +29828,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -29056,13 +29963,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -29191,12 +30098,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -29326,13 +30233,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -29467,11 +30374,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -29602,11 +30509,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -29737,11 +30644,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -29872,12 +30779,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -30004,13 +30911,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -30145,13 +31052,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -30282,12 +31189,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -30416,13 +31323,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -30550,13 +31457,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -30684,12 +31591,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -30818,11 +31725,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -30949,12 +31856,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
           "v": 2
         }
       },
@@ -31086,12 +31993,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -31220,12 +32127,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -31351,12 +32258,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -31491,11 +32398,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -31622,12 +32529,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -31756,13 +32663,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -31887,12 +32794,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -32018,12 +32925,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -32152,12 +33059,12 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -32286,13 +33193,13 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -32417,11 +33324,11 @@ window.DADOS_ARG_B = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -32566,7 +33473,10 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -32616,6 +33526,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -32645,7 +33599,10 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -32696,6 +33653,46 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        }
       }
     },
     {
@@ -32725,7 +33722,10 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -32775,6 +33775,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -32804,7 +33848,10 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -32853,6 +33900,54 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        }
       }
     },
     {
@@ -32882,7 +33977,10 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -32931,6 +34029,54 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 9
+        },
+        "cantos": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 1
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        }
       }
     },
     {
@@ -32960,7 +34106,10 @@ window.DADOS_ARG_B = {
           "v": 2
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33010,6 +34159,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 1,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 0
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -33039,7 +34232,10 @@ window.DADOS_ARG_B = {
           "v": 9
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33089,6 +34285,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 9
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -33118,7 +34358,10 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -33168,6 +34411,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 4
+        },
+        "cantos": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 3
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 3
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        }
       }
     },
     {
@@ -33197,7 +34484,10 @@ window.DADOS_ARG_B = {
           "v": 6
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33246,6 +34536,54 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 0
+        },
+        "cantos": {
+          "m": 5,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 36,
+          "v": 64
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 0,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
       }
     },
     {
@@ -33275,7 +34613,10 @@ window.DADOS_ARG_B = {
           "v": 5
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -33325,6 +34666,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cantos": {
+          "m": 8,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 57,
+          "v": 43
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -33354,7 +34739,10 @@ window.DADOS_ARG_B = {
           "v": 11
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -33404,6 +34792,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 11
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 4
+        },
+        "cantos": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -33433,7 +34865,10 @@ window.DADOS_ARG_B = {
           "v": 12
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33482,6 +34917,54 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 12
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 9
+        },
+        "cantos": {
+          "m": 3,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cantos": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -33511,7 +34994,10 @@ window.DADOS_ARG_B = {
           "v": 0
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33561,6 +35047,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 0
+        },
+        "chutes_alvo": {
+          "m": 5,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -33590,7 +35120,10 @@ window.DADOS_ARG_B = {
           "v": 15
         }
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -33640,6 +35173,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 15
+        },
+        "chutes_alvo": {
+          "m": 6,
+          "v": 7
+        },
+        "cantos": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cantos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -33669,7 +35246,10 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -33717,6 +35297,58 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 2
+        },
+        "cantos": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -33746,7 +35378,10 @@ window.DADOS_ARG_B = {
           "v": 7
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -33796,6 +35431,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 7,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 2,
+          "v": 0
+        },
+        "cantos": {
+          "m": 6,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -33825,7 +35504,10 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "3 - 0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -33872,6 +35554,50 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 8,
+          "v": 3
+        },
+        "cantos": {
+          "m": 3,
+          "v": 10
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -33901,7 +35627,10 @@ window.DADOS_ARG_B = {
           "v": 4
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -33950,6 +35679,54 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 0
+        },
+        "cantos": {
+          "m": 7,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -33979,7 +35756,10 @@ window.DADOS_ARG_B = {
           "v": 8
         }
       },
-      "placar": "3 - 2",
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -34007,6 +35787,50 @@ window.DADOS_ARG_B = {
         "metodo_extracao": {
           "ft": "DOM",
           "ht": "DOM"
+        }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 8
+        },
+        "chutes_alvo": {
+          "m": 11,
+          "v": 4
+        },
+        "cantos": {
+          "m": 10,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 1
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 6,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 1
         }
       }
     },
@@ -34037,7 +35861,10 @@ window.DADOS_ARG_B = {
           "v": 10
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -34088,6 +35915,46 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 9,
+          "v": 2
+        },
+        "cantos": {
+          "m": 9,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cantos": {
+          "m": 5,
+          "v": 1
+        }
       }
     },
     {
@@ -34129,7 +35996,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -34221,7 +36091,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -34311,7 +36184,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 3",
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -34403,7 +36279,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -34492,7 +36371,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "4 - 1",
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 4,
@@ -34581,7 +36463,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -34673,7 +36558,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -34764,7 +36652,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -34855,7 +36746,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -34945,7 +36839,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -35036,7 +36933,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -35126,7 +37026,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -35216,7 +37119,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -35306,7 +37212,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -35397,7 +37306,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 3",
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -35488,7 +37400,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -35579,7 +37494,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -35670,7 +37588,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -35760,7 +37681,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -35848,7 +37772,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 3",
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -35941,7 +37868,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -36031,7 +37961,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -36122,7 +38055,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "3 - 1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -36213,7 +38149,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -36304,7 +38243,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -36395,7 +38337,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -36486,7 +38431,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -36577,7 +38525,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -36666,7 +38617,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -36757,7 +38711,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -36847,7 +38804,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -36938,7 +38898,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -37028,7 +38991,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -37116,7 +39082,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "3 - 1",
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -37209,7 +39178,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -37300,7 +39272,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "4 - 0",
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 4,
@@ -37392,7 +39367,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -37481,7 +39459,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 3",
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -37573,7 +39554,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -37664,7 +39648,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -37755,7 +39742,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -37846,7 +39836,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -37938,7 +39931,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -38029,7 +40025,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -38120,7 +40119,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -38211,7 +40213,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -38299,7 +40304,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -38392,7 +40400,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -38483,7 +40494,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -38574,7 +40588,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -38666,7 +40683,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -38757,7 +40777,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -38847,7 +40870,10 @@ window.DADOS_ARG_B = {
         "faltas": null,
         "defesas_goleiro": null
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,

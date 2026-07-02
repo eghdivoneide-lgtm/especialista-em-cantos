@@ -1,5 +1,5 @@
-// DADOS_ARG — INJEÇÃO COLHEITA COPA 2026-06-29
-// Total jogos: 254
+// DADOS_ARG — ENRIQUECIMENTO RICOS 2026-07-02
+// Total: 254
 
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina 2026",
@@ -44,13 +44,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -206,11 +206,11 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 1,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -368,11 +368,11 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 1,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -530,13 +530,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -689,13 +689,13 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -854,13 +854,13 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1019,13 +1019,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1181,13 +1181,13 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1343,13 +1343,13 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1502,13 +1502,13 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1664,13 +1664,13 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1826,13 +1826,13 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1990,12 +1990,12 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2154,12 +2154,12 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2319,12 +2319,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 1,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2481,13 +2481,13 @@ window.DADOS_ARG = {
       "visitante": "Instituto",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2640,13 +2640,13 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2802,13 +2802,13 @@ window.DADOS_ARG = {
       "visitante": "Independiente",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2964,13 +2964,13 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3126,11 +3126,11 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 2,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -3288,13 +3288,13 @@ window.DADOS_ARG = {
       "visitante": "Ind. Rivadavia",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3450,13 +3450,13 @@ window.DADOS_ARG = {
       "visitante": "Boca Juniors",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3609,12 +3609,12 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -3777,13 +3777,13 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3936,11 +3936,11 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 2,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4098,13 +4098,13 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4263,13 +4263,13 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4425,11 +4425,11 @@ window.DADOS_ARG = {
       "visitante": "Argentinos Jrs",
       "rodada": 2,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4584,13 +4584,13 @@ window.DADOS_ARG = {
       "visitante": "Tigre",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4743,12 +4743,12 @@ window.DADOS_ARG = {
       "visitante": "Banfield",
       "rodada": 2,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -4911,13 +4911,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5073,13 +5073,13 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5235,12 +5235,12 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -5397,13 +5397,13 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5559,12 +5559,12 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -5721,11 +5721,11 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 3,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -5883,13 +5883,13 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6045,11 +6045,11 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 3,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -6213,12 +6213,12 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -6381,11 +6381,11 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 3,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -6537,13 +6537,13 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6699,13 +6699,13 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6861,13 +6861,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7023,13 +7023,13 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7185,13 +7185,13 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 3,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7344,11 +7344,11 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 4,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -7503,11 +7503,11 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 4,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -7665,11 +7665,11 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 4,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -7827,11 +7827,11 @@ window.DADOS_ARG = {
       "visitante": "Argentinos Jrs",
       "rodada": 4,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -7991,11 +7991,11 @@ window.DADOS_ARG = {
       "visitante": "Tigre",
       "rodada": 4,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -8155,12 +8155,12 @@ window.DADOS_ARG = {
       "visitante": "Banfield",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -8319,13 +8319,13 @@ window.DADOS_ARG = {
       "visitante": "Boca Juniors",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8480,13 +8480,13 @@ window.DADOS_ARG = {
       "visitante": "Independiente",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8641,12 +8641,12 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -8805,12 +8805,12 @@ window.DADOS_ARG = {
       "visitante": "Instituto",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -8969,13 +8969,13 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -9016,12 +9016,12 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9063,13 +9063,13 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -9225,13 +9225,13 @@ window.DADOS_ARG = {
       "visitante": "Ind. Rivadavia",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -9387,12 +9387,12 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 4,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9549,12 +9549,12 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 5,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9711,12 +9711,12 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 5,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9873,13 +9873,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 5,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10035,11 +10035,11 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 5,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -10197,12 +10197,12 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 5,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -10362,13 +10362,13 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 5,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10524,13 +10524,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10683,12 +10683,12 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -10845,13 +10845,13 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -11007,12 +11007,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11169,11 +11169,11 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 6,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -11331,11 +11331,11 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 6,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -11493,12 +11493,12 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11655,12 +11655,12 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11817,13 +11817,13 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 6,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -11979,13 +11979,13 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12144,12 +12144,12 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -12306,13 +12306,13 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12468,11 +12468,11 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 7,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -12630,13 +12630,13 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12792,13 +12792,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -12954,12 +12954,12 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13116,13 +13116,13 @@ window.DADOS_ARG = {
       "visitante": "Independiente",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13275,11 +13275,11 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 7,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -13440,12 +13440,12 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13602,11 +13602,11 @@ window.DADOS_ARG = {
       "visitante": "Tigre",
       "rodada": 7,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -13764,12 +13764,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13926,12 +13926,12 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14088,12 +14088,12 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 7,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14250,11 +14250,11 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 8,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -14409,13 +14409,13 @@ window.DADOS_ARG = {
       "visitante": "Instituto",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -14568,12 +14568,12 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14730,13 +14730,13 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -14892,13 +14892,13 @@ window.DADOS_ARG = {
       "visitante": "Independiente",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15057,13 +15057,13 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15222,13 +15222,13 @@ window.DADOS_ARG = {
       "visitante": "Tigre",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15384,11 +15384,11 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 8,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -15546,13 +15546,13 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15708,13 +15708,13 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15870,13 +15870,13 @@ window.DADOS_ARG = {
       "visitante": "Ind. Rivadavia",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -16038,13 +16038,13 @@ window.DADOS_ARG = {
       "visitante": "Banfield",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -16197,12 +16197,12 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 8,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -16365,13 +16365,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -16527,12 +16527,12 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -16689,11 +16689,11 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 9,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -16851,13 +16851,13 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17013,13 +17013,13 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17175,13 +17175,13 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17337,13 +17337,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17499,13 +17499,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17661,13 +17661,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -17823,11 +17823,11 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 9,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -17985,13 +17985,13 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18144,12 +18144,12 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -18306,12 +18306,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -18468,13 +18468,13 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18630,13 +18630,13 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 9,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18792,13 +18792,13 @@ window.DADOS_ARG = {
       "visitante": "Boca Juniors",
       "rodada": 10,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -18954,13 +18954,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 10,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19116,13 +19116,13 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 10,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19275,11 +19275,11 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 10,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -19440,13 +19440,13 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 10,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19602,13 +19602,13 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 10,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -19764,11 +19764,11 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 10,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -19926,13 +19926,13 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -20088,13 +20088,13 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -20250,13 +20250,13 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -20412,11 +20412,11 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 11,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -20574,13 +20574,13 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -20739,12 +20739,12 @@ window.DADOS_ARG = {
       "visitante": "Instituto",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -20901,13 +20901,13 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21063,13 +21063,13 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21228,13 +21228,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21390,13 +21390,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21552,13 +21552,13 @@ window.DADOS_ARG = {
       "visitante": "Banfield",
       "rodada": 11,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21714,13 +21714,13 @@ window.DADOS_ARG = {
       "visitante": "Ind. Rivadavia",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -21876,11 +21876,11 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 12,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -22038,12 +22038,12 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -22206,13 +22206,13 @@ window.DADOS_ARG = {
       "visitante": "Boca Juniors",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -22368,13 +22368,13 @@ window.DADOS_ARG = {
       "visitante": "Argentinos Jrs",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -22530,13 +22530,13 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -22695,11 +22695,11 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 12,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -22857,13 +22857,13 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 5
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -23019,12 +23019,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -23181,13 +23181,13 @@ window.DADOS_ARG = {
       "visitante": "Independiente",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -23343,12 +23343,12 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -23505,13 +23505,13 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -23667,12 +23667,12 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 12,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -23826,12 +23826,12 @@ window.DADOS_ARG = {
       "visitante": "Tigre",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -23991,12 +23991,12 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia L.P.",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -24153,13 +24153,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -24315,12 +24315,12 @@ window.DADOS_ARG = {
       "visitante": "Gimnasia Mendoza",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -24480,12 +24480,12 @@ window.DADOS_ARG = {
       "visitante": "Union de Santa Fe",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -24648,13 +24648,13 @@ window.DADOS_ARG = {
       "visitante": "Talleres Cordoba",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -24813,13 +24813,13 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -24975,12 +24975,12 @@ window.DADOS_ARG = {
       "visitante": "Aldosivi",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25140,13 +25140,13 @@ window.DADOS_ARG = {
       "visitante": "River Plate",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -25302,12 +25302,12 @@ window.DADOS_ARG = {
       "visitante": "Instituto",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25464,12 +25464,12 @@ window.DADOS_ARG = {
       "visitante": "Rosario Central",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25623,12 +25623,12 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25785,12 +25785,12 @@ window.DADOS_ARG = {
       "visitante": "Central Cordoba",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 5,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -25947,11 +25947,11 @@ window.DADOS_ARG = {
       "visitante": "Barracas Central",
       "rodada": 13,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -26109,13 +26109,13 @@ window.DADOS_ARG = {
       "visitante": "San Lorenzo",
       "rodada": 13,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26271,13 +26271,13 @@ window.DADOS_ARG = {
       "visitante": "Lanus",
       "rodada": 14,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26433,13 +26433,13 @@ window.DADOS_ARG = {
       "visitante": "Argentinos Jrs",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26597,11 +26597,11 @@ window.DADOS_ARG = {
       "visitante": "Platense",
       "rodada": 15,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -26760,13 +26760,13 @@ window.DADOS_ARG = {
       "visitante": "Sarmiento Junin",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -26923,13 +26923,13 @@ window.DADOS_ARG = {
       "visitante": "Ind. Rivadavia",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -27086,13 +27086,13 @@ window.DADOS_ARG = {
       "visitante": "Boca Juniors",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -27249,13 +27249,13 @@ window.DADOS_ARG = {
       "visitante": "Velez Sarsfield",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -27412,12 +27412,12 @@ window.DADOS_ARG = {
       "visitante": "Dep. Riestra",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -27578,12 +27578,12 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes L.P.",
       "rodada": 15,
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -27745,11 +27745,11 @@ window.DADOS_ARG = {
       "visitante": "Racing Club",
       "rodada": 15,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -27908,11 +27908,11 @@ window.DADOS_ARG = {
       "visitante": "Atl. Tucuman",
       "rodada": 15,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 1
         }
@@ -28071,11 +28071,11 @@ window.DADOS_ARG = {
       "visitante": "Estudiantes Rio Cuarto",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -28237,11 +28237,11 @@ window.DADOS_ARG = {
       "visitante": "Belgrano",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 3,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 3,
           "v": 0
         }
@@ -28400,11 +28400,11 @@ window.DADOS_ARG = {
       "visitante": "Newells Old Boys",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 3
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 3
         }
@@ -28569,11 +28569,11 @@ window.DADOS_ARG = {
       "visitante": "Huracan",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 3
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 3
         }
@@ -28732,11 +28732,11 @@ window.DADOS_ARG = {
       "visitante": "Defensa y Justicia",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -28895,11 +28895,11 @@ window.DADOS_ARG = {
       "visitante": "Banfield",
       "rodada": 16,
       "gols": {
-        "ht": {
+        "ft": {
           "m": 3,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 3,
           "v": 2
         }
@@ -29060,11 +29060,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -29225,12 +29225,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -29390,13 +29390,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -29553,13 +29553,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -29716,13 +29716,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -29882,11 +29882,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -30045,12 +30045,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -30208,11 +30208,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -30371,13 +30371,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -30534,11 +30534,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -30697,11 +30697,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -30860,12 +30860,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -31023,12 +31023,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -31192,13 +31192,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -31352,11 +31352,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -31515,12 +31515,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -31680,13 +31680,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -31845,11 +31845,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -32010,11 +32010,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -32175,13 +32175,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -32340,11 +32340,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -32505,13 +32505,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -32667,11 +32667,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -32832,11 +32832,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -32997,13 +32997,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -33165,12 +33165,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -33330,12 +33330,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -33495,13 +33495,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -33657,11 +33657,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -33822,13 +33822,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -33990,12 +33990,12 @@ window.DADOS_ARG = {
         "v": 0
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -34037,13 +34037,13 @@ window.DADOS_ARG = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -34084,11 +34084,11 @@ window.DADOS_ARG = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -34131,11 +34131,11 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -34178,13 +34178,13 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -34225,11 +34225,11 @@ window.DADOS_ARG = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -34272,11 +34272,11 @@ window.DADOS_ARG = {
         "v": 0
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -34319,13 +34319,13 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -34366,12 +34366,12 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 5,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -34400,6 +34400,95 @@ window.DADOS_ARG = {
         "pts_mandante": null,
         "pos_visitante": 15,
         "pts_visitante": null
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 24,
+          "v": 7
+        },
+        "chutes_alvo": {
+          "m": 10,
+          "v": 2
+        },
+        "cantos": {
+          "m": 11,
+          "v": 2
+        },
+        "passes": {
+          "m": "(199/259)",
+          "v": "70%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 6
+        },
+        "cartoes_vermelhos": {
+          "m": 0,
+          "v": 1
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 14,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 5
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cantos": {
+          "m": 7,
+          "v": 2
+        },
+        "passes": {
+          "m": "(102/131)",
+          "v": "67%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 0
+        },
+        "faltas": {
+          "m": 6,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.10",
+        "oddV": "5.00"
       }
     },
     {
@@ -34413,11 +34502,11 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -34447,6 +34536,99 @@ window.DADOS_ARG = {
         "pts_mandante": null,
         "pos_visitante": 5,
         "pts_visitante": null
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 6
+        },
+        "passes": {
+          "m": "(263/357)",
+          "v": "82%"
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 5
+        },
+        "faltas": {
+          "m": 16,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 45,
+          "v": 55
+        },
+        "finalizacoes": {
+          "m": 3,
+          "v": 4
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 1,
+          "v": 3
+        },
+        "passes": {
+          "m": "(142/190)",
+          "v": "83%"
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "cartoes_vermelhos": {
+          "m": 1,
+          "v": 0
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": {
+          "m": 8,
+          "v": 2
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "5-3-2",
+        "v": "4-1-2-1-2"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "2.85",
+        "oddV": "4.33"
       }
     },
     {
@@ -34460,13 +34642,13 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -34494,6 +34676,91 @@ window.DADOS_ARG = {
         "pts_mandante": null,
         "pos_visitante": 11,
         "pts_visitante": null
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 6
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cantos": {
+          "m": 4,
+          "v": 3
+        },
+        "passes": {
+          "m": "(312/385)",
+          "v": "75%"
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 10,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 2,
+          "v": 2
+        },
+        "chutes_alvo": {
+          "m": 0,
+          "v": 1
+        },
+        "cantos": {
+          "m": 2,
+          "v": 0
+        },
+        "passes": {
+          "m": "(134/165)",
+          "v": "80%"
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "impedimentos": {
+          "m": 0,
+          "v": 1
+        },
+        "faltas": {
+          "m": 5,
+          "v": 6
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "3-4-2-1"
+      },
+      "mercado": {
+        "oddM": "2.75",
+        "oddEmpate": "2.82",
+        "oddV": "2.35"
       }
     },
     {
@@ -34507,13 +34774,13 @@ window.DADOS_ARG = {
         "v": 1
       },
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -34541,6 +34808,91 @@ window.DADOS_ARG = {
         "pts_mandante": null,
         "pos_visitante": 4,
         "pts_visitante": null
+      },
+      "estatisticas_ft": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 10
+        },
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cantos": {
+          "m": 3,
+          "v": 2
+        },
+        "passes": {
+          "m": "(288/387)",
+          "v": "68%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 4
+        },
+        "impedimentos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": {
+          "m": 19,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "estatisticas_ht": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 5
+        },
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cantos": {
+          "m": 1,
+          "v": 1
+        },
+        "passes": {
+          "m": "(161/206)",
+          "v": "68%"
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        },
+        "impedimentos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 9,
+          "v": 5
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "5-3-2"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.85",
+        "oddV": "3.75"
       }
     },
     {
@@ -34554,13 +34906,13 @@ window.DADOS_ARG = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -34601,13 +34953,13 @@ window.DADOS_ARG = {
         "v": 2
       },
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -34646,13 +34998,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -34817,13 +35169,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -34982,12 +35334,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -35147,11 +35499,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -35313,12 +35665,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -35479,12 +35831,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -35645,11 +35997,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -35811,13 +36163,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -35979,11 +36331,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -36144,13 +36496,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -36306,13 +36658,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -36474,12 +36826,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -36639,12 +36991,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
           "v": 2
         }
       },
@@ -36804,11 +37156,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -36969,13 +37321,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -37133,12 +37485,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -37298,12 +37650,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -37460,11 +37812,11 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -37628,13 +37980,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -37799,13 +38151,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -37964,12 +38316,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -38129,12 +38481,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -38294,13 +38646,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -38459,13 +38811,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -38627,13 +38979,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -38795,13 +39147,13 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -38960,12 +39312,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -39125,12 +39477,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -39290,12 +39642,12 @@ window.DADOS_ARG = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -39491,7 +39843,10 @@ window.DADOS_ARG = {
           "v": 2
         }
       },
-      "placar": "2 - 3",
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 2,

@@ -1,5 +1,5 @@
-// DADOS_CHI — INJEÇÃO COLHEITA COPA 2026-06-29
-// Total jogos: 114
+// DADOS_CHI — ENRIQUECIMENTO RICOS 2026-07-02
+// Total: 114
 
 window.DADOS_CHI = {
   "temporada": "2026",
@@ -170,6 +170,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -318,6 +332,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -466,6 +494,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -614,6 +656,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -762,6 +818,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -913,6 +983,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -1058,6 +1142,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 1"
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
+        }
       }
     },
     {
@@ -1212,6 +1310,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "6 - 1"
+      },
+      "placar": {
+        "m": 6,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 6,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
       }
     },
     {
@@ -1360,6 +1472,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "4 - 0"
+      },
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -1511,6 +1637,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 3",
         "ft": "3 - 4"
+      },
+      "placar": {
+        "m": 3,
+        "v": 4
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 4
+        },
+        "ht": {
+          "m": 2,
+          "v": 3
+        }
       }
     },
     {
@@ -1662,6 +1802,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -1807,6 +1961,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 3",
         "ft": "2 - 5"
+      },
+      "placar": {
+        "m": 2,
+        "v": 5
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 5
+        },
+        "ht": {
+          "m": 0,
+          "v": 3
+        }
       }
     },
     {
@@ -1955,6 +2123,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 0"
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -2103,6 +2285,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 2"
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -2251,6 +2447,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -2399,6 +2609,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "5 - 1"
+      },
+      "placar": {
+        "m": 5,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 5,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -2547,6 +2771,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -2698,6 +2936,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -2849,6 +3101,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 2",
         "ft": "2 - 2"
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
+        }
       }
     },
     {
@@ -3000,6 +3266,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "3 - 1"
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -3151,6 +3431,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 1",
         "ft": "2 - 2"
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
       }
     },
     {
@@ -3302,6 +3596,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 1"
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -3453,6 +3761,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "2 - 0"
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -3601,6 +3923,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -3749,6 +4085,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 2"
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -3897,6 +4247,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -4045,6 +4409,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 2"
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -4193,6 +4571,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -4344,6 +4736,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -4493,6 +4899,17 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "0 - 2"
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": null
       }
     },
     {
@@ -4641,6 +5058,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -4789,6 +5220,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 3"
+      },
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -4937,6 +5382,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "4 - 0"
+      },
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -5085,6 +5544,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -5233,6 +5706,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -5381,6 +5868,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       }
     },
     {
@@ -5418,11 +5919,11 @@ window.DADOS_CHI = {
       "id": "W6Ndof2s",
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -5694,6 +6195,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -5845,6 +6360,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "0 - 3"
+      },
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -5993,6 +6522,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "1 - 1"
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -6138,6 +6681,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "1 - 1"
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -6289,6 +6846,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -6440,6 +7011,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -6588,6 +7173,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -6733,6 +7332,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -6887,6 +7500,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 0"
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -7035,6 +7662,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "3 - 2"
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -7183,6 +7824,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 1",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
       }
     },
     {
@@ -7331,6 +7986,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 2",
         "ft": "3 - 3"
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
       }
     },
     {
@@ -7479,6 +8148,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "2 - 1"
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -7633,6 +8316,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 1"
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       }
     },
     {
@@ -7781,6 +8478,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -7932,6 +8643,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -8080,6 +8805,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -8231,6 +8970,17 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "3 - 0"
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": null
       }
     },
     {
@@ -8379,6 +9129,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "2 - 0",
         "ft": "3 - 0"
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
       }
     },
     {
@@ -8527,6 +9291,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 1",
         "ft": "0 - 1"
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
       }
     },
     {
@@ -8675,6 +9453,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 0"
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -8829,6 +9621,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "1 - 0",
         "ft": "4 - 2"
+      },
+      "placar": {
+        "m": 4,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 4,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
       }
     },
     {
@@ -8977,6 +9783,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "3 - 0",
         "ft": "3 - 0"
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
+        }
       }
     },
     {
@@ -9125,6 +9945,20 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "0 - 0",
         "ft": "1 - 1"
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
       }
     },
     {
@@ -9273,6 +10107,17 @@ window.DADOS_CHI = {
       "placar_str": {
         "ht": "Indisponível",
         "ft": "0 - 3"
+      },
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": null
       }
     },
     {
@@ -9283,12 +10128,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9439,12 +10284,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -9596,12 +10441,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -9753,13 +10598,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -9910,13 +10755,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -10070,13 +10915,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -10227,11 +11072,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -10387,12 +11232,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -10547,13 +11392,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -10702,13 +11547,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -10864,13 +11709,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -11023,11 +11868,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -11182,13 +12027,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -11338,13 +12183,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -11500,12 +12345,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 3
-        },
         "ft": {
           "m": 3,
+          "v": 3
+        },
+        "ht": {
+          "m": 1,
           "v": 3
         }
       },
@@ -11662,11 +12507,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -11821,12 +12666,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -11980,12 +12825,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
           "v": 1
         }
       },
@@ -12138,13 +12983,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -12297,11 +13142,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -12459,11 +13304,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -12618,11 +13463,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 2
         }
@@ -12777,13 +13622,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -12939,13 +13784,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13098,11 +13943,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -13257,13 +14102,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -13415,13 +14260,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13570,13 +14415,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 6,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -13725,12 +14570,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13883,12 +14728,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -14038,11 +14883,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 2
         }
@@ -14202,11 +15047,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -14360,12 +15205,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -14518,13 +15363,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-pos-fix",
       "gols": {
-        "ht": {
-          "m": 3,
-          "v": 0
-        },
         "ft": {
           "m": 5,
           "v": 1
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
         }
       },
       "cantos": {
@@ -14673,11 +15518,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -14834,13 +15679,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -14992,12 +15837,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -15150,11 +15995,11 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 2
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 2
         }
@@ -15311,13 +16156,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -15469,12 +16314,12 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -15624,13 +16469,13 @@ window.DADOS_CHI = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15821,7 +16666,10 @@ window.DADOS_CHI = {
           "v": 1
         }
       },
-      "placar": "5 - 1",
+      "placar": {
+        "m": 5,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 5,
@@ -15910,7 +16758,10 @@ window.DADOS_CHI = {
           "v": 4
         }
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -15999,7 +16850,10 @@ window.DADOS_CHI = {
           "v": 8
         }
       },
-      "placar": "3 - 2",
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -16089,7 +16943,10 @@ window.DADOS_CHI = {
           "v": 4
         }
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -16176,7 +17033,10 @@ window.DADOS_CHI = {
           "v": 8
         }
       },
-      "placar": "3 - 0",
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -16267,7 +17127,10 @@ window.DADOS_CHI = {
           "v": 8
         }
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -16356,7 +17219,10 @@ window.DADOS_CHI = {
           "v": 5
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -16443,7 +17309,10 @@ window.DADOS_CHI = {
           "v": 3
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -16532,7 +17401,10 @@ window.DADOS_CHI = {
           "v": 5
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -16620,7 +17492,10 @@ window.DADOS_CHI = {
           "v": 4
         }
       },
-      "placar": "2 - 3",
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -16709,7 +17584,10 @@ window.DADOS_CHI = {
           "v": 6
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,

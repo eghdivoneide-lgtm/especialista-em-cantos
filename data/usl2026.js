@@ -1,5 +1,5 @@
-// DADOS_USL — BACKFILL 2026-07-02
-// Total jogos: 163
+// DADOS_USL — NORMALIZAÇÃO PLACAR {m,v} 2026-07-02
+// Total: 163
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
@@ -39,12 +39,12 @@ window.DADOS_USL = {
       "visitante": "Lexington",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -203,12 +203,12 @@ window.DADOS_USL = {
       "visitante": "Monterey Bay",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -367,13 +367,13 @@ window.DADOS_USL = {
       "visitante": "El Paso",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -534,13 +534,13 @@ window.DADOS_USL = {
       "visitante": "Phoenix Rising",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -697,13 +697,13 @@ window.DADOS_USL = {
       "visitante": "Orange County SC",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -860,13 +860,13 @@ window.DADOS_USL = {
       "visitante": "Louisville City",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1023,13 +1023,13 @@ window.DADOS_USL = {
       "visitante": "Loudoun",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1186,13 +1186,13 @@ window.DADOS_USL = {
       "visitante": "Rhode Island",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1352,13 +1352,13 @@ window.DADOS_USL = {
       "visitante": "Sporting Jax",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1515,13 +1515,13 @@ window.DADOS_USL = {
       "visitante": "Indy Eleven",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -1678,12 +1678,12 @@ window.DADOS_USL = {
       "visitante": "Charleston",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -1841,13 +1841,13 @@ window.DADOS_USL = {
       "visitante": "Colorado Springs",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2004,13 +2004,13 @@ window.DADOS_USL = {
       "visitante": "Miami FC",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2167,12 +2167,12 @@ window.DADOS_USL = {
       "visitante": "Brooklyn",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2330,12 +2330,12 @@ window.DADOS_USL = {
       "visitante": "Colorado Springs",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2490,13 +2490,13 @@ window.DADOS_USL = {
       "visitante": "Oakland Roots",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2653,13 +2653,13 @@ window.DADOS_USL = {
       "visitante": "Monterey Bay",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -2816,12 +2816,12 @@ window.DADOS_USL = {
       "visitante": "New Mexico",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -2979,13 +2979,13 @@ window.DADOS_USL = {
       "visitante": "Las Vegas Lights",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3139,12 +3139,12 @@ window.DADOS_USL = {
       "visitante": "Pittsburgh",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -3302,13 +3302,13 @@ window.DADOS_USL = {
       "visitante": "Hartford Athletic",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3465,13 +3465,13 @@ window.DADOS_USL = {
       "visitante": "Birmingham",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3628,13 +3628,13 @@ window.DADOS_USL = {
       "visitante": "Detroit",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3788,13 +3788,13 @@ window.DADOS_USL = {
       "visitante": "Rhode Island",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -3954,11 +3954,11 @@ window.DADOS_USL = {
       "visitante": "Miami FC",
       "fonte": "scraper",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4117,13 +4117,13 @@ window.DADOS_USL = {
       "visitante": "El Paso",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4283,13 +4283,13 @@ window.DADOS_USL = {
       "visitante": "New Mexico",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4443,13 +4443,13 @@ window.DADOS_USL = {
       "visitante": "Orange County SC",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -4612,11 +4612,11 @@ window.DADOS_USL = {
       "visitante": "San Antonio",
       "fonte": "scraper",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4775,11 +4775,11 @@ window.DADOS_USL = {
       "visitante": "Sacramento Republic",
       "fonte": "scraper",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -4938,13 +4938,13 @@ window.DADOS_USL = {
       "visitante": "Las Vegas Lights",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5095,12 +5095,12 @@ window.DADOS_USL = {
       "visitante": "Brooklyn",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -5258,13 +5258,13 @@ window.DADOS_USL = {
       "visitante": "Miami FC",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5418,13 +5418,13 @@ window.DADOS_USL = {
       "visitante": "Sporting Jax",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5584,13 +5584,13 @@ window.DADOS_USL = {
       "visitante": "Pittsburgh",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -5747,11 +5747,11 @@ window.DADOS_USL = {
       "visitante": "Hartford Athletic",
       "fonte": "scraper",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -5913,12 +5913,12 @@ window.DADOS_USL = {
       "visitante": "Indy Eleven",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -6073,13 +6073,13 @@ window.DADOS_USL = {
       "visitante": "Oakland Roots",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6236,13 +6236,13 @@ window.DADOS_USL = {
       "visitante": "Las Vegas Lights",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6399,12 +6399,12 @@ window.DADOS_USL = {
       "visitante": "FC Tulsa",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -6559,13 +6559,13 @@ window.DADOS_USL = {
       "visitante": "Colorado Springs",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6719,13 +6719,13 @@ window.DADOS_USL = {
       "visitante": "Phoenix Rising",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -6882,13 +6882,13 @@ window.DADOS_USL = {
       "visitante": "Tampa Bay",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7045,13 +7045,13 @@ window.DADOS_USL = {
       "visitante": "Hartford Athletic",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7208,13 +7208,13 @@ window.DADOS_USL = {
       "visitante": "Pittsburgh",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7371,13 +7371,13 @@ window.DADOS_USL = {
       "visitante": "Louisville City",
       "fonte": "scraper",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -7535,11 +7535,11 @@ window.DADOS_USL = {
       "data": "04.04.2026 23:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -7699,11 +7699,11 @@ window.DADOS_USL = {
       "data": "04.04.2026 23:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -7863,11 +7863,11 @@ window.DADOS_USL = {
       "data": "04.04.2026 23:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -8027,13 +8027,13 @@ window.DADOS_USL = {
       "data": "04.04.2026 22:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -8191,13 +8191,13 @@ window.DADOS_USL = {
       "data": "04.04.2026 20:30",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -8355,13 +8355,13 @@ window.DADOS_USL = {
       "data": "04.04.2026 20:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -8519,12 +8519,12 @@ window.DADOS_USL = {
       "data": "04.04.2026 18:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -8683,13 +8683,13 @@ window.DADOS_USL = {
       "data": "04.04.2026 18:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -8847,13 +8847,13 @@ window.DADOS_USL = {
       "data": "04.04.2026 17:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -9011,11 +9011,11 @@ window.DADOS_USL = {
       "data": "04.04.2026 17:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -9175,11 +9175,11 @@ window.DADOS_USL = {
       "data": "04.04.2026 17:00",
       "fonte": "fantasma_r2",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -9340,11 +9340,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -9505,11 +9505,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 1
         }
@@ -9668,12 +9668,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -9831,11 +9831,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -9997,13 +9997,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -10160,13 +10160,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -10320,12 +10320,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
           "v": 0
         }
       },
@@ -10483,13 +10483,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 3
-        },
         "ft": {
           "m": 0,
           "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 3
         }
       },
       "cantos": {
@@ -10646,13 +10646,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -10809,13 +10809,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 2
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
         }
       },
       "cantos": {
@@ -10969,11 +10969,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 1,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 1,
           "v": 0
         }
@@ -11132,13 +11132,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 2
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 2
         }
       },
       "cantos": {
@@ -11295,11 +11295,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "agente-assistente",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 0
         }
@@ -11459,13 +11459,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -11624,12 +11624,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -11786,13 +11786,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -11954,13 +11954,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -12116,13 +12116,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -12287,11 +12287,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -12452,13 +12452,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 2
-        },
         "ft": {
           "m": 2,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 2
         }
       },
       "cantos": {
@@ -12617,11 +12617,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -12782,13 +12782,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -12947,13 +12947,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -13112,13 +13112,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -13277,12 +13277,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -13442,13 +13442,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -13607,13 +13607,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 1,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -13772,11 +13772,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 2,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 2,
           "v": 1
         }
@@ -13940,13 +13940,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -14105,13 +14105,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -14270,13 +14270,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 1,
           "v": 3
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -14435,12 +14435,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -14600,12 +14600,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 3,
-          "v": 0
-        },
         "ft": {
           "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 3,
           "v": 0
         }
       },
@@ -14771,13 +14771,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -14936,13 +14936,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 0,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -15098,12 +15098,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -15263,13 +15263,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -15428,12 +15428,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -15596,12 +15596,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -15767,12 +15767,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
           "v": 1
         }
       },
@@ -15932,12 +15932,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -16097,11 +16097,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 1
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 1
         }
@@ -16259,13 +16259,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
         }
       },
       "cantos": {
@@ -16424,12 +16424,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
           "v": 1
         }
       },
@@ -16589,13 +16589,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
         "ft": {
           "m": 0,
           "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
         }
       },
       "cantos": {
@@ -16751,13 +16751,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -16916,13 +16916,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -17081,11 +17081,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -17247,13 +17247,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 2,
           "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -17412,12 +17412,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -17576,12 +17576,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -17740,13 +17740,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 1
-        },
         "ft": {
           "m": 3,
           "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
         }
       },
       "cantos": {
@@ -17904,12 +17904,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 0,
-          "v": 0
-        },
         "ft": {
           "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
           "v": 0
         }
       },
@@ -18068,13 +18068,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
         "ft": {
           "m": 2,
           "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
         }
       },
       "cantos": {
@@ -18232,13 +18232,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 4,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -18396,11 +18396,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 3,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 3,
           "v": 0
         }
@@ -18554,13 +18554,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 3,
           "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
         }
       },
       "cantos": {
@@ -18724,13 +18724,13 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 2,
-          "v": 1
-        },
         "ft": {
           "m": 4,
           "v": 3
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
         }
       },
       "cantos": {
@@ -18888,11 +18888,11 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
+        "ft": {
           "m": 0,
           "v": 0
         },
-        "ft": {
+        "ht": {
           "m": 0,
           "v": 0
         }
@@ -19052,12 +19052,12 @@ window.DADOS_USL = {
       "rodada": null,
       "fonte": "varredor-rodada-v4-2026-05-26",
       "gols": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
         "ft": {
           "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
           "v": 0
         }
       },
@@ -19255,7 +19255,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -19344,7 +19347,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19434,7 +19440,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -19523,7 +19532,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19612,7 +19624,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -19702,7 +19717,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -19790,7 +19808,10 @@ window.DADOS_USL = {
           "v": 5
         }
       },
-      "placar": "5 - 1",
+      "placar": {
+        "m": 5,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 5,
@@ -19879,7 +19900,10 @@ window.DADOS_USL = {
           "v": 5
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -19968,7 +19992,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -20057,7 +20084,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -20146,7 +20176,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "2 - 6",
+      "placar": {
+        "m": 2,
+        "v": 6
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -20235,7 +20268,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "1 - 4",
+      "placar": {
+        "m": 1,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -20324,7 +20360,10 @@ window.DADOS_USL = {
           "v": 5
         }
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -20413,7 +20452,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -20502,7 +20544,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -20592,7 +20637,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "4 - 1",
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 4,
@@ -20681,7 +20729,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "2 - 4",
+      "placar": {
+        "m": 2,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -20770,7 +20821,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -20859,7 +20913,10 @@ window.DADOS_USL = {
           "v": 6
         }
       },
-      "placar": "2 - 3",
+      "placar": {
+        "m": 2,
+        "v": 3
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -20949,7 +21006,10 @@ window.DADOS_USL = {
           "v": 6
         }
       },
-      "placar": "3 - 4",
+      "placar": {
+        "m": 3,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 3,
@@ -21037,7 +21097,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21127,7 +21190,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "1 - 2",
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21216,7 +21282,10 @@ window.DADOS_USL = {
           "v": 5
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21305,7 +21374,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -21394,7 +21466,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -21484,7 +21559,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "2 - 5",
+      "placar": {
+        "m": 2,
+        "v": 5
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -21573,7 +21651,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -21663,7 +21744,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21752,7 +21836,10 @@ window.DADOS_USL = {
           "v": 6
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -21841,7 +21928,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -21930,7 +22020,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "1 - 1",
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22019,7 +22112,10 @@ window.DADOS_USL = {
           "v": 0
         }
       },
-      "placar": "2 - 2",
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22108,7 +22204,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22198,7 +22297,10 @@ window.DADOS_USL = {
           "v": 7
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22287,7 +22389,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "4 - 1",
+      "placar": {
+        "m": 4,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 4,
@@ -22377,7 +22482,10 @@ window.DADOS_USL = {
           "v": 0
         }
       },
-      "placar": "1 - 4",
+      "placar": {
+        "m": 1,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22462,7 +22570,10 @@ window.DADOS_USL = {
           "v": 0
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22553,7 +22664,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "0 - 0",
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22641,7 +22755,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "1 - 0",
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 1,
@@ -22730,7 +22847,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "0 - 2",
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -22819,7 +22939,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22908,7 +23031,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "2 - 0",
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -22997,7 +23123,10 @@ window.DADOS_USL = {
           "v": 1
         }
       },
-      "placar": "4 - 4",
+      "placar": {
+        "m": 4,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 4,
@@ -23086,7 +23215,10 @@ window.DADOS_USL = {
           "v": 2
         }
       },
-      "placar": "0 - 1",
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 0,
@@ -23175,7 +23307,10 @@ window.DADOS_USL = {
           "v": 3
         }
       },
-      "placar": "2 - 1",
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
       "gols": {
         "ft": {
           "m": 2,
@@ -23262,7 +23397,10 @@ window.DADOS_USL = {
           "v": 4
         }
       },
-      "placar": "1 - 4",
+      "placar": {
+        "m": 1,
+        "v": 4
+      },
       "gols": {
         "ft": {
           "m": 1,
