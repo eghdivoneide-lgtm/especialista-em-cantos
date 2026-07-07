@@ -1327,6 +1327,12 @@ const LIGAS_STATUS = Object.freeze({
   // Histórico preservado (ROI medido em amostras pequenas, antes das bases serem completadas):
   //   MLS -17.0% (n=32) · CHI -31.4% (n=6) · ECU -44.9% (n=6).
   // Para reativar um alerta, recolocar a entrada aqui (ex.: ECU: { status:'suspenso', roi:-44.9, n:6, desde:'...', motivo:'...' }).
+  //
+  // 2026-07-07: MLS e ARG ficaram ~44 dias sem jogo novo na base (último em 24/05,
+  // recoleta em 29/06 não achou rodada nova) por causa da janela de convocação da
+  // Copa — clubes liberam jogadores e os campeonatos domésticos pausam o calendário.
+  // Não é falha do coletor. Os campeonatos devem retomar conforme a Copa avança;
+  // revisar aqui se o hiato persistir além do fim da janela de convocação.
 });
 
 // ══════════════════════════════════════════════════════════════════
@@ -2664,9 +2670,12 @@ function projecaoJogo(mandante, visitante) {
   // Override: window.OARF_PESO_OVERRIDE permite testar outros valores.
   // Clamp: ±2.5 cantos/período para evitar swings extremos.
   // ══════════════════════════════════════════════════════════════════════════
+  // v1.1 (2026-07-07): BR_B explicitado (antes caía no fallback 0.30 por acaso
+  // correto); removida chave morta "CL" (nunca foi um código de liga válido —
+  // resíduo, provável typo de CHI na integração original).
   const OARF_PESO_POR_LIGA = {
-    BR:    0.30, MLS:   0.20, ARG:   0.70, ARG_B: 0.70, USL:   0.60,
-    BUN:   0.60, CL:    0.30, ECU:   0.20, ALM:   0.60,
+    BR:    0.30, BR_B:  0.30, MLS:   0.20, ARG:   0.70, ARG_B: 0.70, USL:   0.60,
+    BUN:   0.60, ECU:   0.20, ALM:   0.60,
     CHI:   0.15
   };
   const _ligaAtiva = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : 'BR';
@@ -4073,7 +4082,7 @@ function renderTop3() {
   }
 
   const liga = LIGA_ATUAL || 'BR';
-  const ligaNome = ({BR:'🇧🇷 Brasileirão A',BR_B:'🇧🇷 Brasileirão B',ARG:'🇦🇷 Argentina Pro',ARG_B:'🇦🇷 Argentina B',MLS:'🇺🇸 MLS',USL:'🇺🇸 USL',CHI:'🇨🇱 Chile',ECU:'🇪🇨 Equador'})[liga] || liga;
+  const ligaNome = ({BR:'🇧🇷 Brasileirão A',BR_B:'🇧🇷 Brasileirão B',ARG:'🇦🇷 Argentina Pro',ARG_B:'🇦🇷 Argentina B',MLS:'🇺🇸 MLS',USL:'🇺🇸 USL',BUN:'🇩🇪 Bundesliga',CHI:'🇨🇱 Chile',ECU:'🇪🇨 Equador'})[liga] || liga;
   const semLimiteARG = (liga === 'ARG' || liga === 'ARG_B'); // ligas mais assertivas: sem cap em 3
   const maxPicks = semLimiteARG ? 99 : 3;
 
@@ -5621,6 +5630,10 @@ function exportarBalaPrataHTML() {
 //  (projecaoJogo, calcSDE_ENIGMA) e localStorage namespace 'eds_auditoria_*'.
 // ══════════════════════════════════════════════════
 
+// v1.1 (2026-07-07): CHI/ECU adicionadas — ficaram de fora desde a criação desta
+// lista (v1.0, 2026-04-25), que é anterior à reativação das duas ligas (20/05).
+// _LIGAS_TODAS (linha 1575) é a lista canônica de ligas ativas; mantida separada
+// aqui só porque esta estrutura carrega nome/flag/dadosKey, não usados lá.
 const AUDITORIA_LIGAS = [
   { code: 'BR',    nome: 'Brasileirão Série A',     flag: '🇧🇷', dadosKey: 'DADOS_BR'    },
   { code: 'BR_B',  nome: 'Brasileirão Série B',     flag: '🇧🇷', dadosKey: 'DADOS_BR_B'  },
@@ -5628,7 +5641,9 @@ const AUDITORIA_LIGAS = [
   { code: 'ARG_B', nome: 'Primera B Nacional',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' },
   { code: 'MLS',   nome: 'Major League Soccer',     flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
   { code: 'USL',   nome: 'USL Championship',        flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
-  { code: 'BUN',   nome: 'Bundesliga',              flag: '🇩🇪', dadosKey: 'DADOS_BUN'   }
+  { code: 'BUN',   nome: 'Bundesliga',              flag: '🇩🇪', dadosKey: 'DADOS_BUN'   },
+  { code: 'CHI',   nome: 'Primera División',        flag: '🇨🇱', dadosKey: 'DADOS_CHI'   },
+  { code: 'ECU',   nome: 'LigaPro',                 flag: '🇪🇨', dadosKey: 'DADOS_ECU'   }
 ];
 
 // Calcula hash de uma rodada (lista de jogos m+v) para detectar mudança.
@@ -8422,7 +8437,7 @@ function getAppContext() {
 
   /* ── 🎚️ OARF da liga ativa ── */
   const _OARF_REF = { BR:0.30, BR_B:0.30, MLS:0.20, ARG:0.70, ARG_B:0.70, USL:0.60,
-                      BUN:0.60, CL:0.30, ECU:0.20, ALM:0.60, CHI:0.15 };
+                      BUN:0.60, ECU:0.20, ALM:0.60, CHI:0.15 };
   const oarfPeso = _OARF_REF[LIGA_ATUAL] || 0.30;
   const oarfTipo = oarfPeso >= 0.60 ? 'AGRESSIVO (motor confia muito no momentum recente)' :
                    oarfPeso >= 0.40 ? 'MODERADO' :
@@ -11350,8 +11365,13 @@ function exportarVencedorCantosHTML() {
 // ══════════════════════════════════════════════════════════════════
 
 // v2.0 (2026-05-08): redefinido após auditoria 01-04/05 + remoção de 10 ligas
+// v2.1 (2026-07-07): CHI/ECU incluídas em LIGAS_RUINS_VEN — o comentário do bloco
+// acima (linha 11349) já citava CHI -7.6%/ECU -71% ROI desde antes da reativação
+// dessas ligas (20/05), mas o array nunca foi atualizado. Diferente do bônus DNA
+// (LIGAS_OVERRIDE_DNA, que exige backtest walk-forward), esta penalidade é só
+// leitura de ROI histórico bruto — não há motivo estatístico para excluí-las.
 const FILTRO_OURO_LIGAS_PREMIUM_VEN = ['ARG', 'ARG_B', 'MLS'];  // 80%+ na rodada
-const FILTRO_OURO_LIGAS_RUINS_VEN   = ['BR'];                    // 33% Cisne histórico
+const FILTRO_OURO_LIGAS_RUINS_VEN   = ['BR', 'CHI', 'ECU'];      // 33% Cisne (BR) · ROI -7.6%/-71% (CHI/ECU)
 const FILTRO_OURO_LIGAS_PREMIUM_UND = ['ARG_B', 'BR_B', 'MLS']; // ARG removida (Vencedor explode total)
 const FILTRO_OURO_LIGAS_RUINS_UND   = ['BUN', 'USL'];            // BUN/USL Under volátil
 const FILTRO_OURO_SCORE_MIN_VEN = 60;
@@ -12525,7 +12545,10 @@ function renderFiltroOuro() {
 function _ehListaNegra(r) {
   // Combos historicamente perdedores (validados em 358 apostas + auditoria 01-04/05)
   if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) return true; // BR HDP perde
-  // Ligas catastróficas (CHI/ECU/CHN_SUP) foram removidas do app v2.0
+  // v2.1 (2026-07-07): CHI/ECU foram reativadas em 20/05/2026 e seguem ativas hoje —
+  // este comentário dizia o contrário e a checagem nunca foi religada. ROI histórico
+  // ruim (CHI -7.6%, ECU -71%, ver header do bloco FILTRO OURO) volta a valer aqui.
+  if ((r.liga === 'CHI' || r.liga === 'ECU') && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) return true;
   return false;
 }
 
@@ -12675,7 +12698,8 @@ function _renderFiltroOuroTabListaNegra(dados) {
 function _cardListaNegra(r) {
   const motivos = [];
   if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga BR Série A em HDP: 45.5% win, ROI -10.6% (n=11)');
-  // CHI/ECU/CHN_SUP removidas do app v2.0; motivos podados.
+  if (r.liga === 'CHI' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga CHI: ROI -7.6% histórico — amostra pequena, tratar com cautela');
+  if (r.liga === 'ECU' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga ECU: ROI -71% histórico — pior liga da base, amostra pequena');
 
   return `
     <div style="background:rgba(239,68,68,0.05);border:2px solid rgba(239,68,68,0.4);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.6rem;">

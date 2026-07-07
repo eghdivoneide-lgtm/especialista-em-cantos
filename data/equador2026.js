@@ -1,5 +1,5 @@
-// DADOS_ECU — PIPELINE processado (2026-07-07T21:37)
-// Total: 126
+// DADOS_ECU — PIPELINE processado (2026-07-07T21:37) + limpeza 2026-07-07
+// Total: 126 (removidas 2 entradas de lixo de scraping da lista de times; 2 jogos seguem sem placar — dado indisponível na fonte original, cantos preservados)
 
 window.DADOS_ECU = {
   "temporada": "2026",
@@ -11,13 +11,11 @@ window.DADOS_ECU = {
     "Delfin",
     "Dep. Cuenca",
     "Emelec",
-    "Flashscore",
     "Guayaquil City",
     "Ind. del Valle",
     "LDU Quito",
     "Leones del Norte",
     "Libertad",
-    "Libertad v Guayaquil City 21/04/2026 | Football",
     "Macara",
     "Manta",
     "Mushuc Runa",
@@ -10809,7 +10807,10 @@ window.DADOS_ECU = {
           "v": 14
         }
       },
-      "placar": null,
+      "placar": {
+        "m": null,
+        "v": null
+      },
       "url": "https://www.flashscore.com/match/vXkGmKVI/#/match-summary",
       "liga": "Liga Pro Equador",
       "codigo_liga": "ECU",

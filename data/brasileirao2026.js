@@ -1,5 +1,5 @@
-// DADOS_BR — PIPELINE processado (2026-07-07T21:37)
-// Total: 186
+// DADOS_BR — PIPELINE processado (2026-07-07T21:37) + dedup 2026-07-07
+// Total: 177 (removidos 9 jogos duplicados por match_id com alias de nome de time)
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
@@ -7,21 +7,15 @@ window.DADOS_BR = {
   "totalRodadas": 23,
   "times": [
     "Athletico-PR",
-    "Atletico-MG",
     "Atlético-MG",
     "Bahia",
     "Botafogo",
-    "Botafogo RJ",
-    "Bragantino",
     "Chapecoense",
-    "Chapecoense-SC",
     "Corinthians",
     "Coritiba",
     "Cruzeiro",
     "Flamengo",
-    "Flamengo RJ",
     "Fluminense",
-    "Gremio",
     "Grêmio",
     "Internacional",
     "Mirassol",
@@ -29,10 +23,8 @@ window.DADOS_BR = {
     "Red Bull Bragantino",
     "Remo",
     "Santos",
-    "Sao Paulo",
     "São Paulo",
     "Vasco",
-    "Vitoria",
     "Vitória"
   ],
   "jogos": [
@@ -19345,7 +19337,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "6ezXKiTg"
     },
     {
       "id": "YNLSTRfR",
@@ -19503,7 +19496,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "YNLSTRfR"
     },
     {
       "id": "0KQY7pY7",
@@ -19655,7 +19649,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "0KQY7pY7"
     },
     {
       "id": "46CbO5Il",
@@ -19807,7 +19802,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "46CbO5Il"
     },
     {
       "id": "C8XJVmQE",
@@ -19962,7 +19958,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "C8XJVmQE"
     },
     {
       "id": "ptnOMDbs",
@@ -20120,7 +20117,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "ptnOMDbs"
     },
     {
       "id": "Yo4FKNHD",
@@ -20275,7 +20273,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
+      },
+      "match_id": "Yo4FKNHD"
     },
     {
       "mandante": "Athletico-PR",
@@ -20560,827 +20559,8 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
-      }
-    },
-    {
-      "match_id": "6ezXKiTg",
-      "mandante": "Remo",
-      "visitante": "Sao Paulo",
-      "rodada": null,
-      "data": "31.05.2026 20:30",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 5
-        },
-        "ft": {
-          "m": 6,
-          "v": 7
-        }
       },
-      "stats_taticas": {
-        "posse": {
-          "m": 39,
-          "v": 61
-        },
-        "finalizacoes": {
-          "m": 9,
-          "v": 9
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 2,
-          "v": 4
-        },
-        "cartoes_amarelos": {
-          "m": 1,
-          "v": 2
-        },
-        "faltas": {
-          "m": 7,
-          "v": 14
-        },
-        "defesas_goleiro": {
-          "m": 4,
-          "v": 1
-        }
-      },
-      "placar": {
-        "m": 1,
-        "v": 0
-      },
-      "gols": {
-        "ft": {
-          "m": 1,
-          "v": 0
-        },
-        "ht": {
-          "m": 0,
-          "v": 0
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "4-4-2"
-      },
-      "mercado": {
-        "oddM": "3.10",
-        "oddEmpate": "3.20",
-        "oddV": "2.30"
-      },
-      "url": "https://www.flashscore.com/match/6ezXKiTg/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:01:12.045Z",
-        "campos_disponiveis": 22,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "cartoes_vermelhos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "YNLSTRfR",
-      "mandante": "Palmeiras",
-      "visitante": "Chapecoense-SC",
-      "rodada": null,
-      "data": "31.05.2026 16:00",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 0
-        },
-        "ft": {
-          "m": 3,
-          "v": 2
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 48,
-          "v": 52
-        },
-        "finalizacoes": {
-          "m": 13,
-          "v": 15
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 4,
-          "v": 3
-        },
-        "cartoes_amarelos": {
-          "m": 1,
-          "v": 1
-        },
-        "faltas": {
-          "m": 9,
-          "v": 9
-        },
-        "defesas_goleiro": {
-          "m": 3,
-          "v": 3
-        }
-      },
-      "placar": {
-        "m": 1,
-        "v": 0
-      },
-      "gols": {
-        "ft": {
-          "m": 1,
-          "v": 0
-        },
-        "ht": {
-          "m": 0,
-          "v": 0
-        }
-      },
-      "formacao": {
-        "m": "4-3-3",
-        "v": "4-4-1-1"
-      },
-      "mercado": {
-        "oddM": "1.37",
-        "oddEmpate": "4.75",
-        "oddV": "7.00"
-      },
-      "url": "https://www.flashscore.com/match/YNLSTRfR/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:01:44.854Z",
-        "campos_disponiveis": 24,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "0KQY7pY7",
-      "mandante": "Vasco",
-      "visitante": "Atletico-MG",
-      "rodada": null,
-      "data": "31.05.2026 16:00",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 4
-        },
-        "ft": {
-          "m": 3,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 60,
-          "v": 40
-        },
-        "finalizacoes": {
-          "m": 26,
-          "v": 10
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 8,
-          "v": 4
-        },
-        "cartoes_amarelos": {
-          "m": 1,
-          "v": 1
-        },
-        "faltas": {
-          "m": 20,
-          "v": 17
-        },
-        "defesas_goleiro": {
-          "m": 3,
-          "v": 8
-        }
-      },
-      "placar": {
-        "m": 0,
-        "v": 1
-      },
-      "gols": {
-        "ft": {
-          "m": 0,
-          "v": 1
-        },
-        "ht": {
-          "m": 0,
-          "v": 1
-        }
-      },
-      "formacao": {
-        "m": "4-1-4-1",
-        "v": "3-4-2-1"
-      },
-      "mercado": {
-        "oddM": "1.81",
-        "oddEmpate": "3.50",
-        "oddV": "4.10"
-      },
-      "url": "https://www.flashscore.com/match/0KQY7pY7/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:02:16.278Z",
-        "campos_disponiveis": 22,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "cartoes_vermelhos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "46CbO5Il",
-      "mandante": "Bragantino",
-      "visitante": "Internacional",
-      "rodada": null,
-      "data": "31.05.2026 11:00",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 0
-        },
-        "ft": {
-          "m": 6,
-          "v": 1
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 52,
-          "v": 48
-        },
-        "finalizacoes": {
-          "m": 18,
-          "v": 8
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 7,
-          "v": 2
-        },
-        "cartoes_amarelos": {
-          "m": 2,
-          "v": 4
-        },
-        "faltas": {
-          "m": 19,
-          "v": 17
-        },
-        "defesas_goleiro": {
-          "m": 1,
-          "v": 5
-        }
-      },
-      "placar": {
-        "m": 3,
-        "v": 1
-      },
-      "gols": {
-        "ft": {
-          "m": 3,
-          "v": 1
-        },
-        "ht": {
-          "m": 2,
-          "v": 0
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "3-4-2-1"
-      },
-      "mercado": {
-        "oddM": "1.96",
-        "oddEmpate": "3.40",
-        "oddV": "3.70"
-      },
-      "url": "https://www.flashscore.com/match/46CbO5Il/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:02:46.716Z",
-        "campos_disponiveis": 22,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "cartoes_vermelhos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "C8XJVmQE",
-      "mandante": "Santos",
-      "visitante": "Vitoria",
-      "rodada": null,
-      "data": "30.05.2026 20:00",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 0,
-          "v": 1
-        },
-        "ft": {
-          "m": 1,
-          "v": 5
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 44,
-          "v": 56
-        },
-        "finalizacoes": {
-          "m": 5,
-          "v": 22
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 4,
-          "v": 9
-        },
-        "cartoes_amarelos": {
-          "m": 3,
-          "v": 4
-        },
-        "faltas": {
-          "m": 17,
-          "v": 8
-        },
-        "defesas_goleiro": {
-          "m": 8,
-          "v": 1
-        }
-      },
-      "placar": {
-        "m": 3,
-        "v": 1
-      },
-      "gols": {
-        "ft": {
-          "m": 3,
-          "v": 1
-        },
-        "ht": {
-          "m": 1,
-          "v": 0
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "4-3-3"
-      },
-      "mercado": {
-        "oddM": "1.57",
-        "oddEmpate": "3.70",
-        "oddV": "5.75"
-      },
-      "url": "https://www.flashscore.com/match/C8XJVmQE/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:03:18.606Z",
-        "campos_disponiveis": 23,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "ptnOMDbs",
-      "mandante": "Bahia",
-      "visitante": "Botafogo RJ",
-      "rodada": null,
-      "data": "30.05.2026 17:30",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 3,
-          "v": 4
-        },
-        "ft": {
-          "m": 10,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 69,
-          "v": 31
-        },
-        "finalizacoes": {
-          "m": 24,
-          "v": 13
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 9,
-          "v": 6
-        },
-        "cartoes_amarelos": {
-          "m": 4,
-          "v": 5
-        },
-        "faltas": {
-          "m": 14,
-          "v": 16
-        },
-        "defesas_goleiro": {
-          "m": 4,
-          "v": 8
-        }
-      },
-      "placar": {
-        "m": 2,
-        "v": 1
-      },
-      "gols": {
-        "ft": {
-          "m": 2,
-          "v": 1
-        },
-        "ht": {
-          "m": 0,
-          "v": 1
-        }
-      },
-      "formacao": {
-        "m": "4-3-3",
-        "v": "4-2-3-1"
-      },
-      "mercado": {
-        "oddM": "1.96",
-        "oddEmpate": "3.75",
-        "oddV": "3.50"
-      },
-      "url": "https://www.flashscore.com/match/ptnOMDbs/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:03:48.363Z",
-        "campos_disponiveis": 24,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "Yo4FKNHD",
-      "mandante": "Gremio",
-      "visitante": "Corinthians",
-      "rodada": null,
-      "data": "30.05.2026 17:30",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 1,
-          "v": 6
-        },
-        "ft": {
-          "m": 4,
-          "v": 8
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 41,
-          "v": 59
-        },
-        "finalizacoes": {
-          "m": 10,
-          "v": 24
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 3,
-          "v": 9
-        },
-        "cartoes_amarelos": {
-          "m": 3,
-          "v": 2
-        },
-        "faltas": {
-          "m": 23,
-          "v": 20
-        },
-        "defesas_goleiro": {
-          "m": 6,
-          "v": 1
-        }
-      },
-      "placar": {
-        "m": 1,
-        "v": 3
-      },
-      "gols": {
-        "ft": {
-          "m": 1,
-          "v": 3
-        },
-        "ht": {
-          "m": 1,
-          "v": 1
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "4-2-3-1"
-      },
-      "mercado": {
-        "oddM": "3.00",
-        "oddEmpate": "3.20",
-        "oddV": "2.40"
-      },
-      "url": "https://www.flashscore.com/match/Yo4FKNHD/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:04:18.499Z",
-        "campos_disponiveis": 23,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "4hXP963e",
-      "mandante": "Flamengo RJ",
-      "visitante": "Coritiba",
-      "rodada": null,
-      "data": "30.05.2026 16:00",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 5,
-          "v": 1
-        },
-        "ft": {
-          "m": 6,
-          "v": 4
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 62,
-          "v": 38
-        },
-        "finalizacoes": {
-          "m": 21,
-          "v": 10
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 9,
-          "v": 2
-        },
-        "cartoes_amarelos": {
-          "m": 3,
-          "v": 0
-        },
-        "faltas": {
-          "m": 10,
-          "v": 2
-        },
-        "defesas_goleiro": {
-          "m": 2,
-          "v": 6
-        }
-      },
-      "placar": {
-        "m": 3,
-        "v": 0
-      },
-      "gols": {
-        "ft": {
-          "m": 3,
-          "v": 0
-        },
-        "ht": {
-          "m": 1,
-          "v": 0
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "4-2-3-1"
-      },
-      "mercado": {
-        "oddM": "1.30",
-        "oddEmpate": "5.50",
-        "oddV": "8.00"
-      },
-      "url": "https://www.flashscore.com/match/4hXP963e/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:05:20.113Z",
-        "campos_disponiveis": 24,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
-    },
-    {
-      "match_id": "lbC7eGro",
-      "mandante": "Vasco",
-      "visitante": "Bragantino",
-      "rodada": null,
-      "data": "24.05.2026 20:30",
-      "tabela": null,
-      "cantos": {
-        "ht": {
-          "m": 2,
-          "v": 3
-        },
-        "ft": {
-          "m": 6,
-          "v": 6
-        }
-      },
-      "stats_taticas": {
-        "posse": {
-          "m": 60,
-          "v": 40
-        },
-        "finalizacoes": {
-          "m": 14,
-          "v": 21
-        }
-      },
-      "estatisticas_ft": {
-        "chutes_alvo": {
-          "m": 6,
-          "v": 9
-        },
-        "cartoes_amarelos": {
-          "m": 1,
-          "v": 4
-        },
-        "faltas": {
-          "m": 13,
-          "v": 14
-        },
-        "defesas_goleiro": {
-          "m": 7,
-          "v": 6
-        }
-      },
-      "placar": {
-        "m": 0,
-        "v": 3
-      },
-      "gols": {
-        "ft": {
-          "m": 0,
-          "v": 3
-        },
-        "ht": {
-          "m": 0,
-          "v": 1
-        }
-      },
-      "formacao": {
-        "m": "4-2-3-1",
-        "v": "4-2-3-1"
-      },
-      "mercado": {
-        "oddM": "2.10",
-        "oddEmpate": "3.40",
-        "oddV": "3.40"
-      },
-      "url": "https://www.flashscore.com/match/lbC7eGro/#/match-summary",
-      "meta": {
-        "fonte": "flashscore",
-        "versao_analista": "v4",
-        "timestamp_extracao": "2026-06-28T18:06:21.445Z",
-        "campos_disponiveis": 22,
-        "campos_falhados": [
-          "ataques_perigosos_ft",
-          "cruzamentos_ft",
-          "cartoes_vermelhos_ft",
-          "tiros_de_meta_ft",
-          "laterais_ft",
-          "ataques_perigosos_ht",
-          "cruzamentos_ht",
-          "cartoes_vermelhos_ht",
-          "tiros_de_meta_ht",
-          "laterais_ht"
-        ],
-        "metodo_extracao": {
-          "ft": "DOM",
-          "ht": "DOM"
-        }
-      }
+      "match_id": "4hXP963e"
     }
   ]
 };
