@@ -1,4 +1,4 @@
-// DADOS_USL — NORMALIZAÇÃO PLACAR {m,v} 2026-07-02
+// DADOS_USL — PIPELINE processado (2026-07-07T21:37)
 // Total: 163
 
 window.DADOS_USL = {

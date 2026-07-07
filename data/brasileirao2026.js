@@ -1,4 +1,4 @@
-// DADOS_BR — ENRIQUECIMENTO RICOS 2026-07-02
+// DADOS_BR — PIPELINE processado (2026-07-07T21:37)
 // Total: 186
 
 window.DADOS_BR = {

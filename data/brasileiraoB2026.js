@@ -1,4 +1,4 @@
-// DADOS_BR_B — NORMALIZAÇÃO PLACAR {m,v} 2026-07-02
+// DADOS_BR_B — PIPELINE processado (2026-07-07T21:37)
 // Total: 146
 
 window.DADOS_BR_B = {
