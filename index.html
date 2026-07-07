@@ -55,6 +55,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
           integrity="sha384-vtjasyidUo0kW94K5MXDXntzOJpQgBKXmE7e2Ga4LG0skTTLeBi97eFAXsqewJjw"
           crossorigin="anonymous"></script>
+  <!-- Auth: Supabase (login real por usuário) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <style>
     :root {
       --bg:       #0a0f0d;
@@ -470,6 +472,86 @@
   </style>
 </head>
 <body>
+
+<!-- ══════════════ PORTÃO DE LOGIN (Supabase Auth) ══════════════ -->
+<div id="auth-gate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%, #111a14, #0a0f0d);font-family:system-ui,-apple-system,sans-serif;padding:1rem;">
+  <div style="width:100%;max-width:380px;background:rgba(17,26,20,0.9);border:1px solid rgba(251,191,36,0.25);border-radius:16px;padding:2rem 1.6rem;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+    <div style="text-align:center;margin-bottom:1.4rem;">
+      <div style="font-size:2.4rem;">🎯</div>
+      <div style="font-size:1.15rem;font-weight:800;color:#fbbf24;letter-spacing:.3px;">Especialista em Cantos</div>
+      <div id="auth-title" style="font-size:.8rem;color:#9ca3af;margin-top:.2rem;">Entrar</div>
+    </div>
+    <form id="auth-form" autocomplete="on">
+      <input id="auth-email" type="email" required placeholder="Email" autocomplete="username"
+             style="width:100%;box-sizing:border-box;margin-bottom:.7rem;padding:.75rem .9rem;background:#0a0f0d;border:1px solid #2a3a2f;border-radius:8px;color:#e5e7eb;font-size:.9rem;outline:none;">
+      <input id="auth-pass" type="password" required placeholder="Senha" autocomplete="current-password" minlength="6"
+             style="width:100%;box-sizing:border-box;margin-bottom:.4rem;padding:.75rem .9rem;background:#0a0f0d;border:1px solid #2a3a2f;border-radius:8px;color:#e5e7eb;font-size:.9rem;outline:none;">
+      <div style="text-align:right;margin-bottom:.8rem;">
+        <a href="javascript:void(0)" onclick="_resetPass()" style="font-size:.72rem;color:#9ca3af;text-decoration:none;">Esqueci a senha</a>
+      </div>
+      <button id="auth-submit" type="submit"
+              style="width:100%;padding:.8rem;background:linear-gradient(135deg,#fbbf24,#f59e0b);border:none;border-radius:8px;color:#0a0f0d;font-weight:800;font-size:.92rem;cursor:pointer;">Entrar</button>
+    </form>
+    <div id="auth-msg" style="min-height:1.1rem;margin-top:.7rem;font-size:.76rem;text-align:center;"></div>
+    <div style="text-align:center;margin-top:.6rem;">
+      <a id="auth-toggle" href="javascript:void(0)" onclick="_toggleAuthMode()" style="font-size:.78rem;color:#fbbf24;text-decoration:none;">Criar uma conta</a>
+    </div>
+  </div>
+</div>
+<button id="btn-logout" title="Sair" style="display:none;position:fixed;bottom:16px;left:16px;z-index:9998;background:rgba(17,26,20,0.9);border:1px solid #2a3a2f;color:#9ca3af;padding:.45rem .8rem;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;">⎋ Sair</button>
+<script>
+(function(){
+  var SB_URL='https://onuqpfawzchrbluvrvfj.supabase.co';
+  var SB_KEY='sb_publishable_S0EzIfzUCq2SqQA0AQZ9jA_M6Opey8i';
+  if(!window.supabase||!window.supabase.createClient){console.error('[Auth] SDK Supabase não carregou');return;}
+  var sb=window.supabase.createClient(SB_URL,SB_KEY);
+  window._sbAuth=sb;
+  var gate=document.getElementById('auth-gate');
+  var btnLogout=document.getElementById('btn-logout');
+  var msg=document.getElementById('auth-msg');
+  window._authMode='login';
+  function show(){gate.style.display='flex';btnLogout.style.display='none';document.body.style.overflow='hidden';}
+  function hide(){gate.style.display='none';btnLogout.style.display='block';document.body.style.overflow='';}
+  function setMsg(t,err){msg.textContent=t||'';msg.style.color=err?'#ef4444':'#34d367';}
+  sb.auth.getSession().then(function(r){ (r.data&&r.data.session)?hide():show(); });
+  sb.auth.onAuthStateChange(function(_e,session){ session?hide():show(); });
+  document.getElementById('auth-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('auth-email').value.trim();
+    var pass=document.getElementById('auth-pass').value;
+    setMsg('Aguarde...',false);
+    if(window._authMode==='signup'){
+      sb.auth.signUp({email:email,password:pass}).then(function(r){
+        if(r.error){setMsg(r.error.message,true);return;}
+        if(r.data&&r.data.session){setMsg('Conta criada!',false);}
+        else{setMsg('Conta criada! Confirme pelo email e depois entre.',false);}
+      });
+    } else {
+      sb.auth.signInWithPassword({email:email,password:pass}).then(function(r){
+        if(r.error){setMsg(r.error.message,true);}
+      });
+    }
+  });
+  window._toggleAuthMode=function(){
+    window._authMode=(window._authMode==='signup')?'login':'signup';
+    var s=window._authMode==='signup';
+    document.getElementById('auth-title').textContent=s?'Criar conta':'Entrar';
+    document.getElementById('auth-submit').textContent=s?'Criar conta':'Entrar';
+    document.getElementById('auth-toggle').textContent=s?'Já tenho conta — Entrar':'Criar uma conta';
+    document.getElementById('auth-pass').setAttribute('autocomplete',s?'new-password':'current-password');
+    setMsg('',false);
+  };
+  window._resetPass=function(){
+    var email=document.getElementById('auth-email').value.trim();
+    if(!email){setMsg('Digite seu email primeiro.',true);return;}
+    sb.auth.resetPasswordForEmail(email,{redirectTo:window.location.origin}).then(function(r){
+      setMsg(r.error?r.error.message:'Email de recuperação enviado (se a conta existir).',!!r.error);
+    });
+  };
+  btnLogout.addEventListener('click',function(){ sb.auth.signOut(); });
+})();
+</script>
+<!-- ══════════════ FIM PORTÃO DE LOGIN ══════════════ -->
 
 <header>
   <style>
