@@ -1201,7 +1201,8 @@
 -->
 <!-- ═══ LIGAS ATIVAS v2.1 (2026-05-10) — 7 ligas operáveis, agrupadas por país ═══ -->
 <script src="data/usl2026.js?v=2026-07-07-1837"></script>
-<!-- memoria_qualitativa.js removido em v4.0 (2026-06-28): fonte defasada substituída por MEMORIA_DNA (fonte única) -->
+<!-- memoria_qualitativa.js removido em v4.0 (2026-06-28): fonte defasada substituída por MEMORIA_DNA (fonte única).
+     Arquivo em si (5.201 linhas órfãs) e o bloco morto que o consumia foram apagados em 2026-07-07. -->
 <script src="data/argentina2026.js?v=2026-07-07-1837"></script>
 <script src="data/mls2026.js?v=2026-07-07-1837"></script>
 <script src="data/brasileirao2026.js?v=2026-07-07-1837"></script>
@@ -1331,6 +1332,7 @@ const LIGAS_STATUS = Object.freeze({
   // 2026-07-07: MLS e ARG ficaram ~44 dias sem jogo novo na base (último em 24/05,
   // recoleta em 29/06 não achou rodada nova) por causa da janela de convocação da
   // Copa — clubes liberam jogadores e os campeonatos domésticos pausam o calendário.
+  // BR segue o mesmo padrão (último jogo 31/05, recoleta 29/06 — ~29 dias de hiato).
   // Não é falha do coletor. Os campeonatos devem retomar conforme a Copa avança;
   // revisar aqui se o hiato persistir além do fim da janela de convocação.
 });
@@ -2895,20 +2897,6 @@ function projecaoJogo(mandante, visitante) {
   }
   const balaDePrataData = bpFaixa ? { time: bpTime, odd: bpOdd, faixa: bpFaixa, cor: bpCor } : null;
 
-  // ── Memória Qualitativa ──
-  let qualit = null;
-  if (window.getAlertasConfrontoQualit) {
-    try {
-      const lc = (DADOS_2026?.temporada || '').toLowerCase();
-      let ligaInf = typeof LIGA_ATUAL !== 'undefined' ? LIGA_ATUAL : 'BR';
-      if (lc.includes('mls') || lc.includes('major')) ligaInf = 'MLS';
-      else if (lc.includes('usl')) ligaInf = 'USL';
-      else if (lc.includes('arg') || lc.includes('profesional')) ligaInf = 'ARG';
-      else if (lc.includes('bundesliga') || lc.includes('germany') || lc.includes('bun')) ligaInf = 'BUN';
-      qualit = window.getAlertasConfrontoQualit(ligaInf, mandante, visitante);
-    } catch(e) {}
-  }
-
   // ── INTERVALO DE INCERTEZA (± Desvio Padrão combinado) ──
   // DP de cada time sobre seus cantos FT pró (todos os jogos)
   const ftValsM = todosM.map(j => j.mandante===mandante ? j.cantos.ft.m : j.cantos.ft.v);
@@ -2973,7 +2961,7 @@ function projecaoJogo(mandante, visitante) {
     oversHomeHT, oversAwayHT, oversHomeFT, oversAwayFT,
     pow: { atkHomeFT, atkAwayFT, defHomeFT, defAwayFT },
     tatica: { m_vert, v_vert, m_rej, v_rej, tmiHome, tmiAway, dadosTaticosAusentes },
-    reisDosCantosData, tiroSniperData, balaDePrataData, memoria_qualitativa: qualit,
+    reisDosCantosData, tiroSniperData, balaDePrataData,
     incerteza: { dpFT, dpHT }, amostrasInsuficientes, dnaM, dnaV,
     dnaEscoteiro: { ativo: dnaAtivo, perfilM: dnaPerfM, perfilV: dnaPerfV, multHome: dnaHome, multAway: dnaAway },
     // v3.2: OARF — momentum ajustado pela força do adversário
