@@ -11178,7 +11178,10 @@ let _filtroData = {
   enigma:            { modo: 'hoje', data: null },
   'vencedor-cantos': { modo: 'hoje', data: null },
   bala:              { modo: 'hoje', data: null }, // v3.1 (2026-05-10): filtro de data no BP
-  cisne:             { modo: 'hoje', data: null }  // v3.1 (2026-05-10): filtro de data no Cisne
+  // v3.2 (2026-07-08): Cisne default 'todas' — o parser do textarea do Cisne não
+  // extrai data dos jogos, então o modo 'hoje' (j.data === hoje) escondia TODOS
+  // os cards sem data. Usuário pode filtrar manualmente se quiser.
+  cisne:             { modo: 'todas', data: null }
 };
 
 function _filtrarJogosPorData(jogos, filtro) {
@@ -13404,11 +13407,16 @@ function _sincronizarCisneComRodada(liga) {
 }
 
 // Gera o HTML de um card Cisne Negro (reutilizável entre varrer e restaurar).
+// v3.2 (2026-07-08): threshold do card alinhado com o da varredura (getLigaDNA).
+// Antes havia 2.0 hardcoded aqui — jogos com Δ entre 1.5 e 2.0 em ARG/ARG_B
+// passavam na varredura (threshold 1.5 calibrado, faixa com 73% WR) mas eram
+// descartados SILENCIOSAMENTE no render (ex.: varredura contava 14, tela
+// mostrava 12). Duas réguas pro mesmo sinal = bug, não decisão.
 function _cisneCardHTML(jogo) {
   const proj = projecaoJogo(jogo.m, jogo.v);
   if (!proj) return null;
   const diff = Math.abs(proj.expHomeFT - proj.expAwayFT);
-  if (diff < 2.0) return null;
+  if (diff < getLigaDNA(LIGA_ATUAL).cisneThreshold) return null;
   const favorito = proj.expHomeFT > proj.expAwayFT ? jogo.m : jogo.v;
   const superDiff = diff.toFixed(2);
   const safeM = (jogo.m || '').replace(/'/g, "\\'");
@@ -13561,7 +13569,7 @@ function varrerCisneNegro() {
 
   if (encontrados === 0) {
     document.getElementById('resultado-cisne-negro').innerHTML =
-      '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Nesta rodada matemática não há jogos com padrão Cisne Negro (diferença > 2.0 cantos). Fique com seu dinheiro no bolso!</div>';
+      `<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--muted)">Nesta rodada matemática não há jogos com padrão Cisne Negro (diferença ≥ ${cisneThreshold} cantos nesta liga). Fique com seu dinheiro no bolso!</div>`;
   } else {
     try { confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 }, colors: ['#fbbf24', '#f59e0b', '#34d367'] }); } catch(e){}
   }
