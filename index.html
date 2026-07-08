@@ -1229,7 +1229,7 @@
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--gold),#ffe359);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Múltiplas de Elite da Rodada</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria SmartCoach IA · 3 camadas (motor v3.0 + memória DNA + julgamento) · 4 escalões piramidais</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria SmartCoach IA · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas) · até 8 sinais</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas SmartCoach</button>
@@ -11963,6 +11963,25 @@ function _linhaUnderSugerida(expFT) {
 }
 
 // Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
+// v2.0 (2026-07-08): reforma HDP-only por regras do operador.
+//  - Mercados: APENAS HDP HT e HDP FT (Under saiu das Múltiplas Elite).
+//  - Cotas mínimas por liga: ARG ≥3 e ARG_B ≥3 (obrigatórias — travam a geração),
+//    demais ligas ≥2 (aviso, não trava). Sem teto pra ARG/ARG_B (maior aderência do app).
+//  - Confiança medida por 3 sinais cruzados: Bala de Prata (faixa+odd),
+//    Cisne Negro (Δ projetado) e Enigma SDE (desempenho casa×fora).
+//    2 de 3 critérios = ALTA confiança; 3 de 3 = prioridade máxima.
+const MULTIPLAS_COTA_MIN = Object.freeze({ ARG: 3, ARG_B: 3, BR: 2, BR_B: 2, MLS: 2, USL: 2, BUN: 2, CHI: 2, ECU: 2 });
+const MULTIPLAS_LIGAS_OBRIGATORIAS = Object.freeze(['ARG', 'ARG_B']);
+
+// Linha HDP HT sugerida — HT tem ~metade do volume de cantos do FT,
+// então os degraus de diferencial são menores que os do FT.
+function _linhaHDPHTSugerida(diffHT) {
+  if (diffHT >= 2.0) return '-2.0';
+  if (diffHT >= 1.5) return '-1.5';
+  if (diffHT >= 1.0) return '-1.0';
+  return '-0.5';
+}
+
 function gerarCandidatosMultiplas() {
   const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
@@ -12003,6 +12022,16 @@ function gerarCandidatosMultiplas() {
           const ajU = { scoreAjustado: sU, mult: sU_motor>0 ? +(sU/sU_motor).toFixed(2) : 1.0, motivos: sU !== sU_motor ? [`DNA Δ${sU-sU_motor>=0?'+':''}${sU-sU_motor} pts`] : [] };
           const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
           const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
+          // v2.0: diferencial HT + favorito HT (podem divergir do FT em times BLITZ/2º tempo)
+          const diffHT = Math.abs((p.expHomeHT||0) - (p.expAwayHT||0));
+          const favoritoHT = (p.expHomeHT||0) > (p.expAwayHT||0) ? j.m : j.v;
+
+          // v2.0: Enigma SDE — desempenho mandante em casa × visitante fora
+          let sde = null, sdeConf = null;
+          try {
+            const enigma = calcSDE_ENIGMA(j.m, j.v);
+            if (enigma && enigma.valido !== false) { sde = enigma.sde; sdeConf = enigma.confianca || null; }
+          } catch(e) {}
 
           // Filtros de exclusão — divergência DNA alta de QUALQUER um dos times
           const memLiga = window.MEMORIA_DNA && window.MEMORIA_DNA[L];
@@ -12014,14 +12043,24 @@ function gerarCandidatosMultiplas() {
           if (divM && divM.severidade === 'alta') alertaDiv.push(j.m+': '+divM.tipo_divergencia);
           if (divV && divV.severidade === 'alta') alertaDiv.push(j.v+': '+divV.tipo_divergencia);
 
+          // v2.0: confiança por confluência dos 3 sinais indicados pelo operador
+          const critBP    = !!(p.balaDePrataData && (p.balaDePrataData.faixa === 'NUCLEAR' || p.balaDePrataData.faixa === 'FORTE'));
+          const critCisne = diff >= 2.5;
+          const critSDE   = sde != null && sde >= 65;
+          const nCriterios = (critBP?1:0) + (critCisne?1:0) + (critSDE?1:0);
+
           candidatos.push({
             liga: L, m: j.m, v: j.v, data: j.data, hora: j.hora,
             scoreVencedor: sV, scoreUnder: sU,
             scoreVencedor_motor: sV_motor, scoreUnder_motor: sU_motor,
             dna_ajuste_ven: ajV, dna_ajuste_und: ajU,
             favorito, diff: +diff.toFixed(2),
+            favoritoHT, diffHT: +diffHT.toFixed(2),
             linhaHDP: _linhaHDPSugerida(diff),
-            linhaUnder: _linhaUnderSugerida(p.expTotalFT||10),
+            linhaHDP_HT: _linhaHDPHTSugerida(diffHT),
+            sde, sdeConf,
+            confluencia: nCriterios, // 0-3: quantos dos 3 sinais (BP/Cisne/SDE) batem
+            altaConfianca: nCriterios >= 2,
             expTotalFT: +((p.expTotalFT||0)).toFixed(2),
             expHT: +((p.expTotalHT||0)).toFixed(2),
             confFT: Math.round(p.confFT||0),
@@ -12042,7 +12081,21 @@ function gerarCandidatosMultiplas() {
   _forcaCantosCache = null; _forcaCantosCacheLiga = null;
   _rankingHTCache = null; _rankingHTCacheLiga = null;
 
-  return { candidatos, ligasComRodada, ligasSemRodada };
+  // v2.0: checagem de cotas mínimas por liga (conta só candidatos SEM divergência alta,
+  // já que divergentes são proibidos nas múltiplas de qualquer forma)
+  const contagemPorLiga = {};
+  candidatos.filter(c => !c.divergencia_alta).forEach(c => { contagemPorLiga[c.liga] = (contagemPorLiga[c.liga]||0)+1; });
+  const cotasFaltando = [];      // ligas obrigatórias abaixo da cota → TRAVA
+  const cotasAviso = [];         // demais ligas abaixo da cota → aviso, segue
+  Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
+    const n = contagemPorLiga[L] || 0;
+    if (n < min) {
+      if (MULTIPLAS_LIGAS_OBRIGATORIAS.includes(L)) cotasFaltando.push(`${L}: ${n}/${min} jogos`);
+      else cotasAviso.push(`${L}: ${n}/${min} jogos`);
+    }
+  });
+
+  return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso };
 }
 
 // Gera múltiplas via SmartCoach IA — chama API Anthropic
@@ -12059,7 +12112,7 @@ async function gerarMultiplasElite() {
   document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/3:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
 
   // ETAPA 1: candidatos
-  const { candidatos, ligasComRodada, ligasSemRodada } = gerarCandidatosMultiplas();
+  const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso } = gerarCandidatosMultiplas();
   _multiplasEliteState.candidatos = candidatos;
 
   if (candidatos.length === 0) {
@@ -12068,6 +12121,21 @@ async function gerarMultiplasElite() {
     if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
     return;
   }
+
+  // v2.0: cotas obrigatórias — ARG e ARG_B precisam de ≥3 jogos válidos cada (regra do operador).
+  if (cotasFaltando.length > 0) {
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
+      ❌ <strong>Cota mínima das ligas argentinas não atingida</strong> — a geração exige no mínimo 3 jogos válidos de ARG e 3 de ARG_B (base mais assertiva do app).<br>
+      <div style="margin-top:.4rem">Faltando: <strong>${cotasFaltando.join(' · ')}</strong></div>
+      <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">Importe mais jogos dessas ligas em 📋 Análise da Rodada e gere novamente. Jogos com divergência DNA alta não contam pra cota.</div>
+    </div>`;
+    _multiplasEliteState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
+    return;
+  }
+
+  // Cotas das demais ligas: aviso, não trava (regra do operador: trabalha com menos sinais)
+  _multiplasEliteState.cotasAviso = cotasAviso;
 
   // ETAPA 2: monta prompt e chama IA
   document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/3:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. SmartCoach curando seleção piramidal...</div>`;
@@ -12094,38 +12162,51 @@ async function gerarMultiplasElite() {
         // não usar esse parâmetro nesta chamada.
         model: 'claude-opus-4-7',
         max_tokens: 16000,
-        system: `Você é o SmartCoach — o maior analista de cantos/escanteios do mundo. Você acabou de receber TODA a memória DNA cravada (239 times, 12 assinaturas comportamentais, 247 buckets situacionais, 12 divergências DNA × Performance) das 9 ligas operáveis.
+        system: `Você é o SmartCoach — o maior analista de cantos/escanteios do mundo. Você acabou de receber TODA a memória DNA cravada das 9 ligas operáveis (assinaturas comportamentais, buckets situacionais, divergências DNA × Performance).
 
-Sua missão agora é a curadoria final das MÚLTIPLAS ELITE da rodada. Selecionar a dedo entre os candidatos pré-filtrados pelo motor as melhores entradas pra construir 4 múltiplas piramidais (ELITE 5, ELITE 10, ELITE 15, ELITE 20) — onde a estrutura é OBRIGATÓRIAMENTE piramidal: cada escalão maior CONTÉM TODOS os jogos do escalão anterior + adiciona mais.
+Sua missão é a curadoria final das MÚLTIPLAS ELITE da rodada — versão v2.0 (regras do operador, 2026-07-08):
 
-REGRAS DE SELEÇÃO:
-1. ELITE 5: as 5 entradas mais BLINDADAS da rodada. Score mínimo alto, evidência convergente (BP NUCLEAR + Cisne forte + memória DNA confirmando + sem divergência alta).
-2. ELITE 10 = ELITE 5 + 5 picks adicionais (próximas melhores, podem ter score um pouco menor mas SEM divergência alta).
-3. ELITE 15 = ELITE 10 + 5 picks (podem aceitar sample sugestivo, evitar divergência alta).
-4. ELITE 20 = ELITE 15 + 5 picks (top adicional dos candidatos restantes).
+MERCADOS: APENAS "HDP HT" (handicap de cantos no 1º tempo) e "HDP FT" (handicap de cantos no jogo todo). NÃO existe Under nesta curadoria.
 
-CRITÉRIOS DURANTE A SELEÇÃO:
-- MIX LIVRE entre HDP FT e Under FT — escolha o mercado certo pra cada jogo (HDP quando Vencedor forte, Under quando jogo travado).
-- INDEPENDÊNCIA: evite múltiplos jogos da mesma liga no mesmo dia se possível (correlação meteorológica/arbitragem).
-- NÃO INCLUA jogos com \`divergencia_alta\` (são justamente onde o motor pode falhar).
-- Priorize jogos com confluência: BP NUCLEAR + Cisne ≥ 2.5 + score ≥ 70 são picks de OURO.
+ESTRUTURA — até 8 sinais, organizados em 2 GRUPOS INDEPENDENTES por mercado:
+- Para cada mercado (HDP HT e HDP FT), monte o GRUPO 1 e o GRUPO 2, cada grupo com até 10 jogos.
+- Dentro de cada grupo: os 5 jogos mais fortes formam a múltipla de 5 pernas; os 10 formam a múltipla de 10 pernas (a de 10 CONTÉM os 5 da múltipla de 5, sempre nas primeiras posições).
+- INDEPENDÊNCIA TOTAL entre grupos do mesmo mercado: NENHUM time (nem mandante nem visitante) pode aparecer nos dois grupos do mesmo mercado. Também não pode repetir time dentro do mesmo grupo.
+- O mesmo jogo PODE aparecer em HDP HT e em HDP FT (mercados diferentes).
+
+DEGRADAÇÃO (se faltar candidato bom num mercado, entregue MENOS sinais — nunca complete com sinal fraco):
+- 20+ jogos bons → 4 sinais no mercado (2×5 + 2×10)
+- 15-19 → grupo 1 completo (5+10) + grupo 2 só com a de 5
+- 10-14 → grupo 1 completo (5+10), sem grupo 2
+- 5-9 → só a múltipla de 5 do grupo 1
+- <5 → nenhum sinal nesse mercado (omita os ids)
+
+SELEÇÃO POR CONFIANÇA (critério do operador — 3 sinais cruzados):
+- Bala de Prata NUCLEAR/FORTE, Cisne Δ ≥ 2.5, Enigma SDE ≥ 65.
+- Campo "confluencia" (0-3) diz quantos batem. Priorize confluencia 3, depois 2. Confluencia ≤1 só entra em degradação extrema e nas posições finais das múltiplas de 10.
+- Para HDP HT use diffHT/favoritoHT/linhaHDP_HT dos candidatos; para HDP FT use diff/favorito/linhaHDP.
+- ARG e ARG_B são as ligas de maior aderência do app — pode concentrar picks nelas sem medo.
+- NÃO INCLUA jogos com divergencia_alta.
 
 FORMATO DE SAÍDA — RETORNE APENAS JSON VÁLIDO, sem markdown wrap, sem comentários:
 {
   "tese_geral": "1-2 frases sobre o estado da rodada e nível de confiança geral",
-  "elite5": {
-    "picks": [
-      {"liga":"ARG","jogo":"River × San Lorenzo","mercado":"HDP","linha":"-1.5","favorito":"River Plate","justificativa":"1 frase com evidência numérica"},
-      ...4 mais
-    ],
-    "tese": "1-2 frases sobre a múltipla específica"
-  },
-  "elite10": { "picks": [...10, sendo os 5 da elite5 + 5 novos], "tese": "..." },
-  "elite15": { "picks": [...15], "tese": "..." },
-  "elite20": { "picks": [...20], "tese": "..." }
+  "sinais": [
+    {"id":"HT_G1_5","mercado":"HDP HT","grupo":1,"pernas":5,"tese":"1-2 frases","picks":[
+      {"liga":"ARG","jogo":"River × San Lorenzo","linha":"-1.0","favorito":"River Plate","justificativa":"1 frase com evidência numérica"},
+      ...5 no total
+    ]},
+    {"id":"HT_G1_10","mercado":"HDP HT","grupo":1,"pernas":10,"tese":"...","picks":[...10, sendo os 5 do HT_G1_5 nas primeiras posições + 5 novos]},
+    {"id":"HT_G2_5","mercado":"HDP HT","grupo":2,"pernas":5,"tese":"...","picks":[...5, ZERO times em comum com o grupo 1]},
+    {"id":"HT_G2_10","mercado":"HDP HT","grupo":2,"pernas":10,"tese":"...","picks":[...10]},
+    {"id":"FT_G1_5","mercado":"HDP FT","grupo":1,"pernas":5,"tese":"...","picks":[...]},
+    {"id":"FT_G1_10","mercado":"HDP FT","grupo":1,"pernas":10,"tese":"...","picks":[...]},
+    {"id":"FT_G2_5","mercado":"HDP FT","grupo":2,"pernas":5,"tese":"...","picks":[...]},
+    {"id":"FT_G2_10","mercado":"HDP FT","grupo":2,"pernas":10,"tese":"...","picks":[...]}
+  ]
 }
-
-IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer também na elite10, elite15 e elite20 (sempre nas primeiras posições).`,
+Linhas HDP FT válidas: -0.5/-1.0/-1.5/-2.0/-2.5. Linhas HDP HT válidas: -0.5/-1.0/-1.5/-2.0.
+Em degradação, simplesmente OMITA os sinais que não couberem (ids ausentes do array) — nunca envie múltipla incompleta.`,
         messages: [{ role: 'user', content: prompt }]
       })
     });
@@ -12182,115 +12263,125 @@ IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer ta
 //  Auditoria externa identificou ausência. Garante schema + piramidalidade
 //  + exclusão de divergências altas + mercados válidos + jogos existem.
 // ══════════════════════════════════════════════════════════════════
+// v2.0 (2026-07-08): reescrito pro formato HDP-only "sinais[]" (2 grupos independentes
+// por mercado, 5/10 pernas, degradação permitida). Checa: schema, ids conhecidos,
+// pernas exatas, linhas válidas por mercado, subset 5⊂10 dentro do grupo,
+// INDEPENDÊNCIA DE TIMES entre grupos do mesmo mercado e dentro de cada múltipla,
+// exclusão de divergência alta e existência do pick nos candidatos.
 function _validarRespostaMultiplas(parsed, candidatos) {
   const erros = [];
-  const HDPS_VALIDAS = ['-0.5', '-1.0', '-1.5', '-2.0', '-2.5'];
-  const UNDERS_VALIDAS = ['7.5', '8.5', '9.5', '10.5', '11.5'];
-  const ESCALOES_ESPERADOS = { elite5: 5, elite10: 10, elite15: 15, elite20: 20 };
-  const normJogo = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const HDPS_FT = ['-0.5', '-1.0', '-1.5', '-2.0', '-2.5'];
+  const HDPS_HT = ['-0.5', '-1.0', '-1.5', '-2.0'];
+  const IDS_VALIDOS = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+  const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
 
-  // 1. SCHEMA — chaves obrigatórias top-level
+  // 1. SCHEMA top-level
   if (!parsed || typeof parsed !== 'object') {
     erros.push('Resposta não é um objeto JSON válido.');
     return { valido: false, erros };
   }
-  if (!parsed.tese_geral || typeof parsed.tese_geral !== 'string') {
-    erros.push('Falta campo "tese_geral" (string).');
+  if (!parsed.tese_geral || typeof parsed.tese_geral !== 'string') erros.push('Falta campo "tese_geral" (string).');
+  if (!Array.isArray(parsed.sinais)) {
+    erros.push('Falta array "sinais".');
+    return { valido: false, erros };
   }
-  for (const k of Object.keys(ESCALOES_ESPERADOS)) {
-    if (!parsed[k] || typeof parsed[k] !== 'object') {
-      erros.push(`Falta escalão "${k}".`);
-    } else {
-      if (!Array.isArray(parsed[k].picks)) erros.push(`"${k}.picks" não é array.`);
-      if (typeof parsed[k].tese !== 'string') erros.push(`"${k}.tese" ausente ou não-string.`);
-    }
-  }
-  // Se schema básico já falhou, retorna agora
+  if (parsed.sinais.length === 0) erros.push('Array "sinais" vazio — nenhuma múltipla gerada.');
+
+  const porId = {};
+  parsed.sinais.forEach(s => {
+    if (!s || typeof s !== 'object') { erros.push('Sinal não é objeto.'); return; }
+    if (!IDS_VALIDOS.includes(s.id)) { erros.push(`Sinal com id desconhecido "${s.id}" (válidos: ${IDS_VALIDOS.join(', ')}).`); return; }
+    if (porId[s.id]) erros.push(`Sinal "${s.id}" duplicado.`);
+    porId[s.id] = s;
+  });
   if (erros.length > 0) return { valido: false, erros };
 
-  // 2. TAMANHOS exatos
-  for (const [escalao, n] of Object.entries(ESCALOES_ESPERADOS)) {
-    if (parsed[escalao].picks.length !== n) {
-      erros.push(`${escalao} tem ${parsed[escalao].picks.length} picks (esperado ${n}).`);
-    }
+  // Helper: resolve candidato do pick (match por nomes dos 2 times)
+  function acharCand(p) {
+    const pn = normN(p.jogo);
+    return candidatos.find(c => pn.includes(normN(c.m)) && pn.includes(normN(c.v))) || null;
+  }
+  // Helper: times (mandante+visitante) de um conjunto de picks
+  function timesDosPicks(picks) {
+    const ts = [];
+    (picks||[]).forEach(p => {
+      const c = acharCand(p);
+      if (c) { ts.push(normN(c.m)); ts.push(normN(c.v)); }
+    });
+    return ts;
   }
 
-  // 3. PICKS — cada pick tem schema completo + mercado/linha válidos
-  for (const escalao of Object.keys(ESCALOES_ESPERADOS)) {
-    (parsed[escalao].picks || []).forEach((p, i) => {
-      const label = `${escalao}[${i+1}]`;
+  // 2. Validação de cada sinal presente
+  for (const [id, s] of Object.entries(porId)) {
+    const pernasEsperadas = id.endsWith('_10') ? 10 : 5;
+    const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
+    const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
+
+    if (s.mercado !== mercadoEsperado) erros.push(`${id}: mercado "${s.mercado}" (esperado "${mercadoEsperado}").`);
+    if (!Array.isArray(s.picks)) { erros.push(`${id}: "picks" não é array.`); continue; }
+    if (s.picks.length !== pernasEsperadas) erros.push(`${id}: ${s.picks.length} picks (esperado exatamente ${pernasEsperadas} — em degradação, omita o sinal inteiro).`);
+    if (typeof s.tese !== 'string') erros.push(`${id}: "tese" ausente.`);
+
+    const timesNoSinal = new Set();
+    s.picks.forEach((p, i) => {
+      const label = `${id}[${i+1}]`;
       if (!p.liga) erros.push(`${label}: falta "liga".`);
       if (!p.jogo) erros.push(`${label}: falta "jogo".`);
-      if (!p.mercado || (p.mercado !== 'HDP' && p.mercado !== 'Under')) {
-        erros.push(`${label}: "mercado" deve ser "HDP" ou "Under", recebeu "${p.mercado}".`);
-      }
-      if (p.linha != null) {
-        const linhaStr = String(p.linha).replace(',', '.');
-        if (p.mercado === 'HDP' && !HDPS_VALIDAS.includes(linhaStr)) {
-          erros.push(`${label}: linha HDP "${p.linha}" não está em ${HDPS_VALIDAS.join('/')}.`);
-        }
-        if (p.mercado === 'Under' && !UNDERS_VALIDAS.includes(linhaStr)) {
-          erros.push(`${label}: linha Under "${p.linha}" não está em ${UNDERS_VALIDAS.join('/')}.`);
-        }
-      }
-      if (!p.favorito && p.mercado === 'HDP') erros.push(`${label}: HDP requer "favorito".`);
+      if (!p.favorito) erros.push(`${label}: falta "favorito" (HDP exige favorito).`);
       if (!p.justificativa) erros.push(`${label}: falta "justificativa".`);
-    });
-  }
+      const linhaStr = String(p.linha||'').replace(',', '.');
+      if (!linhasValidas.includes(linhaStr)) erros.push(`${label}: linha "${p.linha}" inválida pra ${mercadoEsperado} (válidas: ${linhasValidas.join('/')}).`);
 
-  // 4. PIRAMIDALIDADE — elite5 ⊂ elite10 ⊂ elite15 ⊂ elite20
-  const jogosNorm = obj => new Set((obj.picks || []).map(p => normJogo(p.jogo)));
-  const j5 = jogosNorm(parsed.elite5);
-  const j10 = jogosNorm(parsed.elite10);
-  const j15 = jogosNorm(parsed.elite15);
-  const j20 = jogosNorm(parsed.elite20);
-  const verificarSub = (menor, maior, nomeMenor, nomeMaior) => {
-    for (const j of menor) {
-      if (!maior.has(j)) erros.push(`Piramidalidade quebrada: jogo presente em ${nomeMenor} ausente em ${nomeMaior} ("${j}").`);
-    }
-  };
-  verificarSub(j5, j10, 'elite5', 'elite10');
-  verificarSub(j10, j15, 'elite10', 'elite15');
-  verificarSub(j15, j20, 'elite15', 'elite20');
-
-  // 5. EXCLUSÃO de divergências altas (filtro defensivo)
-  const candByJogo = {};
-  candidatos.forEach(c => {
-    const k = normJogo(c.m + 'x' + c.v);
-    candByJogo[k] = c;
-  });
-  for (const escalao of Object.keys(ESCALOES_ESPERADOS)) {
-    (parsed[escalao].picks || []).forEach(p => {
-      // tenta achar candidato cujo "jogo" bata
-      const pn = normJogo(p.jogo);
-      // candidato pode estar como "MxV", então tenta match parcial
-      const c = Object.entries(candByJogo).find(([k, v]) => pn.includes(normJogo(v.m)) && pn.includes(normJogo(v.v)));
-      if (c) {
-        const cand = c[1];
-        if (cand.divergencia_alta) {
-          erros.push(`${escalao}: pick "${p.jogo}" tem divergência DNA alta (${cand.divergencia_alta.join(', ')}) — não deveria entrar em múltipla.`);
-        }
+      const cand = acharCand(p);
+      if (!cand) {
+        erros.push(`${label}: pick "${p.jogo}" não corresponde a candidato pré-filtrado (SmartCoach pode ter inventado).`);
       } else {
-        // pick não corresponde a nenhum candidato pré-filtrado
-        erros.push(`${escalao}: pick "${p.jogo}" não corresponde a candidato pré-filtrado (SmartCoach pode ter inventado).`);
+        if (cand.divergencia_alta) erros.push(`${label}: "${p.jogo}" tem divergência DNA alta (${cand.divergencia_alta.join(', ')}) — proibido.`);
+        // Repetição de time DENTRO da mesma múltipla
+        [normN(cand.m), normN(cand.v)].forEach(t => {
+          if (timesNoSinal.has(t)) erros.push(`${label}: time repetido dentro de ${id} ("${t}").`);
+          timesNoSinal.add(t);
+        });
       }
     });
   }
+
+  // 3. SUBSET dentro do grupo — a múltipla de 10 contém os jogos da de 5 do mesmo grupo
+  [['HT_G1_5','HT_G1_10'],['HT_G2_5','HT_G2_10'],['FT_G1_5','FT_G1_10'],['FT_G2_5','FT_G2_10']].forEach(([id5, id10]) => {
+    if (porId[id5] && porId[id10]) {
+      const jogos10 = new Set((porId[id10].picks||[]).map(p => normN(p.jogo)));
+      (porId[id5].picks||[]).forEach(p => {
+        if (!jogos10.has(normN(p.jogo))) erros.push(`Estrutura quebrada: jogo de ${id5} ausente em ${id10} ("${p.jogo}").`);
+      });
+    }
+    // Se existe a de 10 mas não a de 5, degradação errada (a de 5 é a base)
+    if (porId[id10] && !porId[id5]) erros.push(`${id10} presente sem ${id5} — a múltipla de 5 é a base do grupo, gere-a primeiro.`);
+  });
+
+  // 4. INDEPENDÊNCIA entre grupos do mesmo mercado — nenhum time em comum
+  [['HT_G1_10','HT_G1_5','HT_G2_10','HT_G2_5','HDP HT'],['FT_G1_10','FT_G1_5','FT_G2_10','FT_G2_5','HDP FT']].forEach(([g1a, g1b, g2a, g2b, mercado]) => {
+    const timesG1 = new Set(timesDosPicks([...(porId[g1a]?.picks||[]), ...(porId[g1b]?.picks||[])]));
+    const timesG2 = timesDosPicks([...(porId[g2a]?.picks||[]), ...(porId[g2b]?.picks||[])]);
+    timesG2.forEach(t => {
+      if (timesG1.has(t)) erros.push(`Independência quebrada em ${mercado}: time "${t}" aparece no grupo 1 e no grupo 2.`);
+    });
+  });
 
   return { valido: erros.length === 0, erros };
 }
 
 function _montarPromptMultiplas(candidatos) {
-  let p = `Você recebeu ${candidatos.length} candidatos pré-filtrados pelo motor v3.0 (Filtro OURO recalibrado). Selecione as MÚLTIPLAS ELITE 5/10/15/20 conforme system prompt.\n\n`;
-  p += `CANDIDATOS (ordenados por score Vencedor descendente):\n\n`;
-  const sorted = [...candidatos].sort((a,b) => Math.max(b.scoreVencedor,b.scoreUnder) - Math.max(a.scoreVencedor,a.scoreUnder));
+  let p = `Você recebeu ${candidatos.length} candidatos pré-filtrados pelo motor. Monte os sinais HDP HT / HDP FT (até 8 múltiplas em 2 grupos independentes por mercado) conforme system prompt.\n\n`;
+  p += `CANDIDATOS (ordenados por confluência de sinais e score Vencedor):\n\n`;
+  const sorted = [...candidatos].sort((a,b) => (b.confluencia - a.confluencia) || (b.scoreVencedor - a.scoreVencedor));
 
   sorted.forEach((c, i) => {
-    p += `[${i+1}] ${c.liga} · ${c.m} × ${c.v}${c.data?' ('+c.data+')':''}\n`;
-    p += `   Scores: Vencedor=${c.scoreVencedor.toFixed(0)} · Under=${c.scoreUnder.toFixed(0)} | xCornersFT=${c.expTotalFT} | Conf=${c.confFT}%\n`;
-    p += `   Sinais: ${c.bpFaixa?'BP '+c.bpFaixa+' @'+c.bpOdd:'sem BP'} | Cisne Δ=${c.diff} | Reis=${c.reisFaixa||'—'} | Sniper FT=${c.sniperFT||'—'}\n`;
-    p += `   Sugestão motor: HDP ${c.linhaHDP} ${c.favorito} OU Under ${c.linhaUnder}\n`;
-    if (c.divergencia_alta) p += `   🚨 DIVERGÊNCIA ALTA detectada: ${c.divergencia_alta.join(', ')} — EVITAR\n`;
+    p += `[${i+1}] ${c.liga} · ${c.m} × ${c.v}${c.data?' ('+c.data+')':''}${c.altaConfianca ? ' ⭐ ALTA CONFIANÇA ('+c.confluencia+'/3)' : ' (confluência '+c.confluencia+'/3)'}\n`;
+    p += `   Score Vencedor=${c.scoreVencedor.toFixed(0)} | Conf motor=${c.confFT}% | xCantos FT=${c.expTotalFT} · HT=${c.expHT}\n`;
+    p += `   Sinais: ${c.bpFaixa?'BP '+c.bpFaixa+' @'+c.bpOdd:'sem BP'} | Cisne ΔFT=${c.diff} | Enigma SDE=${c.sde != null ? c.sde+(c.sdeConf?' ('+c.sdeConf+')':'') : '—'} | Reis=${c.reisFaixa||'—'}\n`;
+    p += `   HDP FT: ${c.linhaHDP} ${c.favorito} (ΔFT=${c.diff}) | HDP HT: ${c.linhaHDP_HT} ${c.favoritoHT} (ΔHT=${c.diffHT})\n`;
+    if (c.favorito !== c.favoritoHT) p += `   ⚠️ Favorito HT ≠ favorito FT — avalie os mercados separadamente\n`;
+    if (c.divergencia_alta) p += `   🚨 DIVERGÊNCIA ALTA detectada: ${c.divergencia_alta.join(', ')} — PROIBIDO usar\n`;
     // Memória DNA dos 2 times
     const dM = getMemoriaTime(c.liga, c.m);
     const dV = getMemoriaTime(c.liga, c.v);
@@ -12305,7 +12396,7 @@ function _montarPromptMultiplas(candidatos) {
     p += `\n`;
   });
 
-  p += `\nMonte as 4 múltiplas piramidais conforme system prompt. RETORNE APENAS JSON.`;
+  p += `\nMonte os sinais conforme system prompt (2 grupos independentes por mercado, degradação se faltar candidato bom). RETORNE APENAS JSON.`;
   return p;
 }
 
@@ -12336,16 +12427,39 @@ function renderMultiplasElite() {
 
   if (!_multiplasEliteState.multiplas) {
     if (status && !status.innerHTML.trim()) {
-      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas SmartCoach</strong> para curadoria piramidal.</div>';
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas SmartCoach</strong> para gerar os sinais HDP HT/FT (cotas mínimas: 3 jogos de ARG, 3 de ARG_B, 2 das demais ligas).</div>';
     }
     ctr.innerHTML = '';
     return;
   }
 
   const m = _multiplasEliteState.multiplas;
-  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria SmartCoach concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
+  const avisoCotas = (_multiplasEliteState.cotasAviso && _multiplasEliteState.cotasAviso.length)
+    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ Ligas abaixo da cota mínima nesta rodada (geração seguiu com menos sinais): ${_multiplasEliteState.cotasAviso.join(' · ')}</div>`
+    : '';
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria SmartCoach concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoCotas}</div>`;
 
-  ctr.innerHTML = ['elite5','elite10','elite15','elite20'].map(k => _cardMultipla(k, m[k])).filter(Boolean).join('');
+  // v2.0: formato "sinais[]" (HDP HT/FT, 2 grupos). Fallback legado: formato piramidal antigo em cache.
+  if (Array.isArray(m.sinais)) {
+    const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+    const porId = {};
+    m.sinais.forEach(s => { if (s && s.id) porId[s.id] = s; });
+    const headerMercado = mercado => `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:var(--gold2);letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — Handicap de cantos no 1º tempo' : '🏁 HDP FT — Handicap de cantos no jogo todo'}</div>`;
+    let html = '';
+    ['HDP HT','HDP FT'].forEach(mercado => {
+      const idsDoMercado = ordem.filter(id => (mercado === 'HDP HT') === id.startsWith('HT'));
+      const presentes = idsDoMercado.filter(id => porId[id]);
+      if (presentes.length === 0) {
+        html += headerMercado(mercado) + `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado nesta rodada — pool de candidatos de alta confiança insuficiente (degradação).</div>`;
+      } else {
+        html += headerMercado(mercado) + presentes.map(id => _cardSinalMultipla(porId[id])).join('');
+      }
+    });
+    ctr.innerHTML = html;
+  } else {
+    // Cache antigo (formato piramidal pré-v2.0) — renderiza no formato legado
+    ctr.innerHTML = ['elite5','elite10','elite15','elite20'].map(k => _cardMultipla(k, m[k])).filter(Boolean).join('');
+  }
 }
 
 // v1.1 (2026-05-14): probabilidade composta REAL via faixas BP/Cisne dos candidatos
@@ -12407,6 +12521,84 @@ function _calcularKellyFraction(probComposta, oddComposta) {
   return kelly; // pode ser negativo (EV negativo)
 }
 
+// v2.0 — card de um sinal do novo formato (HDP HT/FT, grupos independentes)
+function _cardSinalMultipla(s) {
+  if (!s || !Array.isArray(s.picks)) return '';
+  const ehHT = s.id.startsWith('HT');
+  const eh10 = s.id.endsWith('_10');
+  const cor = ehHT ? (eh10 ? '#0ea5e9' : '#16a34a') : (eh10 ? '#8b5cf6' : '#f59e0b');
+  const tit = `${eh10 ? '🎯' : '💎'} ${s.mercado} · Grupo ${s.grupo} · ${s.picks.length} pernas`;
+
+  const candidatos = _multiplasEliteState.candidatos || [];
+  const { probComposta, oddComposta } = _calcularProbCompostaReal(s.picks, candidatos);
+  const probPct = probComposta * 100;
+  const breakevenPct = oddComposta > 0 ? (100 / oddComposta) : 100;
+  const margemPP = probPct - breakevenPct;
+  const kelly = _calcularKellyFraction(probComposta, oddComposta);
+  const oddFmt = oddComposta >= 1000 ? Math.round(oddComposta).toLocaleString('pt-BR') + 'x' : oddComposta.toFixed(2) + 'x';
+
+  let bandeiraCor, bandeiraTxt, bandeiraIcone;
+  if (margemPP < 0) { bandeiraCor = 'var(--red)'; bandeiraIcone = '🚫'; bandeiraTxt = `EV TEÓRICO NEGATIVO (margem ${margemPP.toFixed(1)}pp)`; }
+  else if (margemPP < 2) { bandeiraCor = 'var(--gold)'; bandeiraIcone = '⚠️'; bandeiraTxt = `Margem fina (${margemPP.toFixed(1)}pp) — alta sensibilidade a variância`; }
+  else if (margemPP < 5) { bandeiraCor = '#fb923c'; bandeiraIcone = '🟡'; bandeiraTxt = `Margem moderada (${margemPP.toFixed(1)}pp)`; }
+  else { bandeiraCor = 'var(--green)'; bandeiraIcone = '🟢'; bandeiraTxt = `Margem confortável (${margemPP.toFixed(1)}pp)`; }
+
+  let kellyMsg;
+  if (kelly < 0) kellyMsg = `<span style="color:var(--red);font-weight:700">EV negativo — Kelly recomenda NÃO apostar</span>`;
+  else if (kelly < 0.001) kellyMsg = `<span style="color:var(--gold)">Kelly ~0 (stake desprezível recomendado: máx 0.1% do bankroll)</span>`;
+  else if (kelly > 0.10) kellyMsg = `<span style="color:var(--green);font-weight:700">Kelly ${(kelly*100).toFixed(2)}% — use frac kelly (¼ a ½) pra reduzir variância</span>`;
+  else kellyMsg = `<span style="color:var(--text)">Kelly sugerido: ${(kelly*100).toFixed(3)}% do bankroll · ¼ Kelly conservador: ${(kelly*25).toFixed(3)}%</span>`;
+
+  const rows = s.picks.map((p,i) => `
+    <tr style="border-bottom:1px solid var(--border)">
+      <td style="padding:.5rem .7rem;color:var(--muted);text-align:center;font-weight:700">${i+1}</td>
+      <td style="padding:.5rem .7rem;font-weight:700">${p.jogo}</td>
+      <td style="padding:.5rem .7rem;color:var(--muted)">${p.liga}</td>
+      <td style="padding:.5rem .7rem"><span style="background:${cor}22;color:${cor};padding:.15rem .5rem;border-radius:5px;font-weight:700;font-size:.72rem">${s.mercado} ${p.linha||''}</span></td>
+      <td style="padding:.5rem .7rem;font-size:.78rem;color:var(--text)">${p.favorito||'—'}</td>
+      <td style="padding:.5rem .7rem;font-size:.75rem;color:var(--muted)">${p.justificativa||''}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div style="background:var(--card);border:1px solid var(--border);border-left:4px solid ${cor};border-radius:12px;padding:1.2rem;margin-bottom:1.2rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.7rem">
+        <div style="font-size:1.05rem;font-weight:900;color:${cor}">${tit}</div>
+        <div style="font-size:.72rem;color:var(--muted);text-align:right">
+          Prob composta REAL: <strong style="color:var(--text)">${probPct.toFixed(2)}%</strong><br>
+          Odd acumulada: <strong style="color:${cor}">${oddFmt}</strong>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.5rem;margin-bottom:.7rem;font-size:.72rem">
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">WR breakeven</div>
+          <div style="font-size:.95rem;font-weight:800;color:var(--text)">${breakevenPct.toFixed(3)}%</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Margem (prob − BE)</div>
+          <div style="font-size:.95rem;font-weight:800;color:${bandeiraCor}">${margemPP >= 0 ? '+' : ''}${margemPP.toFixed(2)}pp</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Kelly Fraction</div>
+          <div style="font-size:.95rem;font-weight:800;color:${kelly > 0 ? 'var(--green)' : 'var(--red)'}">${kelly >= 0 ? (kelly*100).toFixed(3)+'%' : '< 0'}</div>
+        </div>
+      </div>
+      <div style="padding:.5rem .8rem;background:${bandeiraCor}15;border-left:3px solid ${bandeiraCor};border-radius:6px;font-size:.78rem;color:var(--text);margin-bottom:.7rem">
+        ${bandeiraIcone} <strong style="color:${bandeiraCor}">${bandeiraTxt}</strong><br>
+        <span style="font-size:.72rem;color:var(--muted)">${kellyMsg}</span>
+      </div>
+      ${s.tese ? `<div style="background:var(--bg3);border-radius:6px;padding:.5rem .8rem;margin-bottom:.6rem;font-size:.78rem;color:var(--text);font-style:italic">🧠 ${s.tese}</div>` : ''}
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Jogo</th><th>Liga</th><th>Mercado</th><th>Favorito</th><th>Justificativa</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+// LEGADO pré-v2.0 — mantido só pra renderizar cache antigo (formato piramidal elite5/10/15/20)
 function _cardMultipla(escalao, dados) {
   if (!dados || !Array.isArray(dados.picks)) return '';
   const tit = { elite5: '💎 ELITE 5', elite10: '🎯 ELITE 10', elite15: '⚡ ELITE 15', elite20: '🚀 ELITE 20' }[escalao];
@@ -12506,7 +12698,7 @@ function exportarMultiplasHTML() {
   const conteudoHTML = (status?.innerHTML||'') + (ctr?.innerHTML||'');
   _exportarAnaliseHTML({
     titulo: '🏆 Múltiplas Elite — Curadoria SmartCoach',
-    subtitulo: 'Seleção piramidal (5/10/15/20) gerada pelo SmartCoach IA com memória DNA cravada',
+    subtitulo: 'Sinais HDP HT/FT em grupos independentes (2×5 + 2×10 por mercado) — SmartCoach IA com memória DNA cravada',
     conteudoHTML,
     prefixoArquivo: 'MultiplasElite',
     corHeader: 'var(--gold)'
