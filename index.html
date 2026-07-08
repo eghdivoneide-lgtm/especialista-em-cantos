@@ -1223,16 +1223,16 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
-       MÚLTIPLAS ELITE — Curadoria SmartCoach IA
+       MÚLTIPLAS ELITE — Curadoria determinística do motor (v2.1)
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-multiplas-elite" class="view">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--gold),#ffe359);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Múltiplas de Elite da Rodada</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria SmartCoach IA · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas) · até 8 sinais</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria determinística do motor · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas) · até 8 sinais</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-        <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas SmartCoach</button>
+        <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas</button>
         <button onclick="exportarMultiplasHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.65rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">📤 Exportar HTML</button>
         <button onclick="snapshotMemoriaDNA()" style="background:transparent;color:var(--gold);border:1px dashed var(--gold);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Baixar snapshot da memória DNA atual (pra hold-out test set out-of-sample)">📸 Snapshot DNA</button>
         <button onclick="limparMultiplasElite()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpar cache local e regerar">🗑️ Limpar Cache</button>
@@ -4798,7 +4798,7 @@ function showView(id) {
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
   if (id==='vencedor-cantos') renderVencedorCantos(); // laboratório de força do sinal
   if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
-  if (id==='multiplas-elite') renderMultiplasElite(); // curadoria SmartCoach IA
+  if (id==='multiplas-elite') renderMultiplasElite(); // curadoria determinística do motor (v2.1)
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -11940,7 +11940,7 @@ function ajusteDNA_LITE(scoreOriginal, mandante, visitante, liga, tipoMercado) {
 }
 
 // ══════════════════════════════════════════════════════════════════
-//  MÚLTIPLAS ELITE — Curadoria SmartCoach IA (v1.0 — 2026-05-14)
+//  MÚLTIPLAS ELITE — Curadoria determinística do motor (v2.1 — 2026-07-08; IA removida por decisão do operador)
 //
 //  Pipeline em 3 camadas:
 //  1. Motor v3.0: calcula score Vencedor + score Under em todos os jogos
@@ -12098,18 +12098,100 @@ function gerarCandidatosMultiplas() {
   return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso };
 }
 
-// Gera múltiplas via SmartCoach IA — chama API Anthropic
+// ══════════════════════════════════════════════════════════════════
+//  CURADORIA DETERMINÍSTICA v2.1 (2026-07-08) — decisão do operador:
+//  Múltiplas Elite deixou de depender da API Anthropic. As regras v2.0
+//  (HDP-only, confluência BP/Cisne/SDE, grupos independentes, degradação)
+//  são 100% mecânicas — o próprio motor monta os sinais, de graça e
+//  instantâneo. _validarRespostaMultiplas continua rodando como rede de
+//  segurança sobre o output (mesmo schema de antes).
+// ══════════════════════════════════════════════════════════════════
+
+// Elegibilidade por mercado: sem divergência DNA alta, confluência ≥1
+// (pelo menos 1 dos 3 sinais BP/Cisne/SDE) e diferencial projetado mínimo
+// que sustente ao menos a linha -0.5 com folga (FT ≥1.0 · HT ≥0.5).
+function _elegivelMercadoMultipla(c, ht) {
+  if (c.divergencia_alta) return false;
+  if ((c.confluencia||0) < 1) return false;
+  return ht ? ((c.diffHT||0) >= 0.5) : ((c.diff||0) >= 1.0);
+}
+
+// Ranking dentro do mercado: confluência (3 sinais do operador) manda;
+// desempate por diferencial do mercado, depois score Vencedor do motor.
+function _rankMercadoMultipla(a, b, ht) {
+  if ((b.confluencia||0) !== (a.confluencia||0)) return (b.confluencia||0) - (a.confluencia||0);
+  const da = ht ? (a.diffHT||0) : (a.diff||0), db = ht ? (b.diffHT||0) : (b.diff||0);
+  if (db !== da) return db - da;
+  return (b.scoreVencedor||0) - (a.scoreVencedor||0);
+}
+
+// Justificativa gerada dos próprios números (substitui o texto da IA)
+function _justificativaCand(c, ht) {
+  const partes = [];
+  if (c.bpFaixa) partes.push('BP ' + c.bpFaixa + (c.bpOdd ? ' @' + c.bpOdd : ''));
+  partes.push(ht ? 'ΔHT ' + c.diffHT : 'Cisne Δ' + c.diff);
+  if (c.sde != null) partes.push('SDE ' + c.sde + (c.sdeConf ? ' (' + c.sdeConf + ')' : ''));
+  partes.push('conf ' + c.confFT + '%');
+  return partes.join(' · ');
+}
+
+function _curadoriaDeterministicaMultiplas(candidatos) {
+  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const sinais = [];
+  const resumoMercados = [];
+
+  ['HT','FT'].forEach(pref => {
+    const ht = pref === 'HT';
+    const mercado = ht ? 'HDP HT' : 'HDP FT';
+    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
+
+    // Grupo 1: melhores até 10 jogos, sem repetir clube dentro do grupo
+    const timesG1 = new Set(); const g1 = [];
+    // Grupo 2: próximos até 10, sem repetir clube dentro do grupo NEM com o grupo 1
+    const timesG2 = new Set(); const g2 = [];
+    eleg.forEach(c => {
+      const tm = norm(c.m), tv = norm(c.v);
+      if (g1.length < 10 && !timesG1.has(tm) && !timesG1.has(tv)) {
+        g1.push(c); timesG1.add(tm); timesG1.add(tv);
+      } else if (g2.length < 10 && !timesG1.has(tm) && !timesG1.has(tv) && !timesG2.has(tm) && !timesG2.has(tv)) {
+        g2.push(c); timesG2.add(tm); timesG2.add(tv);
+      }
+    });
+
+    const mkPick = c => ({
+      liga: c.liga, jogo: c.m + ' × ' + c.v,
+      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
+      favorito: ht ? c.favoritoHT : c.favorito,
+      justificativa: _justificativaCand(c, ht)
+    });
+    const mkTese = (grupo, arr) => {
+      const alta = arr.filter(c => c.altaConfianca).length;
+      const argN = arr.filter(c => c.liga === 'ARG' || c.liga === 'ARG_B').length;
+      return `Grupo ${grupo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
+    };
+
+    if (g1.length >= 5)  sinais.push({ id: pref+'_G1_5',  mercado, grupo: 1, pernas: 5,  tese: mkTese(1, g1.slice(0,5)), picks: g1.slice(0,5).map(mkPick) });
+    if (g1.length >= 10) sinais.push({ id: pref+'_G1_10', mercado, grupo: 1, pernas: 10, tese: mkTese(1, g1),            picks: g1.map(mkPick) });
+    if (g2.length >= 5)  sinais.push({ id: pref+'_G2_5',  mercado, grupo: 2, pernas: 5,  tese: mkTese(2, g2.slice(0,5)), picks: g2.slice(0,5).map(mkPick) });
+    if (g2.length >= 10) sinais.push({ id: pref+'_G2_10', mercado, grupo: 2, pernas: 10, tese: mkTese(2, g2),            picks: g2.map(mkPick) });
+
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${[g1.length>=5?'G1×5':null, g1.length>=10?'G1×10':null, g2.length>=5?'G2×5':null, g2.length>=10?'G2×10':null].filter(Boolean).join('+')||'sem sinais (degradação)'}`);
+  });
+
+  const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
+  const tese_geral = `Curadoria determinística do motor: ${candidatos.length} candidatos, ${altaTotal} com alta confiança (2+ de 3 sinais BP/Cisne/SDE). ${resumoMercados.join(' · ')}.`;
+
+  return { tese_geral, sinais };
+}
+
+// Gera múltiplas — curadoria determinística do motor (v2.1: sem dependência de API)
 async function gerarMultiplasElite() {
-  if (!scKey) {
-    alert('⚠️ Configure a chave Anthropic no SmartCoach (engrenagem ⚙️) antes de gerar.');
-    return;
-  }
   if (_multiplasEliteState.loading) return;
 
   _multiplasEliteState.loading = true;
   const btn = document.getElementById('btn-gerar-multiplas');
-  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria SmartCoach em andamento...'; }
-  document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/3:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria do motor em andamento...'; }
+  document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/2:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
 
   // ETAPA 1: candidatos
   const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso } = gerarCandidatosMultiplas();
@@ -12118,7 +12200,7 @@ async function gerarMultiplasElite() {
   if (candidatos.length === 0) {
     document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum candidato encontrado.</strong> Importe rodadas nas ligas (📋 Análise da Rodada) com jogos futuros antes de gerar múltiplas.<br><br>Ligas sem rodada/jogos futuros: ${ligasSemRodada.join(', ')||'—'}</div>`;
     _multiplasEliteState.loading = false;
-    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
     return;
   }
 
@@ -12130,113 +12212,36 @@ async function gerarMultiplasElite() {
       <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">Importe mais jogos dessas ligas em 📋 Análise da Rodada e gere novamente. Jogos com divergência DNA alta não contam pra cota.</div>
     </div>`;
     _multiplasEliteState.loading = false;
-    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
     return;
   }
 
   // Cotas das demais ligas: aviso, não trava (regra do operador: trabalha com menos sinais)
   _multiplasEliteState.cotasAviso = cotasAviso;
 
-  // ETAPA 2: monta prompt e chama IA
-  document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/3:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. SmartCoach curando seleção piramidal...</div>`;
-
-  const prompt = _montarPromptMultiplas(candidatos);
+  // ETAPA 2: curadoria determinística (v2.1 — sem chamada de API)
+  document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/2:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. Motor montando os sinais HDP HT/FT...</div>`;
 
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': scKey,
-        'anthropic-version': '2023-06-01',
-        'content-type': 'application/json',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        // v1.2 (2026-05-15): Opus 4.7 + max_tokens 16k pra curadoria SmartCoach
-        // (era 4096). Múltiplas Elite gera JSON denso de 4 escalões piramidais.
-        // Estratégia híbrida (Opção B, 2026-05-15): Opus 4.7 RESERVADO
-        // para curadoria de Múltiplas Elite — raciocínio multi-passo:
-        // filtrar 50+ candidatos → escolher 5/10/15/20 com piramidalidade →
-        // casar mercados HDP/Under → justificar cada pick. Opus é justificado
-        // aqui pelo raciocínio complexo. Opus 4.7 deprecou `temperature` —
-        // não usar esse parâmetro nesta chamada.
-        model: 'claude-opus-4-7',
-        max_tokens: 16000,
-        system: `Você é o SmartCoach — o maior analista de cantos/escanteios do mundo. Você acabou de receber TODA a memória DNA cravada das 9 ligas operáveis (assinaturas comportamentais, buckets situacionais, divergências DNA × Performance).
+    const parsed = _curadoriaDeterministicaMultiplas(candidatos);
 
-Sua missão é a curadoria final das MÚLTIPLAS ELITE da rodada — versão v2.0 (regras do operador, 2026-07-08):
-
-MERCADOS: APENAS "HDP HT" (handicap de cantos no 1º tempo) e "HDP FT" (handicap de cantos no jogo todo). NÃO existe Under nesta curadoria.
-
-ESTRUTURA — até 8 sinais, organizados em 2 GRUPOS INDEPENDENTES por mercado:
-- Para cada mercado (HDP HT e HDP FT), monte o GRUPO 1 e o GRUPO 2, cada grupo com até 10 jogos.
-- Dentro de cada grupo: os 5 jogos mais fortes formam a múltipla de 5 pernas; os 10 formam a múltipla de 10 pernas (a de 10 CONTÉM os 5 da múltipla de 5, sempre nas primeiras posições).
-- INDEPENDÊNCIA TOTAL entre grupos do mesmo mercado: NENHUM time (nem mandante nem visitante) pode aparecer nos dois grupos do mesmo mercado. Também não pode repetir time dentro do mesmo grupo.
-- O mesmo jogo PODE aparecer em HDP HT e em HDP FT (mercados diferentes).
-
-DEGRADAÇÃO (se faltar candidato bom num mercado, entregue MENOS sinais — nunca complete com sinal fraco):
-- 20+ jogos bons → 4 sinais no mercado (2×5 + 2×10)
-- 15-19 → grupo 1 completo (5+10) + grupo 2 só com a de 5
-- 10-14 → grupo 1 completo (5+10), sem grupo 2
-- 5-9 → só a múltipla de 5 do grupo 1
-- <5 → nenhum sinal nesse mercado (omita os ids)
-
-SELEÇÃO POR CONFIANÇA (critério do operador — 3 sinais cruzados):
-- Bala de Prata NUCLEAR/FORTE, Cisne Δ ≥ 2.5, Enigma SDE ≥ 65.
-- Campo "confluencia" (0-3) diz quantos batem. Priorize confluencia 3, depois 2. Confluencia ≤1 só entra em degradação extrema e nas posições finais das múltiplas de 10.
-- Para HDP HT use diffHT/favoritoHT/linhaHDP_HT dos candidatos; para HDP FT use diff/favorito/linhaHDP.
-- ARG e ARG_B são as ligas de maior aderência do app — pode concentrar picks nelas sem medo.
-- NÃO INCLUA jogos com divergencia_alta.
-
-FORMATO DE SAÍDA — RETORNE APENAS JSON VÁLIDO, sem markdown wrap, sem comentários:
-{
-  "tese_geral": "1-2 frases sobre o estado da rodada e nível de confiança geral",
-  "sinais": [
-    {"id":"HT_G1_5","mercado":"HDP HT","grupo":1,"pernas":5,"tese":"1-2 frases","picks":[
-      {"liga":"ARG","jogo":"River × San Lorenzo","linha":"-1.0","favorito":"River Plate","justificativa":"1 frase com evidência numérica"},
-      ...5 no total
-    ]},
-    {"id":"HT_G1_10","mercado":"HDP HT","grupo":1,"pernas":10,"tese":"...","picks":[...10, sendo os 5 do HT_G1_5 nas primeiras posições + 5 novos]},
-    {"id":"HT_G2_5","mercado":"HDP HT","grupo":2,"pernas":5,"tese":"...","picks":[...5, ZERO times em comum com o grupo 1]},
-    {"id":"HT_G2_10","mercado":"HDP HT","grupo":2,"pernas":10,"tese":"...","picks":[...10]},
-    {"id":"FT_G1_5","mercado":"HDP FT","grupo":1,"pernas":5,"tese":"...","picks":[...]},
-    {"id":"FT_G1_10","mercado":"HDP FT","grupo":1,"pernas":10,"tese":"...","picks":[...]},
-    {"id":"FT_G2_5","mercado":"HDP FT","grupo":2,"pernas":5,"tese":"...","picks":[...]},
-    {"id":"FT_G2_10","mercado":"HDP FT","grupo":2,"pernas":10,"tese":"...","picks":[...]}
-  ]
-}
-Linhas HDP FT válidas: -0.5/-1.0/-1.5/-2.0/-2.5. Linhas HDP HT válidas: -0.5/-1.0/-1.5/-2.0.
-Em degradação, simplesmente OMITA os sinais que não couberem (ids ausentes do array) — nunca envie múltipla incompleta.`,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error('API: ' + (err.error?.message || res.status));
-    }
-    const data = await res.json();
-    const txt = data.content[0].text;
-
-    // Tenta parsear JSON (pode vir com markdown wrap)
-    let parsed;
-    try {
-      const limpo = txt.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
-      parsed = JSON.parse(limpo);
-    } catch(e) {
-      throw new Error('SmartCoach retornou JSON inválido. Tente regerar. Início: ' + txt.slice(0, 200));
+    if (!parsed.sinais.length) {
+      document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
+        ❌ <strong>Nenhum sinal gerado</strong> — a rodada não tem candidatos elegíveis suficientes (mínimo 5 jogos com confluência ≥1 e diferencial projetado num mercado).<br>
+        <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div>
+      </div>`;
+      return;
     }
 
-    // v1.1 (2026-05-14): validador pós-resposta — auditoria externa
+    // Rede de segurança: valida o output do próprio motor com as mesmas regras
+    // que valiam pra resposta da IA. Falha aqui = bug interno, não variância de IA.
     const validacao = _validarRespostaMultiplas(parsed, candidatos);
     if (!validacao.valido) {
       const errosHTML = validacao.erros.map(e => `<li style="margin:.2rem 0">${e}</li>`).join('');
       document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
-        ❌ <strong>SmartCoach retornou resposta com inconsistências (${validacao.erros.length} erro${validacao.erros.length>1?'s':''}):</strong>
+        ❌ <strong>Curadoria do motor falhou na auto-validação (${validacao.erros.length} erro${validacao.erros.length>1?'s':''} — reporte este bug):</strong>
         <ul style="margin:.5rem 0 0 1.2rem">${errosHTML}</ul>
-        <div style="margin-top:.6rem;font-size:.78rem;color:var(--muted)">Resposta NÃO foi persistida no cache. Clique em <strong>🔄 Regerar Múltiplas</strong> pra nova tentativa.</div>
       </div>`;
-      // Não salva no cache, não renderiza
       return;
     }
 
@@ -12250,7 +12255,7 @@ Em degradação, simplesmente OMITA os sinais que não couberem (ids ausentes do
 
     renderMultiplasElite();
   } catch(error) {
-    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria SmartCoach:</strong> ${error.message}<br><br>Verifique o console (F12) para detalhes. Chave Anthropic precisa de Tier ≥ 1.</div>`;
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria:</strong> ${error.message}<br><br>Verifique o console (F12) para detalhes.</div>`;
     console.error('[Multiplas Elite]', error);
   } finally {
     _multiplasEliteState.loading = false;
@@ -12370,36 +12375,6 @@ function _validarRespostaMultiplas(parsed, candidatos) {
   return { valido: erros.length === 0, erros };
 }
 
-function _montarPromptMultiplas(candidatos) {
-  let p = `Você recebeu ${candidatos.length} candidatos pré-filtrados pelo motor. Monte os sinais HDP HT / HDP FT (até 8 múltiplas em 2 grupos independentes por mercado) conforme system prompt.\n\n`;
-  p += `CANDIDATOS (ordenados por confluência de sinais e score Vencedor):\n\n`;
-  const sorted = [...candidatos].sort((a,b) => (b.confluencia - a.confluencia) || (b.scoreVencedor - a.scoreVencedor));
-
-  sorted.forEach((c, i) => {
-    p += `[${i+1}] ${c.liga} · ${c.m} × ${c.v}${c.data?' ('+c.data+')':''}${c.altaConfianca ? ' ⭐ ALTA CONFIANÇA ('+c.confluencia+'/3)' : ' (confluência '+c.confluencia+'/3)'}\n`;
-    p += `   Score Vencedor=${c.scoreVencedor.toFixed(0)} | Conf motor=${c.confFT}% | xCantos FT=${c.expTotalFT} · HT=${c.expHT}\n`;
-    p += `   Sinais: ${c.bpFaixa?'BP '+c.bpFaixa+' @'+c.bpOdd:'sem BP'} | Cisne ΔFT=${c.diff} | Enigma SDE=${c.sde != null ? c.sde+(c.sdeConf?' ('+c.sdeConf+')':'') : '—'} | Reis=${c.reisFaixa||'—'}\n`;
-    p += `   HDP FT: ${c.linhaHDP} ${c.favorito} (ΔFT=${c.diff}) | HDP HT: ${c.linhaHDP_HT} ${c.favoritoHT} (ΔHT=${c.diffHT})\n`;
-    if (c.favorito !== c.favoritoHT) p += `   ⚠️ Favorito HT ≠ favorito FT — avalie os mercados separadamente\n`;
-    if (c.divergencia_alta) p += `   🚨 DIVERGÊNCIA ALTA detectada: ${c.divergencia_alta.join(', ')} — PROIBIDO usar\n`;
-    // Memória DNA dos 2 times
-    const dM = getMemoriaTime(c.liga, c.m);
-    const dV = getMemoriaTime(c.liga, c.v);
-    if (dM) {
-      const ass = (dM.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
-      p += `   🧬 ${c.m}: ${dM.identidade.categoria} PS${dM.identidade.powerScore} · ${dM.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
-    }
-    if (dV) {
-      const ass = (dV.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
-      p += `   🧬 ${c.v}: ${dV.identidade.categoria} PS${dV.identidade.powerScore} · ${dV.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
-    }
-    p += `\n`;
-  });
-
-  p += `\nMonte os sinais conforme system prompt (2 grupos independentes por mercado, degradação se faltar candidato bom). RETORNE APENAS JSON.`;
-  return p;
-}
-
 function renderMultiplasElite() {
   const ctr = document.getElementById('multiplas-resultado');
   const status = document.getElementById('multiplas-status');
@@ -12427,7 +12402,7 @@ function renderMultiplasElite() {
 
   if (!_multiplasEliteState.multiplas) {
     if (status && !status.innerHTML.trim()) {
-      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas SmartCoach</strong> para gerar os sinais HDP HT/FT (cotas mínimas: 3 jogos de ARG, 3 de ARG_B, 2 das demais ligas).</div>';
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (cotas mínimas: 3 jogos de ARG, 3 de ARG_B, 2 das demais ligas).</div>';
     }
     ctr.innerHTML = '';
     return;
@@ -12437,7 +12412,7 @@ function renderMultiplasElite() {
   const avisoCotas = (_multiplasEliteState.cotasAviso && _multiplasEliteState.cotasAviso.length)
     ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ Ligas abaixo da cota mínima nesta rodada (geração seguiu com menos sinais): ${_multiplasEliteState.cotasAviso.join(' · ')}</div>`
     : '';
-  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria SmartCoach concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoCotas}</div>`;
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria do motor concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoCotas}</div>`;
 
   // v2.0: formato "sinais[]" (HDP HT/FT, 2 grupos). Fallback legado: formato piramidal antigo em cache.
   if (Array.isArray(m.sinais)) {
@@ -12697,8 +12672,8 @@ function exportarMultiplasHTML() {
   const status = document.getElementById('multiplas-status');
   const conteudoHTML = (status?.innerHTML||'') + (ctr?.innerHTML||'');
   _exportarAnaliseHTML({
-    titulo: '🏆 Múltiplas Elite — Curadoria SmartCoach',
-    subtitulo: 'Sinais HDP HT/FT em grupos independentes (2×5 + 2×10 por mercado) — SmartCoach IA com memória DNA cravada',
+    titulo: '🏆 Múltiplas Elite — Curadoria do Motor',
+    subtitulo: 'Sinais HDP HT/FT em grupos independentes (2×5 + 2×10 por mercado) — curadoria determinística com memória DNA cravada',
     conteudoHTML,
     prefixoArquivo: 'MultiplasElite',
     corHeader: 'var(--gold)'
