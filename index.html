@@ -11995,14 +11995,14 @@ function _linhaUnderSugerida(expFT) {
 // Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
 // v2.0 (2026-07-08): reforma HDP-only por regras do operador.
 //  - Mercados: APENAS HDP HT e HDP FT (Under saiu das Múltiplas Elite).
-//  - Cotas mínimas por liga: ARG ≥3, ARG_B ≥3, demais ≥2 — TODAS apenas AVISO.
-//    v2.2 (2026-07-08): a trava obrigatória de ARG/ARG_B foi removida a pedido do
-//    operador — com a Liga Profesional em recesso (janela da Copa) ela bloqueava a
-//    aba inteira. A geração agora sempre segue; o aviso lista as ligas abaixo da cota.
+//  - v2.2/v2.3 (2026-07-08): sistema de cotas por liga REMOVIDO de vez (era trava,
+//    virou aviso, depois saiu) — a geração usa silenciosamente toda liga com jogos
+//    importados; ligas sem jogos não participam e nenhuma mensagem é exibida.
 //  - Confiança medida por 3 sinais cruzados: Bala de Prata (faixa+odd),
 //    Cisne Negro (Δ projetado) e Enigma SDE (desempenho casa×fora).
 //    2 de 3 critérios = ALTA confiança; 3 de 3 = prioridade máxima.
-const MULTIPLAS_COTA_MIN = Object.freeze({ ARG: 3, ARG_B: 3, BR: 2, BR_B: 2, MLS: 2, USL: 2, BUN: 2, CHI: 2, ECU: 2 });
+// v2.3 (2026-07-08): MULTIPLAS_COTA_MIN removida — cotas por liga saíram de vez
+// (nem trava, nem aviso). Toda liga com jogos importados participa silenciosamente.
 
 // Linha HDP HT sugerida — HT tem ~metade do volume de cantos do FT,
 // então os degraus de diferencial são menores que os do FT.
@@ -12031,8 +12031,13 @@ function gerarCandidatosMultiplas(ligasAlvo) {
       const raw = localStorage.getItem('sniper_rodada_'+L);
       const jogosLiga = raw ? JSON.parse(raw) : [];
       if (jogosLiga.length === 0) { ligasSemRodada.push(L); return; }
-      const naFaixa = jogosLiga.filter(j => !j.data || j.data >= hojeIso);
-      if (naFaixa.length === 0) { ligasSemRodada.push(L+' (rodada passada)'); return; }
+      // v2.3 (2026-07-08): fallback do filtro de data — antes, jogos com data
+      // anterior a hoje eram descartados e a liga inteira sumia SILENCIOSAMENTE
+      // ("rodada passada"), mesmo com dados importados (report do operador:
+      // ARG_B/Liga Pro com rodada colada e nada puxado). Regra nova: liga com
+      // jogos importados é liga ATIVA — se o filtro de data zerar, usa todos.
+      let naFaixa = jogosLiga.filter(j => !j.data || j.data >= hojeIso);
+      if (naFaixa.length === 0) naFaixa = jogosLiga;
 
       // Troca contexto pra calcular projeção dessa liga
       LIGA_ATUAL = L;
@@ -12114,23 +12119,10 @@ function gerarCandidatosMultiplas(ligasAlvo) {
   _forcaCantosCache = null; _forcaCantosCacheLiga = null;
   _rankingHTCache = null; _rankingHTCacheLiga = null;
 
-  // v2.0: checagem de cotas mínimas por liga (conta só candidatos SEM divergência alta,
-  // já que divergentes são proibidos nas múltiplas de qualquer forma).
-  // v2.2: quando há filtro de ligas (ligasAlvo), as cotas da Múltiplas Elite NÃO se
-  // aplicam — a Múltipla Argentina tem regra própria (sem trava entre ARG/ARG_B).
-  const contagemPorLiga = {};
-  candidatos.filter(c => !c.divergencia_alta).forEach(c => { contagemPorLiga[c.liga] = (contagemPorLiga[c.liga]||0)+1; });
-  // v2.2: cota abaixo do mínimo NUNCA trava — só entra no aviso (regra do operador,
-  // depois que a trava de ARG/ARG_B bloqueou a aba durante o recesso da Copa).
-  const cotasAviso = [];
-  if (!ligasAlvo) {
-    Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
-      const n = contagemPorLiga[L] || 0;
-      if (n < min) cotasAviso.push(`${L}: ${n}/${min} jogos`);
-    });
-  }
-
-  return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasAviso };
+  // v2.3 (2026-07-08): sistema de cotas REMOVIDO por completo (regra do operador) —
+  // nem trava, nem aviso. A geração usa silenciosamente as ligas com jogos ativos;
+  // ligas sem jogos simplesmente não participam, sem mensagem.
+  return { candidatos, ligasComRodada, ligasSemRodada };
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -12228,20 +12220,16 @@ async function gerarMultiplasElite() {
   if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria do motor em andamento...'; }
   document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/2:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
 
-  // ETAPA 1: candidatos
-  const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasAviso } = gerarCandidatosMultiplas();
+  // ETAPA 1: candidatos (v2.3: sem cotas — usa silenciosamente as ligas com jogos ativos)
+  const { candidatos, ligasComRodada, ligasSemRodada } = gerarCandidatosMultiplas();
   _multiplasEliteState.candidatos = candidatos;
 
   if (candidatos.length === 0) {
-    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum candidato encontrado.</strong> Importe rodadas nas ligas (📋 Análise da Rodada) com jogos futuros antes de gerar múltiplas.<br><br>Ligas sem rodada/jogos futuros: ${ligasSemRodada.join(', ')||'—'}</div>`;
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum candidato encontrado.</strong> Importe rodadas nas ligas (📋 Análise da Rodada) antes de gerar múltiplas.</div>`;
     _multiplasEliteState.loading = false;
     if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
     return;
   }
-
-  // v2.2: cotas mínimas NUNCA travam (trava de ARG/ARG_B removida a pedido do
-  // operador — bloqueava a aba inteira durante o recesso da Copa). Só aviso.
-  _multiplasEliteState.cotasAviso = cotasAviso;
 
   // ETAPA 2: curadoria determinística (v2.1 — sem chamada de API)
   document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/2:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. Motor montando os sinais HDP HT/FT...</div>`;
@@ -12426,17 +12414,15 @@ function renderMultiplasElite() {
 
   if (!_multiplasEliteState.multiplas) {
     if (status && !status.innerHTML.trim()) {
-      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (gera com qualquer liga disponível; ideal 3+ jogos de ARG/ARG_B e 2+ das demais).</div>';
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (gera automaticamente com as ligas que tiverem jogos importados).</div>';
     }
     ctr.innerHTML = '';
     return;
   }
 
   const m = _multiplasEliteState.multiplas;
-  const avisoCotas = (_multiplasEliteState.cotasAviso && _multiplasEliteState.cotasAviso.length)
-    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ Ligas abaixo da cota mínima nesta rodada (geração seguiu com menos sinais): ${_multiplasEliteState.cotasAviso.join(' · ')}</div>`
-    : '';
-  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria do motor concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoCotas}</div>`;
+  // v2.3: sem aviso de cotas — ligas sem jogos ativos simplesmente não aparecem.
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria do motor concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
 
   // v2.0: formato "sinais[]" (HDP HT/FT, 2 grupos). Fallback legado: formato piramidal antigo em cache.
   if (Array.isArray(m.sinais)) {
@@ -12746,10 +12732,8 @@ async function gerarMultiplaArgentina() {
       return;
     }
 
-    // Aviso suave se uma das duas está de recesso (não trava — regra do operador)
-    const semRodadaArg = ligasSemRodada.filter(s => s.startsWith('ARG'));
-    _multiplasArgState.avisoRecesso = semRodadaArg.length
-      ? `Liga sem rodada nesta janela: ${semRodadaArg.join(' · ')} (recesso/pausa — geração seguiu só com a outra).` : null;
+    // v2.3: sem aviso de recesso — liga sem jogos simplesmente não participa.
+    _multiplasArgState.avisoRecesso = null;
 
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
@@ -12808,9 +12792,7 @@ function renderMultiplaArgentina() {
   }
 
   const m = _multiplasArgState.multiplas;
-  const avisoRecesso = _multiplasArgState.avisoRecesso
-    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ ${_multiplasArgState.avisoRecesso}</div>` : '';
-  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(116,172,223,0.10);border-left:3px solid ${_ARG_COR};border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Múltipla Argentina gerada</strong> — ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoRecesso}</div>`;
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(116,172,223,0.10);border-left:3px solid ${_ARG_COR};border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Múltipla Argentina gerada</strong> — ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
 
   // Reusa o mesmo card das Múltiplas Elite (as métricas de risco valem igual);
   // troca o state de candidatos usado pelo card durante o render.
