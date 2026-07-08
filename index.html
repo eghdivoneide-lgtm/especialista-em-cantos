@@ -1223,16 +1223,16 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
-       MÚLTIPLAS ELITE — Curadoria SmartCoach IA
+       MÚLTIPLAS ELITE — Curadoria determinística do motor (v2.1)
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-multiplas-elite" class="view">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--gold),#ffe359);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Múltiplas de Elite da Rodada</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria SmartCoach IA · 3 camadas (motor v3.0 + memória DNA + julgamento) · 4 escalões piramidais</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria determinística do motor · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas) · até 8 sinais</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-        <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas SmartCoach</button>
+        <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas</button>
         <button onclick="exportarMultiplasHTML()" style="background:transparent;color:var(--gold);border:1px solid var(--gold);padding:.65rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='var(--gold)';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">📤 Exportar HTML</button>
         <button onclick="snapshotMemoriaDNA()" style="background:transparent;color:var(--gold);border:1px dashed var(--gold);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Baixar snapshot da memória DNA atual (pra hold-out test set out-of-sample)">📸 Snapshot DNA</button>
         <button onclick="limparMultiplasElite()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpar cache local e regerar">🗑️ Limpar Cache</button>
@@ -1241,6 +1241,29 @@
     <div id="multiplas-status"></div>
     <div id="multiplas-resumo-candidatos"></div>
     <div id="multiplas-resultado"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       MÚLTIPLA ARGENTINA — só ARG + ARG_B (v1.0 — 2026-07-08)
+       Ligas de maior aderência do app (ROI +78u/+46u nas 158 apostas
+       auditadas). Sem cota entre elas: se uma estiver de recesso
+       (ex.: Copa), gera só com a outra. v1.1: 2 grupos independentes (2×5+2×10).
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-multiplas-argentina" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#74acdf,#9cc7ec);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🇦🇷 Múltipla Argentina</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas)</div>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button id="btn-gerar-multiplas-arg" onclick="gerarMultiplaArgentina()" style="background:linear-gradient(135deg,#74acdf,#9cc7ec);border:none;color:#062038;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(116,172,223,0.35);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltipla Argentina</button>
+        <button onclick="exportarMultiplaArgentinaHTML()" style="background:transparent;color:#9cc7ec;border:1px solid #74acdf;padding:.65rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='#74acdf';this.style.color='#062038'" onmouseout="this.style.background='transparent';this.style.color='#9cc7ec'">📤 Exportar HTML</button>
+        <button onclick="limparMultiplaArgentina()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpar cache local e regerar">🗑️ Limpar Cache</button>
+      </div>
+    </div>
+    <div id="multiplas-arg-status"></div>
+    <div id="multiplas-arg-resumo"></div>
+    <div id="multiplas-arg-resultado"></div>
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
@@ -4705,6 +4728,7 @@ const VIEW_TO_GRUPO = {
   'tracker':         'operacao',
   'apostas':         'operacao',
   'multiplas-elite': 'operacao',
+  'multiplas-argentina': 'operacao',
   'auditoria':       'auditoria'
 };
 
@@ -4735,7 +4759,9 @@ const SUBNAV_BY_GRUPO = {
     { id: 'tracker', label: '📈 Bet Tracker' },
     { id: 'apostas', label: '🎰 Apostas Reais' },
     { id: 'multiplas-elite', label: '🏆 Múltiplas Elite',
-      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' }
+      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' },
+    { id: 'multiplas-argentina', label: '🇦🇷 Múltipla Argentina',
+      style: 'background:linear-gradient(135deg,rgba(116,172,223,0.22),rgba(52,211,103,0.12));border-color:rgba(116,172,223,0.55);color:#9cc7ec;font-weight:800;' }
   ],
   auditoria: [
     { id: 'auditoria', label: '🔍 Auditoria Cross-Liga',
@@ -4798,7 +4824,8 @@ function showView(id) {
   if (id==='cisne-negro') carregarEstadoCisneNegro(); // v1.1 — restaura estado por liga
   if (id==='vencedor-cantos') renderVencedorCantos(); // laboratório de força do sinal
   if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
-  if (id==='multiplas-elite') renderMultiplasElite(); // curadoria SmartCoach IA
+  if (id==='multiplas-elite') renderMultiplasElite(); // curadoria determinística do motor (v2.1)
+  if (id==='multiplas-argentina') renderMultiplaArgentina(); // só ARG/ARG_B (v1.0)
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -11940,7 +11967,7 @@ function ajusteDNA_LITE(scoreOriginal, mandante, visitante, liga, tipoMercado) {
 }
 
 // ══════════════════════════════════════════════════════════════════
-//  MÚLTIPLAS ELITE — Curadoria SmartCoach IA (v1.0 — 2026-05-14)
+//  MÚLTIPLAS ELITE — Curadoria determinística do motor (v2.1 — 2026-07-08; IA removida por decisão do operador)
 //
 //  Pipeline em 3 camadas:
 //  1. Motor v3.0: calcula score Vencedor + score Under em todos os jogos
@@ -11963,8 +11990,29 @@ function _linhaUnderSugerida(expFT) {
 }
 
 // Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
-function gerarCandidatosMultiplas() {
-  const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
+// v2.0 (2026-07-08): reforma HDP-only por regras do operador.
+//  - Mercados: APENAS HDP HT e HDP FT (Under saiu das Múltiplas Elite).
+//  - Cotas mínimas por liga: ARG ≥3 e ARG_B ≥3 (obrigatórias — travam a geração),
+//    demais ligas ≥2 (aviso, não trava). Sem teto pra ARG/ARG_B (maior aderência do app).
+//  - Confiança medida por 3 sinais cruzados: Bala de Prata (faixa+odd),
+//    Cisne Negro (Δ projetado) e Enigma SDE (desempenho casa×fora).
+//    2 de 3 critérios = ALTA confiança; 3 de 3 = prioridade máxima.
+const MULTIPLAS_COTA_MIN = Object.freeze({ ARG: 3, ARG_B: 3, BR: 2, BR_B: 2, MLS: 2, USL: 2, BUN: 2, CHI: 2, ECU: 2 });
+const MULTIPLAS_LIGAS_OBRIGATORIAS = Object.freeze(['ARG', 'ARG_B']);
+
+// Linha HDP HT sugerida — HT tem ~metade do volume de cantos do FT,
+// então os degraus de diferencial são menores que os do FT.
+function _linhaHDPHTSugerida(diffHT) {
+  if (diffHT >= 2.0) return '-2.0';
+  if (diffHT >= 1.5) return '-1.5';
+  if (diffHT >= 1.0) return '-1.0';
+  return '-0.5';
+}
+
+// v2.2 (2026-07-08): aceita filtro opcional de ligas (usado pela Múltipla Argentina).
+// Sem filtro = 9 ligas ativas + checagem de cotas (comportamento da Múltiplas Elite).
+function gerarCandidatosMultiplas(ligasAlvo) {
+  const ligas = ligasAlvo || ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
   const candidatos = [];
   const ligasComRodada = [];
@@ -12003,6 +12051,16 @@ function gerarCandidatosMultiplas() {
           const ajU = { scoreAjustado: sU, mult: sU_motor>0 ? +(sU/sU_motor).toFixed(2) : 1.0, motivos: sU !== sU_motor ? [`DNA Δ${sU-sU_motor>=0?'+':''}${sU-sU_motor} pts`] : [] };
           const diff = Math.abs((p.expHomeFT||0) - (p.expAwayFT||0));
           const favorito = (p.expHomeFT||0) > (p.expAwayFT||0) ? j.m : j.v;
+          // v2.0: diferencial HT + favorito HT (podem divergir do FT em times BLITZ/2º tempo)
+          const diffHT = Math.abs((p.expHomeHT||0) - (p.expAwayHT||0));
+          const favoritoHT = (p.expHomeHT||0) > (p.expAwayHT||0) ? j.m : j.v;
+
+          // v2.0: Enigma SDE — desempenho mandante em casa × visitante fora
+          let sde = null, sdeConf = null;
+          try {
+            const enigma = calcSDE_ENIGMA(j.m, j.v);
+            if (enigma && enigma.valido !== false) { sde = enigma.sde; sdeConf = enigma.confianca || null; }
+          } catch(e) {}
 
           // Filtros de exclusão — divergência DNA alta de QUALQUER um dos times
           const memLiga = window.MEMORIA_DNA && window.MEMORIA_DNA[L];
@@ -12014,14 +12072,24 @@ function gerarCandidatosMultiplas() {
           if (divM && divM.severidade === 'alta') alertaDiv.push(j.m+': '+divM.tipo_divergencia);
           if (divV && divV.severidade === 'alta') alertaDiv.push(j.v+': '+divV.tipo_divergencia);
 
+          // v2.0: confiança por confluência dos 3 sinais indicados pelo operador
+          const critBP    = !!(p.balaDePrataData && (p.balaDePrataData.faixa === 'NUCLEAR' || p.balaDePrataData.faixa === 'FORTE'));
+          const critCisne = diff >= 2.5;
+          const critSDE   = sde != null && sde >= 65;
+          const nCriterios = (critBP?1:0) + (critCisne?1:0) + (critSDE?1:0);
+
           candidatos.push({
             liga: L, m: j.m, v: j.v, data: j.data, hora: j.hora,
             scoreVencedor: sV, scoreUnder: sU,
             scoreVencedor_motor: sV_motor, scoreUnder_motor: sU_motor,
             dna_ajuste_ven: ajV, dna_ajuste_und: ajU,
             favorito, diff: +diff.toFixed(2),
+            favoritoHT, diffHT: +diffHT.toFixed(2),
             linhaHDP: _linhaHDPSugerida(diff),
-            linhaUnder: _linhaUnderSugerida(p.expTotalFT||10),
+            linhaHDP_HT: _linhaHDPHTSugerida(diffHT),
+            sde, sdeConf,
+            confluencia: nCriterios, // 0-3: quantos dos 3 sinais (BP/Cisne/SDE) batem
+            altaConfianca: nCriterios >= 2,
             expTotalFT: +((p.expTotalFT||0)).toFixed(2),
             expHT: +((p.expTotalHT||0)).toFixed(2),
             confFT: Math.round(p.confFT||0),
@@ -12042,120 +12110,171 @@ function gerarCandidatosMultiplas() {
   _forcaCantosCache = null; _forcaCantosCacheLiga = null;
   _rankingHTCache = null; _rankingHTCacheLiga = null;
 
-  return { candidatos, ligasComRodada, ligasSemRodada };
+  // v2.0: checagem de cotas mínimas por liga (conta só candidatos SEM divergência alta,
+  // já que divergentes são proibidos nas múltiplas de qualquer forma).
+  // v2.2: quando há filtro de ligas (ligasAlvo), as cotas da Múltiplas Elite NÃO se
+  // aplicam — a Múltipla Argentina tem regra própria (sem trava entre ARG/ARG_B).
+  const contagemPorLiga = {};
+  candidatos.filter(c => !c.divergencia_alta).forEach(c => { contagemPorLiga[c.liga] = (contagemPorLiga[c.liga]||0)+1; });
+  const cotasFaltando = [];      // ligas obrigatórias abaixo da cota → TRAVA
+  const cotasAviso = [];         // demais ligas abaixo da cota → aviso, segue
+  if (!ligasAlvo) {
+    Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
+      const n = contagemPorLiga[L] || 0;
+      if (n < min) {
+        if (MULTIPLAS_LIGAS_OBRIGATORIAS.includes(L)) cotasFaltando.push(`${L}: ${n}/${min} jogos`);
+        else cotasAviso.push(`${L}: ${n}/${min} jogos`);
+      }
+    });
+  }
+
+  return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso };
 }
 
-// Gera múltiplas via SmartCoach IA — chama API Anthropic
+// ══════════════════════════════════════════════════════════════════
+//  CURADORIA DETERMINÍSTICA v2.1 (2026-07-08) — decisão do operador:
+//  Múltiplas Elite deixou de depender da API Anthropic. As regras v2.0
+//  (HDP-only, confluência BP/Cisne/SDE, grupos independentes, degradação)
+//  são 100% mecânicas — o próprio motor monta os sinais, de graça e
+//  instantâneo. _validarRespostaMultiplas continua rodando como rede de
+//  segurança sobre o output (mesmo schema de antes).
+// ══════════════════════════════════════════════════════════════════
+
+// Elegibilidade por mercado: sem divergência DNA alta, confluência ≥1
+// (pelo menos 1 dos 3 sinais BP/Cisne/SDE) e diferencial projetado mínimo
+// que sustente ao menos a linha -0.5 com folga (FT ≥1.0 · HT ≥0.5).
+function _elegivelMercadoMultipla(c, ht) {
+  if (c.divergencia_alta) return false;
+  if ((c.confluencia||0) < 1) return false;
+  return ht ? ((c.diffHT||0) >= 0.5) : ((c.diff||0) >= 1.0);
+}
+
+// Ranking dentro do mercado: confluência (3 sinais do operador) manda;
+// desempate por diferencial do mercado, depois score Vencedor do motor.
+function _rankMercadoMultipla(a, b, ht) {
+  if ((b.confluencia||0) !== (a.confluencia||0)) return (b.confluencia||0) - (a.confluencia||0);
+  const da = ht ? (a.diffHT||0) : (a.diff||0), db = ht ? (b.diffHT||0) : (b.diff||0);
+  if (db !== da) return db - da;
+  return (b.scoreVencedor||0) - (a.scoreVencedor||0);
+}
+
+// Justificativa gerada dos próprios números (substitui o texto da IA)
+function _justificativaCand(c, ht) {
+  const partes = [];
+  if (c.bpFaixa) partes.push('BP ' + c.bpFaixa + (c.bpOdd ? ' @' + c.bpOdd : ''));
+  partes.push(ht ? 'ΔHT ' + c.diffHT : 'Cisne Δ' + c.diff);
+  if (c.sde != null) partes.push('SDE ' + c.sde + (c.sdeConf ? ' (' + c.sdeConf + ')' : ''));
+  partes.push('conf ' + c.confFT + '%');
+  return partes.join(' · ');
+}
+
+function _curadoriaDeterministicaMultiplas(candidatos) {
+  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const sinais = [];
+  const resumoMercados = [];
+
+  ['HT','FT'].forEach(pref => {
+    const ht = pref === 'HT';
+    const mercado = ht ? 'HDP HT' : 'HDP FT';
+    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
+
+    // Grupo 1: melhores até 10 jogos, sem repetir clube dentro do grupo
+    const timesG1 = new Set(); const g1 = [];
+    // Grupo 2: próximos até 10, sem repetir clube dentro do grupo NEM com o grupo 1
+    const timesG2 = new Set(); const g2 = [];
+    eleg.forEach(c => {
+      const tm = norm(c.m), tv = norm(c.v);
+      if (g1.length < 10 && !timesG1.has(tm) && !timesG1.has(tv)) {
+        g1.push(c); timesG1.add(tm); timesG1.add(tv);
+      } else if (g2.length < 10 && !timesG1.has(tm) && !timesG1.has(tv) && !timesG2.has(tm) && !timesG2.has(tv)) {
+        g2.push(c); timesG2.add(tm); timesG2.add(tv);
+      }
+    });
+
+    const mkPick = c => ({
+      liga: c.liga, jogo: c.m + ' × ' + c.v,
+      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
+      favorito: ht ? c.favoritoHT : c.favorito,
+      justificativa: _justificativaCand(c, ht)
+    });
+    const mkTese = (grupo, arr) => {
+      const alta = arr.filter(c => c.altaConfianca).length;
+      const argN = arr.filter(c => c.liga === 'ARG' || c.liga === 'ARG_B').length;
+      return `Grupo ${grupo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
+    };
+
+    if (g1.length >= 5)  sinais.push({ id: pref+'_G1_5',  mercado, grupo: 1, pernas: 5,  tese: mkTese(1, g1.slice(0,5)), picks: g1.slice(0,5).map(mkPick) });
+    if (g1.length >= 10) sinais.push({ id: pref+'_G1_10', mercado, grupo: 1, pernas: 10, tese: mkTese(1, g1),            picks: g1.map(mkPick) });
+    if (g2.length >= 5)  sinais.push({ id: pref+'_G2_5',  mercado, grupo: 2, pernas: 5,  tese: mkTese(2, g2.slice(0,5)), picks: g2.slice(0,5).map(mkPick) });
+    if (g2.length >= 10) sinais.push({ id: pref+'_G2_10', mercado, grupo: 2, pernas: 10, tese: mkTese(2, g2),            picks: g2.map(mkPick) });
+
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${[g1.length>=5?'G1×5':null, g1.length>=10?'G1×10':null, g2.length>=5?'G2×5':null, g2.length>=10?'G2×10':null].filter(Boolean).join('+')||'sem sinais (degradação)'}`);
+  });
+
+  const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
+  const tese_geral = `Curadoria determinística do motor: ${candidatos.length} candidatos, ${altaTotal} com alta confiança (2+ de 3 sinais BP/Cisne/SDE). ${resumoMercados.join(' · ')}.`;
+
+  return { tese_geral, sinais };
+}
+
+// Gera múltiplas — curadoria determinística do motor (v2.1: sem dependência de API)
 async function gerarMultiplasElite() {
-  if (!scKey) {
-    alert('⚠️ Configure a chave Anthropic no SmartCoach (engrenagem ⚙️) antes de gerar.');
-    return;
-  }
   if (_multiplasEliteState.loading) return;
 
   _multiplasEliteState.loading = true;
   const btn = document.getElementById('btn-gerar-multiplas');
-  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria SmartCoach em andamento...'; }
-  document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/3:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria do motor em andamento...'; }
+  document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/2:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
 
   // ETAPA 1: candidatos
-  const { candidatos, ligasComRodada, ligasSemRodada } = gerarCandidatosMultiplas();
+  const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso } = gerarCandidatosMultiplas();
   _multiplasEliteState.candidatos = candidatos;
 
   if (candidatos.length === 0) {
     document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum candidato encontrado.</strong> Importe rodadas nas ligas (📋 Análise da Rodada) com jogos futuros antes de gerar múltiplas.<br><br>Ligas sem rodada/jogos futuros: ${ligasSemRodada.join(', ')||'—'}</div>`;
     _multiplasEliteState.loading = false;
-    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas SmartCoach'; }
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
     return;
   }
 
-  // ETAPA 2: monta prompt e chama IA
-  document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/3:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. SmartCoach curando seleção piramidal...</div>`;
+  // v2.0: cotas obrigatórias — ARG e ARG_B precisam de ≥3 jogos válidos cada (regra do operador).
+  if (cotasFaltando.length > 0) {
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
+      ❌ <strong>Cota mínima das ligas argentinas não atingida</strong> — a geração exige no mínimo 3 jogos válidos de ARG e 3 de ARG_B (base mais assertiva do app).<br>
+      <div style="margin-top:.4rem">Faltando: <strong>${cotasFaltando.join(' · ')}</strong></div>
+      <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">Importe mais jogos dessas ligas em 📋 Análise da Rodada e gere novamente. Jogos com divergência DNA alta não contam pra cota.</div>
+    </div>`;
+    _multiplasEliteState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
+    return;
+  }
 
-  const prompt = _montarPromptMultiplas(candidatos);
+  // Cotas das demais ligas: aviso, não trava (regra do operador: trabalha com menos sinais)
+  _multiplasEliteState.cotasAviso = cotasAviso;
+
+  // ETAPA 2: curadoria determinística (v2.1 — sem chamada de API)
+  document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/2:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. Motor montando os sinais HDP HT/FT...</div>`;
 
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': scKey,
-        'anthropic-version': '2023-06-01',
-        'content-type': 'application/json',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        // v1.2 (2026-05-15): Opus 4.7 + max_tokens 16k pra curadoria SmartCoach
-        // (era 4096). Múltiplas Elite gera JSON denso de 4 escalões piramidais.
-        // Estratégia híbrida (Opção B, 2026-05-15): Opus 4.7 RESERVADO
-        // para curadoria de Múltiplas Elite — raciocínio multi-passo:
-        // filtrar 50+ candidatos → escolher 5/10/15/20 com piramidalidade →
-        // casar mercados HDP/Under → justificar cada pick. Opus é justificado
-        // aqui pelo raciocínio complexo. Opus 4.7 deprecou `temperature` —
-        // não usar esse parâmetro nesta chamada.
-        model: 'claude-opus-4-7',
-        max_tokens: 16000,
-        system: `Você é o SmartCoach — o maior analista de cantos/escanteios do mundo. Você acabou de receber TODA a memória DNA cravada (239 times, 12 assinaturas comportamentais, 247 buckets situacionais, 12 divergências DNA × Performance) das 9 ligas operáveis.
+    const parsed = _curadoriaDeterministicaMultiplas(candidatos);
 
-Sua missão agora é a curadoria final das MÚLTIPLAS ELITE da rodada. Selecionar a dedo entre os candidatos pré-filtrados pelo motor as melhores entradas pra construir 4 múltiplas piramidais (ELITE 5, ELITE 10, ELITE 15, ELITE 20) — onde a estrutura é OBRIGATÓRIAMENTE piramidal: cada escalão maior CONTÉM TODOS os jogos do escalão anterior + adiciona mais.
-
-REGRAS DE SELEÇÃO:
-1. ELITE 5: as 5 entradas mais BLINDADAS da rodada. Score mínimo alto, evidência convergente (BP NUCLEAR + Cisne forte + memória DNA confirmando + sem divergência alta).
-2. ELITE 10 = ELITE 5 + 5 picks adicionais (próximas melhores, podem ter score um pouco menor mas SEM divergência alta).
-3. ELITE 15 = ELITE 10 + 5 picks (podem aceitar sample sugestivo, evitar divergência alta).
-4. ELITE 20 = ELITE 15 + 5 picks (top adicional dos candidatos restantes).
-
-CRITÉRIOS DURANTE A SELEÇÃO:
-- MIX LIVRE entre HDP FT e Under FT — escolha o mercado certo pra cada jogo (HDP quando Vencedor forte, Under quando jogo travado).
-- INDEPENDÊNCIA: evite múltiplos jogos da mesma liga no mesmo dia se possível (correlação meteorológica/arbitragem).
-- NÃO INCLUA jogos com \`divergencia_alta\` (são justamente onde o motor pode falhar).
-- Priorize jogos com confluência: BP NUCLEAR + Cisne ≥ 2.5 + score ≥ 70 são picks de OURO.
-
-FORMATO DE SAÍDA — RETORNE APENAS JSON VÁLIDO, sem markdown wrap, sem comentários:
-{
-  "tese_geral": "1-2 frases sobre o estado da rodada e nível de confiança geral",
-  "elite5": {
-    "picks": [
-      {"liga":"ARG","jogo":"River × San Lorenzo","mercado":"HDP","linha":"-1.5","favorito":"River Plate","justificativa":"1 frase com evidência numérica"},
-      ...4 mais
-    ],
-    "tese": "1-2 frases sobre a múltipla específica"
-  },
-  "elite10": { "picks": [...10, sendo os 5 da elite5 + 5 novos], "tese": "..." },
-  "elite15": { "picks": [...15], "tese": "..." },
-  "elite20": { "picks": [...20], "tese": "..." }
-}
-
-IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer também na elite10, elite15 e elite20 (sempre nas primeiras posições).`,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error('API: ' + (err.error?.message || res.status));
-    }
-    const data = await res.json();
-    const txt = data.content[0].text;
-
-    // Tenta parsear JSON (pode vir com markdown wrap)
-    let parsed;
-    try {
-      const limpo = txt.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/i, '').trim();
-      parsed = JSON.parse(limpo);
-    } catch(e) {
-      throw new Error('SmartCoach retornou JSON inválido. Tente regerar. Início: ' + txt.slice(0, 200));
+    if (!parsed.sinais.length) {
+      document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
+        ❌ <strong>Nenhum sinal gerado</strong> — a rodada não tem candidatos elegíveis suficientes (mínimo 5 jogos com confluência ≥1 e diferencial projetado num mercado).<br>
+        <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div>
+      </div>`;
+      return;
     }
 
-    // v1.1 (2026-05-14): validador pós-resposta — auditoria externa
+    // Rede de segurança: valida o output do próprio motor com as mesmas regras
+    // que valiam pra resposta da IA. Falha aqui = bug interno, não variância de IA.
     const validacao = _validarRespostaMultiplas(parsed, candidatos);
     if (!validacao.valido) {
       const errosHTML = validacao.erros.map(e => `<li style="margin:.2rem 0">${e}</li>`).join('');
       document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
-        ❌ <strong>SmartCoach retornou resposta com inconsistências (${validacao.erros.length} erro${validacao.erros.length>1?'s':''}):</strong>
+        ❌ <strong>Curadoria do motor falhou na auto-validação (${validacao.erros.length} erro${validacao.erros.length>1?'s':''} — reporte este bug):</strong>
         <ul style="margin:.5rem 0 0 1.2rem">${errosHTML}</ul>
-        <div style="margin-top:.6rem;font-size:.78rem;color:var(--muted)">Resposta NÃO foi persistida no cache. Clique em <strong>🔄 Regerar Múltiplas</strong> pra nova tentativa.</div>
       </div>`;
-      // Não salva no cache, não renderiza
       return;
     }
 
@@ -12169,7 +12288,7 @@ IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer ta
 
     renderMultiplasElite();
   } catch(error) {
-    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria SmartCoach:</strong> ${error.message}<br><br>Verifique o console (F12) para detalhes. Chave Anthropic precisa de Tier ≥ 1.</div>`;
+    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria:</strong> ${error.message}<br><br>Verifique o console (F12) para detalhes.</div>`;
     console.error('[Multiplas Elite]', error);
   } finally {
     _multiplasEliteState.loading = false;
@@ -12182,131 +12301,111 @@ IMPORTANTE: respeite ESTRUTURA PIRAMIDAL. Os 5 picks da elite5 DEVEM aparecer ta
 //  Auditoria externa identificou ausência. Garante schema + piramidalidade
 //  + exclusão de divergências altas + mercados válidos + jogos existem.
 // ══════════════════════════════════════════════════════════════════
+// v2.0 (2026-07-08): reescrito pro formato HDP-only "sinais[]" (2 grupos independentes
+// por mercado, 5/10 pernas, degradação permitida). Checa: schema, ids conhecidos,
+// pernas exatas, linhas válidas por mercado, subset 5⊂10 dentro do grupo,
+// INDEPENDÊNCIA DE TIMES entre grupos do mesmo mercado e dentro de cada múltipla,
+// exclusão de divergência alta e existência do pick nos candidatos.
 function _validarRespostaMultiplas(parsed, candidatos) {
   const erros = [];
-  const HDPS_VALIDAS = ['-0.5', '-1.0', '-1.5', '-2.0', '-2.5'];
-  const UNDERS_VALIDAS = ['7.5', '8.5', '9.5', '10.5', '11.5'];
-  const ESCALOES_ESPERADOS = { elite5: 5, elite10: 10, elite15: 15, elite20: 20 };
-  const normJogo = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const HDPS_FT = ['-0.5', '-1.0', '-1.5', '-2.0', '-2.5'];
+  const HDPS_HT = ['-0.5', '-1.0', '-1.5', '-2.0'];
+  const IDS_VALIDOS = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+  const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
 
-  // 1. SCHEMA — chaves obrigatórias top-level
+  // 1. SCHEMA top-level
   if (!parsed || typeof parsed !== 'object') {
     erros.push('Resposta não é um objeto JSON válido.');
     return { valido: false, erros };
   }
-  if (!parsed.tese_geral || typeof parsed.tese_geral !== 'string') {
-    erros.push('Falta campo "tese_geral" (string).');
+  if (!parsed.tese_geral || typeof parsed.tese_geral !== 'string') erros.push('Falta campo "tese_geral" (string).');
+  if (!Array.isArray(parsed.sinais)) {
+    erros.push('Falta array "sinais".');
+    return { valido: false, erros };
   }
-  for (const k of Object.keys(ESCALOES_ESPERADOS)) {
-    if (!parsed[k] || typeof parsed[k] !== 'object') {
-      erros.push(`Falta escalão "${k}".`);
-    } else {
-      if (!Array.isArray(parsed[k].picks)) erros.push(`"${k}.picks" não é array.`);
-      if (typeof parsed[k].tese !== 'string') erros.push(`"${k}.tese" ausente ou não-string.`);
-    }
-  }
-  // Se schema básico já falhou, retorna agora
+  if (parsed.sinais.length === 0) erros.push('Array "sinais" vazio — nenhuma múltipla gerada.');
+
+  const porId = {};
+  parsed.sinais.forEach(s => {
+    if (!s || typeof s !== 'object') { erros.push('Sinal não é objeto.'); return; }
+    if (!IDS_VALIDOS.includes(s.id)) { erros.push(`Sinal com id desconhecido "${s.id}" (válidos: ${IDS_VALIDOS.join(', ')}).`); return; }
+    if (porId[s.id]) erros.push(`Sinal "${s.id}" duplicado.`);
+    porId[s.id] = s;
+  });
   if (erros.length > 0) return { valido: false, erros };
 
-  // 2. TAMANHOS exatos
-  for (const [escalao, n] of Object.entries(ESCALOES_ESPERADOS)) {
-    if (parsed[escalao].picks.length !== n) {
-      erros.push(`${escalao} tem ${parsed[escalao].picks.length} picks (esperado ${n}).`);
-    }
+  // Helper: resolve candidato do pick (match por nomes dos 2 times)
+  function acharCand(p) {
+    const pn = normN(p.jogo);
+    return candidatos.find(c => pn.includes(normN(c.m)) && pn.includes(normN(c.v))) || null;
+  }
+  // Helper: times (mandante+visitante) de um conjunto de picks
+  function timesDosPicks(picks) {
+    const ts = [];
+    (picks||[]).forEach(p => {
+      const c = acharCand(p);
+      if (c) { ts.push(normN(c.m)); ts.push(normN(c.v)); }
+    });
+    return ts;
   }
 
-  // 3. PICKS — cada pick tem schema completo + mercado/linha válidos
-  for (const escalao of Object.keys(ESCALOES_ESPERADOS)) {
-    (parsed[escalao].picks || []).forEach((p, i) => {
-      const label = `${escalao}[${i+1}]`;
+  // 2. Validação de cada sinal presente
+  for (const [id, s] of Object.entries(porId)) {
+    const pernasEsperadas = id.endsWith('_10') ? 10 : 5;
+    const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
+    const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
+
+    if (s.mercado !== mercadoEsperado) erros.push(`${id}: mercado "${s.mercado}" (esperado "${mercadoEsperado}").`);
+    if (!Array.isArray(s.picks)) { erros.push(`${id}: "picks" não é array.`); continue; }
+    if (s.picks.length !== pernasEsperadas) erros.push(`${id}: ${s.picks.length} picks (esperado exatamente ${pernasEsperadas} — em degradação, omita o sinal inteiro).`);
+    if (typeof s.tese !== 'string') erros.push(`${id}: "tese" ausente.`);
+
+    const timesNoSinal = new Set();
+    s.picks.forEach((p, i) => {
+      const label = `${id}[${i+1}]`;
       if (!p.liga) erros.push(`${label}: falta "liga".`);
       if (!p.jogo) erros.push(`${label}: falta "jogo".`);
-      if (!p.mercado || (p.mercado !== 'HDP' && p.mercado !== 'Under')) {
-        erros.push(`${label}: "mercado" deve ser "HDP" ou "Under", recebeu "${p.mercado}".`);
-      }
-      if (p.linha != null) {
-        const linhaStr = String(p.linha).replace(',', '.');
-        if (p.mercado === 'HDP' && !HDPS_VALIDAS.includes(linhaStr)) {
-          erros.push(`${label}: linha HDP "${p.linha}" não está em ${HDPS_VALIDAS.join('/')}.`);
-        }
-        if (p.mercado === 'Under' && !UNDERS_VALIDAS.includes(linhaStr)) {
-          erros.push(`${label}: linha Under "${p.linha}" não está em ${UNDERS_VALIDAS.join('/')}.`);
-        }
-      }
-      if (!p.favorito && p.mercado === 'HDP') erros.push(`${label}: HDP requer "favorito".`);
+      if (!p.favorito) erros.push(`${label}: falta "favorito" (HDP exige favorito).`);
       if (!p.justificativa) erros.push(`${label}: falta "justificativa".`);
-    });
-  }
+      const linhaStr = String(p.linha||'').replace(',', '.');
+      if (!linhasValidas.includes(linhaStr)) erros.push(`${label}: linha "${p.linha}" inválida pra ${mercadoEsperado} (válidas: ${linhasValidas.join('/')}).`);
 
-  // 4. PIRAMIDALIDADE — elite5 ⊂ elite10 ⊂ elite15 ⊂ elite20
-  const jogosNorm = obj => new Set((obj.picks || []).map(p => normJogo(p.jogo)));
-  const j5 = jogosNorm(parsed.elite5);
-  const j10 = jogosNorm(parsed.elite10);
-  const j15 = jogosNorm(parsed.elite15);
-  const j20 = jogosNorm(parsed.elite20);
-  const verificarSub = (menor, maior, nomeMenor, nomeMaior) => {
-    for (const j of menor) {
-      if (!maior.has(j)) erros.push(`Piramidalidade quebrada: jogo presente em ${nomeMenor} ausente em ${nomeMaior} ("${j}").`);
-    }
-  };
-  verificarSub(j5, j10, 'elite5', 'elite10');
-  verificarSub(j10, j15, 'elite10', 'elite15');
-  verificarSub(j15, j20, 'elite15', 'elite20');
-
-  // 5. EXCLUSÃO de divergências altas (filtro defensivo)
-  const candByJogo = {};
-  candidatos.forEach(c => {
-    const k = normJogo(c.m + 'x' + c.v);
-    candByJogo[k] = c;
-  });
-  for (const escalao of Object.keys(ESCALOES_ESPERADOS)) {
-    (parsed[escalao].picks || []).forEach(p => {
-      // tenta achar candidato cujo "jogo" bata
-      const pn = normJogo(p.jogo);
-      // candidato pode estar como "MxV", então tenta match parcial
-      const c = Object.entries(candByJogo).find(([k, v]) => pn.includes(normJogo(v.m)) && pn.includes(normJogo(v.v)));
-      if (c) {
-        const cand = c[1];
-        if (cand.divergencia_alta) {
-          erros.push(`${escalao}: pick "${p.jogo}" tem divergência DNA alta (${cand.divergencia_alta.join(', ')}) — não deveria entrar em múltipla.`);
-        }
+      const cand = acharCand(p);
+      if (!cand) {
+        erros.push(`${label}: pick "${p.jogo}" não corresponde a candidato pré-filtrado (SmartCoach pode ter inventado).`);
       } else {
-        // pick não corresponde a nenhum candidato pré-filtrado
-        erros.push(`${escalao}: pick "${p.jogo}" não corresponde a candidato pré-filtrado (SmartCoach pode ter inventado).`);
+        if (cand.divergencia_alta) erros.push(`${label}: "${p.jogo}" tem divergência DNA alta (${cand.divergencia_alta.join(', ')}) — proibido.`);
+        // Repetição de time DENTRO da mesma múltipla
+        [normN(cand.m), normN(cand.v)].forEach(t => {
+          if (timesNoSinal.has(t)) erros.push(`${label}: time repetido dentro de ${id} ("${t}").`);
+          timesNoSinal.add(t);
+        });
       }
     });
   }
+
+  // 3. SUBSET dentro do grupo — a múltipla de 10 contém os jogos da de 5 do mesmo grupo
+  [['HT_G1_5','HT_G1_10'],['HT_G2_5','HT_G2_10'],['FT_G1_5','FT_G1_10'],['FT_G2_5','FT_G2_10']].forEach(([id5, id10]) => {
+    if (porId[id5] && porId[id10]) {
+      const jogos10 = new Set((porId[id10].picks||[]).map(p => normN(p.jogo)));
+      (porId[id5].picks||[]).forEach(p => {
+        if (!jogos10.has(normN(p.jogo))) erros.push(`Estrutura quebrada: jogo de ${id5} ausente em ${id10} ("${p.jogo}").`);
+      });
+    }
+    // Se existe a de 10 mas não a de 5, degradação errada (a de 5 é a base)
+    if (porId[id10] && !porId[id5]) erros.push(`${id10} presente sem ${id5} — a múltipla de 5 é a base do grupo, gere-a primeiro.`);
+  });
+
+  // 4. INDEPENDÊNCIA entre grupos do mesmo mercado — nenhum time em comum
+  [['HT_G1_10','HT_G1_5','HT_G2_10','HT_G2_5','HDP HT'],['FT_G1_10','FT_G1_5','FT_G2_10','FT_G2_5','HDP FT']].forEach(([g1a, g1b, g2a, g2b, mercado]) => {
+    const timesG1 = new Set(timesDosPicks([...(porId[g1a]?.picks||[]), ...(porId[g1b]?.picks||[])]));
+    const timesG2 = timesDosPicks([...(porId[g2a]?.picks||[]), ...(porId[g2b]?.picks||[])]);
+    timesG2.forEach(t => {
+      if (timesG1.has(t)) erros.push(`Independência quebrada em ${mercado}: time "${t}" aparece no grupo 1 e no grupo 2.`);
+    });
+  });
 
   return { valido: erros.length === 0, erros };
-}
-
-function _montarPromptMultiplas(candidatos) {
-  let p = `Você recebeu ${candidatos.length} candidatos pré-filtrados pelo motor v3.0 (Filtro OURO recalibrado). Selecione as MÚLTIPLAS ELITE 5/10/15/20 conforme system prompt.\n\n`;
-  p += `CANDIDATOS (ordenados por score Vencedor descendente):\n\n`;
-  const sorted = [...candidatos].sort((a,b) => Math.max(b.scoreVencedor,b.scoreUnder) - Math.max(a.scoreVencedor,a.scoreUnder));
-
-  sorted.forEach((c, i) => {
-    p += `[${i+1}] ${c.liga} · ${c.m} × ${c.v}${c.data?' ('+c.data+')':''}\n`;
-    p += `   Scores: Vencedor=${c.scoreVencedor.toFixed(0)} · Under=${c.scoreUnder.toFixed(0)} | xCornersFT=${c.expTotalFT} | Conf=${c.confFT}%\n`;
-    p += `   Sinais: ${c.bpFaixa?'BP '+c.bpFaixa+' @'+c.bpOdd:'sem BP'} | Cisne Δ=${c.diff} | Reis=${c.reisFaixa||'—'} | Sniper FT=${c.sniperFT||'—'}\n`;
-    p += `   Sugestão motor: HDP ${c.linhaHDP} ${c.favorito} OU Under ${c.linhaUnder}\n`;
-    if (c.divergencia_alta) p += `   🚨 DIVERGÊNCIA ALTA detectada: ${c.divergencia_alta.join(', ')} — EVITAR\n`;
-    // Memória DNA dos 2 times
-    const dM = getMemoriaTime(c.liga, c.m);
-    const dV = getMemoriaTime(c.liga, c.v);
-    if (dM) {
-      const ass = (dM.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
-      p += `   🧬 ${c.m}: ${dM.identidade.categoria} PS${dM.identidade.powerScore} · ${dM.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
-    }
-    if (dV) {
-      const ass = (dV.assinaturas||[]).filter(a => a.presente).map(a => a.nome);
-      p += `   🧬 ${c.v}: ${dV.identidade.categoria} PS${dV.identidade.powerScore} · ${dV.identidade.perfil_dna}${ass.length?' · ['+ass.join(', ')+']':''}\n`;
-    }
-    p += `\n`;
-  });
-
-  p += `\nMonte as 4 múltiplas piramidais conforme system prompt. RETORNE APENAS JSON.`;
-  return p;
 }
 
 function renderMultiplasElite() {
@@ -12336,16 +12435,39 @@ function renderMultiplasElite() {
 
   if (!_multiplasEliteState.multiplas) {
     if (status && !status.innerHTML.trim()) {
-      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas SmartCoach</strong> para curadoria piramidal.</div>';
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (cotas mínimas: 3 jogos de ARG, 3 de ARG_B, 2 das demais ligas).</div>';
     }
     ctr.innerHTML = '';
     return;
   }
 
   const m = _multiplasEliteState.multiplas;
-  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria SmartCoach concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
+  const avisoCotas = (_multiplasEliteState.cotasAviso && _multiplasEliteState.cotasAviso.length)
+    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ Ligas abaixo da cota mínima nesta rodada (geração seguiu com menos sinais): ${_multiplasEliteState.cotasAviso.join(' · ')}</div>`
+    : '';
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria do motor concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoCotas}</div>`;
 
-  ctr.innerHTML = ['elite5','elite10','elite15','elite20'].map(k => _cardMultipla(k, m[k])).filter(Boolean).join('');
+  // v2.0: formato "sinais[]" (HDP HT/FT, 2 grupos). Fallback legado: formato piramidal antigo em cache.
+  if (Array.isArray(m.sinais)) {
+    const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+    const porId = {};
+    m.sinais.forEach(s => { if (s && s.id) porId[s.id] = s; });
+    const headerMercado = mercado => `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:var(--gold2);letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — Handicap de cantos no 1º tempo' : '🏁 HDP FT — Handicap de cantos no jogo todo'}</div>`;
+    let html = '';
+    ['HDP HT','HDP FT'].forEach(mercado => {
+      const idsDoMercado = ordem.filter(id => (mercado === 'HDP HT') === id.startsWith('HT'));
+      const presentes = idsDoMercado.filter(id => porId[id]);
+      if (presentes.length === 0) {
+        html += headerMercado(mercado) + `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado nesta rodada — pool de candidatos de alta confiança insuficiente (degradação).</div>`;
+      } else {
+        html += headerMercado(mercado) + presentes.map(id => _cardSinalMultipla(porId[id])).join('');
+      }
+    });
+    ctr.innerHTML = html;
+  } else {
+    // Cache antigo (formato piramidal pré-v2.0) — renderiza no formato legado
+    ctr.innerHTML = ['elite5','elite10','elite15','elite20'].map(k => _cardMultipla(k, m[k])).filter(Boolean).join('');
+  }
 }
 
 // v1.1 (2026-05-14): probabilidade composta REAL via faixas BP/Cisne dos candidatos
@@ -12407,6 +12529,84 @@ function _calcularKellyFraction(probComposta, oddComposta) {
   return kelly; // pode ser negativo (EV negativo)
 }
 
+// v2.0 — card de um sinal do novo formato (HDP HT/FT, grupos independentes)
+function _cardSinalMultipla(s) {
+  if (!s || !Array.isArray(s.picks)) return '';
+  const ehHT = s.id.startsWith('HT');
+  const eh10 = s.id.endsWith('_10');
+  const cor = s.cor || (ehHT ? (eh10 ? '#0ea5e9' : '#16a34a') : (eh10 ? '#8b5cf6' : '#f59e0b'));
+  const tit = s.titulo || `${eh10 ? '🎯' : '💎'} ${s.mercado} · Grupo ${s.grupo} · ${s.picks.length} pernas`;
+
+  const candidatos = _multiplasEliteState.candidatos || [];
+  const { probComposta, oddComposta } = _calcularProbCompostaReal(s.picks, candidatos);
+  const probPct = probComposta * 100;
+  const breakevenPct = oddComposta > 0 ? (100 / oddComposta) : 100;
+  const margemPP = probPct - breakevenPct;
+  const kelly = _calcularKellyFraction(probComposta, oddComposta);
+  const oddFmt = oddComposta >= 1000 ? Math.round(oddComposta).toLocaleString('pt-BR') + 'x' : oddComposta.toFixed(2) + 'x';
+
+  let bandeiraCor, bandeiraTxt, bandeiraIcone;
+  if (margemPP < 0) { bandeiraCor = 'var(--red)'; bandeiraIcone = '🚫'; bandeiraTxt = `EV TEÓRICO NEGATIVO (margem ${margemPP.toFixed(1)}pp)`; }
+  else if (margemPP < 2) { bandeiraCor = 'var(--gold)'; bandeiraIcone = '⚠️'; bandeiraTxt = `Margem fina (${margemPP.toFixed(1)}pp) — alta sensibilidade a variância`; }
+  else if (margemPP < 5) { bandeiraCor = '#fb923c'; bandeiraIcone = '🟡'; bandeiraTxt = `Margem moderada (${margemPP.toFixed(1)}pp)`; }
+  else { bandeiraCor = 'var(--green)'; bandeiraIcone = '🟢'; bandeiraTxt = `Margem confortável (${margemPP.toFixed(1)}pp)`; }
+
+  let kellyMsg;
+  if (kelly < 0) kellyMsg = `<span style="color:var(--red);font-weight:700">EV negativo — Kelly recomenda NÃO apostar</span>`;
+  else if (kelly < 0.001) kellyMsg = `<span style="color:var(--gold)">Kelly ~0 (stake desprezível recomendado: máx 0.1% do bankroll)</span>`;
+  else if (kelly > 0.10) kellyMsg = `<span style="color:var(--green);font-weight:700">Kelly ${(kelly*100).toFixed(2)}% — use frac kelly (¼ a ½) pra reduzir variância</span>`;
+  else kellyMsg = `<span style="color:var(--text)">Kelly sugerido: ${(kelly*100).toFixed(3)}% do bankroll · ¼ Kelly conservador: ${(kelly*25).toFixed(3)}%</span>`;
+
+  const rows = s.picks.map((p,i) => `
+    <tr style="border-bottom:1px solid var(--border)">
+      <td style="padding:.5rem .7rem;color:var(--muted);text-align:center;font-weight:700">${i+1}</td>
+      <td style="padding:.5rem .7rem;font-weight:700">${p.jogo}</td>
+      <td style="padding:.5rem .7rem;color:var(--muted)">${p.liga}</td>
+      <td style="padding:.5rem .7rem"><span style="background:${cor}22;color:${cor};padding:.15rem .5rem;border-radius:5px;font-weight:700;font-size:.72rem">${s.mercado} ${p.linha||''}</span></td>
+      <td style="padding:.5rem .7rem;font-size:.78rem;color:var(--text)">${p.favorito||'—'}</td>
+      <td style="padding:.5rem .7rem;font-size:.75rem;color:var(--muted)">${p.justificativa||''}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div style="background:var(--card);border:1px solid var(--border);border-left:4px solid ${cor};border-radius:12px;padding:1.2rem;margin-bottom:1.2rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:.7rem">
+        <div style="font-size:1.05rem;font-weight:900;color:${cor}">${tit}</div>
+        <div style="font-size:.72rem;color:var(--muted);text-align:right">
+          Prob composta REAL: <strong style="color:var(--text)">${probPct.toFixed(2)}%</strong><br>
+          Odd acumulada: <strong style="color:${cor}">${oddFmt}</strong>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.5rem;margin-bottom:.7rem;font-size:.72rem">
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">WR breakeven</div>
+          <div style="font-size:.95rem;font-weight:800;color:var(--text)">${breakevenPct.toFixed(3)}%</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Margem (prob − BE)</div>
+          <div style="font-size:.95rem;font-weight:800;color:${bandeiraCor}">${margemPP >= 0 ? '+' : ''}${margemPP.toFixed(2)}pp</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:6px;padding:.4rem .6rem">
+          <div style="color:var(--muted);text-transform:uppercase;letter-spacing:.3px">Kelly Fraction</div>
+          <div style="font-size:.95rem;font-weight:800;color:${kelly > 0 ? 'var(--green)' : 'var(--red)'}">${kelly >= 0 ? (kelly*100).toFixed(3)+'%' : '< 0'}</div>
+        </div>
+      </div>
+      <div style="padding:.5rem .8rem;background:${bandeiraCor}15;border-left:3px solid ${bandeiraCor};border-radius:6px;font-size:.78rem;color:var(--text);margin-bottom:.7rem">
+        ${bandeiraIcone} <strong style="color:${bandeiraCor}">${bandeiraTxt}</strong><br>
+        <span style="font-size:.72rem;color:var(--muted)">${kellyMsg}</span>
+      </div>
+      ${s.tese ? `<div style="background:var(--bg3);border-radius:6px;padding:.5rem .8rem;margin-bottom:.6rem;font-size:.78rem;color:var(--text);font-style:italic">🧠 ${s.tese}</div>` : ''}
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Jogo</th><th>Liga</th><th>Mercado</th><th>Favorito</th><th>Justificativa</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+// LEGADO pré-v2.0 — mantido só pra renderizar cache antigo (formato piramidal elite5/10/15/20)
 function _cardMultipla(escalao, dados) {
   if (!dados || !Array.isArray(dados.picks)) return '';
   const tit = { elite5: '💎 ELITE 5', elite10: '🎯 ELITE 10', elite15: '⚡ ELITE 15', elite20: '🚀 ELITE 20' }[escalao];
@@ -12505,12 +12705,165 @@ function exportarMultiplasHTML() {
   const status = document.getElementById('multiplas-status');
   const conteudoHTML = (status?.innerHTML||'') + (ctr?.innerHTML||'');
   _exportarAnaliseHTML({
-    titulo: '🏆 Múltiplas Elite — Curadoria SmartCoach',
-    subtitulo: 'Seleção piramidal (5/10/15/20) gerada pelo SmartCoach IA com memória DNA cravada',
+    titulo: '🏆 Múltiplas Elite — Curadoria do Motor',
+    subtitulo: 'Sinais HDP HT/FT em grupos independentes (2×5 + 2×10 por mercado) — curadoria determinística com memória DNA cravada',
     conteudoHTML,
     prefixoArquivo: 'MultiplasElite',
     corHeader: 'var(--gold)'
   });
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  MÚLTIPLA ARGENTINA (v1.0 — 2026-07-08) — decisão do operador após
+//  primeira rodada real da v2.1: todas as indicações argentinas bateram,
+//  variância concentrada nas demais ligas (principalmente HT).
+//  Só ARG + ARG_B. SEM cota entre elas: se uma estiver de recesso
+//  (ex.: Liga Profesional na janela da Copa), gera só com a outra —
+//  erro apenas se NENHUMA tiver jogos. Por mercado (HDP HT / HDP FT):
+//  v1.1: 2 grupos independentes por mercado (2×5 + 2×10), mesma estrutura
+//  da Múltiplas Elite — "completa sem teto" da v1.0 foi descartada (risco).
+// ══════════════════════════════════════════════════════════════════
+let _multiplasArgState = { candidatos: null, multiplas: null, loading: false };
+const _ARG_COR = '#74acdf'; // celeste argentina
+
+// v1.1 (2026-07-08): mesma estrutura da Múltiplas Elite (2 grupos independentes por
+// mercado, 2×5 + 2×10) — o operador achou a "completa sem teto" arriscada demais
+// (13 pernas = uma perna derruba tudo). Reusa _curadoriaDeterministicaMultiplas
+// integralmente (ids HT_G1_5..FT_G2_10, degradação, independência de clubes);
+// só o pool muda (ARG/ARG_B) e a identidade visual fica celeste.
+function _curadoriaArgentina(candidatos) {
+  const base = _curadoriaDeterministicaMultiplas(candidatos);
+  base.sinais.forEach(s => { s.cor = s.id.endsWith('_10') ? '#9cc7ec' : _ARG_COR; });
+  base.tese_geral = base.tese_geral.replace('Curadoria determinística do motor', 'Múltipla Argentina (só ARG/ARG_B)');
+  return base;
+}
+
+async function gerarMultiplaArgentina() {
+  if (_multiplasArgState.loading) return;
+  _multiplasArgState.loading = true;
+  const btn = document.getElementById('btn-gerar-multiplas-arg');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria em andamento...'; }
+  const status = document.getElementById('multiplas-arg-status');
+  status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid '+_ARG_COR+';border-radius:8px;color:var(--text);font-size:.85rem">⏳ Motor calculando scores de ARG e ARG_B...</div>';
+
+  try {
+    const { candidatos, ligasSemRodada } = gerarCandidatosMultiplas(['ARG','ARG_B']);
+    _multiplasArgState.candidatos = candidatos;
+
+    if (candidatos.length === 0) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum jogo argentino na rodada.</strong> Importe jogos de ARG ou ARG_B em 📋 Análise da Rodada. Sem cota entre as duas — basta UMA delas ter jogos (a outra pode estar de recesso).<br><br>Status: ${ligasSemRodada.join(', ')||'—'}</div>`;
+      return;
+    }
+
+    // Aviso suave se uma das duas está de recesso (não trava — regra do operador)
+    const semRodadaArg = ligasSemRodada.filter(s => s.startsWith('ARG'));
+    _multiplasArgState.avisoRecesso = semRodadaArg.length
+      ? `Liga sem rodada nesta janela: ${semRodadaArg.join(' · ')} (recesso/pausa — geração seguiu só com a outra).` : null;
+
+    const parsed = _curadoriaArgentina(candidatos);
+    if (!parsed.sinais.length) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 5 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial mínimo + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      return;
+    }
+
+    // Rede de segurança: mesmos ids/regras da Múltiplas Elite → mesmo validador
+    const validacao = _validarRespostaMultiplas(parsed, candidatos);
+    if (!validacao.valido) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Curadoria falhou na auto-validação (reporte este bug):</strong><ul style="margin:.5rem 0 0 1.2rem">${validacao.erros.map(e=>`<li>${e}</li>`).join('')}</ul></div>`;
+      return;
+    }
+
+    _multiplasArgState.multiplas = { ...parsed, gerado_em: new Date().toISOString(), candidatos_n: candidatos.length };
+    try {
+      localStorage.setItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10), JSON.stringify(_multiplasArgState.multiplas));
+    } catch(e) {}
+    renderMultiplaArgentina();
+  } catch(error) {
+    status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria:</strong> ${error.message}</div>`;
+    console.error('[Multipla Argentina]', error);
+  } finally {
+    _multiplasArgState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🔄 Regerar Múltipla Argentina'; }
+  }
+}
+
+function renderMultiplaArgentina() {
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const status = document.getElementById('multiplas-arg-status');
+  const resumo = document.getElementById('multiplas-arg-resumo');
+  if (!ctr) return;
+
+  if (!_multiplasArgState.multiplas) {
+    try {
+      const cached = localStorage.getItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10));
+      if (cached) _multiplasArgState.multiplas = JSON.parse(cached);
+    } catch(e) {}
+  }
+
+  if (_multiplasArgState.candidatos) {
+    const c = _multiplasArgState.candidatos;
+    const nArg = c.filter(x=>x.liga==='ARG').length, nArgB = c.filter(x=>x.liga==='ARG_B').length;
+    resumo.innerHTML = `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:1rem;font-size:.82rem;color:var(--text)">🇦🇷 <strong>${c.length} candidatos</strong>: Liga Profesional (${nArg}) · Primera B Nacional (${nArgB})</div>`;
+  } else {
+    resumo.innerHTML = '';
+  }
+
+  if (!_multiplasArgState.multiplas) {
+    if (status && !status.innerHTML.trim()) {
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🇦🇷 Importe as rodadas de ARG/ARG_B (📋 Análise da Rodada) e clique em <strong style="color:#9cc7ec">🚀 Gerar Múltipla Argentina</strong>. Basta UMA das duas ligas ter jogos.</div>';
+    }
+    ctr.innerHTML = '';
+    return;
+  }
+
+  const m = _multiplasArgState.multiplas;
+  const avisoRecesso = _multiplasArgState.avisoRecesso
+    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ ${_multiplasArgState.avisoRecesso}</div>` : '';
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(116,172,223,0.10);border-left:3px solid ${_ARG_COR};border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Múltipla Argentina gerada</strong> — ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoRecesso}</div>`;
+
+  // Reusa o mesmo card das Múltiplas Elite (as métricas de risco valem igual);
+  // troca o state de candidatos usado pelo card durante o render.
+  const backupCand = _multiplasEliteState.candidatos;
+  _multiplasEliteState.candidatos = _multiplasArgState.candidatos || backupCand;
+  const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+  const porId = {};
+  (m.sinais||[]).forEach(s => { if (s && s.id) porId[s.id] = s; });
+  let html = '';
+  ['HDP HT','HDP FT'].forEach(mercado => {
+    const ids = ordem.filter(id => (mercado === 'HDP HT') === id.startsWith('HT')).filter(id => porId[id]);
+    const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
+    html += header + (ids.length
+      ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 5 jogos argentinos elegíveis.</div>`);
+  });
+  ctr.innerHTML = html;
+  _multiplasEliteState.candidatos = backupCand;
+}
+
+function exportarMultiplaArgentinaHTML() {
+  if (!_multiplasArgState.multiplas) { alert('Gere a Múltipla Argentina primeiro.'); return; }
+  if (typeof _exportarAnaliseHTML !== 'function') { alert('Função de exportação indisponível.'); return; }
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const status = document.getElementById('multiplas-arg-status');
+  _exportarAnaliseHTML({
+    titulo: '🇦🇷 Múltipla Argentina — Curadoria do Motor',
+    subtitulo: 'Só Liga Profesional + Primera B Nacional · HDP HT/FT · 2 grupos independentes (2×5 + 2×10) — as ligas de maior aderência do app',
+    conteudoHTML: (status?.innerHTML||'') + (ctr?.innerHTML||''),
+    prefixoArquivo: 'MultiplaArgentina',
+    corHeader: _ARG_COR
+  });
+}
+
+function limparMultiplaArgentina() {
+  try { localStorage.removeItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10)); } catch(e) {}
+  _multiplasArgState = { candidatos: null, multiplas: null, loading: false };
+  const status = document.getElementById('multiplas-arg-status');
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const resumo = document.getElementById('multiplas-arg-resumo');
+  if (status) status.innerHTML = '';
+  if (ctr) ctr.innerHTML = '';
+  if (resumo) resumo.innerHTML = '';
+  renderMultiplaArgentina();
 }
 
 // v1.1 (2026-05-14): snapshot pra hold-out test set out-of-sample
