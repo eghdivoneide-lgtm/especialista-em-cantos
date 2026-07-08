@@ -474,31 +474,163 @@
 <body>
 
 <!-- ══════════════ PORTÃO DE LOGIN (Supabase Auth) ══════════════ -->
-<div id="auth-gate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%, #111a14, #0a0f0d);font-family:system-ui,-apple-system,sans-serif;padding:1rem;">
-  <div style="width:100%;max-width:380px;background:rgba(17,26,20,0.9);border:1px solid rgba(251,191,36,0.25);border-radius:16px;padding:2rem 1.6rem;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
-    <div style="text-align:center;margin-bottom:1.4rem;">
-      <div style="font-size:2.4rem;">🎯</div>
-      <div style="font-size:1.15rem;font-weight:800;color:#fbbf24;letter-spacing:.3px;">Especialista em Cantos</div>
-      <div id="auth-title" style="font-size:.8rem;color:#9ca3af;margin-top:.2rem;">Entrar</div>
+<style>
+  #auth-gate{
+    position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;
+    overflow:hidden;font-family:'Inter',sans-serif;padding:1rem;
+    background:
+      radial-gradient(ellipse 900px 500px at 18% -6%, rgba(245,158,11,0.10), transparent 60%),
+      radial-gradient(ellipse 900px 500px at 100% 8%, rgba(52,211,103,0.10), transparent 60%),
+      radial-gradient(ellipse 1100px 700px at 50% 105%, rgba(0,0,0,0.55), transparent 60%),
+      repeating-linear-gradient(115deg, #0c150f 0px, #0c150f 64px, #0a120d 64px, #0a120d 128px),
+      var(--bg);
+  }
+  /* Linhas de campo — fundo de linha (touchline) e linha de fundo (goal line) formando o canto */
+  #auth-gate::before{
+    content:'';position:absolute;left:0;bottom:0;width:100%;height:100%;pointer-events:none;
+    background:
+      linear-gradient(to top, rgba(232,245,238,0.16) 0, rgba(232,245,238,0.16) 2px, transparent 2px),
+      linear-gradient(to right, rgba(232,245,238,0.16) 0, rgba(232,245,238,0.16) 2px, transparent 2px);
+    background-repeat:no-repeat;
+    background-size:100% 100%, 100% 100%;
+  }
+  /* Arco + bandeirinha de escanteio — âncora visual do tema "cantos", grande no canto da tela */
+  .auth-corner-scene{position:absolute;left:-6px;bottom:-6px;width:min(46vw,340px);height:min(46vw,340px);pointer-events:none;z-index:1;}
+  .auth-corner-scene svg{width:100%;height:100%;overflow:visible;}
+  .auth-flag{transform-origin:10px 190px;animation:auth-flutter 2.6s ease-in-out infinite;}
+  @keyframes auth-flutter{0%,100%{transform:skewX(0deg);}50%{transform:skewX(-6deg);}}
+  .auth-ball{
+    position:absolute;top:0;left:0;width:10px;height:10px;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #fff, #cfd8d2 55%, #8fa89a 100%);
+    box-shadow:0 0 8px rgba(232,245,238,0.5);
+    offset-path:path('M 26 262 C 70 150, 150 90, 230 40');offset-rotate:0deg;
+    animation:auth-kick 1.9s cubic-bezier(.34,1.1,.4,1) 1;
+  }
+  @keyframes auth-kick{
+    0%{offset-distance:0%;opacity:0;}
+    8%{opacity:1;}
+    88%{opacity:1;}
+    100%{offset-distance:100%;opacity:0;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .auth-flag{animation:none;}
+    .auth-ball{animation:none;opacity:0;}
+  }
+  .auth-card{
+    position:relative;width:100%;max-width:380px;overflow:hidden;z-index:2;
+    background:var(--card);backdrop-filter:blur(16px);
+    border:1px solid var(--border);border-radius:18px;
+    padding:2.1rem 1.7rem 1.7rem;
+    box-shadow:0 24px 70px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.03);
+  }
+  .auth-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:2.5px;
+    background:linear-gradient(90deg,var(--green),var(--gold2));
+  }
+  .auth-badge{
+    width:56px;height:56px;margin:0 auto .9rem;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,rgba(52,211,103,0.16),rgba(245,158,11,0.12));
+    border:1px solid var(--border);
+  }
+  .auth-head{text-align:center;margin-bottom:1.5rem;}
+  .auth-head h2{font-size:1.12rem;font-weight:800;color:var(--green);letter-spacing:-.2px;}
+  .auth-eyebrow{font-size:.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:.3rem;}
+  .auth-field{position:relative;margin-bottom:.75rem;}
+  .auth-field svg.auth-ico{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);opacity:.55;pointer-events:none;}
+  .auth-field input{
+    width:100%;box-sizing:border-box;padding:.8rem .9rem .8rem 2.5rem;
+    background:var(--bg);border:1px solid var(--border);border-radius:10px;
+    color:var(--text);font-size:.9rem;font-family:inherit;outline:none;
+    transition:border-color .15s,box-shadow .15s;
+  }
+  .auth-field input::placeholder{color:var(--muted);}
+  .auth-field input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(52,211,103,0.14);}
+  .auth-field input:-webkit-autofill{-webkit-text-fill-color:var(--text);box-shadow:0 0 0 1000px var(--bg) inset;}
+  .auth-eye{
+    position:absolute;right:.5rem;top:50%;transform:translateY(-50%);
+    background:none;border:none;padding:.4rem;cursor:pointer;color:var(--muted);
+    display:flex;align-items:center;border-radius:6px;transition:color .15s;
+  }
+  .auth-eye:hover{color:var(--text);}
+  .auth-row-end{text-align:right;margin:.15rem 0 1rem;}
+  .auth-row-end a{font-size:.72rem;color:var(--muted);text-decoration:none;transition:color .15s;}
+  .auth-row-end a:hover{color:var(--gold2);}
+  .auth-submit{
+    width:100%;padding:.85rem;background:linear-gradient(135deg,var(--gold2),var(--gold));
+    border:none;border-radius:10px;color:#14100a;font-weight:800;font-size:.92rem;font-family:inherit;
+    cursor:pointer;transition:transform .12s,box-shadow .12s,filter .12s;
+    display:flex;align-items:center;justify-content:center;gap:.5rem;
+  }
+  .auth-submit:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(245,158,11,0.28);}
+  .auth-submit:active{transform:translateY(0);filter:brightness(.96);}
+  .auth-submit:disabled{opacity:.75;cursor:default;transform:none;box-shadow:none;}
+  .auth-spinner{width:15px;height:15px;border-radius:50%;border:2px solid rgba(20,16,10,0.3);border-top-color:#14100a;display:none;animation:auth-spin .7s linear infinite;}
+  .auth-submit.is-loading .auth-spinner{display:inline-block;}
+  .auth-submit.is-loading .auth-submit-label{opacity:.85;}
+  @keyframes auth-spin{to{transform:rotate(360deg);}}
+  #auth-msg{min-height:1.2rem;margin-top:.85rem;font-size:.78rem;text-align:center;font-weight:600;transition:color .15s;}
+  #auth-msg.is-error{animation:auth-shake .32s;}
+  @keyframes auth-shake{25%{transform:translateX(-4px);}75%{transform:translateX(4px);}}
+  .auth-toggle-row{text-align:center;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--border);}
+  .auth-toggle-row a{font-size:.8rem;color:var(--gold2);text-decoration:none;font-weight:700;}
+  .auth-toggle-row a:hover{text-decoration:underline;}
+  @media (prefers-reduced-motion: reduce){
+    .auth-submit, .auth-eye, .auth-field input{transition:none;}
+    .auth-spinner{animation:none;}
+    #auth-msg.is-error{animation:none;}
+  }
+</style>
+<div id="auth-gate">
+  <div class="auth-corner-scene" aria-hidden="true">
+    <svg viewBox="0 0 280 280">
+      <path d="M 10 200 A 70 70 0 0 1 80 270" fill="none" stroke="rgba(232,245,238,0.4)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="270" x2="150" y2="270" stroke="rgba(232,245,238,0.22)" stroke-width="2"/>
+      <line x1="10" y1="270" x2="10" y2="110" stroke="rgba(232,245,238,0.22)" stroke-width="2"/>
+      <line x1="10" y1="270" x2="10" y2="190" stroke="var(--muted)" stroke-width="2.5" stroke-linecap="round"/>
+      <polygon class="auth-flag" points="10,190 36,201 10,213" fill="url(#authFlagGrad2)"/>
+      <defs><linearGradient id="authFlagGrad2" x1="10" y1="190" x2="36" y2="201"><stop stop-color="var(--gold2)"/><stop offset="1" stop-color="var(--green)"/></linearGradient></defs>
+    </svg>
+    <div class="auth-ball"></div>
+  </div>
+  <div class="auth-card">
+    <div class="auth-head">
+      <div class="auth-badge">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <path d="M4 3v18" stroke="var(--muted)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M4 4c5 0 5 5 10 5s5-5.5 0-5.5-5 3.5-10 3.5Z" fill="none" stroke="url(#authFlagGrad)" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M4 20a8 8 0 0 1 8-8" stroke="var(--green)" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+          <defs><linearGradient id="authFlagGrad" x1="4" y1="3" x2="14" y2="9"><stop stop-color="var(--gold2)"/><stop offset="1" stop-color="var(--green)"/></linearGradient></defs>
+        </svg>
+      </div>
+      <h2>Especialista em Cantos</h2>
+      <div id="auth-title" class="auth-eyebrow">Entrar</div>
     </div>
     <form id="auth-form" autocomplete="on">
-      <input id="auth-email" type="email" required placeholder="Email" autocomplete="username"
-             style="width:100%;box-sizing:border-box;margin-bottom:.7rem;padding:.75rem .9rem;background:#0a0f0d;border:1px solid #2a3a2f;border-radius:8px;color:#e5e7eb;font-size:.9rem;outline:none;">
-      <input id="auth-pass" type="password" required placeholder="Senha" autocomplete="current-password" minlength="6"
-             style="width:100%;box-sizing:border-box;margin-bottom:.4rem;padding:.75rem .9rem;background:#0a0f0d;border:1px solid #2a3a2f;border-radius:8px;color:#e5e7eb;font-size:.9rem;outline:none;">
-      <div style="text-align:right;margin-bottom:.8rem;">
-        <a href="javascript:void(0)" onclick="_resetPass()" style="font-size:.72rem;color:#9ca3af;text-decoration:none;">Esqueci a senha</a>
+      <div class="auth-field">
+        <svg class="auth-ico" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 6.5 12 13l9-6.5M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" stroke="var(--muted)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <input id="auth-email" type="email" required placeholder="Email" autocomplete="username">
       </div>
-      <button id="auth-submit" type="submit"
-              style="width:100%;padding:.8rem;background:linear-gradient(135deg,#fbbf24,#f59e0b);border:none;border-radius:8px;color:#0a0f0d;font-weight:800;font-size:.92rem;cursor:pointer;">Entrar</button>
+      <div class="auth-field">
+        <svg class="auth-ico" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="5" y="10.5" width="14" height="9.5" rx="2" stroke="var(--muted)" stroke-width="1.6"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" stroke="var(--muted)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="auth-pass" type="password" required placeholder="Senha" autocomplete="current-password" minlength="6" style="padding-right:2.5rem;">
+        <button type="button" class="auth-eye" id="auth-eye-toggle" aria-label="Mostrar senha">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+      </div>
+      <div class="auth-row-end">
+        <a href="javascript:void(0)" onclick="_resetPass()">Esqueci a senha</a>
+      </div>
+      <button id="auth-submit" type="submit" class="auth-submit">
+        <span class="auth-spinner"></span><span class="auth-submit-label">Entrar</span>
+      </button>
     </form>
-    <div id="auth-msg" style="min-height:1.1rem;margin-top:.7rem;font-size:.76rem;text-align:center;"></div>
-    <div style="text-align:center;margin-top:.6rem;">
-      <a id="auth-toggle" href="javascript:void(0)" onclick="_toggleAuthMode()" style="font-size:.78rem;color:#fbbf24;text-decoration:none;">Criar uma conta</a>
+    <div id="auth-msg"></div>
+    <div class="auth-toggle-row">
+      <a id="auth-toggle" href="javascript:void(0)" onclick="_toggleAuthMode()">Criar uma conta</a>
     </div>
   </div>
 </div>
-<button id="btn-logout" title="Sair" style="display:none;position:fixed;bottom:16px;left:16px;z-index:9998;background:rgba(17,26,20,0.9);border:1px solid #2a3a2f;color:#9ca3af;padding:.45rem .8rem;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;">⎋ Sair</button>
+<button id="btn-logout" title="Sair" style="display:none;position:fixed;bottom:16px;left:16px;z-index:9998;background:var(--card);border:1px solid var(--border);color:var(--muted);padding:.45rem .8rem;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;transition:color .15s,border-color .15s;">⎋ Sair</button>
 <script>
 (function(){
   var SB_URL='https://onuqpfawzchrbluvrvfj.supabase.co';
@@ -509,25 +641,45 @@
   var gate=document.getElementById('auth-gate');
   var btnLogout=document.getElementById('btn-logout');
   var msg=document.getElementById('auth-msg');
+  var submitBtn=document.getElementById('auth-submit');
+  var submitLabel=submitBtn.querySelector('.auth-submit-label');
   window._authMode='login';
   function show(){gate.style.display='flex';btnLogout.style.display='none';document.body.style.overflow='hidden';}
   function hide(){gate.style.display='none';btnLogout.style.display='block';document.body.style.overflow='';}
-  function setMsg(t,err){msg.textContent=t||'';msg.style.color=err?'#ef4444':'#34d367';}
+  function setMsg(t,err){
+    msg.textContent=t||'';
+    msg.style.color=err?'var(--red)':'var(--green)';
+    msg.classList.remove('is-error');
+    if(err){ void msg.offsetWidth; msg.classList.add('is-error'); }
+  }
+  function setLoading(l){ submitBtn.disabled=l; submitBtn.classList.toggle('is-loading',l); }
   sb.auth.getSession().then(function(r){ (r.data&&r.data.session)?hide():show(); });
   sb.auth.onAuthStateChange(function(_e,session){ session?hide():show(); });
+  document.getElementById('auth-eye-toggle').addEventListener('click',function(){
+    var inp=document.getElementById('auth-pass');
+    var toShow=inp.type==='password';
+    inp.type=toShow?'text':'password';
+    this.setAttribute('aria-label',toShow?'Ocultar senha':'Mostrar senha');
+    this.innerHTML=toShow
+      ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 3l18 18M10.6 10.6a3 3 0 0 0 4.24 4.24M9.9 5.1A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.4 13.4 0 0 1-3.1 3.9M6.2 6.7A13.4 13.4 0 0 0 2 12s3.5 7 10 7a10.6 10.6 0 0 0 3.4-.55" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>'
+      : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>';
+  });
   document.getElementById('auth-form').addEventListener('submit',function(e){
     e.preventDefault();
     var email=document.getElementById('auth-email').value.trim();
     var pass=document.getElementById('auth-pass').value;
-    setMsg('Aguarde...',false);
+    setMsg('',false);
+    setLoading(true);
     if(window._authMode==='signup'){
       sb.auth.signUp({email:email,password:pass}).then(function(r){
+        setLoading(false);
         if(r.error){setMsg(r.error.message,true);return;}
         if(r.data&&r.data.session){setMsg('Conta criada!',false);}
         else{setMsg('Conta criada! Confirme pelo email e depois entre.',false);}
       });
     } else {
       sb.auth.signInWithPassword({email:email,password:pass}).then(function(r){
+        setLoading(false);
         if(r.error){setMsg(r.error.message,true);}
       });
     }
@@ -536,7 +688,7 @@
     window._authMode=(window._authMode==='signup')?'login':'signup';
     var s=window._authMode==='signup';
     document.getElementById('auth-title').textContent=s?'Criar conta':'Entrar';
-    document.getElementById('auth-submit').textContent=s?'Criar conta':'Entrar';
+    submitLabel.textContent=s?'Criar conta':'Entrar';
     document.getElementById('auth-toggle').textContent=s?'Já tenho conta — Entrar':'Criar uma conta';
     document.getElementById('auth-pass').setAttribute('autocomplete',s?'new-password':'current-password');
     setMsg('',false);
