@@ -1244,6 +1244,29 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
+       MÚLTIPLA ARGENTINA — só ARG + ARG_B (v1.0 — 2026-07-08)
+       Ligas de maior aderência do app (ROI +78u/+46u nas 158 apostas
+       auditadas). Sem cota entre elas: se uma estiver de recesso
+       (ex.: Copa), gera só com a outra. Múltipla completa sem teto.
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-multiplas-argentina" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#74acdf,#9cc7ec);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🇦🇷 Múltipla Argentina</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · núcleo de 5 + múltipla completa sem teto de pernas</div>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button id="btn-gerar-multiplas-arg" onclick="gerarMultiplaArgentina()" style="background:linear-gradient(135deg,#74acdf,#9cc7ec);border:none;color:#062038;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(116,172,223,0.35);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltipla Argentina</button>
+        <button onclick="exportarMultiplaArgentinaHTML()" style="background:transparent;color:#9cc7ec;border:1px solid #74acdf;padding:.65rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;transition:all .2s" onmouseover="this.style.background='#74acdf';this.style.color='#062038'" onmouseout="this.style.background='transparent';this.style.color='#9cc7ec'">📤 Exportar HTML</button>
+        <button onclick="limparMultiplaArgentina()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpar cache local e regerar">🗑️ Limpar Cache</button>
+      </div>
+    </div>
+    <div id="multiplas-arg-status"></div>
+    <div id="multiplas-arg-resumo"></div>
+    <div id="multiplas-arg-resultado"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
        AUDITORIA — Memória institucional cross-liga
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-auditoria" class="view">
@@ -4705,6 +4728,7 @@ const VIEW_TO_GRUPO = {
   'tracker':         'operacao',
   'apostas':         'operacao',
   'multiplas-elite': 'operacao',
+  'multiplas-argentina': 'operacao',
   'auditoria':       'auditoria'
 };
 
@@ -4735,7 +4759,9 @@ const SUBNAV_BY_GRUPO = {
     { id: 'tracker', label: '📈 Bet Tracker' },
     { id: 'apostas', label: '🎰 Apostas Reais' },
     { id: 'multiplas-elite', label: '🏆 Múltiplas Elite',
-      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' }
+      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' },
+    { id: 'multiplas-argentina', label: '🇦🇷 Múltipla Argentina',
+      style: 'background:linear-gradient(135deg,rgba(116,172,223,0.22),rgba(52,211,103,0.12));border-color:rgba(116,172,223,0.55);color:#9cc7ec;font-weight:800;' }
   ],
   auditoria: [
     { id: 'auditoria', label: '🔍 Auditoria Cross-Liga',
@@ -4799,6 +4825,7 @@ function showView(id) {
   if (id==='vencedor-cantos') renderVencedorCantos(); // laboratório de força do sinal
   if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
   if (id==='multiplas-elite') renderMultiplasElite(); // curadoria determinística do motor (v2.1)
+  if (id==='multiplas-argentina') renderMultiplaArgentina(); // só ARG/ARG_B (v1.0)
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -11982,8 +12009,10 @@ function _linhaHDPHTSugerida(diffHT) {
   return '-0.5';
 }
 
-function gerarCandidatosMultiplas() {
-  const ligas = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
+// v2.2 (2026-07-08): aceita filtro opcional de ligas (usado pela Múltipla Argentina).
+// Sem filtro = 9 ligas ativas + checagem de cotas (comportamento da Múltiplas Elite).
+function gerarCandidatosMultiplas(ligasAlvo) {
+  const ligas = ligasAlvo || ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
   const candidatos = [];
   const ligasComRodada = [];
@@ -12082,18 +12111,22 @@ function gerarCandidatosMultiplas() {
   _rankingHTCache = null; _rankingHTCacheLiga = null;
 
   // v2.0: checagem de cotas mínimas por liga (conta só candidatos SEM divergência alta,
-  // já que divergentes são proibidos nas múltiplas de qualquer forma)
+  // já que divergentes são proibidos nas múltiplas de qualquer forma).
+  // v2.2: quando há filtro de ligas (ligasAlvo), as cotas da Múltiplas Elite NÃO se
+  // aplicam — a Múltipla Argentina tem regra própria (sem trava entre ARG/ARG_B).
   const contagemPorLiga = {};
   candidatos.filter(c => !c.divergencia_alta).forEach(c => { contagemPorLiga[c.liga] = (contagemPorLiga[c.liga]||0)+1; });
   const cotasFaltando = [];      // ligas obrigatórias abaixo da cota → TRAVA
   const cotasAviso = [];         // demais ligas abaixo da cota → aviso, segue
-  Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
-    const n = contagemPorLiga[L] || 0;
-    if (n < min) {
-      if (MULTIPLAS_LIGAS_OBRIGATORIAS.includes(L)) cotasFaltando.push(`${L}: ${n}/${min} jogos`);
-      else cotasAviso.push(`${L}: ${n}/${min} jogos`);
-    }
-  });
+  if (!ligasAlvo) {
+    Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
+      const n = contagemPorLiga[L] || 0;
+      if (n < min) {
+        if (MULTIPLAS_LIGAS_OBRIGATORIAS.includes(L)) cotasFaltando.push(`${L}: ${n}/${min} jogos`);
+        else cotasAviso.push(`${L}: ${n}/${min} jogos`);
+      }
+    });
+  }
 
   return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso };
 }
@@ -12501,8 +12534,8 @@ function _cardSinalMultipla(s) {
   if (!s || !Array.isArray(s.picks)) return '';
   const ehHT = s.id.startsWith('HT');
   const eh10 = s.id.endsWith('_10');
-  const cor = ehHT ? (eh10 ? '#0ea5e9' : '#16a34a') : (eh10 ? '#8b5cf6' : '#f59e0b');
-  const tit = `${eh10 ? '🎯' : '💎'} ${s.mercado} · Grupo ${s.grupo} · ${s.picks.length} pernas`;
+  const cor = s.cor || (ehHT ? (eh10 ? '#0ea5e9' : '#16a34a') : (eh10 ? '#8b5cf6' : '#f59e0b'));
+  const tit = s.titulo || `${eh10 ? '🎯' : '💎'} ${s.mercado} · Grupo ${s.grupo} · ${s.picks.length} pernas`;
 
   const candidatos = _multiplasEliteState.candidatos || [];
   const { probComposta, oddComposta } = _calcularProbCompostaReal(s.picks, candidatos);
@@ -12678,6 +12711,189 @@ function exportarMultiplasHTML() {
     prefixoArquivo: 'MultiplasElite',
     corHeader: 'var(--gold)'
   });
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  MÚLTIPLA ARGENTINA (v1.0 — 2026-07-08) — decisão do operador após
+//  primeira rodada real da v2.1: todas as indicações argentinas bateram,
+//  variância concentrada nas demais ligas (principalmente HT).
+//  Só ARG + ARG_B. SEM cota entre elas: se uma estiver de recesso
+//  (ex.: Liga Profesional na janela da Copa), gera só com a outra —
+//  erro apenas se NENHUMA tiver jogos. Por mercado (HDP HT / HDP FT):
+//  núcleo de 5 (as 5 mais fortes) + múltipla COMPLETA com todas as que
+//  passarem no filtro de elegibilidade — 10+ pernas, sem teto.
+// ══════════════════════════════════════════════════════════════════
+let _multiplasArgState = { candidatos: null, multiplas: null, loading: false };
+const _ARG_COR = '#74acdf'; // celeste argentina
+
+function _curadoriaArgentina(candidatos) {
+  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const sinais = [];
+  const resumoMercados = [];
+
+  ['HT','FT'].forEach(pref => {
+    const ht = pref === 'HT';
+    const mercado = ht ? 'HDP HT' : 'HDP FT';
+    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
+
+    // Uma única trilha: todas as elegíveis sem repetir clube (sem teto de pernas)
+    const times = new Set(); const full = [];
+    eleg.forEach(c => {
+      const tm = norm(c.m), tv = norm(c.v);
+      if (!times.has(tm) && !times.has(tv)) { full.push(c); times.add(tm); times.add(tv); }
+    });
+
+    const mkPick = c => ({
+      liga: c.liga, jogo: c.m + ' × ' + c.v,
+      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
+      favorito: ht ? c.favoritoHT : c.favorito,
+      justificativa: _justificativaCand(c, ht)
+    });
+    const mkTese = arr => {
+      const alta = arr.filter(c => c.altaConfianca).length;
+      const nArg = arr.filter(c => c.liga === 'ARG').length;
+      const nArgB = arr.filter(c => c.liga === 'ARG_B').length;
+      return `${alta}/${arr.length} picks com alta confiança (2+ sinais) · ARG ${nArg} · ARG_B ${nArgB}.`;
+    };
+
+    if (full.length >= 5) {
+      sinais.push({ id: pref+'_ARG_5', mercado, grupo: 1, pernas: 5, cor: _ARG_COR,
+        titulo: `💎 ${mercado} · Núcleo Argentina · 5 pernas`,
+        tese: mkTese(full.slice(0,5)), picks: full.slice(0,5).map(mkPick) });
+      // Múltipla completa só quando agrega além do núcleo (6+ pernas)
+      if (full.length >= 6) {
+        sinais.push({ id: pref+'_ARG_FULL', mercado, grupo: 1, pernas: full.length, cor: '#9cc7ec',
+          titulo: `🎯 ${mercado} · Argentina Completa · ${full.length} pernas`,
+          tese: mkTese(full), picks: full.map(mkPick) });
+      }
+    }
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${full.length >= 5 ? 'núcleo 5' + (full.length >= 6 ? ' + completa '+full.length : '') : 'sem sinais (mínimo 5)'}`);
+  });
+
+  const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
+  const tese_geral = `Múltipla Argentina (só ARG/ARG_B): ${candidatos.length} candidatos, ${altaTotal} com alta confiança. ${resumoMercados.join(' · ')}.`;
+  return { tese_geral, sinais };
+}
+
+async function gerarMultiplaArgentina() {
+  if (_multiplasArgState.loading) return;
+  _multiplasArgState.loading = true;
+  const btn = document.getElementById('btn-gerar-multiplas-arg');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Curadoria em andamento...'; }
+  const status = document.getElementById('multiplas-arg-status');
+  status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid '+_ARG_COR+';border-radius:8px;color:var(--text);font-size:.85rem">⏳ Motor calculando scores de ARG e ARG_B...</div>';
+
+  try {
+    const { candidatos, ligasSemRodada } = gerarCandidatosMultiplas(['ARG','ARG_B']);
+    _multiplasArgState.candidatos = candidatos;
+
+    if (candidatos.length === 0) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum jogo argentino na rodada.</strong> Importe jogos de ARG ou ARG_B em 📋 Análise da Rodada. Sem cota entre as duas — basta UMA delas ter jogos (a outra pode estar de recesso).<br><br>Status: ${ligasSemRodada.join(', ')||'—'}</div>`;
+      return;
+    }
+
+    // Aviso suave se uma das duas está de recesso (não trava — regra do operador)
+    const semRodadaArg = ligasSemRodada.filter(s => s.startsWith('ARG'));
+    _multiplasArgState.avisoRecesso = semRodadaArg.length
+      ? `Liga sem rodada nesta janela: ${semRodadaArg.join(' · ')} (recesso/pausa — geração seguiu só com a outra).` : null;
+
+    const parsed = _curadoriaArgentina(candidatos);
+    if (!parsed.sinais.length) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 5 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial mínimo + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      return;
+    }
+
+    _multiplasArgState.multiplas = { ...parsed, gerado_em: new Date().toISOString(), candidatos_n: candidatos.length };
+    try {
+      localStorage.setItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10), JSON.stringify(_multiplasArgState.multiplas));
+    } catch(e) {}
+    renderMultiplaArgentina();
+  } catch(error) {
+    status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria:</strong> ${error.message}</div>`;
+    console.error('[Multipla Argentina]', error);
+  } finally {
+    _multiplasArgState.loading = false;
+    if (btn) { btn.disabled = false; btn.innerHTML = '🔄 Regerar Múltipla Argentina'; }
+  }
+}
+
+function renderMultiplaArgentina() {
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const status = document.getElementById('multiplas-arg-status');
+  const resumo = document.getElementById('multiplas-arg-resumo');
+  if (!ctr) return;
+
+  if (!_multiplasArgState.multiplas) {
+    try {
+      const cached = localStorage.getItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10));
+      if (cached) _multiplasArgState.multiplas = JSON.parse(cached);
+    } catch(e) {}
+  }
+
+  if (_multiplasArgState.candidatos) {
+    const c = _multiplasArgState.candidatos;
+    const nArg = c.filter(x=>x.liga==='ARG').length, nArgB = c.filter(x=>x.liga==='ARG_B').length;
+    resumo.innerHTML = `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:1rem;font-size:.82rem;color:var(--text)">🇦🇷 <strong>${c.length} candidatos</strong>: Liga Profesional (${nArg}) · Primera B Nacional (${nArgB})</div>`;
+  } else {
+    resumo.innerHTML = '';
+  }
+
+  if (!_multiplasArgState.multiplas) {
+    if (status && !status.innerHTML.trim()) {
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🇦🇷 Importe as rodadas de ARG/ARG_B (📋 Análise da Rodada) e clique em <strong style="color:#9cc7ec">🚀 Gerar Múltipla Argentina</strong>. Basta UMA das duas ligas ter jogos.</div>';
+    }
+    ctr.innerHTML = '';
+    return;
+  }
+
+  const m = _multiplasArgState.multiplas;
+  const avisoRecesso = _multiplasArgState.avisoRecesso
+    ? `<div style="margin-top:.4rem;font-size:.75rem;color:var(--gold)">⚠️ ${_multiplasArgState.avisoRecesso}</div>` : '';
+  if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(116,172,223,0.10);border-left:3px solid ${_ARG_COR};border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Múltipla Argentina gerada</strong> — ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos.<br><em style="color:var(--muted)">${m.tese_geral||''}</em>${avisoRecesso}</div>`;
+
+  // Reusa o mesmo card das Múltiplas Elite (as métricas de risco valem igual);
+  // troca o state de candidatos usado pelo card durante o render.
+  const backupCand = _multiplasEliteState.candidatos;
+  _multiplasEliteState.candidatos = _multiplasArgState.candidatos || backupCand;
+  const ordem = ['HT_ARG_5','HT_ARG_FULL','FT_ARG_5','FT_ARG_FULL'];
+  const porId = {};
+  (m.sinais||[]).forEach(s => { if (s && s.id) porId[s.id] = s; });
+  let html = '';
+  ['HDP HT','HDP FT'].forEach(mercado => {
+    const ids = ordem.filter(id => (mercado === 'HDP HT') === id.startsWith('HT')).filter(id => porId[id]);
+    const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
+    html += header + (ids.length
+      ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 5 jogos argentinos elegíveis.</div>`);
+  });
+  ctr.innerHTML = html;
+  _multiplasEliteState.candidatos = backupCand;
+}
+
+function exportarMultiplaArgentinaHTML() {
+  if (!_multiplasArgState.multiplas) { alert('Gere a Múltipla Argentina primeiro.'); return; }
+  if (typeof _exportarAnaliseHTML !== 'function') { alert('Função de exportação indisponível.'); return; }
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const status = document.getElementById('multiplas-arg-status');
+  _exportarAnaliseHTML({
+    titulo: '🇦🇷 Múltipla Argentina — Curadoria do Motor',
+    subtitulo: 'Só Liga Profesional + Primera B Nacional · HDP HT/FT · núcleo de 5 + completa sem teto — as ligas de maior aderência do app',
+    conteudoHTML: (status?.innerHTML||'') + (ctr?.innerHTML||''),
+    prefixoArquivo: 'MultiplaArgentina',
+    corHeader: _ARG_COR
+  });
+}
+
+function limparMultiplaArgentina() {
+  try { localStorage.removeItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10)); } catch(e) {}
+  _multiplasArgState = { candidatos: null, multiplas: null, loading: false };
+  const status = document.getElementById('multiplas-arg-status');
+  const ctr = document.getElementById('multiplas-arg-resultado');
+  const resumo = document.getElementById('multiplas-arg-resumo');
+  if (status) status.innerHTML = '';
+  if (ctr) ctr.innerHTML = '';
+  if (resumo) resumo.innerHTML = '';
+  renderMultiplaArgentina();
 }
 
 // v1.1 (2026-05-14): snapshot pra hold-out test set out-of-sample
