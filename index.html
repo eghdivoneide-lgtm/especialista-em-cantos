@@ -78,18 +78,30 @@
 
     /* ── HEADER ── */
     header{
-      background:linear-gradient(135deg,#0a2e18 0%,#0f1f13 50%,#0a0f0d 100%);
+      position:relative;overflow:hidden;
+      background:
+        repeating-linear-gradient(115deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 46px, transparent 46px, transparent 92px),
+        linear-gradient(135deg,#0a2e18 0%,#0f1f13 50%,#0a0f0d 100%);
       border-bottom:1px solid var(--border);
       padding:1.2rem 2rem;
       display:flex;align-items:center;justify-content:space-between;
       position:sticky;top:0;z-index:100;
       backdrop-filter:blur(12px);
     }
-    .logo{display:flex;align-items:center;gap:.75rem;}
-    .logo-icon{font-size:2rem;}
+    header::after{
+      content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;
+      background:linear-gradient(90deg,transparent,var(--green) 15%,var(--gold2) 50%,var(--green) 85%,transparent);
+      opacity:.55;
+    }
+    .logo{display:flex;align-items:center;gap:.8rem;position:relative;z-index:1;}
+    .logo-icon{
+      width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none;
+      background:linear-gradient(135deg,rgba(52,211,103,0.16),rgba(245,158,11,0.12));
+      border:1px solid var(--border);
+    }
     .logo-text h1{font-size:1.1rem;font-weight:800;color:var(--green);letter-spacing:-.5px;}
-    .logo-text p{font-size:.7rem;color:var(--muted);font-weight:500;letter-spacing:.5px;text-transform:uppercase;}
-    .badge{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;font-size:.65rem;font-weight:800;padding:.25rem .6rem;border-radius:99px;letter-spacing:.5px;}
+    .logo-text p{font-size:.65rem;color:var(--muted);font-weight:600;letter-spacing:.09em;text-transform:uppercase;margin-top:.1rem;}
+    .badge{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;font-size:.65rem;font-weight:800;padding:.25rem .6rem;border-radius:99px;letter-spacing:.5px;box-shadow:0 2px 12px rgba(245,158,11,0.25);position:relative;z-index:1;}
 
     /* ── NAV (v2 — tabs de grupo + sub-nav contextual) ── */
     /* Tabs de grupo (sempre visível no topo) */
@@ -100,18 +112,20 @@
     }
     .nav-grupos .tab-grupo {
       background:transparent; color:var(--muted); border:none;
-      border-bottom:3px solid transparent;
+      border-bottom:3px solid transparent; border-radius:8px 8px 0 0;
       padding:.85rem 1.4rem; font-size:.85rem; font-weight:800;
-      cursor:pointer; transition:all .15s; white-space:nowrap;
+      cursor:pointer; transition:color .15s,background .15s,border-color .15s; white-space:nowrap;
       font-family:'Inter',sans-serif; letter-spacing:.3px;
     }
-    .nav-grupos .tab-grupo:hover { color:var(--text); background:rgba(255,255,255,0.02); }
+    .nav-grupos .tab-grupo:hover { color:var(--text); background:rgba(255,255,255,0.03); }
     .nav-grupos .tab-grupo.active {
       color:var(--green); border-bottom-color:var(--green);
-      background:rgba(52,211,103,0.05);
+      background:linear-gradient(180deg,rgba(52,211,103,0.08),rgba(52,211,103,0.03));
     }
     .nav-grupos .tab-grupo.has-active::after {
-      content:'•'; color:var(--green); font-size:1.2rem; margin-left:.4rem; line-height:0;
+      content:''; display:inline-block; width:6px; height:6px; border-radius:50%;
+      background:var(--gold2); margin-left:.45rem; vertical-align:middle;
+      box-shadow:0 0 6px rgba(245,158,11,0.7);
     }
     /* Sub-nav contextual (mostra views do grupo ativo) */
     nav, #nav-subnav {
@@ -124,11 +138,12 @@
       color:var(--muted); font-family:'Inter',sans-serif;
       font-size:.8rem; font-weight:600;
       padding:.5rem 1rem; border-radius:8px; cursor:pointer;
-      transition:all .2s; white-space:nowrap;
+      transition:background .15s,border-color .15s,color .15s,transform .15s; white-space:nowrap;
     }
     nav button.active, nav button:hover,
     #nav-subnav button.active, #nav-subnav button:hover {
       background:var(--glass); border-color:var(--green); color:var(--green);
+      transform:translateY(-1px);
     }
     #btn-enigma.active, #btn-enigma:hover {
       background:rgba(139,92,246,0.2) !important; border-color:#a78bfa !important; color:#a78bfa !important;
@@ -707,13 +722,22 @@
 
 <header>
   <style>
-    #seletor-liga{appearance:none;background:var(--bg3);color:var(--gold);border:1px solid var(--border);padding:.4rem 1.8rem .4rem .8rem;margin-top:.4rem;border-radius:6px;font-weight:700;font-size:.8rem;cursor:pointer;outline:none;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fbbf24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .7rem top 50%;background-size:.65rem auto;transition:all .3s;}
-    #seletor-liga:hover{background-color:rgba(255,255,255,0.05);}
+    #seletor-liga{appearance:none;background:var(--bg3);color:var(--gold);border:1px solid var(--border);padding:.4rem 1.8rem .4rem .8rem;margin-top:.4rem;border-radius:6px;font-weight:700;font-size:.8rem;cursor:pointer;outline:none;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fbbf24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .7rem top 50%;background-size:.65rem auto;transition:all .2s;}
+    #seletor-liga:hover{background-color:rgba(255,255,255,0.05);border-color:var(--green);}
+    #seletor-liga:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(52,211,103,0.16);}
   </style>
   <div class="logo">
-    <div class="logo-icon">🎯</div>
+    <div class="logo-icon">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+        <path d="M4 3v18" stroke="var(--muted)" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M4 4c5 0 5 5 10 5s5-5.5 0-5.5-5 3.5-10 3.5Z" fill="none" stroke="url(#headerFlagGrad)" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M4 20a8 8 0 0 1 8-8" stroke="var(--green)" stroke-width="1.4" stroke-linecap="round" opacity=".55"/>
+        <defs><linearGradient id="headerFlagGrad" x1="4" y1="3" x2="14" y2="9"><stop stop-color="var(--gold2)"/><stop offset="1" stop-color="var(--green)"/></linearGradient></defs>
+      </svg>
+    </div>
     <div class="logo-text">
       <h1>Especialista em Cantos</h1>
+      <p>Análise inteligente de escanteios</p>
       <select id="seletor-liga" onchange="trocarLiga(this.value)">
         <optgroup label="🇧🇷 Brasil">
           <option value="BR">Brasileirão Série A</option>
