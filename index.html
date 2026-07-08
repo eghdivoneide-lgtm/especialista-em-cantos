@@ -11428,7 +11428,13 @@ function _scoreVencedor(p, liga, mandante, visitante) {
 // v4.2 (2026-06-28): Whitelist de ligas com DNA validado/operado. O bônus DNA e o
 // override da coroa Reis dos Cantos só disparam para estas. CHI/ECU (DNA recém-criado,
 // nunca backtestado) ficam baseline puro até validação walk-forward. Resolve R2/R5 da auditoria.
-const LIGAS_OVERRIDE_DNA = new Set(['BR','BR_B','ARG','ARG_B','MLS','USL','BUN']);
+// v4.3 (2026-07-08): CHI/ECU adicionadas — DNA_ESCOTEIRO passou a ter as 32 times
+// dessas ligas (10 campos estatísticos reais + perfil neutro EQUILIBRADO/multPerfil 1.0,
+// já que não há regra objetiva pra classificar perfil qualitativo — ver comentário em
+// data/dna_escoteiro.js). PowerScore/categoria/assinaturas em memoria_dna.js foram
+// recalculados de verdade a partir disso. AINDA SEM validação walk-forward/backtest —
+// acompanhar performance dessas duas ligas com atenção redobrada nas próximas rodadas.
+const LIGAS_OVERRIDE_DNA = new Set(['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']);
 function _bonusDNA_Vencedor(mandante, visitante, liga) {
   if (!window.MEMORIA_DNA) return 0;
   if (!LIGAS_OVERRIDE_DNA.has(liga)) return 0;
