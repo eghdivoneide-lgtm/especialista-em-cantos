@@ -11995,13 +11995,14 @@ function _linhaUnderSugerida(expFT) {
 // Coleta candidatos cross-liga: roda motor em todas as ligas com rodada importada
 // v2.0 (2026-07-08): reforma HDP-only por regras do operador.
 //  - Mercados: APENAS HDP HT e HDP FT (Under saiu das Múltiplas Elite).
-//  - Cotas mínimas por liga: ARG ≥3 e ARG_B ≥3 (obrigatórias — travam a geração),
-//    demais ligas ≥2 (aviso, não trava). Sem teto pra ARG/ARG_B (maior aderência do app).
+//  - Cotas mínimas por liga: ARG ≥3, ARG_B ≥3, demais ≥2 — TODAS apenas AVISO.
+//    v2.2 (2026-07-08): a trava obrigatória de ARG/ARG_B foi removida a pedido do
+//    operador — com a Liga Profesional em recesso (janela da Copa) ela bloqueava a
+//    aba inteira. A geração agora sempre segue; o aviso lista as ligas abaixo da cota.
 //  - Confiança medida por 3 sinais cruzados: Bala de Prata (faixa+odd),
 //    Cisne Negro (Δ projetado) e Enigma SDE (desempenho casa×fora).
 //    2 de 3 critérios = ALTA confiança; 3 de 3 = prioridade máxima.
 const MULTIPLAS_COTA_MIN = Object.freeze({ ARG: 3, ARG_B: 3, BR: 2, BR_B: 2, MLS: 2, USL: 2, BUN: 2, CHI: 2, ECU: 2 });
-const MULTIPLAS_LIGAS_OBRIGATORIAS = Object.freeze(['ARG', 'ARG_B']);
 
 // Linha HDP HT sugerida — HT tem ~metade do volume de cantos do FT,
 // então os degraus de diferencial são menores que os do FT.
@@ -12119,19 +12120,17 @@ function gerarCandidatosMultiplas(ligasAlvo) {
   // aplicam — a Múltipla Argentina tem regra própria (sem trava entre ARG/ARG_B).
   const contagemPorLiga = {};
   candidatos.filter(c => !c.divergencia_alta).forEach(c => { contagemPorLiga[c.liga] = (contagemPorLiga[c.liga]||0)+1; });
-  const cotasFaltando = [];      // ligas obrigatórias abaixo da cota → TRAVA
-  const cotasAviso = [];         // demais ligas abaixo da cota → aviso, segue
+  // v2.2: cota abaixo do mínimo NUNCA trava — só entra no aviso (regra do operador,
+  // depois que a trava de ARG/ARG_B bloqueou a aba durante o recesso da Copa).
+  const cotasAviso = [];
   if (!ligasAlvo) {
     Object.entries(MULTIPLAS_COTA_MIN).forEach(([L, min]) => {
       const n = contagemPorLiga[L] || 0;
-      if (n < min) {
-        if (MULTIPLAS_LIGAS_OBRIGATORIAS.includes(L)) cotasFaltando.push(`${L}: ${n}/${min} jogos`);
-        else cotasAviso.push(`${L}: ${n}/${min} jogos`);
-      }
+      if (n < min) cotasAviso.push(`${L}: ${n}/${min} jogos`);
     });
   }
 
-  return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso };
+  return { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasAviso };
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -12230,7 +12229,7 @@ async function gerarMultiplasElite() {
   document.getElementById('multiplas-status').innerHTML = '<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 1/2:</strong> Motor calculando scores em todas as ligas com rodada...</div>';
 
   // ETAPA 1: candidatos
-  const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasFaltando, cotasAviso } = gerarCandidatosMultiplas();
+  const { candidatos, ligasComRodada, ligasSemRodada, contagemPorLiga, cotasAviso } = gerarCandidatosMultiplas();
   _multiplasEliteState.candidatos = candidatos;
 
   if (candidatos.length === 0) {
@@ -12240,19 +12239,8 @@ async function gerarMultiplasElite() {
     return;
   }
 
-  // v2.0: cotas obrigatórias — ARG e ARG_B precisam de ≥3 jogos válidos cada (regra do operador).
-  if (cotasFaltando.length > 0) {
-    document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
-      ❌ <strong>Cota mínima das ligas argentinas não atingida</strong> — a geração exige no mínimo 3 jogos válidos de ARG e 3 de ARG_B (base mais assertiva do app).<br>
-      <div style="margin-top:.4rem">Faltando: <strong>${cotasFaltando.join(' · ')}</strong></div>
-      <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">Importe mais jogos dessas ligas em 📋 Análise da Rodada e gere novamente. Jogos com divergência DNA alta não contam pra cota.</div>
-    </div>`;
-    _multiplasEliteState.loading = false;
-    if (btn) { btn.disabled = false; btn.innerHTML = '🚀 Gerar Múltiplas'; }
-    return;
-  }
-
-  // Cotas das demais ligas: aviso, não trava (regra do operador: trabalha com menos sinais)
+  // v2.2: cotas mínimas NUNCA travam (trava de ARG/ARG_B removida a pedido do
+  // operador — bloqueava a aba inteira durante o recesso da Copa). Só aviso.
   _multiplasEliteState.cotasAviso = cotasAviso;
 
   // ETAPA 2: curadoria determinística (v2.1 — sem chamada de API)
@@ -12438,7 +12426,7 @@ function renderMultiplasElite() {
 
   if (!_multiplasEliteState.multiplas) {
     if (status && !status.innerHTML.trim()) {
-      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (cotas mínimas: 3 jogos de ARG, 3 de ARG_B, 2 das demais ligas).</div>';
+      status.innerHTML = '<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Importe as rodadas das ligas (📋 Análise da Rodada) e clique em <strong style="color:var(--gold)">🚀 Gerar Múltiplas</strong> para gerar os sinais HDP HT/FT (gera com qualquer liga disponível; ideal 3+ jogos de ARG/ARG_B e 2+ das demais).</div>';
     }
     ctr.innerHTML = '';
     return;
