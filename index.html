@@ -1247,13 +1247,13 @@
        MÚLTIPLA ARGENTINA — só ARG + ARG_B (v1.0 — 2026-07-08)
        Ligas de maior aderência do app (ROI +78u/+46u nas 158 apostas
        auditadas). Sem cota entre elas: se uma estiver de recesso
-       (ex.: Copa), gera só com a outra. Múltipla completa sem teto.
+       (ex.: Copa), gera só com a outra. v1.1: 2 grupos independentes (2×5+2×10).
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-multiplas-argentina" class="view">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,#74acdf,#9cc7ec);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🇦🇷 Múltipla Argentina</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · núcleo de 5 + múltipla completa sem teto de pernas</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas)</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <button id="btn-gerar-multiplas-arg" onclick="gerarMultiplaArgentina()" style="background:linear-gradient(135deg,#74acdf,#9cc7ec);border:none;color:#062038;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(116,172,223,0.35);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltipla Argentina</button>
@@ -12720,59 +12720,22 @@ function exportarMultiplasHTML() {
 //  Só ARG + ARG_B. SEM cota entre elas: se uma estiver de recesso
 //  (ex.: Liga Profesional na janela da Copa), gera só com a outra —
 //  erro apenas se NENHUMA tiver jogos. Por mercado (HDP HT / HDP FT):
-//  núcleo de 5 (as 5 mais fortes) + múltipla COMPLETA com todas as que
-//  passarem no filtro de elegibilidade — 10+ pernas, sem teto.
+//  v1.1: 2 grupos independentes por mercado (2×5 + 2×10), mesma estrutura
+//  da Múltiplas Elite — "completa sem teto" da v1.0 foi descartada (risco).
 // ══════════════════════════════════════════════════════════════════
 let _multiplasArgState = { candidatos: null, multiplas: null, loading: false };
 const _ARG_COR = '#74acdf'; // celeste argentina
 
+// v1.1 (2026-07-08): mesma estrutura da Múltiplas Elite (2 grupos independentes por
+// mercado, 2×5 + 2×10) — o operador achou a "completa sem teto" arriscada demais
+// (13 pernas = uma perna derruba tudo). Reusa _curadoriaDeterministicaMultiplas
+// integralmente (ids HT_G1_5..FT_G2_10, degradação, independência de clubes);
+// só o pool muda (ARG/ARG_B) e a identidade visual fica celeste.
 function _curadoriaArgentina(candidatos) {
-  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
-  const sinais = [];
-  const resumoMercados = [];
-
-  ['HT','FT'].forEach(pref => {
-    const ht = pref === 'HT';
-    const mercado = ht ? 'HDP HT' : 'HDP FT';
-    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
-
-    // Uma única trilha: todas as elegíveis sem repetir clube (sem teto de pernas)
-    const times = new Set(); const full = [];
-    eleg.forEach(c => {
-      const tm = norm(c.m), tv = norm(c.v);
-      if (!times.has(tm) && !times.has(tv)) { full.push(c); times.add(tm); times.add(tv); }
-    });
-
-    const mkPick = c => ({
-      liga: c.liga, jogo: c.m + ' × ' + c.v,
-      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
-      favorito: ht ? c.favoritoHT : c.favorito,
-      justificativa: _justificativaCand(c, ht)
-    });
-    const mkTese = arr => {
-      const alta = arr.filter(c => c.altaConfianca).length;
-      const nArg = arr.filter(c => c.liga === 'ARG').length;
-      const nArgB = arr.filter(c => c.liga === 'ARG_B').length;
-      return `${alta}/${arr.length} picks com alta confiança (2+ sinais) · ARG ${nArg} · ARG_B ${nArgB}.`;
-    };
-
-    if (full.length >= 5) {
-      sinais.push({ id: pref+'_ARG_5', mercado, grupo: 1, pernas: 5, cor: _ARG_COR,
-        titulo: `💎 ${mercado} · Núcleo Argentina · 5 pernas`,
-        tese: mkTese(full.slice(0,5)), picks: full.slice(0,5).map(mkPick) });
-      // Múltipla completa só quando agrega além do núcleo (6+ pernas)
-      if (full.length >= 6) {
-        sinais.push({ id: pref+'_ARG_FULL', mercado, grupo: 1, pernas: full.length, cor: '#9cc7ec',
-          titulo: `🎯 ${mercado} · Argentina Completa · ${full.length} pernas`,
-          tese: mkTese(full), picks: full.map(mkPick) });
-      }
-    }
-    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${full.length >= 5 ? 'núcleo 5' + (full.length >= 6 ? ' + completa '+full.length : '') : 'sem sinais (mínimo 5)'}`);
-  });
-
-  const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
-  const tese_geral = `Múltipla Argentina (só ARG/ARG_B): ${candidatos.length} candidatos, ${altaTotal} com alta confiança. ${resumoMercados.join(' · ')}.`;
-  return { tese_geral, sinais };
+  const base = _curadoriaDeterministicaMultiplas(candidatos);
+  base.sinais.forEach(s => { s.cor = s.id.endsWith('_10') ? '#9cc7ec' : _ARG_COR; });
+  base.tese_geral = base.tese_geral.replace('Curadoria determinística do motor', 'Múltipla Argentina (só ARG/ARG_B)');
+  return base;
 }
 
 async function gerarMultiplaArgentina() {
@@ -12800,6 +12763,13 @@ async function gerarMultiplaArgentina() {
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
       status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 5 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial mínimo + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      return;
+    }
+
+    // Rede de segurança: mesmos ids/regras da Múltiplas Elite → mesmo validador
+    const validacao = _validarRespostaMultiplas(parsed, candidatos);
+    if (!validacao.valido) {
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Curadoria falhou na auto-validação (reporte este bug):</strong><ul style="margin:.5rem 0 0 1.2rem">${validacao.erros.map(e=>`<li>${e}</li>`).join('')}</ul></div>`;
       return;
     }
 
@@ -12855,7 +12825,7 @@ function renderMultiplaArgentina() {
   // troca o state de candidatos usado pelo card durante o render.
   const backupCand = _multiplasEliteState.candidatos;
   _multiplasEliteState.candidatos = _multiplasArgState.candidatos || backupCand;
-  const ordem = ['HT_ARG_5','HT_ARG_FULL','FT_ARG_5','FT_ARG_FULL'];
+  const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
   const porId = {};
   (m.sinais||[]).forEach(s => { if (s && s.id) porId[s.id] = s; });
   let html = '';
@@ -12877,7 +12847,7 @@ function exportarMultiplaArgentinaHTML() {
   const status = document.getElementById('multiplas-arg-status');
   _exportarAnaliseHTML({
     titulo: '🇦🇷 Múltipla Argentina — Curadoria do Motor',
-    subtitulo: 'Só Liga Profesional + Primera B Nacional · HDP HT/FT · núcleo de 5 + completa sem teto — as ligas de maior aderência do app',
+    subtitulo: 'Só Liga Profesional + Primera B Nacional · HDP HT/FT · 2 grupos independentes (2×5 + 2×10) — as ligas de maior aderência do app',
     conteudoHTML: (status?.innerHTML||'') + (ctr?.innerHTML||''),
     prefixoArquivo: 'MultiplaArgentina',
     corHeader: _ARG_COR
