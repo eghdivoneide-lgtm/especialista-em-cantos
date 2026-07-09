@@ -1229,7 +1229,7 @@
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,var(--gold),#ffe359);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🏆 Múltiplas de Elite da Rodada</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria determinística do motor · HDP HT e HDP FT · 2 grupos independentes por mercado (2×5 + 2×10 pernas) · até 8 sinais</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Curadoria determinística do motor · HDP HT e HDP FT · só os 10 melhores candidatos por mercado (2×5 + 1×10 pernas) · 6 sinais</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <button id="btn-gerar-multiplas" onclick="gerarMultiplasElite()" style="background:linear-gradient(135deg,var(--gold),#ffe359);border:none;color:#000;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltiplas</button>
@@ -12211,6 +12211,155 @@ function _curadoriaDeterministicaMultiplas(candidatos) {
   return { tese_geral, sinais };
 }
 
+// v2.4 (2026-07-08): Múltiplas Elite — pool ÚNICO dos 10 melhores candidatos por
+// mercado (em vez de 2 grupos de até 10 cada) a pedido do operador ("mais diretos e
+// eficientes"). Do pool de 10 (já com independência de clube garantida na montagem),
+// recorta 3 múltiplas: as 5 primeiras, as 5 seguintes, e as 10 juntas.
+// HT (2×5+1×10) + FT (2×5+1×10) = exatamente 6 múltiplas.
+// A Múltipla Argentina NÃO usa esta função — continua na regra antiga
+// (_curadoriaDeterministicaMultiplas, 2 grupos independentes, 2×5+2×10).
+function _curadoriaTop10Multiplas(candidatos) {
+  const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const sinais = [];
+  const resumoMercados = [];
+
+  ['HT','FT'].forEach(pref => {
+    const ht = pref === 'HT';
+    const mercado = ht ? 'HDP HT' : 'HDP FT';
+    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
+
+    // Pool único: os 10 melhores elegíveis, sem repetir clube dentro do pool.
+    const times = new Set(); const pool = [];
+    eleg.forEach(c => {
+      if (pool.length >= 10) return;
+      const tm = norm(c.m), tv = norm(c.v);
+      if (!times.has(tm) && !times.has(tv)) { pool.push(c); times.add(tm); times.add(tv); }
+    });
+
+    const mkPick = c => ({
+      liga: c.liga, jogo: c.m + ' × ' + c.v,
+      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
+      favorito: ht ? c.favoritoHT : c.favorito,
+      justificativa: _justificativaCand(c, ht)
+    });
+    const mkTese = (rotulo, arr) => {
+      const alta = arr.filter(c => c.altaConfianca).length;
+      const argN = arr.filter(c => c.liga === 'ARG' || c.liga === 'ARG_B').length;
+      return `${rotulo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
+    };
+
+    const p5a = pool.slice(0,5), p5b = pool.slice(5,10);
+    if (p5a.length >= 5) sinais.push({ id: pref+'_5A', mercado, pernas: 5, titulo: `💎 ${mercado} · Top 5 (1ª metade)`, tese: mkTese('Top 5 (1-5)', p5a), picks: p5a.map(mkPick) });
+    if (pool.length >= 10) {
+      sinais.push({ id: pref+'_5B', mercado, pernas: 5, titulo: `💎 ${mercado} · Top 5 (2ª metade)`, tese: mkTese('Top 5 (6-10)', p5b), picks: p5b.map(mkPick) });
+      sinais.push({ id: pref+'_10', mercado, pernas: 10, titulo: `🎯 ${mercado} · Top 10`, tese: mkTese('Top 10', pool), picks: pool.map(mkPick) });
+    }
+
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${[p5a.length>=5?'5A':null, pool.length>=10?'5B':null, pool.length>=10?'10':null].filter(Boolean).join('+')||'sem sinais (degradação)'}`);
+  });
+
+  const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
+  const tese_geral = `Curadoria determinística do motor (Top 10 por mercado): ${candidatos.length} candidatos, ${altaTotal} com alta confiança (2+ de 3 sinais BP/Cisne/SDE). ${resumoMercados.join(' · ')}.`;
+
+  return { tese_geral, sinais };
+}
+
+// Validador do formato Top 10 (6 sinais: HT_5A/HT_5B/HT_10/FT_5A/FT_5B/FT_10).
+// Checa: schema, ids conhecidos, pernas exatas, linhas válidas por mercado,
+// 10 = união exata de 5A+5B, independência de clube entre 5A e 5B, exclusão de
+// divergência alta e existência do pick nos candidatos.
+function _validarTop10Multiplas(parsed, candidatos) {
+  const erros = [];
+  const HDPS_FT = ['-0.5', '-1.0', '-1.5', '-2.0', '-2.5'];
+  const HDPS_HT = ['-0.5', '-1.0', '-1.5', '-2.0'];
+  const IDS_VALIDOS = ['HT_5A','HT_5B','HT_10','FT_5A','FT_5B','FT_10'];
+  const normN = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+
+  if (!parsed || typeof parsed !== 'object') {
+    erros.push('Resposta não é um objeto JSON válido.');
+    return { valido: false, erros };
+  }
+  if (!parsed.tese_geral || typeof parsed.tese_geral !== 'string') erros.push('Falta campo "tese_geral" (string).');
+  if (!Array.isArray(parsed.sinais)) {
+    erros.push('Falta array "sinais".');
+    return { valido: false, erros };
+  }
+  if (parsed.sinais.length === 0) erros.push('Array "sinais" vazio — nenhuma múltipla gerada.');
+
+  const porId = {};
+  parsed.sinais.forEach(s => {
+    if (!s || typeof s !== 'object') { erros.push('Sinal não é objeto.'); return; }
+    if (!IDS_VALIDOS.includes(s.id)) { erros.push(`Sinal com id desconhecido "${s.id}" (válidos: ${IDS_VALIDOS.join(', ')}).`); return; }
+    if (porId[s.id]) erros.push(`Sinal "${s.id}" duplicado.`);
+    porId[s.id] = s;
+  });
+  if (erros.length > 0) return { valido: false, erros };
+
+  function acharCand(p) {
+    const pn = normN(p.jogo);
+    return candidatos.find(c => pn.includes(normN(c.m)) && pn.includes(normN(c.v))) || null;
+  }
+  function timesDosPicks(picks) {
+    const ts = [];
+    (picks||[]).forEach(p => { const c = acharCand(p); if (c) { ts.push(normN(c.m)); ts.push(normN(c.v)); } });
+    return ts;
+  }
+
+  for (const [id, s] of Object.entries(porId)) {
+    const pernasEsperadas = id.endsWith('_10') ? 10 : 5;
+    const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
+    const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
+
+    if (s.mercado !== mercadoEsperado) erros.push(`${id}: mercado "${s.mercado}" (esperado "${mercadoEsperado}").`);
+    if (!Array.isArray(s.picks)) { erros.push(`${id}: "picks" não é array.`); continue; }
+    if (s.picks.length !== pernasEsperadas) erros.push(`${id}: ${s.picks.length} picks (esperado exatamente ${pernasEsperadas} — em degradação, omita o sinal inteiro).`);
+    if (typeof s.tese !== 'string') erros.push(`${id}: "tese" ausente.`);
+
+    const timesNoSinal = new Set();
+    s.picks.forEach((p, i) => {
+      const label = `${id}[${i+1}]`;
+      if (!p.liga) erros.push(`${label}: falta "liga".`);
+      if (!p.jogo) erros.push(`${label}: falta "jogo".`);
+      if (!p.favorito) erros.push(`${label}: falta "favorito" (HDP exige favorito).`);
+      if (!p.justificativa) erros.push(`${label}: falta "justificativa".`);
+      const linhaStr = String(p.linha||'').replace(',', '.');
+      if (!linhasValidas.includes(linhaStr)) erros.push(`${label}: linha "${p.linha}" inválida pra ${mercadoEsperado} (válidas: ${linhasValidas.join('/')}).`);
+
+      const cand = acharCand(p);
+      if (!cand) {
+        erros.push(`${label}: pick "${p.jogo}" não corresponde a candidato pré-filtrado.`);
+      } else {
+        if (cand.divergencia_alta) erros.push(`${label}: "${p.jogo}" tem divergência DNA alta (${cand.divergencia_alta.join(', ')}) — proibido.`);
+        [normN(cand.m), normN(cand.v)].forEach(t => {
+          if (timesNoSinal.has(t)) erros.push(`${label}: time repetido dentro de ${id} ("${t}").`);
+          timesNoSinal.add(t);
+        });
+      }
+    });
+  }
+
+  // O pool de 10 tem que ser exatamente a união das duas metades de 5.
+  [['HT_5A','HT_5B','HT_10'],['FT_5A','FT_5B','FT_10']].forEach(([id5a, id5b, id10]) => {
+    if (porId[id10] && (!porId[id5a] || !porId[id5b])) erros.push(`${id10} presente sem ${id5a}/${id5b} — o pool de 10 é a junção das duas metades, gere-as primeiro.`);
+    if (porId[id5a] && porId[id5b] && porId[id10]) {
+      const uniao = new Set([...(porId[id5a].picks||[]), ...(porId[id5b].picks||[])].map(p => normN(p.jogo)));
+      const jogos10 = new Set((porId[id10].picks||[]).map(p => normN(p.jogo)));
+      if (uniao.size !== jogos10.size || [...uniao].some(j => !jogos10.has(j))) erros.push(`Estrutura quebrada: ${id10} não é a união exata de ${id5a} + ${id5b}.`);
+    }
+  });
+
+  // Independência de clube entre as duas metades do pool.
+  [['HT_5A','HT_5B','HDP HT'],['FT_5A','FT_5B','HDP FT']].forEach(([ida, idb, mercado]) => {
+    if (!porId[ida] || !porId[idb]) return;
+    const timesA = new Set(timesDosPicks(porId[ida].picks));
+    timesDosPicks(porId[idb].picks).forEach(t => {
+      if (timesA.has(t)) erros.push(`Independência quebrada em ${mercado}: time "${t}" aparece nas duas metades do Top 10.`);
+    });
+  });
+
+  return { valido: erros.length === 0, erros };
+}
+
 // Gera múltiplas — curadoria determinística do motor (v2.1: sem dependência de API)
 async function gerarMultiplasElite() {
   if (_multiplasEliteState.loading) return;
@@ -12235,7 +12384,7 @@ async function gerarMultiplasElite() {
   document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ <strong>Etapa 2/2:</strong> ${candidatos.length} candidatos pré-filtrados em ${ligasComRodada.length} ligas. Motor montando os sinais HDP HT/FT...</div>`;
 
   try {
-    const parsed = _curadoriaDeterministicaMultiplas(candidatos);
+    const parsed = _curadoriaTop10Multiplas(candidatos);
 
     if (!parsed.sinais.length) {
       document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
@@ -12247,7 +12396,7 @@ async function gerarMultiplasElite() {
 
     // Rede de segurança: valida o output do próprio motor com as mesmas regras
     // que valiam pra resposta da IA. Falha aqui = bug interno, não variância de IA.
-    const validacao = _validarRespostaMultiplas(parsed, candidatos);
+    const validacao = _validarTop10Multiplas(parsed, candidatos);
     if (!validacao.valido) {
       const errosHTML = validacao.erros.map(e => `<li style="margin:.2rem 0">${e}</li>`).join('');
       document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
@@ -12424,9 +12573,10 @@ function renderMultiplasElite() {
   // v2.3: sem aviso de cotas — ligas sem jogos ativos simplesmente não aparecem.
   if (status) status.innerHTML = `<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.08);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>Curadoria do motor concluída</strong> — gerado em ${new Date(m.gerado_em).toLocaleString('pt-BR')} · ${m.candidatos_n} candidatos analisados.<br><em style="color:var(--muted)">${m.tese_geral||''}</em></div>`;
 
-  // v2.0: formato "sinais[]" (HDP HT/FT, 2 grupos). Fallback legado: formato piramidal antigo em cache.
+  // v2.4: formato "sinais[]" (HDP HT/FT, pool único top-10, 2×5+1×10 por mercado).
+  // Fallback legado: formato piramidal antigo em cache.
   if (Array.isArray(m.sinais)) {
-    const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+    const ordem = ['HT_5A','HT_5B','HT_10','FT_5A','FT_5B','FT_10'];
     const porId = {};
     m.sinais.forEach(s => { if (s && s.id) porId[s.id] = s; });
     const headerMercado = mercado => `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:var(--gold2);letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — Handicap de cantos no 1º tempo' : '🏁 HDP FT — Handicap de cantos no jogo todo'}</div>`;
@@ -12683,7 +12833,7 @@ function exportarMultiplasHTML() {
   const conteudoHTML = (status?.innerHTML||'') + (ctr?.innerHTML||'');
   _exportarAnaliseHTML({
     titulo: '🏆 Múltiplas Elite — Curadoria do Motor',
-    subtitulo: 'Sinais HDP HT/FT em grupos independentes (2×5 + 2×10 por mercado) — curadoria determinística com memória DNA cravada',
+    subtitulo: 'Sinais HDP HT/FT · só os 10 melhores candidatos por mercado (2×5 + 1×10) — curadoria determinística com memória DNA cravada',
     conteudoHTML,
     prefixoArquivo: 'MultiplasElite',
     corHeader: 'var(--gold)'
