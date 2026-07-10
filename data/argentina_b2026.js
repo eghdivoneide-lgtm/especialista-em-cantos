@@ -1,9 +1,9 @@
-// DADOS_ARG_B — PIPELINE processado (2026-07-07T21:37)
-// Total: 323
+// DADOS_ARG_B — INJEÇÃO RODADA 09/07
+// Total: 341
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-06-30",
+  "ultimaAtualizacao": "2026-07-10",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
@@ -40904,6 +40904,1696 @@ window.DADOS_ARG_B = {
           "faltas_ft",
           "impedimentos_ft",
           "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "pxz9N30K",
+      "mandante": "Central Norte",
+      "visitante": "San Miguel",
+      "rodada": null,
+      "data": "05.07.2026 16:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 3
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.70",
+        "oddV": "3.50"
+      },
+      "url": "https://www.flashscore.com/match/pxz9N30K/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:31:00.916Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "ATni2dqT",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Agropecuario",
+      "rodada": null,
+      "data": "05.07.2026 16:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 9,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "3-5-2"
+      },
+      "mercado": {
+        "oddM": "2.05",
+        "oddEmpate": "3.10",
+        "oddV": "3.90"
+      },
+      "url": "https://www.flashscore.com/match/ATni2dqT/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:31:31.108Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "CfUZAQGE",
+      "mandante": "CA Mitre",
+      "visitante": "All Boys",
+      "rodada": null,
+      "data": "05.07.2026 16:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 6,
+          "v": 0
+        },
+        "ft": {
+          "m": 11,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 4
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "5-3-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.01",
+        "oddEmpate": "2.70",
+        "oddV": "4.50"
+      },
+      "url": "https://www.flashscore.com/match/CfUZAQGE/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:32:01.058Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "OddHkJaN",
+      "mandante": "Midland",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": null,
+      "data": "05.07.2026 16:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 78,
+          "v": 22
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 4
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-3"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.82",
+        "oddV": "3.30"
+      },
+      "url": "https://www.flashscore.com/match/OddHkJaN/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:32:30.824Z",
+        "campos_disponiveis": 16,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "UXJHIHT9",
+      "mandante": "San Martin S.J.",
+      "visitante": "Chacarita Juniors",
+      "rodada": null,
+      "data": "05.07.2026 16:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 8,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 3
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 6,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.79",
+        "oddEmpate": "3.00",
+        "oddV": "5.25"
+      },
+      "url": "https://www.flashscore.com/match/UXJHIHT9/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:33:01.061Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "xzFmGLhf",
+      "mandante": "Chaco For Ever",
+      "visitante": "Acassuso",
+      "rodada": null,
+      "data": "05.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 10,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "1.76",
+        "oddEmpate": "3.10",
+        "oddV": "5.25"
+      },
+      "url": "https://www.flashscore.com/match/xzFmGLhf/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:33:31.348Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "U9BuIsOs",
+      "mandante": "Ferro",
+      "visitante": "San Telmo",
+      "rodada": null,
+      "data": "05.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 5
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 7,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.56",
+        "oddEmpate": "3.30",
+        "oddV": "7.00"
+      },
+      "url": "https://www.flashscore.com/match/U9BuIsOs/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:34:00.613Z",
+        "campos_disponiveis": 15,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "W2Jr6vp4",
+      "mandante": "Patronato",
+      "visitante": "San Martin T.",
+      "rodada": null,
+      "data": "05.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 5
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.82",
+        "oddV": "3.30"
+      },
+      "url": "https://www.flashscore.com/match/W2Jr6vp4/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:34:29.520Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "WbimmNO7",
+      "mandante": "CA Estudiantes",
+      "visitante": "Racing Cordoba",
+      "rodada": null,
+      "data": "05.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 7,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 3
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.86",
+        "oddEmpate": "3.00",
+        "oddV": "5.00"
+      },
+      "url": "https://www.flashscore.com/match/WbimmNO7/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:34:58.717Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "IVsNa08D",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Colon Santa Fe",
+      "rodada": null,
+      "data": "05.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 16
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 8
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-1-4-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.35",
+        "oddEmpate": "2.82",
+        "oddV": "3.30"
+      },
+      "url": "https://www.flashscore.com/match/IVsNa08D/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:35:29.732Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "8UXmpcNp",
+      "mandante": "Quilmes",
+      "visitante": "Atletico Atlanta",
+      "rodada": null,
+      "data": "04.07.2026 18:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 3
+        },
+        "ft": {
+          "m": 8,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 4
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 10,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.30",
+        "oddEmpate": "2.82",
+        "oddV": "3.50"
+      },
+      "url": "https://www.flashscore.com/match/8UXmpcNp/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:35:59.917Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "v5EE3r9l",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Godoy Cruz",
+      "rodada": null,
+      "data": "04.07.2026 16:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 4
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 15
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "3.10",
+        "oddEmpate": "2.70",
+        "oddV": "2.57"
+      },
+      "url": "https://www.flashscore.com/match/v5EE3r9l/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:36:29.002Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "4GHj4IEG",
+      "mandante": "Almagro",
+      "visitante": "Atl. Rafaela",
+      "rodada": null,
+      "data": "04.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-3-3",
+        "v": "5-3-1-1"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.82",
+        "oddV": "3.70"
+      },
+      "url": "https://www.flashscore.com/match/4GHj4IEG/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:36:58.262Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "KKXs94oR",
+      "mandante": "Almirante Brown",
+      "visitante": "Los Andes",
+      "rodada": null,
+      "data": "04.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 2,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.45",
+        "oddEmpate": "2.65",
+        "oddV": "3.40"
+      },
+      "url": "https://www.flashscore.com/match/KKXs94oR/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:37:28.359Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "CICM1Mw1",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Deportivo Moron",
+      "rodada": null,
+      "data": "04.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-4-2"
+      },
+      "mercado": {
+        "oddM": "2.85",
+        "oddEmpate": "2.57",
+        "oddV": "3.00"
+      },
+      "url": "https://www.flashscore.com/match/CICM1Mw1/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:37:58.329Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "M7G9Kwac",
+      "mandante": "Nueva Chicago",
+      "visitante": "Club A. Guemes",
+      "rodada": null,
+      "data": "04.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-3-1-2"
+      },
+      "mercado": {
+        "oddM": "1.71",
+        "oddEmpate": "3.10",
+        "oddV": "5.50"
+      },
+      "url": "https://www.flashscore.com/match/M7G9Kwac/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:38:27.859Z",
+        "campos_disponiveis": 13,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_amarelos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "tCwNdz7j",
+      "mandante": "Temperley",
+      "visitante": "Tristan Suarez",
+      "rodada": null,
+      "data": "04.07.2026 15:30",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 4,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 5
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "formacao": {
+        "m": "4-4-2",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "2.20",
+        "oddEmpate": "2.50",
+        "oddV": "4.33"
+      },
+      "url": "https://www.flashscore.com/match/tCwNdz7j/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:38:56.775Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
+          "defesas_goleiro_ft",
+          "tiros_de_meta_ft",
+          "laterais_ft",
+          "passes_ft",
+          "ataques_perigosos_ht",
+          "faltas_ht",
+          "impedimentos_ht",
+          "cruzamentos_ht",
+          "cartoes_vermelhos_ht",
+          "defesas_goleiro_ht",
+          "tiros_de_meta_ht",
+          "laterais_ht",
+          "passes_ht"
+        ],
+        "metodo_extracao": {
+          "ft": "DOM",
+          "ht": "DOM"
+        }
+      }
+    },
+    {
+      "match_id": "zyQZ70Fi",
+      "mandante": "Colegiales",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": null,
+      "data": "04.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 8,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "formacao": {
+        "m": "4-2-3-1",
+        "v": "4-2-3-1"
+      },
+      "mercado": {
+        "oddM": "1.81",
+        "oddEmpate": "3.00",
+        "oddV": "5.00"
+      },
+      "url": "https://www.flashscore.com/match/zyQZ70Fi/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "versao_analista": "v4",
+        "timestamp_extracao": "2026-07-09T17:39:26.705Z",
+        "campos_disponiveis": 14,
+        "campos_falhados": [
+          "ataques_perigosos_ft",
+          "faltas_ft",
+          "impedimentos_ft",
+          "cruzamentos_ft",
+          "cartoes_vermelhos_ft",
           "defesas_goleiro_ft",
           "tiros_de_meta_ft",
           "laterais_ft",
