@@ -12093,11 +12093,15 @@ function gerarCandidatosMultiplas(ligasAlvo) {
           if (divM && divM.severidade === 'alta') alertaDiv.push(j.m+': '+divM.tipo_divergencia);
           if (divV && divV.severidade === 'alta') alertaDiv.push(j.v+': '+divV.tipo_divergencia);
 
-          // v2.0: confiança por confluência dos 3 sinais indicados pelo operador
-          const critBP    = !!(p.balaDePrataData && (p.balaDePrataData.faixa === 'NUCLEAR' || p.balaDePrataData.faixa === 'FORTE'));
-          const critCisne = diff >= 2.5;
-          const critSDE   = sde != null && sde >= 65;
-          const nCriterios = (critBP?1:0) + (critCisne?1:0) + (critSDE?1:0);
+          // v3.0 (2026-07-12): análise por 2 sinais que CASAM — Cisne Negro + Enigma no MESMO favorito.
+          // Bala de Prata fora da conta. Cisne alinhado à ABA (limiar por liga, não mais 2.5 fixo):
+          // ARG/ARG_B 1.5 · MLS 2.5 · CHI 1.85 · demais 2.0. Enigma ATIVO = mandante domina (SDE≥65).
+          const cisneThr  = (typeof getLigaDNA === 'function' && getLigaDNA(L) ? getLigaDNA(L).cisneThreshold : 2.0);
+          const critCisne = diff >= cisneThr;                                   // vantagem de cantos ≥ limiar da liga
+          const critSDE   = sde != null && sde >= 65;                           // Enigma ATIVO
+          const favHome   = (p.expHomeFT||0) > (p.expAwayFT||0);                // Cisne favorece mandante?
+          const casam     = critCisne && critSDE && favHome;                    // Enigma (mandante domina) confirma o favorito do Cisne
+          const nCriterios = (critCisne?1:0) + (critSDE?1:0);
 
           candidatos.push({
             liga: L, m: j.m, v: j.v, data: j.data, hora: j.hora,
@@ -12108,9 +12112,10 @@ function gerarCandidatosMultiplas(ligasAlvo) {
             favoritoHT, diffHT: +diffHT.toFixed(2),
             linhaHDP: _linhaHDPSugerida(diff),
             linhaHDP_HT: _linhaHDPHTSugerida(diffHT),
-            sde, sdeConf,
-            confluencia: nCriterios, // 0-3: quantos dos 3 sinais (BP/Cisne/SDE) batem
-            altaConfianca: nCriterios >= 2,
+            sde, sdeConf, cisneThr: +cisneThr,
+            confluencia: nCriterios, // 0-2: Cisne + Enigma
+            casam,                   // true = Cisne Negro e Enigma casaram no mesmo favorito (mandante) = SINAL
+            altaConfianca: casam,
             expTotalFT: +((p.expTotalFT||0)).toFixed(2),
             expHT: +((p.expTotalHT||0)).toFixed(2),
             confFT: Math.round(p.confFT||0),
@@ -12149,13 +12154,12 @@ function gerarCandidatosMultiplas(ligasAlvo) {
 // Elegibilidade por mercado: sem divergência DNA alta, confluência ≥1
 // (pelo menos 1 dos 3 sinais BP/Cisne/SDE) e diferencial projetado mínimo
 // que sustente ao menos a linha -0.5 com folga (FT ≥1.0 · HT ≥0.5).
-function _elegivelMercadoMultipla(c, ht, opts) {
-  opts = opts || {};
-  const minFT = opts.diffFT != null ? opts.diffFT : 1.0;
-  const minHT = opts.diffHT != null ? opts.diffHT : 0.5;
+function _elegivelMercadoMultipla(c, ht) {
+  // v3.0 (2026-07-12): sinal = Cisne Negro + Enigma CASANDO no mesmo favorito
+  // (calculado em gerarCandidatosMultiplas.casam). Bala de Prata e piso de
+  // diferencial saíram — o limiar do Cisne (por liga) já é o filtro de diferencial.
   if (c.divergencia_alta) return false;
-  if ((c.confluencia||0) < 1) return false;
-  return ht ? ((c.diffHT||0) >= minHT) : ((c.diff||0) >= minFT);
+  return !!c.casam;
 }
 
 // Ranking dentro do mercado: confluência (3 sinais do operador) manda;
@@ -12170,9 +12174,9 @@ function _rankMercadoMultipla(a, b, ht) {
 // Justificativa gerada dos próprios números (substitui o texto da IA)
 function _justificativaCand(c, ht) {
   const partes = [];
-  if (c.bpFaixa) partes.push('BP ' + c.bpFaixa + (c.bpOdd ? ' @' + c.bpOdd : ''));
-  partes.push(ht ? 'ΔHT ' + c.diffHT : 'Cisne Δ' + c.diff);
-  if (c.sde != null) partes.push('SDE ' + c.sde + (c.sdeConf ? ' (' + c.sdeConf + ')' : ''));
+  partes.push('🦢 Cisne Δ' + c.diff + (c.cisneThr ? '≥' + c.cisneThr : ''));
+  if (ht) partes.push('ΔHT ' + c.diffHT);
+  if (c.sde != null) partes.push('🔮 Enigma SDE ' + c.sde + (c.sdeConf ? ' (' + c.sdeConf + ')' : ''));
   partes.push('conf ' + c.confFT + '%');
   return partes.join(' · ');
 }
@@ -12212,7 +12216,7 @@ function _curadoriaDeterministicaMultiplas(candidatos, opts) {
     const mkTese = (grupo, arr) => {
       const alta = arr.filter(c => c.altaConfianca).length;
       const argN = arr.filter(c => c.liga === 'ARG' || c.liga === 'ARG_B').length;
-      return `Grupo ${grupo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
+      return `Grupo ${grupo} · ${alta}/${arr.length} picks com Cisne+Enigma casando · ${argN} das ligas argentinas.`;
     };
 
     // Base = até 5 pernas (emite a partir do piso minP). Grupo cheio = até 10 (emite quando há >5).
@@ -12232,7 +12236,7 @@ function _curadoriaDeterministicaMultiplas(candidatos, opts) {
   });
 
   const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
-  const tese_geral = `Curadoria determinística do motor: ${candidatos.length} candidatos, ${altaTotal} com alta confiança (2+ de 3 sinais BP/Cisne/SDE). ${resumoMercados.join(' · ')}.`;
+  const tese_geral = `Curadoria determinística do motor: ${candidatos.length} candidatos, ${altaTotal} onde 🦢 Cisne Negro + 🔮 Enigma casaram no mesmo favorito. ${resumoMercados.join(' · ')}.`;
 
   return { tese_geral, sinais };
 }
@@ -12271,7 +12275,7 @@ function _curadoriaTop10Multiplas(candidatos) {
     const mkTese = (rotulo, arr) => {
       const alta = arr.filter(c => c.altaConfianca).length;
       const argN = arr.filter(c => c.liga === 'ARG' || c.liga === 'ARG_B').length;
-      return `${rotulo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
+      return `${rotulo} · ${alta}/${arr.length} picks com Cisne+Enigma casando · ${argN} das ligas argentinas.`;
     };
 
     const p5a = pool.slice(0,5), p5b = pool.slice(5,10);
@@ -12285,7 +12289,7 @@ function _curadoriaTop10Multiplas(candidatos) {
   });
 
   const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
-  const tese_geral = `Curadoria determinística do motor (Top 10 por mercado): ${candidatos.length} candidatos, ${altaTotal} com alta confiança (2+ de 3 sinais BP/Cisne/SDE). ${resumoMercados.join(' · ')}.`;
+  const tese_geral = `Curadoria determinística do motor (Top 10 por mercado): ${candidatos.length} candidatos, ${altaTotal} onde 🦢 Cisne Negro + 🔮 Enigma casaram no mesmo favorito. ${resumoMercados.join(' · ')}.`;
 
   return { tese_geral, sinais };
 }
@@ -12415,7 +12419,7 @@ async function gerarMultiplasElite() {
 
     if (!parsed.sinais.length) {
       document.getElementById('multiplas-status').innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">
-        ❌ <strong>Nenhum sinal gerado</strong> — a rodada não tem candidatos elegíveis suficientes (mínimo 5 jogos com confluência ≥1 e diferencial projetado num mercado).<br>
+        ❌ <strong>Nenhum sinal gerado</strong> — a rodada não tem candidatos elegíveis suficientes (mínimo 5 jogos onde 🦢 Cisne Negro e 🔮 Enigma casam no mesmo favorito num mercado).<br>
         <div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div>
       </div>`;
       return;
@@ -12916,7 +12920,7 @@ async function gerarMultiplaArgentina() {
 
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
-      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 3 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial reduzido ARG + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 3 jogos argentinos onde 🦢 Cisne Negro e 🔮 Enigma casam no mesmo favorito (mandante domina · sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
       return;
     }
 
@@ -12986,7 +12990,7 @@ function renderMultiplaArgentina() {
     const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
     html += header + (ids.length
       ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
-      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 3 jogos argentinos elegíveis.</div>`);
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 3 jogos onde Cisne Negro e Enigma casam.</div>`);
   });
   ctr.innerHTML = html;
   _multiplasEliteState.candidatos = backupCand;
