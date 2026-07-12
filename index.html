@@ -12149,10 +12149,13 @@ function gerarCandidatosMultiplas(ligasAlvo) {
 // Elegibilidade por mercado: sem divergência DNA alta, confluência ≥1
 // (pelo menos 1 dos 3 sinais BP/Cisne/SDE) e diferencial projetado mínimo
 // que sustente ao menos a linha -0.5 com folga (FT ≥1.0 · HT ≥0.5).
-function _elegivelMercadoMultipla(c, ht) {
+function _elegivelMercadoMultipla(c, ht, opts) {
+  opts = opts || {};
+  const minFT = opts.diffFT != null ? opts.diffFT : 1.0;
+  const minHT = opts.diffHT != null ? opts.diffHT : 0.5;
   if (c.divergencia_alta) return false;
   if ((c.confluencia||0) < 1) return false;
-  return ht ? ((c.diffHT||0) >= 0.5) : ((c.diff||0) >= 1.0);
+  return ht ? ((c.diffHT||0) >= minHT) : ((c.diff||0) >= minFT);
 }
 
 // Ranking dentro do mercado: confluência (3 sinais do operador) manda;
@@ -12174,7 +12177,10 @@ function _justificativaCand(c, ht) {
   return partes.join(' · ');
 }
 
-function _curadoriaDeterministicaMultiplas(candidatos) {
+function _curadoriaDeterministicaMultiplas(candidatos, opts) {
+  opts = opts || {};
+  const minP = opts.minPernas || 5;                             // piso da múltipla base
+  const elegOpts = { diffFT: opts.diffFT, diffHT: opts.diffHT }; // limiares de diferencial (undefined = padrão rígido)
   const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
   const sinais = [];
   const resumoMercados = [];
@@ -12182,7 +12188,7 @@ function _curadoriaDeterministicaMultiplas(candidatos) {
   ['HT','FT'].forEach(pref => {
     const ht = pref === 'HT';
     const mercado = ht ? 'HDP HT' : 'HDP FT';
-    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
+    const eleg = candidatos.filter(c => _elegivelMercadoMultipla(c, ht, elegOpts)).sort((a,b) => _rankMercadoMultipla(a, b, ht));
 
     // Grupo 1: melhores até 10 jogos, sem repetir clube dentro do grupo
     const timesG1 = new Set(); const g1 = [];
@@ -12209,12 +12215,20 @@ function _curadoriaDeterministicaMultiplas(candidatos) {
       return `Grupo ${grupo} · ${alta}/${arr.length} picks com alta confiança (2+ sinais) · ${argN} das ligas argentinas.`;
     };
 
-    if (g1.length >= 5)  sinais.push({ id: pref+'_G1_5',  mercado, grupo: 1, pernas: 5,  tese: mkTese(1, g1.slice(0,5)), picks: g1.slice(0,5).map(mkPick) });
-    if (g1.length >= 10) sinais.push({ id: pref+'_G1_10', mercado, grupo: 1, pernas: 10, tese: mkTese(1, g1),            picks: g1.map(mkPick) });
-    if (g2.length >= 5)  sinais.push({ id: pref+'_G2_5',  mercado, grupo: 2, pernas: 5,  tese: mkTese(2, g2.slice(0,5)), picks: g2.slice(0,5).map(mkPick) });
-    if (g2.length >= 10) sinais.push({ id: pref+'_G2_10', mercado, grupo: 2, pernas: 10, tese: mkTese(2, g2),            picks: g2.map(mkPick) });
+    // Base = até 5 pernas (emite a partir do piso minP). Grupo cheio = até 10 (emite quando há >5).
+    const b1 = g1.slice(0, 5), full1 = g1.slice(0, 10);
+    if (b1.length >= minP) sinais.push({ id: pref+'_G1_5',  mercado, grupo: 1, pernas: b1.length,    tese: mkTese(1, b1),    picks: b1.map(mkPick) });
+    if (g1.length > 5)     sinais.push({ id: pref+'_G1_10', mercado, grupo: 1, pernas: full1.length, tese: mkTese(1, full1), picks: full1.map(mkPick) });
+    const b2 = g2.slice(0, 5), full2 = g2.slice(0, 10);
+    if (b2.length >= minP) sinais.push({ id: pref+'_G2_5',  mercado, grupo: 2, pernas: b2.length,    tese: mkTese(2, b2),    picks: b2.map(mkPick) });
+    if (g2.length > 5)     sinais.push({ id: pref+'_G2_10', mercado, grupo: 2, pernas: full2.length, tese: mkTese(2, full2), picks: full2.map(mkPick) });
 
-    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${[g1.length>=5?'G1×5':null, g1.length>=10?'G1×10':null, g2.length>=5?'G2×5':null, g2.length>=10?'G2×10':null].filter(Boolean).join('+')||'sem sinais (degradação)'}`);
+    const lbls = [];
+    if (b1.length >= minP) lbls.push('G1×'+b1.length);
+    if (g1.length > 5)     lbls.push('G1×'+full1.length);
+    if (b2.length >= minP) lbls.push('G2×'+b2.length);
+    if (g2.length > 5)     lbls.push('G2×'+full2.length);
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis → ${lbls.join('+')||'sem sinais (degradação)'}`);
   });
 
   const altaTotal = candidatos.filter(c => c.altaConfianca && !c.divergencia_alta).length;
@@ -12318,13 +12332,14 @@ function _validarTop10Multiplas(parsed, candidatos) {
   }
 
   for (const [id, s] of Object.entries(porId)) {
-    const pernasEsperadas = id.endsWith('_10') ? 10 : 5;
+    const eh10 = id.endsWith('_10');
+    const pMin = eh10 ? 6 : 3, pMax = eh10 ? 10 : 5; // base 3–5 · grupo cheio 6–10 (flex ARG; Elite sempre 5/10)
     const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
     const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
 
     if (s.mercado !== mercadoEsperado) erros.push(`${id}: mercado "${s.mercado}" (esperado "${mercadoEsperado}").`);
     if (!Array.isArray(s.picks)) { erros.push(`${id}: "picks" não é array.`); continue; }
-    if (s.picks.length !== pernasEsperadas) erros.push(`${id}: ${s.picks.length} picks (esperado exatamente ${pernasEsperadas} — em degradação, omita o sinal inteiro).`);
+    if (s.picks.length < pMin || s.picks.length > pMax) erros.push(`${id}: ${s.picks.length} picks (esperado ${pMin===pMax?pMin:pMin+'–'+pMax} — em degradação, omita o sinal inteiro).`);
     if (typeof s.tese !== 'string') erros.push(`${id}: "tese" ausente.`);
 
     const timesNoSinal = new Set();
@@ -12491,13 +12506,14 @@ function _validarRespostaMultiplas(parsed, candidatos) {
 
   // 2. Validação de cada sinal presente
   for (const [id, s] of Object.entries(porId)) {
-    const pernasEsperadas = id.endsWith('_10') ? 10 : 5;
+    const eh10 = id.endsWith('_10');
+    const pMin = eh10 ? 6 : 3, pMax = eh10 ? 10 : 5; // base 3–5 · grupo cheio 6–10 (flex ARG; Elite sempre 5/10)
     const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
     const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
 
     if (s.mercado !== mercadoEsperado) erros.push(`${id}: mercado "${s.mercado}" (esperado "${mercadoEsperado}").`);
     if (!Array.isArray(s.picks)) { erros.push(`${id}: "picks" não é array.`); continue; }
-    if (s.picks.length !== pernasEsperadas) erros.push(`${id}: ${s.picks.length} picks (esperado exatamente ${pernasEsperadas} — em degradação, omita o sinal inteiro).`);
+    if (s.picks.length < pMin || s.picks.length > pMax) erros.push(`${id}: ${s.picks.length} picks (esperado ${pMin===pMax?pMin:pMin+'–'+pMax} — em degradação, omita o sinal inteiro).`);
     if (typeof s.tese !== 'string') erros.push(`${id}: "tese" ausente.`);
 
     const timesNoSinal = new Set();
@@ -12871,7 +12887,8 @@ const _ARG_COR = '#74acdf'; // celeste argentina
 // integralmente (ids HT_G1_5..FT_G2_10, degradação, independência de clubes);
 // só o pool muda (ARG/ARG_B) e a identidade visual fica celeste.
 function _curadoriaArgentina(candidatos) {
-  const base = _curadoriaDeterministicaMultiplas(candidatos);
+  // Regra FLEXIBILIZADA p/ ARG/ARG_B (maior aderência do app): piso 3 pernas + diferencial menor (FT≥0.5 · HT≥0.3).
+  const base = _curadoriaDeterministicaMultiplas(candidatos, { minPernas: 3, diffFT: 0.5, diffHT: 0.3 });
   base.sinais.forEach(s => { s.cor = s.id.endsWith('_10') ? '#9cc7ec' : _ARG_COR; });
   base.tese_geral = base.tese_geral.replace('Curadoria determinística do motor', 'Múltipla Argentina (só ARG/ARG_B)');
   return base;
@@ -12899,7 +12916,7 @@ async function gerarMultiplaArgentina() {
 
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
-      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 5 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial mínimo + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 3 jogos argentinos elegíveis por mercado (confluência ≥1 + diferencial reduzido ARG + sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
       return;
     }
 
@@ -12969,7 +12986,7 @@ function renderMultiplaArgentina() {
     const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
     html += header + (ids.length
       ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
-      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 5 jogos argentinos elegíveis.</div>`);
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 3 jogos argentinos elegíveis.</div>`);
   });
   ctr.innerHTML = html;
   _multiplasEliteState.candidatos = backupCand;
