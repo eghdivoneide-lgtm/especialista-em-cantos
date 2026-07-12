@@ -1428,6 +1428,8 @@
 <script src="data/normalizador_perfis.js?v=2026-07-10-1230"></script>
 <script src="data/perfis_br2026.js?v=2026-07-10-1230"></script>
 <script src="data/perfis_arg2026.js?v=2026-07-10-1230"></script>
+<script src="data/escudos.js?v=2026-07-13"></script>
+<script src="data/escudos_hd.js?v=2026-07-13"></script>
 <script>
   // ── DIAGNÓSTICO DE BOOT ── Loga quais datasets carregaram e quais não.
   // Executa ANTES do script principal, então capturamos o estado real de
@@ -3247,8 +3249,8 @@ function jogoRow(j) {
     <div class="jogo-row" style="grid-template-columns:60px 1fr auto auto auto auto auto;">
       <div class="jogo-data">${j.calibrado ? '<span style="color:var(--gold);font-weight:700">Calibrado</span>' : 'Rd '+j.rodada}<br>${fmtDate(j.data)}</div>
       <div class="jogo-times">
-        <div class="home">🏠 ${j.mandante}</div>
-        <div class="away">✈️ ${j.visitante}</div>
+        <div class="home">${(typeof _campEscudo==='function'?_campEscudo(j.mandante):'')}${j.mandante}</div>
+        <div class="away">${(typeof _campEscudo==='function'?_campEscudo(j.visitante):'')}${j.visitante}</div>
       </div>
       ${placarHtml}
       <div class="td-num"><span class="badge-ht">${j.cantos.ht.m}+${j.cantos.ht.v}</span><div style="font-size:.65rem;color:var(--muted);margin-top:.2rem">HT</div></div>
@@ -3300,7 +3302,7 @@ function renderRanking() {
     const isTop = i < 3;
     return `<tr>
       <td><span class="rank ${isTop?'top':''}">${i+1}</span></td>
-      <td class="td-team">${t.time}</td>
+      <td class="td-team">${(typeof _campEscudo==='function'?_campEscudo(t.time):'')}${t.time}</td>
       <td class="td-num">${t.jogos}</td>
       <td class="td-num"><span class="badge-ht">${fmt(t.ht_pro)}</span></td>
       <td class="td-num" style="color:var(--red)">${fmt(t.ht_con)}</td>
@@ -3392,6 +3394,11 @@ function setAbaTime(aba) {
   renderTime();
 }
 
+function _campEscudoGrande(t){
+  var u=(window.ESCUDOS_HD||{})[t] || (window.ESCUDOS||{})[t];
+  if(u) return '<img src="'+u+'" onerror="_escFb&&_escFb(this)" style="width:68px;height:68px;object-fit:contain">';
+  return '<span style="font-size:1.7rem;font-weight:900;color:var(--green)">'+String(t).slice(0,2).toUpperCase()+'</span>';
+}
 function renderTime() {
   const time = document.getElementById('sel-time').value;
   const btnExport = document.getElementById('btn-export-time');
@@ -3614,6 +3621,7 @@ function _renderDNATime(time, s) {
   `;
 
   return `
+    <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;margin-bottom:1rem;background:linear-gradient(135deg,rgba(52,211,103,0.12),rgba(34,197,94,0.04));border:1px solid rgba(52,211,103,0.28);border-radius:14px;box-shadow:0 0 24px rgba(52,211,103,0.08)"><div style="width:84px;height:84px;flex:none;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.30);border-radius:14px;box-shadow:inset 0 0 16px rgba(52,211,103,0.12)">${_campEscudoGrande(time)}</div><div><div style="font-size:1.55rem;font-weight:900;color:var(--text);letter-spacing:-.3px">${time}</div><div style="font-size:.75rem;color:var(--muted);margin-top:.25rem">${(typeof DADOS_2026!=="undefined"&&DADOS_2026&&DADOS_2026.temporada)||""} · ${s.jogos} jogos analisados</div></div></div>
     <div class="section-title">🧬 DNA do ${time}</div>
     ${dnaEscoteiroHTML || `<div style="background:var(--bg3);border:1px dashed var(--border);border-radius:8px;padding:.8rem;color:var(--muted);font-size:.78rem;margin-bottom:.5rem">⚠️ DNA Escoteiro não disponível para ${time} (liga ainda sem perfil qualitativo cadastrado)</div>`}
     ${comportamentoHTML}
@@ -4715,6 +4723,7 @@ const VIEW_TO_GRUPO = {
   'dashboard':       'visao',
   'ranking':         'visao',
   'time':            'visao',
+  'campeonato':      'visao',
   'adicionar':       'analise',
   'rodada':          'analise',
   'top3':            'analise',
@@ -4737,7 +4746,9 @@ const SUBNAV_BY_GRUPO = {
   visao: [
     { id: 'dashboard',  label: '📊 Dashboard' },
     { id: 'ranking',    label: '🏆 Ranking Times' },
-    { id: 'time',       label: '👕 Por Time' }
+    { id: 'time',       label: '👕 Por Time' },
+    { id: 'campeonato', label: '🏆 Campeonato',
+      style: 'background:linear-gradient(135deg,rgba(52,211,103,0.2),rgba(34,197,94,0.12));border-color:rgba(52,211,103,0.45);color:var(--green);font-weight:800;' }
   ],
   analise: [
     { id: 'adicionar',   label: '📥 Adicionar Jogos' },
@@ -4812,6 +4823,7 @@ function showView(id) {
 
   if (id==='ranking') { renderRankingHeader(); renderRanking(); }
   if (id==='dashboard') renderDashboard();
+  if (id==='campeonato' && typeof renderCampeonato==='function') renderCampeonato();
   if (id==='time') renderTime();
   if (id==='projecao') renderProjecao();
   if (id==='tracker') renderTracker();
@@ -4950,7 +4962,7 @@ function renderOuro() {
           <tbody>
             ${rcJogos.map(c => `
               <tr style="cursor:pointer" onclick="carregarProjecaoExata('${c.m}','${c.v}')">
-                <td style="font-weight:700;font-size:.82rem">${c.m} vs ${c.v}</td>
+                <td style="font-weight:700;font-size:.82rem">${(typeof _campEscudo==='function'?_campEscudo(c.m):'')}${c.m} vs ${(typeof _campEscudo==='function'?_campEscudo(c.v):'')}${c.v}</td>
                 <td style="font-weight:900;color:${c.rc.cor}">${c.rc.vencedor}</td>
                 <td class="td-num" style="color:${c.rc.cor};font-weight:800">@ ${fmt(c.rc.odd)}</td>
                 <td><span style="background:${c.rc.cor}22;color:${c.rc.cor};padding:.2rem .6rem;border-radius:6px;font-size:.72rem;font-weight:900">${c.rc.faixa}</span></td>
@@ -4988,7 +5000,7 @@ function renderOuro() {
               const fav = h.home > h.away ? 'home' : 'away';
               return `
               <tr style="cursor:pointer" onclick="carregarProjecaoExata('${c.m}','${c.v}')">
-                <td style="font-weight:700;font-size:.82rem">${c.m} vs ${c.v}</td>
+                <td style="font-weight:700;font-size:.82rem">${(typeof _campEscudo==='function'?_campEscudo(c.m):'')}${c.m} vs ${(typeof _campEscudo==='function'?_campEscudo(c.v):'')}${c.v}</td>
                 <td class="td-num" style="font-weight:700;color:${fav==='home'?'var(--green)':'var(--text)'}">${fmt(h.home*100)}%</td>
                 <td class="td-num" style="color:${fav==='home'?'var(--green)':'var(--muted)'}">@ ${fmt(1/h.home)}</td>
                 <td class="td-num" style="color:var(--muted)">${fmt(h.draw*100)}%</td>
@@ -5028,7 +5040,7 @@ function renderOuro() {
               const fav = f.home > f.away ? 'home' : 'away';
               return `
               <tr style="cursor:pointer" onclick="carregarProjecaoExata('${c.m}','${c.v}')">
-                <td style="font-weight:700;font-size:.82rem">${c.m} vs ${c.v}</td>
+                <td style="font-weight:700;font-size:.82rem">${(typeof _campEscudo==='function'?_campEscudo(c.m):'')}${c.m} vs ${(typeof _campEscudo==='function'?_campEscudo(c.v):'')}${c.v}</td>
                 <td class="td-num" style="font-weight:700;color:${fav==='home'?'var(--green)':'var(--text)'}">${fmt(f.home*100)}%</td>
                 <td class="td-num" style="color:${fav==='home'?'var(--green)':'var(--muted)'}">@ ${fmt(1/f.home)}</td>
                 <td class="td-num" style="color:var(--muted)">${fmt(f.draw*100)}%</td>
@@ -5243,7 +5255,7 @@ function renderTeacher() {
         <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-bottom:1px solid var(--border)">
           <div style="display:flex;flex-direction:column">
             ${_seloDataHora(j)}
-            <span style="font-size:1.05rem;font-weight:900;color:var(--text)">${j.m} vs ${j.v}</span>
+            <span style="font-size:1.05rem;font-weight:900;color:var(--text)">${(typeof _campEscudo==='function'?_campEscudo(j.m):'')}${j.m} vs ${(typeof _campEscudo==='function'?_campEscudo(j.v):'')}${j.v}</span>
           </div>
           <div style="display:flex;gap:.4rem;align-items:center">${badgesHTML}</div>
         </div>
@@ -5736,7 +5748,7 @@ function exportarRankingHTML() {
       const isTop = i < 3;
       return `<tr>
         <td><span class="rank ${isTop?'top':''}">${i+1}</span></td>
-        <td class="td-team">${t.time}</td>
+        <td class="td-team">${(typeof _campEscudo==='function'?_campEscudo(t.time):'')}${t.time}</td>
         <td class="td-num">${t.jogos}</td>
         <td class="td-num"><span class="badge-ht">${fmt(t.ht_pro)}</span></td>
         <td class="td-num" style="color:var(--red)">${fmt(t.ht_con)}</td>
@@ -9962,7 +9974,7 @@ function renderRodada() {
       <div class="stat-card" onclick="setJogoEmFoco('${_mEsc}', '${_vEsc}', 'rodada')" style="cursor:pointer;${hasHighlight ? 'border-color:var(--gold);box-shadow:0 5px 20px rgba(251,191,36,0.1)' : ''}" title="Clique para focar — o SmartCoach saberá que você está analisando este jogo">
         ${selos ? `<div style="position:absolute;top:10px;right:10px;display:flex;flex-direction:column;align-items:flex-end;gap:4px">${selos}</div>` : ''}
         <div style="font-size:.68rem;color:var(--muted);margin-bottom:.4rem;text-transform:uppercase;font-weight:800;letter-spacing:1px">PRÉ-ANÁLISE</div>
-        <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:.7rem;line-height:1.2;width:65%">${j.m} <br><span style="color:var(--muted);font-weight:400;font-size:.8rem">vs</span> ${j.v}</div>
+        <div style="font-size:1rem;font-weight:900;color:var(--text);margin-bottom:.7rem;line-height:1.2;width:65%">${(typeof _campEscudo==='function'?_campEscudo(j.m):'')}${j.m} <br><span style="color:var(--muted);font-weight:400;font-size:.8rem">vs</span> ${(typeof _campEscudo==='function'?_campEscudo(j.v):'')}${j.v}</div>
 
         <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.4rem;margin-bottom:.4rem">
           <span style="color:var(--muted);font-size:.72rem">⚽ xCorners FT</span>
@@ -14187,5 +14199,206 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
   console.log('[PWA] Service Worker NÃO registrado (file:// ou browser sem suporte). PWA precisa de http://localhost ou HTTPS.');
 }
 </script>
+<!-- eds-campeonato-view -->
+<div id="view-campeonato" class="view">
+  <div style="max-width:1150px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.8rem">
+      <div style="font-size:1.5rem">🏆</div>
+      <div>
+        <div id="camp-titulo" style="font-weight:800;font-size:1.25rem;background:linear-gradient(135deg,var(--green),#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Campeonato</div>
+        <div style="font-size:.8rem;color:var(--muted)">Classificação + acompanhamento por rodada. O botão <b style="color:var(--green)">Analisar Rodada</b> roda o motor em todos os jogos da rodada — sem adicionar na mão.</div>
+      </div>
+    </div>
+    <div id="camp-conteudo"></div>
+  </div>
+</div>
+<!-- /eds-campeonato-view -->
+<!-- eds-campeonato-js -->
+<script>
+var _campRodadaSel = null;
+var _campModoTabela = 'geral'; // 'geral' | 'casa' | 'fora'
+function _escFb(img){ if(img) img.style.display='none'; }
+function _campEscudo(t){
+  var u=(window.ESCUDOS||{})[t];
+  if(u) return '<img src="'+u+'" loading="lazy" onerror="_escFb(this)" style="width:20px;height:20px;object-fit:contain;vertical-align:middle;margin-right:7px">';
+  return '<span style="display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;font-size:.58rem;font-weight:800;border-radius:50%;background:rgba(52,211,103,0.15);color:var(--green);margin-right:7px;vertical-align:middle">'+String(t).slice(0,2).toUpperCase()+'</span>';
+}
+function _campDados(){
+  var cod=(typeof LIGA_ATUAL!=='undefined')?LIGA_ATUAL:'EPL';
+  return (typeof DADOS_2026!=='undefined' && DADOS_2026) ? DADOS_2026 : null;
+}
+// "21.08.2026 16:00" → "21/08" (+ hora embaixo)
+function _campData(d){
+  if(!d) return '';
+  var m=String(d).match(/(\d{1,2})[.\-\/](\d{1,2})/);
+  var dm=m?(m[1].padStart(2,'0')+'/'+m[2].padStart(2,'0')):String(d).slice(0,5);
+  var hm=String(d).match(/(\d{1,2}:\d{2})/);
+  return dm+(hm?'<br><span style="color:var(--muted);font-weight:400">'+hm[1]+'</span>':'');
+}
+// linha de jogo no padrão rico (data · escudo+time · placar · HT · FT · tot HT · tot FT)
+function _campJogoRow(j){
+  var disputado = j.cantos && j.cantos.ft && j.cantos.ft.m!=null;
+  var times='<div class="jogo-times"><div class="home">'+_campEscudo(j.mandante)+j.mandante+'</div><div class="away">'+_campEscudo(j.visitante)+j.visitante+'</div></div>';
+  var dataCel='<div class="jogo-data">Rd '+(j.rodada||'?')+'<br>'+_campData(j.data)+'</div>';
+  if(!disputado){
+    return '<div class="jogo-row" style="grid-template-columns:74px 1fr auto;">'+dataCel+times+'<div class="td-num" style="color:var(--muted);font-size:.78rem;white-space:nowrap">— a jogar —</div></div>';
+  }
+  var htT=j.cantos.ht.m+j.cantos.ht.v, ftT=j.cantos.ft.m+j.cantos.ft.v;
+  var pH;
+  if(j.placar&&j.placar.m!=null){ var r=j.placar.m>j.placar.v?'var(--green)':(j.placar.m<j.placar.v?'var(--red)':'var(--gold)');
+    pH='<div class="td-num" style="font-weight:900;font-size:1rem;color:'+r+'">'+j.placar.m+'<span style="color:var(--muted);font-size:.75rem;margin:0 .15rem">-</span>'+j.placar.v+'<div style="font-size:.6rem;color:var(--muted)">PLACAR</div></div>'; }
+  else pH='<div class="td-num" style="color:var(--muted);font-size:.8rem">—<div style="font-size:.6rem">PLACAR</div></div>';
+  return '<div class="jogo-row" style="grid-template-columns:74px 1fr auto auto auto auto auto;">'
+    +dataCel+times+pH
+    +'<div class="td-num"><span class="badge-ht">'+j.cantos.ht.m+'+'+j.cantos.ht.v+'</span><div style="font-size:.65rem;color:var(--muted);margin-top:.2rem">HT</div></div>'
+    +'<div class="td-num"><span class="badge-ft">'+j.cantos.ft.m+'+'+j.cantos.ft.v+'</span><div style="font-size:.65rem;color:var(--muted);margin-top:.2rem">FT</div></div>'
+    +'<div class="td-num" style="color:var(--gold);font-weight:800">'+htT+'<div style="font-size:.65rem;color:var(--muted)">tot HT</div></div>'
+    +'<div class="td-num" style="color:var(--green);font-weight:800">'+ftT+'<div style="font-size:.65rem;color:var(--muted)">tot FT</div></div>'
+    +'</div>';
+}
+// classificação a partir dos jogos disputados (placar) + colunas de cantos
+// modo: 'geral' (casa+fora) | 'casa' (só mandante) | 'fora' (só visitante)
+function _campTabela(ds, modo){
+  modo = modo || 'geral';
+  var incM = (modo !== 'fora'), incV = (modo !== 'casa');
+  var T={};
+  function reg(t){ if(!T[t]) T[t]={time:t,J:0,V:0,E:0,D:0,GP:0,GC:0,Pts:0,cP:0,cC:0,nc:0}; return T[t]; }
+  (ds.jogos||[]).forEach(function(j){
+    var pl=j.placar; if(!pl || pl.m==null || pl.v==null) return;
+    var temC = (j.cantos&&j.cantos.ft&&j.cantos.ft.m!=null);
+    if(incM){ var a=reg(j.mandante); a.J++; a.GP+=pl.m; a.GC+=pl.v;
+      if(pl.m>pl.v){a.V++;a.Pts+=3;} else if(pl.m<pl.v){a.D++;} else {a.E++;a.Pts++;}
+      if(temC){ a.cP+=j.cantos.ft.m; a.cC+=j.cantos.ft.v; a.nc++; } }
+    if(incV){ var b=reg(j.visitante); b.J++; b.GP+=pl.v; b.GC+=pl.m;
+      if(pl.v>pl.m){b.V++;b.Pts+=3;} else if(pl.v<pl.m){b.D++;} else {b.E++;b.Pts++;}
+      if(temC){ b.cP+=j.cantos.ft.v; b.cC+=j.cantos.ft.m; b.nc++; } }
+  });
+  var arr=Object.values(T);
+  arr.forEach(function(t){ t.SG=t.GP-t.GC; t.mcP=t.nc?t.cP/t.nc:0; t.mcC=t.nc?t.cC/t.nc:0; t.scan=t.mcP-t.mcC; });
+  arr.sort(function(x,y){ return y.Pts-x.Pts || y.SG-x.SG || y.GP-x.GP || x.time.localeCompare(y.time); });
+  return arr;
+}
+function _campRodadas(ds){
+  var s={}; (ds.jogos||[]).forEach(function(j){ if(j.rodada!=null) s[j.rodada]=1; });
+  return Object.keys(s).map(Number).sort(function(a,b){return a-b;});
+}
+function _campProxRodada(ds){
+  // 1ª rodada com jogo não disputado; senão a última
+  var rods=_campRodadas(ds);
+  for(var i=0;i<rods.length;i++){
+    var temPend=(ds.jogos||[]).some(function(j){return j.rodada===rods[i] && (!j.placar||j.placar.m==null);});
+    if(temPend) return rods[i];
+  }
+  return rods.length?rods[rods.length-1]:null;
+}
+function renderCampeonato(){
+  var box=document.getElementById('camp-conteudo'); if(!box) return;
+  var ds=_campDados(); var cod=(typeof LIGA_ATUAL!=='undefined')?LIGA_ATUAL:'EPL';
+  var temp=(window.TEMPORADA_ATUAL||'2025-26');
+  var tit=document.getElementById('camp-titulo'); if(tit) tit.textContent=(ds&&ds.temporada?ds.temporada:cod);
+  if(!ds||!ds.jogos||!ds.jogos.length){ box.innerHTML='<div style="padding:1.4rem;background:var(--bg3);border:1px dashed var(--border);border-radius:12px;color:var(--muted);text-align:center">Sem calendário/jogos para esta liga na temporada '+temp+'.</div>'; return; }
+  var tabela=_campTabela(ds, _campModoTabela);
+  var rods=_campRodadas(ds);
+  // toggle Geral / Casa / Fora
+  var _modos=[['geral','🏆 Geral'],['casa','🏠 Casa'],['fora','✈️ Fora']];
+  var toggModo='<div style="display:inline-flex;gap:4px;background:rgba(0,0,0,0.30);border:1px solid rgba(52,211,103,0.22);border-radius:8px;padding:3px;margin-bottom:.7rem">'
+    +_modos.map(function(m){var on=m[0]===_campModoTabela;return '<button onclick="_campTrocaModo(\''+m[0]+'\')" style="border:none;border-radius:6px;padding:.35rem .85rem;font-size:.75rem;cursor:pointer;white-space:nowrap;font-weight:'+(on?'800':'600')+';background:'+(on?'linear-gradient(135deg,var(--green),var(--green2))':'transparent')+';color:'+(on?'#04140a':'var(--muted)')+'">'+m[1]+'</button>';}).join('')
+    +'</div>';
+  if(_campRodadaSel==null || rods.indexOf(_campRodadaSel)<0) _campRodadaSel=_campProxRodada(ds);
+  var jogosDisputados=(ds.jogos||[]).filter(function(j){return j.placar&&j.placar.m!=null;}).length;
+
+  // ── tabela de classificação
+  var htmlTab='';
+  if(tabela.length){
+    htmlTab='<div style="overflow-x:auto;background:var(--card);border:1px solid var(--border);border-radius:12px;backdrop-filter:blur(9px)"><table style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:640px">'
+      +'<thead><tr style="background:rgba(52,211,103,0.06);color:var(--muted);font-size:.68rem;text-transform:uppercase">'
+      +'<th style="padding:.5rem .4rem;text-align:center">#</th><th style="padding:.5rem .4rem;text-align:left">Time</th>'
+      +'<th style="padding:.5rem .3rem;text-align:center">J</th><th style="padding:.5rem .3rem;text-align:center;color:var(--green)">Pts</th>'
+      +'<th style="padding:.5rem .3rem;text-align:center">V</th><th style="padding:.5rem .3rem;text-align:center">E</th><th style="padding:.5rem .3rem;text-align:center">D</th>'
+      +'<th style="padding:.5rem .3rem;text-align:center">SG</th>'
+      +'<th style="padding:.5rem .3rem;text-align:center" title="cantos pró média">CP</th><th style="padding:.5rem .3rem;text-align:center" title="cantos contra média">CC</th><th style="padding:.5rem .3rem;text-align:center" title="saldo de cantos">±C</th></tr></thead><tbody>';
+    tabela.forEach(function(t,i){
+      var scol=t.scan>0?'var(--green)':(t.scan<0?'#ef4444':'var(--muted)');
+      htmlTab+='<tr style="border-bottom:1px solid var(--border)">'
+        +'<td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-weight:700">'+(i+1)+'</td>'
+        +'<td style="padding:.45rem .4rem;font-weight:600;color:var(--text)">'+_campEscudo(t.time)+t.time+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center;color:var(--muted)">'+t.J+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center;font-weight:800;color:var(--green)">'+t.Pts+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center">'+t.V+'</td><td style="padding:.45rem .3rem;text-align:center">'+t.E+'</td><td style="padding:.45rem .3rem;text-align:center">'+t.D+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center;color:var(--muted)">'+(t.SG>0?'+':'')+t.SG+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center">'+t.mcP.toFixed(1)+'</td><td style="padding:.45rem .3rem;text-align:center">'+t.mcC.toFixed(1)+'</td>'
+        +'<td style="padding:.45rem .3rem;text-align:center;font-weight:700;color:'+scol+'">'+(t.scan>0?'+':'')+t.scan.toFixed(1)+'</td></tr>';
+    });
+    htmlTab+='</tbody></table></div>';
+  } else {
+    htmlTab='<div style="padding:1.2rem;background:rgba(52,211,103,0.06);border:1px solid rgba(52,211,103,0.25);border-radius:12px;color:var(--text)">📅 Temporada '+temp+' ainda sem jogos disputados ('+jogosDisputados+'/'+ds.jogos.length+'). A classificação aparece conforme as rodadas rolam. Você já pode <b style="color:var(--green)">Analisar Rodada</b> abaixo (projeção do motor).</div>';
+  }
+
+  // ── seletor de rodada + jogos + botão
+  var optRods=rods.map(function(r){return '<option value="'+r+'"'+(r===_campRodadaSel?' selected':'')+'>Rodada '+r+'</option>';}).join('');
+  var jogosRod=(ds.jogos||[]).filter(function(j){return j.rodada===_campRodadaSel;});
+  var listaJogos=jogosRod.map(_campJogoRow).join('');
+
+  box.innerHTML=toggModo+htmlTab
+    +'<div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:1.3rem 0 .7rem">'
+      +'<span style="font-weight:800;color:var(--text)">📅 Rodada:</span>'
+      +'<select id="camp-sel-rodada" onchange="_campTrocaRodada(this.value)" style="background:rgba(0,0,0,0.35);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:8px;font-weight:700;cursor:pointer">'+optRods+'</select>'
+      +'<button onclick="analisarRodadaCampeonato()" style="background:linear-gradient(135deg,var(--green),var(--green2));border:none;color:#04140a;padding:.55rem 1.1rem;border-radius:8px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(52,211,103,0.35)">🔬 Analisar Rodada</button>'
+    +'</div>'
+    +'<div class="jogos-list" style="margin-bottom:1rem">'+listaJogos+'</div>'
+    +'<div id="camp-analise"></div>';
+}
+function _campTrocaRodada(v){ _campRodadaSel=Number(v); renderCampeonato(); }
+function _campTrocaModo(m){ _campModoTabela=m; renderCampeonato(); }
+
+function analisarRodadaCampeonato(){
+  var alvo=document.getElementById('camp-analise'); if(!alvo) return;
+  var ds=_campDados(); if(!ds) return;
+  var jogos=(ds.jogos||[]).filter(function(j){return j.rodada===_campRodadaSel;});
+  if(!jogos.length){ alvo.innerHTML='<div style="color:var(--muted);padding:.8rem">Sem jogos nesta rodada.</div>'; return; }
+
+  // ── INJETA a rodada no motor (função "Adicionar Jogos" automática) ──
+  // Popula jogosFuturos (lido por TOP3, Bala, Filtro OURO, Cisne, Teacher, Múltiplas...)
+  var fixtures=jogos.map(function(j){
+    var o={m:j.mandante,v:j.visitante};
+    if(j.data){ var dm=String(j.data).match(/(\d{1,2})[.\-\/](\d{1,2})/); if(dm)o.data=dm[1].padStart(2,'0')+'/'+dm[2].padStart(2,'0');
+                var hm=String(j.data).match(/(\d{1,2}:\d{2})/); if(hm)o.hora=hm[1]; }
+    return o;
+  });
+  try{
+    if(typeof jogosFuturos!=='undefined'){ jogosFuturos.length=0; Array.prototype.push.apply(jogosFuturos, fixtures); }
+    localStorage.setItem('sniper_rodada_'+LIGA_ATUAL, JSON.stringify(fixtures));
+  }catch(e){ console.error('[injetar rodada]', e); }
+
+  alvo.innerHTML='<div style="padding:.8rem;color:var(--green)">⏳ Motor analisando '+jogos.length+' jogos da rodada '+_campRodadaSel+'...</div>';
+  setTimeout(function(){
+    var cards=jogos.map(function(j){
+      try{
+        var p=projecaoJogo(j.mandante,j.visitante);
+        if(!p) throw new Error('sem projeção');
+        var reis=p.reisDosCantosData||{}, sni=p.tiroSniperData||{}, bala=p.balaDePrataData;
+        var sniCor=sni.corFT||'var(--muted)';
+        return '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;backdrop-filter:blur(9px)">'
+          +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem"><span style="font-weight:700;color:var(--text)">'+_campEscudo(j.mandante)+j.mandante+' <span style="color:var(--muted)">x</span> '+_campEscudo(j.visitante)+j.visitante+'</span><span style="font-size:.72rem;color:var(--muted)">conf '+(p.confFT!=null?Math.round(p.confFT):'?')+'%</span></div>'
+          +'<div style="display:flex;gap:.5rem;flex-wrap:wrap;font-size:.78rem">'
+          +'<span style="background:rgba(52,211,103,0.1);border:1px solid rgba(52,211,103,0.3);color:var(--green);padding:.2rem .5rem;border-radius:6px;font-weight:700">Proj FT: '+(p.expTotalFT!=null?p.expTotalFT.toFixed(1):'?')+' cantos</span>'
+          +'<span style="background:'+sniCor+'22;border:1px solid '+sniCor+'55;color:'+sniCor+';padding:.2rem .5rem;border-radius:6px;font-weight:700">🎯 Sniper: '+(sni.ft||'—')+'</span>'
+          +'<span style="background:'+(reis.cor||'#888')+'22;border:1px solid '+(reis.cor||'#888')+'55;color:'+(reis.cor||'#ccc')+';padding:.2rem .5rem;border-radius:6px;font-weight:700">👑 Reis: '+(reis.vencedor||'—')+' ('+(reis.faixa||'—')+')</span>'
+          +(bala?'<span style="background:'+bala.cor+'22;border:1px solid '+bala.cor+'55;color:'+bala.cor+';padding:.2rem .5rem;border-radius:6px;font-weight:700">🐺 Bala: '+bala.time+' '+bala.faixa+'</span>':'')
+          +'</div></div>';
+      }catch(e){
+        return '<div style="background:var(--bg3);border:1px dashed var(--border);border-radius:12px;padding:.8rem;color:var(--muted);font-size:.82rem">'+j.mandante+' x '+j.visitante+' — sem dados suficientes ainda ('+String(e.message||e).slice(0,40)+')</div>';
+      }
+    }).join('');
+    var _jmp=function(id,lb){return '<button onclick="showView(\''+id+'\')" style="background:rgba(52,211,103,0.12);border:1px solid rgba(52,211,103,0.4);color:var(--green);padding:.32rem .65rem;border-radius:6px;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap">'+lb+'</button>';};
+    var banner='<div style="padding:.85rem 1rem;border-radius:10px;background:rgba(52,211,103,0.1);border:1px solid rgba(52,211,103,0.35);margin-bottom:.9rem">'
+      +'<div style="color:var(--green);font-weight:800">✅ Rodada '+_campRodadaSel+' injetada no motor — '+jogos.length+' jogos adicionados</div>'
+      +'<div style="color:var(--muted);font-size:.8rem;margin:.25rem 0 .55rem">Todas as abas de análise já operam nesta rodada — sem adicionar na mão. Abra:</div>'
+      +'<div style="display:flex;gap:.4rem;flex-wrap:wrap">'+_jmp('rodada','📅 Próximos Jogos')+_jmp('top3','🏆 TOP 3')+_jmp('filtro-ouro','🥇 Filtro OURO')+_jmp('ouro','🐺 Bala de Prata')+_jmp('cisne-negro','🦢 Cisne')+_jmp('vencedor-cantos','🏆 Vencedor')+_jmp('multiplas-elite','🏆 Múltiplas Elite')+'</div></div>';
+    alvo.innerHTML=banner+'<div style="font-weight:800;color:var(--text);margin:.4rem 0 .6rem">🔬 Projeção rápida da Rodada '+_campRodadaSel+'</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.7rem">'+cards+'</div>';
+  }, 30);
+}
+</script>
+<!-- /eds-campeonato-js -->
 </body>
 </html>
