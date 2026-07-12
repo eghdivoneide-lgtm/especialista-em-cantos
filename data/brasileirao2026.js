@@ -1,5 +1,5 @@
-// DADOS_BR — PIPELINE processado (2026-07-07T21:37) + dedup 2026-07-07
-// Total: 177 (removidos 9 jogos duplicados por match_id com alias de nome de time)
+// DADOS_BR — CALENDÁRIO FUTURO
+// Total: 181
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
@@ -20561,6 +20561,82 @@ window.DADOS_BR = {
         }
       },
       "match_id": "4hXP963e"
+    },
+    {
+      "match_id": "8KWmH9SI",
+      "mandante": "Bahia",
+      "visitante": "Santos",
+      "rodada": 19,
+      "data": "16.07.2026 19:30",
+      "data_partida": "16.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "80AlZsl4",
+      "mandante": "Vitória",
+      "visitante": "Vasco",
+      "rodada": 19,
+      "data": "16.07.2026 19:30",
+      "data_partida": "16.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ELwuJVc6",
+      "mandante": "Fluminense",
+      "visitante": "Bahia",
+      "rodada": 19,
+      "data": "17.07.2026 20:00",
+      "data_partida": "17.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SO3EXUCa",
+      "mandante": "Mirassol",
+      "visitante": "Grêmio",
+      "rodada": 19,
+      "data": "17.07.2026 20:00",
+      "data_partida": "17.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
     }
   ]
 };

@@ -1,5 +1,5 @@
-// DADOS_ARG_B — INJEÇÃO RODADA 09/07
-// Total: 341
+// DADOS_ARG_B — CALENDÁRIO FUTURO
+// Total: 360
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
@@ -42612,6 +42612,367 @@ window.DADOS_ARG_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      }
+    },
+    {
+      "match_id": "QgGOHYTb",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Central Norte",
+      "rodada": 114,
+      "data": "12.07.2026 15:30",
+      "data_partida": "12.07.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IiLhKU4E",
+      "mandante": "Agropecuario",
+      "visitante": "Temperley",
+      "rodada": 114,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fJZcbmre",
+      "mandante": "Club A. Guemes",
+      "visitante": "San Martin S.J.",
+      "rodada": 114,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YTUzX7lK",
+      "mandante": "Midland",
+      "visitante": "Quilmes",
+      "rodada": 114,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WY7dEaN6",
+      "mandante": "Racing Cordoba",
+      "visitante": "Acassuso",
+      "rodada": 114,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YP2uEjTN",
+      "mandante": "Godoy Cruz",
+      "visitante": "Def. de Belgrano",
+      "rodada": 114,
+      "data": "12.07.2026 16:30",
+      "data_partida": "12.07.2026 16:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p8ltBQR0",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Patronato",
+      "rodada": 114,
+      "data": "12.07.2026 17:00",
+      "data_partida": "12.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lteXCncl",
+      "mandante": "San Martin T.",
+      "visitante": "Almagro",
+      "rodada": 114,
+      "data": "12.07.2026 18:00",
+      "data_partida": "12.07.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ILnl94dD",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Colegiales",
+      "rodada": 114,
+      "data": "13.07.2026 21:00",
+      "data_partida": "13.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6e8HqoYP",
+      "mandante": "Deportivo Maipu",
+      "visitante": "San Martin T.",
+      "rodada": 114,
+      "data": "17.07.2026 15:00",
+      "data_partida": "17.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dtFlx3Qa",
+      "mandante": "Nueva Chicago",
+      "visitante": "Agropecuario",
+      "rodada": 114,
+      "data": "17.07.2026 18:30",
+      "data_partida": "17.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6BdIJFGq",
+      "mandante": "Ferro",
+      "visitante": "Colon Santa Fe",
+      "rodada": 114,
+      "data": "17.07.2026 19:30",
+      "data_partida": "17.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QyNhL7zi",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "All Boys",
+      "rodada": 114,
+      "data": "17.07.2026 20:00",
+      "data_partida": "17.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lGBtvPem",
+      "mandante": "Temperley",
+      "visitante": "Atl. Rafaela",
+      "rodada": 114,
+      "data": "17.07.2026 20:30",
+      "data_partida": "17.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YwrESkrH",
+      "mandante": "CA Mitre",
+      "visitante": "Racing Cordoba",
+      "rodada": 114,
+      "data": "17.07.2026 21:00",
+      "data_partida": "17.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fXxDucw3",
+      "mandante": "Acassuso",
+      "visitante": "San Telmo",
+      "rodada": 114,
+      "data": "18.07.2026 17:00",
+      "data_partida": "18.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fgWMQTCT",
+      "mandante": "Almirante Brown",
+      "visitante": "CA Estudiantes",
+      "rodada": 114,
+      "data": "18.07.2026 17:00",
+      "data_partida": "18.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "A9OEPPtf",
+      "mandante": "Colegiales",
+      "visitante": "Midland",
+      "rodada": 114,
+      "data": "18.07.2026 17:00",
+      "data_partida": "18.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rDiwTJgc",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Los Andes",
+      "rodada": 114,
+      "data": "18.07.2026 17:00",
+      "data_partida": "18.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ]

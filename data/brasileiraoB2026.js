@@ -1,5 +1,5 @@
-// DADOS_BR_B — INJEÇÃO RODADA 09/07
-// Total: 158
+// DADOS_BR_B — CALENDÁRIO FUTURO
+// Total: 174
 
 window.DADOS_BR_B = {
   "temporada": "Brasileirão Série B",
@@ -21277,6 +21277,310 @@ window.DADOS_BR_B = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      }
+    },
+    {
+      "match_id": "n5RF3TEa",
+      "mandante": "Avai",
+      "visitante": "Nautico",
+      "rodada": 41,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xhqzijVg",
+      "mandante": "Sao Bernardo",
+      "visitante": "Cuiaba",
+      "rodada": 41,
+      "data": "12.07.2026 16:00",
+      "data_partida": "12.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vuO75kpm",
+      "mandante": "Atletico GO",
+      "visitante": "Fortaleza",
+      "rodada": 41,
+      "data": "12.07.2026 18:00",
+      "data_partida": "12.07.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SrTVaoEO",
+      "mandante": "CRB",
+      "visitante": "Goias",
+      "rodada": 41,
+      "data": "12.07.2026 19:00",
+      "data_partida": "12.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "A5srkUa6",
+      "mandante": "America MG",
+      "visitante": "Londrina",
+      "rodada": 41,
+      "data": "13.07.2026 19:00",
+      "data_partida": "13.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "r9xxBBMP",
+      "mandante": "Ceara",
+      "visitante": "Athletic Club",
+      "rodada": 41,
+      "data": "13.07.2026 20:30",
+      "data_partida": "13.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QFSF8Fdd",
+      "mandante": "CRB",
+      "visitante": "Nautico",
+      "rodada": 41,
+      "data": "16.07.2026 20:00",
+      "data_partida": "16.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WCN2EpTH",
+      "mandante": "America MG",
+      "visitante": "Ceara",
+      "rodada": 41,
+      "data": "17.07.2026 19:00",
+      "data_partida": "17.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hMK1WIl3",
+      "mandante": "Juventude",
+      "visitante": "Cuiaba",
+      "rodada": 41,
+      "data": "17.07.2026 19:00",
+      "data_partida": "17.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OnKfG6b5",
+      "mandante": "Sao Bernardo",
+      "visitante": "Avai",
+      "rodada": 41,
+      "data": "17.07.2026 19:00",
+      "data_partida": "17.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SxxMJu5c",
+      "mandante": "Fortaleza",
+      "visitante": "Novorizontino",
+      "rodada": 41,
+      "data": "17.07.2026 21:00",
+      "data_partida": "17.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zqkzdxDj",
+      "mandante": "Londrina",
+      "visitante": "Botafogo SP",
+      "rodada": 41,
+      "data": "17.07.2026 21:00",
+      "data_partida": "17.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rTrxGc4M",
+      "mandante": "Criciuma",
+      "visitante": "Vila Nova FC",
+      "rodada": 41,
+      "data": "18.07.2026 16:00",
+      "data_partida": "18.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jZLnISTh",
+      "mandante": "Ponte Preta",
+      "visitante": "Goias",
+      "rodada": 41,
+      "data": "18.07.2026 16:00",
+      "data_partida": "18.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vaU7AySq",
+      "mandante": "Sport Recife",
+      "visitante": "Operario-PR",
+      "rodada": 41,
+      "data": "18.07.2026 16:00",
+      "data_partida": "18.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z3uUHJZ9",
+      "mandante": "Atletico GO",
+      "visitante": "Athletic Club",
+      "rodada": 41,
+      "data": "18.07.2026 18:00",
+      "data_partida": "18.07.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ]

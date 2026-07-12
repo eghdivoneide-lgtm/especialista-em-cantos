@@ -14283,12 +14283,13 @@ function _campRodadas(ds){
   return Object.keys(s).map(Number).sort(function(a,b){return a-b;});
 }
 function _campProxRodada(ds){
-  // 1ª rodada com jogo não disputado; senão a última
-  var rods=_campRodadas(ds);
-  for(var i=0;i<rods.length;i++){
-    var temPend=(ds.jogos||[]).some(function(j){return j.rodada===rods[i] && (!j.placar||j.placar.m==null);});
-    if(temPend) return rods[i];
+  var pend=(ds.jogos||[]).filter(function(j){return (!j.placar||j.placar.m==null) && j.rodada!=null;});
+  if(pend.length){
+    var dt=function(j){var m=String(j.data||'').match(/(d{1,2}).(d{1,2}).(d{4})/);return m?(+m[3]*10000+(+m[2])*100+(+m[1])):99999999;};
+    pend.sort(function(a,b){return dt(a)-dt(b);});
+    return pend[0].rodada;
   }
+  var rods=_campRodadas(ds);
   return rods.length?rods[rods.length-1]:null;
 }
 function renderCampeonato(){

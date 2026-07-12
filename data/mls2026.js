@@ -1,5 +1,5 @@
-// DADOS_MLS — PIPELINE processado (2026-07-07T21:37)
-// Total: 207
+// DADOS_MLS — CALENDÁRIO FUTURO
+// Total: 213
 
 window.DADOS_MLS = {
   "times": [
@@ -32300,6 +32300,120 @@ window.DADOS_MLS = {
         "pts_mandante": 16,
         "pos_visitante": 14,
         "pts_visitante": 14
+      }
+    },
+    {
+      "match_id": "phGxAaqd",
+      "mandante": "CF Montreal",
+      "visitante": "Toronto FC",
+      "rodada": 9,
+      "data": "16.07.2026 20:30",
+      "data_partida": "16.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xn3OX2y3",
+      "mandante": "Chicago Fire",
+      "visitante": "Vancouver Whitecaps",
+      "rodada": 9,
+      "data": "16.07.2026 21:30",
+      "data_partida": "16.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bLg8hqq4",
+      "mandante": "St. Louis City",
+      "visitante": "Sporting Kansas City",
+      "rodada": 9,
+      "data": "16.07.2026 21:30",
+      "data_partida": "16.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fmmHjNDG",
+      "mandante": "Seattle Sounders",
+      "visitante": "Portland Timbers",
+      "rodada": 9,
+      "data": "16.07.2026 23:30",
+      "data_partida": "16.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S0oPl1rT",
+      "mandante": "Nashville SC",
+      "visitante": "Atlanta Utd",
+      "rodada": 9,
+      "data": "17.07.2026 21:10",
+      "data_partida": "17.07.2026 21:10",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ALllqu6j",
+      "mandante": "Los Angeles Galaxy",
+      "visitante": "Los Angeles FC",
+      "rodada": 9,
+      "data": "17.07.2026 23:25",
+      "data_partida": "17.07.2026 23:25",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ],
