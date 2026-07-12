@@ -12337,7 +12337,7 @@ function _validarTop10Multiplas(parsed, candidatos) {
 
   for (const [id, s] of Object.entries(porId)) {
     const eh10 = id.endsWith('_10');
-    const pMin = eh10 ? 6 : 3, pMax = eh10 ? 10 : 5; // base 3–5 · grupo cheio 6–10 (flex ARG; Elite sempre 5/10)
+    const pMin = eh10 ? 6 : 2, pMax = eh10 ? 10 : 5; // base 2–5 · grupo cheio 6–10 (casam ARG; Elite sempre 5/10)
     const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
     const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
 
@@ -12511,7 +12511,7 @@ function _validarRespostaMultiplas(parsed, candidatos) {
   // 2. Validação de cada sinal presente
   for (const [id, s] of Object.entries(porId)) {
     const eh10 = id.endsWith('_10');
-    const pMin = eh10 ? 6 : 3, pMax = eh10 ? 10 : 5; // base 3–5 · grupo cheio 6–10 (flex ARG; Elite sempre 5/10)
+    const pMin = eh10 ? 6 : 2, pMax = eh10 ? 10 : 5; // base 2–5 · grupo cheio 6–10 (casam ARG; Elite sempre 5/10)
     const mercadoEsperado = id.startsWith('HT') ? 'HDP HT' : 'HDP FT';
     const linhasValidas = id.startsWith('HT') ? HDPS_HT : HDPS_FT;
 
@@ -12891,8 +12891,9 @@ const _ARG_COR = '#74acdf'; // celeste argentina
 // integralmente (ids HT_G1_5..FT_G2_10, degradação, independência de clubes);
 // só o pool muda (ARG/ARG_B) e a identidade visual fica celeste.
 function _curadoriaArgentina(candidatos) {
-  // Regra FLEXIBILIZADA p/ ARG/ARG_B (maior aderência do app): piso 3 pernas + diferencial menor (FT≥0.5 · HT≥0.3).
-  const base = _curadoriaDeterministicaMultiplas(candidatos, { minPernas: 3, diffFT: 0.5, diffHT: 0.3 });
+  // Piso 2 pernas p/ ARG/ARG_B: como o pick já exige Cisne+Enigma casando (filtro forte),
+  // uma dupla de jogos independentes que casam já é sinal válido.
+  const base = _curadoriaDeterministicaMultiplas(candidatos, { minPernas: 2 });
   base.sinais.forEach(s => { s.cor = s.id.endsWith('_10') ? '#9cc7ec' : _ARG_COR; });
   base.tese_geral = base.tese_geral.replace('Curadoria determinística do motor', 'Múltipla Argentina (só ARG/ARG_B)');
   return base;
@@ -12920,7 +12921,7 @@ async function gerarMultiplaArgentina() {
 
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
-      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 3 jogos argentinos onde 🦢 Cisne Negro e 🔮 Enigma casam no mesmo favorito (mandante domina · sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — menos de 2 jogos argentinos independentes onde 🦢 Cisne Negro e 🔮 Enigma casam no mesmo favorito (mandante domina · sem divergência DNA).<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
       return;
     }
 
@@ -12990,7 +12991,7 @@ function renderMultiplaArgentina() {
     const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
     html += header + (ids.length
       ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
-      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 3 jogos onde Cisne Negro e Enigma casam.</div>`);
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — menos de 2 jogos independentes onde Cisne Negro e Enigma casam.</div>`);
   });
   ctr.innerHTML = html;
   _multiplasEliteState.candidatos = backupCand;
