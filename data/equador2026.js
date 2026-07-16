@@ -1,9 +1,9 @@
-// DADOS_ECU — CALENDÁRIO FUTURO
-// Total: 152
+// DADOS_ECU — PIPELINE processado (2026-07-16T23:52)
+// Total: 167
 
 window.DADOS_ECU = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-07-10",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 46,
   "times": [
     "Aucas",
@@ -7542,10 +7542,7 @@ window.DADOS_ECU = {
           "v": null
         }
       },
-      "placar": {
-        "m": null,
-        "v": null
-      }
+      "placar": null
     },
     {
       "match_id": "6quIRHi2",
@@ -10807,10 +10804,7 @@ window.DADOS_ECU = {
           "v": 14
         }
       },
-      "placar": {
-        "m": null,
-        "v": null
-      },
+      "placar": null,
       "url": "https://www.flashscore.com/match/vXkGmKVI/#/match-summary",
       "liga": "Liga Pro Equador",
       "codigo_liga": "ECU",
@@ -20440,153 +20434,529 @@ window.DADOS_ECU = {
       "match_id": "OWDMXPhm",
       "mandante": "Dep. Cuenca",
       "visitante": "Aucas",
-      "rodada": 47,
+      "rodada": null,
       "data": "12.07.2026 16:15",
-      "data_partida": "12.07.2026 16:15",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "faltas": {
+          "m": 11,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/OWDMXPhm/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "OWX3XGb4",
       "mandante": "Emelec",
       "visitante": "Barcelona SC",
-      "rodada": 47,
+      "rodada": null,
       "data": "12.07.2026 20:10",
-      "data_partida": "12.07.2026 20:10",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 52,
+          "v": 48
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 10
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "faltas": {
+          "m": 5,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/OWX3XGb4/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "OjKMxCzp",
       "mandante": "Macara",
       "visitante": "Mushuc Runa",
-      "rodada": 47,
+      "rodada": null,
       "data": "14.07.2026 18:30",
-      "data_partida": "14.07.2026 18:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 10
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": {
+          "m": 19,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/OjKMxCzp/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "SKYjrYCM",
       "mandante": "Manta",
       "visitante": "Delfin",
-      "rodada": 47,
+      "rodada": null,
       "data": "14.07.2026 21:00",
-      "data_partida": "14.07.2026 21:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 51,
+          "v": 49
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 15,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/SKYjrYCM/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "A7IUzj5d",
       "mandante": "Libertad",
       "visitante": "Tecnico U.",
-      "rodada": 47,
+      "rodada": null,
       "data": "15.07.2026 14:00",
-      "data_partida": "15.07.2026 14:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 13,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/A7IUzj5d/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "4AZJTYcT",
       "mandante": "Leones del Norte",
       "visitante": "Dep. Cuenca",
-      "rodada": 47,
+      "rodada": null,
       "data": "15.07.2026 19:00",
-      "data_partida": "15.07.2026 19:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 69,
+          "v": 31
+        },
+        "finalizacoes": {
+          "m": 25,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 7,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 21,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/4AZJTYcT/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "CURznGDc",
       "mandante": "U. Catolica",
       "visitante": "LDU Quito",
-      "rodada": 47,
+      "rodada": null,
       "data": "15.07.2026 19:00",
-      "data_partida": "15.07.2026 19:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 5
+        },
+        "ft": {
+          "m": 2,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 14
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": {
+          "m": 6,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/CURznGDc/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "KfVrpfrA",
       "mandante": "Barcelona SC",
       "visitante": "Guayaquil City",
-      "rodada": 47,
+      "rodada": null,
       "data": "15.07.2026 21:30",
-      "data_partida": "15.07.2026 21:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 3
+        },
+        "faltas": {
+          "m": 15,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/KfVrpfrA/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:33.306Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "xEAGbgc3",
@@ -20747,6 +21117,573 @@ window.DADOS_ECU = {
       "rodada": 47,
       "data": "19.07.2026 21:15",
       "data_partida": "19.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fid49ABL",
+      "mandante": "Mushuc Runa",
+      "visitante": "Orense",
+      "rodada": 47,
+      "data": "20.07.2026 16:00",
+      "data_partida": "20.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vNKxUshC",
+      "mandante": "LDU Quito",
+      "visitante": "Libertad",
+      "rodada": null,
+      "data": "12.07.2026 14:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 7,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 66,
+          "v": 34
+        },
+        "finalizacoes": {
+          "m": 18,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": {
+          "m": 12,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/vNKxUshC/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "dpWBVfTG",
+      "mandante": "Guayaquil City",
+      "visitante": "Delfin",
+      "rodada": null,
+      "data": "11.07.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 68,
+          "v": 32
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": {
+          "m": 8,
+          "v": 14
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/dpWBVfTG/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "WdHUV3Na",
+      "mandante": "Mushuc Runa",
+      "visitante": "Ind. del Valle",
+      "rodada": null,
+      "data": "11.07.2026 16:10",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 22
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 10
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 8,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 4
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/WdHUV3Na/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "G6UeZxUi",
+      "mandante": "Manta",
+      "visitante": "Orense",
+      "rodada": null,
+      "data": "11.07.2026 14:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 46,
+          "v": 54
+        },
+        "finalizacoes": {
+          "m": 9,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 1,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 21,
+          "v": 18
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/G6UeZxUi/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "A9sABZyo",
+      "mandante": "Tecnico U.",
+      "visitante": "Macara",
+      "rodada": null,
+      "data": "10.07.2026 21:15",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 1,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 18,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/A9sABZyo/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "S0SjwnVP",
+      "mandante": "Leones del Norte",
+      "visitante": "U. Catolica",
+      "rodada": null,
+      "data": "10.07.2026 19:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 0
+        },
+        "ft": {
+          "m": 3,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 36,
+          "v": 64
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 20
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 5,
+          "v": 6
+        },
+        "faltas": {
+          "m": 18,
+          "v": 17
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/S0SjwnVP/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:19.312Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "z5GG3uu0",
+      "mandante": "Libertad",
+      "visitante": "Delfin",
+      "rodada": 47,
+      "data": "21.07.2026 18:30",
+      "data_partida": "21.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WEbk06Y7",
+      "mandante": "U. Catolica",
+      "visitante": "Barcelona SC",
+      "rodada": 47,
+      "data": "21.07.2026 21:00",
+      "data_partida": "21.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GrIWacvP",
+      "mandante": "Macara",
+      "visitante": "Dep. Cuenca",
+      "rodada": 47,
+      "data": "22.07.2026 16:00",
+      "data_partida": "22.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O8oyO9QE",
+      "mandante": "Ind. del Valle",
+      "visitante": "Tecnico U.",
+      "rodada": 47,
+      "data": "22.07.2026 18:30",
+      "data_partida": "22.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8IEO1J9C",
+      "mandante": "Manta",
+      "visitante": "LDU Quito",
+      "rodada": 47,
+      "data": "22.07.2026 21:00",
+      "data_partida": "22.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tlrn2mLh",
+      "mandante": "Leones del Norte",
+      "visitante": "Guayaquil City",
+      "rodada": 47,
+      "data": "23.07.2026 18:30",
+      "data_partida": "23.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U7D851Am",
+      "mandante": "Orense",
+      "visitante": "Aucas",
+      "rodada": 47,
+      "data": "23.07.2026 18:30",
+      "data_partida": "23.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8zpv49jt",
+      "mandante": "Emelec",
+      "visitante": "Mushuc Runa",
+      "rodada": 47,
+      "data": "23.07.2026 21:00",
+      "data_partida": "23.07.2026 21:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

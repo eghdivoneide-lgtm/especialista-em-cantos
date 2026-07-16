@@ -1,9 +1,9 @@
-// DADOS_USL — CALENDÁRIO FUTURO
-// Total: 189
+// DADOS_USL — PIPELINE processado (2026-07-16T23:52)
+// Total: 191
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
-  "ultimaAtualizacao": "2026-07-10",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 5,
   "times": [
     "Birmingham",
@@ -24704,58 +24704,199 @@ window.DADOS_USL = {
       "match_id": "4YQoxEU6",
       "mandante": "Lexington",
       "visitante": "New Mexico",
-      "rodada": 6,
+      "rodada": null,
       "data": "15.07.2026 20:00",
-      "data_partida": "15.07.2026 20:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 41,
+          "v": 59
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "faltas": {
+          "m": 16,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 4
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 4
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/4YQoxEU6/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:32.911Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "CbUgzhaJ",
       "mandante": "Miami FC",
       "visitante": "Indy Eleven",
-      "rodada": 6,
+      "rodada": null,
       "data": "15.07.2026 20:00",
-      "data_partida": "15.07.2026 20:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 4
+        },
+        "ft": {
+          "m": 1,
+          "v": 9
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 0
+        },
+        "faltas": {
+          "m": 18,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/CbUgzhaJ/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:32.911Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "fNgvr4IP",
       "mandante": "Sporting Jax",
       "visitante": "Pittsburgh",
-      "rodada": 6,
+      "rodada": null,
       "data": "15.07.2026 20:30",
-      "data_partida": "15.07.2026 20:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 0
+        },
+        "ft": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 11,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/fNgvr4IP/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-16T15:02:32.910Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "0ObhkLPh",
@@ -24916,6 +25057,44 @@ window.DADOS_USL = {
       "rodada": 6,
       "data": "18.07.2026 23:30",
       "data_partida": "18.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ngxZ1b9b",
+      "mandante": "Lexington",
+      "visitante": "Oakland Roots",
+      "rodada": 6,
+      "data": "22.07.2026 20:00",
+      "data_partida": "22.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tdZQ3Kvn",
+      "mandante": "Colorado Springs",
+      "visitante": "Miami FC",
+      "rodada": 6,
+      "data": "22.07.2026 22:00",
+      "data_partida": "22.07.2026 22:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

@@ -1,9 +1,9 @@
-// DADOS_BUN — PIPELINE processado (2026-07-07T21:37)
+// DADOS_BUN — PIPELINE processado (2026-07-16T23:52)
 // Total: 306
 
 window.DADOS_BUN = {
   "temporada": "Bundesliga (Alemanha)",
-  "ultimaAtualizacao": "2026-05-20",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 218,
   "times": [
     "Augsburg",

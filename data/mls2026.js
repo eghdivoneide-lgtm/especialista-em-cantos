@@ -1,5 +1,5 @@
-// DADOS_MLS — CALENDÁRIO FUTURO
-// Total: 213
+// DADOS_MLS — PIPELINE processado (2026-07-16T23:52)
+// Total: 228
 
 window.DADOS_MLS = {
   "times": [
@@ -32415,8 +32415,293 @@ window.DADOS_MLS = {
       "meta": {
         "fonte": "flashscore-fixtures"
       }
+    },
+    {
+      "match_id": "xStz7rbc",
+      "mandante": "Columbus Crew",
+      "visitante": "New York City",
+      "rodada": 9,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YDdXVt6F",
+      "mandante": "FC Cincinnati",
+      "visitante": "Vancouver Whitecaps",
+      "rodada": 9,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bsVr5MS9",
+      "mandante": "Inter Miami",
+      "visitante": "Chicago Fire",
+      "rodada": 9,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ofw4DYkl",
+      "mandante": "New England Revolution",
+      "visitante": "Toronto FC",
+      "rodada": 9,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "67Yj30cM",
+      "mandante": "Philadelphia Union",
+      "visitante": "New York Red Bulls",
+      "rodada": 9,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OOENcvLq",
+      "mandante": "Charlotte",
+      "visitante": "Atlanta Utd",
+      "rodada": 9,
+      "data": "22.07.2026 21:15",
+      "data_partida": "22.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dxDVeIkd",
+      "mandante": "Austin FC",
+      "visitante": "Seattle Sounders",
+      "rodada": 9,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CpeIJLs3",
+      "mandante": "Houston Dynamo",
+      "visitante": "DC United",
+      "rodada": 9,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pARCBCK0",
+      "mandante": "Nashville SC",
+      "visitante": "CF Montreal",
+      "rodada": 9,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KAbQHaCF",
+      "mandante": "Sporting Kansas City",
+      "visitante": "Minnesota United",
+      "rodada": 9,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tQnZFwsS",
+      "mandante": "Colorado Rapids",
+      "visitante": "San Diego FC",
+      "rodada": 9,
+      "data": "22.07.2026 22:30",
+      "data_partida": "22.07.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YysD8eZ1",
+      "mandante": "Los Angeles FC",
+      "visitante": "Real Salt Lake",
+      "rodada": 9,
+      "data": "22.07.2026 23:30",
+      "data_partida": "22.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xAm4AH4k",
+      "mandante": "Los Angeles Galaxy",
+      "visitante": "St. Louis City",
+      "rodada": 9,
+      "data": "22.07.2026 23:30",
+      "data_partida": "22.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QVTbWbR8",
+      "mandante": "Portland Timbers",
+      "visitante": "FC Dallas",
+      "rodada": 9,
+      "data": "22.07.2026 23:30",
+      "data_partida": "22.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "McN7UxdL",
+      "mandante": "San Jose Earthquakes",
+      "visitante": "Orlando City",
+      "rodada": 9,
+      "data": "22.07.2026 23:30",
+      "data_partida": "22.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
     }
   ],
   "totalRodadas": 6,
-  "ultimaAtualizacao": "2026-05-27"
+  "ultimaAtualizacao": "2026-07-16"
 };

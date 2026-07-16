@@ -1,9 +1,9 @@
-// DADOS_ARG — PIPELINE processado (2026-07-07T21:37)
-// Total: 254
+// DADOS_ARG — PIPELINE processado (2026-07-16T23:52)
+// Total: 257
 
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina 2026",
-  "ultimaAtualizacao": "2026-06-29",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 16,
   "times": [
     "Aldosivi",
@@ -39888,6 +39888,63 @@ window.DADOS_ARG = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      }
+    },
+    {
+      "match_id": "pSjL3djo",
+      "mandante": "Belgrano",
+      "visitante": "Rosario Central",
+      "rodada": 18,
+      "data": "23.07.2026 19:30",
+      "data_partida": "23.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "niXFPwD4",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Argentinos Jrs",
+      "rodada": 18,
+      "data": "23.07.2026 19:30",
+      "data_partida": "23.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E5DveS7D",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Aldosivi",
+      "rodada": 18,
+      "data": "23.07.2026 21:45",
+      "data_partida": "23.07.2026 21:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ]

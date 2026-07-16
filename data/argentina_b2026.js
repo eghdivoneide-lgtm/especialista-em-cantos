@@ -1,9 +1,9 @@
-// DADOS_ARG_B — CALENDÁRIO FUTURO
-// Total: 360
+// DADOS_ARG_B — PIPELINE processado (2026-07-16T23:52)
+// Total: 377
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-07-10",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 113,
   "times": [
     "Acassuso",
@@ -42618,172 +42618,541 @@ window.DADOS_ARG_B = {
       "match_id": "QgGOHYTb",
       "mandante": "Colon Santa Fe",
       "visitante": "Central Norte",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 15:30",
-      "data_partida": "12.07.2026 15:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 58,
+          "v": 42
+        },
+        "finalizacoes": {
+          "m": 13,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 10,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 4,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 4,
+          "v": 0
+        },
+        "ht": {
+          "m": 2,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/QgGOHYTb/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "IiLhKU4E",
       "mandante": "Agropecuario",
       "visitante": "Temperley",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/IiLhKU4E/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "fJZcbmre",
       "mandante": "Club A. Guemes",
       "visitante": "San Martin S.J.",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 4,
+          "v": 10
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/fJZcbmre/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "YTUzX7lK",
       "mandante": "Midland",
       "visitante": "Quilmes",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/YTUzX7lK/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "WY7dEaN6",
       "mandante": "Racing Cordoba",
       "visitante": "Acassuso",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 60,
+          "v": 40
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 9,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/WY7dEaN6/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "YP2uEjTN",
       "mandante": "Godoy Cruz",
       "visitante": "Def. de Belgrano",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 16:30",
-      "data_partida": "12.07.2026 16:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 10,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 5
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 0
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/YP2uEjTN/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "p8ltBQR0",
       "mandante": "Gimnasia y Tiro",
       "visitante": "Patronato",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 17:00",
-      "data_partida": "12.07.2026 17:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 3
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/p8ltBQR0/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "lteXCncl",
       "mandante": "San Martin T.",
       "visitante": "Almagro",
-      "rodada": 114,
+      "rodada": null,
       "data": "12.07.2026 18:00",
-      "data_partida": "12.07.2026 18:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 61,
+          "v": 39
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 10,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/lteXCncl/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "ILnl94dD",
       "mandante": "Atletico Atlanta",
       "visitante": "Colegiales",
-      "rodada": 114,
+      "rodada": null,
       "data": "13.07.2026 21:00",
-      "data_partida": "13.07.2026 21:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 2
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/ILnl94dD/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.387Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "6e8HqoYP",
@@ -42963,6 +43332,695 @@ window.DADOS_ARG_B = {
       "rodada": 114,
       "data": "18.07.2026 17:00",
       "data_partida": "18.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QL65YKPO",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Club A. Guemes",
+      "rodada": 114,
+      "data": "20.07.2026 15:00",
+      "data_partida": "20.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ie3czseC",
+      "mandante": "San Martin S.J.",
+      "visitante": "Tristan Suarez",
+      "rodada": 114,
+      "data": "20.07.2026 15:00",
+      "data_partida": "20.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IZRMN3B6",
+      "mandante": "Patronato",
+      "visitante": "Atletico Atlanta",
+      "rodada": 114,
+      "data": "20.07.2026 20:00",
+      "data_partida": "20.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lfz6RoCs",
+      "mandante": "Quilmes",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 114,
+      "data": "20.07.2026 20:00",
+      "data_partida": "20.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SQpRHgod",
+      "mandante": "Chaco For Ever",
+      "visitante": "San Miguel",
+      "rodada": 114,
+      "data": "20.07.2026 21:00",
+      "data_partida": "20.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zT5nPygM",
+      "mandante": "Central Norte",
+      "visitante": "Deportivo Moron",
+      "rodada": 114,
+      "data": "20.07.2026 21:30",
+      "data_partida": "20.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M5yj09Dr",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Chacarita Juniors",
+      "rodada": null,
+      "data": "12.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 8,
+          "v": 0
+        },
+        "ft": {
+          "m": 11,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 6
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/M5yj09Dr/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "p4WcWXrh",
+      "mandante": "All Boys",
+      "visitante": "Almirante Brown",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 2
+        },
+        "ft": {
+          "m": 6,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 8,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 8,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/p4WcWXrh/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "v791I8ZQ",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Deportivo Maipu",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 9,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 17
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 12
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/v791I8ZQ/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "tWP6UBD4",
+      "mandante": "CA Estudiantes",
+      "visitante": "CA Mitre",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 54,
+          "v": 46
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 1
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 9,
+          "v": 0
+        },
+        "cartoes_amarelos": null,
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 3,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 0
+        },
+        "ht": {
+          "m": 3,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/tWP6UBD4/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "n94XFCbB",
+      "mandante": "Deportivo Moron",
+      "visitante": "Deportivo Madryn",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 0
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 19,
+          "v": 18
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 6
+        },
+        "cartoes_amarelos": {
+          "m": 0,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/n94XFCbB/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "hAqC8Ujo",
+      "mandante": "Los Andes",
+      "visitante": "Ciudad Bolivar",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 5,
+          "v": 1
+        },
+        "ft": {
+          "m": 6,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 16,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 12,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 3,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/hAqC8Ujo/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "ITCGJfan",
+      "mandante": "San Miguel",
+      "visitante": "Ferro",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 1
+        },
+        "ft": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 56,
+          "v": 44
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 1,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 7
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 0,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 1
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/ITCGJfan/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "4n64CwhJ",
+      "mandante": "San Telmo",
+      "visitante": "Chaco For Ever",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 4,
+          "v": 4
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 49,
+          "v": 51
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 7,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 3
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/4n64CwhJ/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "joT6dRC7",
+      "mandante": "Tristan Suarez",
+      "visitante": "Nueva Chicago",
+      "rodada": null,
+      "data": "11.07.2026 15:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 39,
+          "v": 61
+        },
+        "finalizacoes": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 2
+        },
+        "faltas": null,
+        "defesas_goleiro": null
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/joT6dRC7/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-13T19:30:18.965Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "E1LVLstJ",
+      "mandante": "Almagro",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 114,
+      "data": "21.07.2026 15:00",
+      "data_partida": "21.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GQkoRcO9",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Godoy Cruz",
+      "rodada": 114,
+      "data": "21.07.2026 19:00",
+      "data_partida": "21.07.2026 19:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

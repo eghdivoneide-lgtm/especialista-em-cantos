@@ -1,9 +1,9 @@
-// DADOS_BR_B — CALENDÁRIO FUTURO
-// Total: 174
+// DADOS_BR_B — PIPELINE processado (2026-07-16T23:52)
+// Total: 187
 
 window.DADOS_BR_B = {
   "temporada": "Brasileirão Série B",
-  "ultimaAtualizacao": "2026-07-10",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 40,
   "times": [
     "America MG",
@@ -21283,115 +21283,397 @@ window.DADOS_BR_B = {
       "match_id": "n5RF3TEa",
       "mandante": "Avai",
       "visitante": "Nautico",
-      "rodada": 41,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 31,
+          "v": 69
+        },
+        "finalizacoes": {
+          "m": 15,
+          "v": 16
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 17,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/n5RF3TEa/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "xhqzijVg",
       "mandante": "Sao Bernardo",
       "visitante": "Cuiaba",
-      "rodada": 41,
+      "rodada": null,
       "data": "12.07.2026 16:00",
-      "data_partida": "12.07.2026 16:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 3
+        },
+        "ft": {
+          "m": 6,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 73,
+          "v": 27
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 9
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 2
+        },
+        "faltas": {
+          "m": 9,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/xhqzijVg/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "vuO75kpm",
       "mandante": "Atletico GO",
       "visitante": "Fortaleza",
-      "rodada": 41,
+      "rodada": null,
       "data": "12.07.2026 18:00",
-      "data_partida": "12.07.2026 18:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 5
+        },
+        "ft": {
+          "m": 1,
+          "v": 11
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 36,
+          "v": 64
+        },
+        "finalizacoes": {
+          "m": 6,
+          "v": 15
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 5
+        },
+        "faltas": {
+          "m": 9,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/vuO75kpm/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "SrTVaoEO",
       "mandante": "CRB",
       "visitante": "Goias",
-      "rodada": 41,
+      "rodada": null,
       "data": "12.07.2026 19:00",
-      "data_partida": "12.07.2026 19:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 6,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 47,
+          "v": 53
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 4
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 3,
+          "v": 0
+        },
+        "faltas": {
+          "m": 12,
+          "v": 10
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/SrTVaoEO/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "A5srkUa6",
       "mandante": "America MG",
       "visitante": "Londrina",
-      "rodada": 41,
+      "rodada": null,
       "data": "13.07.2026 19:00",
-      "data_partida": "13.07.2026 19:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 4
+        },
+        "ft": {
+          "m": 7,
+          "v": 7
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 62,
+          "v": 38
+        },
+        "finalizacoes": {
+          "m": 24,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 3
+        },
+        "faltas": {
+          "m": 14,
+          "v": 20
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/A5srkUa6/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "r9xxBBMP",
       "mandante": "Ceara",
       "visitante": "Athletic Club",
-      "rodada": 41,
+      "rodada": null,
       "data": "13.07.2026 20:30",
-      "data_partida": "13.07.2026 20:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 2
+        },
+        "ft": {
+          "m": 7,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 65,
+          "v": 35
+        },
+        "finalizacoes": {
+          "m": 12,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 2,
+          "v": 1
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 4
+        },
+        "faltas": {
+          "m": 9,
+          "v": 9
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/r9xxBBMP/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "QFSF8Fdd",
@@ -21571,6 +21853,394 @@ window.DADOS_BR_B = {
       "rodada": 41,
       "data": "18.07.2026 18:00",
       "data_partida": "18.07.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nN8zYVP7",
+      "mandante": "Avai",
+      "visitante": "America MG",
+      "rodada": 41,
+      "data": "21.07.2026 19:30",
+      "data_partida": "21.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MwQfLht2",
+      "mandante": "Novorizontino",
+      "visitante": "Criciuma",
+      "rodada": 41,
+      "data": "21.07.2026 19:30",
+      "data_partida": "21.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Gdk0liAl",
+      "mandante": "Vila Nova FC",
+      "visitante": "Fortaleza",
+      "rodada": 41,
+      "data": "21.07.2026 21:35",
+      "data_partida": "21.07.2026 21:35",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IVpjm8UI",
+      "mandante": "Operario-PR",
+      "visitante": "Novorizontino",
+      "rodada": null,
+      "data": "12.07.2026 11:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 10,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 21,
+          "v": 19
+        },
+        "defesas_goleiro": {
+          "m": 4,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/IVpjm8UI/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "fVUN17qC",
+      "mandante": "Sport Recife",
+      "visitante": "Botafogo SP",
+      "rodada": null,
+      "data": "10.07.2026 20:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 1
+        },
+        "ft": {
+          "m": 7,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 71,
+          "v": 29
+        },
+        "finalizacoes": {
+          "m": 21,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 4
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 4
+        },
+        "faltas": {
+          "m": 17,
+          "v": 22
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/fVUN17qC/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "r9IvKlat",
+      "mandante": "Juventude",
+      "visitante": "Vila Nova FC",
+      "rodada": null,
+      "data": "10.07.2026 19:00",
+      "tabela": null,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 43,
+          "v": 57
+        },
+        "finalizacoes": {
+          "m": 10,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 4,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 1
+        },
+        "faltas": {
+          "m": 24,
+          "v": 16
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/r9IvKlat/#/match-summary",
+      "meta": {
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-14T16:43:49.133Z"
+      },
+      "disputado": true
+    },
+    {
+      "match_id": "ht7KyEQr",
+      "mandante": "Ceara",
+      "visitante": "CRB",
+      "rodada": 41,
+      "data": "22.07.2026 19:30",
+      "data_partida": "22.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dALlsz3L",
+      "mandante": "Operario-PR",
+      "visitante": "Ponte Preta",
+      "rodada": 41,
+      "data": "22.07.2026 19:30",
+      "data_partida": "22.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vc5SZiee",
+      "mandante": "Goias",
+      "visitante": "Sport Recife",
+      "rodada": 41,
+      "data": "22.07.2026 20:30",
+      "data_partida": "22.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vHeMeZHE",
+      "mandante": "Nautico",
+      "visitante": "Londrina",
+      "rodada": 41,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lpItqdY8",
+      "mandante": "Athletic Club",
+      "visitante": "Sao Bernardo",
+      "rodada": 41,
+      "data": "23.07.2026 19:30",
+      "data_partida": "23.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nsaUgDnR",
+      "mandante": "Cuiaba",
+      "visitante": "Atletico GO",
+      "rodada": 41,
+      "data": "23.07.2026 20:30",
+      "data_partida": "23.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lQRnNEBk",
+      "mandante": "Botafogo SP",
+      "visitante": "Juventude",
+      "rodada": 41,
+      "data": "23.07.2026 21:30",
+      "data_partida": "23.07.2026 21:30",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

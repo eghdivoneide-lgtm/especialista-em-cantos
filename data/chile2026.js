@@ -1,9 +1,9 @@
-// DADOS_CHI — PIPELINE processado (2026-07-07T21:37)
+// DADOS_CHI — PIPELINE processado (2026-07-16T23:52)
 // Total: 114
 
 window.DADOS_CHI = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-06-29",
+  "ultimaAtualizacao": "2026-07-16",
   "totalRodadas": 70,
   "times": [
     "A. Italiano",
