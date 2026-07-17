@@ -1,4 +1,4 @@
-// DADOS_BUN — PIPELINE processado (2026-07-17T21:38)
+// DADOS_BUN — PIPELINE processado (2026-07-17T21:40)
 // Total: 306
 
 window.DADOS_BUN = {
