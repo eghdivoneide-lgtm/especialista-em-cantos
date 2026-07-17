@@ -1281,7 +1281,7 @@
       </div>
     </div>
     <div id="pinnacle-drop" onclick="document.getElementById('pinnacle-file').click()" style="border:2px dashed var(--border);border-radius:12px;padding:1.4rem;text-align:center;color:var(--muted);font-size:.85rem;cursor:pointer;margin-bottom:1rem;background:var(--bg3);transition:border-color .2s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
-      📸 Clique para anexar ou <strong>Ctrl+V</strong> pra colar o print da aba <strong>ESCANTEIOS</strong> — liga ativa: <strong style="color:var(--gold)" id="pinnacle-liga">—</strong>
+      📸 Clique para anexar ou <strong>Ctrl+V</strong> pra colar o print da aba <strong>ESCANTEIOS</strong> (até 6 prints) — a liga é <strong style="color:var(--gold)">detectada automaticamente</strong> pelos times: <strong style="color:var(--gold)" id="pinnacle-liga">—</strong>
       <input type="file" id="pinnacle-file" accept="image/*" multiple style="display:none" onchange="pinnacleAddImgs(event.target.files); event.target.value='';">
     </div>
     <div id="pinnacle-thumbs" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem"></div>
@@ -14419,8 +14419,7 @@ function _kellyPin(pWin,odd){ const b=odd-1; if(b<=0)return 0; return (pWin*b-(1
 // (a Pinnacle escreve "Ferro Carril Oeste"/"Club Atletico Mitre"; app usa "Ferro"/"CA Mitre").
 const _PIN_STOP=new Set(['de','do','da','del','el','la','los','las','fc','ca','ac','sc','cd','cf','club','atletico','deportivo','afc','sad','csyd','asoc']);
 function _pinToks(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>=3&&!_PIN_STOP.has(w)); }
-function _pinMatch(raw){
-  const times=(DADOS_2026.times||[]).map(t=>typeof t==='string'?t:t.nome);
+function _pinMatchEm(raw, times){
   const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
   const nraw=norm(raw); let ex=times.find(t=>norm(t)===nraw); if(ex)return ex;      // exato
   const rt=_pinToks(raw); if(!rt.length)return null;
@@ -14431,10 +14430,28 @@ function _pinMatch(raw){
     else if(inter===bestI&&inter>0&&Math.abs(score-bestS)<1e-9){ ties++; } }
   return (bestI>=1&&ties===1)?best:null; // empate = ambíguo → não reconhece (não chuta)
 }
+function _pinMatch(raw){ return _pinMatchEm(raw, (DADOS_2026.times||[]).map(t=>typeof t==='string'?t:t.nome)); }
+// Detecta a liga do print pelos nomes dos times (não depende do seletor)
+function _pinDetectarLiga(odds){
+  const ligas=['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU'];
+  let bestL=null,bestN=-1;
+  for(const L of ligas){ const d=window['DADOS_'+L]; if(!d||!d.times)continue;
+    const times=d.times.map(t=>typeof t==='string'?t:t.nome);
+    let n=0; for(const o of odds){ if(_pinMatchEm(o.casa,times)&&_pinMatchEm(o.fora,times))n++; }
+    if(n>bestN){bestN=n;bestL=L;} }
+  return {liga:bestL,n:bestN};
+}
 
 function _pinnacleComputar(){
   const odds=_pinnacleState.odds||[];
-  const thr=(typeof getLigaDNA==='function'&&getLigaDNA(LIGA_ATUAL))?getLigaDNA(LIGA_ATUAL).cisneThreshold:2.0;
+  // Detecta a liga pelos nomes e TROCA o contexto do motor (salva/restaura).
+  const det=_pinDetectarLiga(odds);
+  const L=det.liga||LIGA_ATUAL;
+  const ligaOrig=LIGA_ATUAL, dadosOrig=DADOS_2026;
+  LIGA_ATUAL=L; DADOS_2026=window['DADOS_'+L]||DADOS_2026;
+  _forcaCantosCache=null; _forcaCantosCacheLiga=null; _rankingHTCache=null; _rankingHTCacheLiga=null;
+  _pinnacleState.ligaDetectada=L;
+  const thr=(typeof getLigaDNA==='function'&&getLigaDNA(L))?getLigaDNA(L).cisneThreshold:2.0;
   const res=[];
   odds.forEach(o=>{
     const m=_pinMatch(o.casa), v=_pinMatch(o.fora);
@@ -14446,17 +14463,31 @@ function _pinnacleComputar(){
     // casam (Cisne+Enigma) — só marcador de confluência
     let sde=null; try{ const en=calcSDE_ENIGMA(m,v); if(en&&en.valido!==false) sde=en.sde; }catch(e){}
     const casam = Math.abs(diff)>=thr && sde!=null && sde>=65 && favHome;
-    // candidatos de aposta
+    // candidatos de aposta — prob CALIBRADA: âncora no mercado (de-vig) + tilt do nosso modelo.
+    // Peso do modelo é BAIXO (Pinnacle é sharp); sobe nos jogos onde Cisne+Enigma casam (edge validado).
+    // Pesos PROVISÓRIOS — a implementação #2 (auto-auditoria) vai calibrá-los com resultado real.
+    // O motor acerta a DIREÇÃO (WR alto) mas exagera a MAGNITUDE vs mercado sharp.
+    // Então: mercado = âncora; nosso modelo só pode empurrar a prob por um TETO pequeno.
+    // Pesos/tetos CONSERVADORES e PROVISÓRIOS — a #2 (auto-auditoria) mede o edge real e substitui isto.
+    const wModel = casam ? 0.40 : 0.25;
+    const capDiv = casam ? 0.08 : 0.05;   // teto de divergência do mercado (em pontos de prob)
     const cands=[];
+    const addC=(mkt,lado,rot,linha,odd,oddOutro,pr)=>{
+      if(!odd||!oddOutro||odd<=1||oddOutro<=1)return;
+      const fair=(1/odd)/((1/odd)+(1/oddOutro));         // prob justa do mercado (remove a margem)
+      const shift=Math.max(-capDiv,Math.min(capDiv,wModel*(pr.win-fair)));
+      const pB=Math.max(0.01,Math.min(0.99,fair+shift)); // prob calibrada
+      const ev=pB*odd-1;                                 // EV = prob calibrada × odd − 1
+      cands.push({mkt,lado,rot,linha,odd,pr,fair:+fair.toFixed(3),pB:+pB.toFixed(3),ev,kelly:_kellyPin(pB,odd)});
+    };
     if(o.hcp_linha!=null){
-      if(o.hcp_odd_casa){ const pr=_probHandicap(lamH,lamA,+o.hcp_linha); cands.push({mkt:'HDP',lado:'casa',rot:m,linha:(+o.hcp_linha),odd:+o.hcp_odd_casa,pr}); }
-      if(o.hcp_odd_fora){ const pr=_probHandicap(lamA,lamH,-o.hcp_linha); cands.push({mkt:'HDP',lado:'fora',rot:v,linha:(-o.hcp_linha),odd:+o.hcp_odd_fora,pr}); }
+      addC('HDP','casa',m,+o.hcp_linha,+o.hcp_odd_casa,+o.hcp_odd_fora,_probHandicap(lamH,lamA,+o.hcp_linha));
+      addC('HDP','fora',v,-o.hcp_linha,+o.hcp_odd_fora,+o.hcp_odd_casa,_probHandicap(lamA,lamH,-o.hcp_linha));
     }
     if(o.ou_linha!=null){
-      if(o.ou_over){ const pr=_probOU(lamT,+o.ou_linha,true); cands.push({mkt:'OU',lado:'over',rot:'Mais de '+o.ou_linha,linha:+o.ou_linha,odd:+o.ou_over,pr}); }
-      if(o.ou_under){ const pr=_probOU(lamT,+o.ou_linha,false); cands.push({mkt:'OU',lado:'under',rot:'Menos de '+o.ou_linha,linha:+o.ou_linha,odd:+o.ou_under,pr}); }
+      addC('OU','over','Mais de '+o.ou_linha,+o.ou_linha,+o.ou_over,+o.ou_under,_probOU(lamT,+o.ou_linha,true));
+      addC('OU','under','Menos de '+o.ou_linha,+o.ou_linha,+o.ou_under,+o.ou_over,_probOU(lamT,+o.ou_linha,false));
     }
-    cands.forEach(c=>{ c.ev=_evDe(c.pr,c.odd); c.kelly=_kellyPin(c.pr.win,c.odd); });
     const validos=cands.filter(c=>c.ev!=null).sort((a,b)=>b.ev-a.ev);
     const best=validos[0]||null;
     let flag='—', cor='var(--muted)';
@@ -14467,6 +14498,9 @@ function _pinnacleComputar(){
     }
     res.push({ jogo:m+' × '+v, hora:o.hora||'', diff:+diff.toFixed(2), favorito:favHome?m:v, lamT:+lamT.toFixed(1), sde, casam, cands, best, flag, cor });
   });
+  // restaura o contexto original do motor
+  LIGA_ATUAL=ligaOrig; DADOS_2026=dadosOrig;
+  _forcaCantosCache=null; _forcaCantosCacheLiga=null; _rankingHTCache=null; _rankingHTCacheLiga=null;
   _pinnacleState.resultados=res;
 }
 
@@ -14503,11 +14537,11 @@ function _pinCardMercado(c,best){
     +'<div style="font-size:.72rem;color:var(--muted)">'+c.rot+'</div>'
     +'<div style="font-weight:700">@'+c.odd.toFixed(3)+'</div>'
     +'<div style="font-size:.72rem;color:'+evCor+';font-weight:700">EV '+(evPct>=0?'+':'')+evPct.toFixed(1)+'%</div>'
-    +'<div style="font-size:.66rem;color:var(--muted)">p '+(c.pr.win*100).toFixed(0)+'%</div></td>';
+    +'<div style="font-size:.66rem;color:var(--muted)">nós '+(c.pB*100).toFixed(0)+'% · mkt '+(c.fair*100).toFixed(0)+'%</div></td>';
 }
 
 function renderPinnacle(){
-  const ligaEl=document.getElementById('pinnacle-liga'); if(ligaEl) ligaEl.textContent=LIGA_ATUAL;
+  const ligaEl=document.getElementById('pinnacle-liga'); if(ligaEl) ligaEl.textContent=_pinnacleState.ligaDetectada||'detecta automático';
   _pinnacleRenderThumbs();
   const ctr=document.getElementById('pinnacle-resultado'), status=document.getElementById('pinnacle-status');
   if(!ctr)return;
@@ -14520,9 +14554,10 @@ function renderPinnacle(){
   }
   const res=_pinnacleState.resultados;
   const comValor=res.filter(r=>r.best&&r.best.ev>0.01).length;
-  if(status) status.innerHTML='<div style="padding:.7rem 1rem;background:rgba(245,158,11,0.10);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>'+res.length+' jogos lidos</strong> · '+comValor+' com valor (EV+). Liga: <strong>'+LIGA_ATUAL+'</strong>. Handicap por Skellam · Over/Under por Poisson (projeção do motor).</div>';
+  const _detN=res.filter(r=>!r.semMatch&&!r.semProj).length;
+  if(status) status.innerHTML='<div style="padding:.7rem 1rem;background:rgba(245,158,11,0.10);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>'+res.length+' jogos lidos</strong> · '+_detN+' projetados · '+comValor+' com valor (EV+). Liga detectada: <strong>'+(_pinnacleState.ligaDetectada||'—')+'</strong>. Handicap por Skellam · Over/Under por Poisson.</div>';
   const linhas=res.map(r=>{
-    if(r.semMatch) return '<tr><td style="padding:.5rem .6rem">'+r.casa+' × '+r.fora+'</td><td colspan="4" style="padding:.5rem;color:var(--muted);font-size:.78rem">⚠️ Time não reconhecido nesta liga (confira o seletor de liga)</td></tr>';
+    if(r.semMatch) return '<tr><td style="padding:.5rem .6rem">'+r.casa+' × '+r.fora+'</td><td colspan="4" style="padding:.5rem;color:var(--muted);font-size:.78rem">⚠️ Time fora das ligas do app (não projetável)</td></tr>';
     if(r.semProj) return '<tr><td style="padding:.5rem .6rem">'+r.jogo+'</td><td colspan="4" style="padding:.5rem;color:var(--muted);font-size:.78rem">sem projeção (dados insuficientes)</td></tr>';
     const hcp=r.cands.filter(c=>c.mkt==='HDP'), ou=r.cands.filter(c=>c.mkt==='OU');
     const rec = r.best ? ('<strong style="color:'+r.cor+'">'+r.flag+'</strong><br><span style="font-size:.8rem">'+(r.best.mkt==='HDP'?'Handicap ':'')+r.best.rot+' '+(r.best.linha>=0?'+':'')+(r.best.mkt==='HDP'?r.best.linha:'')+' @'+r.best.odd.toFixed(3)+(r.best.ev>0.01?(' · ¼ Kelly '+(Math.max(0,r.best.kelly)*25).toFixed(2)+'%'):'')+'</span>') : '<span style="color:var(--muted)">—</span>';
@@ -14535,7 +14570,7 @@ function renderPinnacle(){
   ctr.innerHTML='<div class="table-wrap"><table><thead><tr>'
     +'<th>Jogo</th><th colspan="2">Handicap (casa / fora)</th><th colspan="2">Over / Under</th><th>Recomendação</th>'
     +'</tr></thead><tbody>'+linhas+'</tbody></table></div>'
-    +'<div style="margin-top:.6rem;font-size:.72rem;color:var(--muted)">🎯 = jogo onde Cisne Negro + Enigma casam · EV = (nossa prob × odd) − 1 · ⚠️ acima de +12% quase sempre é erro do modelo (a Pinnacle erra pouco), não value.</div>';
+    +'<div style="margin-top:.6rem;font-size:.72rem;color:var(--muted)">🎯 = Cisne Negro + Enigma casam (peso maior do modelo) · <strong>prob calibrada</strong> = mercado Pinnacle (âncora sharp) + empurrão do nosso motor · EV = prob calibrada × odd − 1 · ⚠️ >+12% = suspeita do modelo. <em>Pesos provisórios até a auto-auditoria (#2) calibrar com resultado real.</em></div>';
 }
 
 function limparPinnacle(){
