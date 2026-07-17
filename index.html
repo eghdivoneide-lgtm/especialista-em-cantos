@@ -14706,6 +14706,8 @@ function analisarRodadaCampeonato(){
   try{
     if(typeof jogosFuturos!=='undefined'){ jogosFuturos.length=0; Array.prototype.push.apply(jogosFuturos, fixtures); }
     localStorage.setItem('sniper_rodada_'+LIGA_ATUAL, JSON.stringify(fixtures));
+    // alimenta o Cisne Negro (usa storage próprio eds_cisne_cards, não lê jogosFuturos direto)
+    if(typeof _sincronizarCisneComRodada==='function') _sincronizarCisneComRodada(LIGA_ATUAL);
   }catch(e){ console.error('[injetar rodada]', e); }
 
   alvo.innerHTML='<div style="padding:.8rem;color:var(--green)">⏳ Motor analisando '+jogos.length+' jogos da rodada '+_campRodadaSel+'...</div>';
