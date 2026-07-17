@@ -1,5 +1,5 @@
-// DADOS_BR — PIPELINE processado (2026-07-17T18:40)
-// Total: 375
+// DADOS_BR — PIPELINE processado (2026-07-17T21:30)
+// Total: 387
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
@@ -20692,158 +20692,6 @@ window.DADOS_BR = {
       "disputado": true
     },
     {
-      "match_id": "ELwuJVc6",
-      "mandante": "Fluminense",
-      "visitante": "Bahia",
-      "rodada": 19,
-      "data": "17.07.2026 20:00",
-      "data_partida": "17.07.2026 20:00",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "SO3EXUCa",
-      "mandante": "Mirassol",
-      "visitante": "Grêmio",
-      "rodada": 19,
-      "data": "17.07.2026 20:00",
-      "data_partida": "17.07.2026 20:00",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "lvhNV8sC",
-      "mandante": "Atlético-MG",
-      "visitante": "Bahia",
-      "rodada": 19,
-      "data": "21.07.2026 19:30",
-      "data_partida": "21.07.2026 19:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "zmCty4Ji",
-      "mandante": "Coritiba",
-      "visitante": "Palmeiras",
-      "rodada": 19,
-      "data": "22.07.2026 19:30",
-      "data_partida": "22.07.2026 19:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "KvUgD0Rp",
-      "mandante": "Internacional",
-      "visitante": "Cruzeiro",
-      "rodada": 19,
-      "data": "22.07.2026 21:30",
-      "data_partida": "22.07.2026 21:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "0EJZvDKP",
-      "mandante": "São Paulo",
-      "visitante": "Athletico-PR",
-      "rodada": 19,
-      "data": "22.07.2026 21:30",
-      "data_partida": "22.07.2026 21:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "QiFvlsBO",
-      "mandante": "Bahia",
-      "visitante": "Vitória",
-      "rodada": 19,
-      "data": "23.07.2026 19:30",
-      "data_partida": "23.07.2026 19:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
-      "match_id": "Kb06Zjrm",
-      "mandante": "Corinthians",
-      "visitante": "Remo",
-      "rodada": 19,
-      "data": "23.07.2026 19:30",
-      "data_partida": "23.07.2026 19:30",
-      "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
-      "meta": {
-        "fonte": "flashscore-fixtures"
-      }
-    },
-    {
       "id": "6ezXKiTg",
       "rodada": 18,
       "data": "31.05.2026",
@@ -22084,6 +21932,196 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "8lKX5FW9",
+      "mandante": "Bahia",
+      "visitante": "Chapecoense",
+      "rodada": 4,
+      "data": "17.07.2026 19:30",
+      "data_partida": "17.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ELwuJVc6",
+      "mandante": "Fluminense",
+      "visitante": "Red Bull Bragantino",
+      "rodada": 19,
+      "data": "17.07.2026 20:00",
+      "data_partida": "17.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SO3EXUCa",
+      "mandante": "Mirassol",
+      "visitante": "Grêmio",
+      "rodada": 19,
+      "data": "17.07.2026 20:00",
+      "data_partida": "17.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lvhNV8sC",
+      "mandante": "Atlético-MG",
+      "visitante": "Bahia",
+      "rodada": 19,
+      "data": "21.07.2026 19:30",
+      "data_partida": "21.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zmCty4Ji",
+      "mandante": "Coritiba",
+      "visitante": "Palmeiras",
+      "rodada": 19,
+      "data": "22.07.2026 19:30",
+      "data_partida": "22.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4S3cXLIG",
+      "mandante": "Chapecoense",
+      "visitante": "Flamengo",
+      "rodada": 19,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KvUgD0Rp",
+      "mandante": "Internacional",
+      "visitante": "Cruzeiro",
+      "rodada": 19,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0EJZvDKP",
+      "mandante": "São Paulo",
+      "visitante": "Athletico-PR",
+      "rodada": 19,
+      "data": "22.07.2026 21:30",
+      "data_partida": "22.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QiFvlsBO",
+      "mandante": "Botafogo",
+      "visitante": "Vitória",
+      "rodada": 4,
+      "data": "23.07.2026 19:30",
+      "data_partida": "23.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Kb06Zjrm",
+      "mandante": "Corinthians",
+      "visitante": "Remo",
+      "rodada": 19,
+      "data": "23.07.2026 19:30",
+      "data_partida": "23.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "IVTWoLX9",
       "mandante": "Athletico-PR",
       "visitante": "Internacional",
@@ -22105,7 +22143,7 @@ window.DADOS_BR = {
     {
       "match_id": "UkF6bbHF",
       "mandante": "Santos",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 20,
       "data": "25.07.2026 18:30",
       "data_partida": "25.07.2026 18:30",
@@ -22162,7 +22200,7 @@ window.DADOS_BR = {
     {
       "match_id": "fcrxQwBj",
       "mandante": "Cruzeiro",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 20,
       "data": "26.07.2026 16:00",
       "data_partida": "26.07.2026 16:00",
@@ -22180,7 +22218,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "AP65VamT",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Coritiba",
       "rodada": 20,
       "data": "26.07.2026 18:30",
@@ -22199,7 +22237,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "tUYBxHfd",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "São Paulo",
       "rodada": 20,
       "data": "26.07.2026 18:30",
@@ -22276,7 +22314,7 @@ window.DADOS_BR = {
     {
       "match_id": "dKNS3gge",
       "mandante": "Atlético-MG",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 21,
       "data": "29.07.2026 17:00",
       "data_partida": "29.07.2026 17:00",
@@ -22294,7 +22332,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "2c2gkfv2",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Grêmio",
       "rodada": 21,
       "data": "29.07.2026 17:00",
@@ -22313,7 +22351,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "ARJ356Ua",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Vasco",
       "rodada": 21,
       "data": "29.07.2026 17:00",
@@ -22352,7 +22390,7 @@ window.DADOS_BR = {
     {
       "match_id": "UXLz2XN7",
       "mandante": "Internacional",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 21,
       "data": "29.07.2026 19:30",
       "data_partida": "29.07.2026 19:30",
@@ -22504,7 +22542,7 @@ window.DADOS_BR = {
     {
       "match_id": "lnn4Y4bn",
       "mandante": "Coritiba",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 22,
       "data": "08.08.2026 20:30",
       "data_partida": "08.08.2026 20:30",
@@ -22522,7 +22560,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "EJGK1OTO",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Fluminense",
       "rodada": 22,
       "data": "08.08.2026 21:00",
@@ -22598,7 +22636,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "r9PxIqE5",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Corinthians",
       "rodada": 22,
       "data": "09.08.2026 18:30",
@@ -22636,7 +22674,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "IiNB3paC",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Vitória",
       "rodada": 22,
       "data": "09.08.2026 19:30",
@@ -22694,7 +22732,7 @@ window.DADOS_BR = {
     {
       "match_id": "vJLQsUhc",
       "mandante": "Athletico-PR",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 23,
       "data": "15.08.2026 18:30",
       "data_partida": "15.08.2026 18:30",
@@ -22730,6 +22768,25 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "tps7Na7r",
+      "mandante": "Chapecoense",
+      "visitante": "Bahia",
+      "rodada": 23,
+      "data": "16.08.2026 11:00",
+      "data_partida": "16.08.2026 11:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "APIaNvjo",
       "mandante": "Vasco",
       "visitante": "Santos",
@@ -22751,7 +22808,7 @@ window.DADOS_BR = {
     {
       "match_id": "p2c2s0sH",
       "mandante": "Mirassol",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 23,
       "data": "16.08.2026 18:30",
       "data_partida": "16.08.2026 18:30",
@@ -22770,7 +22827,7 @@ window.DADOS_BR = {
     {
       "match_id": "nqPYu8N9",
       "mandante": "Vitória",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 23,
       "data": "16.08.2026 18:30",
       "data_partida": "16.08.2026 18:30",
@@ -22865,7 +22922,7 @@ window.DADOS_BR = {
     {
       "match_id": "n3LkYGL0",
       "mandante": "Cruzeiro",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 24,
       "data": "22.08.2026 20:30",
       "data_partida": "22.08.2026 20:30",
@@ -22883,7 +22940,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "h4Stzwil",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Grêmio",
       "rodada": 24,
       "data": "23.08.2026 16:00",
@@ -22940,7 +22997,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "SMtPnGzf",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "São Paulo",
       "rodada": 24,
       "data": "23.08.2026 18:30",
@@ -22997,7 +23054,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "YaeGJH67",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Athletico-PR",
       "rodada": 24,
       "data": "24.08.2026 20:00",
@@ -23091,9 +23148,28 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "0lfWpf56",
+      "mandante": "Flamengo",
+      "visitante": "Botafogo",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "rXBMeBJO",
       "mandante": "Grêmio",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 25,
       "data": "30.08.2026 17:00",
       "data_partida": "30.08.2026 17:00",
@@ -23150,7 +23226,7 @@ window.DADOS_BR = {
     {
       "match_id": "lAzR6ySP",
       "mandante": "São Paulo",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 25,
       "data": "30.08.2026 17:00",
       "data_partida": "30.08.2026 17:00",
@@ -23187,8 +23263,27 @@ window.DADOS_BR = {
     },
     {
       "match_id": "tSBMi2Ij",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Palmeiras",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MeAOBN9M",
+      "mandante": "Red Bull Bragantino",
+      "visitante": "Bahia",
       "rodada": 26,
       "data": "06.09.2026 17:00",
       "data_partida": "06.09.2026 17:00",
@@ -23207,7 +23302,7 @@ window.DADOS_BR = {
     {
       "match_id": "lrCGDquA",
       "mandante": "Corinthians",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 26,
       "data": "06.09.2026 17:00",
       "data_partida": "06.09.2026 17:00",
@@ -23302,7 +23397,7 @@ window.DADOS_BR = {
     {
       "match_id": "CpP6O0gS",
       "mandante": "Remo",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 26,
       "data": "06.09.2026 17:00",
       "data_partida": "06.09.2026 17:00",
@@ -23395,8 +23490,27 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "4r4oHIo2",
+      "mandante": "Botafogo",
+      "visitante": "Red Bull Bragantino",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "8jRopHFl",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Internacional",
       "rodada": 27,
       "data": "13.09.2026 17:00",
@@ -23434,7 +23548,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "8GAxJvHk",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Corinthians",
       "rodada": 27,
       "data": "13.09.2026 17:00",
@@ -23549,7 +23663,7 @@ window.DADOS_BR = {
     {
       "match_id": "QkKwrnjI",
       "mandante": "Atlético-MG",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 28,
       "data": "20.09.2026 17:00",
       "data_partida": "20.09.2026 17:00",
@@ -23569,6 +23683,25 @@ window.DADOS_BR = {
       "match_id": "dASMoUjg",
       "mandante": "Corinthians",
       "visitante": "Fluminense",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GGUgrep1",
+      "mandante": "Flamengo",
+      "visitante": "Red Bull Bragantino",
       "rodada": 28,
       "data": "20.09.2026 17:00",
       "data_partida": "20.09.2026 17:00",
@@ -23606,7 +23739,7 @@ window.DADOS_BR = {
     {
       "match_id": "4zWUq8L5",
       "mandante": "Mirassol",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 28,
       "data": "20.09.2026 17:00",
       "data_partida": "20.09.2026 17:00",
@@ -23719,7 +23852,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "bLLlZBOp",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Vasco",
       "rodada": 29,
       "data": "07.10.2026 17:00",
@@ -23738,7 +23871,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "f75igXFG",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Mirassol",
       "rodada": 29,
       "data": "07.10.2026 17:00",
@@ -23853,7 +23986,7 @@ window.DADOS_BR = {
     {
       "match_id": "QRDzcFGi",
       "mandante": "Santos",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 29,
       "data": "07.10.2026 17:00",
       "data_partida": "07.10.2026 17:00",
@@ -23872,7 +24005,7 @@ window.DADOS_BR = {
     {
       "match_id": "YDhJ7WU9",
       "mandante": "Vitória",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 29,
       "data": "07.10.2026 17:00",
       "data_partida": "07.10.2026 17:00",
@@ -23928,7 +24061,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "vXrY11bl",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Cruzeiro",
       "rodada": 30,
       "data": "11.10.2026 17:00",
@@ -23947,7 +24080,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "EkcGEvrf",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Athletico-PR",
       "rodada": 30,
       "data": "11.10.2026 17:00",
@@ -23967,7 +24100,7 @@ window.DADOS_BR = {
     {
       "match_id": "OKIyMMkK",
       "mandante": "Coritiba",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 30,
       "data": "11.10.2026 17:00",
       "data_partida": "11.10.2026 17:00",
@@ -23985,7 +24118,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "OrXc0lNq",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Fluminense",
       "rodada": 30,
       "data": "11.10.2026 17:00",
@@ -24117,6 +24250,44 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "QNNOuHtg",
+      "mandante": "Bahia",
+      "visitante": "Flamengo",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IsfXAdsJ",
+      "mandante": "Botafogo",
+      "visitante": "Chapecoense",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "hdprTwcm",
       "mandante": "Corinthians",
       "visitante": "Vitória",
@@ -24195,7 +24366,7 @@ window.DADOS_BR = {
     {
       "match_id": "MkHXweB5",
       "mandante": "Remo",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 31,
       "data": "18.10.2026 17:00",
       "data_partida": "18.10.2026 17:00",
@@ -24232,7 +24403,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "YBVbjP0S",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Fluminense",
       "rodada": 32,
       "data": "25.10.2026 18:00",
@@ -24289,7 +24460,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "UFKuxZuI",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Atlético-MG",
       "rodada": 32,
       "data": "25.10.2026 18:00",
@@ -24309,7 +24480,7 @@ window.DADOS_BR = {
     {
       "match_id": "lOeeW39d",
       "mandante": "Internacional",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 32,
       "data": "25.10.2026 18:00",
       "data_partida": "25.10.2026 18:00",
@@ -24347,7 +24518,7 @@ window.DADOS_BR = {
     {
       "match_id": "GCx7hfQb",
       "mandante": "Palmeiras",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 32,
       "data": "25.10.2026 18:00",
       "data_partida": "25.10.2026 18:00",
@@ -24459,6 +24630,25 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "faJea2wq",
+      "mandante": "Red Bull Bragantino",
+      "visitante": "Chapecoense",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "OGSP4OFL",
       "mandante": "Corinthians",
       "visitante": "Mirassol",
@@ -24537,7 +24727,7 @@ window.DADOS_BR = {
     {
       "match_id": "WpKydlll",
       "mandante": "Remo",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 33,
       "data": "28.10.2026 18:00",
       "data_partida": "28.10.2026 18:00",
@@ -24575,7 +24765,7 @@ window.DADOS_BR = {
     {
       "match_id": "zenVrsg2",
       "mandante": "Vasco",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 33,
       "data": "28.10.2026 18:00",
       "data_partida": "28.10.2026 18:00",
@@ -24612,7 +24802,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "ETBhh6mD",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "Atlético-MG",
       "rodada": 34,
       "data": "04.11.2026 18:00",
@@ -24631,7 +24821,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "IFcI8RXg",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Santos",
       "rodada": 34,
       "data": "04.11.2026 18:00",
@@ -24650,7 +24840,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "hhAf8IwB",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Mirassol",
       "rodada": 34,
       "data": "04.11.2026 18:00",
@@ -24688,7 +24878,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "I1IqfSI0",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Grêmio",
       "rodada": 34,
       "data": "04.11.2026 18:00",
@@ -24784,7 +24974,7 @@ window.DADOS_BR = {
     {
       "match_id": "6ezUMHh4",
       "mandante": "Corinthians",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 35,
       "data": "18.11.2026 18:00",
       "data_partida": "18.11.2026 18:00",
@@ -24840,7 +25030,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "0ID26d8N",
-      "mandante": "Bahia",
+      "mandante": "Flamengo",
       "visitante": "Athletico-PR",
       "rodada": 35,
       "data": "18.11.2026 18:00",
@@ -24898,7 +25088,7 @@ window.DADOS_BR = {
     {
       "match_id": "G82JXY6M",
       "mandante": "Remo",
-      "visitante": "Bahia",
+      "visitante": "Chapecoense",
       "rodada": 35,
       "data": "18.11.2026 18:00",
       "data_partida": "18.11.2026 18:00",
@@ -24955,7 +25145,7 @@ window.DADOS_BR = {
     {
       "match_id": "Kt9AZfxA",
       "mandante": "Vitória",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 35,
       "data": "18.11.2026 18:00",
       "data_partida": "18.11.2026 18:00",
@@ -25030,7 +25220,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "86sbQjad",
-      "mandante": "Bahia",
+      "mandante": "Botafogo",
       "visitante": "São Paulo",
       "rodada": 36,
       "data": "22.11.2026 18:00",
@@ -25049,7 +25239,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "2PQ0pCjS",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Vasco",
       "rodada": 36,
       "data": "22.11.2026 18:00",
@@ -25068,7 +25258,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "0KQ0t3kf",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Cruzeiro",
       "rodada": 36,
       "data": "22.11.2026 18:00",
@@ -25126,7 +25316,7 @@ window.DADOS_BR = {
     {
       "match_id": "faNhnYLF",
       "mandante": "Palmeiras",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 36,
       "data": "22.11.2026 18:00",
       "data_partida": "22.11.2026 18:00",
@@ -25181,8 +25371,27 @@ window.DADOS_BR = {
       }
     },
     {
+      "match_id": "lfxHxLlJ",
+      "mandante": "Botafogo",
+      "visitante": "Bahia",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "OzJP5JI5",
-      "mandante": "Bahia",
+      "mandante": "Chapecoense",
       "visitante": "Palmeiras",
       "rodada": 37,
       "data": "29.11.2026 18:00",
@@ -25221,7 +25430,7 @@ window.DADOS_BR = {
     {
       "match_id": "feR891Jt",
       "mandante": "Coritiba",
-      "visitante": "Bahia",
+      "visitante": "Flamengo",
       "rodada": 37,
       "data": "29.11.2026 18:00",
       "data_partida": "29.11.2026 18:00",
@@ -25259,7 +25468,7 @@ window.DADOS_BR = {
     {
       "match_id": "GUebkbYO",
       "mandante": "Internacional",
-      "visitante": "Bahia",
+      "visitante": "Red Bull Bragantino",
       "rodada": 37,
       "data": "29.11.2026 18:00",
       "data_partida": "29.11.2026 18:00",
@@ -25336,7 +25545,7 @@ window.DADOS_BR = {
       "match_id": "UBSNIQDi",
       "mandante": "Athletico-PR",
       "visitante": "São Paulo",
-      "rodada": 37,
+      "rodada": 38,
       "data": "02.12.2026 18:00",
       "data_partida": "02.12.2026 18:00",
       "tabela": null,
@@ -25372,7 +25581,7 @@ window.DADOS_BR = {
     },
     {
       "match_id": "Ais7Id2B",
-      "mandante": "Bahia",
+      "mandante": "Red Bull Bragantino",
       "visitante": "Fluminense",
       "rodada": 38,
       "data": "02.12.2026 18:00",
@@ -25393,6 +25602,25 @@ window.DADOS_BR = {
       "match_id": "G4C7GzXN",
       "mandante": "Cruzeiro",
       "visitante": "Internacional",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UXLX3cmI",
+      "mandante": "Flamengo",
+      "visitante": "Chapecoense",
       "rodada": 38,
       "data": "02.12.2026 18:00",
       "data_partida": "02.12.2026 18:00",
@@ -25468,7 +25696,7 @@ window.DADOS_BR = {
     {
       "match_id": "tCkjMv3n",
       "mandante": "Santos",
-      "visitante": "Bahia",
+      "visitante": "Botafogo",
       "rodada": 38,
       "data": "02.12.2026 18:00",
       "data_partida": "02.12.2026 18:00",

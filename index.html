@@ -1424,37 +1424,37 @@
   quando o Varredor atualiza os dados. Incrementar sempre que recoletar.
 -->
 <!-- ═══ LIGAS ATIVAS v2.1 (2026-05-10) — 7 ligas operáveis, agrupadas por país ═══ -->
-<script src="data/usl2026.js?v=2026-07-17-1540"></script>
+<script src="data/usl2026.js?v=2026-07-17-1830"></script>
 <!-- memoria_qualitativa.js removido em v4.0 (2026-06-28): fonte defasada substituída por MEMORIA_DNA (fonte única).
      Arquivo em si (5.201 linhas órfãs) e o bloco morto que o consumia foram apagados em 2026-07-07. -->
-<script src="data/argentina2026.js?v=2026-07-17-1540"></script>
-<script src="data/mls2026.js?v=2026-07-17-1540"></script>
-<script src="data/brasileirao2026.js?v=2026-07-17-1540"></script>
-<script src="data/bundesliga2026.js?v=2026-07-17-1540"></script>
-<script src="data/argentina_b2026.js?v=2026-07-17-1540"></script>
-<script src="data/brasileiraoB2026.js?v=2026-07-17-1540"></script>
+<script src="data/argentina2026.js?v=2026-07-17-1830"></script>
+<script src="data/mls2026.js?v=2026-07-17-1830"></script>
+<script src="data/brasileirao2026.js?v=2026-07-17-1830"></script>
+<script src="data/bundesliga2026.js?v=2026-07-17-1830"></script>
+<script src="data/argentina_b2026.js?v=2026-07-17-1830"></script>
+<script src="data/brasileiraoB2026.js?v=2026-07-17-1830"></script>
 <!-- ═══ LIGAS ASIÁTICAS REMOVIDAS — 2026-05-25 (J1, J2_J3, CHN_SUP, CHN_1 banidas por falta de padrão estatístico) ═══ -->
 <!-- Arquivos movidos para data/_aposentadas/ — manter histórico mas fora do app -->
 <!-- ═══ LIGAS REATIVADAS — 2026-05-20 (CHI, ECU) ═══ -->
-<script src="data/chile2026.js?v=2026-07-17-1540"></script>         <!-- CHI Primera División -->
-<script src="data/equador2026.js?v=2026-07-17-1540"></script>       <!-- ECU Liga Pro -->
+<script src="data/chile2026.js?v=2026-07-17-1830"></script>         <!-- CHI Primera División -->
+<script src="data/equador2026.js?v=2026-07-17-1830"></script>       <!-- ECU Liga Pro -->
 <!-- ═══ LIGAS AINDA DESATIVADAS — descomente para reabilitar ═══
-<script src="data/aleague2026.js?v=2026-07-17-1540"></script>      ALM (temporada finalizando)
-<script src="data/metropolitana2026.js?v=2026-07-17-1540"></script> ARG_M (Primera B Metro — fora por decisão)
-<script src="data/chinatwo2026.js?v=2026-07-17-1540"></script>      CHN_2
-<script src="data/j2league2026.js?v=2026-07-17-1540"></script>      J2
+<script src="data/aleague2026.js?v=2026-07-17-1830"></script>      ALM (temporada finalizando)
+<script src="data/metropolitana2026.js?v=2026-07-17-1830"></script> ARG_M (Primera B Metro — fora por decisão)
+<script src="data/chinatwo2026.js?v=2026-07-17-1830"></script>      CHN_2
+<script src="data/j2league2026.js?v=2026-07-17-1830"></script>      J2
 ═══════════════════════════════════════════════════════════════ -->
-<script src="data/dna_escoteiro.js?v=2026-07-17-1540"></script>
-<script src="data/escoteiro_BR.js?v=2026-07-17-1540"></script>
-<script src="data/memoria_dna.js?v=2026-07-17-1540"></script>
+<script src="data/dna_escoteiro.js?v=2026-07-17-1830"></script>
+<script src="data/escoteiro_BR.js?v=2026-07-17-1830"></script>
+<script src="data/memoria_dna.js?v=2026-07-17-1830"></script>
 <!-- PATCH J1 removido em 2026-05-15: arquivo patch_j1_aplicar.js inexistente
      (causava 404 ao carregar). Calibração da J1 agora está consolidada em
      LIGA_DNA + FAV_DOMINANCE (motor v3.1) — não precisa de patch externo. -->
-<script src="data/normalizador_perfis.js?v=2026-07-17-1540"></script>
-<script src="data/perfis_br2026.js?v=2026-07-17-1540"></script>
-<script src="data/perfis_arg2026.js?v=2026-07-17-1540"></script>
-<script src="data/escudos.js?v=2026-07-17-1540"></script>
-<script src="data/escudos_hd.js?v=2026-07-17-1540"></script>
+<script src="data/normalizador_perfis.js?v=2026-07-17-1830"></script>
+<script src="data/perfis_br2026.js?v=2026-07-17-1830"></script>
+<script src="data/perfis_arg2026.js?v=2026-07-17-1830"></script>
+<script src="data/escudos.js?v=2026-07-17-1830"></script>
+<script src="data/escudos_hd.js?v=2026-07-17-1830"></script>
 <script>
   // ── DIAGNÓSTICO DE BOOT ── Loga quais datasets carregaram e quais não.
   // Executa ANTES do script principal, então capturamos o estado real de
@@ -14623,8 +14623,12 @@ function _campProxRodada(ds){
     var d0=new Date(); var hoje=d0.getFullYear()*10000+(d0.getMonth()+1)*100+d0.getDate();
     var fut=pend.filter(function(j){return dt(j)>=hoje;});
     var lista=fut.length?fut:pend;
-    lista.sort(function(a,b){return dt(a)-dt(b);});
-    return lista[0].rodada;
+    // agrupa por rodada; prefere a de data mais próxima que NÃO seja órfã (>=3 jogos = ignora adiados/makeups do FS)
+    var g={}; lista.forEach(function(j){ if(!g[j.rodada])g[j.rodada]={r:j.rodada,min:dt(j),n:0}; g[j.rodada].n++; if(dt(j)<g[j.rodada].min)g[j.rodada].min=dt(j); });
+    var arr=Object.keys(g).map(function(k){return g[k];});
+    var reais=arr.filter(function(x){return x.n>=3;});
+    var alvo=(reais.length?reais:arr).sort(function(a,b){return a.min-b.min;})[0];
+    return alvo?alvo.r:lista[0].rodada;
   }
   var rods=_campRodadas(ds);
   return rods.length?rods[rods.length-1]:null;

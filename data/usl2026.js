@@ -1,5 +1,5 @@
-// DADOS_USL — PIPELINE processado (2026-07-17T18:40)
-// Total: 374
+// DADOS_USL — PIPELINE processado (2026-07-17T21:30)
+// Total: 375
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
@@ -27084,6 +27084,25 @@ window.DADOS_USL = {
       }
     },
     {
+      "match_id": "rPNUkwbD",
+      "mandante": "Indy Eleven",
+      "visitante": "Brooklyn",
+      "rodada": 17,
+      "data": "15.09.2026 20:00",
+      "data_partida": "15.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
       "match_id": "hrRwx0R8",
       "mandante": "Hartford Athletic",
       "visitante": "Sporting Jax",
@@ -27296,7 +27315,7 @@ window.DADOS_USL = {
       "match_id": "YLrUr8vg",
       "mandante": "Indy Eleven",
       "visitante": "Oakland Roots",
-      "rodada": 17,
+      "rodada": 18,
       "data": "20.09.2026 18:00",
       "data_partida": "20.09.2026 18:00",
       "tabela": null,
@@ -27524,7 +27543,7 @@ window.DADOS_USL = {
       "match_id": "OlS94t7T",
       "mandante": "Oakland Roots",
       "visitante": "Phoenix Rising",
-      "rodada": 18,
+      "rodada": 19,
       "data": "26.09.2026 23:00",
       "data_partida": "26.09.2026 23:00",
       "tabela": null,
@@ -27752,7 +27771,7 @@ window.DADOS_USL = {
       "match_id": "bRGV9d06",
       "mandante": "Lexington",
       "visitante": "El Paso",
-      "rodada": 19,
+      "rodada": 20,
       "data": "03.10.2026 20:00",
       "data_partida": "03.10.2026 20:00",
       "tabela": null,
