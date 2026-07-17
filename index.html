@@ -14303,7 +14303,16 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 <!-- eds-campeonato-js -->
 <script>
 var _campRodadaSel = null;
+var _campDataSel = null;       // data selecionada (DD.MM.AAAA) p/ analisar o "card do dia"
 var _campModoTabela = 'geral'; // 'geral' | 'casa' | 'fora'
+// chave de data DD.MM.AAAA de um jogo
+function _campDkey(j){var m=String(j.data||'').match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);return m?(m[1].length<2?'0':'')+m[1]+'.'+(m[2].length<2?'0':'')+m[2]+'.'+m[3]:null;}
+// datas (de hoje em diante) que têm jogos A JOGAR, ordenadas
+function _campDatas(ds){
+  var d0=new Date(); var hojeK=(''+d0.getFullYear())+String(d0.getMonth()+1).padStart(2,'0')+String(d0.getDate()).padStart(2,'0');
+  var set={}; (ds&&ds.jogos||[]).forEach(function(j){ if(j.placar&&j.placar.m!=null)return; var k=_campDkey(j); if(!k)return; var m=k.match(/(\d{2})\.(\d{2})\.(\d{4})/); var srt=m[3]+m[2]+m[1]; if(srt>=hojeK) set[k]=srt; });
+  return Object.keys(set).sort(function(a,b){return set[a]<set[b]?-1:1;});
+}
 function _escFb(img){ if(img) img.style.display='none'; }
 function _campEscudo(t){
   var u=(window.ESCUDOS||{})[t];
@@ -14680,8 +14689,21 @@ function renderCampeonato(){
   var optRods=rods.map(function(r){return '<option value="'+r+'"'+(r===_campRodadaSel?' selected':'')+'>Rodada '+r+'</option>';}).join('');
   var jogosRod=(ds.jogos||[]).filter(function(j){return j.rodada===_campRodadaSel;});
   var listaJogos=jogosRod.map(_campJogoRow).join('');
+  // ── Por Data (card do dia) ──
+  var datas=_campDatas(ds);
+  if(_campDataSel==null || datas.indexOf(_campDataSel)<0) _campDataSel=datas[0]||null;
+  var _d0=new Date(); var hojeDk=String(_d0.getDate()).padStart(2,'0')+'.'+String(_d0.getMonth()+1).padStart(2,'0')+'.'+_d0.getFullYear();
+  var optDatas=datas.map(function(dk){return '<option value="'+dk+'"'+(dk===_campDataSel?' selected':'')+'>'+dk.slice(0,5)+(dk===hojeDk?' (hoje)':'')+'</option>';}).join('');
+  var jogosData=_campDataSel?(ds.jogos||[]).filter(function(j){return _campDkey(j)===_campDataSel && (!j.placar||j.placar.m==null);}).sort(function(a,b){return String(a.data).localeCompare(String(b.data));}):[];
+  var listaData=jogosData.map(_campJogoRow).join('');
+  var dateRow = datas.length ? ('<div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:1.3rem 0 .5rem">'
+      +'<span style="font-weight:800;color:var(--text)">🗓️ Por Data:</span>'
+      +'<select id="camp-sel-data" onchange="_campTrocaData(this.value)" style="background:rgba(0,0,0,0.35);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:8px;font-weight:700;cursor:pointer">'+optDatas+'</select>'
+      +'<button onclick="analisarDataCampeonato()" style="background:linear-gradient(135deg,var(--green),var(--green2));border:none;color:#04140a;padding:.55rem 1.1rem;border-radius:8px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(52,211,103,0.35)">🗓️ Analisar Data ('+jogosData.length+')</button>'
+      +'<span style="font-size:.72rem;color:var(--muted)">só os jogos do dia — mistura rodadas/makeups, igual o "Hoje"</span>'
+    +'</div><div class="jogos-list" style="margin-bottom:.6rem">'+listaData+'</div>') : '';
 
-  box.innerHTML=toggModo+htmlTab
+  box.innerHTML=toggModo+htmlTab+dateRow
     +'<div style="display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:1.3rem 0 .7rem">'
       +'<span style="font-weight:800;color:var(--text)">📅 Rodada:</span>'
       +'<select id="camp-sel-rodada" onchange="_campTrocaRodada(this.value)" style="background:rgba(0,0,0,0.35);border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:8px;font-weight:700;cursor:pointer">'+optRods+'</select>'
@@ -14693,13 +14715,10 @@ function renderCampeonato(){
 function _campTrocaRodada(v){ _campRodadaSel=Number(v); renderCampeonato(); }
 function _campTrocaModo(m){ _campModoTabela=m; renderCampeonato(); }
 
-function analisarRodadaCampeonato(){
+// Núcleo compartilhado: injeta os jogos no motor (+ Cisne) e renderiza a projeção rápida.
+function _campAnalisar(jogos, rotulo){
   var alvo=document.getElementById('camp-analise'); if(!alvo) return;
-  var ds=_campDados(); if(!ds) return;
-  var jogos=(ds.jogos||[]).filter(function(j){return j.rodada===_campRodadaSel;});
-  if(!jogos.length){ alvo.innerHTML='<div style="color:var(--muted);padding:.8rem">Sem jogos nesta rodada.</div>'; return; }
-
-  // ── INJETA a rodada no motor (função "Adicionar Jogos" automática) ──
+  if(!jogos.length){ alvo.innerHTML='<div style="color:var(--muted);padding:.8rem">Sem jogos ('+rotulo+').</div>'; return; }
   // Popula jogosFuturos (lido por TOP3, Bala, Filtro OURO, Cisne, Teacher, Múltiplas...)
   var fixtures=jogos.map(function(j){
     var o={m:j.mandante,v:j.visitante};
@@ -14710,11 +14729,9 @@ function analisarRodadaCampeonato(){
   try{
     if(typeof jogosFuturos!=='undefined'){ jogosFuturos.length=0; Array.prototype.push.apply(jogosFuturos, fixtures); }
     localStorage.setItem('sniper_rodada_'+LIGA_ATUAL, JSON.stringify(fixtures));
-    // alimenta o Cisne Negro (usa storage próprio eds_cisne_cards, não lê jogosFuturos direto)
     if(typeof _sincronizarCisneComRodada==='function') _sincronizarCisneComRodada(LIGA_ATUAL);
-  }catch(e){ console.error('[injetar rodada]', e); }
-
-  alvo.innerHTML='<div style="padding:.8rem;color:var(--green)">⏳ Motor analisando '+jogos.length+' jogos da rodada '+_campRodadaSel+'...</div>';
+  }catch(e){ console.error('[injetar]', e); }
+  alvo.innerHTML='<div style="padding:.8rem;color:var(--green)">⏳ Motor analisando '+jogos.length+' jogos ('+rotulo+')...</div>';
   setTimeout(function(){
     var cards=jogos.map(function(j){
       try{
@@ -14722,8 +14739,9 @@ function analisarRodadaCampeonato(){
         if(!p) throw new Error('sem projeção');
         var reis=p.reisDosCantosData||{}, sni=p.tiroSniperData||{}, bala=p.balaDePrataData;
         var sniCor=sni.corFT||'var(--muted)';
+        var hora=(String(j.data||'').match(/(\d{1,2}:\d{2})/)||[])[1]||'';
         return '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.9rem 1rem;backdrop-filter:blur(9px)">'
-          +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem"><span style="font-weight:700;color:var(--text)">'+_campEscudo(j.mandante)+j.mandante+' <span style="color:var(--muted)">x</span> '+_campEscudo(j.visitante)+j.visitante+'</span><span style="font-size:.72rem;color:var(--muted)">conf '+(p.confFT!=null?Math.round(p.confFT):'?')+'%</span></div>'
+          +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem"><span style="font-weight:700;color:var(--text)">'+_campEscudo(j.mandante)+j.mandante+' <span style="color:var(--muted)">x</span> '+_campEscudo(j.visitante)+j.visitante+'</span><span style="font-size:.72rem;color:var(--muted)">'+(hora?hora+' · ':'')+'conf '+(p.confFT!=null?Math.round(p.confFT):'?')+'%</span></div>'
           +'<div style="display:flex;gap:.5rem;flex-wrap:wrap;font-size:.78rem">'
           +'<span style="background:rgba(52,211,103,0.1);border:1px solid rgba(52,211,103,0.3);color:var(--green);padding:.2rem .5rem;border-radius:6px;font-weight:700">Proj FT: '+(p.expTotalFT!=null?p.expTotalFT.toFixed(1):'?')+' cantos</span>'
           +'<span style="background:'+sniCor+'22;border:1px solid '+sniCor+'55;color:'+sniCor+';padding:.2rem .5rem;border-radius:6px;font-weight:700">🎯 Sniper: '+(sni.ft||'—')+'</span>'
@@ -14736,12 +14754,16 @@ function analisarRodadaCampeonato(){
     }).join('');
     var _jmp=function(id,lb){return '<button onclick="showView(\''+id+'\')" style="background:rgba(52,211,103,0.12);border:1px solid rgba(52,211,103,0.4);color:var(--green);padding:.32rem .65rem;border-radius:6px;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap">'+lb+'</button>';};
     var banner='<div style="padding:.85rem 1rem;border-radius:10px;background:rgba(52,211,103,0.1);border:1px solid rgba(52,211,103,0.35);margin-bottom:.9rem">'
-      +'<div style="color:var(--green);font-weight:800">✅ Rodada '+_campRodadaSel+' injetada no motor — '+jogos.length+' jogos adicionados</div>'
-      +'<div style="color:var(--muted);font-size:.8rem;margin:.25rem 0 .55rem">Todas as abas de análise já operam nesta rodada — sem adicionar na mão. Abra:</div>'
+      +'<div style="color:var(--green);font-weight:800">✅ '+rotulo+' injetada no motor — '+jogos.length+' jogos</div>'
+      +'<div style="color:var(--muted);font-size:.8rem;margin:.25rem 0 .55rem">Todas as abas de análise já operam nestes jogos — sem adicionar na mão. Abra:</div>'
       +'<div style="display:flex;gap:.4rem;flex-wrap:wrap">'+_jmp('rodada','📅 Próximos Jogos')+_jmp('top3','🏆 TOP 3')+_jmp('filtro-ouro','🥇 Filtro OURO')+_jmp('ouro','🐺 Bala de Prata')+_jmp('cisne-negro','🦢 Cisne')+_jmp('vencedor-cantos','🏆 Vencedor')+_jmp('multiplas-elite','🏆 Múltiplas Elite')+'</div></div>';
-    alvo.innerHTML=banner+'<div style="font-weight:800;color:var(--text);margin:.4rem 0 .6rem">🔬 Projeção rápida da Rodada '+_campRodadaSel+'</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.7rem">'+cards+'</div>';
+    alvo.innerHTML=banner+'<div style="font-weight:800;color:var(--text);margin:.4rem 0 .6rem">🔬 Projeção rápida ('+rotulo+')</div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.7rem">'+cards+'</div>';
   }, 30);
 }
+function analisarRodadaCampeonato(){ var ds=_campDados(); if(!ds) return; _campAnalisar((ds.jogos||[]).filter(function(j){return j.rodada===_campRodadaSel;}), 'Rodada '+_campRodadaSel); }
+// "Card do dia": só os jogos A JOGAR da data selecionada (mistura rodadas/makeups, igual o "Hoje" do FlashScore)
+function analisarDataCampeonato(){ var ds=_campDados(); if(!ds) return; _campAnalisar((ds.jogos||[]).filter(function(j){return _campDkey(j)===_campDataSel && (!j.placar||j.placar.m==null);}).sort(function(a,b){return String(a.data).localeCompare(String(b.data));}), 'Dia '+(_campDataSel||'').slice(0,5)); }
+function _campTrocaData(v){ _campDataSel=v; analisarDataCampeonato(); }
 </script>
 <!-- /eds-campeonato-js -->
 </body>
