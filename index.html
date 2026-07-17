@@ -1277,7 +1277,9 @@
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <button id="btn-ler-pinnacle" onclick="lerOddsPinnacle()" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);border:none;color:#1a1200;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🔎 Ler odds do print</button>
-        <button onclick="limparPinnacle()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpa prints, odds e resultado">🗑️ Limpar</button>
+        <button onclick="registrarRodadaPinnacle()" style="background:linear-gradient(135deg,rgba(52,211,103,0.25),rgba(34,197,94,0.15));color:var(--green);border:1px solid var(--green);padding:.65rem 1.1rem;border-radius:8px;font-weight:800;font-size:.82rem;cursor:pointer" title="Salva o retrato pré-jogo (nossa leitura × Pinnacle) no ledger para comparar depois do resultado">📌 Registrar rodada</button>
+        <button onclick="exportarLedgerPinnacle()" style="background:transparent;color:var(--muted);border:1px solid var(--border);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Baixa o ledger completo em JSON (backup)">📥 Ledger</button>
+        <button onclick="limparPinnacle()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpa prints, odds e resultado (NÃO apaga o ledger)">🗑️ Limpar</button>
       </div>
     </div>
     <div id="pinnacle-drop" onclick="document.getElementById('pinnacle-file').click()" style="border:2px dashed var(--border);border-radius:12px;padding:1.4rem;text-align:center;color:var(--muted);font-size:.85rem;cursor:pointer;margin-bottom:1rem;background:var(--bg3);transition:border-color .2s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
@@ -14575,9 +14577,41 @@ function renderPinnacle(){
 
 function limparPinnacle(){
   try{ localStorage.removeItem('eds_pinnacle_'+LIGA_ATUAL+'_'+new Date().toISOString().slice(0,10)); }catch(e){}
-  _pinnacleState={ imgs:[], odds:null, resultados:null, loading:false };
+  _pinnacleState={ imgs:[], odds:null, resultados:null, loading:false, ligaDetectada:null };
   const s=document.getElementById('pinnacle-status'); if(s)s.innerHTML='';
   renderPinnacle();
+}
+
+// ── LEDGER — retrato pré-jogo (nossa leitura × Pinnacle) p/ liquidar depois do resultado (base da #2) ──
+function _ledgerLer(){ try{ return JSON.parse(localStorage.getItem('eds_pinnacle_ledger')||'[]'); }catch(e){ return []; } }
+function registrarRodadaPinnacle(){
+  const rs=(_pinnacleState.resultados||[]).filter(r=>r.best&&!r.semMatch&&!r.semProj);
+  if(!rs.length){ alert('Leia um print (com jogos reconhecidos) antes de registrar.'); return; }
+  const liga=_pinnacleState.ligaDetectada||'?';
+  const dia=new Date().toISOString().slice(0,10);
+  const oddsByJogo={}; (_pinnacleState.odds||[]).forEach((o,i)=>{ const r=_pinnacleState.resultados[i]; if(r&&r.jogo) oddsByJogo[r.jogo]=o; });
+  const novas=rs.map(r=>({
+    reg_ts:new Date().toISOString(), reg_dia:dia, liga, jogo:r.jogo,
+    favorito:r.favorito, diff:r.diff, xTotal:r.lamT, sde:r.sde, casam:!!r.casam,
+    rec:{mkt:r.best.mkt,lado:r.best.lado,rot:r.best.rot,linha:r.best.linha,odd:r.best.odd,pB:r.best.pB,fair:r.best.fair,ev:+(+r.best.ev).toFixed(4),flag:r.flag},
+    mercado:oddsByJogo[r.jogo]||null,   // odds cruas p/ re-avaliar qualquer mercado depois
+    resultado:null                       // liquidado quando o placar de cantos chegar
+  }));
+  const chave=e=>e.reg_dia+'|'+e.liga+'|'+e.jogo;
+  const cn=new Set(novas.map(chave));
+  let led=_ledgerLer().filter(e=>!cn.has(chave(e)));  // dedup: mesma rodada/dia sobrescreve
+  led.push(...novas);
+  try{ localStorage.setItem('eds_pinnacle_ledger',JSON.stringify(led)); }catch(e){ alert('Falha ao salvar o ledger (armazenamento cheio).'); return; }
+  const s=document.getElementById('pinnacle-status');
+  if(s) s.innerHTML='<div style="padding:.7rem 1rem;background:rgba(52,211,103,0.10);border-left:3px solid var(--green);border-radius:8px;color:var(--text);font-size:.82rem">📌 <strong>'+novas.length+' picks registrados no ledger</strong> ('+liga+' · '+dia+'). Total no histórico: <strong>'+led.length+'</strong>. Quando os resultados da rodada chegarem, a auditoria liquida e mede <em>nós × Pinnacle</em> por liga.</div>';
+}
+function exportarLedgerPinnacle(){
+  const led=_ledgerLer();
+  if(!led.length){ alert('Ledger vazio — registre uma rodada primeiro.'); return; }
+  const blob=new Blob([JSON.stringify(led,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='pinnacle_ledger_'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
 }
 
 function _campProxRodada(ds){
