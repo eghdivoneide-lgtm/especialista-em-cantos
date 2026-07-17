@@ -1267,6 +1267,29 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════════════
+       PINNACLE — Odds reais de escanteios + EV (Vision + Skellam/Poisson)
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="view-pinnacle" class="view">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.2rem">
+      <div>
+        <div class="section-title" style="margin:0;background:linear-gradient(135deg,#f59e0b,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🎯 Pinnacle — Value de Escanteios</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Cole o print do mercado de cantos (Pinnacle) da liga ativa. A IA lê as odds; o motor calcula o EV por <strong>Skellam</strong> (handicap) + <strong>Poisson</strong> (over/under) e indica onde entrar — <strong>a favor</strong> ou <strong>contra</strong>.</div>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button id="btn-ler-pinnacle" onclick="lerOddsPinnacle()" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);border:none;color:#1a1200;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(245,158,11,0.3);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🔎 Ler odds do print</button>
+        <button onclick="limparPinnacle()" style="background:transparent;color:var(--red);border:1px solid var(--red);padding:.65rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer" title="Limpa prints, odds e resultado">🗑️ Limpar</button>
+      </div>
+    </div>
+    <div id="pinnacle-drop" onclick="document.getElementById('pinnacle-file').click()" style="border:2px dashed var(--border);border-radius:12px;padding:1.4rem;text-align:center;color:var(--muted);font-size:.85rem;cursor:pointer;margin-bottom:1rem;background:var(--bg3);transition:border-color .2s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
+      📸 Clique para anexar ou <strong>Ctrl+V</strong> pra colar o print da aba <strong>ESCANTEIOS</strong> — liga ativa: <strong style="color:var(--gold)" id="pinnacle-liga">—</strong>
+      <input type="file" id="pinnacle-file" accept="image/*" multiple style="display:none" onchange="pinnacleAddImgs(event.target.files); event.target.value='';">
+    </div>
+    <div id="pinnacle-thumbs" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem"></div>
+    <div id="pinnacle-status"></div>
+    <div id="pinnacle-resultado"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
        AUDITORIA — Memória institucional cross-liga
   ══════════════════════════════════════════════════════════════ -->
   <div id="view-auditoria" class="view">
@@ -4738,6 +4761,7 @@ const VIEW_TO_GRUPO = {
   'apostas':         'operacao',
   'multiplas-elite': 'operacao',
   'multiplas-argentina': 'operacao',
+  'pinnacle':        'operacao',
   'auditoria':       'auditoria'
 };
 
@@ -4772,7 +4796,9 @@ const SUBNAV_BY_GRUPO = {
     { id: 'multiplas-elite', label: '🏆 Múltiplas Elite',
       style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18),rgba(253,230,138,0.12));border-color:var(--gold);color:var(--gold);font-weight:800;' },
     { id: 'multiplas-argentina', label: '🇦🇷 Múltipla Argentina',
-      style: 'background:linear-gradient(135deg,rgba(116,172,223,0.22),rgba(52,211,103,0.12));border-color:rgba(116,172,223,0.55);color:#9cc7ec;font-weight:800;' }
+      style: 'background:linear-gradient(135deg,rgba(116,172,223,0.22),rgba(52,211,103,0.12));border-color:rgba(116,172,223,0.55);color:#9cc7ec;font-weight:800;' },
+    { id: 'pinnacle', label: '🎯 Pinnacle',
+      style: 'background:linear-gradient(135deg,rgba(245,158,11,0.25),rgba(251,191,36,0.18));border-color:var(--gold);color:var(--gold);font-weight:800;' }
   ],
   auditoria: [
     { id: 'auditoria', label: '🔍 Auditoria Cross-Liga',
@@ -4838,6 +4864,7 @@ function showView(id) {
   if (id==='filtro-ouro') renderFiltroOuro(); // por liga · entradas refinadas
   if (id==='multiplas-elite') renderMultiplasElite(); // curadoria determinística do motor (v2.1)
   if (id==='multiplas-argentina') renderMultiplaArgentina(); // só ARG/ARG_B (v1.0)
+  if (id==='pinnacle') renderPinnacle(); // odds reais + EV (Vision + Skellam/Poisson)
   if (id==='auditoria') renderAuditoria(); // cross-liga · não depende de LIGA_ATUAL
 }
 
@@ -14340,6 +14367,177 @@ function _campRodadas(ds){
   var s={}; (ds.jogos||[]).forEach(function(j){ if(j.rodada!=null) s[j.rodada]=1; });
   return Object.keys(s).map(Number).sort(function(a,b){return a-b;});
 }
+// ══════════════════════════════════════════════════════════════════
+//  PINNACLE — odds reais de escanteios + EV. v1.0 (2026-07-17).
+//  A IA (Vision) só LÊ o print → odds. O valor é 100% determinístico:
+//  handicap por Skellam (diferença de 2 Poissons), over/under por Poisson,
+//  usando a projeção do motor (expHomeFT/expAwayFT/expTotalFT).
+//  Guardião SHARP: gap absurdo app×mercado = suspeita do MODELO, não value.
+// ══════════════════════════════════════════════════════════════════
+let _pinnacleState = { imgs: [], odds: null, resultados: null, loading: false };
+
+function pinnacleAddImgs(files){
+  Array.from(files||[]).forEach(f=>{
+    if(!f.type||!f.type.startsWith('image/'))return;
+    if(_pinnacleState.imgs.length>=6)return;
+    const r=new FileReader();
+    r.onload=e=>{ _pinnacleState.imgs.push({base64:e.target.result.split(',')[1],mediaType:f.type,dataUrl:e.target.result}); _pinnacleRenderThumbs(); };
+    r.readAsDataURL(f);
+  });
+}
+function _pinnacleRenderThumbs(){
+  const c=document.getElementById('pinnacle-thumbs'); if(!c)return;
+  c.innerHTML=_pinnacleState.imgs.map((img,i)=>'<div style="position:relative"><img src="'+img.dataUrl+'" style="height:64px;border-radius:6px;border:1px solid var(--border)"><button onclick="_pinnacleState.imgs.splice('+i+',1);_pinnacleRenderThumbs()" style="position:absolute;top:-6px;right:-6px;background:var(--red);color:#fff;border:none;border-radius:50%;width:18px;height:18px;cursor:pointer;font-size:.7rem;line-height:1">✕</button></div>').join('');
+}
+document.addEventListener('paste', e=>{
+  const v=document.getElementById('view-pinnacle'); if(!v||!v.classList.contains('active'))return;
+  const items=(e.clipboardData||{}).items||[];
+  for(const it of items){ if(it.type&&it.type.startsWith('image/')){ const f=it.getAsFile(); if(f) pinnacleAddImgs([f]); } }
+});
+
+// ── Matemática do valor ──
+function _poisPMF(k,lam){ if(k<0||lam<=0)return 0; let lp=-lam+k*Math.log(lam); for(let i=2;i<=k;i++)lp-=Math.log(i); return Math.exp(lp); }
+// Handicap asiático genérico: d = (golsTime - golsAdv) + linha. win d>0, push d==0, lose d<0.
+function _probHandicap(lamTime,lamAdv,linha){
+  const N=45; let win=0,push=0,lose=0;
+  for(let a=0;a<=N;a++){ const pa=_poisPMF(a,lamAdv); if(pa<1e-10&&a>lamAdv)break;
+    for(let h=0;h<=N;h++){ const ph=_poisPMF(h,lamTime); if(ph<1e-10&&h>lamTime)break;
+      const d=(h-a)+linha, p=pa*ph;
+      if(d>1e-9)win+=p; else if(d<-1e-9)lose+=p; else push+=p;
+    } }
+  return {win,push,lose};
+}
+function _probOU(lamT,linha,over){
+  const N=70; let ac=0,ig=0,ab=0;
+  for(let t=0;t<=N;t++){ const pt=_poisPMF(t,lamT); if(pt<1e-10&&t>lamT)break; const d=t-linha; if(d>1e-9)ac+=pt; else if(d<-1e-9)ab+=pt; else ig+=pt; }
+  return over?{win:ac,push:ig,lose:ab}:{win:ab,push:ig,lose:ac};
+}
+function _evDe(pr,odd){ if(!odd||odd<=1||!pr)return null; return pr.win*(odd-1) - pr.lose; }
+function _kellyPin(pWin,odd){ const b=odd-1; if(b<=0)return 0; return (pWin*b-(1-pWin))/b; }
+
+// Fuzzy nome do print → time do app (liga ativa)
+function _pinMatch(raw){
+  const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
+  const times=(DADOS_2026.times||[]).map(t=>typeof t==='string'?t:t.nome);
+  const n=norm(raw); if(!n)return null;
+  let h=times.find(t=>norm(t)===n); if(h)return h;
+  const cand=times.filter(t=>{const tn=norm(t); return tn.length>=4&&n.length>=4&&(tn.includes(n)||n.includes(tn));});
+  if(cand.length){ cand.sort((a,b)=>Math.abs(norm(a).length-n.length)-Math.abs(norm(b).length-n.length)); return cand[0]; }
+  return null;
+}
+
+function _pinnacleComputar(){
+  const odds=_pinnacleState.odds||[];
+  const thr=(typeof getLigaDNA==='function'&&getLigaDNA(LIGA_ATUAL))?getLigaDNA(LIGA_ATUAL).cisneThreshold:2.0;
+  const res=[];
+  odds.forEach(o=>{
+    const m=_pinMatch(o.casa), v=_pinMatch(o.fora);
+    if(!m||!v){ res.push({casa:o.casa,fora:o.fora,semMatch:true}); return; }
+    let p; try{ p=projecaoJogo(m,v); }catch(e){ p=null; }
+    if(!p){ res.push({casa:o.casa,fora:o.fora,jogo:m+' × '+v,semProj:true}); return; }
+    const lamH=+(p.expHomeFT||0), lamA=+(p.expAwayFT||0), lamT=+(p.expTotalFT|| (lamH+lamA));
+    const diff=lamH-lamA, favHome=lamH>lamA;
+    // casam (Cisne+Enigma) — só marcador de confluência
+    let sde=null; try{ const en=calcSDE_ENIGMA(m,v); if(en&&en.valido!==false) sde=en.sde; }catch(e){}
+    const casam = Math.abs(diff)>=thr && sde!=null && sde>=65 && favHome;
+    // candidatos de aposta
+    const cands=[];
+    if(o.hcp_linha!=null){
+      if(o.hcp_odd_casa){ const pr=_probHandicap(lamH,lamA,+o.hcp_linha); cands.push({mkt:'HDP',lado:'casa',rot:m,linha:(+o.hcp_linha),odd:+o.hcp_odd_casa,pr}); }
+      if(o.hcp_odd_fora){ const pr=_probHandicap(lamA,lamH,-o.hcp_linha); cands.push({mkt:'HDP',lado:'fora',rot:v,linha:(-o.hcp_linha),odd:+o.hcp_odd_fora,pr}); }
+    }
+    if(o.ou_linha!=null){
+      if(o.ou_over){ const pr=_probOU(lamT,+o.ou_linha,true); cands.push({mkt:'OU',lado:'over',rot:'Mais de '+o.ou_linha,linha:+o.ou_linha,odd:+o.ou_over,pr}); }
+      if(o.ou_under){ const pr=_probOU(lamT,+o.ou_linha,false); cands.push({mkt:'OU',lado:'under',rot:'Menos de '+o.ou_linha,linha:+o.ou_linha,odd:+o.ou_under,pr}); }
+    }
+    cands.forEach(c=>{ c.ev=_evDe(c.pr,c.odd); c.kelly=_kellyPin(c.pr.win,c.odd); });
+    const validos=cands.filter(c=>c.ev!=null).sort((a,b)=>b.ev-a.ev);
+    const best=validos[0]||null;
+    let flag='—', cor='var(--muted)';
+    if(best){
+      if(best.ev<=0.01){ flag='⚪ Sem valor'; cor='var(--muted)'; }
+      else if(best.ev<=0.12){ flag='🟢 VALOR'; cor='var(--green)'; }
+      else { flag='⚠️ Value alto — suspeite do modelo (Pinnacle é sharp)'; cor='var(--gold)'; }
+    }
+    res.push({ jogo:m+' × '+v, hora:o.hora||'', diff:+diff.toFixed(2), favorito:favHome?m:v, lamT:+lamT.toFixed(1), sde, casam, cands, best, flag, cor });
+  });
+  _pinnacleState.resultados=res;
+}
+
+async function lerOddsPinnacle(){
+  if(!scKey){ alert('⚠️ Configure a chave Anthropic no SmartCoach (⚙️) — a leitura do print usa a IA (só esse passo).'); return; }
+  if(!_pinnacleState.imgs.length){ document.getElementById('pinnacle-status').innerHTML='<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem">📸 Anexe ou cole o print do mercado de cantos primeiro.</div>'; return; }
+  if(_pinnacleState.loading)return; _pinnacleState.loading=true;
+  const btn=document.getElementById('btn-ler-pinnacle'); if(btn){btn.disabled=true;btn.textContent='⏳ IA lendo as odds...';}
+  const status=document.getElementById('pinnacle-status');
+  status.innerHTML='<div style="padding:1rem;background:var(--bg3);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.85rem">⏳ IA extraindo as odds do print...</div>';
+  try{
+    const sys='Você extrai odds de ESCANTEIOS (corners) de prints de casas de aposta. Retorne SOMENTE um array JSON válido (sem markdown, sem texto). Cada item = 1 partida com os mercados visíveis:\n[{"casa":"Time Casa","fora":"Time Fora","hora":"15:00","hcp_linha":-0.5,"hcp_odd_casa":1.925,"hcp_odd_fora":1.793,"ou_linha":8.5,"ou_over":1.934,"ou_under":1.826}]\nREGRAS: hcp_linha = handicap do time da CASA (negativo se favorito, ex -0.5,-1.0,-1.5). hcp_odd_casa = odd do handicap da casa; hcp_odd_fora = odd do lado oposto (visitante). ou_linha = linha de total de cantos (ex 8.5, 9). ou_over/ou_under = odds do Mais de/Menos de. Se um mercado não aparecer, use null nesse campo. NÃO invente odds. Números com PONTO decimal.';
+    const partes=_pinnacleState.imgs.map(img=>({type:'image',source:{type:'base64',media_type:img.mediaType,data:img.base64}}));
+    partes.push({type:'text',text:'Extraia as odds de escanteios deste(s) print(s) no schema JSON. Só o JSON.'});
+    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'x-api-key':scKey,'anthropic-version':'2023-06-01','content-type':'application/json','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:4000,system:sys,messages:[{role:'user',content:partes}]})});
+    if(!r.ok){ const e=await r.json().catch(()=>({})); throw new Error('API: '+(e.error?.message||r.status)); }
+    const data=await r.json(); const txt=data.content[0].text;
+    let odds; try{ odds=JSON.parse(txt.replace(/^```(?:json)?\s*/i,'').replace(/```\s*$/i,'').trim()); }catch(e){ throw new Error('IA não retornou JSON. Início: '+txt.slice(0,150)); }
+    if(!Array.isArray(odds)||!odds.length) throw new Error('Nenhuma odd de cantos reconhecida no print.');
+    _pinnacleState.odds=odds; _pinnacleComputar();
+    try{ localStorage.setItem('eds_pinnacle_'+LIGA_ATUAL+'_'+new Date().toISOString().slice(0,10),JSON.stringify({odds:_pinnacleState.odds})); }catch(e){}
+    _pinnacleState.imgs=[]; _pinnacleRenderThumbs();
+    renderPinnacle();
+  }catch(err){
+    status.innerHTML='<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro:</strong> '+err.message+'</div>';
+  }finally{ _pinnacleState.loading=false; if(btn){btn.disabled=false;btn.textContent='🔎 Ler odds do print';} }
+}
+
+function _pinCardMercado(c,best){
+  const isBest = best && c.mkt===best.mkt && c.lado===best.lado;
+  const evPct=(c.ev*100), evCor = c.ev>0.12?'var(--gold)':(c.ev>0.01?'var(--green)':'var(--muted)');
+  return '<td style="padding:.35rem .5rem;text-align:center;'+(isBest?'background:rgba(52,211,103,0.10);font-weight:800;border-radius:6px':'')+'">'
+    +'<div style="font-size:.72rem;color:var(--muted)">'+c.rot+'</div>'
+    +'<div style="font-weight:700">@'+c.odd.toFixed(3)+'</div>'
+    +'<div style="font-size:.72rem;color:'+evCor+';font-weight:700">EV '+(evPct>=0?'+':'')+evPct.toFixed(1)+'%</div>'
+    +'<div style="font-size:.66rem;color:var(--muted)">p '+(c.pr.win*100).toFixed(0)+'%</div></td>';
+}
+
+function renderPinnacle(){
+  const ligaEl=document.getElementById('pinnacle-liga'); if(ligaEl) ligaEl.textContent=LIGA_ATUAL;
+  _pinnacleRenderThumbs();
+  const ctr=document.getElementById('pinnacle-resultado'), status=document.getElementById('pinnacle-status');
+  if(!ctr)return;
+  if(!_pinnacleState.odds){
+    try{ const c=localStorage.getItem('eds_pinnacle_'+LIGA_ATUAL+'_'+new Date().toISOString().slice(0,10)); if(c){ _pinnacleState.odds=JSON.parse(c).odds; _pinnacleComputar(); } }catch(e){}
+  }
+  if(!_pinnacleState.resultados){
+    if(status&&!status.innerHTML.trim()) status.innerHTML='<div style="padding:1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.85rem;text-align:center">🎯 Selecione a liga (topo), cole o print da aba <strong>ESCANTEIOS</strong> da Pinnacle e clique em <strong style="color:var(--gold)">🔎 Ler odds do print</strong>. O motor calcula o EV e indica a favor/contra.</div>';
+    ctr.innerHTML=''; return;
+  }
+  const res=_pinnacleState.resultados;
+  const comValor=res.filter(r=>r.best&&r.best.ev>0.01).length;
+  if(status) status.innerHTML='<div style="padding:.7rem 1rem;background:rgba(245,158,11,0.10);border-left:3px solid var(--gold);border-radius:8px;color:var(--text);font-size:.82rem">✅ <strong>'+res.length+' jogos lidos</strong> · '+comValor+' com valor (EV+). Liga: <strong>'+LIGA_ATUAL+'</strong>. Handicap por Skellam · Over/Under por Poisson (projeção do motor).</div>';
+  const linhas=res.map(r=>{
+    if(r.semMatch) return '<tr><td style="padding:.5rem .6rem">'+r.casa+' × '+r.fora+'</td><td colspan="4" style="padding:.5rem;color:var(--muted);font-size:.78rem">⚠️ Time não reconhecido nesta liga (confira o seletor de liga)</td></tr>';
+    if(r.semProj) return '<tr><td style="padding:.5rem .6rem">'+r.jogo+'</td><td colspan="4" style="padding:.5rem;color:var(--muted);font-size:.78rem">sem projeção (dados insuficientes)</td></tr>';
+    const hcp=r.cands.filter(c=>c.mkt==='HDP'), ou=r.cands.filter(c=>c.mkt==='OU');
+    const rec = r.best ? ('<strong style="color:'+r.cor+'">'+r.flag+'</strong><br><span style="font-size:.8rem">'+(r.best.mkt==='HDP'?'Handicap ':'')+r.best.rot+' '+(r.best.linha>=0?'+':'')+(r.best.mkt==='HDP'?r.best.linha:'')+' @'+r.best.odd.toFixed(3)+(r.best.ev>0.01?(' · ¼ Kelly '+(Math.max(0,r.best.kelly)*25).toFixed(2)+'%'):'')+'</span>') : '<span style="color:var(--muted)">—</span>';
+    return '<tr style="border-bottom:1px solid var(--border)">'
+      +'<td style="padding:.5rem .6rem;font-weight:700;min-width:150px">'+(r.casam?'🎯 ':'')+r.jogo+'<div style="font-size:.68rem;color:var(--muted);font-weight:400">Δnossa '+(r.diff>=0?'+':'')+r.diff+' · xTotal '+r.lamT+(r.sde!=null?' · SDE '+r.sde:'')+'</div></td>'
+      +(hcp.length?hcp.map(c=>_pinCardMercado(c,r.best)).join(''):'<td colspan="2" style="text-align:center;color:var(--muted);font-size:.75rem">—</td>')
+      +(ou.length?ou.map(c=>_pinCardMercado(c,r.best)).join(''):'<td colspan="2" style="text-align:center;color:var(--muted);font-size:.75rem">—</td>')
+      +'<td style="padding:.5rem .6rem;min-width:160px">'+rec+'</td></tr>';
+  }).join('');
+  ctr.innerHTML='<div class="table-wrap"><table><thead><tr>'
+    +'<th>Jogo</th><th colspan="2">Handicap (casa / fora)</th><th colspan="2">Over / Under</th><th>Recomendação</th>'
+    +'</tr></thead><tbody>'+linhas+'</tbody></table></div>'
+    +'<div style="margin-top:.6rem;font-size:.72rem;color:var(--muted)">🎯 = jogo onde Cisne Negro + Enigma casam · EV = (nossa prob × odd) − 1 · ⚠️ acima de +12% quase sempre é erro do modelo (a Pinnacle erra pouco), não value.</div>';
+}
+
+function limparPinnacle(){
+  try{ localStorage.removeItem('eds_pinnacle_'+LIGA_ATUAL+'_'+new Date().toISOString().slice(0,10)); }catch(e){}
+  _pinnacleState={ imgs:[], odds:null, resultados:null, loading:false };
+  const s=document.getElementById('pinnacle-status'); if(s)s.innerHTML='';
+  renderPinnacle();
+}
+
 function _campProxRodada(ds){
   var pend=(ds.jogos||[]).filter(function(j){return (!j.placar||j.placar.m==null) && j.rodada!=null;});
   if(pend.length){
