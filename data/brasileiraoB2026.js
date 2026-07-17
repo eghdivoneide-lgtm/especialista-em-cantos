@@ -1,4 +1,4 @@
-// DADOS_BR_B — PIPELINE processado (2026-07-17T21:30)
+// DADOS_BR_B — PIPELINE processado (2026-07-17T21:38)
 // Total: 377
 
 window.DADOS_BR_B = {
@@ -21679,7 +21679,7 @@ window.DADOS_BR_B = {
       "match_id": "QFSF8Fdd",
       "mandante": "CRB",
       "visitante": "Nautico",
-      "rodada": 19,
+      "rodada": null,
       "data": "16.07.2026 20:00",
       "tabela": null,
       "cantos": {

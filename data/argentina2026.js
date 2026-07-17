@@ -1,4 +1,4 @@
-// DADOS_ARG — PIPELINE processado (2026-07-17T21:30)
+// DADOS_ARG — PIPELINE processado (2026-07-17T21:38)
 // Total: 494
 
 window.DADOS_ARG = {
@@ -42,7 +42,7 @@ window.DADOS_ARG = {
       "id": "GUwuWiwA",
       "mandante": "Instituto",
       "visitante": "Velez Sarsfield",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -204,7 +204,7 @@ window.DADOS_ARG = {
       "id": "CdXmUV7M",
       "mandante": "Union de Santa Fe",
       "visitante": "Platense",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -366,7 +366,7 @@ window.DADOS_ARG = {
       "id": "zc36HhOG",
       "mandante": "Aldosivi",
       "visitante": "Defensa y Justicia",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -528,7 +528,7 @@ window.DADOS_ARG = {
       "id": "4fCSMm0d",
       "mandante": "Central Cordoba",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -687,7 +687,7 @@ window.DADOS_ARG = {
       "id": "4AGjprbK",
       "mandante": "Banfield",
       "visitante": "Huracan",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -852,7 +852,7 @@ window.DADOS_ARG = {
       "id": "27moAAGj",
       "mandante": "Independiente",
       "visitante": "Estudiantes L.P.",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -1017,7 +1017,7 @@ window.DADOS_ARG = {
       "id": "8SIJO9Vq",
       "mandante": "San Lorenzo",
       "visitante": "Lanus",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -1179,7 +1179,7 @@ window.DADOS_ARG = {
       "id": "r3QXXD8c",
       "mandante": "Talleres Cordoba",
       "visitante": "Newells Old Boys",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -1341,7 +1341,7 @@ window.DADOS_ARG = {
       "id": "zg7MvMLs",
       "mandante": "Ind. Rivadavia",
       "visitante": "Atl. Tucuman",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -1500,7 +1500,7 @@ window.DADOS_ARG = {
       "id": "UX3Epih3",
       "mandante": "Barracas Central",
       "visitante": "River Plate",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -1662,7 +1662,7 @@ window.DADOS_ARG = {
       "id": "dnKfQM6l",
       "mandante": "Rosario Central",
       "visitante": "Belgrano",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -1824,7 +1824,7 @@ window.DADOS_ARG = {
       "id": "jmhNrVMF",
       "mandante": "Gimnasia L.P.",
       "visitante": "Racing Club",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -1988,7 +1988,7 @@ window.DADOS_ARG = {
       "id": "WOdFFWhT",
       "mandante": "Boca Juniors",
       "visitante": "Dep. Riestra",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -2152,7 +2152,7 @@ window.DADOS_ARG = {
       "id": "QRBBMv6D",
       "mandante": "Argentinos Jrs",
       "visitante": "Sarmiento Junin",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -2317,7 +2317,7 @@ window.DADOS_ARG = {
       "id": "hED3O0y1",
       "mandante": "Tigre",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 1,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -2479,7 +2479,7 @@ window.DADOS_ARG = {
       "id": "xxfXdLsQ",
       "mandante": "Platense",
       "visitante": "Instituto",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -2638,7 +2638,7 @@ window.DADOS_ARG = {
       "id": "AFoMr8T6",
       "mandante": "Velez Sarsfield",
       "visitante": "Talleres Cordoba",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -2800,7 +2800,7 @@ window.DADOS_ARG = {
       "id": "IukUtnbJ",
       "mandante": "Newells Old Boys",
       "visitante": "Independiente",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -2962,7 +2962,7 @@ window.DADOS_ARG = {
       "id": "4YbwyvL6",
       "mandante": "Gimnasia Mendoza",
       "visitante": "San Lorenzo",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -3124,7 +3124,7 @@ window.DADOS_ARG = {
       "id": "d8eVx0jf",
       "mandante": "Atl. Tucuman",
       "visitante": "Central Cordoba",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -3286,7 +3286,7 @@ window.DADOS_ARG = {
       "id": "dMz4ia5m",
       "mandante": "Huracan",
       "visitante": "Ind. Rivadavia",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -3448,7 +3448,7 @@ window.DADOS_ARG = {
       "id": "KbYDlbHP",
       "mandante": "Estudiantes L.P.",
       "visitante": "Boca Juniors",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -3607,7 +3607,7 @@ window.DADOS_ARG = {
       "id": "Odfo4xkg",
       "mandante": "River Plate",
       "visitante": "Gimnasia L.P.",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -3775,7 +3775,7 @@ window.DADOS_ARG = {
       "id": "jqdw6bKt",
       "mandante": "Racing Club",
       "visitante": "Rosario Central",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -3934,7 +3934,7 @@ window.DADOS_ARG = {
       "id": "CdDhsG9a",
       "mandante": "Aldosivi",
       "visitante": "Barracas Central",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -4096,7 +4096,7 @@ window.DADOS_ARG = {
       "id": "pr7oZHkJ",
       "mandante": "Lanus",
       "visitante": "Union de Santa Fe",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -4261,7 +4261,7 @@ window.DADOS_ARG = {
       "id": "GUJqqxum",
       "mandante": "Dep. Riestra",
       "visitante": "Defensa y Justicia",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -4423,7 +4423,7 @@ window.DADOS_ARG = {
       "id": "Q1SKmH4C",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Argentinos Jrs",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -4582,7 +4582,7 @@ window.DADOS_ARG = {
       "id": "CIQSoeZO",
       "mandante": "Belgrano",
       "visitante": "Tigre",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -4741,7 +4741,7 @@ window.DADOS_ARG = {
       "id": "4nvCkwz0",
       "mandante": "Sarmiento Junin",
       "visitante": "Banfield",
-      "rodada": 2,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -4909,7 +4909,7 @@ window.DADOS_ARG = {
       "id": "x0KKIy4n",
       "mandante": "Independiente",
       "visitante": "Velez Sarsfield",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -5071,7 +5071,7 @@ window.DADOS_ARG = {
       "id": "YRDTGFYb",
       "mandante": "Talleres Cordoba",
       "visitante": "Platense",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -5233,7 +5233,7 @@ window.DADOS_ARG = {
       "id": "Ii99fPHd",
       "mandante": "San Lorenzo",
       "visitante": "Central Cordoba",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -5395,7 +5395,7 @@ window.DADOS_ARG = {
       "id": "rajpDhkL",
       "mandante": "Atl. Tucuman",
       "visitante": "Huracan",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -5557,7 +5557,7 @@ window.DADOS_ARG = {
       "id": "nyuBbYIU",
       "mandante": "Boca Juniors",
       "visitante": "Newells Old Boys",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -5719,7 +5719,7 @@ window.DADOS_ARG = {
       "id": "8tx20F5F",
       "mandante": "Rosario Central",
       "visitante": "River Plate",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -5881,7 +5881,7 @@ window.DADOS_ARG = {
       "id": "KOmf2GJ5",
       "mandante": "Barracas Central",
       "visitante": "Dep. Riestra",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -6043,7 +6043,7 @@ window.DADOS_ARG = {
       "id": "QLj20flI",
       "mandante": "Defensa y Justicia",
       "visitante": "Estudiantes L.P.",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -6211,7 +6211,7 @@ window.DADOS_ARG = {
       "id": "AR51domp",
       "mandante": "Union de Santa Fe",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 4,
@@ -6379,7 +6379,7 @@ window.DADOS_ARG = {
       "id": "bBGtgXck",
       "mandante": "Argentinos Jrs",
       "visitante": "Belgrano",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -6535,7 +6535,7 @@ window.DADOS_ARG = {
       "id": "2uVAbgzS",
       "mandante": "Tigre",
       "visitante": "Racing Club",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -6697,7 +6697,7 @@ window.DADOS_ARG = {
       "id": "0GYg2yy3",
       "mandante": "Gimnasia L.P.",
       "visitante": "Aldosivi",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -6859,7 +6859,7 @@ window.DADOS_ARG = {
       "id": "6uCyFg3B",
       "mandante": "Instituto",
       "visitante": "Lanus",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -7021,7 +7021,7 @@ window.DADOS_ARG = {
       "id": "Mq2yFEK8",
       "mandante": "Ind. Rivadavia",
       "visitante": "Sarmiento Junin",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -7183,7 +7183,7 @@ window.DADOS_ARG = {
       "id": "fwAkiBS1",
       "mandante": "Banfield",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 3,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -7342,7 +7342,7 @@ window.DADOS_ARG = {
       "id": "l0VO5Ase",
       "mandante": "Central Cordoba",
       "visitante": "Union de Santa Fe",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -7501,7 +7501,7 @@ window.DADOS_ARG = {
       "id": "MR85ImR0",
       "mandante": "Newells Old Boys",
       "visitante": "Defensa y Justicia",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -7663,7 +7663,7 @@ window.DADOS_ARG = {
       "id": "tSg0zMnn",
       "mandante": "Aldosivi",
       "visitante": "Rosario Central",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -7825,7 +7825,7 @@ window.DADOS_ARG = {
       "id": "MmptVQA6",
       "mandante": "Racing Club",
       "visitante": "Argentinos Jrs",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -7989,7 +7989,7 @@ window.DADOS_ARG = {
       "id": "UDmlT4uJ",
       "mandante": "River Plate",
       "visitante": "Tigre",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -8153,7 +8153,7 @@ window.DADOS_ARG = {
       "id": "0YeXWntf",
       "mandante": "Belgrano",
       "visitante": "Banfield",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -8317,7 +8317,7 @@ window.DADOS_ARG = {
       "id": "E15cK9dl",
       "mandante": "Velez Sarsfield",
       "visitante": "Boca Juniors",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -8478,7 +8478,7 @@ window.DADOS_ARG = {
       "id": "UTTQPVYQ",
       "mandante": "Platense",
       "visitante": "Independiente",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -8639,7 +8639,7 @@ window.DADOS_ARG = {
       "id": "hYyG7WCr",
       "mandante": "Huracan",
       "visitante": "San Lorenzo",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -8803,7 +8803,7 @@ window.DADOS_ARG = {
       "id": "MDTW3lC7",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Instituto",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -8967,7 +8967,7 @@ window.DADOS_ARG = {
       "id": "Amk0vVmK",
       "mandante": "Sarmiento Junin",
       "visitante": "Atl. Tucuman",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -9014,7 +9014,7 @@ window.DADOS_ARG = {
       "id": "Ig2EGReD",
       "mandante": "Estudiantes L.P.",
       "visitante": "Dep. Riestra",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -9061,7 +9061,7 @@ window.DADOS_ARG = {
       "id": "xMBJRi4E",
       "mandante": "Lanus",
       "visitante": "Talleres Cordoba",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -9223,7 +9223,7 @@ window.DADOS_ARG = {
       "id": "h8hPY8Bs",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Ind. Rivadavia",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -9385,7 +9385,7 @@ window.DADOS_ARG = {
       "id": "Euh8YaHb",
       "mandante": "Barracas Central",
       "visitante": "Gimnasia L.P.",
-      "rodada": 4,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -9547,7 +9547,7 @@ window.DADOS_ARG = {
       "id": "xdpXcGpA",
       "mandante": "Argentinos Jrs",
       "visitante": "River Plate",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -9709,7 +9709,7 @@ window.DADOS_ARG = {
       "id": "UVtPaxGc",
       "mandante": "Tigre",
       "visitante": "Aldosivi",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -9871,7 +9871,7 @@ window.DADOS_ARG = {
       "id": "25QePevo",
       "mandante": "Defensa y Justicia",
       "visitante": "Velez Sarsfield",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -10033,7 +10033,7 @@ window.DADOS_ARG = {
       "id": "KKD6se0T",
       "mandante": "Union de Santa Fe",
       "visitante": "San Lorenzo",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -10195,7 +10195,7 @@ window.DADOS_ARG = {
       "id": "KMG0ufvC",
       "mandante": "Independiente",
       "visitante": "Lanus",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -10360,7 +10360,7 @@ window.DADOS_ARG = {
       "id": "YNwtdfFM",
       "mandante": "Banfield",
       "visitante": "Racing Club",
-      "rodada": 5,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -10522,7 +10522,7 @@ window.DADOS_ARG = {
       "id": "juMkow14",
       "mandante": "Talleres Cordoba",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -10681,7 +10681,7 @@ window.DADOS_ARG = {
       "id": "G2XbCFa3",
       "mandante": "Huracan",
       "visitante": "Sarmiento Junin",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -10843,7 +10843,7 @@ window.DADOS_ARG = {
       "id": "UgPBjYxp",
       "mandante": "Ind. Rivadavia",
       "visitante": "Belgrano",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -11005,7 +11005,7 @@ window.DADOS_ARG = {
       "id": "lduDlC7d",
       "mandante": "Atl. Tucuman",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 4,
@@ -11167,7 +11167,7 @@ window.DADOS_ARG = {
       "id": "A7oHWwnB",
       "mandante": "Gimnasia L.P.",
       "visitante": "Estudiantes L.P.",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -11329,7 +11329,7 @@ window.DADOS_ARG = {
       "id": "fDStmaWi",
       "mandante": "Boca Juniors",
       "visitante": "Platense",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -11491,7 +11491,7 @@ window.DADOS_ARG = {
       "id": "lz4xxZNj",
       "mandante": "Rosario Central",
       "visitante": "Barracas Central",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -11653,7 +11653,7 @@ window.DADOS_ARG = {
       "id": "OhKcqHVG",
       "mandante": "Instituto",
       "visitante": "Central Cordoba",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -11815,7 +11815,7 @@ window.DADOS_ARG = {
       "id": "IXlPUHGN",
       "mandante": "Dep. Riestra",
       "visitante": "Newells Old Boys",
-      "rodada": 6,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -11977,7 +11977,7 @@ window.DADOS_ARG = {
       "id": "xW0tPhq9",
       "mandante": "Defensa y Justicia",
       "visitante": "Belgrano",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -12142,7 +12142,7 @@ window.DADOS_ARG = {
       "id": "MNIg1ki2",
       "mandante": "Estudiantes L.P.",
       "visitante": "Sarmiento Junin",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -12304,7 +12304,7 @@ window.DADOS_ARG = {
       "id": "nT8w1tcJ",
       "mandante": "Instituto",
       "visitante": "Atl. Tucuman",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -12466,7 +12466,7 @@ window.DADOS_ARG = {
       "id": "rVSD6pTs",
       "mandante": "Boca Juniors",
       "visitante": "Racing Club",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -12628,7 +12628,7 @@ window.DADOS_ARG = {
       "id": "lAKo3BMk",
       "mandante": "Rosario Central",
       "visitante": "Talleres Cordoba",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -12790,7 +12790,7 @@ window.DADOS_ARG = {
       "id": "b7xdJNCm",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Gimnasia L.P.",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -12952,7 +12952,7 @@ window.DADOS_ARG = {
       "id": "prPF8XbS",
       "mandante": "Platense",
       "visitante": "Barracas Central",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -13114,7 +13114,7 @@ window.DADOS_ARG = {
       "id": "4pHM4Ocf",
       "mandante": "Ind. Rivadavia",
       "visitante": "Independiente",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -13273,7 +13273,7 @@ window.DADOS_ARG = {
       "id": "QJTCFuCC",
       "mandante": "Dep. Riestra",
       "visitante": "Huracan",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -13438,7 +13438,7 @@ window.DADOS_ARG = {
       "id": "YqXKDJtP",
       "mandante": "Banfield",
       "visitante": "Newells Old Boys",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -13600,7 +13600,7 @@ window.DADOS_ARG = {
       "id": "44u4H1s0",
       "mandante": "Central Cordoba",
       "visitante": "Tigre",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -13762,7 +13762,7 @@ window.DADOS_ARG = {
       "id": "vNePOqkQ",
       "mandante": "San Lorenzo",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -13924,7 +13924,7 @@ window.DADOS_ARG = {
       "id": "xIL7AgUF",
       "mandante": "Velez Sarsfield",
       "visitante": "River Plate",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -14086,7 +14086,7 @@ window.DADOS_ARG = {
       "id": "j1FU22S6",
       "mandante": "Union de Santa Fe",
       "visitante": "Aldosivi",
-      "rodada": 7,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -14248,7 +14248,7 @@ window.DADOS_ARG = {
       "id": "GnL42ylU",
       "mandante": "Platense",
       "visitante": "Defensa y Justicia",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -14407,7 +14407,7 @@ window.DADOS_ARG = {
       "id": "tfbm8uKh",
       "mandante": "San Lorenzo",
       "visitante": "Instituto",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -14566,7 +14566,7 @@ window.DADOS_ARG = {
       "id": "n7Tm6Jl5",
       "mandante": "Central Cordoba",
       "visitante": "Talleres Cordoba",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -14728,7 +14728,7 @@ window.DADOS_ARG = {
       "id": "UkovHz3N",
       "mandante": "Belgrano",
       "visitante": "Atl. Tucuman",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -14890,7 +14890,7 @@ window.DADOS_ARG = {
       "id": "fXWe4cJH",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Independiente",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -15055,7 +15055,7 @@ window.DADOS_ARG = {
       "id": "faTpDR1k",
       "mandante": "Gimnasia L.P.",
       "visitante": "Rosario Central",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -15220,7 +15220,7 @@ window.DADOS_ARG = {
       "id": "OC6DVZHG",
       "mandante": "Barracas Central",
       "visitante": "Tigre",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -15382,7 +15382,7 @@ window.DADOS_ARG = {
       "id": "6B0EMvZo",
       "mandante": "Velez Sarsfield",
       "visitante": "Dep. Riestra",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -15544,7 +15544,7 @@ window.DADOS_ARG = {
       "id": "0AgNKI3b",
       "mandante": "Newells Old Boys",
       "visitante": "Estudiantes L.P.",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -15706,7 +15706,7 @@ window.DADOS_ARG = {
       "id": "8t0uA1kt",
       "mandante": "Sarmiento Junin",
       "visitante": "Union de Santa Fe",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -15868,7 +15868,7 @@ window.DADOS_ARG = {
       "id": "0YyABEQp",
       "mandante": "Racing Club",
       "visitante": "Ind. Rivadavia",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -16036,7 +16036,7 @@ window.DADOS_ARG = {
       "id": "tUEdZHIi",
       "mandante": "River Plate",
       "visitante": "Banfield",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -16195,7 +16195,7 @@ window.DADOS_ARG = {
       "id": "YNiVIdYA",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Huracan",
-      "rodada": 8,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -16363,7 +16363,7 @@ window.DADOS_ARG = {
       "id": "ju2SP4oe",
       "mandante": "Boca Juniors",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -16525,7 +16525,7 @@ window.DADOS_ARG = {
       "id": "Oh0zOrG7",
       "mandante": "Independiente",
       "visitante": "Central Cordoba",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -16687,7 +16687,7 @@ window.DADOS_ARG = {
       "id": "2y5Fon8E",
       "mandante": "Talleres Cordoba",
       "visitante": "San Lorenzo",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -16849,7 +16849,7 @@ window.DADOS_ARG = {
       "id": "jRMgB5W1",
       "mandante": "Newells Old Boys",
       "visitante": "Rosario Central",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -17011,7 +17011,7 @@ window.DADOS_ARG = {
       "id": "A18NqQxR",
       "mandante": "Instituto",
       "visitante": "Union de Santa Fe",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -17173,7 +17173,7 @@ window.DADOS_ARG = {
       "id": "2am2xrV0",
       "mandante": "Argentinos Jrs",
       "visitante": "Barracas Central",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -17335,7 +17335,7 @@ window.DADOS_ARG = {
       "id": "fZqfv40l",
       "mandante": "Tigre",
       "visitante": "Gimnasia L.P.",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -17497,7 +17497,7 @@ window.DADOS_ARG = {
       "id": "fD8JRQGr",
       "mandante": "Defensa y Justicia",
       "visitante": "Lanus",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -17659,7 +17659,7 @@ window.DADOS_ARG = {
       "id": "2FTvZ8O8",
       "mandante": "Estudiantes L.P.",
       "visitante": "Velez Sarsfield",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -17821,7 +17821,7 @@ window.DADOS_ARG = {
       "id": "OUHmXngL",
       "mandante": "Dep. Riestra",
       "visitante": "Platense",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -17983,7 +17983,7 @@ window.DADOS_ARG = {
       "id": "lhTdbPiK",
       "mandante": "Ind. Rivadavia",
       "visitante": "River Plate",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -18142,7 +18142,7 @@ window.DADOS_ARG = {
       "id": "dbtBzMaD",
       "mandante": "Banfield",
       "visitante": "Aldosivi",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -18304,7 +18304,7 @@ window.DADOS_ARG = {
       "id": "xI1pkLE6",
       "mandante": "Sarmiento Junin",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -18466,7 +18466,7 @@ window.DADOS_ARG = {
       "id": "G2Dyispf",
       "mandante": "Huracan",
       "visitante": "Belgrano",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -18628,7 +18628,7 @@ window.DADOS_ARG = {
       "id": "8xATh3Fs",
       "mandante": "Atl. Tucuman",
       "visitante": "Racing Club",
-      "rodada": 9,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -18790,7 +18790,7 @@ window.DADOS_ARG = {
       "id": "AiuJcyft",
       "mandante": "Lanus",
       "visitante": "Boca Juniors",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -18952,7 +18952,7 @@ window.DADOS_ARG = {
       "id": "f9I7AStp",
       "mandante": "Tigre",
       "visitante": "Velez Sarsfield",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -19114,7 +19114,7 @@ window.DADOS_ARG = {
       "id": "IBVcLqe2",
       "mandante": "Independiente",
       "visitante": "Union de Santa Fe",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 4,
@@ -19273,7 +19273,7 @@ window.DADOS_ARG = {
       "id": "QkIkNQsm",
       "mandante": "Sarmiento Junin",
       "visitante": "Racing Club",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -19438,7 +19438,7 @@ window.DADOS_ARG = {
       "id": "jyCG86Bd",
       "mandante": "Newells Old Boys",
       "visitante": "Platense",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -19600,7 +19600,7 @@ window.DADOS_ARG = {
       "id": "QHvNLD6r",
       "mandante": "Banfield",
       "visitante": "Gimnasia L.P.",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -19762,7 +19762,7 @@ window.DADOS_ARG = {
       "id": "tp3jRZrL",
       "mandante": "Argentinos Jrs",
       "visitante": "Rosario Central",
-      "rodada": 10,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -19924,7 +19924,7 @@ window.DADOS_ARG = {
       "id": "pbXkN5Qk",
       "mandante": "Boca Juniors",
       "visitante": "San Lorenzo",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -20086,7 +20086,7 @@ window.DADOS_ARG = {
       "id": "YsrVJiye",
       "mandante": "Ind. Rivadavia",
       "visitante": "Barracas Central",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -20248,7 +20248,7 @@ window.DADOS_ARG = {
       "id": "U9yvIV57",
       "mandante": "Atl. Tucuman",
       "visitante": "Aldosivi",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -20410,7 +20410,7 @@ window.DADOS_ARG = {
       "id": "vchBUmYF",
       "mandante": "Dep. Riestra",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -20572,7 +20572,7 @@ window.DADOS_ARG = {
       "id": "QDjJSR2S",
       "mandante": "Defensa y Justicia",
       "visitante": "Central Cordoba",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -20737,7 +20737,7 @@ window.DADOS_ARG = {
       "id": "zm0rTeE8",
       "mandante": "Talleres Cordoba",
       "visitante": "Instituto",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -20899,7 +20899,7 @@ window.DADOS_ARG = {
       "id": "YFLcL4Ca",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Belgrano",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -21061,7 +21061,7 @@ window.DADOS_ARG = {
       "id": "M3OPuZcE",
       "mandante": "Huracan",
       "visitante": "River Plate",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -21226,7 +21226,7 @@ window.DADOS_ARG = {
       "id": "Is42W933",
       "mandante": "Estudiantes L.P.",
       "visitante": "Lanus",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -21388,7 +21388,7 @@ window.DADOS_ARG = {
       "id": "6T16l3tn",
       "mandante": "Platense",
       "visitante": "Velez Sarsfield",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -21550,7 +21550,7 @@ window.DADOS_ARG = {
       "id": "zNYeaKf4",
       "mandante": "Rosario Central",
       "visitante": "Banfield",
-      "rodada": 11,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -21712,7 +21712,7 @@ window.DADOS_ARG = {
       "id": "SdVm1tQi",
       "mandante": "Gimnasia L.P.",
       "visitante": "Ind. Rivadavia",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -21874,7 +21874,7 @@ window.DADOS_ARG = {
       "id": "fV96JrsC",
       "mandante": "Belgrano",
       "visitante": "Talleres Cordoba",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -22036,7 +22036,7 @@ window.DADOS_ARG = {
       "id": "z9gNpLuB",
       "mandante": "River Plate",
       "visitante": "Sarmiento Junin",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -22204,7 +22204,7 @@ window.DADOS_ARG = {
       "id": "vgrPyQdt",
       "mandante": "Union de Santa Fe",
       "visitante": "Boca Juniors",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -22366,7 +22366,7 @@ window.DADOS_ARG = {
       "id": "WlS4cbPG",
       "mandante": "Tigre",
       "visitante": "Argentinos Jrs",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -22528,7 +22528,7 @@ window.DADOS_ARG = {
       "id": "n1h1wwYp",
       "mandante": "Barracas Central",
       "visitante": "Atl. Tucuman",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -22693,7 +22693,7 @@ window.DADOS_ARG = {
       "id": "WzmWraAN",
       "mandante": "Aldosivi",
       "visitante": "Huracan",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -22855,7 +22855,7 @@ window.DADOS_ARG = {
       "id": "C6tXZ3Rh",
       "mandante": "San Lorenzo",
       "visitante": "Defensa y Justicia",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -23017,7 +23017,7 @@ window.DADOS_ARG = {
       "id": "2eeFnsBb",
       "mandante": "Racing Club",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -23179,7 +23179,7 @@ window.DADOS_ARG = {
       "id": "2eDEHMBO",
       "mandante": "Instituto",
       "visitante": "Independiente",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -23341,7 +23341,7 @@ window.DADOS_ARG = {
       "id": "xERdUaeU",
       "mandante": "Lanus",
       "visitante": "Newells Old Boys",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 5,
@@ -23503,7 +23503,7 @@ window.DADOS_ARG = {
       "id": "GbwlWLQH",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Estudiantes L.P.",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -23665,7 +23665,7 @@ window.DADOS_ARG = {
       "id": "8YZuYsd5",
       "mandante": "Central Cordoba",
       "visitante": "Dep. Riestra",
-      "rodada": 12,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -23824,7 +23824,7 @@ window.DADOS_ARG = {
       "id": "WSEFBlpR",
       "mandante": "Banfield",
       "visitante": "Tigre",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -23989,7 +23989,7 @@ window.DADOS_ARG = {
       "id": "lS3g46x1",
       "mandante": "Atl. Tucuman",
       "visitante": "Gimnasia L.P.",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -24151,7 +24151,7 @@ window.DADOS_ARG = {
       "id": "nNTyjGHj",
       "mandante": "Velez Sarsfield",
       "visitante": "Lanus",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -24313,7 +24313,7 @@ window.DADOS_ARG = {
       "id": "ETLNDJ9c",
       "mandante": "Newells Old Boys",
       "visitante": "Gimnasia Mendoza",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -24478,7 +24478,7 @@ window.DADOS_ARG = {
       "id": "zsVCiThe",
       "mandante": "Defensa y Justicia",
       "visitante": "Union de Santa Fe",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -24646,7 +24646,7 @@ window.DADOS_ARG = {
       "id": "O2B7DAFE",
       "mandante": "Independiente",
       "visitante": "Talleres Cordoba",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -24811,7 +24811,7 @@ window.DADOS_ARG = {
       "id": "2VTSI5if",
       "mandante": "Belgrano",
       "visitante": "Racing Club",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -24973,7 +24973,7 @@ window.DADOS_ARG = {
       "id": "xlplQmaK",
       "mandante": "Sarmiento Junin",
       "visitante": "Aldosivi",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -25138,7 +25138,7 @@ window.DADOS_ARG = {
       "id": "dYQKKRMs",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "River Plate",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -25300,7 +25300,7 @@ window.DADOS_ARG = {
       "id": "8fTKk7N7",
       "mandante": "Boca Juniors",
       "visitante": "Instituto",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -25462,7 +25462,7 @@ window.DADOS_ARG = {
       "id": "G0jn6S7l",
       "mandante": "Ind. Rivadavia",
       "visitante": "Rosario Central",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -25621,7 +25621,7 @@ window.DADOS_ARG = {
       "id": "42QCexfT",
       "mandante": "Argentinos Jrs",
       "visitante": "Platense",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -25783,7 +25783,7 @@ window.DADOS_ARG = {
       "id": "zqAWBcvA",
       "mandante": "Estudiantes L.P.",
       "visitante": "Central Cordoba",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 5,
@@ -25945,7 +25945,7 @@ window.DADOS_ARG = {
       "id": "pfc22p7D",
       "mandante": "Huracan",
       "visitante": "Barracas Central",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -26107,7 +26107,7 @@ window.DADOS_ARG = {
       "id": "trx4gkOr",
       "mandante": "Dep. Riestra",
       "visitante": "San Lorenzo",
-      "rodada": 13,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -26269,7 +26269,7 @@ window.DADOS_ARG = {
       "id": "tx59wY8O",
       "mandante": "Argentinos Jrs",
       "visitante": "Lanus",
-      "rodada": 14,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -26431,7 +26431,7 @@ window.DADOS_ARG = {
       "id": "SpD4Xem4",
       "mandante": "Aldosivi",
       "visitante": "Argentinos Jrs",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -26595,7 +26595,7 @@ window.DADOS_ARG = {
       "id": "MexUo4Lt",
       "mandante": "Lanus",
       "visitante": "Platense",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -26758,7 +26758,7 @@ window.DADOS_ARG = {
       "id": "Wpxgt0kI",
       "mandante": "Barracas Central",
       "visitante": "Sarmiento Junin",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -26921,7 +26921,7 @@ window.DADOS_ARG = {
       "id": "6PRITsN9",
       "mandante": "Tigre",
       "visitante": "Ind. Rivadavia",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -27084,7 +27084,7 @@ window.DADOS_ARG = {
       "id": "WALqFNjJ",
       "mandante": "Talleres Cordoba",
       "visitante": "Boca Juniors",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -27247,7 +27247,7 @@ window.DADOS_ARG = {
       "id": "WWdKR0zP",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Velez Sarsfield",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -27410,7 +27410,7 @@ window.DADOS_ARG = {
       "id": "rkk2X46m",
       "mandante": "Union de Santa Fe",
       "visitante": "Dep. Riestra",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -27576,7 +27576,7 @@ window.DADOS_ARG = {
       "id": "2i53Vry0",
       "mandante": "San Lorenzo",
       "visitante": "Estudiantes L.P.",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -27743,7 +27743,7 @@ window.DADOS_ARG = {
       "id": "OpIyHqM6",
       "mandante": "Independiente",
       "visitante": "Racing Club",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -27906,7 +27906,7 @@ window.DADOS_ARG = {
       "id": "K8TAV3hc",
       "mandante": "Rosario Central",
       "visitante": "Atl. Tucuman",
-      "rodada": 15,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -28069,7 +28069,7 @@ window.DADOS_ARG = {
       "id": "zJrprMK5",
       "mandante": "Aldosivi",
       "visitante": "Estudiantes Rio Cuarto",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -28235,7 +28235,7 @@ window.DADOS_ARG = {
       "id": "25pxprjg",
       "mandante": "River Plate",
       "visitante": "Belgrano",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -28398,7 +28398,7 @@ window.DADOS_ARG = {
       "id": "AH8BTM5C",
       "mandante": "Central Cordoba",
       "visitante": "Newells Old Boys",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 1,
@@ -28567,7 +28567,7 @@ window.DADOS_ARG = {
       "id": "xp4QNiZj",
       "mandante": "Gimnasia L.P.",
       "visitante": "Huracan",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 0,
@@ -28730,7 +28730,7 @@ window.DADOS_ARG = {
       "id": "nJ3WxRrQ",
       "mandante": "Instituto",
       "visitante": "Defensa y Justicia",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 2,
@@ -28893,7 +28893,7 @@ window.DADOS_ARG = {
       "id": "2iLRRLiM",
       "mandante": "Argentinos Jrs",
       "visitante": "Banfield",
-      "rodada": 16,
+      "rodada": null,
       "gols": {
         "ft": {
           "m": 3,
@@ -33981,7 +33981,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_0_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Dep. Riestra",
       "visitante": "Independiente",
@@ -34028,7 +34028,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_1_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Rosario Central",
@@ -34075,7 +34075,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_2_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Lanus",
       "visitante": "Central Cordoba",
@@ -34122,7 +34122,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_3_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Platense",
       "visitante": "San Lorenzo",
@@ -34169,7 +34169,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_4_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Racing Club",
       "visitante": "Barracas Central",
@@ -34216,7 +34216,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_5_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Estudiantes L.P.",
       "visitante": "Talleres Cordoba",
@@ -34263,7 +34263,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_6_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Sarmiento Junin",
       "visitante": "Tigre",
@@ -34310,7 +34310,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_7_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "River Plate",
       "visitante": "Aldosivi",
@@ -34357,7 +34357,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_8_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Ind. Rivadavia",
       "visitante": "Gimnasia Mendoza",
@@ -34493,7 +34493,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_9_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Belgrano",
       "visitante": "Gimnasia L.P.",
@@ -34633,7 +34633,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_10_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Newells Old Boys",
       "visitante": "Instituto",
@@ -34765,7 +34765,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_11_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Atl. Tucuman",
       "visitante": "Banfield",
@@ -34897,7 +34897,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_ARG_12_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Velez Sarsfield",
       "visitante": "Union de Santa Fe",
@@ -34944,7 +34944,7 @@ window.DADOS_ARG = {
     },
     {
       "id": "inject_fix_ARG_0_20260426",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-26",
       "mandante": "Huracan",
       "visitante": "Argentinos Jrs",

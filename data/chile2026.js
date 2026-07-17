@@ -1,4 +1,4 @@
-// DADOS_CHI — PIPELINE processado (2026-07-17T21:30)
+// DADOS_CHI — PIPELINE processado (2026-07-17T21:38)
 // Total: 234
 
 window.DADOS_CHI = {

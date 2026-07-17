@@ -1,4 +1,4 @@
-// DADOS_BR — PIPELINE processado (2026-07-17T21:30)
+// DADOS_BR — PIPELINE processado (2026-07-17T21:38)
 // Total: 387
 
 window.DADOS_BR = {
@@ -7983,7 +7983,7 @@ window.DADOS_BR = {
     },
     {
       "id": "42fbSmRj",
-      "rodada": 1,
+      "rodada": null,
       "data": "2026-01-28",
       "mandante": "Vitória",
       "visitante": "Remo",
@@ -8139,7 +8139,7 @@ window.DADOS_BR = {
     },
     {
       "id": "QkMZRvX7",
-      "rodada": 2,
+      "rodada": null,
       "data": "2026-02-04",
       "mandante": "Palmeiras",
       "visitante": "Vitória",
@@ -8295,7 +8295,7 @@ window.DADOS_BR = {
     },
     {
       "id": "MaINiPBa",
-      "rodada": 3,
+      "rodada": null,
       "data": "2026-02-10",
       "mandante": "Vitória",
       "visitante": "Flamengo",
@@ -8451,7 +8451,7 @@ window.DADOS_BR = {
     },
     {
       "id": "pfccVVaL",
-      "rodada": 4,
+      "rodada": null,
       "data": "2026-03-11",
       "mandante": "Bahia",
       "visitante": "Vitória",
@@ -8607,7 +8607,7 @@ window.DADOS_BR = {
     },
     {
       "id": "jTuvv0rg",
-      "rodada": 5,
+      "rodada": null,
       "data": "2026-03-14",
       "mandante": "Vitória",
       "visitante": "Atlético-MG",
@@ -8763,7 +8763,7 @@ window.DADOS_BR = {
     },
     {
       "id": "xUgkXiV8",
-      "rodada": 5,
+      "rodada": null,
       "data": "29.03.2026",
       "data_partida": "29.03.2026 19:30",
       "mandante": "Athletico-PR",
@@ -8915,7 +8915,7 @@ window.DADOS_BR = {
     },
     {
       "id": "jBn8sZlo",
-      "rodada": 6,
+      "rodada": null,
       "data": "2026-03-19",
       "mandante": "Grêmio",
       "visitante": "Vitória",
@@ -9068,7 +9068,7 @@ window.DADOS_BR = {
     },
     {
       "id": "MguU4B2F",
-      "rodada": 7,
+      "rodada": null,
       "data": "2026-03-22",
       "mandante": "Vitória",
       "visitante": "Mirassol",
@@ -9224,7 +9224,7 @@ window.DADOS_BR = {
     },
     {
       "id": "bwFhcK06",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Cruzeiro",
       "visitante": "Vitória",
@@ -9380,7 +9380,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Internacional",
       "visitante": "Athletico-PR",
@@ -9424,7 +9424,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Coritiba",
       "visitante": "Red Bull Bragantino",
@@ -9465,7 +9465,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Atlético-MG",
       "visitante": "Palmeiras",
@@ -9509,7 +9509,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Fluminense",
       "visitante": "Grêmio",
@@ -9553,7 +9553,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Corinthians",
       "visitante": "Bahia",
@@ -9597,7 +9597,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Chapecoense",
       "visitante": "Santos",
@@ -9638,7 +9638,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "São Paulo",
       "visitante": "Flamengo",
@@ -9679,7 +9679,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 8,
+      "rodada": null,
       "data": "2026-03-23",
       "mandante": "Mirassol",
       "visitante": "Vasco",
@@ -9723,7 +9723,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Cx9wGgeA",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 20:30",
       "mandante": "Corinthians",
@@ -9878,7 +9878,7 @@ window.DADOS_BR = {
     },
     {
       "id": "C0iQ6kId",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 18:30",
       "mandante": "Internacional",
@@ -10030,7 +10030,7 @@ window.DADOS_BR = {
     },
     {
       "id": "jXNrfCYj",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 16:00",
       "mandante": "Vasco",
@@ -10182,7 +10182,7 @@ window.DADOS_BR = {
     },
     {
       "id": "IwGUHFQc",
-      "rodada": 8,
+      "rodada": null,
       "data": "21.03.2026",
       "data_partida": "21.03.2026 21:00",
       "mandante": "São Paulo",
@@ -10334,7 +10334,7 @@ window.DADOS_BR = {
     },
     {
       "id": "lSRM6XX2",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 16:00",
       "mandante": "Athletico-PR",
@@ -10489,7 +10489,7 @@ window.DADOS_BR = {
     },
     {
       "id": "4zlI8Bmp",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 16:00",
       "mandante": "Cruzeiro",
@@ -10641,7 +10641,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Gfc2n3nl",
-      "rodada": 8,
+      "rodada": null,
       "data": "22.03.2026",
       "data_partida": "22.03.2026 16:00",
       "mandante": "Remo",
@@ -10793,7 +10793,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 9,
+      "rodada": null,
       "data": "2026-03-25",
       "mandante": "Botafogo",
       "visitante": "Cruzeiro",
@@ -10834,7 +10834,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 9,
+      "rodada": null,
       "data": "2026-03-25",
       "mandante": "Flamengo",
       "visitante": "Internacional",
@@ -10875,7 +10875,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 9,
+      "rodada": null,
       "data": "2026-03-25",
       "mandante": "Red Bull Bragantino",
       "visitante": "Atlético-MG",
@@ -10916,7 +10916,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 9,
+      "rodada": null,
       "data": "2026-03-25",
       "mandante": "Santos",
       "visitante": "São Paulo",
@@ -10960,7 +10960,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 9,
+      "rodada": null,
       "data": "2026-03-25",
       "mandante": "Remo",
       "visitante": "Mirassol",
@@ -11004,7 +11004,7 @@ window.DADOS_BR = {
     },
     {
       "id": "2BLqatWg",
-      "rodada": 9,
+      "rodada": null,
       "data": "02.04.2026",
       "data_partida": "02.04.2026 21:30",
       "mandante": "Red Bull Bragantino",
@@ -11156,7 +11156,7 @@ window.DADOS_BR = {
     },
     {
       "id": "foIy121s",
-      "rodada": 9,
+      "rodada": null,
       "data": "02.04.2026",
       "data_partida": "02.04.2026 21:30",
       "mandante": "Palmeiras",
@@ -11308,7 +11308,7 @@ window.DADOS_BR = {
     },
     {
       "id": "2XdKBJFa",
-      "rodada": 9,
+      "rodada": null,
       "data": "02.04.2026",
       "data_partida": "02.04.2026 19:00",
       "mandante": "Chapecoense",
@@ -11460,7 +11460,7 @@ window.DADOS_BR = {
     },
     {
       "id": "pzkJrLoD",
-      "rodada": 9,
+      "rodada": null,
       "data": "01.04.2026",
       "data_partida": "01.04.2026 19:30",
       "mandante": "Botafogo",
@@ -11612,7 +11612,7 @@ window.DADOS_BR = {
     },
     {
       "id": "WjD0ebVI",
-      "rodada": 9,
+      "rodada": null,
       "data": "01.04.2026",
       "data_partida": "01.04.2026 19:30",
       "mandante": "Internacional",
@@ -11761,7 +11761,7 @@ window.DADOS_BR = {
     },
     {
       "id": "ADt56OwK",
-      "rodada": 9,
+      "rodada": null,
       "data": "02.04.2026",
       "data_partida": "02.04.2026 19:00",
       "mandante": "Santos",
@@ -11913,7 +11913,7 @@ window.DADOS_BR = {
     },
     {
       "id": "l8eApsH0",
-      "rodada": 9,
+      "rodada": null,
       "data": "01.04.2026",
       "data_partida": "01.04.2026 21:30",
       "mandante": "Fluminense",
@@ -12068,7 +12068,7 @@ window.DADOS_BR = {
     },
     {
       "id": "AZHuJ1NP",
-      "rodada": 9,
+      "rodada": null,
       "data": "01.04.2026",
       "data_partida": "01.04.2026 20:30",
       "mandante": "Coritiba",
@@ -12217,7 +12217,7 @@ window.DADOS_BR = {
     },
     {
       "id": "tI8BDuom",
-      "rodada": 9,
+      "rodada": null,
       "data": "01.04.2026",
       "data_partida": "01.04.2026 20:00",
       "mandante": "Bahia",
@@ -12369,7 +12369,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 10,
+      "rodada": null,
       "data": "2026-03-26",
       "mandante": "Grêmio",
       "visitante": "Botafogo",
@@ -12410,7 +12410,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 10,
+      "rodada": null,
       "data": "2026-03-26",
       "mandante": "Bahia",
       "visitante": "Fluminense",
@@ -12454,7 +12454,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 10,
+      "rodada": null,
       "data": "2026-03-26",
       "mandante": "Vasco",
       "visitante": "Chapecoense",
@@ -12495,7 +12495,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 10,
+      "rodada": null,
       "data": "2026-03-26",
       "mandante": "Cruzeiro",
       "visitante": "Coritiba",
@@ -12539,7 +12539,7 @@ window.DADOS_BR = {
     },
     {
       "id": "IsSHKEbU",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 20:30",
       "mandante": "Grêmio",
@@ -12694,7 +12694,7 @@ window.DADOS_BR = {
     },
     {
       "id": "ABu1Oda5",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 20:00",
       "mandante": "Mirassol",
@@ -12843,7 +12843,7 @@ window.DADOS_BR = {
     },
     {
       "id": "WQT9MzUH",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 17:30",
       "mandante": "Atlético-MG",
@@ -12995,7 +12995,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Ac0S9cpC",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 17:30",
       "mandante": "Flamengo",
@@ -13144,7 +13144,7 @@ window.DADOS_BR = {
     },
     {
       "id": "QmkqyzqB",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 16:00",
       "mandante": "Chapecoense",
@@ -13302,7 +13302,7 @@ window.DADOS_BR = {
     },
     {
       "id": "j78z8yFO",
-      "rodada": 10,
+      "rodada": null,
       "data": "04.04.2026",
       "data_partida": "04.04.2026 21:00",
       "mandante": "Vasco",
@@ -13454,7 +13454,7 @@ window.DADOS_BR = {
     },
     {
       "id": "6JrpSv0t",
-      "rodada": 10,
+      "rodada": null,
       "data": "04.04.2026",
       "data_partida": "04.04.2026 18:30",
       "mandante": "São Paulo",
@@ -13603,7 +13603,7 @@ window.DADOS_BR = {
     },
     {
       "id": "ULezwdEb",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 19:30",
       "mandante": "Bahia",
@@ -13755,7 +13755,7 @@ window.DADOS_BR = {
     },
     {
       "id": "2oxgQIUh",
-      "rodada": 10,
+      "rodada": null,
       "data": "05.04.2026",
       "data_partida": "05.04.2026 19:30",
       "mandante": "Corinthians",
@@ -13907,7 +13907,7 @@ window.DADOS_BR = {
     },
     {
       "id": "d8cSvIqn",
-      "rodada": 10,
+      "rodada": null,
       "data": "04.04.2026",
       "data_partida": "04.04.2026 20:30",
       "mandante": "Coritiba",
@@ -14056,7 +14056,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Mirassol",
       "visitante": "Cruzeiro",
@@ -14100,7 +14100,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Chapecoense",
       "visitante": "Coritiba",
@@ -14141,7 +14141,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Atlético-MG",
       "visitante": "Remo",
@@ -14185,7 +14185,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Vasco",
       "visitante": "Bahia",
@@ -14229,7 +14229,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "São Paulo",
       "visitante": "Grêmio",
@@ -14273,7 +14273,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Athletico-PR",
       "visitante": "Santos",
@@ -14317,7 +14317,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Fluminense",
       "visitante": "Botafogo",
@@ -14358,7 +14358,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Corinthians",
       "visitante": "Red Bull Bragantino",
@@ -14399,7 +14399,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 11,
+      "rodada": null,
       "data": "2026-03-27",
       "mandante": "Internacional",
       "visitante": "Palmeiras",
@@ -14443,7 +14443,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Gj7jV4Ck",
-      "rodada": 11,
+      "rodada": null,
       "data": "12.04.2026",
       "data_partida": "12.04.2026 18:30",
       "mandante": "Cruzeiro",
@@ -14592,7 +14592,7 @@ window.DADOS_BR = {
     },
     {
       "id": "UJGGIRSq",
-      "rodada": 11,
+      "rodada": null,
       "data": "12.04.2026",
       "data_partida": "12.04.2026 18:00",
       "mandante": "Fluminense",
@@ -14747,7 +14747,7 @@ window.DADOS_BR = {
     },
     {
       "id": "jZ4PG5cd",
-      "rodada": 11,
+      "rodada": null,
       "data": "12.04.2026",
       "data_partida": "12.04.2026 16:00",
       "mandante": "Botafogo",
@@ -14896,7 +14896,7 @@ window.DADOS_BR = {
     },
     {
       "id": "4CmoinZ8",
-      "rodada": 11,
+      "rodada": null,
       "data": "12.04.2026",
       "data_partida": "12.04.2026 11:00",
       "mandante": "Athletico-PR",
@@ -15049,7 +15049,7 @@ window.DADOS_BR = {
     },
     {
       "id": "OGAbTrs2",
-      "rodada": 11,
+      "rodada": null,
       "data": "11.04.2026",
       "data_partida": "11.04.2026 20:30",
       "mandante": "Internacional",
@@ -15204,7 +15204,7 @@ window.DADOS_BR = {
     },
     {
       "id": "IucBv9k3",
-      "rodada": 11,
+      "rodada": null,
       "data": "11.04.2026",
       "data_partida": "11.04.2026 20:00",
       "mandante": "Santos",
@@ -15362,7 +15362,7 @@ window.DADOS_BR = {
     },
     {
       "id": "CxigkQ3L",
-      "rodada": 11,
+      "rodada": null,
       "data": "11.04.2026",
       "data_partida": "11.04.2026 16:30",
       "mandante": "Vitória",
@@ -15517,7 +15517,7 @@ window.DADOS_BR = {
     },
     {
       "id": "E7jKxmKF",
-      "rodada": 11,
+      "rodada": null,
       "data": "12.04.2026",
       "data_partida": "12.04.2026 18:30",
       "mandante": "Corinthians",
@@ -15675,7 +15675,7 @@ window.DADOS_BR = {
     },
     {
       "id": "nLlSzRlS",
-      "rodada": 11,
+      "rodada": null,
       "data": "11.04.2026",
       "data_partida": "11.04.2026 18:30",
       "mandante": "Mirassol",
@@ -15830,7 +15830,7 @@ window.DADOS_BR = {
     },
     {
       "id": "UgXPq4Rr",
-      "rodada": 11,
+      "rodada": null,
       "data": "11.04.2026",
       "data_partida": "11.04.2026 16:30",
       "mandante": "Remo",
@@ -15982,7 +15982,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 12,
+      "rodada": null,
       "data": "2026-03-29",
       "mandante": "Athletico-PR",
       "visitante": "Corinthians",
@@ -16026,7 +16026,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 12,
+      "rodada": null,
       "data": "2026-03-29",
       "mandante": "Remo",
       "visitante": "Internacional",
@@ -16070,7 +16070,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Red Bull Bragantino",
       "visitante": "Athletico-PR",
@@ -16111,7 +16111,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Coritiba",
       "visitante": "São Paulo",
@@ -16155,7 +16155,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Cruzeiro",
       "visitante": "Corinthians",
@@ -16199,7 +16199,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Palmeiras",
       "visitante": "Fluminense",
@@ -16243,7 +16243,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Grêmio",
       "visitante": "Atlético-MG",
@@ -16287,7 +16287,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 13,
+      "rodada": null,
       "data": "2026-03-30",
       "mandante": "Santos",
       "visitante": "Vasco",
@@ -16331,7 +16331,7 @@ window.DADOS_BR = {
     },
     {
       "id": "00zZ6kVN",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 20:30",
       "mandante": "Atlético-MG",
@@ -16483,7 +16483,7 @@ window.DADOS_BR = {
     },
     {
       "id": "QNNd7bP6",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 20:30",
       "mandante": "Fluminense",
@@ -16635,7 +16635,7 @@ window.DADOS_BR = {
     },
     {
       "id": "niek9uCi",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 18:30",
       "mandante": "Athletico-PR",
@@ -16787,7 +16787,7 @@ window.DADOS_BR = {
     },
     {
       "id": "vonQ8B0B",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 18:30",
       "mandante": "Red Bull Bragantino",
@@ -16939,7 +16939,7 @@ window.DADOS_BR = {
     },
     {
       "id": "WrR41Tho",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 16:00",
       "mandante": "Grêmio",
@@ -17097,7 +17097,7 @@ window.DADOS_BR = {
     },
     {
       "id": "CISGCg1n",
-      "rodada": 13,
+      "rodada": null,
       "data": "25.04.2026",
       "data_partida": "25.04.2026 21:00",
       "mandante": "São Paulo",
@@ -17249,7 +17249,7 @@ window.DADOS_BR = {
     },
     {
       "id": "MkH55xfJ",
-      "rodada": 13,
+      "rodada": null,
       "data": "25.04.2026",
       "data_partida": "25.04.2026 18:30",
       "mandante": "Botafogo",
@@ -17401,7 +17401,7 @@ window.DADOS_BR = {
     },
     {
       "id": "WKrIAXVb",
-      "rodada": 13,
+      "rodada": null,
       "data": "26.04.2026",
       "data_partida": "26.04.2026 16:00",
       "mandante": "Corinthians",
@@ -17559,7 +17559,7 @@ window.DADOS_BR = {
     },
     {
       "id": "K4gc7Jt4",
-      "rodada": 13,
+      "rodada": null,
       "data": "25.04.2026",
       "data_partida": "25.04.2026 18:30",
       "mandante": "Bahia",
@@ -17711,7 +17711,7 @@ window.DADOS_BR = {
     },
     {
       "id": "GWn65cBG",
-      "rodada": 13,
+      "rodada": null,
       "data": "25.04.2026",
       "data_partida": "25.04.2026 18:30",
       "mandante": "Remo",
@@ -17863,7 +17863,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Mirassol",
       "visitante": "Santos",
@@ -17907,7 +17907,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Atlético-MG",
       "visitante": "Internacional",
@@ -17951,7 +17951,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Flamengo",
       "visitante": "Cruzeiro",
@@ -17992,7 +17992,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Corinthians",
       "visitante": "Coritiba",
@@ -18036,7 +18036,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Remo",
       "visitante": "Fluminense",
@@ -18080,7 +18080,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Vasco",
       "visitante": "Palmeiras",
@@ -18124,7 +18124,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "São Paulo",
       "visitante": "Chapecoense",
@@ -18165,7 +18165,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 14,
+      "rodada": null,
       "data": "2026-03-31",
       "mandante": "Grêmio",
       "visitante": "Red Bull Bragantino",
@@ -18206,7 +18206,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Botafogo",
       "visitante": "Flamengo",
@@ -18247,7 +18247,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Santos",
       "visitante": "Corinthians",
@@ -18291,7 +18291,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Internacional",
       "visitante": "Bahia",
@@ -18335,7 +18335,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Fluminense",
       "visitante": "Athletico-PR",
@@ -18379,7 +18379,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Palmeiras",
       "visitante": "Mirassol",
@@ -18423,7 +18423,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Coritiba",
       "visitante": "Remo",
@@ -18467,7 +18467,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Cruzeiro",
       "visitante": "Vasco",
@@ -18511,7 +18511,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Red Bull Bragantino",
       "visitante": "São Paulo",
@@ -18552,7 +18552,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 15,
+      "rodada": null,
       "data": "2026-04-02",
       "mandante": "Chapecoense",
       "visitante": "Grêmio",
@@ -18593,7 +18593,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Palmeiras",
       "visitante": "Botafogo",
@@ -18634,7 +18634,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Bahia",
       "visitante": "Red Bull Bragantino",
@@ -18675,7 +18675,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Athletico-PR",
       "visitante": "Cruzeiro",
@@ -18719,7 +18719,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Mirassol",
       "visitante": "Coritiba",
@@ -18763,7 +18763,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Atlético-MG",
       "visitante": "São Paulo",
@@ -18807,7 +18807,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Vasco",
       "visitante": "Fluminense",
@@ -18851,7 +18851,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Santos",
       "visitante": "Internacional",
@@ -18895,7 +18895,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Flamengo",
       "visitante": "Remo",
@@ -18936,7 +18936,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 16,
+      "rodada": null,
       "data": "2026-04-03",
       "mandante": "Chapecoense",
       "visitante": "Corinthians",
@@ -18977,7 +18977,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-04",
       "mandante": "Red Bull Bragantino",
       "visitante": "Botafogo",
@@ -19018,7 +19018,7 @@ window.DADOS_BR = {
     },
     {
       "id": "",
-      "rodada": 17,
+      "rodada": null,
       "data": "2026-04-04",
       "mandante": "Fluminense",
       "visitante": "Atlético-MG",
@@ -19063,7 +19063,7 @@ window.DADOS_BR = {
     {
       "mandante": "Cruzeiro",
       "visitante": "Fluminense",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026 20:30",
       "cantos": {
         "ht": {
@@ -19189,7 +19189,7 @@ window.DADOS_BR = {
     },
     {
       "id": "6ezXKiTg",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 20:30",
       "mandante": "Remo",
@@ -19342,7 +19342,7 @@ window.DADOS_BR = {
     },
     {
       "id": "YNLSTRfR",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 16:00",
       "mandante": "Palmeiras",
@@ -19501,7 +19501,7 @@ window.DADOS_BR = {
     },
     {
       "id": "0KQY7pY7",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 16:00",
       "mandante": "Vasco",
@@ -19654,7 +19654,7 @@ window.DADOS_BR = {
     },
     {
       "id": "46CbO5Il",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 11:00",
       "mandante": "Red Bull Bragantino",
@@ -19807,7 +19807,7 @@ window.DADOS_BR = {
     },
     {
       "id": "C8XJVmQE",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 20:00",
       "mandante": "Santos",
@@ -19963,7 +19963,7 @@ window.DADOS_BR = {
     },
     {
       "id": "ptnOMDbs",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 17:30",
       "mandante": "Bahia",
@@ -20122,7 +20122,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Yo4FKNHD",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 17:30",
       "mandante": "Grêmio",
@@ -20279,7 +20279,7 @@ window.DADOS_BR = {
     {
       "mandante": "Athletico-PR",
       "visitante": "Mirassol",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026 16:00",
       "cantos": {
         "ht": {
@@ -20405,7 +20405,7 @@ window.DADOS_BR = {
     },
     {
       "id": "4hXP963e",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 16:00",
       "mandante": "Flamengo",
@@ -20566,7 +20566,7 @@ window.DADOS_BR = {
       "match_id": "8KWmH9SI",
       "mandante": "Botafogo RJ",
       "visitante": "Santos",
-      "rodada": 19,
+      "rodada": null,
       "data": "16.07.2026 19:30",
       "tabela": null,
       "cantos": {
@@ -20632,7 +20632,7 @@ window.DADOS_BR = {
       "match_id": "80AlZsl4",
       "mandante": "Vitoria",
       "visitante": "Vasco",
-      "rodada": 19,
+      "rodada": null,
       "data": "16.07.2026 19:30",
       "tabela": null,
       "cantos": {
@@ -20693,7 +20693,7 @@ window.DADOS_BR = {
     },
     {
       "id": "6ezXKiTg",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 20:30",
       "mandante": "Remo",
@@ -20845,7 +20845,7 @@ window.DADOS_BR = {
     },
     {
       "id": "YNLSTRfR",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 16:00",
       "mandante": "Palmeiras",
@@ -21003,7 +21003,7 @@ window.DADOS_BR = {
     },
     {
       "id": "0KQY7pY7",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 16:00",
       "mandante": "Vasco",
@@ -21155,7 +21155,7 @@ window.DADOS_BR = {
     },
     {
       "id": "46CbO5Il",
-      "rodada": 18,
+      "rodada": null,
       "data": "31.05.2026",
       "data_partida": "31.05.2026 11:00",
       "mandante": "Red Bull Bragantino",
@@ -21307,7 +21307,7 @@ window.DADOS_BR = {
     },
     {
       "id": "C8XJVmQE",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 20:00",
       "mandante": "Santos",
@@ -21462,7 +21462,7 @@ window.DADOS_BR = {
     },
     {
       "id": "ptnOMDbs",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 17:30",
       "mandante": "Bahia",
@@ -21620,7 +21620,7 @@ window.DADOS_BR = {
     },
     {
       "id": "Yo4FKNHD",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 17:30",
       "mandante": "Grêmio",
@@ -21775,7 +21775,7 @@ window.DADOS_BR = {
     },
     {
       "id": "4hXP963e",
-      "rodada": 18,
+      "rodada": null,
       "data": "30.05.2026",
       "data_partida": "30.05.2026 16:00",
       "mandante": "Flamengo",

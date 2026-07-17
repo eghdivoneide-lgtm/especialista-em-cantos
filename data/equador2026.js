@@ -1,4 +1,4 @@
-// DADOS_ECU — PIPELINE processado (2026-07-17T21:30)
+// DADOS_ECU — PIPELINE processado (2026-07-17T21:38)
 // Total: 239
 
 window.DADOS_ECU = {
@@ -20962,7 +20962,7 @@ window.DADOS_ECU = {
       "match_id": "xEAGbgc3",
       "mandante": "Aucas",
       "visitante": "Ind. del Valle",
-      "rodada": 21,
+      "rodada": null,
       "data": "16.07.2026 18:30",
       "tabela": null,
       "cantos": {
@@ -21028,7 +21028,7 @@ window.DADOS_ECU = {
       "match_id": "KzukOCLj",
       "mandante": "Orense",
       "visitante": "Emelec",
-      "rodada": 21,
+      "rodada": null,
       "data": "16.07.2026 21:00",
       "tabela": null,
       "cantos": {
