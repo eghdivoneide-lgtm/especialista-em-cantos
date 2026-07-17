@@ -9,7 +9,7 @@
 //       cai pra cache se offline
 // ════════════════════════════════════════════════════════════════
 
-const VERSION = 'eds-pwa-v1.2.3-2026-07-17';
+const VERSION = 'eds-pwa-v1.2.4-2026-07-17';
 const APP_CACHE  = `${VERSION}-app`;
 const DATA_CACHE = `${VERSION}-data`;
 
