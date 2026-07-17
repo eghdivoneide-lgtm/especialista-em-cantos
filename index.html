@@ -14343,9 +14343,14 @@ function _campRodadas(ds){
 function _campProxRodada(ds){
   var pend=(ds.jogos||[]).filter(function(j){return (!j.placar||j.placar.m==null) && j.rodada!=null;});
   if(pend.length){
-    var dt=function(j){var m=String(j.data||'').match(/(d{1,2}).(d{1,2}).(d{4})/);return m?(+m[3]*10000+(+m[2])*100+(+m[1])):99999999;};
-    pend.sort(function(a,b){return dt(a)-dt(b);});
-    return pend[0].rodada;
+    // fix 16/07: regex tinha perdido os "\" no port (nunca casava) + agora IGNORA
+    // adiados no passado — mostra a rodada do próximo jogo de hoje em diante.
+    var dt=function(j){var m=String(j.data||'').match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);return m?(+m[3]*10000+(+m[2])*100+(+m[1])):99999999;};
+    var d0=new Date(); var hoje=d0.getFullYear()*10000+(d0.getMonth()+1)*100+d0.getDate();
+    var fut=pend.filter(function(j){return dt(j)>=hoje;});
+    var lista=fut.length?fut:pend;
+    lista.sort(function(a,b){return dt(a)-dt(b);});
+    return lista[0].rodada;
   }
   var rods=_campRodadas(ds);
   return rods.length?rods[rods.length-1]:null;
