@@ -1,4 +1,4 @@
-// DADOS_ARG — PIPELINE processado (2026-07-17T01:48)
+// DADOS_ARG — PIPELINE processado (2026-07-17T16:50)
 // Total: 494
 
 window.DADOS_ARG = {
@@ -40407,7 +40407,7 @@ window.DADOS_ARG = {
       "match_id": "lU8z7mJb",
       "mandante": "Estudiantes Rio Cuarto",
       "visitante": "Banfield",
-      "rodada": 20,
+      "rodada": 19,
       "data": "01.08.2026 15:30",
       "data_partida": "01.08.2026 15:30",
       "tabela": null,
@@ -40426,7 +40426,7 @@ window.DADOS_ARG = {
       "match_id": "d0FhdW4t",
       "mandante": "Gimnasia Mendoza",
       "visitante": "Union de Santa Fe",
-      "rodada": 20,
+      "rodada": 19,
       "data": "01.08.2026 15:30",
       "data_partida": "01.08.2026 15:30",
       "tabela": null,
@@ -40445,7 +40445,7 @@ window.DADOS_ARG = {
       "match_id": "8K0S89ln",
       "mandante": "Belgrano",
       "visitante": "Argentinos Jrs",
-      "rodada": 20,
+      "rodada": 19,
       "data": "01.08.2026 18:00",
       "data_partida": "01.08.2026 18:00",
       "tabela": null,
@@ -40692,7 +40692,7 @@ window.DADOS_ARG = {
       "match_id": "0hpMzPx3",
       "mandante": "Boca Juniors",
       "visitante": "Estudiantes L.P.",
-      "rodada": 19,
+      "rodada": 20,
       "data": "05.08.2026 19:00",
       "data_partida": "05.08.2026 19:00",
       "tabela": null,
@@ -40711,7 +40711,7 @@ window.DADOS_ARG = {
       "match_id": "zBb4m2M8",
       "mandante": "Tigre",
       "visitante": "Belgrano",
-      "rodada": 19,
+      "rodada": 20,
       "data": "05.08.2026 21:15",
       "data_partida": "05.08.2026 21:15",
       "tabela": null,
@@ -40730,7 +40730,7 @@ window.DADOS_ARG = {
       "match_id": "MocfMPN9",
       "mandante": "Union de Santa Fe",
       "visitante": "Lanus",
-      "rodada": 19,
+      "rodada": 20,
       "data": "06.08.2026 19:00",
       "data_partida": "06.08.2026 19:00",
       "tabela": null,

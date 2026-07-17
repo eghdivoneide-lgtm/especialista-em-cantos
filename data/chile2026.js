@@ -1,4 +1,4 @@
-// DADOS_CHI — PIPELINE processado (2026-07-17T01:48)
+// DADOS_CHI — PIPELINE processado (2026-07-17T16:50)
 // Total: 234
 
 window.DADOS_CHI = {
@@ -18223,7 +18223,7 @@ window.DADOS_CHI = {
       "match_id": "S6IuGuRE",
       "mandante": "A. Italiano",
       "visitante": "Union La Calera",
-      "rodada": 20,
+      "rodada": 19,
       "data": "21.08.2026 21:30",
       "data_partida": "21.08.2026 21:30",
       "tabela": null,
@@ -18375,7 +18375,7 @@ window.DADOS_CHI = {
       "match_id": "QDpGjPc3",
       "mandante": "Coquimbo",
       "visitante": "U. Catolica",
-      "rodada": 19,
+      "rodada": 20,
       "data": "26.08.2026 19:00",
       "data_partida": "26.08.2026 19:00",
       "tabela": null,

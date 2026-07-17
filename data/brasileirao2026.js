@@ -1,4 +1,4 @@
-// DADOS_BR — PIPELINE processado (2026-07-17T01:47)
+// DADOS_BR — PIPELINE processado (2026-07-17T16:50)
 // Total: 375
 
 window.DADOS_BR = {
@@ -25245,7 +25245,7 @@ window.DADOS_BR = {
       "match_id": "UBSNIQDi",
       "mandante": "Athletico-PR",
       "visitante": "São Paulo",
-      "rodada": 38,
+      "rodada": 37,
       "data": "02.12.2026 18:00",
       "data_partida": "02.12.2026 18:00",
       "tabela": null,
