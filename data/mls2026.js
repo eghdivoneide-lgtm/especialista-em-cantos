@@ -1,4 +1,4 @@
-// DADOS_MLS — PIPELINE processado (2026-07-17T16:50)
+// DADOS_MLS — PIPELINE processado (2026-07-17T18:40)
 // Total: 499
 
 window.DADOS_MLS = {
@@ -32308,18 +32308,65 @@ window.DADOS_MLS = {
       "visitante": "Toronto FC",
       "rodada": 9,
       "data": "16.07.2026 20:30",
-      "data_partida": "16.07.2026 20:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 3,
+          "v": 2
+        },
+        "ft": {
+          "m": 9,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 8
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 3,
+          "v": 0
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 13,
+          "v": 8
+        },
+        "defesas_goleiro": {
+          "m": 0,
+          "v": 3
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/phGxAaqd/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:41.020Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "xn3OX2y3",
@@ -32346,18 +32393,65 @@ window.DADOS_MLS = {
       "visitante": "Sporting Kansas City",
       "rodada": 9,
       "data": "16.07.2026 21:30",
-      "data_partida": "16.07.2026 21:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 53,
+          "v": 47
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 12
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 1
+        },
+        "faltas": {
+          "m": 15,
+          "v": 11
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 2
+        }
+      },
+      "placar": {
+        "m": 3,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 3,
+          "v": 2
+        },
+        "ht": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/bLg8hqq4/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:41.020Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "fmmHjNDG",
@@ -32365,18 +32459,65 @@ window.DADOS_MLS = {
       "visitante": "Portland Timbers",
       "rodada": 9,
       "data": "16.07.2026 23:30",
-      "data_partida": "16.07.2026 23:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 0,
+          "v": 6
+        },
+        "ft": {
+          "m": 2,
+          "v": 8
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 20
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 10
+        },
+        "cartoes_amarelos": {
+          "m": 2,
+          "v": 0
+        },
+        "faltas": {
+          "m": 7,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 5
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 5
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/fmmHjNDG/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:41.020Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "S0oPl1rT",
@@ -37852,5 +37993,5 @@ window.DADOS_MLS = {
     }
   ],
   "totalRodadas": 6,
-  "ultimaAtualizacao": "2026-07-16"
+  "ultimaAtualizacao": "2026-07-17"
 };

@@ -1,9 +1,9 @@
-// DADOS_ARG — PIPELINE processado (2026-07-17T16:50)
+// DADOS_ARG — PIPELINE processado (2026-07-17T18:40)
 // Total: 494
 
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina 2026",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 16,
   "times": [
     "Aldosivi",

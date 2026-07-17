@@ -1,9 +1,9 @@
-// DADOS_BR_B — PIPELINE processado (2026-07-17T16:50)
+// DADOS_BR_B — PIPELINE processado (2026-07-17T18:40)
 // Total: 377
 
 window.DADOS_BR_B = {
   "temporada": "Brasileirão Série B",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 40,
   "times": [
     "America MG",
@@ -21681,18 +21681,65 @@ window.DADOS_BR_B = {
       "visitante": "Nautico",
       "rodada": 19,
       "data": "16.07.2026 20:00",
-      "data_partida": "16.07.2026 20:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 4,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 44,
+          "v": 56
+        },
+        "finalizacoes": {
+          "m": 20,
+          "v": 7
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 8,
+          "v": 2
+        },
+        "cartoes_amarelos": {
+          "m": 1,
+          "v": 1
+        },
+        "faltas": {
+          "m": 14,
+          "v": 12
+        },
+        "defesas_goleiro": {
+          "m": 1,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/QFSF8Fdd/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:40.385Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "WCN2EpTH",

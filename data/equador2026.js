@@ -1,9 +1,9 @@
-// DADOS_ECU — PIPELINE processado (2026-07-17T16:50)
+// DADOS_ECU — PIPELINE processado (2026-07-17T18:40)
 // Total: 239
 
 window.DADOS_ECU = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 46,
   "times": [
     "Aucas",
@@ -20964,18 +20964,65 @@ window.DADOS_ECU = {
       "visitante": "Ind. del Valle",
       "rodada": 21,
       "data": "16.07.2026 18:30",
-      "data_partida": "16.07.2026 18:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 3
+        },
+        "ft": {
+          "m": 2,
+          "v": 3
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 55,
+          "v": 45
+        },
+        "finalizacoes": {
+          "m": 11,
+          "v": 18
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 7
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 0
+        },
+        "faltas": {
+          "m": 9,
+          "v": 7
+        },
+        "defesas_goleiro": {
+          "m": 5,
+          "v": 6
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 3
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 3
+        },
+        "ht": {
+          "m": 0,
+          "v": 2
+        }
+      },
+      "url": "https://www.flashscore.com/match/xEAGbgc3/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:41.684Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "KzukOCLj",
@@ -20983,18 +21030,65 @@ window.DADOS_ECU = {
       "visitante": "Emelec",
       "rodada": 21,
       "data": "16.07.2026 21:00",
-      "data_partida": "16.07.2026 21:00",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 4,
+          "v": 0
+        },
+        "ft": {
+          "m": 5,
+          "v": 1
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 59,
+          "v": 41
+        },
+        "finalizacoes": {
+          "m": 7,
+          "v": 11
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 1,
+          "v": 5
+        },
+        "cartoes_amarelos": {
+          "m": 7,
+          "v": 2
+        },
+        "faltas": {
+          "m": 19,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 2,
+          "v": 1
+        }
+      },
+      "placar": {
+        "m": 0,
+        "v": 2
+      },
+      "gols": {
+        "ft": {
+          "m": 0,
+          "v": 2
+        },
+        "ht": {
+          "m": 0,
+          "v": 1
+        }
+      },
+      "url": "https://www.flashscore.com/match/KzukOCLj/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:41.684Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "IiCWfBdS",

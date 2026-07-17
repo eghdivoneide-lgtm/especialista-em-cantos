@@ -1,9 +1,9 @@
-// DADOS_ARG_B — PIPELINE processado (2026-07-17T16:50)
+// DADOS_ARG_B — PIPELINE processado (2026-07-17T18:40)
 // Total: 647
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 113,
   "times": [
     "Acassuso",

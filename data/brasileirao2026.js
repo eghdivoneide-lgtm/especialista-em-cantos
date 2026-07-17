@@ -1,9 +1,9 @@
-// DADOS_BR — PIPELINE processado (2026-07-17T16:50)
+// DADOS_BR — PIPELINE processado (2026-07-17T18:40)
 // Total: 375
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 23,
   "times": [
     "Athletico-PR",
@@ -20564,41 +20564,132 @@ window.DADOS_BR = {
     },
     {
       "match_id": "8KWmH9SI",
-      "mandante": "Bahia",
+      "mandante": "Botafogo RJ",
       "visitante": "Santos",
       "rodada": 19,
       "data": "16.07.2026 19:30",
-      "data_partida": "16.07.2026 19:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 2,
+          "v": 2
+        },
+        "ft": {
+          "m": 5,
+          "v": 5
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 48,
+          "v": 52
+        },
+        "finalizacoes": {
+          "m": 17,
+          "v": 22
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 6,
+          "v": 9
+        },
+        "cartoes_amarelos": {
+          "m": 4,
+          "v": 2
+        },
+        "faltas": {
+          "m": 10,
+          "v": 13
+        },
+        "defesas_goleiro": {
+          "m": 8,
+          "v": 4
+        }
+      },
+      "placar": {
+        "m": 2,
+        "v": 1
+      },
+      "gols": {
+        "ft": {
+          "m": 2,
+          "v": 1
+        },
+        "ht": {
+          "m": 1,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/8KWmH9SI/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:40.198Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "80AlZsl4",
-      "mandante": "Vitória",
+      "mandante": "Vitoria",
       "visitante": "Vasco",
       "rodada": 19,
       "data": "16.07.2026 19:30",
-      "data_partida": "16.07.2026 19:30",
       "tabela": null,
-      "cantos": null,
-      "stats_taticas": null,
-      "estatisticas_ft": null,
-      "placar": null,
-      "gols": null,
-      "url": null,
-      "disputado": false,
+      "cantos": {
+        "ht": {
+          "m": 1,
+          "v": 1
+        },
+        "ft": {
+          "m": 3,
+          "v": 2
+        }
+      },
+      "stats_taticas": {
+        "posse": {
+          "m": 50,
+          "v": 50
+        },
+        "finalizacoes": {
+          "m": 14,
+          "v": 13
+        }
+      },
+      "estatisticas_ft": {
+        "chutes_alvo": {
+          "m": 5,
+          "v": 3
+        },
+        "cartoes_amarelos": null,
+        "faltas": {
+          "m": 12,
+          "v": 15
+        },
+        "defesas_goleiro": {
+          "m": 3,
+          "v": 5
+        }
+      },
+      "placar": {
+        "m": 1,
+        "v": 0
+      },
+      "gols": {
+        "ft": {
+          "m": 1,
+          "v": 0
+        },
+        "ht": {
+          "m": 0,
+          "v": 0
+        }
+      },
+      "url": "https://www.flashscore.com/match/80AlZsl4/#/match-summary",
       "meta": {
-        "fonte": "flashscore-fixtures"
-      }
+        "fonte": "flashscore",
+        "timestamp_extracao": "2026-07-17T18:40:40.199Z"
+      },
+      "disputado": true
     },
     {
       "match_id": "ELwuJVc6",

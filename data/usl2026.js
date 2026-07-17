@@ -1,9 +1,9 @@
-// DADOS_USL — PIPELINE processado (2026-07-17T16:50)
+// DADOS_USL — PIPELINE processado (2026-07-17T18:40)
 // Total: 374
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
-  "ultimaAtualizacao": "2026-07-16",
+  "ultimaAtualizacao": "2026-07-17",
   "totalRodadas": 5,
   "times": [
     "Birmingham",
