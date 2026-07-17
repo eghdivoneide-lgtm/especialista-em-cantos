@@ -1,4 +1,4 @@
-// DADOS_USL — PIPELINE processado (2026-07-17T01:31)
+// DADOS_USL — PIPELINE processado (2026-07-17T01:48)
 // Total: 374
 
 window.DADOS_USL = {

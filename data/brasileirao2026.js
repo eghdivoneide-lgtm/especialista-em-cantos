@@ -1,4 +1,4 @@
-// DADOS_BR — PIPELINE processado (2026-07-17T01:31)
+// DADOS_BR — PIPELINE processado (2026-07-17T01:47)
 // Total: 375
 
 window.DADOS_BR = {
