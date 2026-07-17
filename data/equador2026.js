@@ -1,5 +1,5 @@
-// DADOS_ECU — PIPELINE processado (2026-07-16T23:52)
-// Total: 167
+// DADOS_ECU — PIPELINE processado (2026-07-17T01:31)
+// Total: 239
 
 window.DADOS_ECU = {
   "temporada": "2026",
@@ -21684,6 +21684,1374 @@ window.DADOS_ECU = {
       "rodada": 47,
       "data": "23.07.2026 21:00",
       "data_partida": "23.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8rrAdqkU",
+      "mandante": "Aucas",
+      "visitante": "Macara",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b7NJGnzn",
+      "mandante": "Barcelona SC",
+      "visitante": "LDU Quito",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jFuREQ4b",
+      "mandante": "Delfin",
+      "visitante": "Leones del Norte",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2yYC5MRp",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Emelec",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S4tf0Rk5",
+      "mandante": "Guayaquil City",
+      "visitante": "U. Catolica",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WhssBr4N",
+      "mandante": "Mushuc Runa",
+      "visitante": "Libertad",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OSwZC4ZA",
+      "mandante": "Orense",
+      "visitante": "Ind. del Valle",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zVq2b5KH",
+      "mandante": "Tecnico U.",
+      "visitante": "Manta",
+      "rodada": 48,
+      "data": "26.07.2026 17:00",
+      "data_partida": "26.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tnJ6R3l4",
+      "mandante": "Emelec",
+      "visitante": "Aucas",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Io3vt33c",
+      "mandante": "Ind. del Valle",
+      "visitante": "Dep. Cuenca",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4OWRJCne",
+      "mandante": "LDU Quito",
+      "visitante": "Delfin",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ja1nvsY9",
+      "mandante": "Leones del Norte",
+      "visitante": "Barcelona SC",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lCMEPsJG",
+      "mandante": "Libertad",
+      "visitante": "Orense",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fVKbTPJi",
+      "mandante": "Macara",
+      "visitante": "Guayaquil City",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dbTJLYHr",
+      "mandante": "Manta",
+      "visitante": "Mushuc Runa",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h8BhIaBj",
+      "mandante": "U. Catolica",
+      "visitante": "Tecnico U.",
+      "rodada": 49,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UqXKuf9E",
+      "mandante": "Aucas",
+      "visitante": "Leones del Norte",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n3SEUT0D",
+      "mandante": "Barcelona SC",
+      "visitante": "Macara",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t6P6WkW0",
+      "mandante": "Delfin",
+      "visitante": "Orense",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xxVZHjH7",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Manta",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Au6WnBGs",
+      "mandante": "Guayaquil City",
+      "visitante": "Emelec",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YuMbYB1l",
+      "mandante": "LDU Quito",
+      "visitante": "Ind. del Valle",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vcF0hXhK",
+      "mandante": "Libertad",
+      "visitante": "U. Catolica",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xAzTwYwR",
+      "mandante": "Tecnico U.",
+      "visitante": "Mushuc Runa",
+      "rodada": 50,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Yc3ZgpUO",
+      "mandante": "Aucas",
+      "visitante": "LDU Quito",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xz6fs7pJ",
+      "mandante": "Emelec",
+      "visitante": "Tecnico U.",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0p5Re6aC",
+      "mandante": "Guayaquil City",
+      "visitante": "Libertad",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0CqCal0m",
+      "mandante": "Ind. del Valle",
+      "visitante": "Delfin",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8xmKcSUa",
+      "mandante": "Macara",
+      "visitante": "U. Catolica",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jJ7nqTF6",
+      "mandante": "Manta",
+      "visitante": "Leones del Norte",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I59vokof",
+      "mandante": "Mushuc Runa",
+      "visitante": "Barcelona SC",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4tbt5AxQ",
+      "mandante": "Orense",
+      "visitante": "Dep. Cuenca",
+      "rodada": 51,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2X3tAdKM",
+      "mandante": "Barcelona SC",
+      "visitante": "Orense",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lAcQDvLc",
+      "mandante": "Delfin",
+      "visitante": "Aucas",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jHr78qqI",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Mushuc Runa",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dz1YBIkA",
+      "mandante": "LDU Quito",
+      "visitante": "Emelec",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dGAvjyTj",
+      "mandante": "Leones del Norte",
+      "visitante": "Ind. del Valle",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WnniCRqg",
+      "mandante": "Libertad",
+      "visitante": "Macara",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "40paA5E5",
+      "mandante": "Tecnico U.",
+      "visitante": "Guayaquil City",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OMrqEmFt",
+      "mandante": "U. Catolica",
+      "visitante": "Manta",
+      "rodada": 52,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YZp6QH43",
+      "mandante": "Aucas",
+      "visitante": "Libertad",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6ThK2ECd",
+      "mandante": "Emelec",
+      "visitante": "Leones del Norte",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rBoaFid2",
+      "mandante": "Guayaquil City",
+      "visitante": "LDU Quito",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b3kC4zrp",
+      "mandante": "Ind. del Valle",
+      "visitante": "U. Catolica",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vFdLMZ3S",
+      "mandante": "Manta",
+      "visitante": "Barcelona SC",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CpQrN3F8",
+      "mandante": "Mushuc Runa",
+      "visitante": "Delfin",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AcmiHDRk",
+      "mandante": "Orense",
+      "visitante": "Macara",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6mqEOeZF",
+      "mandante": "Tecnico U.",
+      "visitante": "Dep. Cuenca",
+      "rodada": 53,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U3LxCw77",
+      "mandante": "Barcelona SC",
+      "visitante": "Ind. del Valle",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IsTjLspL",
+      "mandante": "Delfin",
+      "visitante": "Tecnico U.",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EDEMFL7r",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Guayaquil City",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CAeAQxM0",
+      "mandante": "LDU Quito",
+      "visitante": "Mushuc Runa",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Mc8OZtaE",
+      "mandante": "Leones del Norte",
+      "visitante": "Orense",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vcc2Sbil",
+      "mandante": "Libertad",
+      "visitante": "Emelec",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MwIUDaxe",
+      "mandante": "Macara",
+      "visitante": "Manta",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8E6WXKTQ",
+      "mandante": "U. Catolica",
+      "visitante": "Aucas",
+      "rodada": 54,
+      "data": "02.09.2026 17:00",
+      "data_partida": "02.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2BSzUBSh",
+      "mandante": "Aucas",
+      "visitante": "Barcelona SC",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SfBGtkCb",
+      "mandante": "Delfin",
+      "visitante": "U. Catolica",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jFXbO7dU",
+      "mandante": "Dep. Cuenca",
+      "visitante": "Libertad",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KU78rBsn",
+      "mandante": "Emelec",
+      "visitante": "Manta",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I1ZjQTRH",
+      "mandante": "Ind. del Valle",
+      "visitante": "Macara",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KzaIOGjD",
+      "mandante": "Mushuc Runa",
+      "visitante": "Leones del Norte",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AyWrSkc5",
+      "mandante": "Orense",
+      "visitante": "Guayaquil City",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UcUSVXct",
+      "mandante": "Tecnico U.",
+      "visitante": "LDU Quito",
+      "rodada": 55,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UsjlelRi",
+      "mandante": "Barcelona SC",
+      "visitante": "Delfin",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xl32XpZp",
+      "mandante": "Guayaquil City",
+      "visitante": "Mushuc Runa",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "x8gdgSe4",
+      "mandante": "LDU Quito",
+      "visitante": "Dep. Cuenca",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "089OvTtB",
+      "mandante": "Leones del Norte",
+      "visitante": "Tecnico U.",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pYd4i6QG",
+      "mandante": "Libertad",
+      "visitante": "Ind. del Valle",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EVespOIj",
+      "mandante": "Macara",
+      "visitante": "Emelec",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8YCWx7BN",
+      "mandante": "Manta",
+      "visitante": "Aucas",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IoeCkpeT",
+      "mandante": "U. Catolica",
+      "visitante": "Orense",
+      "rodada": 56,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

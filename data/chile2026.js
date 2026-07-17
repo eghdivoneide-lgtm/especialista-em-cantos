@@ -1,5 +1,5 @@
-// DADOS_CHI — PIPELINE processado (2026-07-16T23:52)
-// Total: 114
+// DADOS_CHI — PIPELINE processado (2026-07-17T01:31)
+// Total: 234
 
 window.DADOS_CHI = {
   "temporada": "2026",
@@ -17628,6 +17628,2286 @@ window.DADOS_CHI = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      }
+    },
+    {
+      "match_id": "x23FbJfl",
+      "mandante": "Union La Calera",
+      "visitante": "Everton",
+      "rodada": 71,
+      "data": "24.07.2026 19:00",
+      "data_partida": "24.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WOtlrbA7",
+      "mandante": "Colo Colo",
+      "visitante": "Limache",
+      "rodada": 71,
+      "data": "24.07.2026 21:30",
+      "data_partida": "24.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hURr4uXQ",
+      "mandante": "Coquimbo",
+      "visitante": "U. De Concepcion",
+      "rodada": 71,
+      "data": "25.07.2026 16:00",
+      "data_partida": "25.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G8jsDI9s",
+      "mandante": "Huachipato",
+      "visitante": "Cobresal",
+      "rodada": 71,
+      "data": "25.07.2026 18:30",
+      "data_partida": "25.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nXOz612E",
+      "mandante": "U. Catolica",
+      "visitante": "La Serena",
+      "rodada": 71,
+      "data": "25.07.2026 21:00",
+      "data_partida": "25.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YmmIIvnK",
+      "mandante": "Nublense",
+      "visitante": "Palestino",
+      "rodada": 71,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pS6NdcP0",
+      "mandante": "A. Italiano",
+      "visitante": "U. De Chile",
+      "rodada": 71,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tf0WfyfD",
+      "mandante": "D. Concepcion",
+      "visitante": "O'Higgins",
+      "rodada": 71,
+      "data": "26.07.2026 21:30",
+      "data_partida": "26.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CGwD35xo",
+      "mandante": "U. De Concepcion",
+      "visitante": "A. Italiano",
+      "rodada": 72,
+      "data": "31.07.2026 21:00",
+      "data_partida": "31.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "plrb9z96",
+      "mandante": "Cobresal",
+      "visitante": "Union La Calera",
+      "rodada": 72,
+      "data": "01.08.2026 13:30",
+      "data_partida": "01.08.2026 13:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h4rhVHVP",
+      "mandante": "Everton",
+      "visitante": "Colo Colo",
+      "rodada": 72,
+      "data": "01.08.2026 16:00",
+      "data_partida": "01.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p2NWNZNa",
+      "mandante": "Palestino",
+      "visitante": "Coquimbo",
+      "rodada": 72,
+      "data": "01.08.2026 18:30",
+      "data_partida": "01.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lzUNPegm",
+      "mandante": "Limache",
+      "visitante": "Nublense",
+      "rodada": 72,
+      "data": "01.08.2026 21:00",
+      "data_partida": "01.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hSQvMDhC",
+      "mandante": "D. Concepcion",
+      "visitante": "U. Catolica",
+      "rodada": 72,
+      "data": "02.08.2026 13:30",
+      "data_partida": "02.08.2026 13:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hEo67EwJ",
+      "mandante": "La Serena",
+      "visitante": "O'Higgins",
+      "rodada": 72,
+      "data": "02.08.2026 16:00",
+      "data_partida": "02.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OYgkBdvf",
+      "mandante": "U. De Chile",
+      "visitante": "Huachipato",
+      "rodada": 72,
+      "data": "02.08.2026 18:30",
+      "data_partida": "02.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EuK7Pna4",
+      "mandante": "U. Catolica",
+      "visitante": "Cobresal",
+      "rodada": 73,
+      "data": "07.08.2026 21:30",
+      "data_partida": "07.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0drkxQrA",
+      "mandante": "Huachipato",
+      "visitante": "Everton",
+      "rodada": 73,
+      "data": "08.08.2026 16:00",
+      "data_partida": "08.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ngIFNQTG",
+      "mandante": "Coquimbo",
+      "visitante": "La Serena",
+      "rodada": 73,
+      "data": "08.08.2026 18:30",
+      "data_partida": "08.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dOybz4DM",
+      "mandante": "D. Concepcion",
+      "visitante": "U. De Concepcion",
+      "rodada": 73,
+      "data": "09.08.2026 13:30",
+      "data_partida": "09.08.2026 13:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hWvsvnEc",
+      "mandante": "O'Higgins",
+      "visitante": "Limache",
+      "rodada": 73,
+      "data": "09.08.2026 16:00",
+      "data_partida": "09.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rLBOL4bT",
+      "mandante": "Union La Calera",
+      "visitante": "Colo Colo",
+      "rodada": 73,
+      "data": "09.08.2026 18:30",
+      "data_partida": "09.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IDQbR8Ui",
+      "mandante": "U. De Chile",
+      "visitante": "Palestino",
+      "rodada": 73,
+      "data": "09.08.2026 21:00",
+      "data_partida": "09.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Cz2fGrMj",
+      "mandante": "A. Italiano",
+      "visitante": "Nublense",
+      "rodada": 73,
+      "data": "10.08.2026 21:00",
+      "data_partida": "10.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0Wbb32s9",
+      "mandante": "U. De Concepcion",
+      "visitante": "La Serena",
+      "rodada": 74,
+      "data": "14.08.2026 20:00",
+      "data_partida": "14.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fgxXnscS",
+      "mandante": "Limache",
+      "visitante": "U. De Chile",
+      "rodada": 74,
+      "data": "15.08.2026 18:30",
+      "data_partida": "15.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nTYOl3SF",
+      "mandante": "Everton",
+      "visitante": "A. Italiano",
+      "rodada": 74,
+      "data": "15.08.2026 21:00",
+      "data_partida": "15.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pOGBuak2",
+      "mandante": "Nublense",
+      "visitante": "Union La Calera",
+      "rodada": 74,
+      "data": "16.08.2026 13:30",
+      "data_partida": "16.08.2026 13:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b7hUSL5d",
+      "mandante": "Cobresal",
+      "visitante": "D. Concepcion",
+      "rodada": 74,
+      "data": "16.08.2026 16:00",
+      "data_partida": "16.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hfNTUsyp",
+      "mandante": "Colo Colo",
+      "visitante": "O'Higgins",
+      "rodada": 74,
+      "data": "16.08.2026 18:30",
+      "data_partida": "16.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CAI3sLKk",
+      "mandante": "Palestino",
+      "visitante": "Huachipato",
+      "rodada": 74,
+      "data": "17.08.2026 21:30",
+      "data_partida": "17.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S6IuGuRE",
+      "mandante": "A. Italiano",
+      "visitante": "Union La Calera",
+      "rodada": 75,
+      "data": "21.08.2026 21:30",
+      "data_partida": "21.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EFhLeBu0",
+      "mandante": "Huachipato",
+      "visitante": "Limache",
+      "rodada": 75,
+      "data": "22.08.2026 18:30",
+      "data_partida": "22.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hUwwdKZr",
+      "mandante": "U. Catolica",
+      "visitante": "Nublense",
+      "rodada": 75,
+      "data": "22.08.2026 21:00",
+      "data_partida": "22.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zVtUgkAC",
+      "mandante": "D. Concepcion",
+      "visitante": "Coquimbo",
+      "rodada": 75,
+      "data": "23.08.2026 13:00",
+      "data_partida": "23.08.2026 13:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "voxofb4e",
+      "mandante": "La Serena",
+      "visitante": "Cobresal",
+      "rodada": 75,
+      "data": "23.08.2026 13:00",
+      "data_partida": "23.08.2026 13:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8d261tCL",
+      "mandante": "U. De Chile",
+      "visitante": "Colo Colo",
+      "rodada": 75,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M7zEcXAm",
+      "mandante": "O'Higgins",
+      "visitante": "Palestino",
+      "rodada": 75,
+      "data": "23.08.2026 20:00",
+      "data_partida": "23.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zDVghxZ7",
+      "mandante": "Everton",
+      "visitante": "U. De Concepcion",
+      "rodada": 75,
+      "data": "24.08.2026 20:30",
+      "data_partida": "24.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QDpGjPc3",
+      "mandante": "Coquimbo",
+      "visitante": "U. Catolica",
+      "rodada": 74,
+      "data": "26.08.2026 19:00",
+      "data_partida": "26.08.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "d20hfJLh",
+      "mandante": "Cobresal",
+      "visitante": "Palestino",
+      "rodada": 76,
+      "data": "28.08.2026 19:30",
+      "data_partida": "28.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pp8AlFkU",
+      "mandante": "Limache",
+      "visitante": "Everton",
+      "rodada": 76,
+      "data": "29.08.2026 18:30",
+      "data_partida": "29.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z9mK8Izn",
+      "mandante": "Nublense",
+      "visitante": "D. Concepcion",
+      "rodada": 76,
+      "data": "29.08.2026 21:00",
+      "data_partida": "29.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U7tT6d5b",
+      "mandante": "U. De Concepcion",
+      "visitante": "U. De Chile",
+      "rodada": 76,
+      "data": "30.08.2026 16:00",
+      "data_partida": "30.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "repxhTvP",
+      "mandante": "Colo Colo",
+      "visitante": "A. Italiano",
+      "rodada": 76,
+      "data": "30.08.2026 18:30",
+      "data_partida": "30.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G4Gghcj5",
+      "mandante": "Coquimbo",
+      "visitante": "Huachipato",
+      "rodada": 76,
+      "data": "30.08.2026 21:00",
+      "data_partida": "30.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OUJ1jyLH",
+      "mandante": "Union La Calera",
+      "visitante": "La Serena",
+      "rodada": 76,
+      "data": "31.08.2026 19:15",
+      "data_partida": "31.08.2026 19:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ol2pduit",
+      "mandante": "U. Catolica",
+      "visitante": "O'Higgins",
+      "rodada": 76,
+      "data": "31.08.2026 21:45",
+      "data_partida": "31.08.2026 21:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WImcAVBj",
+      "mandante": "D. Concepcion",
+      "visitante": "A. Italiano",
+      "rodada": 77,
+      "data": "04.09.2026 21:30",
+      "data_partida": "04.09.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UVOFchSp",
+      "mandante": "Everton",
+      "visitante": "U. Catolica",
+      "rodada": 77,
+      "data": "05.09.2026 18:30",
+      "data_partida": "05.09.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Lvy5zzB",
+      "mandante": "U. De Chile",
+      "visitante": "Coquimbo",
+      "rodada": 77,
+      "data": "05.09.2026 21:00",
+      "data_partida": "05.09.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bmYq3E4N",
+      "mandante": "La Serena",
+      "visitante": "Nublense",
+      "rodada": 77,
+      "data": "06.09.2026 12:30",
+      "data_partida": "06.09.2026 12:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vL8IHDJG",
+      "mandante": "O'Higgins",
+      "visitante": "Union La Calera",
+      "rodada": 77,
+      "data": "06.09.2026 14:45",
+      "data_partida": "06.09.2026 14:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CY6QFilT",
+      "mandante": "Huachipato",
+      "visitante": "Colo Colo",
+      "rodada": 77,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rgF9JZl4",
+      "mandante": "Palestino",
+      "visitante": "U. De Concepcion",
+      "rodada": 77,
+      "data": "06.09.2026 19:30",
+      "data_partida": "06.09.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AR12LeKi",
+      "mandante": "Limache",
+      "visitante": "Cobresal",
+      "rodada": 77,
+      "data": "07.09.2026 20:00",
+      "data_partida": "07.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vaeTV3vR",
+      "mandante": "Nublense",
+      "visitante": "Everton",
+      "rodada": 78,
+      "data": "12.09.2026 12:30",
+      "data_partida": "12.09.2026 12:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IBTiWCY9",
+      "mandante": "Cobresal",
+      "visitante": "Coquimbo",
+      "rodada": 78,
+      "data": "12.09.2026 15:00",
+      "data_partida": "12.09.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WYiLXP9E",
+      "mandante": "Palestino",
+      "visitante": "U. Catolica",
+      "rodada": 78,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OWWaQs2l",
+      "mandante": "U. De Concepcion",
+      "visitante": "Huachipato",
+      "rodada": 78,
+      "data": "13.09.2026 12:30",
+      "data_partida": "13.09.2026 12:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OAePD4Ir",
+      "mandante": "La Serena",
+      "visitante": "U. De Chile",
+      "rodada": 78,
+      "data": "13.09.2026 15:00",
+      "data_partida": "13.09.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dduqYY3c",
+      "mandante": "Colo Colo",
+      "visitante": "D. Concepcion",
+      "rodada": 78,
+      "data": "13.09.2026 17:30",
+      "data_partida": "13.09.2026 17:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hjmtAMH7",
+      "mandante": "A. Italiano",
+      "visitante": "O'Higgins",
+      "rodada": 78,
+      "data": "13.09.2026 20:00",
+      "data_partida": "13.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KxkYBrme",
+      "mandante": "Union La Calera",
+      "visitante": "Limache",
+      "rodada": 78,
+      "data": "14.09.2026 20:30",
+      "data_partida": "14.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Wdz8OLW0",
+      "mandante": "U. De Chile",
+      "visitante": "Nublense",
+      "rodada": 79,
+      "data": "09.10.2026 20:00",
+      "data_partida": "09.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "40V1p3gK",
+      "mandante": "Cobresal",
+      "visitante": "U. De Concepcion",
+      "rodada": 79,
+      "data": "10.10.2026 15:00",
+      "data_partida": "10.10.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vs2cZxoJ",
+      "mandante": "Huachipato",
+      "visitante": "O'Higgins",
+      "rodada": 79,
+      "data": "10.10.2026 17:30",
+      "data_partida": "10.10.2026 17:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C6rGMa1D",
+      "mandante": "U. Catolica",
+      "visitante": "A. Italiano",
+      "rodada": 79,
+      "data": "10.10.2026 20:00",
+      "data_partida": "10.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WAFtwLof",
+      "mandante": "Everton",
+      "visitante": "La Serena",
+      "rodada": 79,
+      "data": "11.10.2026 12:30",
+      "data_partida": "11.10.2026 12:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OpCYvsHs",
+      "mandante": "Coquimbo",
+      "visitante": "Colo Colo",
+      "rodada": 79,
+      "data": "11.10.2026 15:00",
+      "data_partida": "11.10.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fkppctwQ",
+      "mandante": "D. Concepcion",
+      "visitante": "Union La Calera",
+      "rodada": 79,
+      "data": "11.10.2026 17:30",
+      "data_partida": "11.10.2026 17:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hQ3kyaG6",
+      "mandante": "Limache",
+      "visitante": "Palestino",
+      "rodada": 79,
+      "data": "11.10.2026 20:00",
+      "data_partida": "11.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nmPOkbVa",
+      "mandante": "La Serena",
+      "visitante": "D. Concepcion",
+      "rodada": 80,
+      "data": "24.10.2026 21:00",
+      "data_partida": "24.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y3m62yF5",
+      "mandante": "Nublense",
+      "visitante": "Coquimbo",
+      "rodada": 80,
+      "data": "24.10.2026 21:00",
+      "data_partida": "24.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EaGunGUO",
+      "mandante": "A. Italiano",
+      "visitante": "Huachipato",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0jkb4cpg",
+      "mandante": "O'Higgins",
+      "visitante": "Cobresal",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4Oek6JFt",
+      "mandante": "Palestino",
+      "visitante": "Colo Colo",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jLVFiK0m",
+      "mandante": "U. De Chile",
+      "visitante": "Everton",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vHI60FqI",
+      "mandante": "U. De Concepcion",
+      "visitante": "Limache",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hpSWmx0C",
+      "mandante": "Union La Calera",
+      "visitante": "U. Catolica",
+      "rodada": 80,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YyRY3ljA",
+      "mandante": "Cobresal",
+      "visitante": "Everton",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pGpvr7Tj",
+      "mandante": "Colo Colo",
+      "visitante": "U. De Concepcion",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SzKs2SKM",
+      "mandante": "Coquimbo",
+      "visitante": "Union La Calera",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8fuHGRZF",
+      "mandante": "D. Concepcion",
+      "visitante": "Palestino",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nui8Im53",
+      "mandante": "Huachipato",
+      "visitante": "La Serena",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O65Dd6rp",
+      "mandante": "Limache",
+      "visitante": "A. Italiano",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KYbMfpDd",
+      "mandante": "O'Higgins",
+      "visitante": "Nublense",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QBNQ5ALc",
+      "mandante": "U. Catolica",
+      "visitante": "U. De Chile",
+      "rodada": 81,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tQtS7i8r",
+      "mandante": "A. Italiano",
+      "visitante": "Coquimbo",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dh5eDDpL",
+      "mandante": "Everton",
+      "visitante": "D. Concepcion",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n9I37Nd2",
+      "mandante": "La Serena",
+      "visitante": "Palestino",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ljpz6Vxe",
+      "mandante": "Nublense",
+      "visitante": "Colo Colo",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EeKe9qSk",
+      "mandante": "U. Catolica",
+      "visitante": "Limache",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fBwPE54S",
+      "mandante": "U. De Chile",
+      "visitante": "Cobresal",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pIwq4977",
+      "mandante": "U. De Concepcion",
+      "visitante": "O'Higgins",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4pmlFZF8",
+      "mandante": "Union La Calera",
+      "visitante": "Huachipato",
+      "rodada": 82,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dEtWPjUQ",
+      "mandante": "Cobresal",
+      "visitante": "A. Italiano",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xCQURCaE",
+      "mandante": "Colo Colo",
+      "visitante": "U. Catolica",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SdX1KUil",
+      "mandante": "Coquimbo",
+      "visitante": "Everton",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t4TxMsTh",
+      "mandante": "Huachipato",
+      "visitante": "D. Concepcion",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lCLAI8M0",
+      "mandante": "Limache",
+      "visitante": "La Serena",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8jVUN3bt",
+      "mandante": "O'Higgins",
+      "visitante": "U. De Chile",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dxPIGniD",
+      "mandante": "Palestino",
+      "visitante": "Union La Calera",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xWMoKLc5",
+      "mandante": "U. De Concepcion",
+      "visitante": "Nublense",
+      "rodada": 83,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nqkyVxCN",
+      "mandante": "A. Italiano",
+      "visitante": "Palestino",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pdQgIaSH",
+      "mandante": "Colo Colo",
+      "visitante": "La Serena",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "My4Bzsrn",
+      "mandante": "Coquimbo",
+      "visitante": "Limache",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dfIgmKRi",
+      "mandante": "D. Concepcion",
+      "visitante": "U. De Chile",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jHeSWbsB",
+      "mandante": "Everton",
+      "visitante": "O'Higgins",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Gbu7PGZp",
+      "mandante": "Nublense",
+      "visitante": "Cobresal",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6BE2GwcU",
+      "mandante": "U. Catolica",
+      "visitante": "Huachipato",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I3cKYKCb",
+      "mandante": "Union La Calera",
+      "visitante": "U. De Concepcion",
+      "rodada": 84,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0nFAqxRG",
+      "mandante": "Cobresal",
+      "visitante": "Colo Colo",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C60pdFAM",
+      "mandante": "Huachipato",
+      "visitante": "Nublense",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YaDIsGeT",
+      "mandante": "La Serena",
+      "visitante": "A. Italiano",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GKGsxfJj",
+      "mandante": "Limache",
+      "visitante": "D. Concepcion",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4tcxbytA",
+      "mandante": "O'Higgins",
+      "visitante": "Coquimbo",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rR8TacBc",
+      "mandante": "Palestino",
+      "visitante": "Everton",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4KL1obd4",
+      "mandante": "U. De Chile",
+      "visitante": "Union La Calera",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GYeGjgYq",
+      "mandante": "U. De Concepcion",
+      "visitante": "U. Catolica",
+      "rodada": 85,
+      "data": "06.12.2026 18:00",
+      "data_partida": "06.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ]

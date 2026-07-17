@@ -1,5 +1,5 @@
-// DADOS_ARG_B — PIPELINE processado (2026-07-16T23:52)
-// Total: 377
+// DADOS_ARG_B — PIPELINE processado (2026-07-17T01:31)
+// Total: 647
 
 window.DADOS_ARG_B = {
   "temporada": "2026",
@@ -44021,6 +44021,5136 @@ window.DADOS_ARG_B = {
       "rodada": 114,
       "data": "21.07.2026 19:00",
       "data_partida": "21.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UVKrWq66",
+      "mandante": "CA Estudiantes",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 115,
+      "data": "25.07.2026 15:00",
+      "data_partida": "25.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vPWvmKvI",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Nueva Chicago",
+      "rodada": 115,
+      "data": "25.07.2026 16:00",
+      "data_partida": "25.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bDqDUBOj",
+      "mandante": "San Martin T.",
+      "visitante": "Temperley",
+      "rodada": 115,
+      "data": "25.07.2026 19:00",
+      "data_partida": "25.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WbTWltA5",
+      "mandante": "Agropecuario",
+      "visitante": "San Martin S.J.",
+      "rodada": 115,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dIMzY5yf",
+      "mandante": "All Boys",
+      "visitante": "Def. de Belgrano",
+      "rodada": 115,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lfE8UWU1",
+      "mandante": "Deportivo Moron",
+      "visitante": "Ferro",
+      "rodada": 115,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0jTRZR6s",
+      "mandante": "Los Andes",
+      "visitante": "Deportivo Madryn",
+      "rodada": 115,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zXZNj2ug",
+      "mandante": "Tristan Suarez",
+      "visitante": "Chacarita Juniors",
+      "rodada": 115,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tUA0Wh0k",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Chaco For Ever",
+      "rodada": 115,
+      "data": "26.07.2026 15:30",
+      "data_partida": "26.07.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MqUTyFxS",
+      "mandante": "San Miguel",
+      "visitante": "Acassuso",
+      "rodada": 115,
+      "data": "26.07.2026 15:30",
+      "data_partida": "26.07.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QcEiUNzJ",
+      "mandante": "CA Mitre",
+      "visitante": "Almirante Brown",
+      "rodada": 115,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2JyGhOAt",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Club A. Guemes",
+      "rodada": 115,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K0wFlXFM",
+      "mandante": "Midland",
+      "visitante": "Patronato",
+      "rodada": 115,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "voKoqBwp",
+      "mandante": "Quilmes",
+      "visitante": "Colegiales",
+      "rodada": 115,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lWVLwy8F",
+      "mandante": "Racing Cordoba",
+      "visitante": "San Telmo",
+      "rodada": 115,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UkiehzN8",
+      "mandante": "Godoy Cruz",
+      "visitante": "Central Norte",
+      "rodada": 115,
+      "data": "26.07.2026 16:30",
+      "data_partida": "26.07.2026 16:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jLobhFGc",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Deportivo Maipu",
+      "rodada": 115,
+      "data": "26.07.2026 18:00",
+      "data_partida": "26.07.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nmu7jgoA",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Almagro",
+      "rodada": 115,
+      "data": "27.07.2026 20:00",
+      "data_partida": "27.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "reMhcM45",
+      "mandante": "Acassuso",
+      "visitante": "Colon Santa Fe",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YPvPF9EL",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Agropecuario",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "prNgsk8d",
+      "mandante": "Colegiales",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rZpIpqLa",
+      "mandante": "Def. de Belgrano",
+      "visitante": "CA Estudiantes",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EFUy145t",
+      "mandante": "Ferro",
+      "visitante": "Godoy Cruz",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p4bUgSi2",
+      "mandante": "Nueva Chicago",
+      "visitante": "San Martin T.",
+      "rodada": 116,
+      "data": "01.08.2026 15:00",
+      "data_partida": "01.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CAjGHVq9",
+      "mandante": "San Martin S.J.",
+      "visitante": "Atl. Rafaela",
+      "rodada": 116,
+      "data": "01.08.2026 15:30",
+      "data_partida": "01.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y33l3WUF",
+      "mandante": "Almagro",
+      "visitante": "Midland",
+      "rodada": 116,
+      "data": "02.08.2026 15:00",
+      "data_partida": "02.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jy6whRSP",
+      "mandante": "Almirante Brown",
+      "visitante": "Racing Cordoba",
+      "rodada": 116,
+      "data": "02.08.2026 15:00",
+      "data_partida": "02.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z9sAn5jm",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "CA Mitre",
+      "rodada": 116,
+      "data": "02.08.2026 15:00",
+      "data_partida": "02.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jLP0e0ZH",
+      "mandante": "San Telmo",
+      "visitante": "San Miguel",
+      "rodada": 116,
+      "data": "02.08.2026 15:00",
+      "data_partida": "02.08.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UVdc1AaS",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Atletico Atlanta",
+      "rodada": 116,
+      "data": "02.08.2026 15:30",
+      "data_partida": "02.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qw0t5h03",
+      "mandante": "Patronato",
+      "visitante": "Quilmes",
+      "rodada": 116,
+      "data": "02.08.2026 15:30",
+      "data_partida": "02.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q1rTelNk",
+      "mandante": "Temperley",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 116,
+      "data": "02.08.2026 15:30",
+      "data_partida": "02.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MuYqarzg",
+      "mandante": "Chaco For Ever",
+      "visitante": "Deportivo Moron",
+      "rodada": 116,
+      "data": "02.08.2026 16:00",
+      "data_partida": "02.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "48VfAmxq",
+      "mandante": "Club A. Guemes",
+      "visitante": "Tristan Suarez",
+      "rodada": 116,
+      "data": "02.08.2026 16:00",
+      "data_partida": "02.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "v1vRrNkC",
+      "mandante": "Deportivo Madryn",
+      "visitante": "All Boys",
+      "rodada": 116,
+      "data": "02.08.2026 16:00",
+      "data_partida": "02.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CExZt1KO",
+      "mandante": "Central Norte",
+      "visitante": "Los Andes",
+      "rodada": 116,
+      "data": "02.08.2026 16:30",
+      "data_partida": "02.08.2026 16:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IVyB65y8",
+      "mandante": "Agropecuario",
+      "visitante": "Club A. Guemes",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MNvE2Hto",
+      "mandante": "All Boys",
+      "visitante": "Central Norte",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6BEHMxYG",
+      "mandante": "Almirante Brown",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z76eEHfE",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Chacarita Juniors",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ELqr5DH0",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Temperley",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xWM0QKYi",
+      "mandante": "CA Estudiantes",
+      "visitante": "Deportivo Madryn",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AqL8Ob34",
+      "mandante": "CA Mitre",
+      "visitante": "Def. de Belgrano",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "drrB8nOh",
+      "mandante": "Colegiales",
+      "visitante": "Patronato",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ns8IDskn",
+      "mandante": "Colon Santa Fe",
+      "visitante": "San Telmo",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "r91RBLJb",
+      "mandante": "Deportivo Moron",
+      "visitante": "Acassuso",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pIw38R6e",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Tristan Suarez",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S4oz7Znl",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Nueva Chicago",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jZ4Z9alB",
+      "mandante": "Godoy Cruz",
+      "visitante": "Chaco For Ever",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Clgr8wJN",
+      "mandante": "Los Andes",
+      "visitante": "Ferro",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Amwi3inD",
+      "mandante": "Midland",
+      "visitante": "Deportivo Maipu",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0Gl2A8gt",
+      "mandante": "Quilmes",
+      "visitante": "Almagro",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WUX8gv4U",
+      "mandante": "Racing Cordoba",
+      "visitante": "San Miguel",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rX93CePQ",
+      "mandante": "San Martin T.",
+      "visitante": "San Martin S.J.",
+      "rodada": 117,
+      "data": "08.08.2026 17:00",
+      "data_partida": "08.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O8xsnEIP",
+      "mandante": "Acassuso",
+      "visitante": "Midland",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rVf6Tpo1",
+      "mandante": "Agropecuario",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Astk4UHk",
+      "mandante": "All Boys",
+      "visitante": "Nueva Chicago",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6X7dv2aJ",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Def. de Belgrano",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dEWOG71e",
+      "mandante": "CA Estudiantes",
+      "visitante": "Chacarita Juniors",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h0GRzThR",
+      "mandante": "CA Mitre",
+      "visitante": "Club A. Guemes",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "63t1kS7K",
+      "mandante": "Central Norte",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vclFROFD",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Patronato",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "j11OITWr",
+      "mandante": "Deportivo Moron",
+      "visitante": "Almagro",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WdUc28n2",
+      "mandante": "Ferro",
+      "visitante": "Atletico Atlanta",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fVFhOk9L",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Chaco For Ever",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jyIXq6Vs",
+      "mandante": "Godoy Cruz",
+      "visitante": "Deportivo Maipu",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xhGurp0f",
+      "mandante": "Quilmes",
+      "visitante": "San Telmo",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4vzXEoW7",
+      "mandante": "Racing Cordoba",
+      "visitante": "San Martin S.J.",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b3MqQBv9",
+      "mandante": "San Martin T.",
+      "visitante": "Deportivo Madryn",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YJ9ltOU6",
+      "mandante": "San Miguel",
+      "visitante": "Colegiales",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pzDJxkOE",
+      "mandante": "Temperley",
+      "visitante": "Los Andes",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AHdbV6Gl",
+      "mandante": "Tristan Suarez",
+      "visitante": "Almirante Brown",
+      "rodada": 118,
+      "data": "15.08.2026 17:00",
+      "data_partida": "15.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MybdvNGG",
+      "mandante": "Acassuso",
+      "visitante": "Godoy Cruz",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OfZR44NH",
+      "mandante": "Almagro",
+      "visitante": "Colegiales",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Fi1K1Pp",
+      "mandante": "Central Norte",
+      "visitante": "CA Estudiantes",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dxu1Hs7N",
+      "mandante": "Chacarita Juniors",
+      "visitante": "San Martin T.",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EBfltqn4",
+      "mandante": "Chaco For Ever",
+      "visitante": "Los Andes",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vZsCthtm",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Racing Cordoba",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tAGXBLUp",
+      "mandante": "Club A. Guemes",
+      "visitante": "Atl. Rafaela",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0lWKvWAa",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Almirante Brown",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8EZSxAuC",
+      "mandante": "Deportivo Madryn",
+      "visitante": "CA Mitre",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WKxz3rhU",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Quilmes",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f9vmr5Hi",
+      "mandante": "Ferro",
+      "visitante": "All Boys",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ra6hLP7b",
+      "mandante": "Nueva Chicago",
+      "visitante": "Atletico Atlanta",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2uoJ6Qh5",
+      "mandante": "Patronato",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lCygJ3xB",
+      "mandante": "San Martin S.J.",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EZxyXv9j",
+      "mandante": "San Miguel",
+      "visitante": "Colon Santa Fe",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rin5x1oT",
+      "mandante": "San Telmo",
+      "visitante": "Deportivo Moron",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ao8pNown",
+      "mandante": "Temperley",
+      "visitante": "Midland",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8G8JZOMi",
+      "mandante": "Tristan Suarez",
+      "visitante": "Agropecuario",
+      "rodada": 119,
+      "data": "22.08.2026 17:00",
+      "data_partida": "22.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lhiJqIhd",
+      "mandante": "All Boys",
+      "visitante": "Chaco For Ever",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AuoL3wpS",
+      "mandante": "Almirante Brown",
+      "visitante": "Deportivo Madryn",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zTazWtMG",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Tristan Suarez",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rZM1n26c",
+      "mandante": "Atletico Atlanta",
+      "visitante": "San Martin S.J.",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t0g47Lp3",
+      "mandante": "CA Estudiantes",
+      "visitante": "Ferro",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xSnD5aFF",
+      "mandante": "CA Mitre",
+      "visitante": "Central Norte",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UPRibH7k",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Def. de Belgrano",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Mm0lwbTq",
+      "mandante": "Colegiales",
+      "visitante": "Deportivo Maipu",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0SIVhMV9",
+      "mandante": "Deportivo Moron",
+      "visitante": "San Miguel",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2F1SX2i4",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Agropecuario",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2wpFObEj",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Chacarita Juniors",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dfCvi00M",
+      "mandante": "Godoy Cruz",
+      "visitante": "San Telmo",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Sx3AovOq",
+      "mandante": "Los Andes",
+      "visitante": "Acassuso",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UkL9ptyA",
+      "mandante": "Midland",
+      "visitante": "Nueva Chicago",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IFgcyxbd",
+      "mandante": "Patronato",
+      "visitante": "Almagro",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QHEIrK5M",
+      "mandante": "Quilmes",
+      "visitante": "Temperley",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SEKNfr1c",
+      "mandante": "Racing Cordoba",
+      "visitante": "Colon Santa Fe",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WfgqUKjT",
+      "mandante": "San Martin T.",
+      "visitante": "Club A. Guemes",
+      "rodada": 120,
+      "data": "29.08.2026 17:00",
+      "data_partida": "29.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zq6z9YL7",
+      "mandante": "Acassuso",
+      "visitante": "All Boys",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "44e7kSI6",
+      "mandante": "Agropecuario",
+      "visitante": "Atl. Rafaela",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U30rauj3",
+      "mandante": "Almagro",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OrBfIxaL",
+      "mandante": "Central Norte",
+      "visitante": "Almirante Brown",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4tDKbWeK",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Atletico Atlanta",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GtjZAfie",
+      "mandante": "Chaco For Ever",
+      "visitante": "CA Estudiantes",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zP3jgAJs",
+      "mandante": "Club A. Guemes",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U3E2C7Sa",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Deportivo Moron",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zNUadex2",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Racing Cordoba",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GI7nKbU8",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jJlicJKF",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Patronato",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rTiRCGMr",
+      "mandante": "Ferro",
+      "visitante": "CA Mitre",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hpAXxkZ0",
+      "mandante": "Nueva Chicago",
+      "visitante": "Quilmes",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qc8uyT3D",
+      "mandante": "San Martin S.J.",
+      "visitante": "Midland",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MwBfETcm",
+      "mandante": "San Miguel",
+      "visitante": "Godoy Cruz",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2kbMWyEE",
+      "mandante": "San Telmo",
+      "visitante": "Los Andes",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dIGOvB4l",
+      "mandante": "Temperley",
+      "visitante": "Colegiales",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dvhaillf",
+      "mandante": "Tristan Suarez",
+      "visitante": "San Martin T.",
+      "rodada": 121,
+      "data": "05.09.2026 17:00",
+      "data_partida": "05.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UHgyR6sg",
+      "mandante": "All Boys",
+      "visitante": "San Telmo",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KfpOG4H5",
+      "mandante": "Almagro",
+      "visitante": "Deportivo Maipu",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YFZ0L2BU",
+      "mandante": "Almirante Brown",
+      "visitante": "Ferro",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I7Lt4RXa",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Club A. Guemes",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jXspPpC5",
+      "mandante": "CA Estudiantes",
+      "visitante": "Acassuso",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xlthNOtI",
+      "mandante": "CA Mitre",
+      "visitante": "Chaco For Ever",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lS9Au6dn",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Central Norte",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jFh7KnIt",
+      "mandante": "Colegiales",
+      "visitante": "Nueva Chicago",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pf3JwpRb",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Deportivo Madryn",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b3lGm6mJ",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Atl. Rafaela",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AsIY5m3m",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Tristan Suarez",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rRKI8PRO",
+      "mandante": "Godoy Cruz",
+      "visitante": "Colon Santa Fe",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MijTSSCt",
+      "mandante": "Los Andes",
+      "visitante": "San Miguel",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vN9k252C",
+      "mandante": "Midland",
+      "visitante": "Chacarita Juniors",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OSjFIQng",
+      "mandante": "Patronato",
+      "visitante": "Temperley",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ClNd0qXO",
+      "mandante": "Quilmes",
+      "visitante": "San Martin S.J.",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ADMAAocC",
+      "mandante": "Racing Cordoba",
+      "visitante": "Deportivo Moron",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jcy2B9uQ",
+      "mandante": "San Martin T.",
+      "visitante": "Agropecuario",
+      "rodada": 122,
+      "data": "12.09.2026 17:00",
+      "data_partida": "12.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WAR0jNA4",
+      "mandante": "Acassuso",
+      "visitante": "CA Mitre",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EyGOGPY2",
+      "mandante": "Agropecuario",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M1JWE33F",
+      "mandante": "Atl. Rafaela",
+      "visitante": "San Martin T.",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C6fzz2QN",
+      "mandante": "Central Norte",
+      "visitante": "Def. de Belgrano",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6B85Ts1B",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Quilmes",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bcThhqth",
+      "mandante": "Chaco For Ever",
+      "visitante": "Almirante Brown",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OnmWAZpp",
+      "mandante": "Club A. Guemes",
+      "visitante": "Midland",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ULytsJXj",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Los Andes",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ji6RyOeB",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Racing Cordoba",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QimWErnI",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dSTR4MPc",
+      "mandante": "Deportivo Moron",
+      "visitante": "Godoy Cruz",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rko6Uulo",
+      "mandante": "Ferro",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xWGlXP1n",
+      "mandante": "Nueva Chicago",
+      "visitante": "Patronato",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YcAcV3Wb",
+      "mandante": "San Martin S.J.",
+      "visitante": "Colegiales",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pl09nuAT",
+      "mandante": "San Miguel",
+      "visitante": "All Boys",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xOd1l1uH",
+      "mandante": "San Telmo",
+      "visitante": "CA Estudiantes",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n7yuDMGU",
+      "mandante": "Temperley",
+      "visitante": "Almagro",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WCjv9DFd",
+      "mandante": "Tristan Suarez",
+      "visitante": "Atletico Atlanta",
+      "rodada": 123,
+      "data": "19.09.2026 17:00",
+      "data_partida": "19.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IuwHrW8e",
+      "mandante": "All Boys",
+      "visitante": "Colon Santa Fe",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MqQ0IxA7",
+      "mandante": "Almagro",
+      "visitante": "Nueva Chicago",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fo4Hn0RQ",
+      "mandante": "Almirante Brown",
+      "visitante": "Acassuso",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f96J5aQ1",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Agropecuario",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q5tPtAw8",
+      "mandante": "CA Estudiantes",
+      "visitante": "San Miguel",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8U59lMdE",
+      "mandante": "CA Mitre",
+      "visitante": "San Telmo",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EVplsvkl",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Chaco For Ever",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h4YqMKAr",
+      "mandante": "Colegiales",
+      "visitante": "Chacarita Juniors",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nqqduIJ0",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Ferro",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rBx5wdlD",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Central Norte",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xh8mtt2E",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Temperley",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2BRvDsYR",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "San Martin T.",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bsDA7Lek",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Atl. Rafaela",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MDq8phvq",
+      "mandante": "Los Andes",
+      "visitante": "Deportivo Moron",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MFb5T2I8",
+      "mandante": "Midland",
+      "visitante": "Tristan Suarez",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lWRhKbue",
+      "mandante": "Patronato",
+      "visitante": "San Martin S.J.",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rVnERtmL",
+      "mandante": "Quilmes",
+      "visitante": "Club A. Guemes",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jRMz30fA",
+      "mandante": "Racing Cordoba",
+      "visitante": "Godoy Cruz",
+      "rodada": 124,
+      "data": "26.09.2026 17:00",
+      "data_partida": "26.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rPHwhe36",
+      "mandante": "Acassuso",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "04h1oyvf",
+      "mandante": "Agropecuario",
+      "visitante": "Midland",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MJtAqF86",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Atletico Atlanta",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "faqj1atK",
+      "mandante": "Central Norte",
+      "visitante": "Racing Cordoba",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WEqqVFgD",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Patronato",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ncOUgHYg",
+      "mandante": "Chaco For Ever",
+      "visitante": "Def. de Belgrano",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O8WUhJoK",
+      "mandante": "Club A. Guemes",
+      "visitante": "Colegiales",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q3Bd8Gmm",
+      "mandante": "Colon Santa Fe",
+      "visitante": "CA Estudiantes",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nJa56fIa",
+      "mandante": "Deportivo Moron",
+      "visitante": "All Boys",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vXKMew4s",
+      "mandante": "Ferro",
+      "visitante": "Deportivo Madryn",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fq3D4YnC",
+      "mandante": "Godoy Cruz",
+      "visitante": "Los Andes",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SMnSYcfl",
+      "mandante": "Nueva Chicago",
+      "visitante": "Deportivo Maipu",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zmjzXyP0",
+      "mandante": "San Martin S.J.",
+      "visitante": "Almagro",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UqpIsgwJ",
+      "mandante": "San Martin T.",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fLKQDxQP",
+      "mandante": "San Miguel",
+      "visitante": "CA Mitre",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GxGojZXI",
+      "mandante": "San Telmo",
+      "visitante": "Almirante Brown",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rkBevKWQ",
+      "mandante": "Temperley",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hvkgmc9s",
+      "mandante": "Tristan Suarez",
+      "visitante": "Quilmes",
+      "rodada": 125,
+      "data": "03.10.2026 17:00",
+      "data_partida": "03.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4fWVMF2t",
+      "mandante": "All Boys",
+      "visitante": "Godoy Cruz",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "403KaRb4",
+      "mandante": "Almagro",
+      "visitante": "Chacarita Juniors",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1HeHBWH",
+      "mandante": "Almirante Brown",
+      "visitante": "San Miguel",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EBlxmlFb",
+      "mandante": "Atletico Atlanta",
+      "visitante": "San Martin T.",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0MPvLgXh",
+      "mandante": "CA Estudiantes",
+      "visitante": "Deportivo Moron",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8nTnJX15",
+      "mandante": "CA Mitre",
+      "visitante": "Colon Santa Fe",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pjTVIO7M",
+      "mandante": "Central Norte",
+      "visitante": "Ferro",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "02gSb3Gj",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "San Telmo",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2yNPwpxo",
+      "mandante": "Colegiales",
+      "visitante": "Tristan Suarez",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GAyFM68c",
+      "mandante": "Def. de Belgrano",
+      "visitante": "Acassuso",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lOZMKpwA",
+      "mandante": "Deportivo Madryn",
+      "visitante": "Chaco For Ever",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xE1Sc5TG",
+      "mandante": "Deportivo Maipu",
+      "visitante": "San Martin S.J.",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tbjUlApn",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AwrooSqB",
+      "mandante": "Midland",
+      "visitante": "Atl. Rafaela",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8Y9B1mUi",
+      "mandante": "Patronato",
+      "visitante": "Club A. Guemes",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I3ogq6EN",
+      "mandante": "Quilmes",
+      "visitante": "Agropecuario",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lrdM2CHO",
+      "mandante": "Racing Cordoba",
+      "visitante": "Los Andes",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YueydqbT",
+      "mandante": "Temperley",
+      "visitante": "Nueva Chicago",
+      "rodada": 126,
+      "data": "10.10.2026 17:00",
+      "data_partida": "10.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2RadZqh3",
+      "mandante": "Acassuso",
+      "visitante": "Deportivo Madryn",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lSys305d",
+      "mandante": "Agropecuario",
+      "visitante": "Colegiales",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GYTSQ3c3",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Quilmes",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xSt1C4rA",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Deportivo Maipu",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zL7ABt0d",
+      "mandante": "Chaco For Ever",
+      "visitante": "Central Norte",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YgzAArDM",
+      "mandante": "Club A. Guemes",
+      "visitante": "Almagro",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ERfxQuFk",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Almirante Brown",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MibpOJq2",
+      "mandante": "Deportivo Moron",
+      "visitante": "CA Mitre",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E5J1D2Vq",
+      "mandante": "Ferro",
+      "visitante": "Racing Cordoba",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pELqNLdS",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Atletico Atlanta",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2myXoNy9",
+      "mandante": "Godoy Cruz",
+      "visitante": "CA Estudiantes",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ADvup16L",
+      "mandante": "Los Andes",
+      "visitante": "All Boys",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "l606jNLj",
+      "mandante": "Nueva Chicago",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1wgEQDc",
+      "mandante": "San Martin S.J.",
+      "visitante": "Temperley",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xlIyPsSF",
+      "mandante": "San Martin T.",
+      "visitante": "Midland",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "W6iDV1iS",
+      "mandante": "San Miguel",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bgg5XNMF",
+      "mandante": "San Telmo",
+      "visitante": "Def. de Belgrano",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UPLu5Mzp",
+      "mandante": "Tristan Suarez",
+      "visitante": "Patronato",
+      "rodada": 127,
+      "data": "17.10.2026 17:00",
+      "data_partida": "17.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jXBbHjQ6",
+      "mandante": "Almagro",
+      "visitante": "Tristan Suarez",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ARJDb0LE",
+      "mandante": "Almirante Brown",
+      "visitante": "Deportivo Moron",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ngYIxJbe",
+      "mandante": "CA Estudiantes",
+      "visitante": "Los Andes",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rLRRzcT7",
+      "mandante": "CA Mitre",
+      "visitante": "Godoy Cruz",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Aeo9mzDD",
+      "mandante": "Central Norte",
+      "visitante": "Acassuso",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Wt8MdvjR",
+      "mandante": "Ciudad Bolivar",
+      "visitante": "Colon Santa Fe",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "djArLYQs",
+      "mandante": "Colegiales",
+      "visitante": "Atl. Rafaela",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tGghiIDl",
+      "mandante": "Def. de Belgrano",
+      "visitante": "San Miguel",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xrm1kdr1",
+      "mandante": "Deportivo Madryn",
+      "visitante": "San Telmo",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "na57FUfJ",
+      "mandante": "Deportivo Maipu",
+      "visitante": "Club A. Guemes",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OxhLfiKt",
+      "mandante": "Ferro",
+      "visitante": "Chaco For Ever",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2V1GHaKk",
+      "mandante": "Gimnasia Jujuy",
+      "visitante": "Atletico Atlanta",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zq0OFwk2",
+      "mandante": "Midland",
+      "visitante": "Gimnasia y Tiro",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bwZPXBAm",
+      "mandante": "Nueva Chicago",
+      "visitante": "San Martin S.J.",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I5biJCef",
+      "mandante": "Patronato",
+      "visitante": "Agropecuario",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jirBwss9",
+      "mandante": "Quilmes",
+      "visitante": "San Martin T.",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EuzBvuUr",
+      "mandante": "Racing Cordoba",
+      "visitante": "All Boys",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vghgwYnQ",
+      "mandante": "Temperley",
+      "visitante": "Chacarita Juniors",
+      "rodada": 128,
+      "data": "24.10.2026 17:00",
+      "data_partida": "24.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jkqxi9J5",
+      "mandante": "Acassuso",
+      "visitante": "Ferro",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nNq5UcLh",
+      "mandante": "Agropecuario",
+      "visitante": "Almagro",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GUTkd4eo",
+      "mandante": "All Boys",
+      "visitante": "CA Estudiantes",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6Pa6Syj5",
+      "mandante": "Atl. Rafaela",
+      "visitante": "Patronato",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QTWWrczn",
+      "mandante": "Atletico Atlanta",
+      "visitante": "Midland",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QkQtUT9C",
+      "mandante": "Chacarita Juniors",
+      "visitante": "Nueva Chicago",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UZfThVlg",
+      "mandante": "Chaco For Ever",
+      "visitante": "Racing Cordoba",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YFTlS7vP",
+      "mandante": "Club A. Guemes",
+      "visitante": "Temperley",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AgG27U3n",
+      "mandante": "Colon Santa Fe",
+      "visitante": "Def. de Belgrano",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G6o358Yb",
+      "mandante": "Deportivo Moron",
+      "visitante": "Ciudad Bolivar",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z5iNOgkU",
+      "mandante": "Gimnasia y Tiro",
+      "visitante": "Quilmes",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OWlB3n3B",
+      "mandante": "Godoy Cruz",
+      "visitante": "Almirante Brown",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pnwK1QXN",
+      "mandante": "Los Andes",
+      "visitante": "CA Mitre",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4zxYVku0",
+      "mandante": "San Martin S.J.",
+      "visitante": "Gimnasia Jujuy",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ek3EQFKH",
+      "mandante": "San Martin T.",
+      "visitante": "Colegiales",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fstgmRIU",
+      "mandante": "San Miguel",
+      "visitante": "Deportivo Madryn",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bFnpkmlI",
+      "mandante": "San Telmo",
+      "visitante": "Central Norte",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E9ocWJjt",
+      "mandante": "Tristan Suarez",
+      "visitante": "Deportivo Maipu",
+      "rodada": 129,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

@@ -1,5 +1,5 @@
-// DADOS_USL — PIPELINE processado (2026-07-16T23:52)
-// Total: 191
+// DADOS_USL — PIPELINE processado (2026-07-17T01:31)
+// Total: 374
 
 window.DADOS_USL = {
   "temporada": "USL Championship 2026",
@@ -25095,6 +25095,3483 @@ window.DADOS_USL = {
       "rodada": 6,
       "data": "22.07.2026 22:00",
       "data_partida": "22.07.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "88Qs0xvB",
+      "mandante": "Birmingham",
+      "visitante": "New Mexico",
+      "rodada": 7,
+      "data": "24.07.2026 21:00",
+      "data_partida": "24.07.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GYTkbG8N",
+      "mandante": "Brooklyn",
+      "visitante": "San Antonio",
+      "rodada": 7,
+      "data": "25.07.2026 20:00",
+      "data_partida": "25.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SCc8GcOi",
+      "mandante": "Detroit",
+      "visitante": "Las Vegas Lights",
+      "rodada": 7,
+      "data": "25.07.2026 20:00",
+      "data_partida": "25.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ETTkf77k",
+      "mandante": "Indy Eleven",
+      "visitante": "Loudoun",
+      "rodada": 7,
+      "data": "25.07.2026 20:00",
+      "data_partida": "25.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MgXchox2",
+      "mandante": "Miami FC",
+      "visitante": "Tampa Bay",
+      "rodada": 7,
+      "data": "25.07.2026 20:00",
+      "data_partida": "25.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M7CW6pie",
+      "mandante": "Pittsburgh",
+      "visitante": "Rhode Island",
+      "rodada": 7,
+      "data": "25.07.2026 20:00",
+      "data_partida": "25.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fuHHCFNG",
+      "mandante": "FC Tulsa",
+      "visitante": "Lexington",
+      "rodada": 7,
+      "data": "25.07.2026 21:30",
+      "data_partida": "25.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zJAMhfWp",
+      "mandante": "Colorado Springs",
+      "visitante": "Charleston",
+      "rodada": 7,
+      "data": "25.07.2026 22:00",
+      "data_partida": "25.07.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nFD9Eyg4",
+      "mandante": "El Paso",
+      "visitante": "Sporting Jax",
+      "rodada": 7,
+      "data": "25.07.2026 22:00",
+      "data_partida": "25.07.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MqUqGlU8",
+      "mandante": "Monterey Bay",
+      "visitante": "Orange County SC",
+      "rodada": 7,
+      "data": "25.07.2026 23:00",
+      "data_partida": "25.07.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fcSiESbL",
+      "mandante": "Oakland Roots",
+      "visitante": "Sacramento Republic",
+      "rodada": 7,
+      "data": "25.07.2026 23:00",
+      "data_partida": "25.07.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Es9O86Mr",
+      "mandante": "Phoenix Rising",
+      "visitante": "Hartford Athletic",
+      "rodada": 7,
+      "data": "25.07.2026 23:30",
+      "data_partida": "25.07.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lKmRSRDE",
+      "mandante": "Pittsburgh",
+      "visitante": "FC Tulsa",
+      "rodada": 8,
+      "data": "29.07.2026 20:00",
+      "data_partida": "29.07.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rN0u5OL7",
+      "mandante": "Louisville City",
+      "visitante": "Birmingham",
+      "rodada": 8,
+      "data": "29.07.2026 20:30",
+      "data_partida": "29.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "thqFnM4m",
+      "mandante": "San Antonio",
+      "visitante": "Indy Eleven",
+      "rodada": 8,
+      "data": "31.07.2026 22:00",
+      "data_partida": "31.07.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rsPMH15D",
+      "mandante": "Lexington",
+      "visitante": "Monterey Bay",
+      "rodada": 8,
+      "data": "01.08.2026 20:00",
+      "data_partida": "01.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ox29u5cK",
+      "mandante": "Loudoun",
+      "visitante": "Hartford Athletic",
+      "rodada": 8,
+      "data": "01.08.2026 20:00",
+      "data_partida": "01.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fLhuzqLs",
+      "mandante": "Miami FC",
+      "visitante": "Detroit",
+      "rodada": 8,
+      "data": "01.08.2026 20:00",
+      "data_partida": "01.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tIS5Lq6l",
+      "mandante": "Charleston",
+      "visitante": "Brooklyn",
+      "rodada": 8,
+      "data": "01.08.2026 20:30",
+      "data_partida": "01.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pnszR5rR",
+      "mandante": "Birmingham",
+      "visitante": "Rhode Island",
+      "rodada": 8,
+      "data": "01.08.2026 21:00",
+      "data_partida": "01.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lInNp0Za",
+      "mandante": "Tampa Bay",
+      "visitante": "Louisville City",
+      "rodada": 8,
+      "data": "01.08.2026 21:00",
+      "data_partida": "01.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jmnlYMkf",
+      "mandante": "New Mexico",
+      "visitante": "Colorado Springs",
+      "rodada": 8,
+      "data": "01.08.2026 22:30",
+      "data_partida": "01.08.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O0pdW0K6",
+      "mandante": "Oakland Roots",
+      "visitante": "Pittsburgh",
+      "rodada": 8,
+      "data": "01.08.2026 23:00",
+      "data_partida": "01.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UDFdUvkJ",
+      "mandante": "Orange County SC",
+      "visitante": "El Paso",
+      "rodada": 8,
+      "data": "01.08.2026 23:00",
+      "data_partida": "01.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xpMEJNz1",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Phoenix Rising",
+      "rodada": 8,
+      "data": "01.08.2026 23:30",
+      "data_partida": "01.08.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dK7rhrsQ",
+      "mandante": "Sacramento Republic",
+      "visitante": "Sporting Jax",
+      "rodada": 8,
+      "data": "02.08.2026 00:00",
+      "data_partida": "02.08.2026 00:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jTelXRnA",
+      "mandante": "FC Tulsa",
+      "visitante": "Sacramento Republic",
+      "rodada": 9,
+      "data": "05.08.2026 21:30",
+      "data_partida": "05.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rHuWrv4C",
+      "mandante": "El Paso",
+      "visitante": "Monterey Bay",
+      "rodada": 9,
+      "data": "05.08.2026 22:00",
+      "data_partida": "05.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E323QVmo",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Oakland Roots",
+      "rodada": 9,
+      "data": "05.08.2026 23:30",
+      "data_partida": "05.08.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UBpjlZuh",
+      "mandante": "Brooklyn",
+      "visitante": "Birmingham",
+      "rodada": 9,
+      "data": "08.08.2026 20:00",
+      "data_partida": "08.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p8zFrV9T",
+      "mandante": "Lexington",
+      "visitante": "Phoenix Rising",
+      "rodada": 9,
+      "data": "08.08.2026 20:00",
+      "data_partida": "08.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4hHow9Xj",
+      "mandante": "Loudoun",
+      "visitante": "Charleston",
+      "rodada": 9,
+      "data": "08.08.2026 20:00",
+      "data_partida": "08.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hEctajfA",
+      "mandante": "Miami FC",
+      "visitante": "Las Vegas Lights",
+      "rodada": 9,
+      "data": "08.08.2026 20:00",
+      "data_partida": "08.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xKfSknHd",
+      "mandante": "Pittsburgh",
+      "visitante": "Sacramento Republic",
+      "rodada": 9,
+      "data": "08.08.2026 20:00",
+      "data_partida": "08.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fePCcbz3",
+      "mandante": "Rhode Island",
+      "visitante": "Colorado Springs",
+      "rodada": 9,
+      "data": "08.08.2026 20:30",
+      "data_partida": "08.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dn4X0CPc",
+      "mandante": "Louisville City",
+      "visitante": "San Antonio",
+      "rodada": 9,
+      "data": "08.08.2026 21:00",
+      "data_partida": "08.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bix7piuH",
+      "mandante": "FC Tulsa",
+      "visitante": "Detroit",
+      "rodada": 9,
+      "data": "08.08.2026 21:30",
+      "data_partida": "08.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xxlbnDA4",
+      "mandante": "El Paso",
+      "visitante": "Oakland Roots",
+      "rodada": 9,
+      "data": "08.08.2026 22:00",
+      "data_partida": "08.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pMFmcUOM",
+      "mandante": "Monterey Bay",
+      "visitante": "New Mexico",
+      "rodada": 9,
+      "data": "08.08.2026 23:00",
+      "data_partida": "08.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UgiKi8np",
+      "mandante": "Orange County SC",
+      "visitante": "Tampa Bay",
+      "rodada": 9,
+      "data": "08.08.2026 23:00",
+      "data_partida": "08.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S8NKex5F",
+      "mandante": "Indy Eleven",
+      "visitante": "Hartford Athletic",
+      "rodada": 9,
+      "data": "09.08.2026 18:00",
+      "data_partida": "09.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IgUilfck",
+      "mandante": "Detroit",
+      "visitante": "Loudoun",
+      "rodada": 10,
+      "data": "15.08.2026 20:00",
+      "data_partida": "15.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "v9I0nYR1",
+      "mandante": "Hartford Athletic",
+      "visitante": "Miami FC",
+      "rodada": 10,
+      "data": "15.08.2026 20:00",
+      "data_partida": "15.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0xnraBB7",
+      "mandante": "Pittsburgh",
+      "visitante": "Charleston",
+      "rodada": 10,
+      "data": "15.08.2026 20:00",
+      "data_partida": "15.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "80fA2pIa",
+      "mandante": "Sporting Jax",
+      "visitante": "Indy Eleven",
+      "rodada": 10,
+      "data": "15.08.2026 20:00",
+      "data_partida": "15.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tEhI0OnC",
+      "mandante": "Tampa Bay",
+      "visitante": "Rhode Island",
+      "rodada": 10,
+      "data": "15.08.2026 20:30",
+      "data_partida": "15.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nBwMgGZR",
+      "mandante": "Colorado Springs",
+      "visitante": "Birmingham",
+      "rodada": 10,
+      "data": "15.08.2026 22:00",
+      "data_partida": "15.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CY0146mm",
+      "mandante": "San Antonio",
+      "visitante": "El Paso",
+      "rodada": 10,
+      "data": "15.08.2026 22:00",
+      "data_partida": "15.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0E3e8FlL",
+      "mandante": "New Mexico",
+      "visitante": "FC Tulsa",
+      "rodada": 10,
+      "data": "15.08.2026 22:30",
+      "data_partida": "15.08.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dpkR2gCr",
+      "mandante": "Oakland Roots",
+      "visitante": "Monterey Bay",
+      "rodada": 10,
+      "data": "15.08.2026 23:00",
+      "data_partida": "15.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hCrz1Xte",
+      "mandante": "Orange County SC",
+      "visitante": "Louisville City",
+      "rodada": 10,
+      "data": "15.08.2026 23:00",
+      "data_partida": "15.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6FAnAyK8",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Brooklyn",
+      "rodada": 10,
+      "data": "15.08.2026 23:30",
+      "data_partida": "15.08.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tYOUME3E",
+      "mandante": "Sacramento Republic",
+      "visitante": "Lexington",
+      "rodada": 10,
+      "data": "16.08.2026 00:00",
+      "data_partida": "16.08.2026 00:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xtnRb2HO",
+      "mandante": "Phoenix Rising",
+      "visitante": "Colorado Springs",
+      "rodada": 11,
+      "data": "19.08.2026 23:00",
+      "data_partida": "19.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "niFqHqXh",
+      "mandante": "Brooklyn",
+      "visitante": "Pittsburgh",
+      "rodada": 11,
+      "data": "22.08.2026 20:00",
+      "data_partida": "22.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OdA8Bu1U",
+      "mandante": "Detroit",
+      "visitante": "Tampa Bay",
+      "rodada": 11,
+      "data": "22.08.2026 20:00",
+      "data_partida": "22.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qc2BVrnn",
+      "mandante": "Indy Eleven",
+      "visitante": "Louisville City",
+      "rodada": 11,
+      "data": "22.08.2026 20:00",
+      "data_partida": "22.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YN5JTMGb",
+      "mandante": "Lexington",
+      "visitante": "Las Vegas Lights",
+      "rodada": 11,
+      "data": "22.08.2026 20:00",
+      "data_partida": "22.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fwfSR0oB",
+      "mandante": "Loudoun",
+      "visitante": "New Mexico",
+      "rodada": 11,
+      "data": "22.08.2026 20:00",
+      "data_partida": "22.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fHIiFN15",
+      "mandante": "Charleston",
+      "visitante": "Miami FC",
+      "rodada": 11,
+      "data": "22.08.2026 20:30",
+      "data_partida": "22.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6Vh6KIwo",
+      "mandante": "Rhode Island",
+      "visitante": "Monterey Bay",
+      "rodada": 11,
+      "data": "22.08.2026 20:30",
+      "data_partida": "22.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QyRzJ52t",
+      "mandante": "Birmingham",
+      "visitante": "Sporting Jax",
+      "rodada": 11,
+      "data": "22.08.2026 21:00",
+      "data_partida": "22.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jqC0D1WH",
+      "mandante": "Colorado Springs",
+      "visitante": "El Paso",
+      "rodada": 11,
+      "data": "22.08.2026 22:00",
+      "data_partida": "22.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fiZ0t004",
+      "mandante": "San Antonio",
+      "visitante": "Oakland Roots",
+      "rodada": 11,
+      "data": "22.08.2026 22:00",
+      "data_partida": "22.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "23czQvGN",
+      "mandante": "Orange County SC",
+      "visitante": "FC Tulsa",
+      "rodada": 11,
+      "data": "22.08.2026 23:00",
+      "data_partida": "22.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bPuhrMVi",
+      "mandante": "Sacramento Republic",
+      "visitante": "Phoenix Rising",
+      "rodada": 11,
+      "data": "23.08.2026 00:00",
+      "data_partida": "23.08.2026 00:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Hx9vvVG",
+      "mandante": "El Paso",
+      "visitante": "Pittsburgh",
+      "rodada": 12,
+      "data": "26.08.2026 22:00",
+      "data_partida": "26.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OWQHxIaT",
+      "mandante": "New Mexico",
+      "visitante": "Lexington",
+      "rodada": 12,
+      "data": "26.08.2026 22:30",
+      "data_partida": "26.08.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dIpg7T4K",
+      "mandante": "Pittsburgh",
+      "visitante": "Tampa Bay",
+      "rodada": 12,
+      "data": "29.08.2026 18:00",
+      "data_partida": "29.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y5CmXeNj",
+      "mandante": "Brooklyn",
+      "visitante": "Sporting Jax",
+      "rodada": 12,
+      "data": "29.08.2026 20:00",
+      "data_partida": "29.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GSAGzVTr",
+      "mandante": "Hartford Athletic",
+      "visitante": "Birmingham",
+      "rodada": 12,
+      "data": "29.08.2026 20:00",
+      "data_partida": "29.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ru2XWnT7",
+      "mandante": "Lexington",
+      "visitante": "Colorado Springs",
+      "rodada": 12,
+      "data": "29.08.2026 20:00",
+      "data_partida": "29.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AofJfjLE",
+      "mandante": "Louisville City",
+      "visitante": "Detroit",
+      "rodada": 12,
+      "data": "29.08.2026 21:00",
+      "data_partida": "29.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8d4bonr1",
+      "mandante": "Oakland Roots",
+      "visitante": "Orange County SC",
+      "rodada": 12,
+      "data": "29.08.2026 21:00",
+      "data_partida": "29.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MRhrgwpA",
+      "mandante": "FC Tulsa",
+      "visitante": "Rhode Island",
+      "rodada": 12,
+      "data": "29.08.2026 21:30",
+      "data_partida": "29.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lEfzeaFc",
+      "mandante": "El Paso",
+      "visitante": "Loudoun",
+      "rodada": 12,
+      "data": "29.08.2026 22:00",
+      "data_partida": "29.08.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2qZcm8Dl",
+      "mandante": "New Mexico",
+      "visitante": "San Antonio",
+      "rodada": 12,
+      "data": "29.08.2026 22:30",
+      "data_partida": "29.08.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6DmShUkR",
+      "mandante": "Monterey Bay",
+      "visitante": "Sacramento Republic",
+      "rodada": 12,
+      "data": "29.08.2026 23:00",
+      "data_partida": "29.08.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MPDOY8be",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Charleston",
+      "rodada": 12,
+      "data": "29.08.2026 23:30",
+      "data_partida": "29.08.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GM76qQCD",
+      "mandante": "Phoenix Rising",
+      "visitante": "Indy Eleven",
+      "rodada": 12,
+      "data": "29.08.2026 23:30",
+      "data_partida": "29.08.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S0yP17Ss",
+      "mandante": "Charleston",
+      "visitante": "Hartford Athletic",
+      "rodada": 13,
+      "data": "02.09.2026 20:00",
+      "data_partida": "02.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MaUXaocf",
+      "mandante": "Loudoun",
+      "visitante": "Colorado Springs",
+      "rodada": 13,
+      "data": "04.09.2026 20:00",
+      "data_partida": "04.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fDSubPR6",
+      "mandante": "Detroit",
+      "visitante": "Hartford Athletic",
+      "rodada": 13,
+      "data": "05.09.2026 20:00",
+      "data_partida": "05.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "juMld3dJ",
+      "mandante": "Indy Eleven",
+      "visitante": "Birmingham",
+      "rodada": 13,
+      "data": "05.09.2026 20:00",
+      "data_partida": "05.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Jk7EpCm",
+      "mandante": "Miami FC",
+      "visitante": "Pittsburgh",
+      "rodada": 13,
+      "data": "05.09.2026 20:00",
+      "data_partida": "05.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jHFoBWMh",
+      "mandante": "Sporting Jax",
+      "visitante": "Lexington",
+      "rodada": 13,
+      "data": "05.09.2026 20:00",
+      "data_partida": "05.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IFuW8ttP",
+      "mandante": "Rhode Island",
+      "visitante": "Louisville City",
+      "rodada": 13,
+      "data": "05.09.2026 20:30",
+      "data_partida": "05.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CW3f9Ai5",
+      "mandante": "Tampa Bay",
+      "visitante": "Brooklyn",
+      "rodada": 13,
+      "data": "05.09.2026 20:30",
+      "data_partida": "05.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b9cvDhht",
+      "mandante": "San Antonio",
+      "visitante": "FC Tulsa",
+      "rodada": 13,
+      "data": "05.09.2026 21:30",
+      "data_partida": "05.09.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lzlFCOt0",
+      "mandante": "Monterey Bay",
+      "visitante": "Phoenix Rising",
+      "rodada": 13,
+      "data": "05.09.2026 23:00",
+      "data_partida": "05.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p2sOA2BC",
+      "mandante": "Orange County SC",
+      "visitante": "Sacramento Republic",
+      "rodada": 13,
+      "data": "05.09.2026 23:00",
+      "data_partida": "05.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IoEzK6lQ",
+      "mandante": "Las Vegas Lights",
+      "visitante": "New Mexico",
+      "rodada": 13,
+      "data": "05.09.2026 23:30",
+      "data_partida": "05.09.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0zPhEdZ1",
+      "mandante": "New Mexico",
+      "visitante": "Indy Eleven",
+      "rodada": 14,
+      "data": "11.09.2026 22:30",
+      "data_partida": "11.09.2026 22:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Kd727lMH",
+      "mandante": "Colorado Springs",
+      "visitante": "San Antonio",
+      "rodada": 14,
+      "data": "11.09.2026 23:00",
+      "data_partida": "11.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EcPzkt6j",
+      "mandante": "Brooklyn",
+      "visitante": "Miami FC",
+      "rodada": 14,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6iCMCqbc",
+      "mandante": "Hartford Athletic",
+      "visitante": "Tampa Bay",
+      "rodada": 14,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QgSNANS9",
+      "mandante": "Louisville City",
+      "visitante": "El Paso",
+      "rodada": 14,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vchcPMs3",
+      "mandante": "Pittsburgh",
+      "visitante": "Loudoun",
+      "rodada": 14,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8xpELvsS",
+      "mandante": "Sporting Jax",
+      "visitante": "Rhode Island",
+      "rodada": 14,
+      "data": "12.09.2026 20:00",
+      "data_partida": "12.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YJVV81cM",
+      "mandante": "Oakland Roots",
+      "visitante": "Lexington",
+      "rodada": 14,
+      "data": "12.09.2026 23:00",
+      "data_partida": "12.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ii723uLq",
+      "mandante": "Orange County SC",
+      "visitante": "Las Vegas Lights",
+      "rodada": 14,
+      "data": "12.09.2026 23:00",
+      "data_partida": "12.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QHAA1Jkd",
+      "mandante": "Phoenix Rising",
+      "visitante": "FC Tulsa",
+      "rodada": 14,
+      "data": "12.09.2026 23:00",
+      "data_partida": "12.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CAj5N0CF",
+      "mandante": "Sacramento Republic",
+      "visitante": "Detroit",
+      "rodada": 14,
+      "data": "12.09.2026 23:00",
+      "data_partida": "12.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vLzpGI4k",
+      "mandante": "Birmingham",
+      "visitante": "Charleston",
+      "rodada": 14,
+      "data": "13.09.2026 16:00",
+      "data_partida": "13.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hrRwx0R8",
+      "mandante": "Hartford Athletic",
+      "visitante": "Sporting Jax",
+      "rodada": 15,
+      "data": "16.09.2026 20:00",
+      "data_partida": "16.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lAKnzvdL",
+      "mandante": "Brooklyn",
+      "visitante": "FC Tulsa",
+      "rodada": 15,
+      "data": "19.09.2026 20:00",
+      "data_partida": "19.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pt6IUHJr",
+      "mandante": "Charleston",
+      "visitante": "Monterey Bay",
+      "rodada": 15,
+      "data": "19.09.2026 20:00",
+      "data_partida": "19.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n52ZQZI7",
+      "mandante": "Detroit",
+      "visitante": "Pittsburgh",
+      "rodada": 15,
+      "data": "19.09.2026 20:00",
+      "data_partida": "19.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zRrUnHuR",
+      "mandante": "Lexington",
+      "visitante": "Orange County SC",
+      "rodada": 15,
+      "data": "19.09.2026 20:00",
+      "data_partida": "19.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fBP0se3l",
+      "mandante": "Louisville City",
+      "visitante": "Loudoun",
+      "rodada": 15,
+      "data": "19.09.2026 20:00",
+      "data_partida": "19.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nRwAwD2D",
+      "mandante": "Rhode Island",
+      "visitante": "Miami FC",
+      "rodada": 15,
+      "data": "19.09.2026 20:30",
+      "data_partida": "19.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C6fLpU9t",
+      "mandante": "Tampa Bay",
+      "visitante": "Birmingham",
+      "rodada": 15,
+      "data": "19.09.2026 20:30",
+      "data_partida": "19.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t8aRSele",
+      "mandante": "Colorado Springs",
+      "visitante": "New Mexico",
+      "rodada": 15,
+      "data": "19.09.2026 22:00",
+      "data_partida": "19.09.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SON8uZX0",
+      "mandante": "Phoenix Rising",
+      "visitante": "El Paso",
+      "rodada": 15,
+      "data": "19.09.2026 23:00",
+      "data_partida": "19.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S0uMlwBE",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Hartford Athletic",
+      "rodada": 15,
+      "data": "19.09.2026 23:30",
+      "data_partida": "19.09.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YLrUr8vg",
+      "mandante": "Indy Eleven",
+      "visitante": "Oakland Roots",
+      "rodada": 15,
+      "data": "20.09.2026 18:00",
+      "data_partida": "20.09.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tnnxsn95",
+      "mandante": "Sacramento Republic",
+      "visitante": "San Antonio",
+      "rodada": 15,
+      "data": "20.09.2026 20:00",
+      "data_partida": "20.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MefpuQwI",
+      "mandante": "Birmingham",
+      "visitante": "Brooklyn",
+      "rodada": 16,
+      "data": "23.09.2026 13:00",
+      "data_partida": "23.09.2026 13:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t0RAeoOb",
+      "mandante": "Hartford Athletic",
+      "visitante": "Louisville City",
+      "rodada": 16,
+      "data": "25.09.2026 20:00",
+      "data_partida": "25.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rgazL1iA",
+      "mandante": "Sporting Jax",
+      "visitante": "Loudoun",
+      "rodada": 16,
+      "data": "25.09.2026 20:30",
+      "data_partida": "25.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YZN2c7gn",
+      "mandante": "El Paso",
+      "visitante": "FC Tulsa",
+      "rodada": 16,
+      "data": "25.09.2026 22:00",
+      "data_partida": "25.09.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lWDRi3NN",
+      "mandante": "Charleston",
+      "visitante": "Rhode Island",
+      "rodada": 16,
+      "data": "26.09.2026 20:00",
+      "data_partida": "26.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8Gfbnsoo",
+      "mandante": "Detroit",
+      "visitante": "Colorado Springs",
+      "rodada": 16,
+      "data": "26.09.2026 20:00",
+      "data_partida": "26.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0AspApwh",
+      "mandante": "Indy Eleven",
+      "visitante": "Miami FC",
+      "rodada": 16,
+      "data": "26.09.2026 20:00",
+      "data_partida": "26.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Au1SMNMc",
+      "mandante": "San Antonio",
+      "visitante": "Tampa Bay",
+      "rodada": 16,
+      "data": "26.09.2026 21:30",
+      "data_partida": "26.09.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Zw162xH",
+      "mandante": "New Mexico",
+      "visitante": "Sacramento Republic",
+      "rodada": 16,
+      "data": "26.09.2026 22:00",
+      "data_partida": "26.09.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dxyg8O74",
+      "mandante": "Monterey Bay",
+      "visitante": "Lexington",
+      "rodada": 16,
+      "data": "26.09.2026 23:00",
+      "data_partida": "26.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OlS94t7T",
+      "mandante": "Oakland Roots",
+      "visitante": "Phoenix Rising",
+      "rodada": 16,
+      "data": "26.09.2026 23:00",
+      "data_partida": "26.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fXIuaKUj",
+      "mandante": "Orange County SC",
+      "visitante": "Pittsburgh",
+      "rodada": 16,
+      "data": "26.09.2026 23:00",
+      "data_partida": "26.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "l6UzJuMM",
+      "mandante": "Brooklyn",
+      "visitante": "Detroit",
+      "rodada": 17,
+      "data": "30.09.2026 20:00",
+      "data_partida": "30.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "t49FBcEd",
+      "mandante": "Miami FC",
+      "visitante": "Sporting Jax",
+      "rodada": 17,
+      "data": "30.09.2026 20:00",
+      "data_partida": "30.09.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8A11Z063",
+      "mandante": "Rhode Island",
+      "visitante": "Indy Eleven",
+      "rodada": 17,
+      "data": "30.09.2026 20:30",
+      "data_partida": "30.09.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KlL6DJqp",
+      "mandante": "FC Tulsa",
+      "visitante": "New Mexico",
+      "rodada": 17,
+      "data": "30.09.2026 21:00",
+      "data_partida": "30.09.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "29fAXvyG",
+      "mandante": "Sacramento Republic",
+      "visitante": "Las Vegas Lights",
+      "rodada": 17,
+      "data": "30.09.2026 23:00",
+      "data_partida": "30.09.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bud4OeFa",
+      "mandante": "Sporting Jax",
+      "visitante": "Louisville City",
+      "rodada": 17,
+      "data": "02.10.2026 20:30",
+      "data_partida": "02.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fgAv8zVI",
+      "mandante": "Loudoun",
+      "visitante": "Indy Eleven",
+      "rodada": 17,
+      "data": "03.10.2026 19:00",
+      "data_partida": "03.10.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YeHsFWKl",
+      "mandante": "Brooklyn",
+      "visitante": "Rhode Island",
+      "rodada": 17,
+      "data": "03.10.2026 20:00",
+      "data_partida": "03.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xlEbBlKD",
+      "mandante": "Detroit",
+      "visitante": "Birmingham",
+      "rodada": 17,
+      "data": "03.10.2026 20:00",
+      "data_partida": "03.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UoPEDv1s",
+      "mandante": "Hartford Athletic",
+      "visitante": "Charleston",
+      "rodada": 17,
+      "data": "03.10.2026 20:00",
+      "data_partida": "03.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bRGV9d06",
+      "mandante": "Lexington",
+      "visitante": "El Paso",
+      "rodada": 17,
+      "data": "03.10.2026 20:00",
+      "data_partida": "03.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f7kDMZqC",
+      "mandante": "Tampa Bay",
+      "visitante": "Miami FC",
+      "rodada": 17,
+      "data": "03.10.2026 20:30",
+      "data_partida": "03.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KCwqJ0wK",
+      "mandante": "FC Tulsa",
+      "visitante": "Sacramento Republic",
+      "rodada": 17,
+      "data": "03.10.2026 21:00",
+      "data_partida": "03.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UNAjDAk1",
+      "mandante": "Colorado Springs",
+      "visitante": "Oakland Roots",
+      "rodada": 17,
+      "data": "03.10.2026 22:00",
+      "data_partida": "03.10.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jFhdQHpm",
+      "mandante": "Orange County SC",
+      "visitante": "Monterey Bay",
+      "rodada": 17,
+      "data": "03.10.2026 23:00",
+      "data_partida": "03.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QDINBIVg",
+      "mandante": "Las Vegas Lights",
+      "visitante": "San Antonio",
+      "rodada": 17,
+      "data": "03.10.2026 23:30",
+      "data_partida": "03.10.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6sHPVwNP",
+      "mandante": "New Mexico",
+      "visitante": "Phoenix Rising",
+      "rodada": 17,
+      "data": "04.10.2026 19:00",
+      "data_partida": "04.10.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SKmLKDEO",
+      "mandante": "Lexington",
+      "visitante": "FC Tulsa",
+      "rodada": 18,
+      "data": "09.10.2026 20:30",
+      "data_partida": "09.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Sh9liok3",
+      "mandante": "Sporting Jax",
+      "visitante": "Birmingham",
+      "rodada": 18,
+      "data": "10.10.2026 18:00",
+      "data_partida": "10.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ULuOvHat",
+      "mandante": "Charleston",
+      "visitante": "Louisville City",
+      "rodada": 18,
+      "data": "10.10.2026 19:00",
+      "data_partida": "10.10.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xnqWxeUh",
+      "mandante": "Detroit",
+      "visitante": "Rhode Island",
+      "rodada": 18,
+      "data": "10.10.2026 20:00",
+      "data_partida": "10.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6RzmZCTH",
+      "mandante": "Indy Eleven",
+      "visitante": "Tampa Bay",
+      "rodada": 18,
+      "data": "10.10.2026 20:00",
+      "data_partida": "10.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0QTeXjbU",
+      "mandante": "Miami FC",
+      "visitante": "Loudoun",
+      "rodada": 18,
+      "data": "10.10.2026 20:00",
+      "data_partida": "10.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vJDfV3Sq",
+      "mandante": "Pittsburgh",
+      "visitante": "Hartford Athletic",
+      "rodada": 18,
+      "data": "10.10.2026 20:00",
+      "data_partida": "10.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b1XvyZb5",
+      "mandante": "El Paso",
+      "visitante": "Orange County SC",
+      "rodada": 18,
+      "data": "10.10.2026 22:00",
+      "data_partida": "10.10.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Gx45ifqn",
+      "mandante": "New Mexico",
+      "visitante": "Monterey Bay",
+      "rodada": 18,
+      "data": "10.10.2026 22:00",
+      "data_partida": "10.10.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C4cEkYDb",
+      "mandante": "Oakland Roots",
+      "visitante": "San Antonio",
+      "rodada": 18,
+      "data": "10.10.2026 23:00",
+      "data_partida": "10.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KU0MmCrB",
+      "mandante": "Phoenix Rising",
+      "visitante": "Las Vegas Lights",
+      "rodada": 18,
+      "data": "10.10.2026 23:00",
+      "data_partida": "10.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CpR1Tscd",
+      "mandante": "Sacramento Republic",
+      "visitante": "Colorado Springs",
+      "rodada": 18,
+      "data": "10.10.2026 23:00",
+      "data_partida": "10.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vFmUDspC",
+      "mandante": "Rhode Island",
+      "visitante": "Loudoun",
+      "rodada": 19,
+      "data": "14.10.2026 20:30",
+      "data_partida": "14.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QmiyrsCk",
+      "mandante": "Hartford Athletic",
+      "visitante": "Brooklyn",
+      "rodada": 19,
+      "data": "17.10.2026 20:00",
+      "data_partida": "17.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E9XV3OY8",
+      "mandante": "Louisville City",
+      "visitante": "Indy Eleven",
+      "rodada": 19,
+      "data": "17.10.2026 20:00",
+      "data_partida": "17.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AyRv223L",
+      "mandante": "Miami FC",
+      "visitante": "Charleston",
+      "rodada": 19,
+      "data": "17.10.2026 20:00",
+      "data_partida": "17.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YZVJhbQ7",
+      "mandante": "Rhode Island",
+      "visitante": "Pittsburgh",
+      "rodada": 19,
+      "data": "17.10.2026 20:30",
+      "data_partida": "17.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MeCEEumR",
+      "mandante": "Tampa Bay",
+      "visitante": "Detroit",
+      "rodada": 19,
+      "data": "17.10.2026 20:30",
+      "data_partida": "17.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dY05m3lS",
+      "mandante": "FC Tulsa",
+      "visitante": "Oakland Roots",
+      "rodada": 19,
+      "data": "17.10.2026 21:00",
+      "data_partida": "17.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EV86G1IE",
+      "mandante": "San Antonio",
+      "visitante": "New Mexico",
+      "rodada": 19,
+      "data": "17.10.2026 21:30",
+      "data_partida": "17.10.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "067dkPJF",
+      "mandante": "El Paso",
+      "visitante": "Sacramento Republic",
+      "rodada": 19,
+      "data": "17.10.2026 22:00",
+      "data_partida": "17.10.2026 22:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "67CAdtRr",
+      "mandante": "Monterey Bay",
+      "visitante": "Colorado Springs",
+      "rodada": 19,
+      "data": "17.10.2026 23:00",
+      "data_partida": "17.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q9SBfKee",
+      "mandante": "Orange County SC",
+      "visitante": "Phoenix Rising",
+      "rodada": 19,
+      "data": "17.10.2026 23:00",
+      "data_partida": "17.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n3uptLt2",
+      "mandante": "Las Vegas Lights",
+      "visitante": "Lexington",
+      "rodada": 19,
+      "data": "17.10.2026 23:30",
+      "data_partida": "17.10.2026 23:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QN7p9JAl",
+      "mandante": "Birmingham",
+      "visitante": "Loudoun",
+      "rodada": 19,
+      "data": "18.10.2026 18:00",
+      "data_partida": "18.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hbRRLdff",
+      "mandante": "Loudoun",
+      "visitante": "Brooklyn",
+      "rodada": 20,
+      "data": "24.10.2026 18:00",
+      "data_partida": "24.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "by6h7cu1",
+      "mandante": "Charleston",
+      "visitante": "Indy Eleven",
+      "rodada": 20,
+      "data": "24.10.2026 19:00",
+      "data_partida": "24.10.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6sTJNIPs",
+      "mandante": "Hartford Athletic",
+      "visitante": "Rhode Island",
+      "rodada": 20,
+      "data": "24.10.2026 20:00",
+      "data_partida": "24.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lQKzKzP6",
+      "mandante": "Louisville City",
+      "visitante": "Detroit",
+      "rodada": 20,
+      "data": "24.10.2026 20:00",
+      "data_partida": "24.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tIS2N9Vb",
+      "mandante": "Pittsburgh",
+      "visitante": "Birmingham",
+      "rodada": 20,
+      "data": "24.10.2026 20:00",
+      "data_partida": "24.10.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Us1jE5ho",
+      "mandante": "Tampa Bay",
+      "visitante": "Sporting Jax",
+      "rodada": 20,
+      "data": "24.10.2026 20:30",
+      "data_partida": "24.10.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f3a15yAD",
+      "mandante": "Colorado Springs",
+      "visitante": "FC Tulsa",
+      "rodada": 20,
+      "data": "24.10.2026 21:00",
+      "data_partida": "24.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M9imTv2K",
+      "mandante": "El Paso",
+      "visitante": "New Mexico",
+      "rodada": 20,
+      "data": "24.10.2026 21:00",
+      "data_partida": "24.10.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AcKJJRUN",
+      "mandante": "San Antonio",
+      "visitante": "Orange County SC",
+      "rodada": 20,
+      "data": "24.10.2026 21:30",
+      "data_partida": "24.10.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MwJrIEgJ",
+      "mandante": "Monterey Bay",
+      "visitante": "Las Vegas Lights",
+      "rodada": 20,
+      "data": "24.10.2026 23:00",
+      "data_partida": "24.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zLPfPV0n",
+      "mandante": "Phoenix Rising",
+      "visitante": "Lexington",
+      "rodada": 20,
+      "data": "24.10.2026 23:00",
+      "data_partida": "24.10.2026 23:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2XGBLm0B",
+      "mandante": "Sacramento Republic",
+      "visitante": "Oakland Roots",
+      "rodada": 20,
+      "data": "24.10.2026 23:00",
+      "data_partida": "24.10.2026 23:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

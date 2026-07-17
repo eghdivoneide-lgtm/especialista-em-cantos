@@ -1,5 +1,5 @@
-// DADOS_BR_B — PIPELINE processado (2026-07-16T23:52)
-// Total: 187
+// DADOS_BR_B — PIPELINE processado (2026-07-17T01:31)
+// Total: 377
 
 window.DADOS_BR_B = {
   "temporada": "Brasileirão Série B",
@@ -22241,6 +22241,3616 @@ window.DADOS_BR_B = {
       "rodada": 41,
       "data": "23.07.2026 21:30",
       "data_partida": "23.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8YKdp0FU",
+      "mandante": "Criciuma",
+      "visitante": "Nautico",
+      "rodada": 42,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dziGp99D",
+      "mandante": "Sao Bernardo",
+      "visitante": "Ceara",
+      "rodada": 42,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MF7RiQGt",
+      "mandante": "America MG",
+      "visitante": "Goias",
+      "rodada": 42,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fT5Zk4og",
+      "mandante": "Londrina",
+      "visitante": "Novorizontino",
+      "rodada": 42,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zLMlnMpI",
+      "mandante": "Atletico GO",
+      "visitante": "Operario-PR",
+      "rodada": 42,
+      "data": "27.07.2026 19:30",
+      "data_partida": "27.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4f3E2sVb",
+      "mandante": "CRB",
+      "visitante": "Vila Nova FC",
+      "rodada": 42,
+      "data": "27.07.2026 19:30",
+      "data_partida": "27.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bc06430n",
+      "mandante": "Sport Recife",
+      "visitante": "Cuiaba",
+      "rodada": 42,
+      "data": "27.07.2026 19:30",
+      "data_partida": "27.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "x81M0LaB",
+      "mandante": "Juventude",
+      "visitante": "Avai",
+      "rodada": 42,
+      "data": "28.07.2026 19:30",
+      "data_partida": "28.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lAm8nVv1",
+      "mandante": "Ponte Preta",
+      "visitante": "Athletic Club",
+      "rodada": 42,
+      "data": "28.07.2026 19:30",
+      "data_partida": "28.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SfJtlrG5",
+      "mandante": "Fortaleza",
+      "visitante": "Botafogo SP",
+      "rodada": 42,
+      "data": "28.07.2026 21:35",
+      "data_partida": "28.07.2026 21:35",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fRtfFKE4",
+      "mandante": "Operario-PR",
+      "visitante": "Sao Bernardo",
+      "rodada": 43,
+      "data": "07.08.2026 19:30",
+      "data_partida": "07.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2ip2DbqH",
+      "mandante": "Ceara",
+      "visitante": "Ponte Preta",
+      "rodada": 43,
+      "data": "07.08.2026 20:30",
+      "data_partida": "07.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0rUvApfM",
+      "mandante": "Vila Nova FC",
+      "visitante": "Sport Recife",
+      "rodada": 43,
+      "data": "08.08.2026 16:00",
+      "data_partida": "08.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pY4UbaUN",
+      "mandante": "Botafogo SP",
+      "visitante": "America MG",
+      "rodada": 43,
+      "data": "08.08.2026 18:30",
+      "data_partida": "08.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8ArnHtph",
+      "mandante": "Athletic Club",
+      "visitante": "Criciuma",
+      "rodada": 43,
+      "data": "09.08.2026 11:00",
+      "data_partida": "09.08.2026 11:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K4SODSfc",
+      "mandante": "Nautico",
+      "visitante": "Atletico GO",
+      "rodada": 43,
+      "data": "09.08.2026 16:00",
+      "data_partida": "09.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GGe0gwho",
+      "mandante": "Novorizontino",
+      "visitante": "Juventude",
+      "rodada": 43,
+      "data": "09.08.2026 16:00",
+      "data_partida": "09.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hIQWB6P9",
+      "mandante": "Cuiaba",
+      "visitante": "Fortaleza",
+      "rodada": 43,
+      "data": "09.08.2026 18:00",
+      "data_partida": "09.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z5rABxET",
+      "mandante": "Goias",
+      "visitante": "Londrina",
+      "rodada": 43,
+      "data": "10.08.2026 19:30",
+      "data_partida": "10.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6mZu6Gyi",
+      "mandante": "Avai",
+      "visitante": "CRB",
+      "rodada": 43,
+      "data": "11.08.2026 19:30",
+      "data_partida": "11.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WQKA4OHq",
+      "mandante": "Ponte Preta",
+      "visitante": "Nautico",
+      "rodada": 44,
+      "data": "14.08.2026 19:30",
+      "data_partida": "14.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f5PoQdpK",
+      "mandante": "Sport Recife",
+      "visitante": "Londrina",
+      "rodada": 44,
+      "data": "14.08.2026 20:30",
+      "data_partida": "14.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dEZi4FN0",
+      "mandante": "Atletico GO",
+      "visitante": "Vila Nova FC",
+      "rodada": 44,
+      "data": "15.08.2026 16:00",
+      "data_partida": "15.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Bx02ghD",
+      "mandante": "Criciuma",
+      "visitante": "Goias",
+      "rodada": 44,
+      "data": "15.08.2026 16:00",
+      "data_partida": "15.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "llWq6ygl",
+      "mandante": "Ceara",
+      "visitante": "Cuiaba",
+      "rodada": 44,
+      "data": "15.08.2026 18:30",
+      "data_partida": "15.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YDJPIExf",
+      "mandante": "Juventude",
+      "visitante": "Fortaleza",
+      "rodada": 44,
+      "data": "15.08.2026 18:30",
+      "data_partida": "15.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I19COq9F",
+      "mandante": "Operario-PR",
+      "visitante": "Avai",
+      "rodada": 44,
+      "data": "16.08.2026 11:00",
+      "data_partida": "16.08.2026 11:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4vJI22nd",
+      "mandante": "Sao Bernardo",
+      "visitante": "Botafogo SP",
+      "rodada": 44,
+      "data": "16.08.2026 16:00",
+      "data_partida": "16.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ay64Q5v3",
+      "mandante": "America MG",
+      "visitante": "Athletic Club",
+      "rodada": 44,
+      "data": "16.08.2026 18:30",
+      "data_partida": "16.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QmGHKz8s",
+      "mandante": "CRB",
+      "visitante": "Novorizontino",
+      "rodada": 44,
+      "data": "16.08.2026 18:30",
+      "data_partida": "16.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2V8dXDim",
+      "mandante": "Londrina",
+      "visitante": "Atletico GO",
+      "rodada": 45,
+      "data": "18.08.2026 19:30",
+      "data_partida": "18.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vVhUoD6t",
+      "mandante": "Nautico",
+      "visitante": "Ceara",
+      "rodada": 45,
+      "data": "18.08.2026 21:30",
+      "data_partida": "18.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GhFCTVjC",
+      "mandante": "Goias",
+      "visitante": "Juventude",
+      "rodada": 45,
+      "data": "18.08.2026 21:35",
+      "data_partida": "18.08.2026 21:35",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "l6DKR9LO",
+      "mandante": "Avai",
+      "visitante": "Sport Recife",
+      "rodada": 45,
+      "data": "19.08.2026 19:30",
+      "data_partida": "19.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AeC4ViMa",
+      "mandante": "Fortaleza",
+      "visitante": "Sao Bernardo",
+      "rodada": 45,
+      "data": "19.08.2026 19:30",
+      "data_partida": "19.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nedxpiyg",
+      "mandante": "Cuiaba",
+      "visitante": "Operario-PR",
+      "rodada": 45,
+      "data": "19.08.2026 20:30",
+      "data_partida": "19.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K8fprV55",
+      "mandante": "Vila Nova FC",
+      "visitante": "Ponte Preta",
+      "rodada": 45,
+      "data": "19.08.2026 20:30",
+      "data_partida": "19.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6RHXGh76",
+      "mandante": "Botafogo SP",
+      "visitante": "Criciuma",
+      "rodada": 45,
+      "data": "19.08.2026 21:30",
+      "data_partida": "19.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6aNQxzUP",
+      "mandante": "Athletic Club",
+      "visitante": "CRB",
+      "rodada": 45,
+      "data": "20.08.2026 19:30",
+      "data_partida": "20.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vgVvFWyJ",
+      "mandante": "Novorizontino",
+      "visitante": "America MG",
+      "rodada": 45,
+      "data": "20.08.2026 20:30",
+      "data_partida": "20.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UZiPf8kB",
+      "mandante": "Ceara",
+      "visitante": "Londrina",
+      "rodada": 46,
+      "data": "22.08.2026 18:00",
+      "data_partida": "22.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "868bdLQF",
+      "mandante": "Cuiaba",
+      "visitante": "Goias",
+      "rodada": 46,
+      "data": "22.08.2026 18:30",
+      "data_partida": "22.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6Phht9zI",
+      "mandante": "Ponte Preta",
+      "visitante": "Avai",
+      "rodada": 46,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ekd0vm5U",
+      "mandante": "Sao Bernardo",
+      "visitante": "Nautico",
+      "rodada": 46,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xSZHdUKb",
+      "mandante": "Operario-PR",
+      "visitante": "Vila Nova FC",
+      "rodada": 46,
+      "data": "23.08.2026 18:00",
+      "data_partida": "23.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8nI4zv4d",
+      "mandante": "Criciuma",
+      "visitante": "Fortaleza",
+      "rodada": 46,
+      "data": "23.08.2026 18:30",
+      "data_partida": "23.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1W9bjjn",
+      "mandante": "Athletic Club",
+      "visitante": "Novorizontino",
+      "rodada": 46,
+      "data": "24.08.2026 19:30",
+      "data_partida": "24.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zgAjbsd3",
+      "mandante": "Sport Recife",
+      "visitante": "America MG",
+      "rodada": 46,
+      "data": "24.08.2026 19:30",
+      "data_partida": "24.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0MEdx0Zq",
+      "mandante": "Atletico GO",
+      "visitante": "Botafogo SP",
+      "rodada": 46,
+      "data": "25.08.2026 19:30",
+      "data_partida": "25.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fN66faeS",
+      "mandante": "Juventude",
+      "visitante": "CRB",
+      "rodada": 46,
+      "data": "25.08.2026 19:30",
+      "data_partida": "25.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QPmWAKu9",
+      "mandante": "America MG",
+      "visitante": "Ponte Preta",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rqqQafX7",
+      "mandante": "Avai",
+      "visitante": "Atletico GO",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q5cxkwJk",
+      "mandante": "Botafogo SP",
+      "visitante": "Cuiaba",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "84qJLyfR",
+      "mandante": "CRB",
+      "visitante": "Criciuma",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ShxA3xYr",
+      "mandante": "Fortaleza",
+      "visitante": "Operario-PR",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zJuI1G2e",
+      "mandante": "Goias",
+      "visitante": "Sao Bernardo",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WMjv9bAL",
+      "mandante": "Londrina",
+      "visitante": "Juventude",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zwWBNcPE",
+      "mandante": "Nautico",
+      "visitante": "Athletic Club",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bJepmHm2",
+      "mandante": "Novorizontino",
+      "visitante": "Sport Recife",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vmzkGFHl",
+      "mandante": "Vila Nova FC",
+      "visitante": "Ceara",
+      "rodada": 47,
+      "data": "29.08.2026 16:00",
+      "data_partida": "29.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p4Tjzy9K",
+      "mandante": "Athletic Club",
+      "visitante": "Vila Nova FC",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "l0IUSh1f",
+      "mandante": "Ceara",
+      "visitante": "Sport Recife",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "x6WD6p0b",
+      "mandante": "CRB",
+      "visitante": "America MG",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UwKpPA0J",
+      "mandante": "Criciuma",
+      "visitante": "Cuiaba",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dQLxRWV6",
+      "mandante": "Goias",
+      "visitante": "Fortaleza",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AJUL4OUA",
+      "mandante": "Juventude",
+      "visitante": "Atletico GO",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tzFMUEWs",
+      "mandante": "Londrina",
+      "visitante": "Operario-PR",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UuT586Vo",
+      "mandante": "Nautico",
+      "visitante": "Botafogo SP",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KQy5CXGD",
+      "mandante": "Novorizontino",
+      "visitante": "Avai",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C0YdEgn1",
+      "mandante": "Ponte Preta",
+      "visitante": "Sao Bernardo",
+      "rodada": 48,
+      "data": "05.09.2026 16:00",
+      "data_partida": "05.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q3QpLqFi",
+      "mandante": "America MG",
+      "visitante": "Nautico",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E7V8FuqT",
+      "mandante": "Atletico GO",
+      "visitante": "Ceara",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IqYT22aN",
+      "mandante": "Botafogo SP",
+      "visitante": "Novorizontino",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OtHvAJ6j",
+      "mandante": "Criciuma",
+      "visitante": "Juventude",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O07YV0T9",
+      "mandante": "Cuiaba",
+      "visitante": "Athletic Club",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tfX0H1EG",
+      "mandante": "Fortaleza",
+      "visitante": "Avai",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YTThJNq4",
+      "mandante": "Operario-PR",
+      "visitante": "CRB",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y9wactNp",
+      "mandante": "Sao Bernardo",
+      "visitante": "Londrina",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jm9QXMbc",
+      "mandante": "Sport Recife",
+      "visitante": "Ponte Preta",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WQAtUvbM",
+      "mandante": "Vila Nova FC",
+      "visitante": "Goias",
+      "rodada": 49,
+      "data": "09.09.2026 16:00",
+      "data_partida": "09.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "00i6p0r3",
+      "mandante": "America MG",
+      "visitante": "Sao Bernardo",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xOgiyd5k",
+      "mandante": "Atletico GO",
+      "visitante": "Criciuma",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "plcaZZZ1",
+      "mandante": "Avai",
+      "visitante": "Vila Nova FC",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0t1COILq",
+      "mandante": "Botafogo SP",
+      "visitante": "Goias",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rsCIvVBs",
+      "mandante": "CRB",
+      "visitante": "Sport Recife",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tvgMtIsS",
+      "mandante": "Fortaleza",
+      "visitante": "Ceara",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lvFQx9tf",
+      "mandante": "Juventude",
+      "visitante": "Athletic Club",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8QfErvDF",
+      "mandante": "Londrina",
+      "visitante": "Ponte Preta",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xrpocwS8",
+      "mandante": "Nautico",
+      "visitante": "Operario-PR",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YgaKMdjd",
+      "mandante": "Novorizontino",
+      "visitante": "Cuiaba",
+      "rodada": 50,
+      "data": "12.09.2026 16:00",
+      "data_partida": "12.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dO8SdUXP",
+      "mandante": "Athletic Club",
+      "visitante": "Botafogo SP",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vBh6knQa",
+      "mandante": "Ceara",
+      "visitante": "Novorizontino",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KlfMo4PO",
+      "mandante": "Criciuma",
+      "visitante": "Operario-PR",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2Liw4oug",
+      "mandante": "Cuiaba",
+      "visitante": "Nautico",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nydEmQfC",
+      "mandante": "Goias",
+      "visitante": "Avai",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hffbi8em",
+      "mandante": "Londrina",
+      "visitante": "Fortaleza",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MiDYzmB6",
+      "mandante": "Ponte Preta",
+      "visitante": "CRB",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UHGtZQuJ",
+      "mandante": "Sao Bernardo",
+      "visitante": "Atletico GO",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ADZV57At",
+      "mandante": "Sport Recife",
+      "visitante": "Juventude",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zZko2P95",
+      "mandante": "Vila Nova FC",
+      "visitante": "America MG",
+      "rodada": 51,
+      "data": "19.09.2026 16:00",
+      "data_partida": "19.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6yXAIpfn",
+      "mandante": "America MG",
+      "visitante": "Juventude",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ragg03vI",
+      "mandante": "Botafogo SP",
+      "visitante": "Ponte Preta",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "25DbT184",
+      "mandante": "CRB",
+      "visitante": "Cuiaba",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4EN47Koo",
+      "mandante": "Criciuma",
+      "visitante": "Avai",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0IYQE2gB",
+      "mandante": "Fortaleza",
+      "visitante": "Athletic Club",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YVWYCtON",
+      "mandante": "Goias",
+      "visitante": "Atletico GO",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UiFjVNwh",
+      "mandante": "Nautico",
+      "visitante": "Sport Recife",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jPd1bs9U",
+      "mandante": "Novorizontino",
+      "visitante": "Sao Bernardo",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hhVIGOOb",
+      "mandante": "Operario-PR",
+      "visitante": "Ceara",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AVG6RuwH",
+      "mandante": "Vila Nova FC",
+      "visitante": "Londrina",
+      "rodada": 52,
+      "data": "26.09.2026 16:00",
+      "data_partida": "26.09.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tjqXUEq9",
+      "mandante": "Athletic Club",
+      "visitante": "Sport Recife",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hCyJLA6e",
+      "mandante": "Atletico GO",
+      "visitante": "America MG",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "b9vRJly8",
+      "mandante": "Avai",
+      "visitante": "Ceara",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GUrv9XMk",
+      "mandante": "Botafogo SP",
+      "visitante": "Vila Nova FC",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0dHIPvPQ",
+      "mandante": "Cuiaba",
+      "visitante": "Ponte Preta",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pnYANWyq",
+      "mandante": "Fortaleza",
+      "visitante": "Nautico",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Wv8lKInl",
+      "mandante": "Juventude",
+      "visitante": "Operario-PR",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lGnuThEL",
+      "mandante": "Londrina",
+      "visitante": "Criciuma",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hWDAR0fE",
+      "mandante": "Novorizontino",
+      "visitante": "Goias",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lrsn7Bi2",
+      "mandante": "Sao Bernardo",
+      "visitante": "CRB",
+      "rodada": 53,
+      "data": "03.10.2026 16:00",
+      "data_partida": "03.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IFdjvvvK",
+      "mandante": "America MG",
+      "visitante": "Fortaleza",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nX1qTDVI",
+      "mandante": "Avai",
+      "visitante": "Londrina",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MBoUWeWg",
+      "mandante": "Ceara",
+      "visitante": "Criciuma",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pMp1oeom",
+      "mandante": "CRB",
+      "visitante": "Atletico GO",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EJ3yVZ06",
+      "mandante": "Goias",
+      "visitante": "Athletic Club",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EwfVjHNP",
+      "mandante": "Nautico",
+      "visitante": "Novorizontino",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EorMYH1s",
+      "mandante": "Operario-PR",
+      "visitante": "Botafogo SP",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4h6dIdH0",
+      "mandante": "Ponte Preta",
+      "visitante": "Juventude",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "j944GznD",
+      "mandante": "Sport Recife",
+      "visitante": "Sao Bernardo",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IZr9qZFa",
+      "mandante": "Vila Nova FC",
+      "visitante": "Cuiaba",
+      "rodada": 54,
+      "data": "06.10.2026 16:00",
+      "data_partida": "06.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2qdzm8Mi",
+      "mandante": "Athletic Club",
+      "visitante": "Londrina",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lK0bs4jT",
+      "mandante": "Atletico GO",
+      "visitante": "Sport Recife",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4jsHsDpC",
+      "mandante": "Botafogo SP",
+      "visitante": "Ceara",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K2iUyrEj",
+      "mandante": "Criciuma",
+      "visitante": "America MG",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KMsOcPzA",
+      "mandante": "Cuiaba",
+      "visitante": "Avai",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G62jqQLG",
+      "mandante": "Fortaleza",
+      "visitante": "CRB",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n9qGao6c",
+      "mandante": "Nautico",
+      "visitante": "Vila Nova FC",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ak9lP4Up",
+      "mandante": "Novorizontino",
+      "visitante": "Ponte Preta",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "A9aroni4",
+      "mandante": "Operario-PR",
+      "visitante": "Goias",
+      "rodada": 55,
+      "data": "10.10.2026 16:00",
+      "data_partida": "10.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OjxeCOk3",
+      "mandante": "America MG",
+      "visitante": "Operario-PR",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tAXl1bs2",
+      "mandante": "Avai",
+      "visitante": "Athletic Club",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "21wB8tkS",
+      "mandante": "Ceara",
+      "visitante": "Juventude",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KKIrNu4L",
+      "mandante": "CRB",
+      "visitante": "Botafogo SP",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YqUt3KCk",
+      "mandante": "Goias",
+      "visitante": "Nautico",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hleVe35M",
+      "mandante": "Juventude",
+      "visitante": "Sao Bernardo",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Umu3A2KF",
+      "mandante": "Londrina",
+      "visitante": "Cuiaba",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OWo1jsTq",
+      "mandante": "Ponte Preta",
+      "visitante": "Atletico GO",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dpp9lLcd",
+      "mandante": "Sao Bernardo",
+      "visitante": "Criciuma",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y3KzP1Z8",
+      "mandante": "Sport Recife",
+      "visitante": "Fortaleza",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "j39EHJRr",
+      "mandante": "Vila Nova FC",
+      "visitante": "Novorizontino",
+      "rodada": 56,
+      "data": "17.10.2026 16:00",
+      "data_partida": "17.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rVHFyuJE",
+      "mandante": "America MG",
+      "visitante": "Cuiaba",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U7o3Fl2C",
+      "mandante": "Atletico GO",
+      "visitante": "Novorizontino",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2LqBDSWO",
+      "mandante": "Avai",
+      "visitante": "Botafogo SP",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MsreHAXa",
+      "mandante": "Ceara",
+      "visitante": "Goias",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "v1NSV9ng",
+      "mandante": "CRB",
+      "visitante": "Londrina",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CELzUmH5",
+      "mandante": "Juventude",
+      "visitante": "Nautico",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EHvmJW2m",
+      "mandante": "Operario-PR",
+      "visitante": "Athletic Club",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OG7MFcde",
+      "mandante": "Ponte Preta",
+      "visitante": "Fortaleza",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WtBUDyR7",
+      "mandante": "Sao Bernardo",
+      "visitante": "Vila Nova FC",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WzKKXVHt",
+      "mandante": "Sport Recife",
+      "visitante": "Criciuma",
+      "rodada": 57,
+      "data": "24.10.2026 16:00",
+      "data_partida": "24.10.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tl20p91n",
+      "mandante": "Athletic Club",
+      "visitante": "Ceara",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KvPrSRoI",
+      "mandante": "Botafogo SP",
+      "visitante": "Sport Recife",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qy8gZrgo",
+      "mandante": "Criciuma",
+      "visitante": "Ponte Preta",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SOpouZt4",
+      "mandante": "Cuiaba",
+      "visitante": "Sao Bernardo",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dv9GtR0B",
+      "mandante": "Fortaleza",
+      "visitante": "Atletico GO",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ui7Ov5VN",
+      "mandante": "Goias",
+      "visitante": "CRB",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lE58rmWb",
+      "mandante": "Londrina",
+      "visitante": "America MG",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fBnwseCi",
+      "mandante": "Nautico",
+      "visitante": "Avai",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QySjQ5GU",
+      "mandante": "Novorizontino",
+      "visitante": "Operario-PR",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zklgwDBG",
+      "mandante": "Vila Nova FC",
+      "visitante": "Juventude",
+      "rodada": 58,
+      "data": "31.10.2026 17:00",
+      "data_partida": "31.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4OUIgYec",
+      "mandante": "Athletic Club",
+      "visitante": "Atletico GO",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xIdEVL97",
+      "mandante": "Avai",
+      "visitante": "Sao Bernardo",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tni1yitT",
+      "mandante": "Botafogo SP",
+      "visitante": "Londrina",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ryebZ3Ar",
+      "mandante": "Ceara",
+      "visitante": "America MG",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xxm8i3WQ",
+      "mandante": "Cuiaba",
+      "visitante": "Juventude",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Uig6Xsue",
+      "mandante": "Goias",
+      "visitante": "Ponte Preta",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UBq0gP1E",
+      "mandante": "Nautico",
+      "visitante": "CRB",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xIxXVU3j",
+      "mandante": "Novorizontino",
+      "visitante": "Fortaleza",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ClYQiCQ9",
+      "mandante": "Operario-PR",
+      "visitante": "Sport Recife",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h2hwnsfl",
+      "mandante": "Vila Nova FC",
+      "visitante": "Criciuma",
+      "rodada": 59,
+      "data": "07.11.2026 17:00",
+      "data_partida": "07.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0nnu62oK",
+      "mandante": "America MG",
+      "visitante": "Avai",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jaZQdb86",
+      "mandante": "Atletico GO",
+      "visitante": "Cuiaba",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KYFjDJhm",
+      "mandante": "CRB",
+      "visitante": "Ceara",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OCXYfxwJ",
+      "mandante": "Criciuma",
+      "visitante": "Novorizontino",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rZVIbKwf",
+      "mandante": "Fortaleza",
+      "visitante": "Vila Nova FC",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hnEbBcNa",
+      "mandante": "Juventude",
+      "visitante": "Botafogo SP",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dIXA0t9s",
+      "mandante": "Londrina",
+      "visitante": "Nautico",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QFjopLO0",
+      "mandante": "Ponte Preta",
+      "visitante": "Operario-PR",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YufgragD",
+      "mandante": "Sao Bernardo",
+      "visitante": "Athletic Club",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jJPKIuVP",
+      "mandante": "Sport Recife",
+      "visitante": "Goias",
+      "rodada": 60,
+      "data": "14.11.2026 17:00",
+      "data_partida": "14.11.2026 17:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,

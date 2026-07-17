@@ -1,5 +1,5 @@
-// DADOS_BR — PIPELINE processado (2026-07-16T23:52)
-// Total: 195
+// DADOS_BR — PIPELINE processado (2026-07-17T01:31)
+// Total: 375
 
 window.DADOS_BR = {
   "temporada": "Brasileirão Série A",
@@ -21990,6 +21990,3426 @@ window.DADOS_BR = {
           "ft": "DOM",
           "ht": "DOM"
         }
+      }
+    },
+    {
+      "match_id": "IVTWoLX9",
+      "mandante": "Athletico-PR",
+      "visitante": "Internacional",
+      "rodada": 20,
+      "data": "25.07.2026 18:30",
+      "data_partida": "25.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UkF6bbHF",
+      "mandante": "Santos",
+      "visitante": "Bahia",
+      "rodada": 20,
+      "data": "25.07.2026 18:30",
+      "data_partida": "25.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MPBb0Kn3",
+      "mandante": "Vasco",
+      "visitante": "Mirassol",
+      "rodada": 20,
+      "data": "25.07.2026 20:30",
+      "data_partida": "25.07.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jqSvpa2M",
+      "mandante": "Bahia",
+      "visitante": "Corinthians",
+      "rodada": 20,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fcrxQwBj",
+      "mandante": "Cruzeiro",
+      "visitante": "Bahia",
+      "rodada": 20,
+      "data": "26.07.2026 16:00",
+      "data_partida": "26.07.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AP65VamT",
+      "mandante": "Bahia",
+      "visitante": "Coritiba",
+      "rodada": 20,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tUYBxHfd",
+      "mandante": "Bahia",
+      "visitante": "São Paulo",
+      "rodada": 20,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M3zOms3c",
+      "mandante": "Grêmio",
+      "visitante": "Fluminense",
+      "rodada": 20,
+      "data": "26.07.2026 18:30",
+      "data_partida": "26.07.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AaNEdxnS",
+      "mandante": "Palmeiras",
+      "visitante": "Atlético-MG",
+      "rodada": 20,
+      "data": "26.07.2026 19:30",
+      "data_partida": "26.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y3V3vwQq",
+      "mandante": "Remo",
+      "visitante": "Vitória",
+      "rodada": 20,
+      "data": "26.07.2026 19:30",
+      "data_partida": "26.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dKNS3gge",
+      "mandante": "Atlético-MG",
+      "visitante": "Bahia",
+      "rodada": 21,
+      "data": "29.07.2026 17:00",
+      "data_partida": "29.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2c2gkfv2",
+      "mandante": "Bahia",
+      "visitante": "Grêmio",
+      "rodada": 21,
+      "data": "29.07.2026 17:00",
+      "data_partida": "29.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ARJ356Ua",
+      "mandante": "Bahia",
+      "visitante": "Vasco",
+      "rodada": 21,
+      "data": "29.07.2026 17:00",
+      "data_partida": "29.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U3fuDcW8",
+      "mandante": "São Paulo",
+      "visitante": "Santos",
+      "rodada": 21,
+      "data": "29.07.2026 17:00",
+      "data_partida": "29.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UXLz2XN7",
+      "mandante": "Internacional",
+      "visitante": "Bahia",
+      "rodada": 21,
+      "data": "29.07.2026 19:30",
+      "data_partida": "29.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0hUJ5FOr",
+      "mandante": "Mirassol",
+      "visitante": "Remo",
+      "rodada": 21,
+      "data": "29.07.2026 19:30",
+      "data_partida": "29.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6V8piG9k",
+      "mandante": "Fluminense",
+      "visitante": "Bahia",
+      "rodada": 21,
+      "data": "29.07.2026 21:30",
+      "data_partida": "29.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lCVf7Sam",
+      "mandante": "Vitória",
+      "visitante": "Palmeiras",
+      "rodada": 21,
+      "data": "29.07.2026 21:30",
+      "data_partida": "29.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jJrlBy1L",
+      "mandante": "Corinthians",
+      "visitante": "Athletico-PR",
+      "rodada": 21,
+      "data": "30.07.2026 19:30",
+      "data_partida": "30.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pt4NPzGE",
+      "mandante": "Coritiba",
+      "visitante": "Cruzeiro",
+      "rodada": 21,
+      "data": "30.07.2026 21:30",
+      "data_partida": "30.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ClHgE1DU",
+      "mandante": "Grêmio",
+      "visitante": "São Paulo",
+      "rodada": 22,
+      "data": "08.08.2026 16:00",
+      "data_partida": "08.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IRwLUMcB",
+      "mandante": "Remo",
+      "visitante": "Atlético-MG",
+      "rodada": 22,
+      "data": "08.08.2026 18:30",
+      "data_partida": "08.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lnn4Y4bn",
+      "mandante": "Coritiba",
+      "visitante": "Bahia",
+      "rodada": 22,
+      "data": "08.08.2026 20:30",
+      "data_partida": "08.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EJGK1OTO",
+      "mandante": "Bahia",
+      "visitante": "Fluminense",
+      "rodada": 22,
+      "data": "08.08.2026 21:00",
+      "data_partida": "08.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4ODoGNrI",
+      "mandante": "Cruzeiro",
+      "visitante": "Mirassol",
+      "rodada": 22,
+      "data": "09.08.2026 11:00",
+      "data_partida": "09.08.2026 11:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MapCWrTb",
+      "mandante": "Bahia",
+      "visitante": "Vasco",
+      "rodada": 22,
+      "data": "09.08.2026 16:00",
+      "data_partida": "09.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zqMUJ5qg",
+      "mandante": "Palmeiras",
+      "visitante": "Internacional",
+      "rodada": 22,
+      "data": "09.08.2026 16:00",
+      "data_partida": "09.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "r9PxIqE5",
+      "mandante": "Bahia",
+      "visitante": "Corinthians",
+      "rodada": 22,
+      "data": "09.08.2026 18:30",
+      "data_partida": "09.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UVjULREt",
+      "mandante": "Santos",
+      "visitante": "Athletico-PR",
+      "rodada": 22,
+      "data": "09.08.2026 18:30",
+      "data_partida": "09.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IiNB3paC",
+      "mandante": "Bahia",
+      "visitante": "Vitória",
+      "rodada": 22,
+      "data": "09.08.2026 19:30",
+      "data_partida": "09.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tUjBuvCT",
+      "mandante": "Atlético-MG",
+      "visitante": "Grêmio",
+      "rodada": 23,
+      "data": "15.08.2026 16:30",
+      "data_partida": "15.08.2026 16:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QisTS0SN",
+      "mandante": "Fluminense",
+      "visitante": "Palmeiras",
+      "rodada": 23,
+      "data": "15.08.2026 16:30",
+      "data_partida": "15.08.2026 16:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vJLQsUhc",
+      "mandante": "Athletico-PR",
+      "visitante": "Bahia",
+      "rodada": 23,
+      "data": "15.08.2026 18:30",
+      "data_partida": "15.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GM5oorrh",
+      "mandante": "São Paulo",
+      "visitante": "Coritiba",
+      "rodada": 23,
+      "data": "15.08.2026 21:00",
+      "data_partida": "15.08.2026 21:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "APIaNvjo",
+      "mandante": "Vasco",
+      "visitante": "Santos",
+      "rodada": 23,
+      "data": "16.08.2026 16:00",
+      "data_partida": "16.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "p2c2s0sH",
+      "mandante": "Mirassol",
+      "visitante": "Bahia",
+      "rodada": 23,
+      "data": "16.08.2026 18:30",
+      "data_partida": "16.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nqPYu8N9",
+      "mandante": "Vitória",
+      "visitante": "Bahia",
+      "rodada": 23,
+      "data": "16.08.2026 18:30",
+      "data_partida": "16.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ClafqMC4",
+      "mandante": "Corinthians",
+      "visitante": "Cruzeiro",
+      "rodada": 23,
+      "data": "16.08.2026 19:30",
+      "data_partida": "16.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dfdtzIZj",
+      "mandante": "Internacional",
+      "visitante": "Remo",
+      "rodada": 23,
+      "data": "17.08.2026 20:00",
+      "data_partida": "17.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EcuFLwxe",
+      "mandante": "Fluminense",
+      "visitante": "Remo",
+      "rodada": 24,
+      "data": "22.08.2026 16:00",
+      "data_partida": "22.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KGJcWfjD",
+      "mandante": "Internacional",
+      "visitante": "Atlético-MG",
+      "rodada": 24,
+      "data": "22.08.2026 18:30",
+      "data_partida": "22.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n3LkYGL0",
+      "mandante": "Cruzeiro",
+      "visitante": "Bahia",
+      "rodada": 24,
+      "data": "22.08.2026 20:30",
+      "data_partida": "22.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h4Stzwil",
+      "mandante": "Bahia",
+      "visitante": "Grêmio",
+      "rodada": 24,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MLyBuaTQ",
+      "mandante": "Palmeiras",
+      "visitante": "Vasco",
+      "rodada": 24,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "67hGlx6s",
+      "mandante": "Vitória",
+      "visitante": "Bahia",
+      "rodada": 24,
+      "data": "23.08.2026 16:00",
+      "data_partida": "23.08.2026 16:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SMtPnGzf",
+      "mandante": "Bahia",
+      "visitante": "São Paulo",
+      "rodada": 24,
+      "data": "23.08.2026 18:30",
+      "data_partida": "23.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "06m2sLbE",
+      "mandante": "Santos",
+      "visitante": "Mirassol",
+      "rodada": 24,
+      "data": "23.08.2026 18:30",
+      "data_partida": "23.08.2026 18:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zP1pfbrK",
+      "mandante": "Coritiba",
+      "visitante": "Corinthians",
+      "rodada": 24,
+      "data": "23.08.2026 19:30",
+      "data_partida": "23.08.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YaeGJH67",
+      "mandante": "Bahia",
+      "visitante": "Athletico-PR",
+      "rodada": 24,
+      "data": "24.08.2026 20:00",
+      "data_partida": "24.08.2026 20:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "McsXFE4t",
+      "mandante": "Athletico-PR",
+      "visitante": "Fluminense",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "z78EcXlC",
+      "mandante": "Atlético-MG",
+      "visitante": "Vitória",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fBuuEhZh",
+      "mandante": "Bahia",
+      "visitante": "Internacional",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8fHc1Fkm",
+      "mandante": "Corinthians",
+      "visitante": "Santos",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rXBMeBJO",
+      "mandante": "Grêmio",
+      "visitante": "Bahia",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EiK5agKa",
+      "mandante": "Mirassol",
+      "visitante": "Palmeiras",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EDetCW35",
+      "mandante": "Remo",
+      "visitante": "Coritiba",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lAzR6ySP",
+      "mandante": "São Paulo",
+      "visitante": "Bahia",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dGmuqYZI",
+      "mandante": "Vasco",
+      "visitante": "Cruzeiro",
+      "rodada": 25,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tSBMi2Ij",
+      "mandante": "Bahia",
+      "visitante": "Palmeiras",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lrCGDquA",
+      "mandante": "Corinthians",
+      "visitante": "Bahia",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1XkSrf3",
+      "mandante": "Coritiba",
+      "visitante": "Mirassol",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ttie61Xq",
+      "mandante": "Cruzeiro",
+      "visitante": "Athletico-PR",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MwalAAYH",
+      "mandante": "Fluminense",
+      "visitante": "Vasco",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "l6f34u2d",
+      "mandante": "Internacional",
+      "visitante": "Santos",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CpP6O0gS",
+      "mandante": "Remo",
+      "visitante": "Bahia",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8Y38F5Ac",
+      "mandante": "São Paulo",
+      "visitante": "Atlético-MG",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GIVcQMOF",
+      "mandante": "Vitória",
+      "visitante": "Grêmio",
+      "rodada": 26,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IoUKVH0e",
+      "mandante": "Atlético-MG",
+      "visitante": "Fluminense",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OIkFkwhR",
+      "mandante": "Bahia",
+      "visitante": "Remo",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8jRopHFl",
+      "mandante": "Bahia",
+      "visitante": "Internacional",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ghn7iaNE",
+      "mandante": "Coritiba",
+      "visitante": "Athletico-PR",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8GAxJvHk",
+      "mandante": "Bahia",
+      "visitante": "Corinthians",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jaSSTeV7",
+      "mandante": "Grêmio",
+      "visitante": "Vasco",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MJzCXwWr",
+      "mandante": "Mirassol",
+      "visitante": "Vitória",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jyptw08L",
+      "mandante": "Palmeiras",
+      "visitante": "São Paulo",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ULeXvMw9",
+      "mandante": "Santos",
+      "visitante": "Cruzeiro",
+      "rodada": 27,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h0zfpxXo",
+      "mandante": "Athletico-PR",
+      "visitante": "Bahia",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QkKwrnjI",
+      "mandante": "Atlético-MG",
+      "visitante": "Bahia",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dASMoUjg",
+      "mandante": "Corinthians",
+      "visitante": "Fluminense",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "C6IotQKU",
+      "mandante": "Grêmio",
+      "visitante": "Palmeiras",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4zWUq8L5",
+      "mandante": "Mirassol",
+      "visitante": "Bahia",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MuSAtfWA",
+      "mandante": "Remo",
+      "visitante": "Santos",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0rZDmjMt",
+      "mandante": "São Paulo",
+      "visitante": "Internacional",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AFN2tZED",
+      "mandante": "Vasco",
+      "visitante": "Coritiba",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QDY1rG1b",
+      "mandante": "Vitória",
+      "visitante": "Cruzeiro",
+      "rodada": 28,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QmkB9h0c",
+      "mandante": "Athletico-PR",
+      "visitante": "Atlético-MG",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bLLlZBOp",
+      "mandante": "Bahia",
+      "visitante": "Vasco",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "f75igXFG",
+      "mandante": "Bahia",
+      "visitante": "Mirassol",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E9LhiBpT",
+      "mandante": "Cruzeiro",
+      "visitante": "São Paulo",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EmpIvY0N",
+      "mandante": "Fluminense",
+      "visitante": "Coritiba",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "phCOok8j",
+      "mandante": "Internacional",
+      "visitante": "Corinthians",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Mg7qego4",
+      "mandante": "Palmeiras",
+      "visitante": "Bahia",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SCoS5AaM",
+      "mandante": "Remo",
+      "visitante": "Grêmio",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QRDzcFGi",
+      "mandante": "Santos",
+      "visitante": "Bahia",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YDhJ7WU9",
+      "mandante": "Vitória",
+      "visitante": "Bahia",
+      "rodada": 29,
+      "data": "07.10.2026 17:00",
+      "data_partida": "07.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zaxs0uT0",
+      "mandante": "Atlético-MG",
+      "visitante": "Santos",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hz97G0Ds",
+      "mandante": "Bahia",
+      "visitante": "Mirassol",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vXrY11bl",
+      "mandante": "Bahia",
+      "visitante": "Cruzeiro",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EkcGEvrf",
+      "mandante": "Bahia",
+      "visitante": "Athletico-PR",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OKIyMMkK",
+      "mandante": "Coritiba",
+      "visitante": "Bahia",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OrXc0lNq",
+      "mandante": "Bahia",
+      "visitante": "Fluminense",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8CzkbJcD",
+      "mandante": "Grêmio",
+      "visitante": "Internacional",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8W61K9EF",
+      "mandante": "Palmeiras",
+      "visitante": "Corinthians",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nHIhMVq3",
+      "mandante": "São Paulo",
+      "visitante": "Vitória",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KAQ6bSid",
+      "mandante": "Vasco",
+      "visitante": "Remo",
+      "rodada": 30,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hAPGswCt",
+      "mandante": "Athletico-PR",
+      "visitante": "Palmeiras",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MyxaPedC",
+      "mandante": "Atlético-MG",
+      "visitante": "Coritiba",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hdprTwcm",
+      "mandante": "Corinthians",
+      "visitante": "Vitória",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MF0OCIC6",
+      "mandante": "Fluminense",
+      "visitante": "Santos",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1u7NZQO",
+      "mandante": "Grêmio",
+      "visitante": "Cruzeiro",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0MmjRHRa",
+      "mandante": "Mirassol",
+      "visitante": "Internacional",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MkHXweB5",
+      "mandante": "Remo",
+      "visitante": "Bahia",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AysJYaZP",
+      "mandante": "São Paulo",
+      "visitante": "Vasco",
+      "rodada": 31,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YBVbjP0S",
+      "mandante": "Bahia",
+      "visitante": "Fluminense",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UJYsf713",
+      "mandante": "Coritiba",
+      "visitante": "Grêmio",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rRhmYPvp",
+      "mandante": "Cruzeiro",
+      "visitante": "Remo",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UFKuxZuI",
+      "mandante": "Bahia",
+      "visitante": "Atlético-MG",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lOeeW39d",
+      "mandante": "Internacional",
+      "visitante": "Bahia",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lQzFjYfB",
+      "mandante": "Mirassol",
+      "visitante": "São Paulo",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GCx7hfQb",
+      "mandante": "Palmeiras",
+      "visitante": "Bahia",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KpqbfGen",
+      "mandante": "Santos",
+      "visitante": "Bahia",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jV8lzDAU",
+      "mandante": "Vasco",
+      "visitante": "Corinthians",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xpxjhoWF",
+      "mandante": "Vitória",
+      "visitante": "Athletico-PR",
+      "rodada": 32,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lbC4ct8e",
+      "mandante": "Atlético-MG",
+      "visitante": "Cruzeiro",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nDr51AQQ",
+      "mandante": "Bahia",
+      "visitante": "São Paulo",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OGSP4OFL",
+      "mandante": "Corinthians",
+      "visitante": "Mirassol",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vmuc3WeE",
+      "mandante": "Coritiba",
+      "visitante": "Vitória",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UsHUp3Ok",
+      "mandante": "Fluminense",
+      "visitante": "Internacional",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MBACeKx8",
+      "mandante": "Grêmio",
+      "visitante": "Athletico-PR",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WpKydlll",
+      "mandante": "Remo",
+      "visitante": "Bahia",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "21vH6po9",
+      "mandante": "Santos",
+      "visitante": "Palmeiras",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zenVrsg2",
+      "mandante": "Vasco",
+      "visitante": "Bahia",
+      "rodada": 33,
+      "data": "28.10.2026 18:00",
+      "data_partida": "28.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0xdoC0vn",
+      "mandante": "Athletico-PR",
+      "visitante": "Vasco",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ETBhh6mD",
+      "mandante": "Bahia",
+      "visitante": "Atlético-MG",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IFcI8RXg",
+      "mandante": "Bahia",
+      "visitante": "Santos",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hhAf8IwB",
+      "mandante": "Bahia",
+      "visitante": "Mirassol",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vVoR6526",
+      "mandante": "Cruzeiro",
+      "visitante": "Bahia",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I1IqfSI0",
+      "mandante": "Bahia",
+      "visitante": "Grêmio",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nekZ4qXI",
+      "mandante": "Internacional",
+      "visitante": "Coritiba",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q7uBAm3s",
+      "mandante": "Palmeiras",
+      "visitante": "Remo",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6NbvG9uK",
+      "mandante": "São Paulo",
+      "visitante": "Corinthians",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YkfgAv9b",
+      "mandante": "Vitória",
+      "visitante": "Fluminense",
+      "rodada": 34,
+      "data": "04.11.2026 18:00",
+      "data_partida": "04.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6ezUMHh4",
+      "mandante": "Corinthians",
+      "visitante": "Bahia",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nFe3yH7c",
+      "mandante": "Coritiba",
+      "visitante": "Santos",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zySpJZiT",
+      "mandante": "Cruzeiro",
+      "visitante": "Palmeiras",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0ID26d8N",
+      "mandante": "Bahia",
+      "visitante": "Athletico-PR",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6JIGDDFj",
+      "mandante": "Grêmio",
+      "visitante": "Bahia",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "v9YyLeNG",
+      "mandante": "Mirassol",
+      "visitante": "Atlético-MG",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G82JXY6M",
+      "mandante": "Remo",
+      "visitante": "Bahia",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CdsLOwOi",
+      "mandante": "São Paulo",
+      "visitante": "Fluminense",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pjkZ0zWp",
+      "mandante": "Vasco",
+      "visitante": "Internacional",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Kt9AZfxA",
+      "mandante": "Vitória",
+      "visitante": "Bahia",
+      "rodada": 35,
+      "data": "18.11.2026 18:00",
+      "data_partida": "18.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Y5AK0Xz9",
+      "mandante": "Athletico-PR",
+      "visitante": "Remo",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M97XvjEk",
+      "mandante": "Atlético-MG",
+      "visitante": "Corinthians",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "v5xhrPKs",
+      "mandante": "Bahia",
+      "visitante": "Coritiba",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "86sbQjad",
+      "mandante": "Bahia",
+      "visitante": "São Paulo",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2PQ0pCjS",
+      "mandante": "Bahia",
+      "visitante": "Vasco",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0KQ0t3kf",
+      "mandante": "Bahia",
+      "visitante": "Cruzeiro",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CvlkSCUq",
+      "mandante": "Fluminense",
+      "visitante": "Mirassol",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fN5uwUr2",
+      "mandante": "Internacional",
+      "visitante": "Vitória",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "faNhnYLF",
+      "mandante": "Palmeiras",
+      "visitante": "Bahia",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YqZqlfi3",
+      "mandante": "Santos",
+      "visitante": "Grêmio",
+      "rodada": 36,
+      "data": "22.11.2026 18:00",
+      "data_partida": "22.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UDcjiK3C",
+      "mandante": "Atlético-MG",
+      "visitante": "Vasco",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OzJP5JI5",
+      "mandante": "Bahia",
+      "visitante": "Palmeiras",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0Y5Zf24m",
+      "mandante": "Corinthians",
+      "visitante": "Grêmio",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "feR891Jt",
+      "mandante": "Coritiba",
+      "visitante": "Bahia",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8pU8vsK6",
+      "mandante": "Fluminense",
+      "visitante": "Cruzeiro",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GUebkbYO",
+      "mandante": "Internacional",
+      "visitante": "Bahia",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8b9sgtZa",
+      "mandante": "Mirassol",
+      "visitante": "Athletico-PR",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tlP20OtQ",
+      "mandante": "São Paulo",
+      "visitante": "Remo",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S8PG7ulg",
+      "mandante": "Vitória",
+      "visitante": "Santos",
+      "rodada": 37,
+      "data": "29.11.2026 18:00",
+      "data_partida": "29.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UBSNIQDi",
+      "mandante": "Athletico-PR",
+      "visitante": "São Paulo",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xxWVG4r4",
+      "mandante": "Bahia",
+      "visitante": "Atlético-MG",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ais7Id2B",
+      "mandante": "Bahia",
+      "visitante": "Fluminense",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G4C7GzXN",
+      "mandante": "Cruzeiro",
+      "visitante": "Internacional",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nm3wBEfo",
+      "mandante": "Grêmio",
+      "visitante": "Mirassol",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xvqaKIXb",
+      "mandante": "Palmeiras",
+      "visitante": "Coritiba",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WzPvFrDG",
+      "mandante": "Remo",
+      "visitante": "Corinthians",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tCkjMv3n",
+      "mandante": "Santos",
+      "visitante": "Bahia",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jmAt2yIU",
+      "mandante": "Vasco",
+      "visitante": "Vitória",
+      "rodada": 38,
+      "data": "02.12.2026 18:00",
+      "data_partida": "02.12.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
       }
     }
   ]

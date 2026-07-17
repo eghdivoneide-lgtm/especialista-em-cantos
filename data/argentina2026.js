@@ -1,5 +1,5 @@
-// DADOS_ARG — PIPELINE processado (2026-07-16T23:52)
-// Total: 257
+// DADOS_ARG — PIPELINE processado (2026-07-17T01:31)
+// Total: 494
 
 window.DADOS_ARG = {
   "temporada": "Liga Profesional Argentina 2026",
@@ -39935,6 +39935,4509 @@ window.DADOS_ARG = {
       "rodada": 18,
       "data": "23.07.2026 21:45",
       "data_partida": "23.07.2026 21:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MosWPn7m",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Central Cordoba",
+      "rodada": 18,
+      "data": "24.07.2026 16:45",
+      "data_partida": "24.07.2026 16:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QwvmM46C",
+      "mandante": "Racing Club",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 18,
+      "data": "24.07.2026 19:00",
+      "data_partida": "24.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4AA59RM6",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Instituto",
+      "rodada": 18,
+      "data": "24.07.2026 19:00",
+      "data_partida": "24.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K4VNNHsH",
+      "mandante": "Huracan",
+      "visitante": "Banfield",
+      "rodada": 18,
+      "data": "24.07.2026 21:15",
+      "data_partida": "24.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CzED75iJ",
+      "mandante": "Platense",
+      "visitante": "Union de Santa Fe",
+      "rodada": 18,
+      "data": "24.07.2026 21:15",
+      "data_partida": "24.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jPw7Rarh",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Tigre",
+      "rodada": 18,
+      "data": "25.07.2026 14:45",
+      "data_partida": "25.07.2026 14:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "reMdBmhf",
+      "mandante": "Newells Old Boys",
+      "visitante": "Talleres Cordoba",
+      "rodada": 18,
+      "data": "25.07.2026 17:00",
+      "data_partida": "25.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IDzuOQy0",
+      "mandante": "River Plate",
+      "visitante": "Barracas Central",
+      "rodada": 18,
+      "data": "25.07.2026 19:15",
+      "data_partida": "25.07.2026 19:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QFe0V8qQ",
+      "mandante": "Lanus",
+      "visitante": "San Lorenzo",
+      "rodada": 18,
+      "data": "25.07.2026 21:30",
+      "data_partida": "25.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GWOWLeCT",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 18,
+      "data": "26.07.2026 15:00",
+      "data_partida": "26.07.2026 15:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zVIlD9Ns",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Independiente",
+      "rodada": 18,
+      "data": "26.07.2026 17:15",
+      "data_partida": "26.07.2026 17:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6a0QIVaK",
+      "mandante": "Dep. Riestra",
+      "visitante": "Boca Juniors",
+      "rodada": 18,
+      "data": "26.07.2026 19:30",
+      "data_partida": "26.07.2026 19:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nkI9RKak",
+      "mandante": "Banfield",
+      "visitante": "Sarmiento Junin",
+      "rodada": 19,
+      "data": "28.07.2026 19:00",
+      "data_partida": "28.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ELgnOogc",
+      "mandante": "San Lorenzo",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 19,
+      "data": "28.07.2026 19:00",
+      "data_partida": "28.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K2GHPbU1",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 19,
+      "data": "28.07.2026 21:15",
+      "data_partida": "28.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ry2CotiL",
+      "mandante": "Rosario Central",
+      "visitante": "Racing Club",
+      "rodada": 19,
+      "data": "28.07.2026 21:15",
+      "data_partida": "28.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0zijvbqe",
+      "mandante": "Barracas Central",
+      "visitante": "Aldosivi",
+      "rodada": 19,
+      "data": "29.07.2026 14:30",
+      "data_partida": "29.07.2026 14:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M7YUY27F",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Dep. Riestra",
+      "rodada": 19,
+      "data": "29.07.2026 17:00",
+      "data_partida": "29.07.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "S8wqtKEr",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "River Plate",
+      "rodada": 19,
+      "data": "29.07.2026 19:15",
+      "data_partida": "29.07.2026 19:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IDj3K3hM",
+      "mandante": "Instituto",
+      "visitante": "Platense",
+      "rodada": 19,
+      "data": "29.07.2026 21:30",
+      "data_partida": "29.07.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UXywXtxS",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Huracan",
+      "rodada": 19,
+      "data": "30.07.2026 19:00",
+      "data_partida": "30.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EqxZEsGq",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Velez Sarsfield",
+      "rodada": 19,
+      "data": "30.07.2026 19:00",
+      "data_partida": "30.07.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WdU1GZZj",
+      "mandante": "Central Cordoba",
+      "visitante": "Atl. Tucuman",
+      "rodada": 19,
+      "data": "30.07.2026 21:15",
+      "data_partida": "30.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YohzDLpd",
+      "mandante": "Independiente",
+      "visitante": "Newells Old Boys",
+      "rodada": 19,
+      "data": "30.07.2026 21:15",
+      "data_partida": "30.07.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lU8z7mJb",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Banfield",
+      "rodada": 20,
+      "data": "01.08.2026 15:30",
+      "data_partida": "01.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "d0FhdW4t",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Union de Santa Fe",
+      "rodada": 20,
+      "data": "01.08.2026 15:30",
+      "data_partida": "01.08.2026 15:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8K0S89ln",
+      "mandante": "Belgrano",
+      "visitante": "Argentinos Jrs",
+      "rodada": 20,
+      "data": "01.08.2026 18:00",
+      "data_partida": "01.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ldXp0u6E",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Defensa y Justicia",
+      "rodada": 20,
+      "data": "01.08.2026 18:00",
+      "data_partida": "01.08.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IeLIl63U",
+      "mandante": "Racing Club",
+      "visitante": "Tigre",
+      "rodada": 20,
+      "data": "01.08.2026 20:30",
+      "data_partida": "01.08.2026 20:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lGT1hl45",
+      "mandante": "Aldosivi",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 20,
+      "data": "02.08.2026 14:30",
+      "data_partida": "02.08.2026 14:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "d2paxxE7",
+      "mandante": "Dep. Riestra",
+      "visitante": "Barracas Central",
+      "rodada": 20,
+      "data": "02.08.2026 14:30",
+      "data_partida": "02.08.2026 14:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rckJsXkm",
+      "mandante": "Newells Old Boys",
+      "visitante": "Boca Juniors",
+      "rodada": 20,
+      "data": "02.08.2026 17:00",
+      "data_partida": "02.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dtX9jSYH",
+      "mandante": "River Plate",
+      "visitante": "Rosario Central",
+      "rodada": 20,
+      "data": "02.08.2026 19:15",
+      "data_partida": "02.08.2026 19:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IZqrxTJO",
+      "mandante": "Lanus",
+      "visitante": "Instituto",
+      "rodada": 20,
+      "data": "02.08.2026 21:30",
+      "data_partida": "02.08.2026 21:30",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Ms7r5RmB",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 20,
+      "data": "03.08.2026 16:45",
+      "data_partida": "03.08.2026 16:45",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "A9tzvkkC",
+      "mandante": "Platense",
+      "visitante": "Talleres Cordoba",
+      "rodada": 20,
+      "data": "03.08.2026 19:00",
+      "data_partida": "03.08.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lfhRuBKa",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Independiente",
+      "rodada": 20,
+      "data": "03.08.2026 19:00",
+      "data_partida": "03.08.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UDD0fAZh",
+      "mandante": "Central Cordoba",
+      "visitante": "San Lorenzo",
+      "rodada": 20,
+      "data": "03.08.2026 21:15",
+      "data_partida": "03.08.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "I90i35IN",
+      "mandante": "Huracan",
+      "visitante": "Atl. Tucuman",
+      "rodada": 20,
+      "data": "03.08.2026 21:15",
+      "data_partida": "03.08.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0hpMzPx3",
+      "mandante": "Boca Juniors",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 19,
+      "data": "05.08.2026 19:00",
+      "data_partida": "05.08.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zBb4m2M8",
+      "mandante": "Tigre",
+      "visitante": "Belgrano",
+      "rodada": 19,
+      "data": "05.08.2026 21:15",
+      "data_partida": "05.08.2026 21:15",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MocfMPN9",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Lanus",
+      "rodada": 19,
+      "data": "06.08.2026 19:00",
+      "data_partida": "06.08.2026 19:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Q10lADV7",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Racing Club",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dM8XDeWr",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Sarmiento Junin",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hl2tCZ0e",
+      "mandante": "Banfield",
+      "visitante": "Belgrano",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4U05AMPj",
+      "mandante": "Boca Juniors",
+      "visitante": "Velez Sarsfield",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U7hiYPHc",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Newells Old Boys",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jNt0W3nA",
+      "mandante": "Dep. Riestra",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rga7QYFl",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Barracas Central",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WYLGs5Kj",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ppKYFr2T",
+      "mandante": "Independiente",
+      "visitante": "Platense",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G4SHJQ24",
+      "mandante": "Instituto",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bLNzWfhR",
+      "mandante": "Rosario Central",
+      "visitante": "Aldosivi",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lhiNcqto",
+      "mandante": "San Lorenzo",
+      "visitante": "Huracan",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CWLQH4XG",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Lanus",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jeKSXGNE",
+      "mandante": "Tigre",
+      "visitante": "River Plate",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UmU9LnYi",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Central Cordoba",
+      "rodada": 21,
+      "data": "09.08.2026 17:00",
+      "data_partida": "09.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MROUZcAa",
+      "mandante": "Aldosivi",
+      "visitante": "Tigre",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QaVLyKum",
+      "mandante": "Barracas Central",
+      "visitante": "Rosario Central",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QDAfjJft",
+      "mandante": "Belgrano",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ChF5ZTbJ",
+      "mandante": "Central Cordoba",
+      "visitante": "Instituto",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jJ2FOCp1",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Mu43lcPh",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Atl. Tucuman",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QyHcyjU6",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Talleres Cordoba",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4MSlwCaf",
+      "mandante": "Lanus",
+      "visitante": "Independiente",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pIeOMjFD",
+      "mandante": "Newells Old Boys",
+      "visitante": "Dep. Riestra",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ddPtuYUs",
+      "mandante": "Platense",
+      "visitante": "Boca Juniors",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zkVpWF9O",
+      "mandante": "Racing Club",
+      "visitante": "Banfield",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EZtxYyuC",
+      "mandante": "River Plate",
+      "visitante": "Argentinos Jrs",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UTqjstIP",
+      "mandante": "San Lorenzo",
+      "visitante": "Union de Santa Fe",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fg2Bnyf5",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Huracan",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xCrApf7K",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Defensa y Justicia",
+      "rodada": 22,
+      "data": "16.08.2026 17:00",
+      "data_partida": "16.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rZvN0REF",
+      "mandante": "Aldosivi",
+      "visitante": "Union de Santa Fe",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "G0hUb5qS",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Instituto",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KfppS68j",
+      "mandante": "Barracas Central",
+      "visitante": "Platense",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2FJmnSaM",
+      "mandante": "Belgrano",
+      "visitante": "Defensa y Justicia",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zoZ0gq7k",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "San Lorenzo",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8bX8iNy2",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U3I3D4bL",
+      "mandante": "Huracan",
+      "visitante": "Dep. Riestra",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MJjE2mp3",
+      "mandante": "Independiente",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bo5Jt6Nq",
+      "mandante": "Lanus",
+      "visitante": "Argentinos Jrs",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Eyfz8rMr",
+      "mandante": "Newells Old Boys",
+      "visitante": "Banfield",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fDbSvphd",
+      "mandante": "Racing Club",
+      "visitante": "Boca Juniors",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EeICpFOH",
+      "mandante": "River Plate",
+      "visitante": "Velez Sarsfield",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8GQvllV9",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0jNWkA0c",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Rosario Central",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O6FeFQT8",
+      "mandante": "Tigre",
+      "visitante": "Central Cordoba",
+      "rodada": 23,
+      "data": "23.08.2026 17:00",
+      "data_partida": "23.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fmHJzYen",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Aldosivi",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dhkgKCB5",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Belgrano",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QXtAGUAU",
+      "mandante": "Banfield",
+      "visitante": "River Plate",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "08pAKL5l",
+      "mandante": "Boca Juniors",
+      "visitante": "Lanus",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MNYIIaz1",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Platense",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UmxRGw5D",
+      "mandante": "Dep. Riestra",
+      "visitante": "Velez Sarsfield",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SCcxOfCt",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Newells Old Boys",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0QepMYtg",
+      "mandante": "Huracan",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4Ih1IjtI",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Racing Club",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UPgvQsrR",
+      "mandante": "Independiente",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ITji40L7",
+      "mandante": "Instituto",
+      "visitante": "San Lorenzo",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OS8zXkeB",
+      "mandante": "Rosario Central",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ANwwS3DE",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Central Cordoba",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jFASYBQb",
+      "mandante": "Tigre",
+      "visitante": "Barracas Central",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M1cr6Mje",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Sarmiento Junin",
+      "rodada": 24,
+      "data": "30.08.2026 17:00",
+      "data_partida": "30.08.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lp9Ojpnp",
+      "mandante": "Aldosivi",
+      "visitante": "Banfield",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WSSid6OM",
+      "mandante": "Barracas Central",
+      "visitante": "Argentinos Jrs",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nauPfE4F",
+      "mandante": "Belgrano",
+      "visitante": "Huracan",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6BQQs79T",
+      "mandante": "Central Cordoba",
+      "visitante": "Independiente",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6mhcx6ll",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Sarmiento Junin",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "O2PqbSgA",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Tigre",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YcSIqTvH",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Boca Juniors",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xWY9okA4",
+      "mandante": "Lanus",
+      "visitante": "Defensa y Justicia",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U5V1mBuh",
+      "mandante": "Platense",
+      "visitante": "Dep. Riestra",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vZyHdzz3",
+      "mandante": "Racing Club",
+      "visitante": "Atl. Tucuman",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Mc7WlOGd",
+      "mandante": "River Plate",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Kf2qVTPN",
+      "mandante": "Rosario Central",
+      "visitante": "Newells Old Boys",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zsqkxoXj",
+      "mandante": "San Lorenzo",
+      "visitante": "Talleres Cordoba",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "2myy0lPc",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Instituto",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lAhFP7mo",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 25,
+      "data": "06.09.2026 17:00",
+      "data_partida": "06.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6sXmGLWh",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "04AMa0nC",
+      "mandante": "Atl. Tucuman",
+      "visitante": "River Plate",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CrvuIs2t",
+      "mandante": "Banfield",
+      "visitante": "Barracas Central",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0ADWj53s",
+      "mandante": "Boca Juniors",
+      "visitante": "Central Cordoba",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hIVwkqYg",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EXJnmN26",
+      "mandante": "Dep. Riestra",
+      "visitante": "Lanus",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "McNfo1XI",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Platense",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hv7E1MHa",
+      "mandante": "Huracan",
+      "visitante": "Racing Club",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MJbVcvHO",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Aldosivi",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tQWadRuK",
+      "mandante": "Independiente",
+      "visitante": "San Lorenzo",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "h4j5zpJ0",
+      "mandante": "Instituto",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "x65s94PP",
+      "mandante": "Newells Old Boys",
+      "visitante": "Velez Sarsfield",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YyiD3rmm",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Belgrano",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lWqEYNmD",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Union de Santa Fe",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "veVeEa15",
+      "mandante": "Tigre",
+      "visitante": "Rosario Central",
+      "rodada": 26,
+      "data": "13.09.2026 17:00",
+      "data_partida": "13.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "dCugL7Ek",
+      "mandante": "Aldosivi",
+      "visitante": "Atl. Tucuman",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xSbMQTjS",
+      "mandante": "Barracas Central",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GYoluT5L",
+      "mandante": "Belgrano",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "buE258Cc",
+      "mandante": "Central Cordoba",
+      "visitante": "Defensa y Justicia",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "U1eESkMF",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Banfield",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "KS5USbGb",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Dep. Riestra",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "r9FJ68ad",
+      "mandante": "Instituto",
+      "visitante": "Talleres Cordoba",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "n1hNUKon",
+      "mandante": "Lanus",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rmSCAH0U",
+      "mandante": "Platense",
+      "visitante": "Newells Old Boys",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "88rtsky9",
+      "mandante": "Racing Club",
+      "visitante": "Sarmiento Junin",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UPw1Joq2",
+      "mandante": "River Plate",
+      "visitante": "Huracan",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8n75UBi3",
+      "mandante": "Rosario Central",
+      "visitante": "Argentinos Jrs",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GfawRxoB",
+      "mandante": "San Lorenzo",
+      "visitante": "Boca Juniors",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "nsMA8UUq",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Independiente",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "zNO4CwWH",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Tigre",
+      "rodada": 27,
+      "data": "20.09.2026 17:00",
+      "data_partida": "20.09.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GENB2d3n",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Tigre",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OMFqaNdf",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Barracas Central",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jZ60eudJ",
+      "mandante": "Banfield",
+      "visitante": "Rosario Central",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ltZzWOS7",
+      "mandante": "Boca Juniors",
+      "visitante": "Union de Santa Fe",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tzMMgSKE",
+      "mandante": "Defensa y Justicia",
+      "visitante": "San Lorenzo",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "x2FVi6kR",
+      "mandante": "Dep. Riestra",
+      "visitante": "Central Cordoba",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Kf2B3nsA",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "GGhIr2CD",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Racing Club",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SfMz1qSs",
+      "mandante": "Huracan",
+      "visitante": "Aldosivi",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UJIic1R6",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8WQSXpbe",
+      "mandante": "Independiente",
+      "visitante": "Instituto",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8p61npDl",
+      "mandante": "Newells Old Boys",
+      "visitante": "Lanus",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WOz5654K",
+      "mandante": "Sarmiento Junin",
+      "visitante": "River Plate",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "06NKZ6Tr",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Belgrano",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UafApOs1",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Platense",
+      "rodada": 28,
+      "data": "04.10.2026 17:00",
+      "data_partida": "04.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YDGs8wcM",
+      "mandante": "Aldosivi",
+      "visitante": "Sarmiento Junin",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ncIZ9aS9",
+      "mandante": "Barracas Central",
+      "visitante": "Huracan",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "j7pTdhXN",
+      "mandante": "Central Cordoba",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QsUQBLcc",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Atl. Tucuman",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SK5J1QBM",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Newells Old Boys",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Cv4icMr4",
+      "mandante": "Instituto",
+      "visitante": "Boca Juniors",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pfFSbE2B",
+      "mandante": "Lanus",
+      "visitante": "Velez Sarsfield",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CtHK0zYb",
+      "mandante": "Platense",
+      "visitante": "Argentinos Jrs",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QBeM0ekd",
+      "mandante": "Racing Club",
+      "visitante": "Belgrano",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hbcE2HKq",
+      "mandante": "River Plate",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "byxulI5j",
+      "mandante": "Rosario Central",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MkyaiWfo",
+      "mandante": "San Lorenzo",
+      "visitante": "Dep. Riestra",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "6wc0e0DG",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Independiente",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vie8gvrT",
+      "mandante": "Tigre",
+      "visitante": "Banfield",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4E0qarEi",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Defensa y Justicia",
+      "rodada": 29,
+      "data": "11.10.2026 17:00",
+      "data_partida": "11.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "E5D6TpPa",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Rosario Central",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ro5NP2OO",
+      "mandante": "Banfield",
+      "visitante": "Argentinos Jrs",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "02mXEoA6",
+      "mandante": "Belgrano",
+      "visitante": "River Plate",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YReGMxCF",
+      "mandante": "Boca Juniors",
+      "visitante": "Talleres Cordoba",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fspPKGtS",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Instituto",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "QPzeFf4k",
+      "mandante": "Dep. Riestra",
+      "visitante": "Union de Santa Fe",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MiU3DYY1",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "San Lorenzo",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8SjuDPvJ",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Aldosivi",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "IwKcV6fm",
+      "mandante": "Huracan",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "MVGEROgC",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Tigre",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "EoHkyxR8",
+      "mandante": "Newells Old Boys",
+      "visitante": "Central Cordoba",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vmaOG7uf",
+      "mandante": "Platense",
+      "visitante": "Lanus",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tKw9Obs3",
+      "mandante": "Racing Club",
+      "visitante": "Independiente",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "M7YRzTWP",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Barracas Central",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "WMeGITAs",
+      "mandante": "Velez Sarsfield",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 30,
+      "data": "18.10.2026 17:00",
+      "data_partida": "18.10.2026 17:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SONxmWLk",
+      "mandante": "Aldosivi",
+      "visitante": "Belgrano",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "AZ3wiuNN",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "bBfWq69t",
+      "mandante": "Banfield",
+      "visitante": "Lanus",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "lti55vxH",
+      "mandante": "Barracas Central",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "SjnmtO85",
+      "mandante": "Central Cordoba",
+      "visitante": "Velez Sarsfield",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tGmc7074",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Sarmiento Junin",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fwlurpvg",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Platense",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xM5Vh1hB",
+      "mandante": "Independiente",
+      "visitante": "Boca Juniors",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YT8Edqgn",
+      "mandante": "Instituto",
+      "visitante": "Dep. Riestra",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0xMpoAj2",
+      "mandante": "River Plate",
+      "visitante": "Racing Club",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "K0al9Mxh",
+      "mandante": "Rosario Central",
+      "visitante": "Huracan",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OIudv2wI",
+      "mandante": "San Lorenzo",
+      "visitante": "Newells Old Boys",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tfCMfNNb",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Defensa y Justicia",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hf72oJpo",
+      "mandante": "Tigre",
+      "visitante": "Atl. Tucuman",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UFr4xt8U",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 31,
+      "data": "25.10.2026 18:00",
+      "data_partida": "25.10.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "d2pRAfVg",
+      "mandante": "Atl. Tucuman",
+      "visitante": "Argentinos Jrs",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "xraAAQJD",
+      "mandante": "Belgrano",
+      "visitante": "Barracas Central",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Gp4X8Dr9",
+      "mandante": "Boca Juniors",
+      "visitante": "River Plate",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "OA7u7iDL",
+      "mandante": "Defensa y Justicia",
+      "visitante": "Independiente",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8rqC1Vzq",
+      "mandante": "Dep. Riestra",
+      "visitante": "Talleres Cordoba",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fasKa95e",
+      "mandante": "Estudiantes L.P.",
+      "visitante": "Instituto",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "pxnjd4Zq",
+      "mandante": "Estudiantes Rio Cuarto",
+      "visitante": "Gimnasia L.P.",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jkFQCG0s",
+      "mandante": "Huracan",
+      "visitante": "Tigre",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "4SmZ8Ya6",
+      "mandante": "Ind. Rivadavia",
+      "visitante": "Banfield",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "827gE8Kl",
+      "mandante": "Lanus",
+      "visitante": "Gimnasia Mendoza",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "jRzTcmz8",
+      "mandante": "Newells Old Boys",
+      "visitante": "Union de Santa Fe",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vmHNJUdR",
+      "mandante": "Platense",
+      "visitante": "Central Cordoba",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "UHe2Cnk1",
+      "mandante": "Racing Club",
+      "visitante": "Aldosivi",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "fJTfIxwK",
+      "mandante": "Sarmiento Junin",
+      "visitante": "Rosario Central",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rLNELjSE",
+      "mandante": "Velez Sarsfield",
+      "visitante": "San Lorenzo",
+      "rodada": 32,
+      "data": "01.11.2026 18:00",
+      "data_partida": "01.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0zJ5UuSq",
+      "mandante": "Aldosivi",
+      "visitante": "River Plate",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "txc0L2kT",
+      "mandante": "Argentinos Jrs",
+      "visitante": "Huracan",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "8ObhNOKG",
+      "mandante": "Banfield",
+      "visitante": "Atl. Tucuman",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "tjxZZ14M",
+      "mandante": "Barracas Central",
+      "visitante": "Racing Club",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Cd5qPpj4",
+      "mandante": "Boca Juniors",
+      "visitante": "Defensa y Justicia",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "hlUTUFMP",
+      "mandante": "Central Cordoba",
+      "visitante": "Lanus",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "YPYQyOZ9",
+      "mandante": "Gimnasia L.P.",
+      "visitante": "Belgrano",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qsxr7CUI",
+      "mandante": "Gimnasia Mendoza",
+      "visitante": "Ind. Rivadavia",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "Qu7yR6Li",
+      "mandante": "Independiente",
+      "visitante": "Dep. Riestra",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "vo2HLBqC",
+      "mandante": "Instituto",
+      "visitante": "Newells Old Boys",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "CApIwp5c",
+      "mandante": "Rosario Central",
+      "visitante": "Estudiantes Rio Cuarto",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "A5A0Pgpm",
+      "mandante": "San Lorenzo",
+      "visitante": "Platense",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "ppUl33Tp",
+      "mandante": "Talleres Cordoba",
+      "visitante": "Estudiantes L.P.",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "0MwXFtDj",
+      "mandante": "Tigre",
+      "visitante": "Sarmiento Junin",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
+      "tabela": null,
+      "cantos": null,
+      "stats_taticas": null,
+      "estatisticas_ft": null,
+      "placar": null,
+      "gols": null,
+      "url": null,
+      "disputado": false,
+      "meta": {
+        "fonte": "flashscore-fixtures"
+      }
+    },
+    {
+      "match_id": "rJ88NXEa",
+      "mandante": "Union de Santa Fe",
+      "visitante": "Velez Sarsfield",
+      "rodada": 33,
+      "data": "08.11.2026 18:00",
+      "data_partida": "08.11.2026 18:00",
       "tabela": null,
       "cantos": null,
       "stats_taticas": null,
