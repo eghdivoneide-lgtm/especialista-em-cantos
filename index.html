@@ -12056,6 +12056,38 @@ function _linhaHDPHTSugerida(diffHT) {
 
 // v2.2 (2026-07-08): aceita filtro opcional de ligas (usado pela Múltipla Argentina).
 // Sem filtro = 9 ligas ativas + checagem de cotas (comportamento da Múltiplas Elite).
+// ══════════════════════════════════════════════════════════════════
+//  PONTE MCP (2026-07-20): espelha a rodada importada e as múltiplas
+//  geradas no Supabase (tabelas rodadas_diarias / multiplas_geradas),
+//  pra dar ao conector MCP acesso ao dado do dia sem precisar abrir o
+//  app. Fire-and-forget — nunca trava nem quebra a UI se falhar (sem
+//  sessão logada, sem internet, tabela indisponível etc.).
+// ══════════════════════════════════════════════════════════════════
+async function _edsSyncRodada(liga, jogos) {
+  try {
+    const sb = window._sbAuth;
+    if (!sb) return;
+    const { data: userData } = await sb.auth.getUser();
+    const uid = userData && userData.user && userData.user.id;
+    if (!uid) return;
+    await sb.from('rodadas_diarias').upsert({
+      usuario_id: uid, liga, jogos, n_jogos: jogos.length, atualizado_em: new Date().toISOString()
+    }, { onConflict: 'usuario_id,liga' });
+  } catch(e) { console.warn('[MCP sync] rodada falhou (não afeta o app):', e); }
+}
+async function _edsSyncMultiplas(tipo, payload) {
+  try {
+    const sb = window._sbAuth;
+    if (!sb) return;
+    const { data: userData } = await sb.auth.getUser();
+    const uid = userData && userData.user && userData.user.id;
+    if (!uid) return;
+    await sb.from('multiplas_geradas').upsert({
+      usuario_id: uid, tipo, payload, gerado_em: new Date().toISOString()
+    }, { onConflict: 'usuario_id,tipo' });
+  } catch(e) { console.warn('[MCP sync] múltiplas falhou (não afeta o app):', e); }
+}
+
 function gerarCandidatosMultiplas(ligasAlvo) {
   const ligas = ligasAlvo || ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
@@ -12480,6 +12512,7 @@ async function gerarMultiplasElite() {
       const hojeKey = new Date().toISOString().slice(0,10);
       localStorage.setItem('eds_multiplas_elite_'+hojeKey, JSON.stringify(_multiplasEliteState.multiplas));
     } catch(e) {}
+    _edsSyncMultiplas('elite', _multiplasEliteState.multiplas);
 
     renderMultiplasElite();
   } catch(error) {
@@ -13061,6 +13094,7 @@ async function gerarMultiplaArgentina() {
     try {
       localStorage.setItem('eds_multiplas_arg_'+new Date().toISOString().slice(0,10), JSON.stringify(_multiplasArgState.multiplas));
     } catch(e) {}
+    _edsSyncMultiplas('argentina', _multiplasArgState.multiplas);
     renderMultiplaArgentina();
   } catch(error) {
     status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Erro na curadoria:</strong> ${error.message}</div>`;
@@ -14790,6 +14824,7 @@ function _campAnalisar(jogos, rotulo){
     if(typeof jogosFuturos!=='undefined'){ jogosFuturos.length=0; Array.prototype.push.apply(jogosFuturos, fixtures); }
     localStorage.setItem('sniper_rodada_'+LIGA_ATUAL, JSON.stringify(fixtures));
     if(typeof _sincronizarCisneComRodada==='function') _sincronizarCisneComRodada(LIGA_ATUAL);
+    if(typeof _edsSyncRodada==='function') _edsSyncRodada(LIGA_ATUAL, fixtures);
   }catch(e){ console.error('[injetar]', e); }
   alvo.innerHTML='<div style="padding:.8rem;color:var(--green)">⏳ Motor analisando '+jogos.length+' jogos ('+rotulo+')...</div>';
   setTimeout(function(){
