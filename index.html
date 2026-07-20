@@ -1253,7 +1253,7 @@
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">
       <div>
         <div class="section-title" style="margin:0;background:linear-gradient(135deg,#74acdf,#9cc7ec);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.4rem;">🇦🇷 Múltipla Argentina</div>
-        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · mín. 5 sinais por liga (🦢 Cisne+🔮 Enigma casam, ou 🐺 BP&gt;40% + Enigma≥50 flexibilizado)</div>
+        <div style="font-size:.8rem;color:var(--muted);margin-top:.3rem">Só Liga Profesional + Primera B Nacional (maior aderência do app) · HDP HT e HDP FT · pool único misturando as duas ligas (🦢 Cisne+🔮 Enigma casam, ou 🐺 BP&gt;40% + Enigma≥50 flexibilizado) · até 6 sinais</div>
       </div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <button id="btn-gerar-multiplas-arg" onclick="gerarMultiplaArgentina()" style="background:linear-gradient(135deg,#74acdf,#9cc7ec);border:none;color:#062038;padding:.65rem 1.2rem;border-radius:8px;font-weight:800;font-size:.85rem;cursor:pointer;box-shadow:0 4px 12px rgba(116,172,223,0.35);transition:transform .2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🚀 Gerar Múltipla Argentina</button>
@@ -12970,51 +12970,57 @@ function _justificativaArgentina(c, ht) {
   return partes.join(' · ');
 }
 
-// v3.1 (2026-07-12): UMA múltipla POR LIGA argentina (decisão do operador: mín. 5 por liga).
-// G1 = Liga Profesional (ARG) · G2 = Primera Nacional (ARG_B). Cada liga vira um grupo
-// independente com sua própria múltipla Top-5 (+ Top-N até 10). Ranking casam-first:
-// os jogos onde 🦢 Cisne + 🔮 Enigma casam sobem ao topo; depois os que casam via
-// flex 🐺 BP+🔮 Enigma; o restante completa até 5.
+// v3.3 (2026-07-20): POOL ÚNICO misturando ARG + ARG_B — fim da múltipla separada por
+// liga (pedido do operador: quer o ranking dos MELHORES sinais das duas ligas juntos,
+// não uma múltipla pra Liga Profesional e outra pra Primera Nacional). Mesma estrutura
+// da Múltiplas Elite (pool dos melhores até 10 candidatos elegíveis por mercado, sem
+// repetir clube → 2×5 + 1×10), mas usando a elegibilidade/ranking flex da Argentina
+// (_elegivelArgentina/_rankArgentina): Cisne+Enigma "casando" sempre no topo, depois
+// confluência, depois o sinal flex 🐺 BP+🔮 Enigma (cresce com os dois sinais).
 function _curadoriaArgentina(candidatos) {
   const norm = s => (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,'');
-  const buckets = [
-    { cod: 'ARG',   label: 'Liga Profesional', grupo: 1, cor: _ARG_COR },
-    { cod: 'ARG_B', label: 'Primera Nacional',  grupo: 2, cor: '#9cc7ec' },
-  ];
   const sinais = [];
-  const resumo = [];
+  const resumoMercados = [];
 
   ['HT','FT'].forEach(pref => {
     const ht = pref === 'HT';
     const mercado = ht ? 'HDP HT' : 'HDP FT';
-    buckets.forEach(bk => {
-      const eleg = candidatos.filter(c => c.liga === bk.cod && _elegivelArgentina(c, ht))
-                             .sort((a,b) => _rankArgentina(a, b, ht));
-      // Top até 10 da liga, sem repetir clube dentro da múltipla.
-      const times = new Set(); const grp = [];
-      eleg.forEach(c => { const tm = norm(c.m), tv = norm(c.v);
-        if (grp.length < 10 && !times.has(tm) && !times.has(tv)) { grp.push(c); times.add(tm); times.add(tv); } });
+    const eleg = candidatos.filter(c => _elegivelArgentina(c, ht)).sort((a,b) => _rankArgentina(a, b, ht));
 
-      const mkPick = c => ({ liga: c.liga, jogo: c.m + ' × ' + c.v,
-        linha: ht ? c.linhaHDP_HT : c.linhaHDP, favorito: ht ? c.favoritoHT : c.favorito,
-        justificativa: _justificativaArgentina(c, ht) });
-      const mkTese = arr => {
-        const casamN = arr.filter(c => c.casam).length;
-        const flexN = arr.filter(c => _viaFlexArgentina(c, ht)).length;
-        return `${bk.label} · ${arr.length} pernas · ${casamN} onde 🦢+🔮 casam · ${flexN} via flex 🐺BP+🔮Enigma · resto no ranking.`;
-      };
-
-      const b = grp.slice(0, 5), full = grp.slice(0, 10);
-      if (b.length >= 5)  sinais.push({ id: pref+'_G'+bk.grupo+'_5',  mercado, grupo: bk.grupo, cor: bk.cor, titulo: `💎 ${mercado} · ${bk.label} · Top 5`,           pernas: b.length,    tese: mkTese(b),    picks: b.map(mkPick) });
-      if (grp.length > 5) sinais.push({ id: pref+'_G'+bk.grupo+'_10', mercado, grupo: bk.grupo, cor: bk.cor, titulo: `🎯 ${mercado} · ${bk.label} · Top ${full.length}`, pernas: full.length, tese: mkTese(full), picks: full.map(mkPick) });
-
-      resumo.push(`${bk.label} ${mercado}: ${eleg.length} c/ sinal → ${b.length>=5 ? ('Top5'+(grp.length>5?'+Top'+full.length:'')) : (eleg.length===0 ? 'sem jogos' : 'só '+grp.length+' (mín. 5)')}`);
+    // Pool único (ARG + ARG_B misturadas): os 10 melhores elegíveis, sem repetir clube.
+    const times = new Set(); const pool = [];
+    eleg.forEach(c => {
+      if (pool.length >= 10) return;
+      const tm = norm(c.m), tv = norm(c.v);
+      if (!times.has(tm) && !times.has(tv)) { pool.push(c); times.add(tm); times.add(tv); }
     });
+
+    const mkPick = c => ({
+      liga: c.liga, jogo: c.m + ' × ' + c.v,
+      linha: ht ? c.linhaHDP_HT : c.linhaHDP,
+      favorito: ht ? c.favoritoHT : c.favorito,
+      justificativa: _justificativaArgentina(c, ht)
+    });
+    const mkTese = (rotulo, arr) => {
+      const casamN = arr.filter(c => c.casam).length;
+      const flexN = arr.filter(c => _viaFlexArgentina(c, ht)).length;
+      const argN = arr.filter(c => c.liga === 'ARG').length, argBN = arr.filter(c => c.liga === 'ARG_B').length;
+      return `${rotulo} · ${casamN}/${arr.length} onde 🦢+🔮 casam · ${flexN} via flex 🐺BP+🔮Enigma · ${argN} Liga Profesional + ${argBN} Primera Nacional.`;
+    };
+
+    const p5a = pool.slice(0, 5), p5b = pool.slice(5, 10);
+    if (p5a.length >= 5) sinais.push({ id: pref+'_5A', mercado, pernas: 5, cor: _ARG_COR, titulo: `💎 ${mercado} · Top 5 (1ª metade)`, tese: mkTese('Top 5 (1-5)', p5a), picks: p5a.map(mkPick) });
+    if (pool.length >= 10) {
+      sinais.push({ id: pref+'_5B', mercado, pernas: 5, cor: _ARG_COR, titulo: `💎 ${mercado} · Top 5 (2ª metade)`, tese: mkTese('Top 5 (6-10)', p5b), picks: p5b.map(mkPick) });
+      sinais.push({ id: pref+'_10', mercado, pernas: 10, cor: '#9cc7ec', titulo: `🎯 ${mercado} · Top 10`, tese: mkTese('Top 10', pool), picks: pool.map(mkPick) });
+    }
+
+    resumoMercados.push(`${mercado}: ${eleg.length} elegíveis (ARG+ARG_B) → ${[p5a.length>=5?'5A':null, pool.length>=10?'5B':null, pool.length>=10?'10':null].filter(Boolean).join('+')||'sem sinais (degradação)'}`);
   });
 
   const casamTotal = candidatos.filter(c => c.casam).length;
   const flexTotal = candidatos.filter(c => _viaFlexArgentina(c, true) || _viaFlexArgentina(c, false)).length;
-  const tese_geral = `Múltipla Argentina (5+ por liga, flex 🐺BP+🔮Enigma ativa) · ${candidatos.length} candidatos · ${casamTotal} onde 🦢 Cisne + 🔮 Enigma casam (topo do ranking) · ${flexTotal} via flexibilização (BP>40% + Enigma≥50 em discrepância). ${resumo.join(' · ')}.`;
+  const tese_geral = `Múltipla Argentina (pool único ARG+ARG_B, flex 🐺BP+🔮Enigma ativa) · ${candidatos.length} candidatos · ${casamTotal} onde 🦢 Cisne + 🔮 Enigma casam (topo do ranking) · ${flexTotal} via flexibilização (BP>40% + Enigma≥50 em discrepância). ${resumoMercados.join(' · ')}.`;
   return { tese_geral, sinais };
 }
 
@@ -13040,12 +13046,12 @@ async function gerarMultiplaArgentina() {
 
     const parsed = _curadoriaArgentina(candidatos);
     if (!parsed.sinais.length) {
-      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — nenhuma liga argentina (Liga Profesional / Primera Nacional) alcançou 5 jogos com sinal (🦢 Cisne Negro, 🔮 Enigma, ou 🐺 BP+Enigma flexibilizado) nesta rodada.<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
+      status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Nenhum sinal gerado</strong> — o pool combinado ARG+ARG_B não alcançou 5 jogos com sinal (🦢 Cisne Negro, 🔮 Enigma, ou 🐺 BP+Enigma flexibilizado) nesta rodada.<br><div style="margin-top:.4rem;font-size:.78rem;color:var(--muted)">${parsed.tese_geral}</div></div>`;
       return;
     }
 
-    // Rede de segurança: mesmos ids/regras da Múltiplas Elite → mesmo validador
-    const validacao = _validarRespostaMultiplas(parsed, candidatos);
+    // Rede de segurança: mesmo schema/validador do pool único da Múltiplas Elite
+    const validacao = _validarTop10Multiplas(parsed, candidatos);
     if (!validacao.valido) {
       status.innerHTML = `<div style="padding:1rem;background:rgba(239,68,68,0.08);border-left:3px solid var(--red);border-radius:8px;color:var(--text);font-size:.85rem">❌ <strong>Curadoria falhou na auto-validação (reporte este bug):</strong><ul style="margin:.5rem 0 0 1.2rem">${validacao.erros.map(e=>`<li>${e}</li>`).join('')}</ul></div>`;
       return;
@@ -13101,7 +13107,7 @@ function renderMultiplaArgentina() {
   // troca o state de candidatos usado pelo card durante o render.
   const backupCand = _multiplasEliteState.candidatos;
   _multiplasEliteState.candidatos = _multiplasArgState.candidatos || backupCand;
-  const ordem = ['HT_G1_5','HT_G1_10','HT_G2_5','HT_G2_10','FT_G1_5','FT_G1_10','FT_G2_5','FT_G2_10'];
+  const ordem = ['HT_5A','HT_5B','HT_10','FT_5A','FT_5B','FT_10'];
   const porId = {};
   (m.sinais||[]).forEach(s => { if (s && s.id) porId[s.id] = s; });
   let html = '';
@@ -13110,7 +13116,7 @@ function renderMultiplaArgentina() {
     const header = `<div style="margin:1.4rem 0 .8rem;font-size:1rem;font-weight:900;color:#9cc7ec;letter-spacing:.03em">${mercado === 'HDP HT' ? '⏱️ HDP HT — 1º tempo' : '🏁 HDP FT — jogo todo'}</div>`;
     html += header + (ids.length
       ? ids.map(id => _cardSinalMultipla(porId[id])).join('')
-      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — nenhuma liga argentina com 5 jogos com sinal (Cisne/Enigma).</div>`);
+      : `<div style="padding:.8rem 1rem;background:var(--bg3);border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.8rem">Sem sinais neste mercado — o pool combinado ARG+ARG_B não chegou a 5 jogos com sinal (Cisne/Enigma/flex).</div>`);
   });
   ctr.innerHTML = html;
   _multiplasEliteState.candidatos = backupCand;
@@ -13123,7 +13129,7 @@ function exportarMultiplaArgentinaHTML() {
   const status = document.getElementById('multiplas-arg-status');
   _exportarAnaliseHTML({
     titulo: '🇦🇷 Múltipla Argentina — Curadoria do Motor',
-    subtitulo: 'Só Liga Profesional + Primera B Nacional · HDP HT/FT · Cisne+Enigma casam, ou BP&gt;40%+Enigma≥50 flexibilizado — as ligas de maior aderência do app',
+    subtitulo: 'Só Liga Profesional + Primera B Nacional, pool único misturando as duas · HDP HT/FT · Cisne+Enigma casam, ou BP&gt;40%+Enigma≥50 flexibilizado — as ligas de maior aderência do app',
     conteudoHTML: (status?.innerHTML||'') + (ctr?.innerHTML||''),
     prefixoArquivo: 'MultiplaArgentina',
     corHeader: _ARG_COR
