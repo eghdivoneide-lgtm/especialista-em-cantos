@@ -3690,11 +3690,19 @@ function exportarTimeHTML() {
 //  HELPERS — FORMA RECENTE, H2H, EV CALCULATOR
 // ══════════════════════════════════════════════════
 
-function formaRecenteHTML(time, todosJogos) {
+// v2.0 (2026-07-21): recorte casa/fora — pedido do operador pra o card ficar fiel
+// à mesma lógica que o motor de projeção já usa internamente (projecaoJogo separa
+// "casa" do mandante e "fora" do visitante). modo: 'casa' = só jogos como mandante ·
+// 'fora' = só jogos como visitante · omitido = mistura (comportamento legado).
+function formaRecenteHTML(time, todosJogos, modo) {
   // Filtra apenas jogos com cantos registrados e ordena por rodada
   const jogosOk = (todosJogos || []).filter(j => j && j.cantos && j.cantos.ft);
-  const ultimos = jogosOk.slice(-5);
-  if (!ultimos.length) return `<div class="market-list"><div class="market-header">📅 ${time} — Forma</div><div style="padding:.8rem;color:var(--muted);font-size:.75rem">Sem dados recentes</div></div>`;
+  const jogosModo = modo === 'casa' ? jogosOk.filter(j => j.mandante === time)
+                   : modo === 'fora' ? jogosOk.filter(j => j.visitante === time)
+                   : jogosOk;
+  const ultimos = jogosModo.slice(-5);
+  const rotuloModo = modo === 'casa' ? ' 🏠 Casa' : modo === 'fora' ? ' ✈️ Fora' : '';
+  if (!ultimos.length) return `<div class="market-list"><div class="market-header">📅 ${time} — Forma${rotuloModo}</div><div style="padding:.8rem;color:var(--muted);font-size:.75rem">Sem dados recentes${modo === 'casa' ? ' em casa' : modo === 'fora' ? ' fora de casa' : ''}</div></div>`;
 
   const bars = ultimos.map(j => {
     const pro  = j.mandante === time ? j.cantos.ft.m : j.cantos.ft.v;
@@ -3726,7 +3734,7 @@ function formaRecenteHTML(time, todosJogos) {
 
   return `
     <div class="market-list">
-      <div class="market-header">📅 ${time} — Forma Recente ${trend} <span style="float:right;font-size:.7rem;color:var(--gold)">Média: ${mediaUlt} FT</span></div>
+      <div class="market-header">📅 ${time} — Forma Recente${rotuloModo} ${trend} <span style="float:right;font-size:.7rem;color:var(--gold)">Média: ${mediaUlt} FT</span></div>
       <div style="padding:.6rem">${bars}</div>
     </div>`;
 }
@@ -4695,10 +4703,10 @@ function renderProjecao() {
     </div>
 
     <!-- MÓDULO: FORMA RECENTE VISUAL -->
-    <div class="section-title">📅 Forma Recente (Últimos 5 Jogos)</div>
+    <div class="section-title">📅 Forma Recente (Últimos 5 — Mandante em Casa × Visitante Fora)</div>
     <div class="proj-grid" style="margin-bottom:1.5rem">
-      ${formaRecenteHTML(m, p.m.jogosData || [])}
-      ${formaRecenteHTML(v, p.v.jogosData || [])}
+      ${formaRecenteHTML(m, p.m.jogosData || [], 'casa')}
+      ${formaRecenteHTML(v, p.v.jogosData || [], 'fora')}
     </div>
 
     <!-- MÓDULO: H2H HISTÓRICO -->
