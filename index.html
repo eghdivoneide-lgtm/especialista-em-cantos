@@ -12057,11 +12057,13 @@ function _linhaHDPHTSugerida(diffHT) {
 // v2.2 (2026-07-08): aceita filtro opcional de ligas (usado pela Múltipla Argentina).
 // Sem filtro = 9 ligas ativas + checagem de cotas (comportamento da Múltiplas Elite).
 // ══════════════════════════════════════════════════════════════════
-//  PONTE MCP (2026-07-20): espelha a rodada importada e as múltiplas
-//  geradas no Supabase (tabelas rodadas_diarias / multiplas_geradas),
-//  pra dar ao conector MCP acesso ao dado do dia sem precisar abrir o
-//  app. Fire-and-forget — nunca trava nem quebra a UI se falhar (sem
-//  sessão logada, sem internet, tabela indisponível etc.).
+//  PONTE MCP (2026-07-20/21): espelha a rodada importada + o pacote de
+//  sinais já computado pelo motor real (Cisne Negro, Enigma, Bala de
+//  Prata, Reis dos Cantos, Sniper — a mesma saída que alimenta a aba
+//  TEACHER e as Múltiplas) e as múltiplas geradas no Supabase, pra dar
+//  ao conector MCP acesso 100% real ao motor sem reimplementar nada em
+//  outro runtime. Fire-and-forget — nunca trava nem quebra a UI se
+//  falhar (sem sessão logada, sem internet, tabela indisponível etc.).
 // ══════════════════════════════════════════════════════════════════
 async function _edsSyncRodada(liga, jogos) {
   try {
@@ -12070,8 +12072,13 @@ async function _edsSyncRodada(liga, jogos) {
     const { data: userData } = await sb.auth.getUser();
     const uid = userData && userData.user && userData.user.id;
     if (!uid) return;
+    // Roda o motor de verdade (mesma função usada pelas Múltiplas) pra capturar
+    // Cisne Negro (diff+threshold), Enigma (sde+confiança), Bala de Prata
+    // (faixa+odd+probabilidade), Reis dos Cantos e Sniper de cada jogo da rodada.
+    let sinais = null;
+    try { sinais = gerarCandidatosMultiplas([liga]).candidatos; } catch(e) { console.warn('[MCP sync] cálculo de sinais falhou:', e); }
     await sb.from('rodadas_diarias').upsert({
-      usuario_id: uid, liga, jogos, n_jogos: jogos.length, atualizado_em: new Date().toISOString()
+      usuario_id: uid, liga, jogos, n_jogos: jogos.length, sinais, atualizado_em: new Date().toISOString()
     }, { onConflict: 'usuario_id,liga' });
   } catch(e) { console.warn('[MCP sync] rodada falhou (não afeta o app):', e); }
 }
