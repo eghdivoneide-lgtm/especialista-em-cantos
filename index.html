@@ -7933,6 +7933,21 @@ async function gerarRelatorioIA(mandante, visitante) {
   const { dinamico: ctxDinamico, estatico: ctxEstatico } = getAppContext();
   let ctx = ctxDinamico;
 
+  // v4.1 (2026-07-22): projeção OFICIAL do motor pro jogo exato deste laudo —
+  // computada direto (não depende de _jogoEmFoco bater com mandante/visitante,
+  // que podia divergir do botão clicado). Alimenta a REGRA DE DIVERGÊNCIA no
+  // systemPrompt: o SmartCoach é instruído a priorizar dados situacionais crus
+  // (últimos 5 casa/fora) sobre a leitura com shrinkage bayesiano do motor —
+  // de propósito, mas isso pode fazer as duas leituras discordarem sem o
+  // operador perceber (caso real que motivou isso: motor deu 8.33 xCorners
+  // FT/Under 10.5, SmartCoach deu ~11-12/Over 9.5 — jogo terminou com 14).
+  const pMotor = projecaoJogo(mandante, visitante);
+  if (pMotor) {
+    ctx += `\n🎯 PROJEÇÃO OFICIAL DO MOTOR (xCorners com shrinkage bayesiano — regressada\n`;
+    ctx += `à média da liga pra não overfitar em amostra pequena de 5 jogos):\n`;
+    ctx += `  xCorners HT: ${fmt(pMotor.expTotalHT)} | xCorners FT: ${fmt(pMotor.expTotalFT)}\n`;
+  }
+
   // ── INJEÇÃO DIRETA: dados situacionais casa/fora para o laudo ──
   // Garante que SEMPRE chegam ao SmartCoach, independente da aba ativa
   const jogosValidos_IA = DADOS_2026.jogos.filter(j => j.cantos !== null);
@@ -7979,7 +7994,8 @@ async function gerarRelatorioIA(mandante, visitante) {
 Seu objetivo primário é fornecer um Veredito Analítico para a partida de agora.
 
 REGRAS ESTRUTURAIS:
-Obrigatoriamente divida seu laudo em TRÊS seções:
+Obrigatoriamente divida seu laudo em TRÊS seções (mais uma quarta condicional, ver
+REGRA DE DIVERGÊNCIA abaixo):
 
 1. "Análise do HT (1º Tempo)" — onde está a melhor aposta HT com +EV
 2. "Análise do Jogo (FT)" — onde está a melhor aposta FT com +EV
@@ -7995,6 +8011,23 @@ NUNCA baseie sua análise em médias GERAIS quando dados SITUACIONAIS (casa/fora
 - Se o mandante produz 2.0 cantos em casa mas 5.0 geral, use 2.0 como referência
 - Se o visitante produz 1.5 cantos fora mas 4.0 geral, use 1.5 como referência
 - COMPARE: "Em casa o mandante produz X e sofre Y" vs "Fora o visitante produz W e sofre Z"
+
+REGRA DE DIVERGÊNCIA (OBRIGATÓRIA — compare com a "PROJEÇÃO OFICIAL DO MOTOR"):
+Você e o motor calculam de formas DIFERENTES de propósito: o motor aplica shrinkage
+bayesiano (regride a projeção pra média da liga quando a amostra situacional é
+pequena — proteção contra overfitar em 5 jogos); você prioriza o dado situacional
+cru mais recente (mais reativo a tendência, mas mais sujeito a variância de amostra
+pequena). Nenhum dos dois é garantidamente mais certo isoladamente.
+- Calcule sua projeção situacional de xCorners FT (soma/ajuste dos dados casa/fora acima).
+- Compare com "xCorners FT" da PROJEÇÃO OFICIAL DO MOTOR informada no contexto.
+- Se a diferença for ≥ 20% OU ≥ 2 cantos (o que for maior), você DEVE abrir uma seção
+  extra chamada "⚠️ DIVERGÊNCIA MOTOR × SITUACIONAL" ANTES do Veredito Final, com:
+  1. Os dois números lado a lado (motor vs sua leitura situacional).
+  2. O motivo técnico da divergência (shrinkage vs dado situacional cru), em 1-2 linhas.
+  3. Recomendação de cautela/stake reduzido nesse jogo — divergência grande entre os
+     dois "cérebros" é sinal de incerteza real, não de que um dos dois está certo.
+- Se a diferença for pequena (<20% e <2 cantos), NÃO mencione — os dois concordam,
+  siga a análise normal sem essa seção extra.
 
 REGRAS ESTÉTICAS:
 NÃO USE ASTERISCOS Markdown. Use exclusivamente tags HTML para destaques. Se quiser dar ênfase em dados cruciais, use <strong style="color:#34d367"> e </strong>. Se quiser usar subtítulos, use <div style="font-weight:800;color:#fca5a5;margin-top:10px;margin-bottom:5px"> TEXTO </div>. Crie um texto fluído antes das tabelas finais. Use tabelas HTML estilizadas (<table>, <tr>, <th>, <td>) APENAS para os quadros de histórico.
