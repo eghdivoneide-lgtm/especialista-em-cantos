@@ -7930,7 +7930,8 @@ async function gerarRelatorioIA(mandante, visitante) {
   const ctr = document.getElementById('ai-report-container');
   ctr.innerHTML = `<div style="text-align:center;color:var(--green);font-weight:700">⏳ O SmartCoach está calculando o laudo matemático... (Aguarde 10seg)</div>`;
 
-  let ctx = getAppContext();
+  const { dinamico: ctxDinamico, estatico: ctxEstatico } = getAppContext();
+  let ctx = ctxDinamico;
 
   // ── INJEÇÃO DIRETA: dados situacionais casa/fora para o laudo ──
   // Garante que SEMPRE chegam ao SmartCoach, independente da aba ativa
@@ -8027,10 +8028,21 @@ ${ctx}
         // de UM jogo (tarefa estruturada — Sonnet entrega 95% da qualidade
         // do Opus com 1/5 do custo). Opus 4.7 fica reservado pra curadoria
         // de Múltiplas Elite (raciocínio multi-passo complexo).
+        // v4.0 (2026-07-22): max_tokens 16k→8k (nunca houve relato de laudo
+        // truncado nesta função — 8k segue folgado) + system em 2 blocos com
+        // cache_control no bloco estático (memória das 9 ligas), ver
+        // getContextoEstaticoLigas(). Custo de API cai bastante em chamadas
+        // seguidas na mesma sessão (gerar 2 laudos, reabrir o app) porque a
+        // Anthropic cobra ~10% do preço normal pra reler um bloco já cacheado
+        // nos últimos ~5min — nenhum dado sai do prompt, só para de ser
+        // recobrado integralmente toda vez.
         model: 'claude-sonnet-4-6',
-        max_tokens: 16000,
+        max_tokens: 8000,
         temperature: 0.3,
-        system: systemPrompt,
+        system: [
+          { type: 'text', text: ctxEstatico, cache_control: { type: 'ephemeral' } },
+          { type: 'text', text: systemPrompt }
+        ],
         messages: [{ role: 'user', content: `Gere o laudo completo de ${mandante} vs ${visitante}. OBRIGATÓRIO: inclua as duas tabelas HTML (🏠 Últimos 5 jogos EM CASA do mandante e ✈️ Últimos 5 jogos FORA do visitante). Use os dados situacionais casa/fora como base principal da análise, não as médias gerais.` }]
       })
     });
@@ -8615,6 +8627,31 @@ function _formatarCalibracaoMercado(){
   return txt;
 }
 
+// v4.0 (2026-07-22): memória institucional das 9 ligas + histórico completo
+// jogo-a-jogo isolados num bloco ESTÁTICO memoizado — o conteúdo é o mesmo em
+// toda chamada dentro da sessão (só muda se o usuário recarregar a página),
+// então (1) não precisa reformatar ~3MB de texto a cada mensagem do chat e
+// (2) vira o prefixo cacheável (cache_control) enviado à API Anthropic —
+// chamadas subsequentes pagam ~10% do preço nesse bloco em vez de 100%.
+// Motivo: SmartCoach mandava essa memória inteira, sem cache, em toda
+// chamada (inclusive "gerar dois laudos seguidos" = pagar o bloco 2x
+// inteiro) — decisão do operador em 22/07 pra tornar o custo viável sem
+// tirar nenhum dado do contexto, só parar de recobrar pelo que já foi lido.
+let _ctxEstaticoLigasCache = null;
+function getContextoEstaticoLigas() {
+  if (_ctxEstaticoLigasCache != null) return _ctxEstaticoLigasCache;
+  let txt = '';
+  try { txt += _formatarMemoriaTodasAsLigas(); } catch(e) { console.warn('Falha ao formatar memória institucional:', e); }
+  try { txt += _formatarHistoricoTodasAsLigas(); } catch(e) { console.warn('Falha ao formatar histórico completo:', e); }
+  _ctxEstaticoLigasCache = txt;
+  return _ctxEstaticoLigasCache;
+}
+
+// Retorna { dinamico, estatico }. 'estatico' é o bloco cacheável (memória +
+// histórico das 9 ligas, ver getContextoEstaticoLigas). 'dinamico' é tudo que
+// muda por chamada (hora, jogo em foco, tracker, view ativa etc.) — NUNCA
+// deve ser marcado com cache_control, senão o breakpoint fica "sujo" e a
+// API nunca acerta o cache.
 function getAppContext() {
   // SmartCoach v3 — awareness total (2026-04-23). 10 seções estruturadas
   // para o assistente decidir de forma profissional.
@@ -8635,19 +8672,13 @@ function getAppContext() {
   ctx += `Tela em foco: ${viewNome}\n`;
   ctx += `Data/hora: ${new Date().toLocaleString('pt-BR')}\n`;
 
-  // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL + HISTÓRICO JOGO A JOGO das 7 LIGAS.
+  // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL + HISTÓRICO JOGO A JOGO das 9 LIGAS.
   // Opção A autorizada pelo Comandante: SmartCoach recebe TUDO de TODAS as
-  // 7 ligas em toda chamada, sem ressalva de custo. "Maior especialista do
-  // mundo" — sabe sobre todos os 179 times de todas as ligas simultaneamente.
-  try {
-    const memInst = _formatarMemoriaTodasAsLigas();
-    if (memInst) ctx += memInst;
-  } catch(e) { console.warn('Falha ao injetar memória institucional:', e); }
-
-  try {
-    const histCompleto = _formatarHistoricoTodasAsLigas();
-    if (histCompleto) ctx += histCompleto;
-  } catch(e) { console.warn('Falha ao injetar histórico jogo a jogo:', e); }
+  // 9 ligas em toda chamada, sem ressalva de custo. "Maior especialista do
+  // mundo" — sabe sobre todos os times de todas as ligas simultaneamente.
+  // v4.0 (2026-07-22): esse bloco saiu do 'ctx' dinâmico — vira o bloco
+  // 'estatico' cacheável, ver getContextoEstaticoLigas() e o retorno abaixo.
+  // O CONTEÚDO não muda; só onde ele é montado e enviado à API.
 
   /* ── 🚨 ALERTAS DE LIGA (LIGAS_STATUS) ── */
   if (typeof LIGAS_STATUS !== 'undefined' && LIGAS_STATUS[LIGA_ATUAL]) {
@@ -9020,7 +9051,7 @@ function getAppContext() {
     ctx += `═══════════════════\n`;
   })();
 
-  return ctx;
+  return { dinamico: ctx, estatico: getContextoEstaticoLigas() };
 }
 
 // ══════════════════════════════════════════════════
@@ -9313,6 +9344,7 @@ async function sendSCMsg() {
   _scAdicionarMensagem('user', userTextoPersist, temImagem || temDoc);
 
   const modoAoVivo = temImagem || temDoc;
+  const { dinamico: ctxDinamico, estatico: ctxEstatico } = getAppContext();
 
   const systemPrompt = `Você é o *SmartCoach*, a Inteligência Artificial embarcada (Claude Opus) no app 'EDS Especialista em Cantos'.
 Você é um consultor de apostas esportivas especializado EXCLUSIVAMENTE em escanteios (corners).
@@ -9427,7 +9459,7 @@ Sua missão prioritária agora:
 ═══════════════════════════════════════` : ''}
 
 ═══ DADOS EM TEMPO REAL DO APP ═══
-${getAppContext()}
+${ctxDinamico}
 ═══════════════════════════════════
 
 ═══ COMO USAR O CONTEXTO (HIERARQUIA DE PRIORIDADE) ═══
@@ -9583,10 +9615,20 @@ pra calibrar expectativa de volume e dominância territorial.`;
         // livre — perguntas factuais sobre dados injetados (60k tokens de
         // MEMORIA_DNA + histórico jogo a jogo). Sonnet recupera com mesma
         // precisão do Opus a 1/5 do custo.
+        // v4.0 (2026-07-22): max_tokens 16k→8k (mesma folga que já resolvia
+        // truncamento antes de virar 16k) + system em 2 blocos com
+        // cache_control no bloco estático (memória das 9 ligas). Cada
+        // pergunta nova no MESMO chat reenviava os ~60k tokens de memória
+        // inteiros — com cache, só a 1ª mensagem da sessão paga isso cheio;
+        // as próximas (dentro de ~5min) pagam ~10% desse bloco. Nenhum dado
+        // sai do prompt, só para de ser recobrado do zero a cada pergunta.
         model: 'claude-sonnet-4-6',
-        max_tokens: 16000,
+        max_tokens: 8000,
         temperature: modoAoVivo ? 0.2 : 0.4,
-        system: systemPrompt,
+        system: [
+          { type: 'text', text: ctxEstatico, cache_control: { type: 'ephemeral' } },
+          { type: 'text', text: systemPrompt }
+        ],
         messages: [...scChatHistory]
       })
     });
