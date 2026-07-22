@@ -1,7 +1,7 @@
 {
   "name": "EDS Especialista em Cantos",
   "short_name": "EDS Cantos",
-  "description": "Análise estatística profissional de escanteios — motor Bayesian v2.1+TMI, 10 ligas, auditoria cross-liga e SmartCoach IA.",
+  "description": "Análise estatística profissional de escanteios — motor Bayesian v2.1+TMI, 7 ligas, auditoria cross-liga e SmartCoach IA.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
