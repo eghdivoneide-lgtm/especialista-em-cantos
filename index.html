@@ -754,12 +754,6 @@
         <optgroup label="🇩🇪 Alemanha">
           <option value="BUN">Bundesliga</option>
         </optgroup>
-        <optgroup label="🇨🇱 Chile">
-          <option value="CHI">Primera División</option>
-        </optgroup>
-        <optgroup label="🇪🇨 Equador">
-          <option value="ECU">Liga Pro</option>
-        </optgroup>
       </select>
     </div>
   </div>
@@ -1019,12 +1013,6 @@
         </optgroup>
         <optgroup label="🇩🇪 Alemanha">
           <option value="BUN">Bundesliga</option>
-        </optgroup>
-        <optgroup label="🇨🇱 Chile">
-          <option value="CHI">Primera División</option>
-        </optgroup>
-        <optgroup label="🇪🇨 Equador">
-          <option value="ECU">Liga Pro</option>
         </optgroup>
       </select>
       <span id="tracker-filtro-info" style="font-size:.72rem;color:var(--muted);margin-left:auto">— total de apostas: <strong id="tracker-filtro-count" style="color:var(--text)">0</strong></span>
@@ -1435,9 +1423,7 @@
 <script src="data/brasileiraoB2026.js?v=2026-07-17-1840"></script>
 <!-- ═══ LIGAS ASIÁTICAS REMOVIDAS — 2026-05-25 (J1, J2_J3, CHN_SUP, CHN_1 banidas por falta de padrão estatístico) ═══ -->
 <!-- Arquivos movidos para data/_aposentadas/ — manter histórico mas fora do app -->
-<!-- ═══ LIGAS REATIVADAS — 2026-05-20 (CHI, ECU) ═══ -->
-<script src="data/chile2026.js?v=2026-07-17-1840"></script>         <!-- CHI Primera División -->
-<script src="data/equador2026.js?v=2026-07-17-1840"></script>       <!-- ECU Liga Pro -->
+<!-- ═══ LIGAS BANIDAS — 2026-07-22 (CHI, ECU banidas por ROI histórico negativo: CHI -7.6%, ECU -71%) ═══ -->
 <!-- ═══ LIGAS AINDA DESATIVADAS — descomente para reabilitar ═══
 <script src="data/aleague2026.js?v=2026-07-17-1840"></script>      ALM (temporada finalizando)
 <script src="data/metropolitana2026.js?v=2026-07-17-1840"></script> ARG_M (Primera B Metro — fora por decisão)
@@ -1461,10 +1447,9 @@
   // window.DADOS_* logo após os <script src> acima.
   (function() {
     const mapa = { BR:'DADOS_BR', MLS:'DADOS_MLS', ARG:'DADOS_ARG', USL:'DADOS_USL',
-                   BUN:'DADOS_BUN', ARG_B:'DADOS_ARG_B', CHI:'DADOS_CHI',
-                   ECU:'DADOS_ECU', ALM:'DADOS_ALM',
+                   BUN:'DADOS_BUN', ARG_B:'DADOS_ARG_B', ALM:'DADOS_ALM',
                    BR_B:'DADOS_BR_B', ARG_M:'DADOS_ARG_M' };
-                   // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1, CHN_2, J2) removidas 2026-05-25
+                   // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1, CHN_2, J2) removidas 2026-05-25; CHI/ECU banidas 2026-07-22
     const ok = [], falha = [];
     for (const k in mapa) {
       const d = window[mapa[k]];
@@ -1598,8 +1583,7 @@ const LIGA_DNA = Object.freeze({
   // v3.6 (2026-05-24): 2 ligas sul-americanas integradas — médias calculadas do banco real
   //   CHI (96 jogos):  equilibrada, mediaFT 9.55
   //   ECU (111 jogos): equilibrada, mediaFT 9.22
-  CHI:   { arquetipo: 'equilibrada', cisneThreshold: 1.85, mediaHT: 4.63, mediaFT: 9.52  }, // recalib 2026-05-27: backtest cego em 103 jogos sugeriu X ótimo 1.75 (WR 82% ROI +47%); aplicado X=1.85 conservador (passo intermediário). Liga menos polarizada (+11.7pp mando vs +35pp ARG_B) → exige threshold menor.
-  ECU:   { arquetipo: 'equilibrada', cisneThreshold: 2.0, mediaHT: 4.27, mediaFT: 9.22  }
+  // v4.4 (2026-07-22): CHI/ECU banidas — ROI histórico negativo (CHI -7.6%, ECU -71%)
   // v3.8 (2026-05-25): J1, J2_J3, CHN_SUP, CHN_1 REMOVIDAS — sem padrão estatístico consistente
 });
 
@@ -1806,14 +1790,14 @@ function _formatarMemoriaJogoDNA(liga, mandante, visitante) {
 // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL COMPLETA das 7 LIGAS.
 // Comandante autorizou Opção A: SmartCoach recebe TUDO de TODAS as ligas
 // em toda chamada. Sem ressalvas de custo de API — decisão do operador.
-const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // v4.0 (2026-06-28): 9 ligas ATIVAS do seletor. J1/J2_J3/ALM/CHN_2 removidas (fora de escopo)
+const _LIGAS_TODAS = ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN']; // v4.4 (2026-07-22): 7 ligas ATIVAS do seletor. J1/J2_J3/ALM/CHN_2 removidas (fora de escopo); CHI/ECU banidas (ROI histórico negativo)
 
 function _formatarMemoriaTodasAsLigas() {
   if (!window.MEMORIA_DNA) return '';
   let txt = '\n\n╔═══════════════════════════════════════════════════════════════════╗\n';
-  txt += '║ 🧠 MEMÓRIA INSTITUCIONAL COMPLETA — 9 LIGAS, 239 TIMES, ECOSSISTEMA INTEIRO ║\n';
+  txt += '║ 🧠 MEMÓRIA INSTITUCIONAL COMPLETA — 7 LIGAS, ECOSSISTEMA INTEIRO ║\n';
   txt += '╚═══════════════════════════════════════════════════════════════════╝\n';
-  txt += 'Você é especialista nas 9 ligas abaixo. Toda esta memória está disponível\n';
+  txt += 'Você é especialista nas 7 ligas abaixo. Toda esta memória está disponível\n';
   txt += 'em TODA pergunta, independente da liga ativa no momento.\n';
   _LIGAS_TODAS.forEach(L => {
     const bloco = _formatarMemoriaLigaCompleta(L);
@@ -1961,9 +1945,9 @@ function _formatarMemoriaLigaCompleta(liga) {
 // Comandante autorizou Opção A: TODOS os jogos de TODAS as ligas, time a time.
 function _formatarHistoricoTodasAsLigas() {
   let txt = '\n\n╔═══════════════════════════════════════════════════════════════════╗\n';
-  txt += '║ 📜 HISTÓRICO COMPLETO JOGO A JOGO — 9 LIGAS, TODAS AS TEMPORADAS 2026 ║\n';
+  txt += '║ 📜 HISTÓRICO COMPLETO JOGO A JOGO — 7 LIGAS, TODAS AS TEMPORADAS 2026 ║\n';
   txt += '╚═══════════════════════════════════════════════════════════════════╝\n';
-  txt += 'Você tem TODOS os jogos de TODAS as 9 ligas, time a time, cronológico.\n';
+  txt += 'Você tem TODOS os jogos de TODAS as 7 ligas, time a time, cronológico.\n';
   txt += 'Formato: DATA 🏠/✈️ ADVERSÁRIO | cantos m-v (HT m-v, total) | gols m-v | posse% | finaliz | [Rodada]\n';
   _LIGAS_TODAS.forEach(L => {
     const ds = window['DADOS_' + L];
@@ -2228,11 +2212,9 @@ const FAV_DOMINANCE = {
   BUN:     0.79,  // azarão rouba cantos
   // v3.7 (2026-05-24): 3 ligas calibradas via dominância empírica do mandante
   //   (% jogos com home cantos > away cantos) — sample ≥ 63 jogos cada
-  //   ECU 59.5% → 0.94 | ALM 56.3% → 0.96 | CHI 51.0% → 0.85
+  //   ECU 59.5% → 0.94 | ALM 56.3% → 0.96 | CHI 51.0% → 0.85 (CHI/ECU banidas 2026-07-22)
   //   Heurística: 50%=equilíbrio total → ~0.83 | 56%+ ofensiva → ~0.94-0.96
-  ECU:     0.94,
   ALM:     0.96,
-  CHI:     0.85,
   _default: 0.92
   // v3.8 (2026-05-25): J1, J2_J3, CHN_SUP, CHN_1 REMOVIDAS
 };
@@ -2892,8 +2874,7 @@ function projecaoJogo(mandante, visitante) {
   //
   // Ligas em OBSERVAÇÃO/SUSPENSAS (peso reduzido para diminuir exposição):
   //   MLS    → 0.20  (ROI -17u em 32 apostas — baixou de 0.30, motor com viés)
-  //   CHI    → 0.15  (ROI -31u, suspensa, mas se for liberada fica conservador)
-  //   ECU    → 0.20  (ROI -45u, suspensa, mesmo racional)
+  //   CHI/ECU → banidas 2026-07-22 (ROI -31u/-45u) — removidas deste mapa
   //
   // Override: window.OARF_PESO_OVERRIDE permite testar outros valores.
   // Clamp: ±2.5 cantos/período para evitar swings extremos.
@@ -2903,8 +2884,7 @@ function projecaoJogo(mandante, visitante) {
   // resíduo, provável typo de CHI na integração original).
   const OARF_PESO_POR_LIGA = {
     BR:    0.30, BR_B:  0.30, MLS:   0.20, ARG:   0.70, ARG_B: 0.70, USL:   0.60,
-    BUN:   0.60, ECU:   0.20, ALM:   0.60,
-    CHI:   0.15
+    BUN:   0.60, ALM:   0.60
   };
   const _ligaAtiva = (typeof LIGA_ATUAL !== 'undefined') ? LIGA_ATUAL : 'BR';
   const OARF_PESO = (typeof window !== 'undefined' && typeof window.OARF_PESO_OVERRIDE === 'number')
@@ -4254,10 +4234,6 @@ const TOP3_CRITERIOS = Object.freeze({
       { id:'argb_h2', linha:-1.0, label:'HDP -1.0 favorito (diff ≥ 3.0)',                  wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
       { id:'argb_h3', linha:-1.5, label:'HDP -1.5 favorito (diff ≥ 3.0)',                  wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 3.0 },
       { id:'argb_h4', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 2.5 + saldo ≥ 2)',      wr:83, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 2.5 && (fav.saldo >= 2) }
-    ],
-    ECU: [
-      { id:'ecu_h1', linha:-0.5, label:'HDP -0.5 favorito (diff ≥ 1.5)',                   wr:79, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 1.5 },
-      { id:'ecu_h2', linha:-1.0, label:'HDP -1.0 favorito (diff ≥ 1.5)',                   wr:74, fn:(p,fav,opo) => Math.abs(p.expHomeFT - p.expAwayFT) >= 1.5 }
     ]
   },
   OU: {
@@ -4310,7 +4286,7 @@ function renderTop3() {
   }
 
   const liga = LIGA_ATUAL || 'BR';
-  const ligaNome = ({BR:'🇧🇷 Brasileirão A',BR_B:'🇧🇷 Brasileirão B',ARG:'🇦🇷 Argentina Pro',ARG_B:'🇦🇷 Argentina B',MLS:'🇺🇸 MLS',USL:'🇺🇸 USL',BUN:'🇩🇪 Bundesliga',CHI:'🇨🇱 Chile',ECU:'🇪🇨 Equador'})[liga] || liga;
+  const ligaNome = ({BR:'🇧🇷 Brasileirão A',BR_B:'🇧🇷 Brasileirão B',ARG:'🇦🇷 Argentina Pro',ARG_B:'🇦🇷 Argentina B',MLS:'🇺🇸 MLS',USL:'🇺🇸 USL',BUN:'🇩🇪 Bundesliga'})[liga] || liga;
   const semLimiteARG = (liga === 'ARG' || liga === 'ARG_B'); // ligas mais assertivas: sem cap em 3
   const maxPicks = semLimiteARG ? 99 : 3;
 
@@ -5870,8 +5846,7 @@ function exportarBalaPrataHTML() {
 //  (projecaoJogo, calcSDE_ENIGMA) e localStorage namespace 'eds_auditoria_*'.
 // ══════════════════════════════════════════════════
 
-// v1.1 (2026-07-07): CHI/ECU adicionadas — ficaram de fora desde a criação desta
-// lista (v1.0, 2026-04-25), que é anterior à reativação das duas ligas (20/05).
+// v4.4 (2026-07-22): CHI/ECU removidas — banidas (ROI histórico negativo).
 // _LIGAS_TODAS (linha 1575) é a lista canônica de ligas ativas; mantida separada
 // aqui só porque esta estrutura carrega nome/flag/dadosKey, não usados lá.
 const AUDITORIA_LIGAS = [
@@ -5881,9 +5856,7 @@ const AUDITORIA_LIGAS = [
   { code: 'ARG_B', nome: 'Primera B Nacional',      flag: '🇦🇷', dadosKey: 'DADOS_ARG_B' },
   { code: 'MLS',   nome: 'Major League Soccer',     flag: '🇺🇸', dadosKey: 'DADOS_MLS'   },
   { code: 'USL',   nome: 'USL Championship',        flag: '🇺🇸', dadosKey: 'DADOS_USL'   },
-  { code: 'BUN',   nome: 'Bundesliga',              flag: '🇩🇪', dadosKey: 'DADOS_BUN'   },
-  { code: 'CHI',   nome: 'Primera División',        flag: '🇨🇱', dadosKey: 'DADOS_CHI'   },
-  { code: 'ECU',   nome: 'LigaPro',                 flag: '🇪🇨', dadosKey: 'DADOS_ECU'   }
+  { code: 'BUN',   nome: 'Bundesliga',              flag: '🇩🇪', dadosKey: 'DADOS_BUN'   }
 ];
 
 // Calcula hash de uma rodada (lista de jogos m+v) para detectar mudança.
@@ -6607,7 +6580,7 @@ carregarCustomJogos();
 
 function trocarLiga(liga) {
   // Guard 1: liga precisa existir no mapa
-  const ligaMap = { BR: window.DADOS_BR, BR_B: window.DADOS_BR_B, ARG: window.DADOS_ARG, ARG_B: window.DADOS_ARG_B, MLS: window.DADOS_MLS, USL: window.DADOS_USL, BUN: window.DADOS_BUN, CHI: window.DADOS_CHI, ECU: window.DADOS_ECU }; // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1) removidas 2026-05-25
+  const ligaMap = { BR: window.DADOS_BR, BR_B: window.DADOS_BR_B, ARG: window.DADOS_ARG, ARG_B: window.DADOS_ARG_B, MLS: window.DADOS_MLS, USL: window.DADOS_USL, BUN: window.DADOS_BUN }; // Asiáticas (J1, J2_J3, CHN_SUP, CHN_1) removidas 2026-05-25; CHI/ECU banidas 2026-07-22
   const novosDados = ligaMap[liga];
 
   // Guard 2: dataset precisa ter times E jogos com cantos válidos. Ligas só com
@@ -7066,7 +7039,7 @@ function carregarBets(){
     // 2. Migração one-shot: consolida storages antigos `sniper_bets_<liga>`.
     // Rodou uma vez ao abrir o app após v2.0. Cada bet legado ganha o campo
     // `liga` deduzido pela própria chave do storage.
-    const ligas = ['BR','MLS','ARG','USL','BUN','ARG_B','ALM','CHI','ECU']; // J1 removida 2026-05-25 (bets antigas preservadas em localStorage)
+    const ligas = ['BR','MLS','ARG','USL','BUN','ARG_B','ALM']; // J1 removida 2026-05-25; CHI/ECU banidas 2026-07-22 (bets antigas preservadas em localStorage)
     customBets = [];
     for (const lg of ligas) {
       try {
@@ -7289,11 +7262,10 @@ const _PINNACLE_LIGA_MAP = {
   'Austrália - A-League': 'ALM',
   'Brasil - Série A': 'BR',
   'Brasil - Série B': 'BR_B',
-  'Chile - 1ª División': 'CHI',
   'EUA - Major League Soccer': 'MLS',
-  'EUA - USL Championship': 'USL',
-  'Equador - Série A': 'ECU'
+  'EUA - USL Championship': 'USL'
   // Ligas asiáticas (J League, China Superliga, China League One) removidas 2026-05-25
+  // CHI/ECU banidas 2026-07-22 — não aceitar mais novas importações Pinnacle dessas ligas
 };
 
 // Mapa de aliases Pinnacle → nome canônico no dataset. A Pinnacle costuma
@@ -8589,7 +8561,7 @@ function addSCMsg(role, text) {
 // ═══ CAMADA USL (consultiva) — classificação de cantos + fator casa ═══
 // Sinais validados por walk-forward 28/06 (G×S 73%; mandante -0.5 em equilíbrio nas
 // ligas mando-fortes 62%, n=268). NÃO altera o pick do motor — só informa o SmartCoach.
-const _USL_LIGAS_MANDO_FORTE = ['BR','BR_B','ARG_B','BUN','ECU'];
+const _USL_LIGAS_MANDO_FORTE = ['BR','BR_B','ARG_B','BUN'];
 function _uslClasse(d){ if(d>=2.0)return'G_STRONG'; if(d>=0.75)return'G'; if(d>=-0.75)return'N'; if(d>=-2.0)return'S'; return'S_STRONG'; }
 function _uslDiff(nome,jogos,modo){
   let s=0,n=0;
@@ -8705,9 +8677,9 @@ function getAppContext() {
   ctx += `Tela em foco: ${viewNome}\n`;
   ctx += `Data/hora: ${new Date().toLocaleString('pt-BR')}\n`;
 
-  // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL + HISTÓRICO JOGO A JOGO das 9 LIGAS.
+  // v1.4 (2026-05-15): MEMÓRIA INSTITUCIONAL + HISTÓRICO JOGO A JOGO das 7 LIGAS.
   // Opção A autorizada pelo Comandante: SmartCoach recebe TUDO de TODAS as
-  // 9 ligas em toda chamada, sem ressalva de custo. "Maior especialista do
+  // 7 ligas em toda chamada, sem ressalva de custo. "Maior especialista do
   // mundo" — sabe sobre todos os times de todas as ligas simultaneamente.
   // v4.0 (2026-07-22): esse bloco saiu do 'ctx' dinâmico — vira o bloco
   // 'estatico' cacheável, ver getContextoEstaticoLigas() e o retorno abaixo.
@@ -8741,7 +8713,7 @@ function getAppContext() {
 
   /* ── 🎚️ OARF da liga ativa ── */
   const _OARF_REF = { BR:0.30, BR_B:0.30, MLS:0.20, ARG:0.70, ARG_B:0.70, USL:0.60,
-                      BUN:0.60, ECU:0.20, ALM:0.60, CHI:0.15 };
+                      BUN:0.60, ALM:0.60 };
   const oarfPeso = _OARF_REF[LIGA_ATUAL] || 0.30;
   const oarfTipo = oarfPeso >= 0.60 ? 'AGRESSIVO (motor confia muito no momentum recente)' :
                    oarfPeso >= 0.40 ? 'MODERADO' :
@@ -9408,7 +9380,7 @@ Você tem DUAS fontes de "memória", e elas NÃO são intercambiáveis:
 
 2️⃣ MEMÓRIA INSTITUCIONAL COMPLETA DO ECOSSISTEMA (injetada NESTA chamada):
 
-   Você é especialista nas 9 LIGAS abaixo SIMULTANEAMENTE. Independente da
+   Você é especialista nas 7 LIGAS abaixo SIMULTANEAMENTE. Independente da
    liga ativa, você tem acesso AGORA a tudo de todas elas:
 
    • BR — Brasileirão Série A (20 times, 137 jogos)
@@ -9418,13 +9390,12 @@ Você tem DUAS fontes de "memória", e elas NÃO são intercambiáveis:
    • MLS — Major League Soccer (30 times, 163 jogos)
    • USL — USL Championship (25 times, 94 jogos)
    • BUN — Bundesliga (18 times, 288 jogos)
-   • CHI — Chile Primera División (16 times, 96 jogos)  🇨🇱
-   • ECU — Equador LigaPro (18 times, 111 jogos)  🇪🇨
    ────────────────────────────────────────────
-   TOTAL: 213 times, 1.404 jogos no ecossistema
-   (J1, J2_J3, CHN_SUP, CHN_1 removidas em 2026-05-25 por falta de padrão consistente)
+   TOTAL: 179 times, 1.187 jogos no ecossistema
+   (J1, J2_J3, CHN_SUP, CHN_1 removidas em 2026-05-25; CHI/ECU banidas em
+   2026-07-22 por ROI histórico negativo — CHI -7.6%, ECU -71%)
 
-   Para cada uma das 9 ligas você tem injetado:
+   Para cada uma das 7 ligas você tem injetado:
    - MEMORIA_DNA completa: PowerScore, categoria, perfil DNA, buckets
      situacionais, 12 assinaturas comportamentais, matriz de cruzamentos,
      divergências DNA × performance, insights, ranking completo
@@ -11683,13 +11654,10 @@ function exportarVencedorCantosHTML() {
 // ══════════════════════════════════════════════════════════════════
 
 // v2.0 (2026-05-08): redefinido após auditoria 01-04/05 + remoção de 10 ligas
-// v2.1 (2026-07-07): CHI/ECU incluídas em LIGAS_RUINS_VEN — o comentário do bloco
-// acima (linha 11349) já citava CHI -7.6%/ECU -71% ROI desde antes da reativação
-// dessas ligas (20/05), mas o array nunca foi atualizado. Diferente do bônus DNA
-// (LIGAS_OVERRIDE_DNA, que exige backtest walk-forward), esta penalidade é só
-// leitura de ROI histórico bruto — não há motivo estatístico para excluí-las.
+// v4.4 (2026-07-22): CHI/ECU banidas do app inteiro (ROI -7.6%/-71% histórico) —
+// removidas deste array; a penalidade de liga ruim virou irrelevante pra elas.
 const FILTRO_OURO_LIGAS_PREMIUM_VEN = ['ARG', 'ARG_B', 'MLS'];  // 80%+ na rodada
-const FILTRO_OURO_LIGAS_RUINS_VEN   = ['BR', 'CHI', 'ECU'];      // 33% Cisne (BR) · ROI -7.6%/-71% (CHI/ECU)
+const FILTRO_OURO_LIGAS_RUINS_VEN   = ['BR'];      // 33% Cisne (BR)
 const FILTRO_OURO_LIGAS_PREMIUM_UND = ['ARG_B', 'BR_B', 'MLS']; // ARG removida (Vencedor explode total)
 const FILTRO_OURO_LIGAS_RUINS_UND   = ['BUN', 'USL'];            // BUN/USL Under volátil
 const FILTRO_OURO_SCORE_MIN_VEN = 60;
@@ -11758,13 +11726,8 @@ function _scoreVencedor(p, liga, mandante, visitante) {
 // v4.2 (2026-06-28): Whitelist de ligas com DNA validado/operado. O bônus DNA e o
 // override da coroa Reis dos Cantos só disparam para estas. CHI/ECU (DNA recém-criado,
 // nunca backtestado) ficam baseline puro até validação walk-forward. Resolve R2/R5 da auditoria.
-// v4.3 (2026-07-08): CHI/ECU adicionadas — DNA_ESCOTEIRO passou a ter as 32 times
-// dessas ligas (10 campos estatísticos reais + perfil neutro EQUILIBRADO/multPerfil 1.0,
-// já que não há regra objetiva pra classificar perfil qualitativo — ver comentário em
-// data/dna_escoteiro.js). PowerScore/categoria/assinaturas em memoria_dna.js foram
-// recalculados de verdade a partir disso. AINDA SEM validação walk-forward/backtest —
-// acompanhar performance dessas duas ligas com atenção redobrada nas próximas rodadas.
-const LIGAS_OVERRIDE_DNA = new Set(['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']);
+// v4.4 (2026-07-22): CHI/ECU banidas do app inteiro — removidas deste Set.
+const LIGAS_OVERRIDE_DNA = new Set(['BR','BR_B','ARG','ARG_B','MLS','USL','BUN']);
 function _bonusDNA_Vencedor(mandante, visitante, liga) {
   if (!window.MEMORIA_DNA) return 0;
   if (!LIGAS_OVERRIDE_DNA.has(liga)) return 0;
@@ -12179,7 +12142,7 @@ async function _edsSyncMultiplas(tipo, payload) {
 }
 
 function gerarCandidatosMultiplas(ligasAlvo) {
-  const ligas = ligasAlvo || ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU']; // J1, J2_J3 removidas 2026-05-25
+  const ligas = ligasAlvo || ['BR','BR_B','ARG','ARG_B','MLS','USL','BUN']; // J1, J2_J3 removidas 2026-05-25; CHI/ECU banidas 2026-07-22
   const hojeIso = (typeof _dataIsoHoje === 'function') ? _dataIsoHoje() : new Date().toISOString().slice(0,10);
   const candidatos = [];
   const ligasComRodada = [];
@@ -13474,10 +13437,7 @@ function renderFiltroOuro() {
 function _ehListaNegra(r) {
   // Combos historicamente perdedores (validados em 358 apostas + auditoria 01-04/05)
   if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) return true; // BR HDP perde
-  // v2.1 (2026-07-07): CHI/ECU foram reativadas em 20/05/2026 e seguem ativas hoje —
-  // este comentário dizia o contrário e a checagem nunca foi religada. ROI histórico
-  // ruim (CHI -7.6%, ECU -71%, ver header do bloco FILTRO OURO) volta a valer aqui.
-  if ((r.liga === 'CHI' || r.liga === 'ECU') && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) return true;
+  // v4.4 (2026-07-22): CHI/ECU banidas do app — checagem removida (não aparecem mais em `r.liga`).
   return false;
 }
 
@@ -13627,8 +13587,6 @@ function _renderFiltroOuroTabListaNegra(dados) {
 function _cardListaNegra(r) {
   const motivos = [];
   if (r.liga === 'BR' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga BR Série A em HDP: 45.5% win, ROI -10.6% (n=11)');
-  if (r.liga === 'CHI' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga CHI: ROI -7.6% histórico — amostra pequena, tratar com cautela');
-  if (r.liga === 'ECU' && r.scoreVencedor < FILTRO_OURO_SCORE_MIN_VEN) motivos.push('Liga ECU: ROI -71% histórico — pior liga da base, amostra pequena');
 
   return `
     <div style="background:rgba(239,68,68,0.05);border:2px solid rgba(239,68,68,0.4);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.6rem;">
@@ -14628,7 +14586,7 @@ function _pinMatchEm(raw, times){
 function _pinMatch(raw){ return _pinMatchEm(raw, (DADOS_2026.times||[]).map(t=>typeof t==='string'?t:t.nome)); }
 // Detecta a liga do print pelos nomes dos times (não depende do seletor)
 function _pinDetectarLiga(odds){
-  const ligas=['BR','BR_B','ARG','ARG_B','MLS','USL','BUN','CHI','ECU'];
+  const ligas=['BR','BR_B','ARG','ARG_B','MLS','USL','BUN'];
   let bestL=null,bestN=-1;
   for(const L of ligas){ const d=window['DADOS_'+L]; if(!d||!d.times)continue;
     const times=d.times.map(t=>typeof t==='string'?t:t.nome);
